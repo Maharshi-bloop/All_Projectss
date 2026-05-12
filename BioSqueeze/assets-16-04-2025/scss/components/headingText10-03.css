@@ -1,0 +1,2 @@
+.HeadingTextWrapper .subHeading { position: absolute; }
+.HeadingTextWrapper .subHeading::before { content: ''; position: absolute; bottom: 15px; background-color: var(--secondaryColor); width: 80px; height: 6px; left: 105%; }

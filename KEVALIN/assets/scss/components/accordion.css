@@ -1,0 +1,31 @@
+.tabContent {
+  display: none;
+  margin-top: 20px;
+}
+
+.accordian {
+  background-color: #fff;
+  margin: 0 0 20px 0;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.accordian .secondarySubHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordian:last-child {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .accordian {
+    padding: 30px;
+    border-radius: 14px;
+  }
+}
+.accordian a {
+  text-decoration: none;
+  color: #003B4A;
+  display: inline-block;
+}

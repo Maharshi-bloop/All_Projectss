@@ -1,0 +1,51 @@
+.bgGradiant { background: linear-gradient(298.76deg, #273553 31.07%, #0D1C3F 103.82%); }
+.joinTeamBanner { height: 70vh; display: flex; align-items: flex-end; padding: 0 0 100px 0; }
+.joinTeamBannerInner * { color: var(--whiteColor); }
+.joinTeamBannerInner .greenLine:before { bottom: auto; right: -100px; top: 25px; }
+.onlyImageImage img { width: 100%; height: 100%; object-fit: cover; }
+.openingWrapper { padding: 120px 0 0 0; }
+.openingWrapper .greenLine:before { left: calc(100% + 20px); }
+.openingListing { margin: 65px 0 0 0; }
+.openingList { background-color: var(--whiteColor); height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+.positionName { padding: 30px 40px; border-bottom: 1px solid #0000004d; }
+.positionName strong { display: block; font-size: 22px; margin: 0 0 5px 0; }
+.positionName span { font-size: var(--font14); font-weight: 300; color: var(--blackColor); }
+.openingDetail { padding: 30px; }
+.openingDetail ul { margin: 0 0 30px 0; padding: 0; list-style: none; }
+.openingDetail ul li { padding: 10px 0; font-size: 18px; line-height: 10px; display: flex; align-items: center; }
+.openingIcon { width: 20px; height: 20px; margin: 0 10px 0 0; }
+.openingIcon img { width: 100%; height: 100%; object-fit: contain; }
+.gridListing { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.gridList { padding: 90px 40px 40px 40px; position: relative; z-index: 1; }
+.gridList:first-child { grid-column: 1 / span 2; }
+.gridList:nth-child(3) { grid-column: 2 / span 1; }
+.gridList:last-child { grid-column: 2 / span 2; }
+.gridList:first-child, .gridList:nth-child(2) { padding-top: 200px; }
+.gridList:last-child { padding-bottom: 150px; }
+.gridList:first-child .indexNumber, .gridList:nth-child(2) .indexNumber { top: 160px; }
+.gridList:first-child, .gridList:nth-child(2), .gridList:nth-child(3), .gridList:nth-child(4) { border-bottom: 1px solid #f3f2ef80; }
+.gridList:nth-child(3), .gridList:last-child, .gridList:nth-child(2), .gridList:nth-child(4) { border-left: 1px solid #f3f2ef80; }
+.gridContent span { font-size: 24px; color: #F3F2EF; opacity: 0.9; font-weight: var(--font400); }
+.indexNumber { position: absolute; font-size: 80px; color: #0D1C3F; font-weight: 800; z-index: -1; opacity: 0.2; top: 45px; left: 40px; }
+.gridContent { margin: 10px 0 0 0; }
+.benefitContent { padding: 230px 0 0 0; }
+.benefitContent .description { display: flex; justify-content: flex-end; margin: 50px -190px 0 0; color: #fff; font-weight: 300; line-height: 36px; }
+.benefitContent .greenLine:before { left: calc(100% + 20px); }
+section.benefit { position: relative; }
+.benefitBgImage { width: 500px; height: 500px; position: absolute; bottom: 0; }
+.marTopremove .primaryBtn { margin-top: 20px; }
+@media (max-width:480px) {
+	.joinTeamBanner { height: unset; padding: 150px 0 100px 0; }
+	.marTopremove br { display: none; }
+	.benefitContent { padding: 100px 0 0 0; }
+	.gridListing { display: unset; }
+	.gridList:nth-child(3), .gridList:last-child, .gridList:nth-child(2), .gridList:nth-child(4) { border-left: none; }
+	.gridList { padding: 40px 0 !important; }
+	.indexNumber { top: 0px !important; left: 0px !important; }
+	section.benefit { padding: 0 0 300px 0; }
+	.benefitBgImage { width: 240px; height: 300px; left: 0; }
+	.benefitBgImage img { width: 100%; height: 100%; object-fit: contain; }
+	.benefitContent .description { display: flex; justify-content: flex-start; margin: 20px 0 50px 0; }
+	.openingWrapper { padding: 80px 0; }
+	.openingWrapper .greenLine:before { left: 0; bottom: -20px; width: 150px; }
+}

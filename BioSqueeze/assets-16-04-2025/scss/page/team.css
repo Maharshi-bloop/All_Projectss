@@ -1,0 +1,36 @@
+.team { background: linear-gradient(298.76deg, #273553 31.07%, #0D1C3F 103.82%); }
+.teamBanner { height: 80vh; display: flex; align-items: flex-end; color: var(--whiteColor); padding-bottom: 100px; }
+.teamBanner .subHeading { color: var(--whiteColor); }
+.teamBanner .marTop { margin-top: 15px; }
+.teamMenmberList { border: 1px solid #ffffff1a; height: 100%; cursor: pointer; }
+.teamMenmberImage { max-width: 270px; margin: 0 auto; height: 300px; }
+.teamMenmberImage img { width: 100%; height: 100%; object-fit: cover; }
+.teamMemberDetail { margin: 40px 0; text-align: center; color: var(--whiteColor); }
+.teamMemberDetail strong { display: block; font-size: 26px; }
+.teamMemberDetail span { font-size: var(--font22); font-weight: var(--font300); }
+.teamMemberListing { margin: 60px 0 0 0; }
+.memberPopUpContent { position: fixed; top: 0; right: 0; z-index: 9; background-color: #0D172F; height: 100vh; max-width: 750px; padding: 120px 60px 60px 60px; transition: all 0.3s; transform: translateX(100%); }
+.memberPopUpContent.active { transform: translateX(0); }
+.popUpMemberProfile { display: flex; padding: 25px 90px 25px 25px; border: 1px solid #ffffff1a; position: relative; align-items: center; }
+.popUpMemberImage { width: 150px; height: 150px; margin: 0 30px 0 0; }
+.popUpMemberImage img { width: 100%; height: 100%; object-fit: cover; }
+a.closePopUpBtn { position: absolute; top: 20px; right: 20px; font-size: 30px; color: var(--whiteColor); }
+.popUpMemberProfile div { color: var(--whiteColor); font-size: 22px; }
+.popUpMemberProfile div strong { display: block; font-size: 26px; }
+.memberPopUpContent .smallDescription { margin: 20px 0 0 0; color: var(--whiteColor); font-weight: var(--font300); line-height: 40px; }
+a.profileLinkedinIcon { position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 30px; height: 30px; background-color: var(--secondaryColor); display: flex; align-items: center; justify-content: center; color: var(--whiteColor); border-radius: 6px; }
+.teamMemberListing .col-lg-4 { margin-bottom: 30px; }
+.teamWithHeading:not(:first-child) { margin-top: 100px; }
+.scrollOff {overflow-x: hidden;}
+@media (max-width:480px) {
+	.teamBanner { height: auto; align-items: center; padding: 150px 0 0 0; }
+	.teamBanner .HeadingTextWrapper { padding: 0 0 100px 0; }
+	.memberPopUpContent { max-width: unset; width: 100%; padding: 120px 30px 30px 30px; overflow-y: auto; }
+	.popUpMemberProfile { padding: 30px 30px 80px 30px; flex-direction: column; align-items: unset; }
+	.popUpMemberImage { margin: 0; width: unset; height: unset; }
+	.memberPopUpContent .smallDescription { line-height: 30px; }
+	.memberPopUpContent .smallDescription br { display: none; }
+	.popUpMemberProfile div { margin: 30px 0 0 0; }
+	a.profileLinkedinIcon { top: auto; right: auto; bottom: 20px; }
+	.teamMemberListing { margin: 30px 0 0 0; }
+}

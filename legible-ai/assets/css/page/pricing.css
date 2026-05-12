@@ -1,0 +1,33 @@
+.pricingListing { margin: 0 0 100px 0; }
+.pricingBanner { padding: 200px 0 80px 0; }
+.pricingBannerInner { width: 80%; margin: 0 auto; }
+.pricingBottomInner { padding: 30px 20px; position: relative; z-index: 1; background-color: var(--white-color); border-radius: 20px; height: 100%; }
+.pricingBottom:before { content: ''; position: absolute; width: calc(100% + 2px); background: linear-gradient(90deg, #6161FF 0%, #F75D28 100%); height: calc(100% + 2px); top: -1px; left: -1px; z-index: 1; border-radius: 20px; }
+.pricingTop div strong { display: block; }
+.pricingTop .xxmHeading { color: var(--black-color); }
+.pricingTop span { margin: 25px 0 50px; }
+.pricingTop div i { color: var(--primary-color); }
+.pricingBottomInner li { font-weight: 500; font-family: var(--archivo); }
+.pricingListingInner .row { justify-content: center; }
+.pricingList { background-color: #EDEDFF; border-radius: 20px; display: flex; flex-direction: column; gap: 80px; height: 100%; position: relative; z-index: 1; }
+.pricingTop { padding: 40px 30px; }
+.pricingBottom { background-color: #fff; border-radius: 20px; position: relative; height: 100%; }
+.pricingBottom ul li { font-style: italic; }
+.addOn { position: relative; z-index: 1; margin: 90px 0 50px 0; }
+strong.addOnText { position: absolute; top: -42px; background-color: var(--tertiary-color); padding: 8px 30px 50px; border-radius: 8px; font-size: 20px; }
+.quoteBtn { display: flex; justify-content: center; }
+
+/* story Only css */
+.storyOnly { position: relative; z-index: 1; overflow: clip; padding: 160px 0; margin: 0 0 170px 0; }
+.storyOnlyBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+.storyOnlyBg img { width: 100%; height: 100%; object-fit: cover; }
+.storyOnlyInner .xlHeading { width: 50%; font-weight: 400; margin: 0 0 24px 0; font-size: var(--xxl-font); text-transform: capitalize; }
+.storyOnlyInner .xlHeading span { background: radial-gradient(#F75D28 0%, #6161FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* maarqee css */
+.maarqee { overflow-x: clip; margin: 0 0 25px 0; }
+.maarqeeTop span { font-family: var(--archivo); font-size: var(--s-font); text-transform: uppercase; font-weight: 700; }
+.maarqee .swiper { margin: 20px 0 0 0 }
+.maarqee .swiper-wrapper { transition-timing-function: linear; }
+.maarqeeImage { display: flex; align-items: center; justify-content: center; height: 40px; }
+.maarqeeImage img { width: 100%; height: 100%; object-fit: contain; }

@@ -1,0 +1,42 @@
+/* RESET CSS */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontSecondary); font-size: var(--fontBase); line-height: 1.6; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+button { background: none; border: none; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+:root { --fontPrimary: 'Roboto'; --fontSecondary: 'Roboto'; --colorPrimary: #0087c4; --colorSecondary: #f15a22; --colorAccent: #00b8ec; --colorBg: #ffffff; --colorText: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
+.heading7xl { font-size: var(--font7xl); font-weight: 500; color: var(--colorWhite); }
+
+/* === HEADER CSS START === */
+.headerWrap { display: flex; align-items: center; justify-content: space-between; }
+.toggleBtn { display: none; }
+@media (min-width:1025px) {
+	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
+	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
+	nav li { position: relative; }
+	nav li a { color: var(--colorBlack); position: relative; display: inline-block; padding: 16px 12px; text-decoration: none; transition: all 0.3s; position: relative; }
+	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
+	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+	li.hasUl a { padding-right: 25px !important; }
+	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
+}
+@media (max-width:1024px) {
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important;        /* You can replace with a global var */ transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption.openMenu { transform: translateX(0); }
+	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 12px; }
+	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary);        /* Replaced --active with --colorPrimary */ display: block; border-radius: 80px; transition: all 0.3s; }
+	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
+	.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+	.toggleBtn span:nth-child(2) { display: none; }
+}
+
+/* === HEADER CSS END === */
+
+/* === BANNER CSS START === */
+
+/* === BANNER CSS END === */

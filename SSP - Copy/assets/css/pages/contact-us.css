@@ -1,0 +1,22 @@
+.contactMain { position: relative; padding: 300px 0 80px 0; }
+.contactMainBg { position: absolute; top: 0; left: 0; z-index: -1; height: 100%; width: 100%; }
+.contactMainBg img { width: 100%; height: 100%; object-fit: cover; }
+.contactMainTop .row { align-items: center; }
+.contactMainTop .subTextXl { padding: 14px 0 14px 40px; border-left: 2px solid var(--colorSecondary); position: relative; }
+.contactMainTop .subTextXl:before { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; top: 0; }
+.contactMainTop .subTextXl:after { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; bottom: 0; }
+.contactMainMiddle { margin: 130px 0; }
+.contactMainMiddle .row { justify-content: space-between; }
+.contactMainbottom { border-radius: 20px; overflow: clip; }
+.contactMainbottom img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: luminosity; }
+.middleUl ul span { color: var(--colorSecondary); display: block; }
+.middleUl ul li { font-size: 22px; }
+.middleUl li a, .middleUl li p { color: #E6E9F0; opacity: 0.7; }
+.middleUl li { padding: 0 0 30px 0; border-bottom: 1px solid #ffffff33; margin: 0 0 30px 0; }
+.middleUl ul li:last-child { display: flex; align-items: center; justify-content: space-between; margin: 0; padding: 0; border: 0; }
+.middleUl ul li:last-child a { color: var(--colorSecondary); opacity: 1; font-size: 24px; }
+.formFeild input:not(.secondaryBtn), .formFeild select, .formFeild textarea { width: 100%; padding: 16px 30px; border: none; border-radius: 30px; margin: 0 0 10px 0; box-shadow: none; outline: none; position: relative; background-color: var(--colorWhite) !important; }
+.formFeild textarea { height: 180px; }
+.formFeild select, .formFeild textarea { -webkit-appearance: none; }
+.formFeild select { background: url(../../images/drop-down-arrow.svg); background-size: 15px; background-repeat: no-repeat; background-position: 95%; padding-right: 60px; }
+.formFeild input.secondaryBtn { border: none; margin: 0 auto; }

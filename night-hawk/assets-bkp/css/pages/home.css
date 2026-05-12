@@ -1,0 +1,98 @@
+/* BANNER CSS  */
+.banner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #011132; }
+.bannerBgVideo { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; opacity: 0.3; ; }
+.bannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
+.bannerContent { max-width: 65%; text-align: center; margin: 0 auto; }
+.bannerContent div { display: flex; justify-content: center; margin: 30px 0 0 0; }
+
+/* technologyWork css */
+.technologyWork { position: relative; z-index: 1; overflow: clip; }
+.technologyWork:before { content: ''; position: absolute; width: 100%; height: 150%; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); top: 0; left: 0; z-index: -1; transform: rotateY(180deg); }
+.technologyWorkInner { position: relative; padding: 120px 0 0 0; max-width: 90%; margin-left: auto; }
+.technologyWorkInner:before { content: ''; position: absolute; width: 2px; height: 100%; background-color: #8fbfef8f; top: 0; left: -10%; }
+.technologyWorkContent { margin: 60px 0 0 0; display: flex; align-items: center; gap: 60px; }
+.technologyWorkVideo { height: 530px; width: 430px; }
+.technologyWorkVideo video { width: 100%; height: 100%; object-fit: cover; }
+.technologyWorkText { width: 45%; }
+
+/* videoWrap css */
+.lineWrap { transition: all 0.4s ease; opacity: 1; visibility: visible; }
+.lineWrap.hidden { opacity: 0; visibility: hidden; }
+.lineWrap>span { display: block; width: 80%; height: 4px; background-color: var(--colorWhite); }
+.lineWrap>span>span { display: block; width: 0%; height: 100%; background-color: var(--colorPrimary); }
+.videoWrap { height: 100vh; width: 100%; position: relative; display: flex; align-items: flex-end; padding-bottom: 90px; background-color: #011132; }
+.videoList { width: 100%; height: 100%; position: absolute; top: 0; }
+.videoDiv { width: 100%; height: 100%; position: absolute; opacity: 0.6; visibility: hidden; }
+.videoDiv.active { opacity: 1; visibility: visible; }
+.videoDiv:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: #24446E; top: 0; left: 0; }
+.videoList video { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: soft-light; }
+.videoWrap .heading9xl { position: absolute; left: calc((100% - 1320px + 24px) / 2); width: 40%; top: 100px; }
+.videoDetail .arrowLink { opacity: 0; visibility: hidden; transition: all 0.3s; }
+.videoDetailInner:hover .arrowLink { opacity: 1; visibility: visible; }
+.videoDetailInner { cursor: pointer; opacity: 0.5; transition: all 0.3s; }
+.activeSlide .videoDetailInner { cursor: pointer; opacity: 1; }
+
+/* needTurkey css */
+.needTurkey { position: relative; z-index: 1; overflow: clip; }
+.needTurkey:before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(161.91deg, #0452CE -6.31%, #97A2B2 34.09%, #F4F2EF 72.22%); z-index: -1; }
+.needTurkeyTop { display: flex; align-items: flex-end; justify-content: space-between; padding: 130px 0; }
+.needTurkeyTop .heading9xl { color: var(--colorBlack); width: 48%; margin: 0; }
+.needTurkeyTop .subTextXl { width: 48%; }
+.needTurkeyListing { display: flex; align-items: center; }
+.needTurkeyList { width: calc(100% / 3); position: relative; z-index: 1; }
+.needTurkeyList:before { content: ''; position: absolute; width: 100%; height: 250px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #4F82B5 100%); bottom: 0; left: 0; z-index: 0; transition: all 0.3s; }
+.needTurkeyImage img { width: 100%; height: 100%; object-fit: cover; }
+.needTurkeyImage { height: 550px; transition: all 0.3s; position: relative; z-index: -1; }
+.needTurkeyImage:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: #fff; opacity: 0.4; transition: all 0.3s; }
+.needTurkeyList:hover .needTurkeyImage:before { opacity: 0; }
+.needTurkeyContent { position: absolute; bottom: 0; left: 0; padding: 40px; z-index: 1; }
+.needTurkeyList:hover .needTurkeyImage { opacity: 1; }
+
+/*advantage and time line */
+.advantage { padding: 160px 0 0 0; }
+.advantageTop .heading7xl { color: var(--colorBlack); font-weight: 600; }
+.advantageTop .subTextLg { margin-top: 100px; }
+.timeLineWrapper { padding: 80px 0 0 0; display: flex; }
+.timeLineWrapper ul { margin-left: auto; padding: 0 0 120px 0; list-style: none; width: 60%; position: relative; }
+.timeLineWrapper ul li { width: 70%; padding: 50px; padding-left: 90px; position: relative; }
+.standForTop { max-width: 90%; margin-left: auto; }
+.timeLineBox { opacity: 0.5; transition: all 0.3s; }
+.in-view .timeLineBox { opacity: 1; }
+.gone-view .timeLineBox { opacity: 0.5; }
+.timeLineWrapper ul li .timeLineBox span { display: block; opacity: 0; visibility: hidden; transition: all 0.3s; margin: 22px 0 0 0; }
+.default-line { content: ""; position: absolute; left: 0; width: 1px; background: var(--colorBlack); opacity: 0.3; height: 100%; }
+.draw-line { width: 1px; height: 0; position: absolute; left: 0; background: var(--colorBlack); }
+.timeLineIndex { transition: all 0.3s; font-size: var(--fontxl); position: absolute; left: -25px; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background-color: #DADADA; border-radius: 50%; color: var(--colorWhite); font-size: 22px; font-weight: 500; }
+.in-view .timeLineIndex { opacity: 1; background-color: var(--colorPrimaryDark) }
+.gone-view .timeLineIndex { opacity: 1; background-color: #DADADA; }
+.in-view .timeLineBox span { opacity: 1 !important; visibility: visible !important; }
+.gone-view .timeLineBox span { opacity: 0 !important; visibility: hidden !important; }
+.iconWrap { position: absolute; right: 120%; top: 0; width: 200px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s; transform: scale(0); }
+.gone-view .iconWrap { opacity: 0; visibility: hidden; transform: scale(0); }
+.in-view .iconWrap { opacity: 1; visibility: visible; transform: scale(1); }
+.icon { position: sticky; top: 120px; }
+.helping { margin: 100px 0 120px 0; position: relative; z-index: 1; overflow: clip; }
+.helpingObject { position: absolute; top: 0; right: -100px; width: 350px; transform: translateX(100%); transition: ease-in-out 0.8s; }
+.in-viewport .helpingObject { transform: translateX(0); }
+.helpingDesc span { color: var(--colorBlack); }
+.helpingInner .col-lg-4:last-child { align-self: flex-end; }
+.helpingHeaing .heading2xl { margin: 26px 0 0 0; }
+.helpingDesc div { margin: 26px 0 0 0; }
+
+/* textOnly css */
+.textOnly { padding: 250px 0; background-color: #011132; overflow: clip; position: relative; }
+.textOnlyBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; mix-blend-mode: hard-light; opacity: 0.3; }
+.textOnlyBg img { width: 100%; height: 100%; }
+.textOnlyInner { position: relative; z-index: 1; max-width: 55%; margin: 0 auto; text-align: center; }
+.textOnlyInner h3 { color: var(--colorWhite); line-height: 1.5; padding-top: 65px; }
+.textOnlyInner h3:before { content: ''; position: absolute; background: url(../../images/double-quote.svg)center center no-repeat; width: 40px; aspect-ratio: 1; background-size: contain; top: 0; left: 50%; transform: translateX(-50%); }
+
+/* trustedPartner css */
+.trustedPartner { overflow-x: clip; }
+.trustedPartnerTop h3 { color: #4F82B5; text-align: center; position: relative; width: max-content; margin: 0 auto; padding: 0 30px; }
+.trustedPartnerTop h3:before { content: ''; position: absolute; width: 100vw; height: 1px; background-color: #4F82B5; left: 100%; top: 50%; }
+.trustedPartnerTop h3:after { content: ''; position: absolute; width: 100vw; height: 1px; background-color: #4F82B5; right: 100%; top: 50%; }
+.partnerLogoListing .swiper-wrapper { transition-timing-function: linear; }
+.partnerLogoListing { display: flex; align-items: center; justify-content: space-between; margin: 50px 0; }
+.partnerLogoList { width: 80px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.partnerLogoList img { width: 80px; aspect-ratio: 1; object-fit: contain; }

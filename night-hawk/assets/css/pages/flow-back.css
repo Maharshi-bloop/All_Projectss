@@ -1,0 +1,51 @@
+/* flow-bacl css */
+.flowback .textDesc { margin-top: 60px; padding: 0 0 100px 60px; }
+.flowback .textVideo { background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); padding: 150px 0 80px 0; }
+.flowback .textVideo:before { height: 250px; }
+.test-torque .textDesc { margin-top: 60px; padding: 0 0 100px 60px; }
+.test-torque .textVideo { background: transparent; padding: 150px 0 80px 0; }
+.test-torque .textVideo:before { height: 250px; }
+
+/* equipment css */
+.equipment { padding: 80px 0 120px 0; position: relative; z-index: 1; }
+.equipmentImageWrap { margin: 120px 0 0 0; }
+.equipmentImage { width: 100%; height: 100%; }
+.equipmentImage  img { width: 100%; height: 100%; object-fit: cover; }
+.equipmentHeading h3 { margin: 0; color: var(--colorBlack); }
+.equipmentHeading span { font-size: var(--font3xl); color: var(--colorPrimary); font-weight: 600; }
+.equipmentTop div .subTextLg { margin: 60px 0 0 0; }
+
+/* imageAccordian css */
+.imageAccordian { padding: 120px 0; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); }
+.imageAccordianTop .heading9xl { color: var(--colorBlack); }
+.imageAccordianWrap { margin: 50px 0 0 0; }
+.accordion-button::after { display: none; }
+
+/* accordianImage css */
+.accordianImage { position: absolute; min-height: 680px; }
+.accordianImageWrap { position: relative; min-height: 680px; overflow: clip; }
+.accordion-body strong { display: block; line-height: 1.3; font-weight: 500; margin: 0 0 15px 0; }
+.accordion-body span { color: #040000; opacity: 0.6; }
+.accordianWrap { height: 100%; background-color: #f4f2ef66; border-radius: 12px; overflow: hidden; }
+.accordion { background-color: transparent; height: 100%; display: flex; flex-direction: column; }
+.accordion-item { background-color: transparent; border-radius: 12px; overflow: clip; }
+.accordion-item button { color: var(--colorBlack); }
+.test-torque .accordion-item button { font-size: var(--fontXl); }
+.accordion-button { border-radius: 0; }
+button.accordion-button { background-color: transparent; padding: 50px 20px; border-radius: 0 !important; }
+.test-torque button.accordion-button { padding: 20px; border-radius: 0; }
+.test-torque .accordion-body { padding-bottom: 40px; }
+.accordion-button:not(.collapsed) { background-color: #ffffff; padding: 20px; box-shadow: none; color: var(--colorBlack) !important; border-radius: 0; }
+.test-torque .accordion-button:not(.collapsed) { padding: 30px 20px 20px; }
+.accordion-collapse { background-color: #fff; }
+.accordianImage { opacity: 0; visibility: hidden; transition: all 0.3s; }
+.accordianImage.active { opacity: 1; visibility: visible; }
+
+/* .accordion-item.activeAcco { background-color: #fff; } */
+.test-torque .accordion-item.activeAcco { height: unset; }
+.accordion-item { border: 0; border-bottom: 1px solid #00000033 !important; }
+.accordion-item:last-child { border: none !important; }
+
+/* headTextOnly css */
+.headTextOnly { padding: 50px 0 100px; border-top: 1px solid #00000033; }
+.headTextOnly h3 { color: #000; }

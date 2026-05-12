@@ -1,0 +1,204 @@
+/* font declaration */
+
+/* Montserrat */
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-ExtraBold.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-BoldItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-BlackItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Black.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-LightItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Medium.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Italic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-MediumItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-Thin.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-ThinItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('../webfonts/Montserrat/Montserrat-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/Montserrat/Montserrat-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+
+/* Travelia */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face { font-family: 'Travelia Black Exp'; src: url('../webfonts/Travelia/Travelia-BlackExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-BlackExpanded.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Exp'; src: url('../webfonts/Travelia/Travelia-BoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-BoldExpanded.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Exp'; src: url('../webfonts/Travelia/Travelia-Expanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-Expanded.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Black Exp'; src: url('../webfonts/Travelia/Travelia-BlackExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-BlackExpanded.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Exp'; src: url('../webfonts/Travelia/Travelia-BoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-BoldExpanded.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Exp'; src: url('../webfonts/Travelia/Travelia-Expanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-Expanded.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia ExtBd Exp'; src: url('../webfonts/Travelia/Travelia-ExtraBoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-ExtraBoldExpanded.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia ExtBd Exp'; src: url('../webfonts/Travelia/Travelia-ExtraBoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-ExtraBoldExpanded.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Light Exp'; src: url('../webfonts/Travelia/Travelia-LightExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-LightExpanded.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Light Exp'; src: url('../webfonts/Travelia/Travelia-LightExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-LightExpanded.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Med Exp'; src: url('../webfonts/Travelia/Travelia-MediumExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-MediumExpanded.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia Med Exp'; src: url('../webfonts/Travelia/Travelia-MediumExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-MediumExpanded.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia SemBd Exp'; src: url('../webfonts/Travelia/Travelia-SemiBoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-SemiBoldExpanded.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Travelia SemBd Exp'; src: url('../webfonts/Travelia/Travelia-SemiBoldExpanded.woff2') format('woff2'), url('../webfonts/Travelia/Travelia-SemiBoldExpanded.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+
+/* common css */
+:root { --travelia: 'Travelia Exp', sans-serif; --montserat: 'Montserrat', sans-serif; --primaryColor: #FF4E00; --bgColor: #01001A; --textColor: #D9D9D9; --whiteColor: #FFFFFF; --blackColor: #000; --smallFont: 14px; --normalFont: 16px; --xNormalFont: 18px; --mediumFont: 20px; --xMediumFont: 22px; --largeFont: 40px; --xLargeFont: 50px; --xxLargeFont: 67px; --border: 2px; --slant: .5em; --cards: 4; --cardTopPadding: 18px; --cardMargin: 4vw; }
+body { font-family: var(--travelia); margin: 0; padding: 0; box-sizing: border-box; background-color: var(--bgColor) !important; }
+.primaryBtn { background-color: var(--primaryColor); color: var(--whiteColor); padding: 12px 32px; font-family: var(--montserat); font-size: var(--xNormalFont); padding: 12px 32px; text-decoration: none; display: inline-block; position: relative; border: none; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); transition: all 0.3s; }
+.primaryBtn:hover { color: var(--whiteColor); filter: drop-shadow(0px 0px 10px var(--primaryColor)); }
+.primaryBrdrBtn { color: var(--whiteColor); font-family: var(--montserat); font-size: var(--xNormalFont); padding: 12px 32px; text-decoration: none; display: inline-block; border: none; color: var(--whiteColor); background: linear-gradient(to bottom left, var(--primaryColor) 50%, #0000 50.1%) top right, linear-gradient(to top right, var(--primaryColor) 50%, #0000 50.1%) bottom left; background-size: calc(var(--slant) + 1.3 * var(--border)) calc(var(--slant) + 1.3 * var(--border)); background-repeat: no-repeat; box-shadow: 0 0 0 200px inset var(--s, #0000), 0 0 0 var(--border) inset var(--primaryColor); clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant))); transition: all 0.3s, background-size 0.3s; }
+.primaryBrdrBtn:hover { background-size: 100% 100%; color: var(--whiteColor); }
+.bannerHeading { font-family: var(--travelia); font-size: var(--xxLargeFont); color: var(--whiteColor); text-transform: uppercase; display: inline-block; font-weight: 400; margin: 0; }
+.bannerHeading span { color: var(--primaryColor); }
+.sectionHeading { font-family: var(--travelia); font-size: var(--xLargeFont); color: var(--whiteColor); text-transform: uppercase; display: inline-block; font-weight: 400; margin: 0; }
+.sectionHeading span { color: var(--primaryColor); }
+.subHeading { font-family: var(--travelia); font-size: var(--largeFont); color: var(--whiteColor); text-transform: uppercase; display: inline-block; font-weight: 400; }
+.subHeading span { color: var(--primaryColor); }
+.titleHeading { font-family: var(--travelia); font-size: var(--xMediumFont); color: var(--textColor); display: inline-block; font-weight: 400; }
+.titleHeading span { color: var(--primaryColor); }
+.description { font-family: var(--montserat); font-size: var(--mediumFont); color: var(--textColor); display: inline-block; font-weight: 400; }
+.smallDescription { font-family: var(--montserat); font-size: var(--normalFont); color: var(--textColor); display: inline-block; font-weight: 400; }
+.home { position: relative; z-index: 1; }
+.homebg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: var(--bgColor); opacity: 0.3; background-repeat: repeat-y; }
+.homebg img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: screen; }
+.upperCase { text-transform: uppercase; }
+.text-center { text-align: center; }
+.img-fluid { max-width: 100%; height: auto }
+img { vertical-align: middle; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+/* Header css */
+header { position: fixed; top: 0; left: 0; width: 100%; transition: all 0.3s; z-index: 9; padding: 20px 0; pointer-events: none; }
+.headerInner { justify-content: space-between; }
+.headerInner, .headeroption { display: flex; align-items: center; }
+header.stickyHeader { background-color: #1c1b321c; backdrop-filter: blur(15px); padding: 10px 0; }
+header.stickyHeader .logo { transform: scale(0.8); }
+.logo { transition: all 0.3s; transform-origin: left center; pointer-events: all; }
+.headerCta { margin-left: 25px; pointer-events: all; }
+.headeroption ul a { pointer-events: all; transition: all 0.3s; }
+.headeroption ul a:hover { color: var(--primaryColor); }
+.toggleBtn { width: 50px; height: 50px; border: 2px solid var(--primaryColor); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px 0; box-sizing: border-box; position: relative; background-color: transparent; border-radius: 50%; display: none; }
+
+/* .toggleBtn::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--primaryColor); width: calc(100% + 4px); height: calc(100% + 4px); border-radius: 50%; z-index: -1; }
+.toggleBtn::after { content: ''; position: absolute; top: 50%; left: 39%; transform: translate(-50%, -50%); background-color: #0f1014; width: 100%; height: 100%; border-radius: 50%; z-index: -1; } */
+.toggleBtn span { width: 26px; height: 2px; background-color: var(--whiteColor); display: block; }
+@media (min-width:769px) {
+	.headeroption > ul { display: flex; align-items: center; margin: 0; padding: 0; list-style: none; }
+	.headeroption ul a { display: inline-block; padding: 0 25px; text-decoration: none; color: var(--whiteColor); font-size: var(--xNormalFont); position: relative; }
+	.headeroption ul a:before { content: ""; position: absolute; width: 0; height: 2px; background-color: var(--primaryColor); bottom: 0; left: 50%; transform: translateX(-50%); transition: all 0.3s; border-radius: 20px; }
+	.headeroption ul .active a:before { width: 70% }
+}
+
+/* headingButton css */
+.headingButton { position: relative; overflow-x: clip; }
+.headingButtonInner { width: 75%; margin: 0 auto; position: relative; }
+.headingButtonInner:before { content: ''; position: absolute; top: -300px; background: url(../images/wave.webp) center center no-repeat; width: 850px; height: 1300px; background-size: contain; right: calc(100vw - 750px); }
+.headingButtonInner:after { content: ''; position: absolute; top: -300px; background: url(../images/wave.webp) center center no-repeat; width: 850px; height: 1300px; background-size: contain; left: calc(100vw - 750px); transform: rotateY(180deg); }
+.headingButton::before, .headingButton::after { content: ''; position: absolute; top: 50%; width: 350px; height: 220px; background: linear-gradient(90deg, #B2058C 17%, #C51768 22%, #D72848 28%, #E5362D 34.01%, #F14019 41.01%, #F8480A 48.01%, #FD4C02 57.01%, #FF4E00 72.01%, #F8C031 100.02%); filter: blur(200px); }
+.headingButtonInner .bannerHeading { display: block }
+.headingButton::before { left: -200px; }
+.headingButton::after { right: -200px; }
+.headingButtonInner .primaryBrdrBtn { margin: 48px 0 20px; }
+.headingButtonInner span { display: block; }
+
+/* footer css */
+.footerInner { margin: 70px 0 0 0; padding: 70px 0 0 0; border-top: 1px solid #ffffff80; }
+.footerLogoOption { display: flex; align-items: flex-start; }
+.footerLogoWrap ul { display: flex; list-style: none; margin: 20px 0 0 0; padding: 0; }
+.footerLogoWrap ul li a { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(90deg, #B2058C 0%, #FF4E00 49.5%, #F8C031 100%); margin: 0 20px 0 0; }
+.footerOption { margin: 0 0 0 120px; }
+.footerInner .row { justify-content: space-between; }
+.footerOption ul { column-count: 2; list-style: none; margin: 0; padding: 0; gap: 90px; }
+.footerOption ul li a { text-decoration: none; color: var(--whiteColor); padding: 0 0 20px 0; display: inline-block; }
+.locOtherWrapper { display: flex; justify-content: space-between; }
+.locOtherWrapper { display: flex; justify-content: space-between; }
+span.locationIcon { display: block; margin: 0 8px 0 0; }
+.location { display: flex; align-items: flex-start; color: var(--whiteColor); }
+.otherUl ul { margin: 0; padding: 0; list-style: none; }
+.otherUl ul a { text-decoration: none; color: var(--whiteColor); display: inline-block; padding: 0 0 12px 0; }
+.otherUl ul a span { margin: 0 12px 0 0; }
+.copyRight { display: flex; justify-content: space-between; margin: 50px 0 0 0; padding: 32px 0; border-top: 1px solid rgb(255 255 255 / 50%); }
+.copyRight span { color: var(--whiteColor); font-size: var(--smallFont); }
+.copyRight a { width: 120px; }
+.copyRight a img { width: 100%; }
+
+/* form css */
+.FormWrapper { padding: 80px; position: relative; border-radius: 48px; border: 1px solid rgb(255 255 255 / 20%); background: linear-gradient(180deg, rgba(217, 217, 217, 0.2) 0%, rgba(229, 229, 229, 0) 19.04%, rgba(235, 235, 235, 0) 84.82%, rgba(255, 255, 255, 0.15) 100%); margin-top: -120px; box-sizing: border-box; }
+.FormWrapper:before { content: ''; position: absolute; bottom: -20%; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg, #B2058C 17%, #C51768 22%, #D72848 28%, #E5362D 34.01%, #F14019 41.01%, #F8480A 48.01%, #FD4C02 57.01%, #FF4E00 72.01%, #F8C031 100.02%); width: 80%; height: 200px; filter: blur(90px); border-radius: 50%; opacity: 0.8; }
+.formLottie { position: absolute; top: -75px; right: -75px; }
+.formGroup label { display: none; }
+.formGroup input, .formGroup select, .formGroup textarea { width: 100%; background-color: transparent; padding: 12px 16px; outline: none; border: none; border-bottom: 1px solid #ffffff80; margin: 0 0 16px 0; font-family: 'Travelia Exp'; color: var(--whiteColor); font-size: 18px; box-sizing: border-box; }
+.formGroup input::placeholder, .formGroup textarea::placeholder { color: var(--whiteColor); }
+.FormWrapper .primaryBtn { text-align: center; margin: 80px auto 0; display: flex; justify-content: center; width: max-content; }
+select option { color: var(--blackColor) }
+.FormWrapper input[type="submit"] { cursor: pointer; }
+.formGroup { position: relative; }
+.formGroup span { display: block; }
+.wpcf7-not-valid-tip { position: absolute; bottom: -6px; }
+.wpcf7-response-output { background-color: red; border: none !important; color: var(--whiteColor); }
+.wpcf7 form.sent .wpcf7-response-output { background-color: rgb(4, 90, 4); }
+@media (min-width:1920px) {
+	.headingButtonInner:before { right: calc(100vw - 900px); }
+	.headingButtonInner:after { left: calc(100vw - 900px); transform: rotateY(180deg); }
+}
+@media (max-width:1440px) {
+	.formLottie { position: absolute; top: -75px; right: -55px; }
+}
+@media (max-width:1366px) {
+	:root { --xxLargeFont: 47px; --largeFont: 26px; --xLargeFont: 34px; }
+	.titleHeading { font-size: var(--xNormalFont); }
+	.headingButtonInner { width: 85%; }
+	.formLottie img { width: 100%; height: 100%; }
+	.formLottie { position: absolute; top: -55px; right: -15px; width: 100px; height: 100px; }
+	.FormWrapper { padding: 40px; }
+	.formGroup input, .formGroup select, .formGroup textarea { font-size: 16px; }
+}
+@media (max-width:1280px) {
+	.footerOption { margin: 0 0 0 70px; }
+	.footerOption ul { gap: 40px }
+}
+@media (max-width:1024px) {
+	:root { --xxLargeFont: 44px; }
+	.logo { width: 160px; }
+}
+@media (max-width:768px) {
+	:root { --xxLargeFont: 40px; --largeFont: 24px; --xLargeFont: 30px; }
+	.textDescInner { width: 100%; }
+	.locOtherWrapper { margin: 20px 0 0 0; }
+	.footerOption ul { display: flex; column-count: unset; flex-wrap: wrap; gap: 0; justify-content: center; }
+	.footerLogoOption { justify-content: center; }
+	.footerOption ul li a { padding: 12px 20px; }
+	.headeroption { position: fixed; top: 0; right: 0; display: flex; flex-direction: column; height: 100vh; width: 50%; background-color: var(--bgColor); box-sizing: border-box; padding: 20px; justify-content: center; transform: translateX(100%); transition-delay: 0.4s; transition: all 0.3s; }
+	.headeroption ul { list-style: none; margin: 0; padding: 0; }
+	.headeroption .headerCta { margin: 12px 0 0 0; display: block; width: 100%; }
+	.headeroption .headerCta a { width: 80%; margin: 0 auto; display: flex; justify-content: center; box-sizing: border-box; }
+	.headeroption ul a { display: flex; justify-content: center; text-decoration: none; color: var(--whiteColor); padding: 12px 0; }
+	.headerRight { position: fixed; top: 0; right: 0; width: 100%; height: 100%; background-color: #000000b0; opacity: 0; visibility: hidden; transition: all 0.3s; }
+	.headerRight.activeSubMenu { opacity: 1; visibility: visible; }
+	.activeSubMenu .headeroption { transform: translateX(0); }
+	.scrollOff { overflow-y: hidden; }
+	.toggleBtn { display: flex; }
+	.headingButtonInner { width: 100%; }
+	.otherUl ul { display: flex; }
+	.otherUl ul li a { padding: 0 16px 0 0; }
+	.headingButtonInner:before, .headingButtonInner:after { opacity: 0.7; }
+	.FormWrapper { margin-top: 0; width: 75%; margin: 0 auto; }
+}
+@media (max-width:480px) {
+	:root { --xxLargeFont: 37px; --xLargeFont: 32px; --largeFont: 22px; --xMediumFont: 18px; }
+	.description { font-size: var(--smallFont); }
+	.logo { width: 150px; }
+	.headeroption { width: 100%; }
+	.footerInner { margin: 30px 0 0 0; }
+	.headingButton::before, .headingButton::after { top: 35%; }
+	.footerLogoOption, .locOtherWrapper { flex-direction: column; }
+	.footerOption { margin: 50px 0 0 0; }
+	.footerLogoOption { align-items: center; }
+	.headingButton::before { left: -150px; }
+	.headingButton::after { right: -150px; }
+	.headingButton::before, .headingButton::after { width: 200px; height: 200px; filter: blur(130px); }
+	.headingButtonInner .bannerHeading { font-size: var(--xLargeFont) !important; }
+	.headingButton { padding: 100px 0 150px 0; }
+	.location span:last-child { width: 100%; margin: 0 0 20px 0; }
+	.location span:last-child br { display: none; }
+	.location span, .otherUl ul li a { font-size: var(--smallFont); }
+	.otherUl ul { justify-content: space-between; }
+	.copyRight { flex-direction: column; justify-content: center; align-items: center; }
+	.FormWrapper { width: 100%; border-radius: 30px; }
+}

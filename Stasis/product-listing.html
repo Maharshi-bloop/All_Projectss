@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing | Stasis</title>
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/pages/product-listing.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="">
+    <div class="pageWrap">
+
+        <header>
+            <div class="container-xl">
+                <div class="headerInner">
+                    <div class="headerWrap">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="assets/images/stasis-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="headerOption">
+                            <div class="headerUl">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">MPD Training</a></li>
+                                    </ul>
+                                    <div class="mobileCta desktopNone">
+                                        <a href="#">contact <i class="ri-arrow-right-up-long-line"></i></a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="headerCta mobileNone">
+                            <a href="#" class="primaryBtn">contact <i class="ri-arrow-right-up-long-line"></i></a>
+                        </div>
+                        <div class="toggleBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="productListingBanner">
+                <div class="container-xl">
+                    <div class="productListingBannerInner">
+                        <h1 class="productListingBannerHeading">
+                            <span class="lineText">PRODUCTS</span>
+                            <span>
+                                BUILT FOR PURPOSE
+                            </span>
+                        </h1>
+                        <div class="productListingBannerSubText">
+                            <span class="subTextMd">Explore Stasis’ engineered equipment portfolio, built in-house and
+                                backed by vertically integrated manufacturing, supply chain oversight, and field-proven
+                                service support.</span>
+                            <a href="#" class="primaryBtn">VIEW PRODUCTS <i class="ri-arrow-down-long-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="productListingWrapper">
+                <div class="container-xl">
+                    <div class="productListingWrapperInner">
+                        <div class="productListingWrapperTop">
+                            <!-- <div class="leftTop">
+                                <span>Products</span>
+                                <select name="product" id="product">
+                                    <option value="all">All</option>
+                                    <option value="product1">product 1</option>
+                                    <option value="product2">product 2</option>
+                                    <option value="product3">product 3</option>
+                                </select>
+                            </div> -->
+                            <div class="rightTop">
+                                <span><i class="ri-search-line"></i></span>
+                                <input type="text" placeholder="Search Products">
+                            </div>
+                        </div>
+                        <div class="productListingBox">
+                            <div class="productCataCol mobileNone">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="accordianWrapper">
+                                            <a href="#" id="all">All</a>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                            MPD Control Systems
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#">Helix™ Intelligent MPD
+                                                                        Control System</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Hydra-Balance</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                            Chokes
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the second item's accordion body.</strong>
+                                                            It is hidden by default, until the collapse plugin adds the
+                                                            appropriate classes that we use to style each element. These
+                                                            classes control the overall appearance, as well as the
+                                                            showing and hiding via CSS transitions. You can modify any
+                                                            of this with custom CSS or overriding our default variables.
+                                                            It's also worth noting that just about any HTML can go
+                                                            within the <code>.accordion-body</code>, though the
+                                                            transition does limit overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                            aria-expanded="false" aria-controls="collapseThree">
+                                                            Manifolds
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingThree"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden by default, until the collapse plugin adds the
+                                                            appropriate classes that we use to style each element. These
+                                                            classes control the overall appearance, as well as the
+                                                            showing and hiding via CSS transitions. You can modify any
+                                                            of this with custom CSS or overriding our default variables.
+                                                            It's also worth noting that just about any HTML can go
+                                                            within the <code>.accordion-body</code>, though the
+                                                            transition does limit overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="productCataWrap">
+                                            <div class="productCata">
+                                                <strong>MPD Control Systems</strong>
+                                                <span class="subTextBase">Explore Stasis’ complete MPD product line,
+                                                    including our
+                                                    proprietary
+                                                    control systems, trailer-mounted delivery solutions, and
+                                                    field-proven
+                                                    components engineered to meet the demands of complex wells.</span>
+                                                <i>
+                                                    2 Products
+                                                </i>
+                                                <div class="swiperContller" data-target="cata1">
+                                                    <div class="pre"><i class="ri-arrow-left-long-line"></i></div>
+                                                    <div class="next"><i class="ri-arrow-right-long-line"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="productCata">
+                                                <strong>MPD Control Systems</strong>
+                                                <span class="subTextBase">Explore Stasis’ complete MPD product line,
+                                                    including our
+                                                    proprietary
+                                                    control systems, trailer-mounted delivery solutions, and
+                                                    field-proven
+                                                    components engineered to meet the demands of complex wells.</span>
+                                                <i>
+                                                    2 Products
+                                                </i>
+                                                <div class="swiperContller" data-target="cata2">
+                                                    <div class="pre"><i class="ri-arrow-left-long-line"></i></div>
+                                                    <div class="next"><i class="ri-arrow-right-long-line"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="productCata">
+                                                <strong>MPD Control Systems</strong>
+                                                <span class="subTextBase">Explore Stasis’ complete MPD product line,
+                                                    including our
+                                                    proprietary
+                                                    control systems, trailer-mounted delivery solutions, and
+                                                    field-proven
+                                                    components engineered to meet the demands of complex wells.</span>
+                                                <i>
+                                                    2 Products
+                                                </i>
+                                                <div class="swiperContller" data-target="cata3">
+                                                    <div class="pre"><i class="ri-arrow-left-long-line"></i></div>
+                                                    <div class="next"><i class="ri-arrow-right-long-line"></i></div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="productDetailOuter" data-target="product1">
+                                            <div class="container-xl">
+                                                <div class="productDetailInner">
+                                                    <span class="popUpCloseBtn"><i
+                                                            class="ri-close-large-line"></i></span>
+
+                                                    <div class="popupContent">
+                                                        <div class="productHead">
+                                                            <div>
+                                                                <span>MPD Control Systems</span>
+                                                                <h4 class="heading2xl">Helix™ Intelligent MPD Control
+                                                                    System</h4>
+                                                            </div>
+
+                                                            <div class="productPopUpImage">
+                                                                <img src="assets/images/single-chock.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="productMoreDetail">
+                                                            <div class="moreDetailTop">
+                                                                <span class="subTextBase">Helix is an in-house
+                                                                    engineered system that delivers precise annular
+                                                                    pressure control by managing surface backpressure.
+                                                                    Scalable and flexible, it supports rig circulation,
+                                                                    MPD operations, and broader applications like well
+                                                                    control and frac flowback—ensuring safe, efficient
+                                                                    performance in any environment.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">DOWNLOADS</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">PRoduct Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">SPEC Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Brochure <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="moreDetailBottom">
+                                                                <h3 class="subTextBase">FEATURES & BENEFITS</h3>
+                                                                <div class="moreDetailListing">
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">01</span>
+                                                                        <span class="subTextSm">Advanced proprietary
+                                                                            control algorithms deliver real-time
+                                                                            precision and accuracy</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">02</span>
+                                                                        <span class="subTextSm">24/7 remote support
+                                                                            enables rapid response times and intuitive
+                                                                            system tuning</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">03</span>
+                                                                        <span class="subTextSm">Robust fault management
+                                                                            detects issues early and provides automated
+                                                                            corrective actions to minimize downtime and
+                                                                            maintain operational continuity</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">04</span>
+                                                                        <span class="subTextSm">Compatible with any
+                                                                            choke and integrates seamlessly with
+                                                                            multiple motor types, boosting efficiency
+                                                                            and minimizing downtime </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">05</span>
+                                                                        <span class="subTextSm">Supports expansion
+                                                                            beyond two chokes and connects with
+                                                                            ancillary equipment for greater
+                                                                            scalability</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">06</span>
+                                                                        <span class="subTextSm">Plug-and-play cabling
+                                                                            ensures simplified installation and seamless
+                                                                            integration</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">07</span>
+                                                                        <span class="subTextSm">Automated flow meter
+                                                                            calibration ensures consistent measurement
+                                                                            accuracy, reducing manual intervention and
+                                                                            improving reliability </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">08</span>
+                                                                        <span class="subTextSm">Overvoltage protection
+                                                                            with automatic de-contacting safeguards
+                                                                            personnel and equipment </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="productListing">
+                                            <div class="productList cata1product1">
+                                                <div class="productImage">
+                                                    <img src="assets/images/single-chock.png" alt="">
+                                                </div>
+                                                <div class="ProductShortDetail">
+                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                    <a href="#"><i class="ri-arrow-right-up-long-line"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="productList cata1product1">
+                                                <div class="productImage">
+                                                    <img src="assets/images/single-chock.png" alt="">
+                                                </div>
+                                                <div class="ProductShortDetail">
+                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                    <a href="#"><i class="ri-arrow-right-up-long-line"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="productList cata1product1">
+                                                <div class="productImage">
+                                                    <img src="assets/images/single-chock.png" alt="">
+                                                </div>
+                                                <div class="ProductShortDetail">
+                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                    <a href="#"><i class="ri-arrow-right-up-long-line"></i></a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="productListingRow">
+                                                <div class="swiper cata1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product1">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product2">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product2">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="productListingRow">
+                                                <div class="swiper cata2">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata2product1">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata2product2">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata2product3">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata2product4">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="productListingRow">
+                                                <div class="swiper cata3">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata3product1">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productCataCol desktopNone">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="productCataWrap">
+                                            <div class="productCata">
+                                                <strong>MPD Control Systems</strong>
+                                                <span class="subTextBase">Explore Stasis’ complete MPD product line,
+                                                    including our
+                                                    proprietary
+                                                    control systems, trailer-mounted delivery solutions, and
+                                                    field-proven
+                                                    components engineered to meet the demands of complex wells.</span>
+                                                <i>
+                                                    2 Products
+                                                </i>
+                                                <div class="swiperContller" data-target="cata1">
+                                                    <div class="pre"><i class="ri-arrow-left-long-line"></i></div>
+                                                    <div class="next"><i class="ri-arrow-right-long-line"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="productDetailOuter" data-target="product1">
+                                            <div class="container-xl">
+                                                <div class="productDetailInner">
+                                                    <span class="popUpCloseBtn"><i
+                                                            class="ri-close-large-line"></i></span>
+
+                                                    <div class="popupContent">
+                                                        <div class="productHead">
+                                                            <div>
+                                                                <span>MPD Control Systems</span>
+                                                                <h4 class="heading2xl">Helix™ Intelligent MPD Control
+                                                                    System</h4>
+                                                            </div>
+
+                                                            <div class="productPopUpImage">
+                                                                <img src="assets/images/single-chock.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="productMoreDetail">
+                                                            <div class="moreDetailTop">
+                                                                <span class="subTextBase">Helix is an in-house
+                                                                    engineered system that delivers precise annular
+                                                                    pressure control by managing surface backpressure.
+                                                                    Scalable and flexible, it supports rig circulation,
+                                                                    MPD operations, and broader applications like well
+                                                                    control and frac flowback—ensuring safe, efficient
+                                                                    performance in any environment.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">DOWNLOADS</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">PRoduct Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">SPEC Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Brochure <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="moreDetailBottom">
+                                                                <h3 class="subTextBase">FEATURES & BENEFITS</h3>
+                                                                <div class="moreDetailListing">
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">01</span>
+                                                                        <span class="subTextSm">Advanced proprietary
+                                                                            control algorithms deliver real-time
+                                                                            precision and accuracy</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">02</span>
+                                                                        <span class="subTextSm">24/7 remote support
+                                                                            enables rapid response times and intuitive
+                                                                            system tuning</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">03</span>
+                                                                        <span class="subTextSm">Robust fault management
+                                                                            detects issues early and provides automated
+                                                                            corrective actions to minimize downtime and
+                                                                            maintain operational continuity</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">04</span>
+                                                                        <span class="subTextSm">Compatible with any
+                                                                            choke and integrates seamlessly with
+                                                                            multiple motor types, boosting efficiency
+                                                                            and minimizing downtime </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">05</span>
+                                                                        <span class="subTextSm">Supports expansion
+                                                                            beyond two chokes and connects with
+                                                                            ancillary equipment for greater
+                                                                            scalability</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">06</span>
+                                                                        <span class="subTextSm">Plug-and-play cabling
+                                                                            ensures simplified installation and seamless
+                                                                            integration</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">07</span>
+                                                                        <span class="subTextSm">Automated flow meter
+                                                                            calibration ensures consistent measurement
+                                                                            accuracy, reducing manual intervention and
+                                                                            improving reliability </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">08</span>
+                                                                        <span class="subTextSm">Overvoltage protection
+                                                                            with automatic de-contacting safeguards
+                                                                            personnel and equipment </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="productListing">
+                                            <div class="productListingRow">
+                                                <div class="swiper cata1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product1">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product2">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="productCataWrap">
+                                            <div class="productCata">
+                                                <strong>MPD Control Systems</strong>
+                                                <span class="subTextBase">Explore Stasis’ complete MPD product line,
+                                                    including our
+                                                    proprietary
+                                                    control systems, trailer-mounted delivery solutions, and
+                                                    field-proven
+                                                    components engineered to meet the demands of complex wells.</span>
+                                                <i>
+                                                    2 Products
+                                                </i>
+                                                <div class="swiperContller" data-target="cata1">
+                                                    <div class="pre"><i class="ri-arrow-left-long-line"></i></div>
+                                                    <div class="next"><i class="ri-arrow-right-long-line"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="productDetailOuter" data-target="product1">
+                                            <div class="container-xl">
+                                                <div class="productDetailInner">
+                                                    <span class="popUpCloseBtn"><i
+                                                            class="ri-close-large-line"></i></span>
+
+                                                    <div class="popupContent">
+                                                        <div class="productHead">
+                                                            <div>
+                                                                <span>MPD Control Systems</span>
+                                                                <h4 class="heading2xl">Helix™ Intelligent MPD Control
+                                                                    System</h4>
+                                                            </div>
+
+                                                            <div class="productPopUpImage">
+                                                                <img src="assets/images/single-chock.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="productMoreDetail">
+                                                            <div class="moreDetailTop">
+                                                                <span class="subTextBase">Helix is an in-house
+                                                                    engineered system that delivers precise annular
+                                                                    pressure control by managing surface backpressure.
+                                                                    Scalable and flexible, it supports rig circulation,
+                                                                    MPD operations, and broader applications like well
+                                                                    control and frac flowback—ensuring safe, efficient
+                                                                    performance in any environment.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">DOWNLOADS</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">PRoduct Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">SPEC Sheet <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Brochure <i
+                                                                                class="ri-arrow-right-up-long-line"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="moreDetailBottom">
+                                                                <h3 class="subTextBase">FEATURES & BENEFITS</h3>
+                                                                <div class="moreDetailListing">
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">01</span>
+                                                                        <span class="subTextSm">Advanced proprietary
+                                                                            control algorithms deliver real-time
+                                                                            precision and accuracy</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">02</span>
+                                                                        <span class="subTextSm">24/7 remote support
+                                                                            enables rapid response times and intuitive
+                                                                            system tuning</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">03</span>
+                                                                        <span class="subTextSm">Robust fault management
+                                                                            detects issues early and provides automated
+                                                                            corrective actions to minimize downtime and
+                                                                            maintain operational continuity</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">04</span>
+                                                                        <span class="subTextSm">Compatible with any
+                                                                            choke and integrates seamlessly with
+                                                                            multiple motor types, boosting efficiency
+                                                                            and minimizing downtime </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">05</span>
+                                                                        <span class="subTextSm">Supports expansion
+                                                                            beyond two chokes and connects with
+                                                                            ancillary equipment for greater
+                                                                            scalability</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">06</span>
+                                                                        <span class="subTextSm">Plug-and-play cabling
+                                                                            ensures simplified installation and seamless
+                                                                            integration</span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">07</span>
+                                                                        <span class="subTextSm">Automated flow meter
+                                                                            calibration ensures consistent measurement
+                                                                            accuracy, reducing manual intervention and
+                                                                            improving reliability </span>
+                                                                    </div>
+                                                                    <div class="moreDetailList">
+                                                                        <span class="moreDetailListIndex">08</span>
+                                                                        <span class="subTextSm">Overvoltage protection
+                                                                            with automatic de-contacting safeguards
+                                                                            personnel and equipment </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="productListing">
+                                            <div class="productListingRow">
+                                                <div class="swiper cata1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product1">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="productList cata1product2">
+                                                                <div class="productImage">
+                                                                    <img src="assets/images/single-chock.png" alt="">
+                                                                </div>
+                                                                <div class="ProductShortDetail">
+                                                                    <span>Helix™ Intelligent MPD Control System</span>
+                                                                    <a href="#"><i
+                                                                            class="ri-arrow-right-up-long-line"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ctaWrapper">
+                <div class="ctaWrapperShap">
+                    <img src="assets/images/cta-shap.png" alt="">
+                </div>
+                <div class="container-xl">
+                    <div class="ctaWrapperInner">
+                        <h4 class="heading6xl">24/7 MPD Support</h4>
+                        <span class="subTextLg">Our field-proven teams bring hands-on expertise and operational <br>
+                            discipline to every phase
+                            of your MPD project. Whether it's day or <br> night, we're on-site and on-call delivering
+                            guidance, reliability, and <br> peace of mind when it matters most.</span>
+                        <a href="#" class="primaryBtn">View SERVICES <i class="ri-arrow-right-up-long-line"></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container-xl">
+                <div class="footerInner">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="footerLeft">
+                                <div class="footerUl">
+                                    <ul>
+                                        <li><a href="#">Resources</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footerLogoUl">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/API-Logo.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/IADC--Logo.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/Top-Innovator-logo.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/bsi-logo.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/isnetworld-world.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footerLogo">
+                                    <div class="logoWrap">
+                                        <a href="#">
+                                            <img src="assets/images/stasis-logo.svg" alt="stasis-logo">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="linkedinIcon"><i class="ri-linkedin-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footerAddress">
+                                <div class="addBox">
+                                    <strong>CORPORATE OFFICE</strong>
+                                    <span>2301 Oil Center Ct, <br> Houston, Texas 77073</span>
+                                </div>
+                                <div class="addBox">
+                                    <strong>EMAIL</strong>
+                                    <span><a href="#">sales@stasisdrilling.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/pages/product-listing.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>

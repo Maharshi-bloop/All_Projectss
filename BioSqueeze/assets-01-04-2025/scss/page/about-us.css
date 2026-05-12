@@ -1,0 +1,2 @@
+.about-us .mainBanner { background: linear-gradient(118.76deg, #273553 22.41%, #0D1C3F 95.16%); z-index: 1; }
+.about-us .mainBannerInner:before { content: ''; position: absolute; bottom: 0; right: 0; width: 50vw; height: 100vh; background: linear-gradient(128deg, rgba(13, 28, 63, 0) 51.74%, #046A38 98.67%); z-index: -1; opacity: 0.4; }

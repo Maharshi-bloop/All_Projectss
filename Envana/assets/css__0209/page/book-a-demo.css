@@ -1,0 +1,10 @@
+.book-a-demo header .headerOption, .book-a-demo header .toggleBtn, .book-a-demo footer { display: none; }
+.bookAdemo { height: 100vh; position: relative; display: flex; align-items: center; }
+.bookAdemo:before { content: ''; position: absolute; width: 50vw; height: 100%; background: linear-gradient(208.89deg, #F79021 -14.29%, #DA1A5D 124.59%); z-index: -1; }
+.bookADemoContent { width: 89%; padding: 0 0 120px 0; }
+.bookADemoContent .headingxl { color: var(--colorWhite); }
+.bookADemoContent .heading3xl { margin: 20px 0; }
+.shapImg { width: 100%; transform: translateY(100%); transition: ease-in-out 0.8s; }
+.shapImg img { width: 100%; height: 100%; object-fit: contain; }
+.in-viewport  .shapImg { transform: translateY(0); }
+.shapGrp { display: flex; align-items: center; width: 50vw; position: fixed; bottom: 0; }

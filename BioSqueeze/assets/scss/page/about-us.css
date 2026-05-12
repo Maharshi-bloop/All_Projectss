@@ -1,0 +1,25 @@
+.about-us .mainBanner { background: linear-gradient(118.76deg, #273553 22.41%, #0D1C3F 95.16%); z-index: 1; }
+.about-us .mainBannerInner:before { content: ''; position: absolute; bottom: 0; right: 0; width: 50vw; height: 100vh; background: linear-gradient(128deg, rgba(13, 28, 63, 0) 51.74%, #046A38 98.67%); z-index: -1; opacity: 0.4; }
+.imageWithTextRightInner .textBlock { width: 60%; background-color: var(--bodyColor); padding: 40px; position: absolute; bottom: -25%; right: 0; }
+.imageWithTextRightInner { position: relative; }
+.imageWithTextRightHead .subHeading { padding: 20px 0 0 0; font-weight: 600; }
+.imageWithTextRightHead .greenLine:before { left: calc(100% + 30px); }
+.imageWithTextRight { padding: 70px 0 200px 0; }
+.imageWithTextRightInner .description > span { font-size: 26px; margin: 20px 0 40px 0; display: inline-block; }
+.photoSwiper { padding: 70px 0; }
+.photoSwiperImage { height: 500px; }
+.photoSwiperImage img { width: 100%; height: 100%; object-fit: cover; }
+.coreValue { padding: 70px 0; position: relative; z-index: 1; }
+.coreValueBgImage img { position: absolute; left: 0; bottom: 0; z-index: -1; width: 350px; }
+.coreValueHeading .subHeading::before { left: calc(100% + 30px); }
+.coreValueList { display: flex; align-items: flex-start; justify-content: space-between; font-family: 'Poppins'; padding: 25px 0; margin: 25px 0; border-top: 1px solid #3B414F; min-height: 140px; }
+.coreValueList:last-child { border-bottom: 1px solid #3B414F; }
+.valuesTitle { display: flex; align-items: center; width: 60%; margin: 0 20px 0 0; }
+.titleIcon { margin: 0 15px 0 0; }
+.valuesTitle span { font-size: 18px; font-weight: 600; }
+.coreValueContent { width: 100%; }
+.coreValueContent .smallDescription { line-height: 30px; }
+.currOprion { background: linear-gradient(298.76deg, #273553 31.07%, #0D1C3F 103.82%); padding: 90px 0; }
+.currOprion .currOprionContent, .currOprion .subHeading   { color: var(--whiteColor); }
+.currOprion .subHeading::before { left: 0; bottom: -15px; }
+.currOprion .description { line-height: 40px; margin: 0 0 30px 0; display: inline-block; }

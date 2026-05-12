@@ -1,0 +1,33 @@
+.education { background-color: #F8F8F8; }
+.filterWrapper { padding: 250px 0 150px 0; position: relative; z-index: 1; overflow: clip; }
+.filterWrapperTop .heading3xl { color: var(--colorBlack); width: 60%; margin: 0 auto; }
+.filterData .headingxl { font-size: var(--fontMd); }
+.filterBox { margin: 70px 0 0 0; }
+.filterBox ul { background-color: #fff; display: flex; margin: 0 auto 40px auto; justify-content: center; width: max-content; padding: 0 20px; }
+body.education { background-color: #F8F8F8; }
+.filterBox ul li { padding: 16px 32px; }
+.filterBox ul li a { transition: all 0.3s; }
+.filterBox ul li.active a { background: linear-gradient(208.89deg, #F79021 -14.29%, #DA1A5D 124.59%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.filterWrapperObject { position: absolute; right: -210px; top: 200px; }
+.filterWrapperObject2 { position: absolute; left: -110px; top: 350px; }
+.filterWrapperObject2 img { transform: translateX(-100%); transition: ease-in-out 0.8s; opacity: 0; visibility: hidden; }
+.filterWrapperObject img { transform: translateX(220%); transition: ease-in-out 0.8s; opacity: 0; visibility: hidden; }
+.filterWrapperObject .linearArrow { position: absolute; transform: translateX(220%) rotate(180deg); top: -49%; left: 1px; transition-delay: 0.3s; transform: all 0.3s; width: 75px; }
+.filterWrapper.in-viewport .filterWrapperObject img, .filterWrapper.in-viewport .filterWrapperObject2 img { transform: translateX(0); opacity: 1; visibility: visible; }
+.filterWrapper.in-viewport .filterWrapperObject .linearArrow { transform: translateX(0) rotate(180deg); }
+
+/*  */
+.progressSlideImage { width: 100%; height: 100%; border-radius: 6px; overflow: clip; }
+.progressSlideImage img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+.progressSlide { position: relative; height: 100%; }
+.progressSlideDesc { width: 60%; position: absolute; bottom: 0; left: 0; margin: 20px; background-color: var(--colorWhite); padding: 10px 20px; }
+.progressSlideDesc a { margin: 16px 0 0 0; display: inline-block; }
+.progressSlideDesc .headingxl { text-transform: unset; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; }
+.progressSlide:hover .progressSlideImage img { transform: scale(1.1); }
+.educationListing { margin: 40px 0 0 0; }
+.educationListing .headingxl { font-size: var(--fontMd); }
+.educationTopUl ul { display: flex; align-items: center; justify-content: center; padding: 15px 50px; background-color: var(--colorWhite); width: max-content; margin: 0 auto; }
+.educationTopUl ul li a { padding: 0 30px; transition: all 0.3s; }
+
+/*  */
+.educationFilter { margin: 0 0 70px 0; }

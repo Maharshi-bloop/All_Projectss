@@ -1,0 +1,176 @@
+@media (max-width:1280px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl { max-width: 1240px !important; }
+	nav li a { padding: 0 10px; }
+}
+@media (max-width:480px) {
+	:root { --font10xl: 44px; --font8xl: 36px; --font7xl: 32px; --font6xl: 34px; --font5xl: 28px; --font4xl: 26px; --font3xl: 28px; --font2xl: 20px; --fontXl: 20px; --fontLg: 16px; }
+	header { top: 10px; }
+	.mobileOnlyOption { display: block; }
+	.banner { align-items: flex-end; }
+	.bannerInner { width: 90%; padding: 0 0 80px 0; }
+	.introducingInner { width: 100%; }
+	.introducing { padding: 80px 0; }
+	.logoPrimary { width: 250px; }
+	.deskImage, .deskFooter { display: none; }
+	.mobileImage, .mobileFooter, .mobileBlock { display: block; }
+	.relativeImage { margin: 30px 0 0 0; }
+	.relaive { padding: 60px 0; }
+	.relaiveContent strong { position: relative; max-width: 40%; margin: 0 auto; text-align: center; }
+	.relaiveContent strong:before { content: ''; position: absolute; height: 81px; border-left: 1px dashed var(--colorWhite); opacity: 0.5; left: 50%; bottom: 100%; }
+	.relaiveContent span:before { display: none; }
+	.relaiveContent span { padding: 20px 0 0 0; margin: 0; text-align: center; }
+	.relaiveContent div { display: flex; justify-content: center; }
+	.advantage { padding: 230px 0 70px; }
+	.advantageObject { left: auto; bottom: 100%; width: 200px; right: 0; }
+	footer { padding: 50px 0 300px; background-color: #E7E7E7; }
+	.footerBg { height: 50%; }
+	.footerContactUl ul li a { padding: 6px 0; }
+	.footerContactUl { margin: 30px 0 40px 0; }
+	.footerSocialUl { margin: 0; }
+	.contactWrap { margin: 40px 0 0 0; padding: 40px 0 0 0; position: relative; }
+	.contactWrap:before { content: ''; position: absolute; width: 100vh; height: 1px; background-color: var(--colorPrimary); top: 0; left: -50px; }
+	footer { overflow-x: clip; }
+	.footerInner:before { display: none; }
+	.footerUl ul { gap: 30px; padding: 30px 0px; }
+	.footerUl { position: relative; margin: 30px 0 0 0; }
+	.footerUl:before { content: ''; position: absolute; width: 110vw; height: 1px; background-color: var(--colorPrimary); top: 0; left: -20px; }
+	.footerUl:after { content: ''; position: absolute; width: 110vw; height: 1px; background-color: var(--colorPrimary); bottom: 0; left: -20px; }
+	.relaiveContent { margin: 77px 0 0 0; }
+	.accoContent { display: none; }
+	.whatPowerAccordian { flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+	.oneAccordian { width: 48%; margin: 0; height: auto; border: 0; border-radius: 18px; background-color: transparent; flex-direction: column; }
+	.oneAccordian > .accoContentHeading { color: var(--colorWhite); margin: 10px 0; text-align: left; width: 100%; display: block; }
+	.oneAccordian > .accoContentHeading h3 { font-size: 16px; }
+	.oneAccordian > .accoContentHeading span { opacity: 0.4; }
+	.aboutBannerInner { max-width: 100%; }
+	.timeLineWrapper ul { width: 90%; }
+	.timeLineWrapper ul li { padding-block: 25px; }
+	.timeLineBox { padding-left: 50px; }
+	.timeLineWrapper ul li:first-of-type { padding-top: 70px !important; }
+	.accoContentCta { display: none; }
+	.ourTeamMember { background-color: var(--colorBlack); padding: 60px 0; }
+	.ourTeamMemberTop .heading8xl { color: var(--colorWhite); text-align: left; }
+	.accoheadingMobile { display: block; }
+	.accoheading { border-radius: 16px; background-color: var(--colorPrimary); width: 100%; height: 230px; }
+	.PopUpOpenBtn { display: block; }
+	.imageTextImgBox { width: 100%; height: 300px; }
+	.challengeBannerInner { width: 100%; margin-top: 0; }
+	.imageTextContentBox { max-width: 90%; margin: 0 auto; margin-top: -180px; padding: 30px 24px; border-radius: 16px; }
+	.headingText { padding: 60px 0; }
+	.headingTextInner .row { flex-direction: column-reverse; }
+	.headingBox { margin: 0; padding: 0; width: 90%; }
+	.headingBox:after { width: 48px; height: 48px; box-shadow: inset 0px 0px 0px 15px #ffffff, inset 0px 0px 0px 16px #000; right: -44px; left: auto; }
+	.headingBox:before { width: 1px; height: 100vh; bottom: auto; left: auto; top: -60px; right: -20px; }
+	@keyframes upDown {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-30vh); }
+	}
+	.textBox { width: 90%; }
+	.twoWayAdvantage { padding: 60px 0 140px 0px; overflow: clip; }
+	.twoWayAdvantageTop { width: 100%; }
+	.challenge-solution .timeLineContentBox { padding: 60px 0; }
+	.cta { padding: 120px 0; }
+	.insightListing .timeLineWrapper { display: block; padding: 0; margin: -80px 0 0 0; }
+	.insightListing .timeLineWrapper ul li:first-of-type { padding-top: 150px !important; }
+	.insightListing .timeLineWrapper ul { padding: 0; }
+	.dotWrapper, .contentWrapper { display: none; }
+	.technologyBanner { height: 100vh; align-items: flex-start; padding: 150px 0 0 0; }
+	.technologyBannerBg { width: 150%; bottom: 0; }
+	.technologyBannerBg:after { display: none; }
+	.technologyBannerBg:before { height: 70px; }
+	.technologyBannerImage { width: 220px; margin: 30px auto; }
+	.technologyBannerHeading { width: 80%; margin: 0 auto; }
+	.technologyBannerInner .col-lg-4:first-child h3.heading8xl { text-align: center; margin: 0; }
+	.technologyBannerHeading { width: 80%; margin: 0 auto; text-align: center; }
+	.technologyBannerImage:before { opacity: 0.2; }
+	.insightListing1 { padding: 0; }
+	.insightListingTop { width: 90%; }
+	.insightListing { padding: 50px 0 0; }
+	.microfractureInner { flex-direction: column; }
+	.microfractureContentBox { width: 100%; margin: 0 0 20px 0; }
+	.microfractureContent { padding: 0; margin: 100px 0 0 0; border-top: 1px solid #ffffff00; }
+	.grid3 { padding: 60px 0; }
+	.grid3List { display: flex; align-items: flex-start; padding: 20px 24px; justify-content: space-around; }
+	.grid3List * { text-align: left; }
+	.grid3Icon { width: 100px; height: auto; margin: 0; }
+	.grid3Content { margin: 0; width: calc(100% - 120px); }
+	.charts { padding: 60px 0; }
+	.chartsInner { display: flex; flex-direction: column; gap: 400px; }
+	.insightListingInner { display: none; }
+	.future-of-stimulation .imageText .heading3xl img { width: 190px; }
+	.imageTextContentBox .heading3xl br { display: none; }
+	.sustainability .imageTextContentBox { margin-top: -120px; }
+	.imgOnly { padding: 60px 0; }
+	.challengeBanner:before { height: 100px; }
+	.challengeBannerBg { height: 100%; }
+	.challengeBannerBg video { object-position: center; }
+	.resourcesListingUl ul { overflow-x: scroll; padding: 0 10px; }
+	.resourcesListingUl ul li a { white-space: nowrap; font-size: 16px; padding: 10px 20px; }
+	.resourcesListingUl ul li a:before, .resourcesListingUl ul li a:after { width: 16px; height: 16px; left: -8px; }
+	.resourcesListingUl ul li a:after { right: -8px; left: auto; }
+	.resourcesWrapper { padding: 300px 0 100px 0; }
+	.resourcesWrapperBg { width: 120%; top: 0px; right: 0; }
+	.resourcesList { height: 250px; }
+	.resourcesListContent { padding: 16px; }
+	.resourcesListContent .heading2xl { font-size: 18px; margin: 0; }
+	.resourcesListImage { opacity: 1; visibility: visible; }
+	.resourcesListingBoxs { margin: 70px 0 0 0; }
+	.getInTouch { height: auto; padding: 300px 0 60px 0; }
+	.formDesign { margin: 0; }
+	.getInTouchBg { height: 40%; top: -30px; }
+	.getInTouchInner { width: 100%; }
+	.getInTouchForm > .row { gap: 40px; }
+	.formDesign { padding: 30px; }
+	.formUl img { width: 50px; }
+	.mobileOnlyOption, .mobileOnly, .headerOption .headerCta { display: block !important; }
+	.headerWrap > .headerCta { display: none; }
+	.contactUl ul li a { color: #fff; font-weight: 300; font-size: 14px; text-align: center; }
+	.contactUl ul li a span { color: var(--colorSecondary) }
+	.contactUl ul { text-align: center; width: 70%; margin: 0 auto; }
+	.socialul ul { display: flex; align-items: center; justify-content: center; margin: 30px 0 0 0; gap: 10px; }
+	.socialul a { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: var(--colorSecondary); border-radius: 50%; color: var(--colorWhite); font-size: var(--fontMd); }
+	.openParentMenu .closeHeader { width: 0; opacity: 0; visibility: hidden; display: block; }
+	.openParentMenu .openHeader { width: 50px; opacity: 1; visibility: visible; }
+	.resourcesListingBox { margin-bottom: 50px; }
+	.technologyBanner { overflow-x: clip; }
+	.twoWayAdvantageImage img { transform: scale(1.35) translateX(-50%) !important; position: relative; left: 69%; margin-right: 0; }
+	br { display: none; }
+	.imageTextInner { width: 100%; }
+	.challengeBannerInner  .heading10xl { font-size: 40px; }
+	.introducingInner .heading8xl { width: 100%; text-align: center; }
+	.logoWrap { flex-direction: column; gap: 40px; padding: 70px 0 0 0; }
+	.logoWrap .heading4xl { margin: 0; padding: 0; text-align: center; width: 100%; }
+	.logoWrap .heading4xl:before { width: 1px; height: 100px; top: 100%; left: 50%; }
+	.logoPrimary { width: 100%; }
+	.aboutBanner { align-items: flex-start; padding: 200px 0 0 0; }
+	.aboutBannerBg { top: auto; bottom: 0; height: 50%; }
+	.aboutBannerBg:before { top: 40px; height: 100px; }
+	.deskBlock { display: none; }
+	.towAdvantageTitle { flex-direction: row; width: 93%; gap: initial; margin: 0 auto; }
+	.towAdvantageTitle h3 { width: 50%; }
+	.towAdvantageTitle .heading2xl { text-align: center; }
+	.swiperr-slide { position: relative; margin-bottom: 50px; }
+	.twoWayAdvantageSlide { display: flex; min-height: 210px; }
+	.twoWayAdvantageListing { margin-top: 65px; }
+	.twoWayAdvantageSlide > .subTextXl, .twoWayAdvantageSlideInner { padding: 55px 25px; text-align: center; height: auto; }
+	.swiperr { position: relative; z-index: 1; padding: 90px 0 0 0; }
+	.towAdvantageTitle h3 { width: 50%; }
+	.swiperr:before { content: ''; position: absolute; width: 50%; height: 100%; border-left: 1px dashed #fff; top: 0; border-right: 1px dashed #fff; left: 50%; transform: translateX(-50%); opacity: 0.5; }
+	.swiperr:after { content: ''; position: absolute; width: 14px; aspect-ratio: 1; background-color: #7D7D7D; border-radius: 50%; top: 0; left: 23.6%; box-shadow: 198px 0px 0px #7D7D7D; }
+	.slideIcon { top: -18px; }
+	.relaiveInner .heading7xl { text-align: center; width: 65%; margin: 0 auto; }
+	.headerOption { width: calc(100% - 24px); }
+	.future-of-stimulation .challengeBannerInner { width: 100%; }
+	.activeVideo { transform: scale(1); }
+	.microfractureContentImage { width: 100%; }
+}
+@media (max-width:400px) {
+	.relaiveContent { margin: 47px 0 0 0; }
+	.banner { height: 90vh }
+	.bannerInner { width: 100%; }
+	.headerOption { width: calc(100% - 24px); }
+	.swiperr:after { box-shadow: 182px 0px 0px #7D7D7D; left: 23.3%; }
+	.footerContactUl li:last-child { width: 82%; }
+	.wpcf7-response-output { font-size: 11px; margin: 0 0 0 10px !important; padding: 6px 0 0 0 !important; color: #07790b; }
+	.footerUl { margin: 50px 0 0 0; }
+}

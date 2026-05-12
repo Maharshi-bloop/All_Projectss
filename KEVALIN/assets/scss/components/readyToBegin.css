@@ -1,0 +1,22 @@
+.patient-reviews .readyToBegin,
+.book-appointment .readyToBegin {
+  margin: 120px 0;
+}
+
+.readyToBeginInner {
+  background-color: #003B4A;
+  padding: 100px 50px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .readyToBeginInner {
+    padding: 70px 50px;
+  }
+}
+.readyToBeginInner .sectionHeading {
+  display: block;
+}
+.readyToBeginInner .description {
+  color: #fff;
+  margin: 0 0 30px 0;
+}

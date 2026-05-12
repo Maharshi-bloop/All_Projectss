@@ -1,0 +1,27 @@
+@import "../global/typo";
+@import "../global/colors";
+
+
+.textImageWrapper {
+    .row {
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            margin-top: 40px;
+        }
+
+        .textImageImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: clip;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

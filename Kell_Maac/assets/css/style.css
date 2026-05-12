@@ -1,0 +1,341 @@
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-BoldIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldIt.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Bold.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-BoldCond.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldCond.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-BoldCond.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldCond.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Bold.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-BoldCondIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldCondIt.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-Cond.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Cond.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-BoldIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldIt.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-BoldCondIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-BoldCondIt.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Light.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-CondIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-CondIt.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-SemiboldIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-SemiboldIt.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Semibold.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Semibold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-Cond.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Cond.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Regular.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Regular.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Semibold.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Semibold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-Light.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Myriad Pro Cond'; src: url('../MYRIADPRO/MyriadPro-CondIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-CondIt.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Myriad Pro'; src: url('../MYRIADPRO/MyriadPro-SemiboldIt.woff2') format('woff2'), url('../MYRIADPRO/MyriadPro-SemiboldIt.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+
+/* common css */
+:root { --primaryColor: #3A54A5; --secondaryColor: #10945F; --whiteColor: #fff; --blackColor: #000; --font-12:12px; --font-14:14px; --font-16:16px; --font-20:20px; --font-22:22px; --font-24:24px; --font-30:30px; --font-38:38px; --font-48:48px; --font-60:60px; --font-300:300; --font-400:400; --font-500:500; --font-600:600; --font-700:700; --font-800:800; --font-900:900; --cards: 4; --cardTopPadding: 10px; --cardMargin: 30px; }
+.bannerHeading { font-size: var(--font-60); font-weight: var(--font-600); color: var(--whiteColor); }
+.subHeading, .primarySubHeading, .whiteSubHeading { font-size: var(--font-48); font-weight: var(--font-700); }
+.primarySubHeading, .primaryTitleText { color: var(--primaryColor); }
+.whiteTitleText, .subHeading, .titleText { color: var(--whiteColor); }
+.titleText, .primaryTitleText, .whiteTitleText { font-size: var(--font-30); font-weight: var(--font-700); }
+.titleTextSub { font-size: var(--font-24); color: var(--whiteColor); font-weight: var(--font-400); }
+.description { font-size: var(--font-16); font-weight: var(--font-400); color: var(--blackColor); display: block; }
+.secondaryBtn { font-size: var(--font-20); color: var(--whiteColor); font-weight: var(--font-500); background-color: var(--secondaryColor); border: 2px solid var(--secondaryColor); transition: all 0.3s; border-radius: 5px; text-decoration: none; display: inline-block; padding: 8px 25px; }
+.secondaryBtn:hover { color: var(--secondaryColor); background-color: var(--whiteColor); }
+.secondaryBrdrBtn { font-size: var(--font-20); color: var(--whiteColor); font-weight: var(--font-500); border: 2px solid var(--secondaryColor); background-color: transparent; border-radius: 5px; text-decoration: none; display: inline-block; padding: 8px 25px; transition: all 0.3s; }
+.secondaryBrdrBtn:hover { color: var(--secondaryColor); background-color: var(--whiteColor); }
+.width80 { width: 80%; margin: 0 auto; }
+body { margin: 0; padding: 0; box-sizing: border-box; font-family: "Myriad Pro"; }
+
+/* header css */
+header { position: fixed; top: 0; right: 0; left: 0; padding: 20px 0; z-index: 2; width: 100%; background-color: var(--whiteColor) }
+.page-header.is-sticky { position: fixed; box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1); padding: 8px 0; backdrop-filter: blur(10px); animation: slideDown 0.35s ease-out; }
+@keyframes slideDown {
+	from { transform: translateY(-100%); }
+	to { transform: translateY(0); }
+}
+.headerInner { display: flex; align-items: center; justify-content: space-between; }
+.headerOption ul { display: flex; margin: 0; padding: 0; list-style: none; }
+.headerOption ul li a { text-decoration: none; padding: 0 40px; color: #000; font-size: var(--font-20); }
+.headerNav { display: flex; align-items: center; }
+.headerNav .secondaryBtn { text-transform: uppercase; }
+header.is-sticky { position: fixed; box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1); padding: 8px 0; backdrop-filter: blur(10px); animation: slideDown 0.35s ease-out; }
+@keyframes slideDown {
+	from { transform: translateY(-100%); }
+	to { transform: translateY(0); }
+}
+
+/* banner css */
+section.banner { width: 100%; height: 100vh; position: relative; z-index: 1; }
+section.banner video { width: 100%; height: 100%; object-fit: cover; }
+.bannerInner { position: absolute; bottom: 95px; text-align: center; }
+.bannerInner span { display: block; }
+.banner:before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(to top, #000, transparent); }
+.bannerBtn { margin: 40px 0 0 0; }
+
+/* .ContainerWithRope { animation: comtainer1 10s linear infinite; transform-origin: center center; overflow: visible; }
+@keyframes comtainer1 {
+	0%, 50%, 100% { transform: rotate(0deg); }
+	25% { transform: rotate(4deg); }
+	75% { transform: rotate(-4deg); }
+} */
+
+/* .comtainer1 { animation: roteeContainer 10s linear infinite; }
+@keyframes roteeContainer {
+	0%, 100% { transform: translateX(-100%); }
+	50% { transform: translateX(100%); }
+} */
+.imageBox { border-radius: 10px; border: 10px solid var(--whiteColor); overflow: hidden; width: 100%; height: 100%; box-shadow: 6px 4px 20px#00000040; }
+.imageBox img { width: 100%; height: 100%; border-radius: 10px; }
+
+/* imageTextWrapper css */
+.imageTextWrapper { padding: 80px 0; }
+.imageTextWrapperInner .row { justify-content: space-between; align-items: center; }
+.imageTextWrapper .description { margin: 25px 0 40px 0; }
+
+/* postCardWrapper css */
+.postCardWrapper { padding: 85px 0; }
+.postCard { height: 100%; }
+.postImage { border-radius: 20px; overflow: hidden; height: 350px; }
+.postImage img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+.postCard:hover .postImage img { transform: scale(1.2); }
+.postDetail { height: calc(100% - 350px); display: flex; flex-direction: column; justify-content: space-between; padding: 30px 0 0 0; }
+.postCardWrapperTop { padding: 0 0 65px 0; }
+.readMoreBtn a { display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; color: var(--whiteColor); background-color: var(--secondaryColor); font-size: var(--font-12); position: relative; transition: all 0.3s; }
+.readMoreBtn { position: relative; margin: 20px 0 0 0; transition: all 0.3s; }
+.readMoreBtn:before { content: ''; position: absolute; top: 50%; left: 0; transform-origin: left center; width: 0; height: 1px; background-color: var(--secondaryColor); transition: all 0.3s; }
+.postCard:hover .readMoreBtn { padding: 0 0 0 50px; }
+.postCard:hover .readMoreBtn:before { width: 50px; }
+.postCardWrapperInner .row .col-lg-4 { margin: 0 0 45px 0; }
+
+/* whyChoose css */
+.whyChoose { background: linear-gradient(180deg, #3A54A5 -19.1%, rgba(0, 0, 0, 0.49) 55.36%, #000000 129.81%); position: relative; padding: 100px 0 300px 0; }
+.whyChoose::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/why-choose-bg.png)center center no-repeat; background-size: cover; z-index: -1; }
+.chooseBoxWrapper { padding: 0; position: relative; top: 320px; margin-top: -400px; }
+.chooseBox { padding: 40px; background-color: var(--secondaryColor); border: 1px solid #DDDDDD; border-radius: 15px; }
+.chooseBox span { color: var(--whiteColor); }
+
+/* iconCard css */
+.iconCardWrapper { padding: 120px 0; }
+.iconCard { display: flex; flex-direction: column; justify-content: center; border-radius: 30px; background-color: var(--primaryColor); padding: 65px 40px; align-items: center; height: 100%; position: relative; text-align: center; color: var(--whiteColor); overflow: hidden; z-index: 1; }
+.iconCard .titleText { text-align: center; line-height: 37px; transition: all 0.3s; }
+.cardIcon { margin: 0 auto; margin-bottom: 20px; width: 90px; height: 90px; transition: all 0.3s; }
+.iconCardTop { padding: 0 0 80px 0; }
+.iconCardInner .row { justify-content: center; }
+.iconCard .description { color: var(--whiteColor); position: absolute; bottom: 0; padding: 20px; transform: translateY(100%); opacity: 0; transition: all 0.3s; visibility: hidden; height: 100%; display: flex; align-items: flex-end; background-color: var(--secondaryColor); z-index: -1; border-radius: 30px; line-height: 1.3; }
+.iconCard:hover .description { transform: translateY(0); opacity: 1; visibility: visible; }
+.cardIcon img { width: 100%; height: 100%; object-fit: contain; }
+.iconCardInnerTop { transition: all 0.3s; }
+.iconCard:hover .iconCardInnerTop { transform: translateY(-60px); }
+.iconCard:hover .cardIcon { transform: scale(0.7); margin-bottom: 0; }
+.iconCard:hover .titleText { font-size: var(--font-24); line-height: 1; }
+
+/* truck animation */
+.truckWrapper { overflow: hidden; position: relative; padding: 500px 0 0 0; }
+.ropeSVG { position: absolute; top: 0; }
+.greenContainer2 { visibility: hidden; }
+.spacer { height: 100vh; }
+.roadSVG { margin-top: -60px; }
+.partner { position: relative; overflow: clip; }
+.partnerInner { position: sticky; top: 130px; z-index: 10; }
+.partnerInnerBox { width: 50%; margin-left: auto; }
+
+/* ============================= */
+
+/* About page css start */
+
+/* ============================= */
+section.subBanner { width: 100%; height: 60vh; position: relative; margin: 113px 0 0 0; }
+.subBannerBg { height: 100%; }
+section.subBanner::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--blackColor); opacity: 0.65; }
+.subBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.subBannerInner { position: absolute; top: 50%; left: auto; transform: translate(0, -50%); text-align: left; width: 35%; }
+.aboutBannerInner { left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%; }
+.valuePartner { padding: 120px 0; }
+.valuePartnerLogo { padding: 150px 40px; border: 1px solid var(--secondaryColor); width: 500px; height: 500px; border-radius: 30px; box-shadow: -10px -10px 0px var(--secondaryColor); margin-left: auto; background-color: var(--whiteColor); }
+.valuePartnerInner { position: relative; }
+.valuePartner.in-viewport .valuePartnerDetail { opacity: 1; visibility: visible; transform: scaleX(1); }
+.valuePartnerDetail { position: absolute; top: 0; height: 100%; background-color: var(--primaryColor); z-index: -1; border-radius: 30px 0 0 30px; padding: 50px 100px 50px 50px; right: 470px; width: calc(100% - 500px); ; transition: all 0.8s; transform-origin: right center; opacity: 0; visibility: hidden; color: var(--whiteColor); transform: scaleX(0); }
+.valuePartnerDetail strong { margin: 0 0 30px 0; display: block; }
+
+/* missionVision css */
+.missionVision { padding: 120px 0; overflow-x: clip; }
+.misVisText { position: relative; padding: 50px 0; color: var(--whiteColor); }
+.missionText { padding: 50px 100px 50px 0; margin: 0 0 0 -100px; }
+.visionText { padding: 50px 0px 50px 100px; margin: 0 -100px 0 0; text-align: right; }
+.misVisText .description { color: var(--whiteColor); }
+.misVisText h3 { margin: 0 0 30px 0; }
+.missionVisionImage { border-radius: 150px; overflow: hidden; }
+.missionVisionImage img { width: 100%; height: 100%; object-fit: cover; }
+.misVisText:before { content: ''; position: absolute; width: 50vw; height: 100%; right: 0; background-color: var(--primaryColor); z-index: -1; top: 0; border-radius: 0 250px 250px 0; box-shadow: -5px -20px 0px var(--secondaryColor); }
+.visionText:before { right: auto; left: 0; border-radius: 250px 0 0 250px; background-color: var(--secondaryColor); box-shadow: 5px -20px 0px var(--primaryColor); }
+.missionVisionInner .row .col-lg-4:last-child { align-self: flex-end; }
+
+/* ourHistory  css */
+.ourHistory { padding: 180px 0; background: url(../images/our-history-bg.png) center center no-repeat; background-size: cover; }
+.ourHistoryInner { padding: 50px 390px 50px 0; width: 70%; position: relative; z-index: 1; }
+.ourHistoryInner:before { content: ''; position: absolute; top: 0; right: 0; background: linear-gradient(to right, var(--secondaryColor) 50%, transparent); width: 70vw; height: 100%; z-index: -1; }
+.ourHistoryInner .description { color: var(--whiteColor); padding: 30px 0 0 0; }
+
+/* whyKellMaac css */
+.whyKellMaac { padding: 120px 0 180px 0; }
+.uniqueImageWrapper { display: flex; justify-content: space-around; padding: 50px 0 0 0; position: relative; z-index: 1; }
+.uniqueImage { box-shadow: 6px 4px 20.9px 0px #00000040; border: 10px solid var(--whiteColor); overflow: hidden; }
+.uniqueImageRight .uniqueImage { border-radius: 20px 20px 140px 20px; }
+.uniqueImageLeft .uniqueImage { border-radius: 20px 20px 20px 100px; }
+.uniqueImageLeft { padding: 0 0 60px 60px; position: relative; z-index: 1; }
+.uniqueImageRight { padding: 250px 60px 60px 0; position: relative; z-index: 1; margin-top: -250px; }
+.uniqueImageRight:before { content: ''; position: absolute; top: 0; right: 0; width: 85%; height: 100%; background-color: var(--secondaryColor); border-radius: 0 0 140px 0; z-index: -1; }
+.uniqueImageLeft:before { content: ''; position: absolute; top: 0; left: 0; width: 80%; height: 100%; background-color: var(--secondaryColor); z-index: -1; border-radius: 0 0 0 140px; }
+
+/* ============================= */
+
+/* About page css end */
+
+/* ============================= */
+
+/* ============================= */
+
+/* service page css start */
+
+/* ============================= */
+.seriveMainPage { position: absolute; bottom: 0; right: 350px; }
+
+/* onlyDesc css */
+.onlyDesc { padding: 120px 0; }
+
+/* multiImageWrapper css */
+.multiImageWrapper { overflow-x: clip; }
+.multiImageImageOnly { position: relative; padding: 50px 0; }
+.multiImageImageInner { border-radius: 30px; overflow: hidden; }
+.multiImageImageOnly:before { content: ''; position: absolute; top: 50%; left: calc(0px + 45%); width: 50vw; height: 100%; background-color: var(--secondaryColor); transform: translateY(-50%); z-index: -1; border-radius: 40px 0 0 40px; }
+.multiImageImageOnly img { width: 100%; height: 100%; object-fit: cover; transition: all 0.5s; }
+.multiImageImageOnly:hover img { transform: scale(1.2); }
+.multiImageList { margin: 80px 0; }
+.multiImageList .row { justify-content: space-between; }
+.multiImageText { padding: 50px 0 0 0; }
+.multiImageList:nth-child(even) .row { flex-direction: row-reverse; }
+.multiImageList:nth-child(even) .row .multiImageText { padding: 50px 0 0 0; }
+.multiImageList:nth-child(even) .row .multiImageImageOnly:before { left: auto; right: calc(0px + 45%); border-radius: 0 40px 40px 0; }
+.multiImageText .primaryTitleText { position: relative; }
+.multiImageText .primaryTitleText:before { content: ''; position: absolute; top: 18px; left: -60px; width: 35px; height: 3px; background-color: var(--secondaryColor); }
+
+/* ============================= */
+
+/* service page css end */
+
+/* ============================= */
+
+/* ============================= */
+
+/* service individual page css start */
+
+/* ============================= */
+.imageBoxListing { padding: 65px 0 0 0; }
+.imageBoxList { position: relative; overflow: hidden; z-index: 1; }
+.imageBoxImage img { width: 100%; height: 100%; object-fit: cover; }
+.imageBoxImage { border-radius: 25px; overflow: clip; }
+.imageBoxContent { position: absolute; bottom: 0; padding: 30px 30px 0 30px; transition: all 0.8s; }
+.imageBoxContent h4 { padding: 0; margin: 0; }
+.imageBoxContent .description { color: var(--whiteColor); opacity: 0; visibility: hidden; transition: all 0.8s; max-height: 0; padding: 15px 0; }
+.imageBoxList:hover .imageBoxContent { bottom: 0; }
+.imageBoxList:hover .imageBoxContent .description { opacity: 1; visibility: visible; max-height: 400px; }
+
+/* iconDescriptionCard css */
+.iconDescriptionCardWrapper { padding: 120px 0; }
+.iconDescriptionCardListing { margin: 65px 0 0 0; }
+.iconDescriptionCardList { background-color: var(--primaryColor); padding: 30px 20px; border-radius: 20px; height: 100%; }
+.iconDescriptionCardIcon { width: 80px; height: auto; margin-bottom: 20px; }
+.iconDescriptionCardIcon img { width: 100%; height: 100%; object-fit: contain; }
+.iconDescriptionCardContent .description { color: var(--whiteColor); }
+
+/* contactWrapper css */
+section.contactWrapper { position: relative; z-index: 1; }
+section.contactWrapper:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, #000000 0%, rgba(8, 89, 57, 0) 127.11%); z-index: -1; }
+.contactWrapperBgImage { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -2; }
+.contactWrapperBgImage img { width: 100%; height: 100%; object-fit: cover; }
+.contactWrapperInner { padding: 120px 0; width: 65%; }
+.contactWrapperInner span { font-size: var(--font-38); font-weight: var(--font-300); color: var(--whiteColor); display: block; padding: 0 0 30px 0; }
+.contactWrapperInner span strong { font-weight: var(--font-600); }
+
+/* partnerLogos css */
+.partnerLogos { padding: 0 0 120px 0; }
+.partnerLogos .container-xl { overflow-x: hidden; background-color: #FFF1F1; }
+.logoOne { display: inline-block; margin: 0 50px; }
+.partnerLogosInner { white-space: nowrap; animation: marqee 40s linear infinite; }
+@keyframes marqee {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+}
+
+/* securityFeatures css */
+.securityFeaturesCard { text-align: center; border: 3px solid #CACBCF; padding: 40px; border-radius: 20px; }
+.securityFeatures .col-lg-5 .securityFeaturesCard:first-child { margin: 0 0 130px 0; }
+.securityImage { text-align: center; }
+.securityFeatures { padding: 65px 0 0 0; }
+.securityFeatures .row { align-items: center; }
+.securityIcon { width: 70px; aspect-ratio: 1; margin: 0 auto; margin-bottom: 20px; }
+.securityIcon img { width: 100%; height: 100%; object-fit: contain; }
+
+/* securityWrapper css */
+.securityWrapper { padding: 0 0 120px 0; }
+
+/* ============================= */
+
+/* service individual page css end */
+
+/* ============================= */
+
+/* ============================= */
+
+/* resources page css end */
+
+/* ============================= */
+
+ul.tab-titles { padding: 0; margin: 0; display: flex; list-style: none; justify-content: space-between; gap: 80px; }
+ul.tab-titles li a { text-decoration: none; display: inline-block; text-align: center; padding: 10px 20px; border: 1px solid var(--primaryColor); width: 100%; transition: all 0.3s; }
+ul.tab-titles li { width: 33%; }
+ul.tab-titles li.active-li a { background-color: var(--primaryColor); color: var(--whiteColor); }
+.tabContainer { padding: 65px 125px; }
+.accordion-button:not(.collapsed), .accordion-button:focus { background-color: transparent; box-shadow: none; color: var(--primaryColor); }
+.accordion-item { border: none; border-bottom: 1px solid var(--blackColor); }
+.accordion-body img { width: 320px; }
+
+/* ============================= */
+
+/* resources page css end */
+
+/* ============================= */
+
+/* ============================= */
+
+/* Contact page css end */
+
+/* ============================= */
+
+/* contactForm css */
+.contactForm { padding: 120px 0; }
+.contactFormInner { background-color: var(--blackColor); padding: 80px; }
+.contactFormInner li { color: var(--whiteColor); display: flex; align-items: center; padding: 0 0 30px 0; }
+.contactFormInner li a { text-decoration: none; color: var(--whiteColor); transition: all 0.3s; }
+.contactFormInner li a:hover { color: var(--secondaryColor); }
+.contactUl { margin: 50px 0 0 0; padding: 50px 0 0 0; border-top: 2px solid var(--secondaryColor); }
+.contactUl ul { margin: 0; padding: 0; list-style: none; }
+.contactUlIcon { width: 30px; aspect-ratio: 1; margin: 0 25px 0 0; }
+.map { border-radius: 20px; overflow: hidden; border: 1px solid #3A3129; margin: 50px 0 0 0; height: 700px; }
+.map iframe { width: 100%; height: 100%; }
+section.visitUs { padding: 0 0 120px 0; }
+.accordion-button { font-size: var(--font-20); font-weight: var(--font-600); }
+
+/* ============================= */
+
+/* contact page css end */
+
+/* ============================= */
+
+/*   footer css */
+footer { background-color: var(--blackColor); position: relative; z-index: 1; padding: 80px 0 20px 0; }
+footer:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/footer-bg.png)center center no-repeat; background-size: cover; opacity: 0.2; z-index: -1; }
+footer ul { list-style: none; margin: 0; padding: 0 }
+.footerLogoWrapper ul { display: flex; padding: 50px 0 0 0; align-items: center; }
+.footerLogoWrapper ul li a { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; background-color: var(--whiteColor); border-radius: 5px; color: #000; border: 1px solid var(--whiteColor); transition: all 0.3s; }
+.footerLogoWrapper ul li a:hover { background-color: transparent; color: var(--whiteColor); }
+.footerLogoWrapper ul li:not(:last-child) a { margin: 0 30px 0 0; }
+.footerUlWrapper { display: flex; justify-content: space-between; }
+.footerUl h4 { font-weight: 700; color: var(--whiteColor); font-size: 16px; margin: 0 0 40px 0; }
+.footerUl ul li a { display: inline-block; text-decoration: none; color: var(--whiteColor); padding: 10px 0; }
+.footerUl:last-child ul { column-count: 2; column-gap: 80px; }
+.locationDetail span { font-weight: var(--font-600); padding: 0 0 20px 0; display: inline-block; color: var(--whiteColor); }
+.locationDetail ul li { display: flex; align-items: center; }
+.locationDetail ul li a { text-decoration: none; color: #fff; display: inline-block; }
+.locationDetail ul li div { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: var(--primaryColor); color: var(--whiteColor); font-size: var(--font-16); border-radius: 5px; margin: 0 15px 15px 0; }
+.copyRightInner { color: #FFFFFF; }
+

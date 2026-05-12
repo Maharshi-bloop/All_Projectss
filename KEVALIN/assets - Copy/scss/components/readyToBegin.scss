@@ -1,0 +1,23 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.patient-reviews, .book-appointment {
+    .readyToBegin {
+        margin: 120px 0;
+    }
+}
+
+.readyToBeginInner {
+    background-color: $secondaryColor;
+    padding: 100px 50px;
+    border-radius: 20px;
+
+    .sectionHeading {
+        display: block;
+    }
+
+    .description {
+        color: #fff;
+        margin: 0 0 30px 0;
+    }
+}

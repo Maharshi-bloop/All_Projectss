@@ -1,0 +1,319 @@
+.home .bannerHeading {
+  margin: 0 0 30px 0;
+}
+
+section.banner {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0 0 60px 60px;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  section.banner {
+    height: 85vh;
+  }
+}
+@media (max-width: 576px) {
+  section.banner {
+    border-radius: 0 0 40px 40px;
+  }
+}
+@media (max-width: 480px) {
+  section.banner {
+    height: 70vh;
+  }
+}
+section.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 0;
+}
+section.banner .bannerVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.banner .bannerVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.banner .bannerInner {
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 1366px) {
+  section.banner .bannerInner {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  section.banner .bannerInner {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  section.banner .bannerInner {
+    width: 100%;
+    padding: 190px 0 0 0;
+  }
+}
+section.banner .bannerInner .bannerContent span {
+  font-size: 20px;
+  font-family: "Public Sans";
+  display: inline-block;
+  color: #fff;
+  margin: 20px 0 50px 0;
+  font-weight: 200;
+}
+section.banner .bannerInner .bannerContent .sectionHeading {
+  color: #fff;
+}
+
+.starCol {
+  padding: 120px 0;
+}
+@media (max-width: 480px) {
+  .starCol {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 768px) {
+  .starCol .row {
+    justify-content: center;
+  }
+}
+.starCol .starBox {
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .starCol .starBox {
+    margin: 0 0 30px 0;
+  }
+}
+.starCol .starBox .starIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starCol .starBox .starIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.starCol .starBox .description {
+  font-size: 16px;
+}
+
+.imageExTextWrapperInner .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.imageExTextWrapperInner .imageExTextImg {
+  border-radius: 20px;
+  overflow: clip;
+}
+@media (max-width: 768px) {
+  .imageExTextWrapperInner .imageExTextImg {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.imageExTextWrapperInner .imageExTextImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .imageExTextWrapperInner .imageExTextContent {
+    padding: 30px 0 0 0;
+  }
+}
+.imageExTextWrapperInner .imageExTextContent .sectionHeading {
+  width: 80%;
+}
+@media (max-width: 991px) {
+  .imageExTextWrapperInner .imageExTextContent .sectionHeading {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .imageExTextWrapperInner .imageExTextContent h2,
+  .imageExTextWrapperInner .imageExTextContent > span {
+    text-align: center;
+  }
+}
+.imageExTextWrapperInner .imageExTextContent ul {
+  margin: 60px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.imageExTextWrapperInner .imageExTextContent ul li {
+  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #0EA79B;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .count {
+  font-size: 60px;
+  color: #003B4A;
+  position: relative;
+  display: inline-block;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .count:before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.imageExTextWrapperInner .imageExTextContent ul li:first-child .count:before {
+  content: "%";
+}
+.imageExTextWrapperInner .imageExTextContent ul li:last-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.imageExTextWrapperInner .imageExTextContent ul li:last-child .count:before {
+  content: "+";
+}
+.imageExTextWrapperInner .imageExTextContent ul li .careResult {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .imageExTextWrapperInner .imageExTextContent ul li .careResult {
+    flex-direction: column;
+  }
+}
+.imageExTextWrapperInner .imageExTextContent ul li .careResult .description {
+  width: 80%;
+  margin-left: auto;
+}
+@media (max-width: 480px) {
+  .imageExTextWrapperInner .imageExTextContent ul li .careResult .description {
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+}
+.imageExTextWrapperInner .imageExTextContent ul li .description {
+  font-size: 16px;
+}
+
+.journeyList {
+  padding: 120px 0;
+}
+@media (max-width: 768px) {
+  .journeyList .journeyListTop {
+    text-align: center;
+  }
+}
+.journeyList .journeyUl {
+  padding: 80px 0 0 0;
+}
+.journeyList .journeyUl .journeyli {
+  padding: 40px 50px;
+  transition: all 0.3s;
+  border-radius: 15px;
+  position: relative;
+}
+@media (max-width: 1366px) {
+  .journeyList .journeyUl .journeyli {
+    padding: 40px 20px;
+  }
+}
+.journeyList .journeyUl .journeyli:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #0EA79B;
+  left: 0;
+  bottom: 0;
+}
+.journeyList .journeyUl .journeyli .row {
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .journeyList .journeyUl .journeyli .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .journeyList .journeyUl .journeyli .row .journeyliContent {
+    text-align: center;
+  }
+}
+.journeyList .journeyUl .journeyli:hover {
+  background-color: rgba(138, 224, 188, 0.5019607843);
+}
+.journeyList .journeyUl .journeyli .journeyliTitle {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .journeyList .journeyUl .journeyli .journeyliTitle {
+    padding-bottom: 20px;
+  }
+}
+.journeyList .journeyUl .journeyli .journeyliTitle .journeyliIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 50px 0 0;
+}
+@media (max-width: 1024px) {
+  .journeyList .journeyUl .journeyli .journeyliTitle .journeyliIcon {
+    margin: 0 30px 0 0;
+  }
+}
+
+.postWrapper {
+  padding: 110px 0;
+  background-color: #fff;
+}
+.postWrapper .postWrapperTop {
+  padding: 0 0 50px 0;
+}
+@media (max-width: 768px) {
+  .postWrapper .postWrapperTop {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .postWrapper .postListing .row .col-4 {
+    padding-bottom: 30px;
+  }
+}
+.postWrapper .postTopCta {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .postWrapper .postTopCta {
+    justify-content: center;
+    padding: 30px 0;
+  }
+}

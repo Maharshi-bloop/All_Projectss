@@ -1,0 +1,55 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.centerForm {
+    padding: 150px 0;
+}
+
+.marginTopMinus {
+    margin-top: -350px;
+}
+
+.formDesign {
+    background-color: #C0F0D8;
+    border-radius: 20px;
+    padding: 80px 100px;
+
+    .form {
+        padding: 65px 0 0 0;
+
+        .formField {
+            margin: 0 0 40px 0;
+
+            label {
+                display: block;
+                font-size: $font20;
+                margin: 0 0 10px 0;
+                color: $secondaryColor;
+                font-family: $publicSans;
+            }
+
+            input, textarea,
+            select {
+                width: 100%;
+                border: 1px solid $secondaryColor;
+                background-color: $whiteColor;
+                border-radius: 8px;
+                padding: 15px 10px;
+                box-sizing: border-box;
+                font-family: $publicSans;
+            }
+
+            select {
+                -webkit-appearance: none;
+                background: url(../../images/service-dropdown-arrow.svg)right 20px center no-repeat;
+                background-color: $whiteColor;
+                background-size: 20px;
+            }
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}

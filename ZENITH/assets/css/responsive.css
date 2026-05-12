@@ -1,0 +1,219 @@
+@media (min-width:1601px) {
+	.handImage { transform: scale(1.1); right: 103%; top: 30%; }
+	.container-xl { max-width: 1440px; }
+}
+
+/* @media (max-width:1600px) {
+.container-xl { max-width: 1320px; }
+} */
+
+/* @media (min-width:1367px) {
+} */
+@media (max-width:1440px) {
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: var(--font52); }
+.solutionBannerContent br { display: none; }
+.contactBannerInner { width: 65%; }
+.contactBanner { height: 130vh; }
+}
+@media (max-width:1366px) {
+.bannerContent .whiteBannerHeading br { display: none; }
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: var(--font60); line-height: 1.2; }
+.partner, .newsWrapper, .experience, .circleIconWrapper { padding: 120px 0; }
+.partnerLogos { padding: 70px 0 0 0; }
+.circleIconListing { padding: 70px 0 0 0; }
+.imageTextImage { width: 90%; }
+.contactDetail { width: calc(100% - 50px); }
+.contactBannerInner { width: 75%; }
+}
+
+
+@media (max-width:1280px) {
+.newsDetail { padding: 30px 0 0 0; }
+.formDesign { padding: 60px 30px; }
+.bannerImage { width: 100%; }
+.bannerImage img { width: 100%; }
+.contactBanner { height: 140vh; }
+}
+@media (max-width:1024px) {
+.sectionHeading, .whiteSectionHeading, .secondarySectionHeading { font-size: var(--font44); }
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: 46px; }
+.categoryImage { border-radius: 40px; }
+.newsImage { border-radius: 25px; }
+.footerOption { flex-wrap: wrap; }
+.contactUl ul { flex-wrap: wrap; }
+.contactUl ul li { padding: 0 0 5px 0; }
+.visionToImpactBg { margin-top: -230px; }
+.imageTextImage { width: 90%; margin: 0 auto; }
+.imageTextImage img { width: 100%; }
+.imageTextContent { padding: 0 0 50px 0; }
+.circleIconWrapperTop { width: 65%; }
+.onePageOneBox { width: 60%; }
+.lineWrapper:before { background: linear-gradient(to right, #fff 80%, #1ABBFD 220%); }
+.comminityBannerImage img { width: 100%; }
+.comminityBanner, .blogBanner, .contactBanner { height: 80vh; }
+.filters { padding: 40px 10px; }
+.blog-grid { padding-left: 10px; }
+.titleDescription { padding: 80px 0; }
+.width45 { max-width: 65%; }
+.contactDetailWrapper { padding: 60px 0 0 0; }
+.subBannerText br { display: none; }
+.whyGcpTop { width: 70%; }
+.whyGcp { padding: 100px 0 0 0; }
+.textImageImage { width: 100%; }
+.textImageImage img { width: 100%; }
+.contactDetail { width: calc(100% - 50px); }
+}
+@media (max-width:991px) {
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: var(--font46); }
+.sectionHeading, .whiteSectionHeading, .secondarySectionHeading { font-size: var(--font40); }
+.onePageOneBox { width: 70%; }
+.subBanner, .solutionBanner { height: 80vh; }
+.onePage, .innerPagesOnePage { height: 80vh; padding: 100px 0; }
+.categoryImage { width: 75%; margin: 0 auto; }
+.categoryContent div .titleText { margin: 0 0 10px 0; }
+.partner, .newsWrapper, .experience, .connect, .lineWrapper, .circleIconWrapper, .getInTouch, .currentOpening, .gcpClientTesti, .faqs { padding: 80px 0; }
+.connectCannerBg svg { width: 80% !important; top: -100px; }
+.connect { margin-bottom: -100px; }
+.animationSection { display: none; }
+.banner { height: 70vh; }
+.bannerSwiper .container-xl { align-items: flex-end; }
+.bannerInner { width: 60%; margin: 0 0 50px 0; }
+.marTopBot { margin: 5px 0px 15px 0; }
+.textImageContent { text-align: center; }
+.textImageWrapperInner .row { flex-direction: column-reverse; }
+.textImageContent { margin: 50px 0 0 0; }
+.textImageContent h4 br { display: none; }
+.textImageWrapper { padding: 80px 0; }
+.visionToImpact { padding: 80px 0 0 0; }
+.contactFromWrapper .formDesign { width: 70%; margin: 0 auto; }
+.connectCannerBg { display: flex; width: 50%; margin: 0 auto; margin-bottom: 30px; }
+.contactFromWrapper { padding: 80px 0; }
+.filters ul li { display: flex; align-items: center; font-weight: var(--font400); }
+.filters ul { flex-wrap: wrap; display: flex; gap: 10px 0; }
+.blog-grid { padding: 40px 0; border-top: 1px solid var(--primaryColor); }
+.iframeWrapper { height: 300px; }
+.contactPageUl ul { margin: 0; }
+.contactDetail { width: calc(100% - 50px); }
+.solutionBannerImage img { width: 100%; }
+.textImageImage { width: 50%; }
+.headingOnly { padding: 100px 0; }
+.whiteDescription { width: 80%; margin: 0 auto; }
+}
+@media (max-width:768px) {
+.titleDescription, .clientTesti { padding: 80px 0; }
+.titleDescription .description { width: 90%; }
+.onePage, .innerPagesOnePage { height: 75vh; padding: 80px 0; }
+.onePageOneBox { width: 80%; padding: 0 0 80px 0; }
+.categoryImage { width: 90%; }
+.categoryContent { padding: 0 0 0 30px; }
+.primaryBtn { padding: 15px 20px 9px 20px; font-weight: var(--font400); }
+.partnerLogo { width: calc((100% / 4) - 50px); }
+.partnerLogos { padding: 50px 0 0 0; }
+.newsListing { padding: 50px 0 0 0; }
+.addressWrapper { padding: 30px; }
+.titleText, .whiteTitleText, .tersoryTitleText, .primaryTitleText { font-size: var(--font22); }
+.lineWrapperInner .lineWrapperTop { width: 90%; }
+.partnerTop { width: 80%; }
+.connect { margin-bottom: -200px; }
+.bannerInner { width: 70%; }
+.clientDetail { padding: 30px; border-radius: 30px; }
+.circleIconWrapperTop { width: 100%; text-align: center; }
+.visionToImpactBg { margin-top: -170px; }
+.circleIconWrapper { padding-bottom: 0; }
+.lineWrapperInner .lineWrapperTop { margin: 0 0 0 40px; }
+.formWrapper { max-width: 80%; }
+.comminityBanner { height: 70vh; }
+.blogBannerInner { text-align: center; }
+.contactLi { padding: 0 0 30px 0; }
+.cardd { padding: 80px 0; }
+.whyGcpTop { width: 90%; }
+.imageTextImage { width: 65%; padding: 0 50px; margin: 0 auto; margin-bottom: 50px; border-bottom: 1px solid var(--secondaryColor); }
+.imageTextContent { text-align: center; }
+}
+@media (max-width:586px) {
+.partnerLogo { width: calc((100% / 3) - 50px); }
+.line { display: none; }
+.lineWrapperTop { text-align: center; margin: 0 auto; }
+.lineWrapperTop .bannerHeading br { display: none; }
+.categoryList { padding: 0 0 50px 0; }
+.categoryListing { padding: 100px 0 0 0; }
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: var(--font42); }
+.sectionHeading, .whiteSectionHeading, .secondarySectionHeading { font-size: var(--font36); }
+.categoryImage { width: 65%; }
+.categoryContent { padding: 20px 0 0 0; text-align: center; }
+.imageTextContent { text-align: center; }
+.circleIconWrapperTop { width: 100%; }
+.circleIconList { text-align: center; }
+.circleIconWrapperTop .bannerHeading { text-align: center; }
+.circleIcon { margin: 0 auto 20px; }
+.bannerImage { width: 50%; margin: 0 auto; }
+.solutionBannerImage { width: 80%; margin: 0 auto; }
+.subBannerInner .row, .solutionBannerInner .row { flex-direction: column-reverse; }
+.subBannerText, .solutionBannerContent { text-align: center; margin: 20px 0 30px 0; }
+.subBanner { align-items: flex-end; }
+.lineWrapperInner .lineWrapperTop { margin: 0 auto; padding: 0; }
+.fullWidthTop .lineWrapperTop { background-color: transparent; }
+.contactFromWrapper .formDesign { width: 100%; padding: 40px 20px; }
+.connectCannerBg { width: 70%; }
+.solutionBanner { align-items: flex-end; }
+.formWrapper { max-width: 100%; }
+.comminityBannerImage { display: none; }
+.comminityBanner, .blogBanner, .contactBanner, .solutionBanner { height: 60vh; }
+.comminityBannerContent { padding: 70px 0 0 0; text-align: center; }
+.blog-item { width: 100%; }
+.blog-thumbnail { border-radius: 20px; }
+.iframeWrapper { max-width: 80%; margin: 0 auto; height: 300px; }
+.contactPageUl ul { margin: 30px 0 0 0; }
+.contactBannerInner { width: 100%; }
+.cardd { border-radius: 50px; margin: 0 0 30px 0; }
+.whyGcpTop { width: 100%; }
+.clientTestiTop 
+.whiteDescription { width: 100%; margin: 0 auto; }
+}
+@media (max-width:480px) {
+a.logo img { display: block; transition: all 0.5s; width: 150px; height: 40px; }
+a.logo { height: 40px; }
+.stickyHeader a.logo img { transform: translateY(-40px); }
+
+/* .bodyBlackHeader a.logo img { transform: translateY(-40px); } */
+.toggleBtn { padding: 10px; width: 150px; }
+.experienceListExtraContent { max-width: 100%; right: -110%; }
+.experienceListIInner, .tri { width: 100%; }
+.experienceListContent { padding: 20px 50px; bottom: 40px; }
+.partnerTop { width: 100%; }
+.partnerLogo { width: calc((100% / 3) - 20px); margin: 10px; }
+.partnerTop { width: 100%; }
+.connectCannerBg svg { width: 100% !important; top: -70px; }
+.connect { margin-bottom: -160px; }
+.contactTop .description { width: 100%; }
+.toggleBtn { padding: 10px; }
+.bannerInner { width: 100%; margin: 0 0 80px 0; }
+.swiper-pagination { flex-direction: row !important; position: absolute !important; right: auto !important; left: 50% !important; bottom: 20px !important; top: auto !important; transform: translateX(-50%) !important; }
+.swiper-pagination-clickable .swiper-pagination-bullet { margin: 0 5px !important; }
+.categoryImage { width: 85%; }
+.onePageOneBox { width: 100% }
+.circleIconList { padding: 0 0 30px 0; }
+.circleIcon { justify-content: center; }
+.visionToImpactBg { margin-top: -90px; }
+.textImageImage img { width: 100%; }
+.textImageImage { width: 70%; margin: 0 auto; }
+.sectionHeading, .whiteSectionHeading, .secondarySectionHeading { font-size: var(--font32); }
+.bannerHeading, .whiteBannerHeading, .secondaryBannerHeading { font-size: var(--font36); }
+.lineWrapperInner .lineWrapperTop { width: 100%; }
+.formDesign { border-radius: 30px; }
+.formDesign input:not([type="submit"]), .formDesign select, .formDesign textarea { border-radius: 16px; }
+.titleDescription .description { width: 100%; }
+.headerOption { width: 100%; }
+.footerOption { gap: 35px; }
+.copyRightInner { flex-direction: column; }
+.formDesign .row { padding: 0; }
+.openingListing { padding: 40px 0 0 0; }
+.titleDescription { padding: 50px 0; }
+.iframeWrapper { max-width: 100%; }
+.width45 { max-width: 100%; }
+.solutionBannerImage { display: none; }
+.blogBannerInner br { display: none; }
+.faqsListing { padding: 30px 0 0 0; }
+.content { text-align: center; }
+.whiteDescription { width: 100%; }
+}

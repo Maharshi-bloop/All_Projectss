@@ -1,0 +1,105 @@
+@media (max-width:1366px) {
+	.wave2 { top: -300px; }
+	.aboutBanner .wave { position: absolute; width: 140%; left: -210px; top: -210px; z-index: -1; }
+	.bubbleWave { bottom: 0; }
+	.contactForm .wave { top: -300px; left: -180px; }
+	.contactText .heading2xl { width: 100%; }
+	.wave { top: -470px; }
+}
+@media (min-width:380px) and (max-width:480px) {
+	:root { --font11xl: 54px; --font10xl: 48px; --font8xl: 34px; --font5xl: 32px; --font4xl: 34px; --font2xl: 24px; --fontXl: 20px; --fontLg: 16px; }
+	.chemicalsSolutionInner .row { flex-direction: column-reverse; }
+	.chemicalsSolutionInner { padding: 30px; padding-top: 90px; }
+	.chemicalsSolutionContent { margin: 0; }
+	.chemicalsSolutionInner:before { top: -60px; right: -10px; width: 100px; }
+	.specialtyList { width: 50%; }
+	.specialtyList:hover .specialtyListImage { width: 200px; height: 200px; }
+	.specialtyListImage { width: 100px; height: 100px; }
+	.specialtyList span { bottom: 16px; width: 65%; line-height: 16px; font-size: 12px; }
+	.specialtyList:hover span { font-size: 20px; line-height: 26px; }
+	.specialtyList:nth-child(2) { margin: 120px 0 0 0; }
+	.specialtyList:nth-child(2), .specialtyList:nth-child(4), .specialtyList:nth-child(6) { margin-left: -10px; }
+	.specialtyList:nth-child(odd) { margin: -120px 0 0 0; }
+	.specialtyList:first-child { margin-top: 0; }
+	.specialtyList:last-child { margin-top: -60px; }
+	.wave2 { top: -460px; width: 270%; left: -150px; z-index: -1; }
+	.areaOpration { z-index: 0; }
+	.bannerContent { max-width: 100%; margin: 0 auto; }
+	.bottomLine { flex-direction: column; }
+	.bottomLine div { display: none; }
+	.logo { width: 140px; }
+	.bannerCard .subTextLg br { display: none; }
+	.weAreBottom .weAreImage { height: 350px; }
+	.weAreBottom .weAreImage { margin: 30px 0; }
+	.weAreBottom .primaryBtn { margin-left: 0; }
+	.bubbleWrap1 { width: 200px; height: 200px; }
+	.bubbleWrap1 img:first-child { width: 70px; right: -10px; }
+	.bubbleWrap1 img:nth-child(2) { width: 35px; bottom: 26px; left: 95px; }
+	.bubbleWrap1 img:nth-child(3) { width: 55px; top: 60px; left: 40px; }
+	.bubbleWrap1 img:nth-child(4) { width: 25px; bottom: -30px; left: 40px; }
+	.bubbleWrap1 img:last-child { width: 35px; top: 20px; right: -10px; }
+	.pentaShapBg { width: 100%; height: 40%; }
+	.pentaShapBg img { height: 100%; object-fit: cover; }
+	.chemicalsSolutionImage { margin: 50px 0 0 0; }
+	.bannerCard { right: 15px; left: auto; margin-left: auto; bottom: -60px; }
+	.bannerContent>span { float: unset; line-height: 24px; }
+	.bannerInner { margin-top: 0; }
+	.chemicalsSolution { margin: 240px 0 120px 0; }
+	.bubbleWrap1 { top: -300px; }
+	.wave { width: 170%; left: -90px; top: -170px; }
+	.textWrap span { font-size: 11px; line-height: 15px; }
+	.textWrap span:nth-child(3) { top: 43%; left: 41.6%; }
+	.areaOprationInner { padding: 65px 30px; }
+	.areaOprationInner .subTextBase { margin: 0 0 20px 0; }
+	.ctaContent { padding: 50px 20px; }
+	.ctaContent .heading4xl { width: 100%; }
+	.ctaContent .subTextMd { margin: 18px 0; width: 100%; }
+	.weAre { margin: 70px 0; }
+	.chemicalBubble { width: 140px; aspect-ratio: 1; }
+	.specialty { margin: 80px 0; }
+	.specialtyListing { margin-top: -40px; }
+	.footerCta { text-align: left; }
+	.footerCta>span a { display: block; }
+	.footerInner .row { align-items: center }
+	.footerUl ul { justify-content: flex-start; gap: 30px; }
+	.aboutBanner { margin: 120px 0 0 0; }
+	.aboutBanner .bubbleWrap1:first-child { display: none; }
+	.aboutBannerImage { margin: 100px 0 0 0; }
+	.aboutBanner .wave { width: 190%; left: -120px; top: -40px; }
+	.aboutBanner .bubbleWrap1 { top: 80px; }
+	.aboutBannerImageInner { height: 360px; }
+	.imageTextImage1 { max-width: 260px; max-height: 260px; }
+	.imageTextSText .subTextXl { margin: 30px 0 0 0; }
+	.imageTextImage2 { position: absolute; right: -80px; }
+	.imageTextImage3 { position: absolute; left: -80px; width: 400px; height: 400px; bottom: 250px; }
+	.imageTextWrap { padding: 0 0 900px 0; }
+	.bubbleWave { width: 100%; height: 890px; }
+	.bubbleWave img { width: 100%; height: 100%; object-fit: cover; }
+	.agilityBg img { object-fit: cover; }
+	.agilityInner .heading5xl { width: 80%; }
+	.cta [class^=col-lg-] { padding: 0 15px; }
+	.agilityBubble { left: 40px; }
+	.scBannerInner { width: 100%; margin: 0 auto; text-align: left !important; margin-top: 160px; }
+	.scBanner .primaryBtn { margin: 0; }
+	.scBanner { align-items: flex-start; }
+	.headingBtn { padding: 200px 0 400px 0; }
+	.headingBtnInner { max-width: 90%; }
+	.swiperWrapLeft::before { display: none; }
+	.desktopSwiper { display: none; }
+	.mobileStructure { display: block; }
+	.slideContent { padding: 50px 40px; border-top: 1px dashed #dbdcde54 }
+	.slideContent { display: flex; align-items: flex-start; flex-direction: column; }
+	.swiperWrapInner .row [class^=col-lg-] { padding: unset !important; }
+	.slideText { width: 100%; margin: 20px 0 0 0; }
+	.topSlideImage { width: 190px; height: 190px; border: 14px solid #DDE6ED; }
+	.swiperWrapLeft { padding: 90px 30px 90px 40px; }
+	.headingBtn .wave { bottom: -290px; width: 230%; left: -140px; }
+	.headingBtn .bubbleWrap1 { left: -120px; width: 200px; height: 200px; transform: rotate(221deg); }
+	.contactFormInner > .row { flex-direction: column-reverse; }
+	.addMap { margin: 20px 0 0 0; }
+	.formDesign { padding: 50px 30px; }
+	.formDesign input:not([type="submit"]), .formDesign textarea { padding: 10px 0; }
+	.contactBanner { margin: 80px 0; }
+	.contactForm { padding: 140px 0 0 0; }
+	.contactForm .wave { top: -40px; left: -70px; }
+}

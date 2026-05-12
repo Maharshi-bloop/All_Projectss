@@ -1,0 +1,117 @@
+.single-services .formDesign {
+  padding: 50px 40px;
+}
+@media (max-width: 1366px) {
+  .single-services .formDesign {
+    padding: 30px 25px;
+  }
+}
+.single-services .formDesign .form {
+  padding: 40px 0 0 0;
+}
+.single-services .formDesign .form .formField {
+  margin: 0 0 20px 0;
+}
+
+.serviceSingleBanner {
+  height: 90vh;
+  background-color: #003B4A;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .serviceSingleBanner {
+    height: 80vh;
+  }
+}
+@media (max-width: 768px) {
+  .serviceSingleBanner {
+    height: 70vh;
+  }
+}
+.serviceSingleBanner .row {
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .serviceSingleBanner .row .serviceSingleBannerContent {
+    text-align: center;
+  }
+}
+.serviceSingleBanner .row .serviceSingleBannerContent .description {
+  color: #fff;
+  margin: 30px 0 0 0;
+}
+.serviceSingleBanner .row .serviceSingleBannerImg {
+  border-radius: 20px;
+  overflow: clip;
+}
+@media (max-width: 768px) {
+  .serviceSingleBanner .row .serviceSingleBannerImg {
+    display: none;
+  }
+}
+.serviceSingleBanner .row .serviceSingleBannerImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.serviceSingleContent {
+  padding: 150px 0;
+}
+@media (max-width: 1024px) {
+  .serviceSingleContent {
+    padding: 80px 0;
+  }
+}
+.serviceSingleContent .serviceSingleContentInner .formDesign {
+  position: sticky;
+  top: 150px;
+}
+@media (max-width: 768px) {
+  .serviceSingleContent .serviceSingleContentInner .formDesign {
+    margin: 50px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .serviceSingleContent .serviceSingleContentInner .row {
+    justify-content: center;
+  }
+}
+.serviceSingleContent .serviceSingleContentInner .onlyContentBox {
+  margin: 0 0 60px 0;
+}
+.serviceSingleContent .serviceSingleContentInner .onlyContentBox ul {
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+.serviceSingleContent .serviceSingleContentInner .onlyContentBox ul li {
+  position: relative;
+  padding: 10px 0 10px 15px;
+  font-family: "Public Sans";
+  font-size: 18px;
+  color: #003B4A;
+}
+.serviceSingleContent .serviceSingleContentInner .onlyContentBox ul li:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #0EA79B;
+  border-radius: 50%;
+}
+.serviceSingleContent .serviceSingleContentInner .contentBoxImg {
+  border-radius: 20px;
+  overflow: clip;
+  margin: 0 0 40px 0;
+}
+.serviceSingleContent .serviceSingleContentInner .contentBoxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

@@ -1,0 +1,9 @@
+/* faqs css */
+.faqs { margin: 170px 0; }
+.faqListing { margin: 50px 0 0 0; }
+.faqList { margin: 0 0 20px 0; }
+.accordion-item { border: 1px solid #CFCFFF; border-radius: 16px !important; overflow: clip; }
+.accordion-button { background-color: transparent !important; border: none !important; box-shadow: none !important; font-size: var(--xm-font); font-weight: 600; padding: 20px 50px; }
+.accordion-body { font-size: var(--m-font); line-height: 25px; padding: 20px 50px; font-family: var(--archivo); }
+.accordion-button::after { position: absolute; left: 20px; font-weight: 600; }
+.faqListing { column-count: 2; }

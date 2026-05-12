@@ -1,0 +1,96 @@
+section.imageBanner2 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+section.imageBanner2 .imageBanner2Inner {
+  padding: 60px 0 0 0;
+}
+section.imageBanner2 .imageBanner2Inner .titleText {
+  color: #fff;
+  padding: 16px 0 0 0;
+  font-weight: 200;
+}
+section.imageBanner2 .imageBanner2Bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+section.imageBanner2 .imageBanner2Bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+section.imageBanner2 .imageBanner2Bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+section.imageBanner2 .description {
+  color: #fff;
+  margin: 30px 0 0 0;
+}
+
+.contact-us .formDesign {
+  padding: 50px;
+}
+.contact-us .formDesign .form {
+  padding: 0;
+}
+.contact-us .formDesign .formField {
+  margin: 0 0 20px 0;
+}
+
+.contactForm {
+  padding: 120px 0;
+}
+.contactForm .phoneEmail {
+  padding: 40px 0;
+  margin: 40px 0;
+  border-top: 1px solid #003B4A;
+  border-bottom: 1px solid #003B4A;
+}
+.contactForm .phoneEmail ul {
+  display: flex;
+  justify-content: space-between;
+}
+.contactForm .phoneEmail ul .phoneEmailBox h4 {
+  margin: 0 0 10px 0;
+  display: block;
+  font-family: "Public Sans";
+}
+.contactForm .phoneEmail ul .phoneEmailBox a {
+  text-decoration: none;
+}
+.contactForm .followSocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactForm .followSocial ul {
+  display: flex;
+  align-items: center;
+}
+.contactForm .followSocial ul a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0EA79B;
+  border-radius: 50%;
+  margin: 0 0 0 10px;
+}
+.contactForm .followSocial h4 {
+  margin: 0;
+  font-family: "Public Sans";
+}

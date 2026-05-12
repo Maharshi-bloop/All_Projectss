@@ -1,0 +1,9 @@
+/* Book a demo */
+.demoBannerContentTop strong { display: block; }
+.demoBanner { position: relative; padding: 100px 0 0 0; z-index: 1; margin: 0 0 150px 0; }
+.contentBg { position: absolute; top: 0; left: 0; width: 48vw; z-index: -1; height: 100%; }
+.contentBg img { width: 100%; height: 100%; }
+.demoBannerContent { max-width: 80%; display: flex; flex-direction: column; gap: 100px; }
+.demoBannerContentTop { display: flex; flex-direction: column; gap: 40px; }
+.demoBannerContentBottom { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 40px; column-gap: 60px; }
+.BnnerRightContent .lHeading { font-weight: 700; margin: 0 0 40px 0; }

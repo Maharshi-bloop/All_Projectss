@@ -1,0 +1,575 @@
+@import "colors";
+@import "typo";
+
+// Breakpoints
+$breakpoints: (
+    "xxl": 1400px,
+    "xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+    "xs": 0px
+);
+
+// Container Widths
+$container-widths: (
+    "xxl": 1320px,
+    "xl": 1140px,
+    "lg": 100%,
+    "md": 100%,
+    "sm": 100%,
+    "xs": 100%
+);
+
+// Container Class
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @each $bp, $width in $container-widths {
+        @media (max-width: map-get($breakpoints, $bp)) {
+            max-width: $width;
+        }
+    }
+
+    @media (min-width: 1401px) {
+        max-width: 1410px;
+    }
+}
+
+// Row Class
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+// Mixin for Columns (12-grid layout)
+@mixin col($size) {
+    flex: 0 0 calc(100% / 12 * $size - 30px); // Adjust width dynamically
+    max-width: calc(100% / 12 * $size - 30px);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+// Generate `.col-*` classes for XXL (Above 1400px)
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include col($i);
+    }
+}
+
+// Generate `.col-*` classes for each breakpoint
+@each $bp, $width in $breakpoints {
+    @for $i from 1 through 12 {
+        .col-#{$bp}-#{$i} {
+            @media (max-width: $width) {
+                @include col($i);
+            }
+        }
+    }
+}
+
+/* Mixin for common */
+@mixin subHeading {
+    font-size: $font30;
+    color: $primaryColor;
+    display: inline-block;
+    margin: 0 0 25px 0;
+    font-weight: 300;
+}
+
+@mixin description {
+    font-size: $font20;
+    color: $textColor;
+    display: block;
+    font-family: $publicSans;
+    font-weight: 300;
+}
+
+@mixin bannerHeading {
+    font-size: $font60;
+    color: $whiteColor;
+    margin: 0;
+    font-weight: 400;
+}
+
+@mixin sectionHeading {
+    font-size: $font48;
+    color: $primaryColor;
+    display: block;
+    margin: 0 0 25px 0;
+    font-weight: 300;
+}
+
+
+/* AOS CSS */
+
+// Base styles for animations
+[data-aos] {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    will-change: transform, opacity;
+}
+
+// Fade Animations
+[data-aos="fade"] {
+    transform: translateY(20px);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Slide Animations
+[data-aos="slide-up"] {
+    transform: translateY(50px);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="slide-down"] {
+    transform: translateY(-50px);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="slide-left"] {
+    transform: translateX(-50px);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+[data-aos="slide-right"] {
+    transform: translateX(50px);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Zoom Animations
+[data-aos="zoom-in"] {
+    transform: scale(0.8);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+[data-aos="zoom-out"] {
+    transform: scale(1.2);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// Rotate Animations
+[data-aos="rotate"] {
+    transform: rotate(-15deg);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+// Custom Delay and Duration Support
+[data-aos][data-aos-duration="1000"] {
+    transition-duration: 1s;
+}
+
+[data-aos][data-aos-duration="1500"] {
+    transition-duration: 1.5s;
+}
+
+[data-aos][data-aos-duration="100"] {
+    transition-delay: 0.1s;
+}
+
+[data-aos][data-aos-delay="100"] {
+    transition-delay: 0.1s;
+}
+
+[data-aos][data-aos-delay="300"] {
+    transition-delay: 0.3s;
+}
+
+[data-aos][data-aos-delay="500"] {
+    transition-delay: 0.5s;
+}
+
+[data-aos][data-aos-delay="1000"] {
+    transition-delay: 1s;
+}
+
+
+/* common css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $roundedElegance;
+    background-color: #b8fdac26;
+}
+
+
+.primaryBtn {
+    display: inline-block;
+    padding: 15px 40px;
+    color: $whiteColor;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: $font18;
+    font-weight: 400;
+    font-family: $publicSans;
+    border: 2px solid $primaryColor;
+
+    &:hover {
+        background-color: transparent;
+        color: $primaryColor;
+    }
+}
+
+.primaryLink {
+    color: $primaryColor;
+    text-decoration: none;
+    font-size: $font18;
+    font-weight: 400;
+    font-family: $publicSans;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
+.secondaryBtn {
+    font-size: $font18;
+    color: $whiteColor;
+    display: inline-block;
+    font-weight: 400;
+    padding: 15px 40px;
+    border: 1px solid $primaryColor;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-family: $publicSans;
+
+    &:hover {
+        background-color: $primaryColor;
+    }
+}
+
+.secondaryLink {
+    color: $secondaryColor;
+    font-weight: 500;
+}
+
+.bannerHeading {
+    @include bannerHeading();
+}
+
+.secondaryBannerHeading {
+    @include bannerHeading();
+    color: $secondaryColor
+}
+
+.subHeading {
+    @include subHeading();
+}
+
+.secondarySubHeading {
+    @include subHeading();
+    color: $secondaryColor;
+    margin: 0;
+}
+
+.sectionHeading {
+    @include sectionHeading()
+}
+
+.secondarySecHeading {
+    @include sectionHeading();
+    color: $secondaryColor;
+}
+
+.description {
+    @include description()
+}
+
+.primaryDescription {
+    @include description();
+    color: $primaryColor;
+    font-weight: 600;
+}
+
+.secondaryDescription {
+    @include description();
+    color: $secondaryColor;
+}
+
+.titleText {
+    font-size: $font24;
+    color: $secondaryColor;
+    font-weight: 400;
+    display: inline-block;
+    font-family: $publicSans;
+    margin: 0 0 25px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* header css */
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 30px 0;
+    transition: all 0.3s;
+
+}
+
+header.stickyHeader {
+    background-color: #0000002e;
+    padding: 20px 0;
+    backdrop-filter: blur(100px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.headerOption {
+    display: flex;
+    align-items: center;
+
+    >ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-family: $publicSans;
+        font-size: $font20;
+
+        li {
+            &:hover {
+                ul {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    pointer-events: auto;
+                }
+            }
+
+            a {
+                font-size: $font20;
+                color: $whiteColor;
+                display: inline-block;
+                font-weight: 300;
+                text-decoration: none;
+                padding: 0 5px;
+                margin: 0 10px;
+            }
+        }
+
+        .subMenu {
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: $whiteColor;
+            box-shadow: 0px 7px 10px #00000061;
+            transform: translateY(20px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            pointer-events: none;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+}
+
+.blackHeader {
+    .headerOption {
+        ul {
+            a {
+                color: $secondaryColor !important;
+            }
+        }
+    }
+
+    .secondaryBtn {
+        color: $secondaryColor;
+        font-weight: 500;
+
+        &:hover {
+            color: $whiteColor;
+        }
+    }
+}
+
+
+/* footer css */
+footer {
+    padding: 120px 0 0 0;
+    background-color: $secondaryColor;
+
+    .footerTop {
+        width: 80%;
+        margin: 0 auto;
+
+        .description {
+            color: $whiteColor;
+            margin: 30px 0 40px 0;
+        }
+    }
+
+    .footerMain {
+        padding: 100px 0 0 0;
+        margin: 80px 0 50px 0;
+        border-top: 1px solid $whiteColor;
+
+        .footerLogoWrapper {
+            .description {
+                margin: 40px 0 0 0;
+                color: $whiteColor;
+            }
+        }
+
+        .footerUlWrpper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 85%;
+            margin-left: auto;
+
+            .footerUl {
+                .primaryDescription {
+                    padding: 0 0 15px 0;
+                    display: inline-block;
+                }
+
+                &:last-child {
+                    .primaryDescription~.primaryDescription {
+
+                        margin-top: 30px;
+                    }
+                }
+
+                ul {
+                    a {
+                        color: $whiteColor;
+                        text-decoration: none;
+                        font-family: $publicSans;
+                        font-weight: 300;
+                        padding: 5px 0;
+                        display: inline-block;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+
+                .footerSocialUl {
+                    ul {
+                        display: flex;
+                        margin: 15px 0 0 0;
+
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            background-color: $primaryColor;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        background-color: $primaryColor;
+        padding: 10px 0;
+
+        .copyRightInner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .copyRightUl {
+                ul {
+                    display: flex;
+
+                    a {
+                        color: $whiteColor;
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-family: $publicSans;
+                        margin: 0 30px 0 0;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+
+            .centerDiv {
+                span {
+                    color: $whiteColor;
+                    font-family: $publicSans;
+                    font-weight: 400;
+                }
+            }
+
+            .designDevelop {
+                width: 190px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+}

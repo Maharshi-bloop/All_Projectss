@@ -1,0 +1,79 @@
+.technology-innovation .subBanner { height: 80vh; }
+.headTextOnly { padding: 120px 0; }
+.headTextOnlyInner .subTextLg { color: var(--colorText); padding: 14px 0 14px 40px; border-left: 2px solid var(--colorSecondary); position: relative; }
+.headTextOnlyInner .subTextLg:before { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; top: 0; }
+.headTextOnlyInner .subTextLg:after { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; bottom: 0; }
+
+/* commitmentWrapper css */
+.commitmentWrapper { padding: 120px 0; background-color: var(--colorBg); position: relative; z-index: 1; overflow: clip; }
+.commitmentWrapper:before { content: ''; position: absolute; width: 1000px; height: 550px; background: url(../../images/dot-bg.png) center center no-repeat; background-size: contain; transform: rotate(120deg); z-index: -1; left: -20%; top: -25%; }
+.commitmentWrapper:after { content: ''; position: absolute; width: 1000px; height: 550px; background: url(../../images/dot-bg.png) center center no-repeat; background-size: contain; transform: rotate(120deg); z-index: -1; right: -30%; bottom: 0; }
+.commitmentImageWrapper { position: relative; width: 540px; aspect-ratio: 1; }
+.commitmentImage img { width: 100%; height: 100%; object-fit: cover; }
+.commitmentHeadWrapper { width: 260px; height: 260px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; }
+.commitmentHeadWrapper .heading7xl { width: calc(100% - 20px); height: calc(100% - 20px); background-color: var(--colorWhite); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; display: flex; align-items: center; justify-content: center; border: 10px solid var(--colorWhite); box-shadow: 0px 25px 42.5px 0px #AC793414;    /* overflow: clip; */ }
+.commitmentHeadWrapper:before { content: ''; position: absolute; width: calc(100% + 50px); height: calc(100% + 50px); background: #ffc62956; border-radius: 50%; transform: translate(-50%, -50%); top: 50%; left: 50%; z-index: -1; opacity: 0; }
+.commitmentHeadWrapper.animatePulse:before { animation: scalling 0.8s ease-in-out; }
+@keyframes scalling {
+	0% { transform: translate(-50%, -50%) scale(0.7); opacity: 1; }
+	100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0; }
+}
+.commitmentHeadWrapper:after { content: ''; position: absolute; width: calc(100% + 100px); height: calc(100% + 100px); background: #ffc6294a; border-radius: 50%; transform: translate(-50%, -50%); top: 50%; left: 50%; z-index: -2; filter: blur(25px); }
+.commitmentHeadWrapper .heading7xl:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(255, 198, 41, 0.31) 50%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(254, 198, 41, 0.65) 1.44%, rgba(255, 255, 255, 0) 27.88%); border-radius: 50%; top: 0; left: 0; z-index: -1; }
+.bgYellow { content: ''; position: absolute; width: 100%; height: 100%; border: 12px solid var(--colorSecondary); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; border-radius: 50%; }
+.activeWhite { content: ''; position: absolute; width: 50%; height: 50%; background-color: var(--colorWhite); top: -5px; left: 0; z-index: -1; border-radius: 100% 0 0 0; transform-origin: bottom right; transform: rotate(45deg); transition: all 0.3s; filter: drop-shadow(2px 4px 6px #00000027); }
+.commitmentImageWrapper .heading7xl { line-height: 1; font-size: var(--font3xl); }
+.commitmentHeading { width: 540px; aspect-ratio: 1; border: 2px dashed #165D97; border-radius: 50%; position: relative; }
+.commitmentHeading .headingBox { background: linear-gradient(180deg, rgba(255, 198, 41, 0.24) 50%, rgba(255, 255, 255, 0) 100%); padding: 10px 26px 10px 10px; border-radius: 60px; position: absolute; top: -35px; left: 50%; font-weight: 500; text-align: center; display: flex; align-items: center; border: 2px solid #FFFBF7; gap: 16px; box-shadow: 0px 7px 24.2px 0px #FEC62975; transform: translateX(-50%); background-color: var(--colorWhite); cursor: pointer; }
+.commitmentHeading .headingBox:after { content: ''; position: absolute; width: 2px; height: 200px; border-left: 2px dashed #165D97; z-index: -5; top: calc(100% + 1px); left: 50%; }
+.commitmentHeading .headingBox:nth-child(2):after { top: auto; bottom: 12px; transform: rotate(45deg); left: 55%; }
+.commitmentHeading .headingBox:nth-child(2) { top: auto; bottom: 20px; left: -50px; transform: unset; }
+.commitmentHeading .headingBox:last-child:after { top: auto; bottom: 0; left: auto; right: 50%; transform: rotate(-45deg); }
+.commitmentHeading .headingBox:last-child { top: auto; bottom: 20px; left: auto; right: -50px; transform: unset; }
+.commitmentHeading span { color: #003764; line-height: 1; font-weight: 500; text-align: left; }
+.commitmentImage { position: relative; z-index: -1; }
+.tabBtn { width: 70px; height: 70px; background: linear-gradient(180deg, #EFEFEF 50%, rgba(255, 255, 255, 0) 100%); border-radius: 50%; border: 2px solid #FFFBF7; box-shadow: 0px 7px 17.7px 0px #FEC629B2; position: relative; transition: all 0.3s; }
+.tabBtn:before { content: ''; position: absolute; width: 16px; height: 2px; background-color: var(--colorPrimary); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.tabBtn:after { content: ''; position: absolute; width: 2px; height: 16px; background-color: var(--colorPrimary); top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s; transform-origin: center center; }
+.headingBox.active .tabBtn:after { transform: translate(-50%, -50%) rotate(90deg) }
+.headingBox.active .tabBtn:after, .headingBox.active .tabBtn:before { background-color: var(--colorWhite); }
+.headingBox.active .tabBtn { background: #1B6097B2; }
+.commitmentTabWrap { background-color: var(--colorWhite); padding: 50px; border-radius: 32px; position: relative; min-height: 550px; }
+.commitmentTabContent .heading3xl { color: var(--colorPrimary); line-height: 1.5; }
+.commitmentTabContent .subTextBase { color: var(--colorText); margin: 25px 0 0 0; }
+.commitmentTabContent { position: absolute; top: 0; padding: 50px; top: 0; left: 0; opacity: 0; visibility: hidden; transition: all 0.5s; }
+.commitmentTabContent.active { opacity: 1; visibility: visible; }
+
+/* proven css */
+.proven { padding: 80px 0; }
+.provenInner { position: relative; border-radius: 40px; overflow: clip; text-align: center; padding: 120px 0; }
+.provenInner .heading10xl { color: var(--colorWhite); }
+.provenInner .heading5xl { margin: 40px 0; max-width: 55%; }
+.provenInnerBg { position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+.provenInnerBg img { width: 100%; height: 100%; object-fit: cover; }
+.provenContent div { display: flex; justify-content: center; }
+
+/* omniPropTop css */
+.omniProp { padding: 120px 0; background-color: var(--colorPrimary); position: relative; z-index: 1; overflow: clip; }
+.omniProp:before { content: ''; position: absolute; width: 1000px; height: 550px; background: url(../../images/dot-bg.png)center center no-repeat; background-size: contain; bottom: -25%; right: -25%; opacity: 0.3; }
+.omniPropTop .row { align-items: flex-end; }
+.omniPropTop .heading10xl { color: var(--colorWhite); }
+.omniPropAccordian { margin: 80px 0 0 0; }
+.omniPropAccordian .accordion-button, .omniPropAccordian .accordion-item { background-color: transparent; box-shadow: none; border: none; }
+.omniPropAccordian .accordion-button:focus { box-shadow: none !important; }
+.omniPropAccordian .accordion-item { border-bottom: 1px solid #FFFFFF1A; border-radius: 0; }
+.omniPropAccordian .accordion-body { border-top: 1px solid var(--colorSecondary); }
+.omniPropAccordian .accordion-body .subTextMd { opacity: 0.7; color: var(--colorWhite); line-height: 1.6; }
+.omniPropAccordian .accordion-button { padding: 28px 20px; padding-right: 80px; }
+.omniPropAccordian .accordion-button { position: relative; }
+.omniPropAccordian .accordion-button:before { content: "\f1af"; font-family: "remixicon"; position: absolute; width: 50px; height: 50px; background-color: var(--colorSecondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--font2xl); color: var(--colorPrimary); right: 20px; padding: 3px 0 0 0; transition: all 0.3s; }
+.omniPropAccordian .accordion-button.collapsed:before { content: '\ea13'; background-color: #E6E9F0; }
+.accordion-item:last-of-type>.accordion-collapse { border-radius: 0; }
+
+/* textImage css */
+.textImage { padding: 120px 0; position: relative; z-index: 1; z-index: 1; overflow: clip; }
+.textImage:before { content: ''; position: absolute; background: url(../../images/dot-bg.png) center center no-repeat; background-size: contain; bottom: -20%; left: -45%; width: 1000px; height: 550px; z-index: -1; }
+.textImageInner .row { align-items: center; }
+.textImageContent .subTextLg { color: var(--colorText); margin: 80px 0 0 0; width: 75%; }
+.textImageImg { width: 100%; height: 100%; border-radius: 30px; overflow: clip; }
+.textImageImg img { width: 100%; height: 100%; object-fit: cover; }

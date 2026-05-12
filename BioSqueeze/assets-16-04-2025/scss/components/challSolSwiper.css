@@ -1,0 +1,22 @@
+.challSol { background: linear-gradient(298.76deg, #273553 31.07%, #0D1C3F 103.82%); padding: 180px 0 100px 0; margin-top: -180px; }
+.swiper-scrollbar-drag { background-color: var(--secondaryColor); position: relative; height: 9px; top: -4px; border-radius: 0;}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal { background-color: #046A38; height: 1px; width: 100vw; left: 0;}
+.challSolSwiper { position: relative; padding: 0 0 50px 0; }
+.slideBoxImage { width: 250px; height: 330px; padding: 80px 0 0 0; transition: all 0.3s; display: flex; justify-content: center; text-align: center; align-items: center; width: 100%; }
+.slideBoxImage img { width: 250px; height: 100%; object-fit: cover; transition: all 0.3s; }
+.slideBoxContent { padding: 30px 50px 50px 50px; color: var(--whiteColor); height: calc(100% - 330px); }
+.challSolText strong { color: var(--secondaryColor); display: block; }
+.challSolText { position: relative; height: calc(100% - 78px); }
+.SolTextBox { position: absolute; top: 0; left: 0; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.challSolText span { display: block; color: #F3F2EF8A; font-weight: 300; }
+
+.challSolSwiper .swiper-slide { height: auto; }
+.slideBox { height: 100%; border-right: 1px solid #f3f2ef4d; border-bottom: 1px solid #f3f2ef4d; }
+.challSolText .smallDescription { margin: 0px 0 30px 0; }
+.slideBoxContent .description { margin: 0; padding: 0 0 30px 0; }
+.challTextBox { transition: all 0.3s; }
+.active .challTextBox { opacity: 0; visibility: hidden; }
+.active .SolTextBox { opacity: 1; visibility: visible; }
+.active .slideBoxContent { padding-top: 360px; }
+.active .slideBoxImage { position: absolute; z-index: -1; padding: 0; opacity: 0.1; width: 100%; height: 100%; display: unset; }
+.active .slideBoxImage img { width: 100%; }

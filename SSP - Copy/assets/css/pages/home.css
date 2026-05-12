@@ -1,0 +1,53 @@
+/* === BANNER CSS START === */
+.doubleBanner { position: relative; height: 100%; z-index: 1; overflow: clip; }
+.doubleBanner:before { content: ""; position: absolute; height: 100vh; width: 100%; background: linear-gradient(182.7deg, rgba(0, 55, 101, 0) 4.54%, #003765 76.69%); bottom: 0; left: 0; z-index: -1; }
+.doubleBannerVideo { position: absolute; top: 0; height: 100vh; width: 100%; z-index: -2; }
+.mainBanner { height: 100vh; display: flex; align-items: flex-end; padding-bottom: 65px; }
+.aboutUsSec { position: relative; z-index: 1; }
+.aboutUsSecBgDot { position: absolute; width: 50vw; height: 550px; bottom: 0; left: 0; }
+.aboutUsSecBgDot img { width: 100%; height: 100%; object-fit: cover; }
+.aboutUsSecInner .row:last-of-type { justify-content: flex-end; }
+.aboutUsSec { height: 125vh; position: relative; z-index: 1; display: flex; align-items: flex-end; padding-bottom: 150px; }
+.aboutUsSec .heading5xl { line-height: 1.4; }
+#intro { visibility: hidden; }
+.line { overflow: hidden; }
+.line span { display: block; }
+.aboutUsSecText { margin-top: 70px; }
+.aboutUsSecText .subTextXl { padding: 24px 0 24px 48px; border-left: 2px solid var(--colorSecondary); position: relative; }
+.aboutUsSecText .subTextXl:before { content: ""; position: absolute; width: 14px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; top: 0; left: -8px; }
+.aboutUsSecText .subTextXl:after { content: ""; position: absolute; width: 14px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; bottom: 0; left: -8px; }
+.aboutUsSecText .secondaryBtn { margin: 0 0 0 70px; }
+.imageInner { position: relative; }
+.aboutUsSecImage { position: absolute; left: 0; bottom: calc(100% - 80px); z-index: 2; border-radius: 30px; width: 400px; height: 440px; overflow: clip; }
+.aboutUsSecImage img { width: 100%; height: 100%; object-fit: cover; }
+
+/* === BANNER CSS END === */
+
+/* gridOne css */
+.gridOne { padding: 150px 0; }
+.gridOneHeading { background-color: var(--colorPrimary); border-radius: 40px; position: relative; height: 100%; overflow: clip; padding: 80px 0 80px 40px; }
+.gridOneHeading .heading6xl { line-height: 1.4; position: relative; }
+.gridOneHeading .heading6xl:before { content: ''; position: absolute; bottom: -10px; width: 120px; height: 1px; background-color: var(--colorSecondary); left: 0; }
+.gridOneHeading .heading6xl:after { content: ''; position: absolute; bottom: -15px; width: 12px; height: 12px; background-color: var(--colorSecondary); left: 0; border-radius: 50%; }
+.gridOneBox { background-color: var(--colorBg); padding: 50px 40px; border-radius: 40px; height: 100%; position: relative; overflow: clip; }
+.gridOneBoxIcon { position: absolute; top: 30px; right: 30px; width: 35px; height: 35px; }
+.gridOneBoxIcon img { width: 100%; height: 100%; object-fit: contain; }
+.gridOneBox .heading4xl { color: var(--colorBlack); }
+.gridOneBox .subTextLg { color: var(--colorText); opacity: 0; visibility: hidden; transition: all 0.3s; }
+.gridOneBoxContent { display: flex; flex-direction: column; gap: 50px; justify-content: space-between; height: 100%; transform: translateY(120px); transition: all 0.3s; }
+.gridOneBox:hover .subTextLg { opacity: 1; visibility: visible; }
+.gridOneBox:hover .gridOneBoxContent { transform: translateY(0); }
+.gridOneHeadingImage { position: absolute; bottom: -30px; left: 0; }
+
+/* industriesServed css */
+.industriesServed { padding: 150px 0 100px 0; background-color: var(--colorBg); }
+.industriesServedTop .subTextLg { color: var(--colorText); }
+.industriesServedListing { margin: 70px 0 0 0; display: flex; justify-content: center; transition: all 0.3s; gap: 34px; }
+.industriesServedList { background-color: var(--colorWhite); padding: 40px 20px 140px 20px; border-radius: 32px; height: 570px; display: flex; flex-direction: column; gap: 220px; transition: all 0.3s; position: relative; overflow: clip; z-index: 1; cursor: pointer; }
+.industriesServedListImage { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.industriesServedList.open .industriesServedListImage, .industriesServedList.open:before { opacity: 1; visibility: visible; }
+.industriesServedListImage img { width: 100%; height: 100%; object-fit: cover; }
+.industriesServedList:before { content: ''; position: absolute; width: 100%; height: 340px; background: linear-gradient(180deg, rgba(255, 158, 27, 0) 0%, #FF9E1B 100%); bottom: 0; left: 0; z-index: -1; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.industriesServedList h3 { font-size: var(--font2xl); transition: all 0.3s; }
+.industriesServedList.open h3 { font-size: var(--font3xl); color: var(--colorWhite); }
+.industriesServedList span { color: #0B3B60; font-size: var(--font9xl); opacity: 0.3; }

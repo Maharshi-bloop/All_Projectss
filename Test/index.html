@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fdf6f3;
+        }
+
+        .comparison-slider {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .comparison-slider img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .comparison-slider .overlay {
+            width: 50%;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .comparison-slider .overlay img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: white;
+            cursor: pointer;
+            transform: translateX(-50%);
+        }
+
+        .slider-handle::before {
+            content: '\25C0';
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 24px;
+        }
+
+        .slider-handle::after {
+            content: '\25B6';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comparison-slider">
+        <img src="image1.jpg" alt="Before">
+        <div class="overlay">
+            <img src="image2.jpg" alt="After">
+        </div>
+        <div class="slider-handle"></div>
+    </div>
+    <script>
+        const slider = document.querySelector(".comparison-slider");
+        const overlay = document.querySelector(".overlay");
+        const handle = document.querySelector(".slider-handle");
+
+        let isDragging = false;
+
+        const startDrag = (e) => {
+            isDragging = true;
+        };
+        const endDrag = () => {
+            isDragging = false;
+        };
+        const moveDrag = (e) => {
+            if (!isDragging) return;
+            let rect = slider.getBoundingClientRect();
+            let position = ((e.clientX || e.touches[0].clientX) - rect.left) / rect.width * 100;
+            position = Math.max(0, Math.min(100, position));
+            overlay.style.width = position + "%";
+            handle.style.left = position + "%";
+        };
+
+        handle.addEventListener("mousedown", startDrag);
+        document.addEventListener("mouseup", endDrag);
+        document.addEventListener("mousemove", moveDrag);
+
+        handle.addEventListener("touchstart", startDrag);
+        document.addEventListener("touchend", endDrag);
+        document.addEventListener("touchmove", moveDrag);
+    </script>
+</body>
+
+</html>

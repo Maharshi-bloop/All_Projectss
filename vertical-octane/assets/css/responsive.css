@@ -1,0 +1,104 @@
+@media (max-width:1600px) {
+	.contactBanner { height: auto; padding: 200px 0 150px; }
+}
+@media (max-width:1366px) {
+	.aboutBannerContent { max-width: 80%; }
+	.bannerContent { max-width: 90%; }
+	.textOnlyInner .subTextLg { max-width: 90%; }
+	.textOnlyInner .heading5xl { width: 70%; }
+	.textBtnInner .subTextLg { width: 75%; }
+}
+@media (max-width:1280px) {
+	:root { --font7xl: 60px; --font5xl: 48px; }
+	.fullTextImageTop .subTextLg { width: 60%; }
+	.whatPowerAccordian { width: 90%; }
+	.accoContent span { width: 80%; }
+}
+@media (max-width:1024px) {
+	:root { --font7xl: 60px; --font5xl: 42px; }
+	.textImage .object1, .textImage .object2 { display: none; }
+	.ctaContent .subTextMd { width: 50%; }
+	.footerLogoWrap .subTextBase { width: 70%; }
+	.footerLogo { width: 140px; }
+	.contactBanner { height: auto; padding: 160px 0; }
+}
+@media (min-width:320px) and (max-width:480px) {
+	:root { --font7xl: 45px; --font6xl: 42px; --font5xl: 34px; --font3xl: 24px; --fontXl: 20px; }
+	.headerInner { padding: 12px 30px; }
+	.textImageInner .row { flex-direction: column-reverse; }
+	.textImage { padding-bottom: 100px; }
+	.imageWrap1 { width: 80%; margin: 0 auto; margin-bottom: 30px; }
+	.imageText { padding: 50px 0 80px 0; }
+	.textWrap1 .heading5xl { width: 100%; }
+	.textWrap1 { padding: 0; text-align: center; }
+	.textWrap1 div { display: flex; justify-content: center; }
+	.fullTextImageTop .heading5xl { margin-bottom: 20px; }
+	.service { padding: 80px 0; }
+	.fullTextImageTop .subTextLg { width: 100%; }
+	.imageWrap3 { max-width: 100%; }
+	.ctaContent .subTextMd { width: 100%; }
+	.footerLogoWrap { text-align: center; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+	.footerLogoWrap .subTextBase { width: 40%; }
+	.copyRightBottom { margin-top: 10px; padding-top: 10px; }
+	.serviceList { padding: 35px 20px; }
+	.headerCta .secondaryBtn { border: none; color: #000; font-weight: 400; font-size: 20px; margin-left: 20px; display: block; }
+	.whatPowerAccordian { display: none; }
+	.aboutBannerContent { max-width: 100%; }
+	.topObject { width: 20%; }
+	.bottomObject { bottom: -70px; width: 40%; }
+	.textOnly { padding: 100px 0; }
+	.textOnlyInner { max-width: 100%; }
+	.textOnlyInner .heading5xl { width: 95%; }
+	.textOnlyInner .primaryLink { display: flex; margin: 20px 0 0 0; }
+	.textBtnInner .subTextLg { width: 100%; }
+	.coreValueTop { display: flex; align-items: flex-start; flex-direction: column; }
+	.coreValueTop .heading5xl { margin: 0 0 20px 0; padding: 0 0 20px 0; border-bottom: 1px solid var(--colorWhite); }
+	.coreValueListing { flex-direction: column; }
+	.coreValueList { margin: 0 0 35px 0; }
+	.teamListing { margin: 30px 0 0 0; }
+	.teamMemberImg { height: 400px; }
+	.barriersListing { margin: 40px 0 0 0; }
+	.barriersList h4 { font-size: 16px; }
+	.barriersList { padding: 26px 32px; }
+	.barriers { padding: 70px 0; }
+	.growth { overflow-x: clip; }
+	.growthSwiper, .accoContent { display: block; }
+	.growthSwiper { margin: 80px 0 0 0; }
+	.growthSwiper .swiper { overflow: visible; }
+	.accoContent span { font-size: var(--fontBase); }
+	.accoheading { padding: 40px 22px 50px 22px; height: auto; }
+	.oneAccordian { display: flex; margin: 0; flex-direction: column; align-items: flex-start; justify-content: space-between; height: 100%; }
+	.growthSwiper .swiper-slide { height: auto; }
+	.growthTop.text-center { width: 60%; text-align: left !important; }
+	.serviceBannerInner { text-align: center; width: 80%; margin: 0 auto; }
+	.serviceBannerObject { bottom: -150px; width: 25%; }
+	.hoverChangeInner { display: none; }
+	.hoverChangeSwiper { display: block; }
+	.hoverContentList .headingXl { opacity: 1; }
+	.hoverContentList .subTextBase { opacity: 1; position: relative; display: block; }
+	.hoverContentList { margin: 20px 0 0 0; }
+	.ctaObject { width: 30%; }
+	.eventBannerInner { width: 100%; }
+	.eventPartnerListing { margin: 40px 0 0 0; }
+	.eventPartnerList span { width: 70%; }
+	.upComingEventSlide { padding: 16px; flex-direction: column; }
+	.upComingEventImg, .eventDetail { width: 100%; }
+	.contactContent .heading6xl { line-height: 0.6; }
+	.contactContent { margin: 0 0 20px 0; }
+	.formDesign { padding: 20px; }
+	.eventBgImage { position: unset; }
+	.eventBgImage img { margin: 0 auto; }
+	.eventPartnerShipInner .row { margin: 0 0 0 50px; }
+	.headerOption { width: 100%; }
+	@keyframes bounce {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(100px); }
+	}
+	@keyframes bounce2 {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-100px); }
+	}
+	.upComingEventSwiper .swiper { padding: 0; }
+	.textWrap { text-align: center; }
+	.textWrap div { display: flex; align-items: center; }
+}

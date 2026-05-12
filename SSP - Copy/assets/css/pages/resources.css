@@ -1,0 +1,28 @@
+/* resourcesBanner css */
+.resourcesBanner { background-color: #4A6D7C; position: relative; z-index: 1; padding: 230px 0 80px 0; }
+.resourcesBannerBg { position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; mix-blend-mode: hard-light; }
+.resourcesBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.resourcesBannerInner .heading11xl { line-height: 1; }
+
+/* textVideo css */
+.textVideo { background-color: var(--colorBg); padding: 120px 0; position: relative; z-index: 1; overflow: clip; }
+.textVideoInner { position: relative; }
+.textVideoInner:before { content: ''; position: absolute; width: 100vw; height: 550px; background: url(../../images/dot-bg.png) center center; background-size: contain; top: -400px; left: calc(100% - 300px); background-repeat: repeat-x; }
+.textVideoInner:after { content: ''; position: absolute; width: 100vw; height: 550px; background: url(../../images/dot-bg.png) center center; background-size: contain; top: 80px; right: calc(100% - 40px); background-repeat: repeat-x; z-index: -1; }
+.textVideoTop .subTextLg { padding: 14px 0 14px 40px; border-left: 2px solid var(--colorSecondary); position: relative; color: var(--colorText); }
+.textVideoTop .subTextLg:before { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; top: 0; }
+.textVideoTop .subTextLg:after { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; left: -7px; bottom: 0; }
+.textVideoTop .row { justify-content: space-between; }
+.textVideoBox { height: 490px; margin: 80px 0 0 0; border-radius: 30px; overflow: clip; position: relative; }
+.textVideoBox:before { content: ''; position: absolute; background-color: var(--colorBlack); opacity: 0.4; width: 100%; height: 100%; top: 0; left: 0; }
+
+/* downloadSheets css */
+.downloadSheets { padding: 80px 0; background-color: var(--colorPrimary); border-bottom: 1px solid #E6E9F033; }
+table span { color: var(--colorWhite); font-weight: 400; font-size: var(--font2xl); }
+table a { display: flex; align-items: center; justify-content: center; }
+thead tr, tbody tr { border-bottom: 1px solid #ffffff1a; }
+thead tr th, tbody tr td { padding: 16px; }
+tbody tr td:first-child { font-size: var(--font2xl); line-height: 40px; }
+thead tr th:not(:first-child), tbody tr td:not(:first-child) { text-align: center; }
+thead tr, tbody tr:nth-child(even) { background-color: #0000001a; }
+thead tr th p { margin: 0; color: var(--colorSecondary); font-weight: 400; font-size: 16px; padding: 6px 20px; border: 1px solid var(--colorSecondary); width: max-content; border-radius: 50px; }

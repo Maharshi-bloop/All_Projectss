@@ -1,0 +1,47 @@
+.useCaseBanner { position: relative; height: 100vh; z-index: 1; display: flex; align-items: center; justify-content: center; overflow-x: clip; }
+.useCaseBanner::before { content: ''; position: absolute; bottom: -140px; left: 0; width: 100%; height: 300px; z-index: 1; background: linear-gradient(0deg, rgba(5, 4, 30, 0) 0%, rgba(5, 4, 30, 0.8) 19.77%, #05041E 38.79%, #05041E 55.52%, rgba(5, 4, 30, 0.8) 76.44%, rgba(5, 4, 30, 0) 100%); pointer-events: none; }
+.useCaseBannerImage { width: 100%; height: 100%; opacity: 0.5; position: absolute; top: 0; left: 0; z-index: -1; }
+.useCaseBannerImage img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: screen; }
+.useCaseBannerInner { text-align: center; width: 40%; margin: 0 auto; position: relative; }
+.useCaseBannerInner::before, .useCaseBannerInner::after { content: ''; position: absolute; top: 50%; transform: translateY(-50%); width: 50vw; height: 300px; border-radius: 50%; background: linear-gradient(90deg, #B2058C 17%, #C51768 22%, #D72848 28%, #E5362D 34.01%, #F14019 41.01%, #F8480A 48.01%, #FD4C02 57.01%, #FF4E00 72.01%, #F8C031 100.02%); filter: blur(120px); opacity: 0.5; pointer-events: none; }
+.useCaseBannerInner::before { right: 50vw; }
+.useCaseBannerInner::after { left: 50vw; }
+.useCaseBannerInner .sectionHeading { position: relative; }
+.useCaseBannerInner .sectionHeading::before { content: ''; position: absolute; width: 100%; height: 5px; background: linear-gradient(90deg, #B2058C 17%, #C51768 22%, #D72848 28%, #E5362D 34.01%, #F14019 41.01%, #F8480A 48.01%, #FD4C02 57.01%, #FF4E00 72.01%, #F8C031 100.02%); border-radius: 50%; top: calc(100% + 30px); left: 50%; transform: translate(-50%, -50%); z-index: -1; filter: blur(7px); }
+
+/* getInTouch css */
+.getInTouch { position: relative; z-index: 1; padding: 70px 0 200px 0; background: linear-gradient(180deg, rgba(5, 4, 30, 0) 0%, #01001A 33.51%, #01001A 80.27%, rgba(5, 4, 30, 0) 107.02%); overflow-x: clip; }
+.getInTouchInner:before { content: ''; position: absolute; background: url(../../images/wave.webp) center center no-repeat; width: 850px; height: 1300px; background-size: contain; right: calc(100vw - 650px); top: -120px; z-index: -1; }
+.getInTouchContent ul { list-style: none; padding: 0; margin: 0; }
+.getInTouchContent li a { text-decoration: none; color: var(--whiteColor); margin: 0 0 0 16px; }
+.getInTouchContent li { display: flex; margin: 30px 0; }
+section.getInTouch:before { content: ''; position: absolute; top: 0; left: 0; width: 50.4vw; height: 2px; background-color: #ffffff33; }
+section.getInTouch::after { content: ''; position: absolute; top: 0; left: 0; width: 250px; height: 3px; background: linear-gradient(90deg, #B2058C 17%, #C51768 22%, #D72848 28%, #E5362D 34.01%, #F14019 41.01%, #F8480A 48.01%, #FD4C02 57.01%, #FF4E00 72.01%, #F8C031 100.02%); filter: blur(7px); z-index: -1; border-radius: 50%; animation: lineAnimate 6s ease-in-out infinite; }
+@keyframes lineAnimate {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(35vw); }
+	100% { transform: translateX(0); }
+}
+@media (max-width:1440px) { }
+@media (max-width:1366px) {
+	section.getInTouch:before { width: 51.1vw; }
+}
+@media (max-width:768px) {
+	section.getInTouch:before { width: 100%; }
+	@keyframes lineAnimate {
+		0% { transform: translateX(0); }
+		50% { transform: translateX(50vw); }
+		100% { transform: translateX(0); }
+	}
+	.getInTouchContent .sectionHeading { text-align: center; }
+	.getInTouchContent ul { display: flex; flex-wrap: wrap; gap: 40px; justify-content: unset; margin: 40px 0 100px 0; }
+	.getInTouchContent ul li { margin: 0; }
+	.useCaseBannerInner { width: 60%; }
+}
+@media (max-width:480px) {
+	.getInTouchInner:before { top: -580px }
+	.useCaseBannerInner { width: 100%; }
+	.useCaseBannerInner::after { left: 80vw; }
+	.useCaseBannerInner::before { right: 80vw; }
+	.useCaseBannerInner .sectionHeading::before { width: 80%; filter: blur(3px); }
+}

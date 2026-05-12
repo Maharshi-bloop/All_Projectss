@@ -1,0 +1,46 @@
+.centerForm {
+  padding: 150px 0;
+}
+
+.marginTopMinus {
+  margin-top: -350px;
+}
+
+.formDesign {
+  background-color: #C0F0D8;
+  border-radius: 20px;
+  padding: 80px 100px;
+}
+.formDesign .form {
+  padding: 65px 0 0 0;
+}
+.formDesign .form .formField {
+  margin: 0 0 40px 0;
+}
+.formDesign .form .formField label {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #003B4A;
+  font-family: "Public Sans";
+}
+.formDesign .form .formField input, .formDesign .form .formField textarea,
+.formDesign .form .formField select {
+  width: 100%;
+  border: 1px solid #003B4A;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  font-family: "Public Sans";
+}
+.formDesign .form .formField select {
+  -webkit-appearance: none;
+  background: url(../../images/service-dropdown-arrow.svg) right 20px center no-repeat;
+  background-color: #fff;
+  background-size: 20px;
+}
+.formDesign .form input[type=submit] {
+  width: 100%;
+  cursor: pointer;
+}

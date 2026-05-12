@@ -1,0 +1,34 @@
+.contactBanner { padding: 230px 0 0 0; margin: 0 0 100px 0; position: relative; z-index: 1; overflow: clip; background-color: var(--colorBlack); }
+.contactBanner:before { content: ''; position: absolute; width: 100%; height: 500px; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 27.45%, #000000 94.9%); bottom: 10%; }
+.contactBannerInner { position: relative; z-index: 1; }
+.contactBannerInner:before { content: ''; position: absolute; width: 100vw; left: 10%; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 27.45%, #353D3E 94.9%); height: 90%; z-index: -1; bottom: 0; border-radius: 30px; }
+.contactBannerImage { position: absolute; top: 0; left: 0; width: 100%; height: 90%; z-index: -1; mix-blend-mode: luminosity; opacity: 0.1; }
+.contactBannerImage img { width: 100%; height: 100%; object-fit: cover; }
+.contactBannerHeading { font-weight: 800; font-size: var(--font6xl); position: relative; }
+.contactBannerHeading .lineText { font-size: 150px; text-fill-color: transparent; text-stroke: 1px #bfbfc77a; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #bfbfc77a; -moz-text-fill-color: transparent; line-height: 1; }
+.contactBannerHeading span:not(.lineText) { position: absolute; text-transform: uppercase; width: 70%; bottom: 20px; left: 17%; }
+
+/* formWrap css */
+.formWrapInner .row { justify-content: flex-end; }
+.inputField input, .inputField textarea { width: 100%; background-color: transparent; outline: none; border: none; border-bottom: 1px solid #3C3C3C; padding: 0 0 20px 0; margin: 0 0 40px 0; color: #ffffff99; font-size: 22px; }
+.inputField input::placeholder { color: #ffffff99; }
+.formDesign { margin: 65px 0; padding: 80px 90px 80px 0; position: relative; }
+.formDesign:before { content: ''; position: absolute; width: 100vw; height: 100%; border: 1px solid var(--ColorPrimaryDrk); border-radius: 500px; z-index: -1; top: 0; left: -50%; opacity: 0.5; }
+.formDesign .primaryBtn { color: var(--colorWhite); }
+.formWrap { position: relative; }
+.formShap { position: absolute; bottom: 120px; left: 40px; }
+
+/* location css */
+.location { overflow: clip; }
+.locationHeading { font-weight: 700; font-size: var(--font4xl); display: block; }
+.locationHeading .lineText { font-size: 150px; text-fill-color: transparent; text-stroke: 1px #bfbfc77a; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #bfbfc77a; -moz-text-fill-color: transparent; line-height: 0.8; display: inline-block; position: relative; }
+.locationHeading span:not(.lineText) { display: block; }
+.locationHeading .lineText:before { content: ''; position: absolute; width: 100vw; height: 1px; left: 104%; background-color: var(--ColorPrimaryDrk); top: 50%; }
+.locationHeading .lineText:after { content: ''; position: absolute; width: 10px; height: 10px; left: 104%; background-color: var(--ColorPrimaryDrk); top: 47%; border-radius: 50%; }
+.locationWrap { margin: 60px 0 0 0; position: relative; }
+.locationMap { position: absolute; top: 50%; transform: translateY(-50%); right: -80px; }
+.locationList .subTextMd { font-family: var(--fontPrimary); text-transform: uppercase; margin: 0 0 15px 0; }
+.locationList .subTextBase { opacity: 0.6 !important; display: block; }
+.locationList { margin: 0 0 50px 0; }
+.locationList:last-child { margin: 0; }
+.locationListing { padding: 30px 0 30px 20px; border-left: 1px solid #E9C31E80; }

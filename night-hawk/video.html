@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NightHawk</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/about-us.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Font Declaartion */
+
+        /* Maxima Nouva font */
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-Bold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-Italic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Italic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva SemBd';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-SemiBold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva ExtBd';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ExtraBoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva ExtBd';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-ExtraBold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ExtraBold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-BoldItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-BoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-Regular.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-ThinItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ThinItalic.woff') format('woff');
+            font-weight: 100;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maxima Nouva';
+            src: url('../webfonts/MaximaNouva/MaximaNouva-Thin.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Noto Serif font */
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Black.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Black.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Bold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-BlackItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-BlackItalic.woff') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-ExtraBold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraBold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-BoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-BoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraBoldItalic.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraLightItalic.woff') format('woff');
+            font-weight: 200;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-ExtraLight.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Italic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Italic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-LightItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-LightItalic.woff') format('woff');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Light.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Medium.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-SemiBold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-MediumItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-MediumItalic.woff') format('woff');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Regular.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-SemiBoldItalic.woff') format('woff');
+            font-weight: 600;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-ThinItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ThinItalic.woff') format('woff');
+            font-weight: 100;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('../webfonts/NotoSerif/NotoSerif-Thin.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* RESET CSS */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html:focus-within {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            text-rendering: optimizeSpeed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family: var(--fontPrimary);
+            font-size: var(--fontBase);
+            line-height: 1.6;
+            background-color: var(--colorBg);
+        }
+
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        :root {
+            --fontPrimary: 'Maxima Nouva';
+            --fontSecondary: 'Noto Serif';
+            --colorPrimary: #0452CE;
+            --colorPrimaryDark: #021C69;
+            --colorPrimaryLight: #8FBFEF;
+            --colorSecondary: #f15a22;
+            --colorAccent: #00b8ec;
+            --colorBg: #F4F2EF;
+            --colorText: #222222;
+            --colorWhite: #ffffff;
+            --colorBlack: #000000;
+            --fontXs: 12px;
+            --fontSm: 14px;
+            --fontBase: 16px;
+            --fontMd: 18px;
+            --fontLg: 20px;
+            --fontXl: 24px;
+            --font2xl: 28px;
+            --font3xl: 32px;
+            --font4xl: 36px;
+            --font5xl: 40px;
+            --font6xl: 44px;
+            --font7xl: 48px;
+            --font8xl: 54px;
+            --font9xl: 60px;
+            --font10xl: 66px;
+            --font11xl: 74px;
+        }
+
+        .heading11xl {
+            font-size: var(--font11xl);
+            font-weight: 600;
+            color: var(--colorBlack);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading10xl {
+            font-size: var(--font10xl);
+            font-weight: 600;
+            color: var(--colorBlack);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading9xl {
+            font-size: var(--font9xl);
+            font-weight: 600;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading8xl {
+            font-size: var(--font8xl);
+            font-weight: 500;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading7xl {
+            font-size: var(--font7xl);
+            font-weight: 500;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading6xl {
+            font-size: var(--font6xl);
+            font-weight: 500;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading5xl {
+            font-size: var(--font5xl);
+            font-weight: 500;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading4xl {
+            font-size: var(--font4xl);
+            font-weight: 500;
+            color: var(--colorBlack);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .heading3xl {
+            font-size: var(--font3xl);
+            font-weight: 500;
+            color: var(--colorWhite);
+            display: block;
+            font-family: var(--fontPrimary);
+        }
+
+        .subText2xl {
+            font-size: var(--font2xl);
+            font-family: var(--fontSecondary);
+            display: inline-block;
+        }
+
+        .subTextXl {
+            font-size: var(--fontXl);
+            font-family: var(--fontSecondary);
+            display: inline-block;
+        }
+
+        .subTextMd {
+            font-size: var(--fontMd);
+            font-family: var(--fontSecondary);
+            display: inline-block;
+        }
+
+        .subTextLg {
+            font-size: var(--fontLg);
+            font-family: var(--fontSecondary);
+            display: inline-block;
+        }
+
+        .primaryBtn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #7474742B;
+            backdrop-filter: blur(26.200000762939453px);
+            width: max-content;
+            padding: 10px;
+            padding-left: 32px;
+            border-radius: 8px;
+            color: var(--colorWhite);
+            transition: all 0.3s;
+            backdrop-filter: blur(8px);
+        }
+
+        .primaryBtn:hover {
+            background-color: var(--colorWhite);
+            color: var(--colorPrimaryDark);
+        }
+
+        .primaryBtn span {
+            width: 32px;
+            height: 32px;
+            background-color: var(--colorPrimary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 0 0 2px 0;
+        }
+
+        .arrowLink {
+            background-color: var(--colorPrimary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 24px 0 0 0;
+        }
+
+        .secondaryBtn {
+            background: #FFFFFF2B;
+            display: flex;
+            padding: 10px;
+            padding-left: 34px;
+            align-items: center;
+            gap: 10px;
+            width: max-content;
+            color: #fff;
+            border-radius: 8px;
+            backdrop-filter: blur(26.200000762939453px);
+        }
+
+        .secondaryBtn span {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--colorWhite);
+            border-radius: 50%;
+        }
+
+        .secondaryCta {
+            padding: 8px 15px;
+            border: 1px solid #FFFFFF40;
+            color: var(--colorWhite);
+            border-radius: 6px;
+            transition: all 0.3s;
+            backdrop-filter: blur(8px);
+        }
+
+        .secondaryCta:hover {
+            background-color: var(--colorWhite);
+            color: var(--colorPrimaryDark);
+        }
+
+        main {
+            margin-top: -120px;
+        }
+
+        .downbtn span {
+            transform: rotate(120deg);
+        }
+
+        /* === HEADER CSS START === */
+        header {
+            position: relative;
+            width: 100%;
+            top: 0;
+            z-index: 99;
+            padding: 20px 0 0 0;
+        }
+
+        .headerWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .toggleBtn {
+            display: none;
+        }
+
+        @media (min-width:1025px) {
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                transition: all 0.3s;
+            }
+
+            nav>ul {
+                display: flex;
+                padding: 0 22px;
+                gap: 8px;
+            }
+
+            nav li {
+                position: relative;
+            }
+
+            nav>ul>li>a {
+                color: var(--colorWhite);
+                position: relative;
+                display: inline-block;
+                padding: 8px 15px;
+                border: 1px solid #FFFFFF40;
+                text-decoration: none;
+                transition: all 0.3s;
+                position: relative;
+                font-family: var(--fontPrimary);
+                background: #FFFFFF1A;
+                border-radius: 6px;
+                backdrop-filter: blur(8px);
+            }
+
+            nav ul ul {
+                position: absolute;
+                background: #FFFFFF1A;
+                box-shadow: 0 7px 10px #00000061;
+                border: 1px solid #FFFFFF40;
+                border-radius: 0 0 6px 6px;
+                overflow: hidden;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+                pointer-events: none;
+                transform-origin: top center;
+                width: 100%;
+                padding: 8px 10px;
+                padding-right: 0;
+                backdrop-filter: blur(8px);
+            }
+
+            nav>ul li:hover ul {
+                opacity: 1;
+                visibility: visible;
+                animation: dropDown 0.5s ease-in-out forwards;
+            }
+
+            @keyframes dropDown {
+                0% {
+                    transform: rotateX(-90deg);
+                }
+
+                70% {
+                    transform: rotateX(20deg);
+                }
+
+                100% {
+                    transform: rotateX(0deg);
+                }
+            }
+
+            nav ul ul a {
+                font-size: var(--fontSm);
+                color: var(--colorWhite);
+                transition: all 0.3s;
+            }
+
+            nav ul ul a:hover {
+                color: var(--colorPrimaryLight);
+            }
+
+            nav>ul>li:hover a {
+                border-radius: 6px 6px 0 0;
+            }
+
+            nav>ul>li:hover ul {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+
+            li.hasUl a {
+                padding-right: 25px !important;
+            }
+
+            li.active>a {
+                background-color: var(--colorPrimary);
+                color: var(--colorWhite);
+            }
+
+            nav ul ul li.active>a {
+                background-color: transparent;
+                color: var(--colorPrimaryDark);
+            }
+
+            .headerCta {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .headerCta {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .primaryCta {
+                border: 1px solid #FFFFFF40;
+                background: #FFFFFF1A;
+                padding: 8px 15px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 6px;
+                color: var(--colorWhite);
+                transition: all 0.3s;
+            }
+
+            .primaryCta span {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: var(--colorPrimary);
+                padding: 5px;
+                padding-bottom: 6px;
+            }
+
+            .primaryCta:hover {
+                background-color: var(--colorWhite);
+                color: var(--colorPrimary);
+            }
+        }
+
+        @media (max-width:1024px) {
+            .headerOption {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 400px;
+                height: 100vh;
+                background-color: #E9EDF2 !important;
+                transform: translateX(100%);
+                transition: all 0.3s;
+                list-style: none;
+                padding: 140px 0 0 0;
+                margin: 0;
+            }
+
+            .headerOption.openMenu {
+                transform: translateX(0);
+            }
+
+            nav ul li a {
+                display: inline-block;
+                width: 100%;
+                margin: 20px 40px;
+                font-size: 22px;
+                color: var(--colorBlack);
+                text-decoration: none;
+            }
+
+            .toggleBtn {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                background-color: var(--colorBg);
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+                flex-direction: column;
+                position: relative;
+                z-index: 10;
+                border-radius: 12px;
+            }
+
+            .toggleBtn span {
+                width: 20px;
+                height: 2px;
+                background-color: var(--colorPrimary);
+                display: block;
+                border-radius: 80px;
+                transition: all 0.3s;
+            }
+
+            .toggleBtn.closeBtn span:first-child {
+                transform: rotate(45deg) translate(2px, 3px);
+            }
+
+            .toggleBtn.closeBtn span:last-child {
+                transform: rotate(-45deg) translate(3px, -4px);
+            }
+
+            .toggleBtn span:nth-child(2) {
+                display: none;
+            }
+        }
+
+        /* === HEADER CSS END === */
+
+        /* mapWrap css */
+        .mapWrap {
+            padding: 120px 0 70px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mapWrapTop .heading7xl {
+            color: var(--colorBlack);
+            font-weight: 600;
+        }
+
+        .mapWrapTop span {
+            margin-top: 70px;
+        }
+
+        /* BANNER CSS  */
+        .aboutBanner {
+            position: relative;
+            z-index: 1;
+            overflow-x: clip;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            background-color: #011132;
+            padding-bottom: 80px;
+        }
+
+        .aboutBannerInner {
+            transition: all 0.3s;
+        }
+
+        .aboutBannerBgVideo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+            transform-origin: center center;
+            will-change: transform, width, height;
+        }
+
+        .aboutBannerBgVideo video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .aboutBannerContent .subTextLg {
+            color: var(--colorWhite);
+            margin: 0 0 35px 0;
+        }
+
+        /* serveThePeople css */
+        .serveThePeople {
+            padding: 120px 0 200px 0;
+            position: relative;
+            background: linear-gradient(213deg, #0452CE -21.14%, #F4F2EF 61.29%);
+            overflow: clip;
+        }
+
+        .serveThePeople:before {
+            padding: 120px 0 200px 0;
+            position: relative;
+        }
+
+        .serveThePeopleImage {
+            display: flex;
+            justify-content: center;
+        }
+
+        .serveThePeopleContent {
+            margin: 64px 0 0 0;
+        }
+
+        .serveThePeopleContent .row:first-child {
+            max-width: 95%;
+            margin-left: auto;
+        }
+
+        .serveThePeopleContent .row:last-child {
+            justify-content: flex-end;
+        }
+
+        .serveThePeopleText {
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .serveThePeopleText:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100vh;
+            background-color: #8FBFEF;
+            left: 0;
+            top: 0;
+        }
+
+        /* headingOnly css */
+        .headingOnly {
+            padding: 250px 0;
+            background-color: #011132;
+            text-align: center;
+        }
+
+        .headingOnly .heading3xl {
+            font-family: var(--fontSecondary);
+            max-width: 65%;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        /*  */
+        .ourValueListing {
+            margin: 40px 0 0 0;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #FFFFFF6B;
+            border-bottom: 1px solid #FFFFFF6B;
+        }
+
+        .ourValueList {
+            flex: 1 1 200px;
+            transition: all 0.5s;
+            height: 550px;
+            position: relative;
+            padding: 80px 40px;
+            padding-bottom: 200px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            border-left: 1px solid #FFFFFF6B;
+            ;
+        }
+
+        .ourValueList .titleHeading {
+            transition: all 0.3s;
+        }
+
+        .ourValueList:hover .titleHeading {
+            color: var(--colorWhite);
+        }
+
+        .ourValueList .secondaryArrowBtn {
+            position: absolute;
+            bottom: 80px;
+            left: 40px;
+            transition: all 0.3s;
+        }
+
+        .ourValueList .subTextMd {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            transition-delay: 0.3s;
+            transform: translateY(20px);
+            display: inline-block;
+            color: var(--blackColor);
+            position: absolute;
+            position: absolute;
+            width: 50%;
+        }
+
+        .ourValueList:hover .subTextMd {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0)
+        }
+
+        .ourValueList:hover {
+            flex-grow: 3;
+        }
+
+        .ourValueList:hover .secondaryArrowBtn {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .ourValueList .heading5xl {
+            color: var(--blackColor);
+            margin: 0 0 24px 0;
+        }
+
+        .ourValue {
+            padding: 100px 0 200px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ourValueBg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            mix-blend-mode: lighten;
+            opacity: 0.6;
+        }
+
+        .ourValueBg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ourValue:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(161.91deg, #0452CE -6.31%, #97a2b2a3 34.09%, #ffffff 72.22%);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .ourValueTop .heading9xl {
+            color: var(--blackColor);
+        }
+
+        /* subBanner CSS  */
+        .subBanner {
+            position: relative;
+            z-index: 1;
+            overflow-x: clip;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #011132;
+            padding-bottom: 80px;
+        }
+
+        .subBannerBgVideo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+            ;
+        }
+
+        .subBannerBgVideo video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .subBannerContent {
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .subBannerContent .subTextLg {
+            color: var(--colorWhite);
+            margin: 0 0 35px 0;
+        }
+
+        .bannerBtnWrap {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .specialText {
+            color: var(--colorPrimary);
+            font-size: var(--font3xl);
+            font-weight: 700;
+        }
+
+        /* textVideo css */
+        .textVideo {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%);
+            padding: 150px 0 0 0;
+        }
+
+        .textVideo:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background-color: #011132;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .textDesc {
+            padding: 0 0 250px 60px;
+            border-left: 1px solid #8FBFEF
+        }
+
+        .textDesc .primaryBtn {
+            color: var(--colorBlack);
+            margin: 30px 0 0 0;
+        }
+
+        .textVideoInner .row:last-child {
+            justify-content: flex-end;
+        }
+
+        .textVideoBox {
+            width: 100%;
+            height: 600px;
+        }
+
+        .textVideoBox video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* footer css */
+        .cta {
+            position: relative;
+            background-color: var(--colorPrimary);
+            z-index: 1;
+            padding: 100px 0;
+        }
+
+        .ctaBg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        .ctaBg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ctaInner {
+            position: relative;
+        }
+
+        .ctaInner .heading8xl {
+            margin-bottom: 30px;
+        }
+
+        .ctaContent {
+            width: 40%;
+            position: relative;
+        }
+
+        .ctaImage {
+            position: absolute;
+            bottom: -90px;
+            right: 15%;
+            opacity: 0.2;
+        }
+
+        .footerMain {
+            background-color: var(--colorPrimaryDark);
+        }
+
+        .footerMainInner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footerMain {
+            padding: 30px 0 65px;
+        }
+
+        .footerul ul {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footerul ul li a {
+            padding: 8px 15px;
+            background: #FFFFFF1A;
+            border: 1px solid #FFFFFF40;
+            border-radius: 6px;
+            color: var(--colorWhite);
+            transition: all 0.3s;
+        }
+
+        .footerul ul li a:hover {
+            color: var(--colorPrimaryDark);
+            background-color: var(--colorWhite);
+            display: inline-block;
+        }
+
+        .footerContact a {
+            color: var(--colorWhite);
+            padding: 5px 0;
+            opacity: 0.7;
+        }
+
+        /*New Css*/
+        .scene {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            background: var(--dark);
+        }
+
+        .whiteCanvas {
+            position: absolute;
+            inset: 0;
+            background: var(--white);
+            opacity: 0;
+            z-index: 1;
+        }
+
+        /* Video starts full bleed, then becomes the center tile */
+        .videoTile {
+            position: absolute;
+            inset: 0;
+            border-radius: 0;
+            overflow: hidden;
+            z-index: 3;
+            background: #000;
+            transform: translate3d(0, 0, 0);
+            will-change: transform, border-radius, width, height, top, left;
+            box-shadow: none;
+        }
+
+        .videoTile video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .shade {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .55));
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        /* Hero text on top of video initially */
+        .heroText {
+            position: absolute;
+            left: 50%;
+            top: 52%;
+            transform: translate(-50%, -50%);
+            width: min(1000px, calc(100% - 48px));
+            text-align: center;
+            color: #fff;
+            z-index: 4;
+            will-change: transform, opacity, filter;
+        }
+
+        .heroText h1 {
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            font-size: clamp(44px, 6vw, 92px);
+            line-height: .95;
+        }
+
+        /* ===== STACK (appears on white) ===== */
+        .stackWrap {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(30px);
+            will-change: opacity, transform;
+        }
+
+        .stack {
+            position: absolute;
+            left: 50%;
+            top: 38%;
+            transform: translate(-50%, -50%);
+            width: min(720px, 92vw);
+            height: min(360px, 44vh);
+        }
+/* 
+        .tile {
+            position: absolute;
+            border-radius: var(--r);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #eee;
+            opacity: 0;
+            transform: translate3d(0, 0, 0) scale(.96);
+            will-change: transform, opacity;
+        } */
+
+        .tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Positions match your screenshot vibe */
+        .tBackTop {
+            width: 44%;
+            height: 68%;
+            left: 28%;
+            top: -6%;
+            z-index: 1;
+        }
+
+        /* sky tile behind */
+        .tBackRight {
+            width: 38%;
+            height: 62%;
+            left: 58%;
+            top: 4%;
+            z-index: 1;
+        }
+
+        /* dark tile top-right */
+        .tBackLeft {
+            width: 38%;
+            height: 62%;
+            left: 4%;
+            top: 18%;
+            z-index: 1;
+        }
+
+        /* worker tile left */
+
+        /* The center tile IS the video after morph */
+        .centerTarget {
+            position: absolute;
+            width: 56%;
+            height: 78%;
+            left: 22%;
+            top: 10%;
+            border-radius: var(--r);
+            z-index: 3;
+            /* invisible helper target */
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        /* Heading under stack */
+        .titleWrap {
+            position: absolute;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+            width: min(980px, calc(100% - 48px));
+            z-index: 2;
+            opacity: 0;
+            will-change: transform, opacity;
+        }
+
+        .title {
+            margin: 0;
+            color: var(--text);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            font-size: clamp(44px, 6vw, 90px);
+            line-height: .98;
+            text-align: left;
+        }
+
+        .title .muted {
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        /*End Css*/
+    </style>
+</head>
+
+<body class="about-us">
+    <div class="pageWrap">
+
+        <header>
+            <div class="container-xl">
+                <div class="headerInner">
+                    <div class="headerWrap">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="headerOption">
+                            <div class="headerUl">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Completion Fluids</a>
+                                            <ul>
+                                                <li><a href="#">Lightweight Fluids</a></li>
+                                                <li><a href="#">Mixing Plants</a></li>
+                                                <li><a href="#">Specialty Chemicals</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Completion Equipment</a>
+                                            <ul>
+                                                <li><a href="#">Solids Control</a></li>
+                                                <li><a href="#">Flowback</a></li>
+                                                <li><a href="#">Test & Torque</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="headerCta">
+                            <a href="#" class="secondaryCta">(281) 719-5183</a>
+                            <a href="#" class="primaryCta">Contact Us <span><img src="images/btn-arrow.svg"
+                                        alt="btn-arrow" class="img-fluid"></span></a>
+                        </div>
+                        <div class="toggleBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="scene" id="scene">
+                <div class="whiteCanvas" id="whiteCanvas"></div>
+
+                <div class="stackWrap" id="stackWrap">
+                    <div class="stack" id="stack">
+
+                        <div class="serveThePeopleImage tile tBackTop" id="tTop">
+                                <img src="assets/images/multi-images.png" alt="">
+                            </div>
+                       <!--  <div class="tile tBackTop" id="tTop">
+                            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80"
+                                alt="">
+                        </div>
+                        <div class="tile tBackRight" id="tRight">
+                            <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&w=1400&q=80"
+                                alt="">
+                        </div>
+                        <div class="tile tBackLeft" id="tLeft">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"
+                                alt="">
+                        </div> -->
+
+                        
+                        <div class="centerTarget" id="centerTarget"></div>
+                    </div>
+                </div>
+
+                <div class="videoTile" id="videoTile">
+                    <video id="heroVideo" autoplay muted loop playsinline preload="metadata">
+                        <source src="images/about-banner-bg-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="shade" id="shade"></div>
+                </div>
+
+                <div class="heroText" id="heroText">
+                    <h1>Fit for Purpose<br />Energy</h1>
+                </div>
+            </section>
+
+            <section class="serveThePeople">
+                <div class="container-xl">
+                    <div class="serveThePeopleInner">
+                        <!-- <div class="serveThePeopleImage">
+                                <img src="images/multi-images.png" alt="">
+                            </div> -->
+                        <div class="serveThePeopleContent">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="serveThePeopleHeading">
+                                        <h3 class="heading10xl">Nighthawk Serves the People Working the Hardest</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="serveThePeopleText">
+                                        <span class="subTextLg">
+                                            <p>
+                                                With over 30 years of oilfield experience and a vertically integrated
+                                                operation, we design, manufacture, and deliver advanced completions
+                                                technology built for the real challenges of wellsite environments.
+                                            </p>
+                                            <p>
+                                                From proprietary lightweight fluid systems to flowback and solids
+                                                control, every Nighthawk solution is field-tested and
+                                                precision-engineered to reduce risk, enhance performance, and protect
+                                                your well
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="headingOnly">
+                <div class="container-xl">
+                    <div class="headingOnlyInner">
+                        <h3 class="heading3xl">We develop and deliver the specialty fluid services that improve your
+                            wellsite performance,
+                            minimize downtime, and cut operational costs.With a focus on engineering, chemistry, and
+                            field expertise, we only deliver systems that meet modern oil and gas demands.</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ourValue">
+                <div class="ourValueBg">
+                    <img src="images/our-value-bg.png" alt="">
+                </div>
+                <div class="container-xl">
+                    <div class="ourValueInner">
+                        <div class="ourValueTop">
+                            <h3 class="heading9xl">Our Values</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ourValueListing">
+                    <div class="ourValueList">
+                        <div class="ourValueIcon">
+                            <img src="images/quality-intergrity.svg" alt="">
+                        </div>
+                        <div class="ourValueContent">
+                            <h3 class="heading5xl">Quality & Integrity</h3>
+                            <span class="subTextMd">We don’t cut corners. Every fluid system and completion service is
+                                built with
+                                field-tested reliability to meet the demands of modern well sites</span>
+                        </div>
+                    </div>
+                    <div class="ourValueList">
+                        <div class="ourValueIcon">
+                            <img src="images/experience.svg" alt="">
+                        </div>
+                        <div class="ourValueContent">
+                            <h3 class="heading5xl">Experience</h3>
+                            <span class="subTextMd">We don’t cut corners. Every fluid system and completion service is
+                                built with
+                                field-tested reliability to meet the demands of modern well sites</span>
+                        </div>
+                    </div>
+                    <div class="ourValueList">
+                        <div class="ourValueIcon">
+                            <img src="images/safety.svg" alt="">
+                        </div>
+                        <div class="ourValueContent">
+                            <h3 class="heading5xl">Safety</h3>
+                            <span class="subTextMd">We don’t cut corners. Every fluid system and completion service is
+                                built with
+                                field-tested reliability to meet the demands of modern well sites</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mapWrap">
+                    <div class="container-xl">
+                        <div class="mapWrapInner">
+                            <div class="mapWrapTop">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h3 class="heading7xl">We Go Where Your Well Demands</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <span class="subTextLg">With rapid mobilization capabilities and on-the-ground
+                                            expertise, Nighthawk operates across every major oil and gas basin in the
+                                            U.S.,
+                                            including the Permian, Bakken, Eagle Ford, DJ, and Anadarko.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mapSec">
+                                <div class="mapImage">
+                                    <img src="images/map-image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="mapWrap">
+                    <div class="container-xl">
+                        <div class="mapWrapInner">
+                            <div class="mapWrapTop">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h3 class="heading7xl">We Go Where Your Well Demands</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <span class="subTextLg">With rapid mobilization capabilities and on-the-ground
+                                            expertise, Nighthawk operates across every major oil and gas basin in the U.S.,
+                                            including the Permian, Bakken, Eagle Ford, DJ, and Anadarko.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mapSec">
+                                <div class="mapImage">
+                                    <img src="images/map-image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+        </main>
+
+        <footer>
+            <div class="footerInner">
+                <div class="cta">
+                    <div class="ctaBg">
+                        <img src="images/cta-bg.png" alt="">
+                    </div>
+                    <div class="container-xl">
+                        <div class="ctaInner">
+                            <div class="ctaContent">
+                                <h3 class="heading8xl">Keep Your Wells Running and We will Handle the Rest.</h3>
+                                <a href="#" class="secondaryBtn">Get In Touch <span><img src="images/btn-arrow-blue.svg"
+                                            alt=""></span></a>
+                            </div>
+                            <div class="ctaImage">
+                                <img src="images/logo-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerMain">
+                    <div class="container-xl">
+                        <div class="footerMainInner">
+                            <div class="footerLogo">
+                                <a href="#">
+                                    <img src="images/logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="footerul">
+                                <ul>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="footerContact">
+                                <ul>
+                                    <li><a href="#">E : hr@nighthawkservices.com</a></li>
+                                    <li><a href="#">P : Headquarters (346) 372-8509A</a></li>
+                                    <li><a href="#">A : 2908 Elkins Rd. Midland, TX 79705</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const videoWrap = document.querySelector(".aboutBannerBgVideo");
+    const serveImage = document.querySelector(".serveThePeopleImage");
+    const bannerContent = document.querySelector(".aboutBannerInner");
+
+
+    gsap.to(bannerContent, {
+        opacity: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".aboutBanner",
+            start: "top top",
+            end: "top+=150 top", // 👈 fade out early
+            scrub: true,
+            invalidateOnRefresh: true
+        }
+    });
+
+
+    /* PHASE 1 */
+    gsap.to(videoWrap, {
+        scale: 0.2,
+        opacity: 1,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".aboutBanner",
+            start: "top top",
+            endTrigger: ".serveThePeopleImage",
+            end: "center center",
+            scrub: true,
+            pin: videoWrap,
+            pinSpacing: false,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+        }
+    });
+
+
+    /* PHASE 2 */
+    ScrollTrigger.create({
+        trigger: ".serveThePeopleImage",
+        start: "center center",
+        once: true, // 🔑 critical
+        onEnter: () => {
+
+            // 🔑 wait until layout & pin are fully settled
+            requestAnimationFrame(() => {
+
+                const img = serveImage.getBoundingClientRect();
+
+                const targetX =
+                    img.left + img.width / 2 - window.innerWidth / 2;
+                const targetY =
+                    img.top + img.height / 2 - window.innerHeight / 2;
+
+                gsap.to(videoWrap, {
+                    scale: 1,       // reset scale
+                    width: 300,
+                    height: 300,
+                    x: targetX,
+                    y: targetY,
+                    duration: 0.8,
+                    ease: "power2.inOut"
+                });
+
+            });
+        }
+    });
+
+    /* ScrollTrigger.addEventListener("refresh", () => {
+        document.querySelectorAll(".pin-spacer").forEach(spacer => {
+            spacer.style.width = "100vw";
+            spacer.style.height = "100vh";
+        });
+    }); */
+
+    /* RESET */
+    ScrollTrigger.addEventListener("refreshInit", () => {
+        gsap.set(videoWrap, {
+            clearProps: "width,height,x,y"
+        });
+
+    });
+
+    /* ✅ FIX */
+    window.addEventListener("load", () => {
+        ScrollTrigger.refresh();
+    });
+
+</script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // autoplay nudge (mobile)
+    const vid = document.getElementById("heroVideo");
+    const tryPlay = () => vid && vid.play().catch(() => { });
+    window.addEventListener("touchstart", tryPlay, { once: true, passive: true });
+    window.addEventListener("click", tryPlay, { once: true });
+    tryPlay();
+
+    // helper: move/size videoTile to match the target rect
+    function fitToTarget(tileEl, targetEl) {
+        const s = document.getElementById("scene").getBoundingClientRect();
+        const t = targetEl.getBoundingClientRect();
+
+        // Convert target coords to scene-local coords
+        const left = t.left - s.left;
+        const top = t.top - s.top;
+        const width = t.width;
+        const height = t.height;
+
+        // Animate via GSAP (we'll use in timeline)
+        return { left, top, width, height };
+    }
+
+    // initial state for tiles
+    gsap.set(["#tTop", "#tRight", "#tLeft"], { opacity: 0, scale: 0.96, y: 18 });
+    gsap.set("#stackWrap", { opacity: 0, y: 30 });
+    gsap.set("#titleWrap", { opacity: 0, y: 20 });
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#scene",
+            start: "top top",
+            end: () => "+=" + Math.round(innerHeight * 1.45),
+            scrub: true,
+            pin: true,
+            anticipatePin: 1
+        }
+    });
+
+    // 0) fade hero text fast (like reference)
+    tl.to("#heroText", { opacity: 0, y: -14, filter: "blur(2px)", ease: "none" }, 0.00);
+    tl.to("#shade", { opacity: 0, ease: "none" }, 0.10);
+
+    // 1) white background comes in
+    tl.to("#whiteCanvas", { opacity: 1, ease: "none" }, 0.16);
+
+    // 2) show stack container (still hidden tiles)
+    tl.to("#stackWrap", { opacity: 1, y: 0, ease: "none" }, 0.22);
+
+    // 3) MORPH: video full-bleed -> center tile position
+    tl.add(() => {
+        const rect = fitToTarget(document.getElementById("videoTile"), document.getElementById("centerTarget"));
+        gsap.set("#videoTile", { willChange: "left, top, width, height, transform, border-radius" });
+        // store on element for later (optional)
+        document.getElementById("videoTile")._targetRect = rect;
+    }, 0.24);
+
+    tl.to("#videoTile", {
+        // animate to target rect (computed on current layout)
+        left: () => document.getElementById("videoTile")._targetRect.left,
+        top: () => document.getElementById("videoTile")._targetRect.top,
+        width: () => document.getElementById("videoTile")._targetRect.width,
+        height: () => document.getElementById("videoTile")._targetRect.height,
+        borderRadius: 28,
+        boxShadow: "0 22px 55px rgba(0,0,0,.14)",
+        ease: "none"
+    }, 0.24);
+
+    // 4) bring in the other tiles behind video (stagger)
+    tl.to("#tTop", { opacity: 1, scale: 1, y: 0, ease: "none" }, 0.34);
+    tl.to("#tRight", { opacity: 1, scale: 1, y: 0, ease: "none" }, 0.40);
+    tl.to("#tLeft", { opacity: 1, scale: 1, y: 0, ease: "none" }, 0.46);
+
+    // 5) final settle (tiny drift like reference)
+    tl.to(["#tTop", "#tRight", "#tLeft"], { y: -6, ease: "none" }, 0.58);
+    tl.to("#videoTile", { y: -8, ease: "none" }, 0.58);
+
+    // 6) heading appears after stack is visible
+    tl.to("#titleWrap", { opacity: 1, y: 0, ease: "none" }, 0.62);
+
+    // keep morph correct on resize
+    const refreshRects = () => {
+        const rect = fitToTarget(document.getElementById("videoTile"), document.getElementById("centerTarget"));
+        document.getElementById("videoTile")._targetRect = rect;
+    };
+    window.addEventListener("resize", () => { refreshRects(); ScrollTrigger.refresh(); });
+    refreshRects();
+</script>
+
+</html>

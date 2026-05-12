@@ -1,0 +1,11 @@
+/* chemicals css */
+.chemicals .textDesc { margin-top: 60px; padding: 0 0 100px 60px; }
+.chemicals .textVideo { background: transparent; padding: 150px 0 80px 0; }
+.chemicals .textVideo:before { height: 250px; }
+
+/* specialty css */
+.specialty { position: relative; padding: 100px 0; background: linear-gradient(161.91deg, #0452CE -6.31%, #97A2B2 34.09%, #F4F2EF 72.22%); }
+.specialtyTop .heading9xl { color: var(--colorBlack); }
+.specialtyContent { margin: 80px 0 0 0; position: relative;}
+.specialtyOuterImage { display: flex; justify-content: center; }
+.specialtyCenterImage { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; aspect-ratio: 1; box-shadow: 0 0 0 30px var(--colorWhite); border-radius: 50%; }

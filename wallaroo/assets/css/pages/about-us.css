@@ -1,0 +1,90 @@
+/* aboutBanner css */
+.aboutBanner { padding: 210px 0; background-color: var(--colorPrimaryLight); position: relative; z-index: 1; overflow: clip; text-align: center; }
+.aboutBannerInner .subTextXl { color: var(--colorText); }
+.aboutBannerInner { width: 70%; margin: 0 auto; }
+.aboutBanner:before { content: ''; position: absolute; width: 500px; aspect-ratio: 1; border: 100px solid var(--colorPrimary); background-color: var(--colorPrimaryLight); border-radius: 50%; top: -250px; right: -250px; }
+.aboutBanner:after { content: ''; position: absolute; width: 500px; aspect-ratio: 1; border: 100px solid var(--colorPrimary); background-color: var(--colorPrimaryLight); border-radius: 50%; bottom: -250px; left: -250px; }
+
+/* textBgImage css */
+.textBgImage { position: relative; z-index: 1; padding: 150px 0 850px 0; }
+.textBgImg { position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+.textBgImg img { width: 100%; height: 100%; object-fit: cover; }
+.textBoxHeading { display: flex; align-items: center; gap: 50px; }
+.textBoxHeading .heading8xl { line-height: 0.9; width: 50%; }
+.textBox .subTextMd { width: 70%; margin: 30px 0 0 0; }
+
+/* halfImageText css */
+.halfImageText { padding: 150px 0 200px 0; background-color: var(--colorSecondary); position: relative; z-index: 1; }
+.halfImageText:before { content: ''; position: absolute; width: 150px; height: 150px; background: url(../../images/side-patten-2.svg)center center no-repeat; top: 0; left: calc(45% - 75px); top: 200px; z-index: 1; }
+.halfContainerImage { position: absolute; width: 45%; height: 700px; }
+.halfContainerImage img { width: 100%; height: 100%; object-fit: cover; }
+.halfImageTextInner { width: 40%; margin-left: auto; margin-top: 70px; }
+.halfImageTextInner h3 { color: var(--colorPrimary); }
+
+/* titleGrid css */
+.titleGrid { background-color: var(--colorBg); padding: 220px 0; }
+.GridListTopIcon { width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; }
+.GridListTop { display: flex; gap: 50px; align-items: center; }
+.GridListTop .heading5xl { color: var(--colorSecondary); margin: 0; }
+.titleGridTop .heading8xl { color: var(--colorSecondary); }
+.titleGridTop { width: 80%; }
+.titleGridListing { margin: 80px 0 0 0; }
+.titleGridList .subTextMd { color: var(--colorText); line-height: 1.3; }
+.titleGridList { padding: 90px 50px; border: 1px solid var(--colorPrimary); height: 100%; }
+.titleGridList .subTextMd { margin: 30px 0 0 0; }
+
+/* threeTowns css */
+.threeTowns { padding: 200px 0; background-color: var(--colorPrimaryLight); position: relative; z-index: 1; overflow: clip; }
+.threeTowns:before { content: ''; position: absolute; width: 450px; height: 150px; background: url(../../images/mid-patten.svg) center center no-repeat; top: 0; right: 0; }
+.threeTowns:after { content: ''; position: absolute; width: 150px; height: 450px; background: url(../../images/mid-patten-1.svg) center center no-repeat; bottom: 0; left: 0; }
+.threeTownsTop .subTextMd { color: var(--colorText); margin: 30px 0 0 0; width: 85%; }
+.threeTownsHoriWrap { margin: 80px 0 0 0; position: relative; }
+.threeTownsHoriListing:before { content: ''; position: absolute; width: 120vw; height: 2px; background-color: var(--colorPrimary); top: 42px; left: -50px; opacity: 0.2; }
+.threeTownsHoriListing:after { content: ''; position: absolute; width: var(--line-width); ; height: 2px; background-color: var(--colorPrimary); top: 42px; left: -50px; }
+.HoriListImage { width: 100%; height: 200px; border-radius: 13px; overflow: clip; margin: 25px 0 0 0; }
+.HoriListImage img { width: 100%; height: 100%; object-fit: cover; }
+.HoriListText .heading5xl { color: var(--colorSecondary); margin: 0; }
+.HoriListText .subTextXl { color: var(--colorText); }
+.threeTownsHoriListing { display: flex; gap: 70px; max-width: 78%; margin-left: auto; padding: 100px 0 0 0; position: relative; }
+.orangeLogo { position: absolute; top: 0; left: 0; }
+.threeTownsHoriList { position: relative; opacity: 0.2; transition: all 0.5s ease; }
+.threeTownsHoriList:before { content: ''; position: absolute; width: 30px; height: 30px; background-color: var(--colorPrimary); transform: scale(0.5) rotate(45deg); top: -72px; transition: all 0.5s ease; }
+.threeTownsHoriListing { --line-width: 0px; }
+.threeTownsHoriList.active { opacity: 1; }
+
+/* optional active animation */
+.threeTownsHoriList.active:before { transform: rotate(45deg) scale(1); opacity: 1; }
+
+/* cardWrapper css */
+.cardWrapper { padding: 200px 0 100px; background-color: var(--colorSecondary); }
+.cardWrapperTop { text-align: center; }
+.cardWrapperTop .heading8xl { color: var(--colorPrimary); }
+#cards { list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(var(--cards), var(--cardHeight)); gap: var(--cardMargin); margin-bottom: var(--cardMargin); margin: 80px auto 0 auto; max-width: 90%; }
+#card1 { --index: 1; }
+#card2 { --index: 2; }
+#card3 { --index: 3; }
+#card4 { --index: 4; }
+.cardss { position: sticky; top: 80px; padding-top: calc(var(--index) * var(--cardTopPadding)); }
+.card-body { box-sizing: border-box; padding: 50px; border-radius: 0; box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1); height: 650px; transition: all 0.5s; background-color: var(--colorBg); position: relative; }
+.card-body:before { content: ''; position: absolute; bottom: 0; right: 0; width: 100px; height: 100px; background-size: contain !important; }
+.cardss:first-child .card-body:before { background: url(../../images/blue-star-icon.svg)center center no-repeat; }
+.cardss:nth-child(2) .card-body:before { background: url(../../images/small-patten.svg)center center no-repeat; }
+.cardss:nth-child(3) .card-body:before { background: url(../../images/small-patten-1.svg)center center no-repeat; }
+.cardss:last-child .card-body:before { background: url(../../images/small-patten-2.svg)center center no-repeat; }
+.cardContent { display: flex; align-items: flex-start; justify-content: space-between; }
+.cardImage { width: 50%; }
+.cardText { width: 45%; }
+.cardContent { display: flex; align-items: flex-start; justify-content: space-between; height: 100%; }
+.cardImage { width: 50%; height: 100%; }
+.cardText { width: 45%; }
+.cardImage img { width: 100%; height: 100%; object-fit: cover; }
+.cardText { padding: 50px 0 0 0; }
+.cardText .subTextMd { color: var(--colorBlack); position: relative; padding: 30px 0 0 0; margin: 30px 0 0 0; }
+.cardText .subTextMd:before { content: ''; position: absolute; width: 90%; height: 1px; background-color: var(--colorPrimary); top: 0; left: 0; }
+
+/* ctaWrapper css */
+.ctaWrapper { background-color: var(--colorPrimary); padding: 200px 0; position: relative; z-index: 1; overflow: clip; }
+.ctaWrapperBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; mix-blend-mode: soft-light; z-index: -1; }
+.ctaWrapperBg img { width: 100%; height: 100%; object-fit: cover; }
+.ctaWrapperInner { text-align: center; }
+.ctaWrapperInner .subTextMd { display: block; width: 40%; margin: 20px auto 40px auto; }

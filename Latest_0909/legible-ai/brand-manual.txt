@@ -1,0 +1,20 @@
+"Roboto", sans-serif;
+"Archivo", sans-serif;
+primary color  #6161FF
+secondary color #080428
+light primary color #6161FF26
+dark primary color #080428
+tertiary color #FFD066
+
+xxlFont 60px
+xlFont 46px
+lFont 32px
+xxmFont 24px
+xmFont 20px
+mFont 18px
+nFont 16px
+sFont 14px
+
+primaryBtn
+secondaryBrdrBtn
+tertiaryBtn

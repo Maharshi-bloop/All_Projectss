@@ -1,0 +1,54 @@
+/* problem Solution css */
+.problemSolution { margin: 150px 0; }
+.problemHeading .xlHeading { font-weight: 700; }
+.strongText .lHeading { font-weight: 500; line-height: 35px; }
+.solutionList { padding: 70px 40px; border-radius: 20px; background-color: #EDEDFF; }
+.SolutionHeading { background-color: var(--secondary-color); height: 100%; border-radius: 20px; display: flex; align-items: center; padding: 0 32px; }
+.SolutionHeading .xxmHeading { font-weight: 400; }
+.SolutionInner { margin: 150px 0 0 0; }
+.SolutionInner .xlHeading { margin: 0 0 25px 0; font-weight: 700; }
+.iconUl { margin: 0; padding: 0; list-style: none; }
+.iconUl li { margin: 0 0 25px 0; padding: 0  0 25px 0; border-bottom: 1px solid #CFCFFF; font-size: var(--m-font); display: flex; align-items: flex-start; gap: 15px; line-height: 1; }
+.iconUl li i { color: var(--primary-color); width: 16px; height: 16px; line-height: 1; }
+.iconUl li:last-child { margin: 0; padding: 0; border: none; }
+
+/* grunt Work css */
+.gruntWorkImage { margin: 50px 0 120px 0; position: relative; }
+.gruntWorkTop { width: 60%; margin: 0 auto; }
+.gruntWorkBottom { width: 70%; margin: 0 auto; }
+.gruntWorkBottom .nSubText { width: 40%; margin: 0 auto; }
+.gruntWorkLogo { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: 25px; align-items: center; width: 200px; }
+.gruntWorkLogo img { width: auto; height: 100%; object-fit: contain; }
+.legibleLogoOnly { animation: bounce 3s ease-in-out infinite; }
+@keyframes bounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(10px); }
+}
+
+/* legible Roi css */
+.legibleRoi { background-color: var(--secondary-color); position: relative; z-index: 1; }
+.legibleRoiContent .xlHeading { color: var(--white-color); font-weight: 500; }
+.legibleRoiBgImage { position: absolute; z-index: 1; width: 47vw; height: 100%; top: 0; left: 0; }
+.legibleRoiBgImage img { width: 100%; height: 100%; object-fit: cover; }
+.legibleRoiInner .row { justify-content: flex-end; }
+.legibleRoiInner { padding: 65px 0 140px; }
+.roiUl { margin: 70px 0 0 0; }
+.roiUl ul { display: flex; flex-wrap: wrap; margin: 0; padding: 0; row-gap: 40px; }
+.roiUl ul li { width: 50%; }
+.roiLi .lHeading { font-weight: 600; color: #CFCFFF; border-left: 4px solid; }
+.roiLi .xxmHeading { font-weight: 400; width: 60%; }
+.roiLi .nSubText { color: var(--active-color); text-transform: uppercase; margin: 10px 0 0 0; }
+.roiLi .lHeading, .roiLi .xxmHeading, .roiLi .nSubText { padding: 0 0 0 20px; }
+.legibleRoiBgImage > img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%; height: 50%; object-fit: contain; }
+.legibleRoiBgImageInner { width: 100%; height: 100%; }
+.platform-overview .userSay { padding: 0; }
+
+/* cta css */
+.cta { margin-bottom: 100px; }
+.ctaText > span { font-family: var(--arcchivo); font-size: var(--m-font); margin: 0 0 20px 0; display: inline-block; }
+.ctaText .xxlHeading { font-weight: 400; letter-spacing: 0px; line-height: 60px; }
+.ctaText .xxlHeading span { background: linear-gradient(-65deg, #6161FF 0%, #F75D28 72%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.ctaInner { position: relative; border-radius: 32px; overflow: clip; z-index: 1; padding: 150px 100px; }
+.ctaBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+.ctaBg img { width: 100%; height: 100%; }
+.ctaInner .row { align-items: flex-end; }

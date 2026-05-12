@@ -1,0 +1,23 @@
+.successBanner { margin: 250px 0; }
+.successBanner .xxlHeading { width: 70%; margin: 0 auto; margin-bottom: 25px; }
+.bannerLogoListing { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 60px; row-gap: 0; }
+.bannerLogoList { width: 90px; height: 95px; object-fit: contain; }
+.bannerLogoList img { width: 100%; height: 100%; object-fit: contain; }
+.successStoriesUl ul { display: flex; list-style: none; justify-content: center; gap: 18px; margin: 50px 0; padding: 0; }
+.successStoriesUl ul .primaryBtn a { padding: 6px 15px; color: var(--primary-color); font-family: var(--arcchivo); font-weight: 400; }
+.successStoriesListing .row { justify-content: center; }
+.successStoriesList { padding: 18px; background-color: var(--white-color); border-radius: 11px; height: 100%; }
+.successStoriesListOuter { position: relative; z-index: 1; height: 100%; }
+.successStoriesListOuter:before { content: ''; position: absolute; background: linear-gradient(131deg, #6161FF 0%, #F75D28 100%); width: calc(100% + 2px); height: calc(100% + 2px); top: -1px; left: -1px; z-index: -1; border-radius: 12px; }
+.successStoriesImage { height: 200px; border-radius: 14px; overflow: clip; }
+.successStoriesImage img { width: 100%; height: 100%; object-fit: cover; }
+.successStoriesListTop span { margin: 10px 0 0 0; display: inline-block; background-color: var(--tertiary-color); padding: 8px 16px 5px; border-radius: 30px; line-height: 1; }
+.successStoriesListBottom { margin: 25px 0 0 0; }
+.successStoriesShortDesc div { margin: 25px 0; }
+.successStoriesShortDesc div span, .successStoriesShortDesc div i { display: block; font-size: var(--s-font); }
+.successStoriesShortDesc div strong { font-size: var(--m-font); }
+.successStoriesNumbers ul { display: flex; justify-content: flex-start; margin: 0; padding: 0; list-style: none; column-gap: 40px; }
+.successStoriesNumbers ul div strong { display: block; font-size: var(--l-font); color: var(--primary-color); }
+.successStoriesNumbers ul div span { font-size: var(--s-font); line-height: 18px; display: block; }
+.successStoriesNumbers { margin: 0 0 25px 0; }
+.cta2 { margin: 180px 0; }

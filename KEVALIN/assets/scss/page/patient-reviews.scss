@@ -1,0 +1,77 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.subSmallBanner {
+    height: 50vh;
+    background-color: $secondaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 0 0;
+
+    .subSmallBannerInner {
+        width: 71%;
+        margin: 0 auto;
+
+        @media (max-width:768px) {
+            width: 100%;
+        }
+    }
+
+    .titleText {
+        margin: 30px 0 0 0;
+        color: $whiteColor;
+        font-weight: 200;
+    }
+}
+
+.counterSec {
+    padding: 80px 0;
+    background-color: $tersoryColor;
+
+    .counterSecInner {
+        .row {
+            justify-content: center;
+
+            .col-2 {
+                .counterBox {
+                    margin: 0 0 20px 0;
+                }
+                .count {
+                    position: relative;
+                    display: inline-block;
+
+                    &::before {
+                        position: absolute;
+                        top: 5px;
+                        left: 100%;
+                    }
+                }
+
+                &:first-child {
+                    .count {
+                        &:before {
+                            content: '+';
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .count {
+                        &:before {
+                            content: '+';
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .count {
+                        &:before {
+                            content: '%';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

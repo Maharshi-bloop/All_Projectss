@@ -1,0 +1,290 @@
+.about-us .textImageWrapper .row {
+  flex-direction: row-reverse;
+}
+
+section.banner {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0 0 60px 60px;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  section.banner {
+    height: 85vh;
+  }
+}
+section.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 0;
+}
+section.banner .bannerVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.banner .bannerVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.banner .bannerInner {
+  position: relative;
+  width: 60%;
+}
+@media (max-width: 1440px) {
+  section.banner .bannerInner {
+    width: 60%;
+  }
+}
+@media (max-width: 1366px) {
+  section.banner .bannerInner {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  section.banner .bannerInner {
+    width: 70%;
+    border-radius: 0 0 40px 40px;
+  }
+}
+@media (max-width: 576px) {
+  section.banner .bannerInner {
+    width: 100%;
+    padding: 190px 0 0 0;
+  }
+}
+section.banner .bannerInner .bannerContent span {
+  font-size: 20px;
+  font-family: "Public Sans";
+  display: inline-block;
+  color: #fff;
+  margin: 20px 0 50px 0;
+  font-weight: 200;
+}
+section.banner .bannerInner .bannerContent .sectionHeading {
+  color: #fff;
+}
+
+.guided {
+  padding: 120px 0;
+}
+@media (max-width: 480px) {
+  .guided {
+    padding: 80px 0;
+  }
+}
+.guided .guideListing {
+  margin: 40px 0 0 0;
+}
+.guided .guideListing .row .col-xxl-4 {
+  margin: 0 0 30px 0;
+}
+.guided .guideListing .guideList {
+  background-color: rgba(138, 224, 188, 0.5019607843);
+  border-radius: 15px;
+  padding: 30px 40px 50px 60px;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 152px;
+}
+@media (max-width: 576px) {
+  .guided .guideListing .guideList {
+    padding: 30px 30px 30px 40px;
+  }
+}
+.guided .guideListing .guideList .indexNuber {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  background-color: #003B4A;
+  border-radius: 50%;
+  font-family: "Public Sans";
+  font-size: 30px;
+  color: #fff;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guided .guideListing .guideList .secondaryDescription {
+  font-weight: 400;
+}
+
+.achievement {
+  background-color: rgba(138, 224, 188, 0.5019607843);
+  padding: 120px 0;
+  margin: 120px 0;
+}
+@media (max-width: 768px) {
+  .achievement {
+    padding: 80px 0;
+    margin: 80px 0;
+  }
+}
+.achievement .achievementTop .secondaryBannerHeading {
+  margin: 0 0 30px 0;
+}
+.achievement .achievementCount {
+  padding: 50px 0 0 0;
+}
+@media (max-width: 768px) {
+  .achievement .achievementCount {
+    padding: 40px 0;
+  }
+}
+.achievement .achievementCount ul {
+  display: flex;
+  gap: 150px;
+}
+.achievement .achievementCount ul li .count {
+  position: relative;
+  font-size: 48px;
+  display: inline-block;
+  color: #003B4A;
+}
+@media (max-width: 768px) {
+  .achievement .achievementCount ul li .count {
+    font-size: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .achievement .achievementCount ul li .count {
+    font-size: 30px;
+  }
+}
+.achievement .achievementCount ul li .count:before {
+  content: "+";
+  position: absolute;
+  font-size: 48px;
+  color: #003B4A;
+  left: 100%;
+}
+@media (max-width: 768px) {
+  .achievement .achievementCount ul li .count:before {
+    font-size: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .achievement .achievementCount ul li .count:before {
+    font-size: 30px;
+  }
+}
+.achievement .achievementCount ul li span {
+  display: block;
+  font-size: 48px;
+  color: #003B4A;
+}
+@media (max-width: 768px) {
+  .achievement .achievementCount ul li span {
+    font-size: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .achievement .achievementCount ul li span {
+    font-size: 30px;
+  }
+}
+.achievement .achievementListing ul li:last-child .achievementList {
+  margin: 0;
+}
+.achievement .achievementListing ul .achievementList {
+  display: flex;
+  margin: 0 0 50px 0;
+}
+.achievement .achievementListing ul .achievementList .achievementListIcon {
+  width: 70px;
+  height: 70px;
+}
+.achievement .achievementListing ul .achievementList .achievementListIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.achievement .achievementListing ul .achievementList .achievementListText {
+  width: calc(100% - 70px);
+  margin: 0 0 0 50px;
+}
+
+.serviceWrapper {
+  margin: 120px 0 0 0;
+}
+.serviceWrapper .sectionHeading {
+  margin: 0 0 50px 0;
+}
+
+.whyChoose {
+  padding: 120px 0 350px 0;
+  background-color: #003B4A;
+}
+.whyChoose .whyChooseTop .description {
+  color: #fff;
+}
+.whyChoose .whyChooseContent {
+  padding: 80px 0 0 0;
+}
+.whyChoose .whyChooseContent .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.whyChoose .whyChooseContent .QaBox {
+  margin: 0 0 70px 0;
+}
+@media (max-width: 576px) {
+  .whyChoose .whyChooseContent .QaBox {
+    margin: 0 0 40px 0;
+  }
+}
+.whyChoose .whyChooseContent .QaBox:last-child {
+  margin: 0;
+}
+.whyChoose .whyChooseContent .QaBox .subHeading {
+  margin: 0 0 15px 0;
+}
+.whyChoose .whyChooseContent .QaBox .description {
+  color: #fff;
+  font-weight: 200;
+}
+.whyChoose .whyChooseContent .whyChooseGIf {
+  border-radius: 20px;
+  overflow: clip;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .whyChoose .whyChooseContent .whyChooseGIf {
+    margin: 50px 0 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .whyChoose .whyChooseContent .whyChooseGIf {
+    height: 400px;
+  }
+}
+.whyChoose .whyChooseContent .whyChooseGIf video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

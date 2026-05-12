@@ -1,0 +1,248 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.about-us {
+    .textImageWrapper {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+}
+section.banner {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 60px 60px;
+    overflow: clip;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: $blackColor;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    .bannerVideo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bannerInner {
+        position: relative;
+        width: 50%;
+
+        .bannerContent {
+            span {
+                font-size: $font20;
+                font-family: $publicSans;
+                display: inline-block;
+                color: $whiteColor;
+                margin: 20px 0 50px 0;
+                font-weight: 200;
+            }
+
+            .sectionHeading {
+                color: $whiteColor;
+            }
+        }
+    }
+}
+.guided {
+    padding: 120px 0;
+
+    .guideListing {
+        margin: 40px 0 0 0;
+
+        .row {
+            .col-xxl-4 {
+                margin: 0 0 30px 0;
+            }
+        }
+
+        .guideList {
+            background-color: $tersoryColor;
+            border-radius: 15px;
+            padding: 30px 40px 50px 60px;
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
+            min-height: 152px;
+
+            .indexNuber {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                z-index: 1;
+                background-color: $secondaryColor;
+                border-radius: 50%;
+                font-family: $publicSans;
+                font-size: $font40;
+                color: $whiteColor;
+                top: -10px;
+                left: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .secondaryDescription {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.achievement {
+    background-color: $tersoryColor;
+    padding: 120px 0;
+    margin: 120px 0;
+
+    .achievementTop {
+        .secondaryBannerHeading {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .achievementCount {
+        padding: 50px 0 0 0;
+
+        ul {
+            display: flex;
+            gap: 150px;
+
+            li {
+                .count {
+                    position: relative;
+                    font-size: $font48;
+                    display: inline-block;
+                    color: $secondaryColor;
+
+                    &:before {
+                        content: '+';
+                        position: absolute;
+                        font-size: $font48;
+                        color: $secondaryColor;
+                        left: 100%;
+                    }
+                }
+
+                span {
+                    display: block;
+                    font-size: $font48;
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .achievementListing {
+        ul {
+            li {
+                &:last-child {
+                    .achievementList {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .achievementList {
+                display: flex;
+                margin: 0 0 50px 0;
+
+                .achievementListIcon {
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .achievementListText {
+                    width: calc(100% - 70px);
+                    margin: 0 0 0 50px;
+                }
+            }
+        }
+    }
+}
+
+.serviceWrapper {
+    margin: 120px 0 0 0;
+
+    .sectionHeading {
+        margin: 0 0 50px 0;
+    }
+}
+
+.whyChoose {
+    padding: 120px 0 350px 0;
+    background-color: $secondaryColor;
+
+    .whyChooseTop {
+        .description {
+            color: $whiteColor;
+        }
+    }
+
+    .whyChooseContent {
+        padding: 80px 0 0 0;
+
+        .row {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .QaBox {
+            margin: 0 0 70px 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .subHeading {
+                margin: 0 0 15px 0;
+            }
+
+            .description {
+                color: #fff;
+                font-weight: 200;
+            }
+        }
+
+        .whyChooseGIf {
+            border-radius: 20px;
+            overflow: clip;
+            height: 500px;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

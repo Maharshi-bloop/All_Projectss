@@ -1,0 +1,43 @@
+.subSmallBanner {
+  height: 50vh;
+  background-color: #003B4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 0 0;
+}
+.subSmallBanner .subSmallBannerInner {
+  width: 71%;
+  margin: 0 auto;
+}
+.subSmallBanner .titleText {
+  margin: 30px 0 0 0;
+  color: #fff;
+  font-weight: 200;
+}
+
+.counterSec {
+  padding: 80px 0;
+  background-color: rgba(138, 224, 188, 0.5019607843);
+}
+.counterSec .counterSecInner .row {
+  justify-content: center;
+}
+.counterSec .counterSecInner .row .col-2 .count {
+  position: relative;
+  display: inline-block;
+}
+.counterSec .counterSecInner .row .col-2 .count::before {
+  position: absolute;
+  top: 5px;
+  left: 100%;
+}
+.counterSec .counterSecInner .row .col-2:first-child .count:before {
+  content: "+";
+}
+.counterSec .counterSecInner .row .col-2:nth-child(2) .count:before {
+  content: "+";
+}
+.counterSec .counterSecInner .row .col-2:nth-child(3) .count:before {
+  content: "%";
+}

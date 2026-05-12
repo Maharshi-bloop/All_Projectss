@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Vertical Gradient Glow</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0D0F13;
+            font-family: Arial, sans-serif;
+        }
+
+        .statsSection {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .gradientBarWrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .gradientBar {
+            position: absolute;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom,
+                    rgba(3, 188, 99, 0) 0%,
+                    rgba(3, 188, 99, 0.74) 30%,
+                    rgba(3, 188, 99, 0.74) 70%,
+                    rgba(3, 188, 99, 0) 100%);
+            border-radius: 8px;
+            animation: gradientMove 5s linear infinite;
+            filter: blur(15px);
+        }
+
+        /* Staggered bars for seamless flow */
+        .gradientBar.second {
+            animation-delay: 1.66s;
+        }
+
+        .gradientBar.third {
+            animation-delay: 3.33s;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                top: -100%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        .statText {
+            position: relative;
+            z-index: 2;
+            color: #00FFFF;
+            /* Matches new contrast */
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .statItem {
+            margin: 80px 0;
+        }
+
+        .statItem h2 {
+            font-size: 24px;
+            color: #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        .statItem p {
+            font-size: 12px;
+            color: #ccc;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="statsSection">
+        <div class="gradientBarWrapper">
+            <div class="gradientBar first"></div>
+            <div class="gradientBar second"></div>
+            <div class="gradientBar third"></div>
+        </div>
+
+        <div class="statText">
+            <div class="statItem">
+                <h2>50 STATES</h2>
+                <p>For BESS Project Delivery and Support.</p>
+            </div>
+            <div class="statItem">
+                <h2>10 GWH</h2>
+                <p>Commissioned Across Battery Storage Projects</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

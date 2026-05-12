@@ -1,0 +1,9 @@
+14 sSubText
+16 nSubText
+18 xmSubtext
+22 mHeading
+26 lHeading
+40 xlHeading
+60 xxlHeading
+
+

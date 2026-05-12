@@ -1,0 +1,38 @@
+/* === BANNER CSS START === */
+.banner { margin: 270px 0 0 0; }
+.hero { position: relative; }
+.scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, rgba(117, 114, 102, 0) 0%, #E6C020 18.69%, #E6C020 66.47%, rgba(230, 192, 32, 0) 100%); ; bottom: 0%; pointer-events: none; }
+.wire, .color { position: absolute; width: 100%; left: 0; top: 0; height: auto; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.reveal { position: absolute; inset: 0; overflow: hidden; height: 0%; }
+.bannerSubText { position: absolute; bottom: 0; right: 0; z-index: 5; }
+.bannerHeading { font-weight: 800; font-size: var(--font11xl); margin: 0 0 0 80px; }
+.bannerHeading span { font-size: 200px; text-fill-color: transparent; text-stroke: 1px #bfbfc77a; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px #bfbfc77a; -moz-text-fill-color: transparent; line-height: 0.6; margin: 0 0 0 -80px; }
+.hero { margin: 100px 0 0 0; }
+.bannerSubText span { opacity: 0.6; }
+.bannerSubText { width: 36%; }
+.bannerSubText span { font-family: 'Calibri'; line-height: 1.7; margin: 0 0 30px 0; }
+
+/* === BANNER CSS END === */
+
+/* logoSwiper css */
+.logoSwiper { margin: 170px 0; }
+.logoSwiperInner { background: linear-gradient(178.15deg, #000000 -32.54%, #353D3E 239.79%); padding: 60px 30px; border-radius: 22px; }
+.logoSwiper .swiper-wrapper { transition-timing-function: linear; }
+.logoSlide { height: 80px; width: auto; display: flex; align-items: center; justify-content: center; }
+.logoSlide img { width: 100%; height: 100%; object-fit: contain; }
+
+/* offering css */
+.offeringTop { text-align: center; position: relative; }
+.offeringTop .heading6xl { position: relative; display: inline; margin: 0; padding: 0 35px; background-color: var(--colorBlack); }
+.offeringTop .heading6xl:before { content: ''; position: absolute; width: 8px; height: 8px; background-color: var(--colorPrimary); border-radius: 50%; top: 52%; transform: translateY(-50%); right: 0; box-shadow: 440px 0px 0 var(--colorPrimary); }
+.offeringTop .heading6xl:after { content: ''; position: absolute; width: 8px; height: 8px; background-color: var(--colorPrimary); border-radius: 50%; top: 52%; transform: translateY(-50%); left: 0; box-shadow: -440px 0px 0 var(--colorPrimary); }
+.offeringTop:before { content: ''; position: absolute; width: 50%; height: 1px; background-color: var(--colorPrimary); top: 50%; right: 50%; z-index: -1; }
+.offeringTop:after { content: ''; position: absolute; width: 50%; height: 1px; background-color: var(--colorPrimary); top: 50%; left: 50%; z-index: -1; }
+.industriesServedListing { margin: 70px 0 0 0; display: flex; justify-content: center; transition: all 0.3s; gap: 34px; }
+.industriesServedList { background-color: #353D3E3D; padding: 40px 20px 140px 20px; border-radius: 32px; height: 570px; display: flex; flex-direction: column; gap: 220px; transition: all 0.3s; position: relative; overflow: clip; z-index: 1; cursor: pointer; }
+.industriesServedListImage { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.industriesServedList.open .industriesServedListImage, .industriesServedList.open:before { opacity: 1; visibility: visible; }
+.industriesServedListImage img { width: 100%; height: 100%; object-fit: cover; }
+.industriesServedListIconImage { width: 50px; height: 50px; }
+.industriesServedListIconImage img { width: 100%; height: 100%; object-fit: contain; }

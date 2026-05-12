@@ -1,0 +1,130 @@
+@media (max-width:1600px) {
+	:root { --cardTopPadding: 69px; }
+	.solutionsTop { padding: 30px; padding-left: 50px; }
+	.solutionsTop .subTextXl { line-height: 26px; }
+	.cardd { top: -30px; transform: scale(0.8); }
+	.cardContent .heading5xl { padding: 10px 40px; }
+	.cardContentUl ul li { margin-bottom: 10px; }
+	.cardContentUl { padding: 30px 40px; }
+}
+@media (max-width:1440px) {
+	:root { --font7xl: 54px; --fontXl: 22px; --cardTopPadding: 69px; }
+	.imageOnly:before { width: 470px; }
+	.solutionsTop { padding: 30px; padding-left: 50px; }
+	.solutionsTop .subTextXl { line-height: 26px; }
+	.strip { height: 500px; }
+	.stripContent { padding-top: 50px; }
+	.mapWrap { margin: 150px 0 0 0; }
+	.highQualityInner { padding: 150px 50px; ; }
+	.hoverListText .subTextMd { width: 40%; }
+	.about-us .heading11xl span:nth-child(2) { margin-left: 170px; }
+	#meetTaktikalVideo { height: 500px; }
+	#serviceVideo { max-height: 550px; }
+	.services footer { margin: 80px 0 0 0; ; }
+	.weAreCardWrap { padding: 150px 0 80px 0; }
+}
+@media (min-width:320px) and (max-width:480px) {
+	:root { --font11xl: 90px; --font10xl: 50px; --font9xl: 44px; --font8xl: 46px; --font7xl: 44px; --font6xl: 40px; --font5xl: 34px; --font2xl: 22px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; }
+	.subTextXl { line-height: 1.2; }
+	.right { display: none; }
+	.solutionBottom .swiper { display: block; }
+	.strip { height: 100%; }
+	.graphImage h3.heading5xl { position: unset; width: 60%; transform: translate(0); text-align: left; }
+	.graphImageInner { display: none; }
+	.graphImageContent { display: flex; flex-direction: column; gap: 60px; margin: 50px 0 0 0; position: relative; }
+	.graphImageContent:before { content: ''; position: absolute; width: 1px; height: 90%; background-color: var(--colorWhite); opacity: 0.2; left: 18px; top: 10px; }
+	.ImageContent.aos-init.aos-animate { margin: 0 0 0 60px; }
+	.heading11xl span:nth-child(2) { margin-left: 0; line-height: 0.5; display: block; }
+	.bannerInner { max-width: 100%; }
+	.bannerBottom .subTextXl { padding: 30px 0; }
+	.bannerBottom { flex-direction: column; align-items: flex-start; }
+	.performace { margin-top: 0; width: 100%; }
+	.bannerCta { margin: 0 0 0 140px; position: relative; }
+	.bannerCta:before { content: ''; position: absolute; width: 100vw; height: 1px; background-color: #F5A80F; opacity: 0.2; bottom: 20px; right: 100%; }
+	.banner { height: 120vh; align-items: unset; padding: 150px 0 0 0; }
+	.weAreTaktikal { margin: 60px 0 0; padding: 100px 0; }
+	.weAreTaktikalInner { position: relative; z-index: 1; }
+	.headingTextImageContent { max-width: 100%; }
+	.textWrapper .subTextXl { margin: 50px 0 20px 0; }
+	.solutionsTop .heading7xl { line-height: 50px; }
+	.solutionsTop { padding: 40px 20px 25px 20px; }
+	.solutionsTop .subTextXl { margin: 25px 0 0 0; }
+	.stripContent { gap: 200px; padding-top: 50px; }
+	.solutionBottom .swiper-wrapper { margin: 0 0 0 20px; }
+	.mapWrap { margin: 70px 0 0 0; padding-bottom: 50px; }
+	.solutionBottom .swiper-slide { height: auto; }
+	.mapContent .subTextXl { margin: 0 0 20px 0; }
+	.mapImage { width: 200vw; right: 45%; margin-top: 100px; }
+	.highQualityInner { padding: 100px 30px; }
+	.swiperCta { position: absolute; bottom: 50px; }
+	.highQualityInner .swiper { margin: 50px 0; }
+	.discoverTop { flex-direction: column; }
+	.discoverTop div span { margin: 22px 0; }
+	.hoverListText { flex-direction: column; width: calc(100% - 125px); }
+	.hoverListText h4 { width: 100%; }
+	.hoverListText .subTextMd { width: 100%; line-height: 20px; }
+	.swipeimage { display: none; }
+	.hoverList .staticImage { display: block; width: 100px; height: 130px; }
+	.hoverList .staticImage img { width: 100%; height: 100%; }
+	.hoverList > img { display: none; }
+	.hoverList { display: flex; align-items: center; gap: 25px; }
+	.footerTop { padding: 60px 30px; }
+	.footerMiddle { margin: 50px 0 0 0; }
+	.footerMiddle, .footerUl ul { flex-direction: column; align-items: flex-start; }
+	.footerUl ul { gap: 25px; margin: 35px 0 0 0; }
+	.linkedin { position: absolute; right: 20px; z-index: 2; }
+	.bottomUl ul { justify-content: flex-start; }
+	.discover { padding: 80px 0 50px 0; }
+	footer { padding: 80px 0 0 0; }
+	.logo { width: 150px; }
+	.headerCta { margin: 20px 0 20px 40px; }
+	.about-us .mapWrap { padding-bottom: 100px; }
+	#meetTaktikalVideo { height: 320px; }
+	.meetTaktikalInner { padding: 20px; }
+	.meetTaktikalText { padding: 30px 0 250px 0; }
+	.meetTaktikalContent .row { width: 100%; flex-direction: column-reverse; margin-left: 0; }
+	.meetTaktikalContent .row .col-lg-5, .meetTaktikalContent .row .col-lg-6 { padding: 0; }
+	.meetTaktikalContent { margin: 15px 0 0 0; }
+	.meetTaktikalImage { margin: 0; }
+	.aboutBannerInner { width: 100%; }
+	.aboutBannerInner .heading11xl { font-size: 60px; line-height: 0.6; }
+	.aboutBannerInner h1 p { flex-direction: column; }
+	.about-us .heading11xl span:nth-child(2) { margin-left: 0; }
+	.aboutBannerInner h1 p span:first-child { line-height: 1.4; }
+	.aboutBannerBottom { margin-left: 0; }
+	.aboutBannerBottom { width: 80%; }
+	.aboutBanner { align-items: flex-start; padding: 150px 0 0 0; }
+	.aboutBannerInner .heading11xl p:first-child { justify-content: flex-start; }
+	.serviceBannerInner .heading11xl { font-size: 70px; }
+	.serviceBannerInner span { line-height: 1 !important; }
+	.contentBox { align-items: flex-start; flex-direction: column; gap: 60px; }
+	.imageWrap { height: 360px; width: 70%; }
+	.content { width: 100%; }
+	.contentBox2 { margin-top: 60px; }
+	.imageOnly { width: 70%; }
+	.contentBox2 { width: 100%; }
+	.imageWrap:before { right: auto; top: 70%; }
+	.imageText { margin: 100px 0 0; }
+	.videoOnlyInner { padding: 20px; }
+	.imageText:after { height: 120px; }
+	.weAreCardWrap { padding: 100px 0; }
+	#cards { display: none; }
+	.accordion-body { padding: 0; }
+	.cardImage { width: 100%; }
+	.cardContentUl { padding: 20px; }
+	.weAreCardWrapAcco { margin: 60px 0 0 0; display: block; }
+	.accordion-button::after { display: none; }
+	.accordion-item { margin: 0 0 20px 0; border: none; border-radius: 0 !important; }
+	button .heading5xl { color: var(--colorBlack); margin: 0; }
+	.accordion-button:not(.collapsed) { background-color: transparent !important; }
+	.resourceTop  .heading7xl { font-size: 36px; }
+	.gapTop { padding-top: 180px; }
+	.resourceInner .hoverListing { margin: 40px 0; }
+	.formDesign { padding: 40px 30px; }
+	.ipbInner .heading10xl { line-height: 1; }
+	.CareerForm, .caseStudy { padding: 120px 0 0 0; }
+	.formDesign input:not([type='checkbox']), .formDesign select, .formDesign textarea, .career .CareerForm input:not([type='checkbox']), .career .CareerForm select, .career .CareerForm textarea { margin-bottom: 20px; }
+	div.wpforms-container-full .wpforms-form label.wpforms-error { bottom: 0; }
+	.footerLogo { width: 150px; }
+	.ImageContent { position: unset; z-index: 1; }
+}

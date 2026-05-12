@@ -1,0 +1,163 @@
+@media (max-width:1399px) and (min-width:1366px) {
+	.container-xl { max-width: 1280px; }
+	.founderContent .xmSubText:after { right: -20px; }
+}
+@media (max-width:1280px) {
+	:root { --xxlFont: 50px; --xlFont: 34px; --lFont: 22px; --mFont: 20px }
+	.bannerContent::before { left: 70%; }
+	.workList { padding: 20px; }
+	.workList:first-child { padding-top: 170px; }
+	.workList:nth-child(2) { padding-top: 140px; }
+	.workList:nth-child(3) { padding-top: 90px; }
+	.workList:last-child { padding-top: 40px; }
+}
+@media (max-width:1024px) {
+	:root { --xlFont: 32px; }
+	.banner { align-items: flex-start; }
+	.bannerInner { padding: 200px 0 0 0; }
+	.bannerContent { flex-direction: column; align-items: flex-start; }
+	.bannerBtn { margin: 30px 0 0 0; }
+	.bannerContent::before { left: 20%; bottom: 28px; }
+	.bannerImage { height: 80%; }
+	.solutionTop .xlHeading { width: 100%; }
+	.tAndtSwiperInner { padding: 50px 0 0 30px; }
+	.founderContent { transform: translateX(-70px); }
+	.bannerImage { height: 100%; }
+	.banner:before { background: linear-gradient(46deg, #121223 5%, rgba(18, 18, 35, 0) 65.32%); }
+	.jdContent h2 { font-size: var(--xlFont); }
+	.parallaxInner { height: 450px; }
+}
+@media (min-width:992px) {
+	.tabContent { opacity: 0; visibility: hidden; }
+}
+@media (max-width:991px) {
+	.tab-content-main { position: relative; }
+	.tabContent { transition: unset; }
+	.mobile-tab-title a { text-decoration: none; text-transform: uppercase; color: var(--white); display: block; padding: 24px 30px; position: relative; border-bottom: 1px solid #ffffff1a; font-family: var(--orbitron-font); }
+	.mobile-tab-title a:before { content: ''; position: absolute; width: 25px; height: 3px; background-color: var(--white); right: 30px; top: 36px; }
+	.mobile-tab-title a:after { content: ''; position: absolute; width: 3px; height: 25px; background-color: var(--white); right: 41px; top: 25px; transition: all 0.3s; }
+	.activeTab .mobile-tab-title a:after { transform: rotate(90deg); }
+	.details .row { flex-direction: column-reverse; }
+	.tabImage { width: 40%; height: auto; padding: 30px 0 0 30px; }
+	.services .bannerText { width: 100%; }
+	.services .bannerDesc { width: 60%; margin: 20px 0 0 0; }
+	.services .bannerBtn { margin: 20px 0 0 0; position: absolute; bottom: 0; }
+	.services .bannerContent { justify-content: unset; position: relative; padding: 0 0 80px 0; }
+	.services .bannerImage { height: 90%; }
+	.services .banner { align-items: flex-end; }
+	.services .bannerInner { padding: 0 0 50px 0; }
+	.services .bannerContent::before { width: 100vw; }
+	.tbContent { padding: 100px 0; }
+	.tbContent .mSubText { width: 75%; }
+	.tbContent .xlHeading { width: 75%; }
+	.tabTextTop span { display: block; }
+}
+@media (max-width:768px) {
+	:root { --xlFont: 30px; }
+	.bannerText { width: 80%; }
+	.workListing { flex-direction: column; }
+	.workList { width: 90%; display: flex; align-items: center; padding: 40px !important; margin-right: auto; border-radius: 0 6px 6px 0; }
+	.workList:nth-child(2) { width: 85%; }
+	.workList:nth-child(3) { width: 80%; }
+	.workList:last-child { width: 75%; }
+	.wlContent, .nSubText { margin: 0 }
+	.wlContent { margin-left: 24px; }
+	.solidWork { padding: 100px 0 0 0; }
+	.tAndtContent { padding: 80px 0; }
+	.tAndtSwiperInner:before { height: 145%; }
+	.talkContent .row { padding: 140px 30px 30px 30px; width: 100%; margin-left: unset; }
+	.logoIcon img { width: 100%; height: 100%; }
+	.logoIcon { position: absolute; top: -15%; left: 5%; width: 20%; }
+	.footerTop .xmSubText { padding: 16px 0 0 0; }
+	.footerTop .sFont { padding: 0 0 16px 0; display: block; }
+	.footerMain .row { justify-content: space-between; align-items: center; }
+	.footerUl { margin: 30px 0 0 0; }
+	.founderContent { transform: translateX(0px); }
+	.founderContent .xmSubText { margin: 60px auto 0 auto; width: 80%; }
+	.banner:before { background: linear-gradient(46deg, #121223 5%, rgba(18, 18, 35, 0) 65.32%); }
+	.founderImage { width: max-content; }
+	.founderContent { margin: 30px 0 0 0; }
+	.founder:after { bottom: 550px; }
+	.companyOverview:before { width: 100px; height: 400px; top: -20px; }
+	section.titleBtn:before { height: 60px; z-index: 0; }
+	.latent { padding: 70px 0; }
+	.surveyService { padding: 70px 0; }
+	.dronImage img { width: 100%; height: 100%; }
+	.dronImage { width: 70%; height: 100%; margin: 0 auto; }
+	.surveyListing { flex-wrap: wrap; row-gap: 40px; justify-content: center; }
+	.surveyList { width: 33%; text-align: center; }
+	.surveyListing .mSubText { width: 100%; }
+	.slImage { margin: 0 auto 16px auto; }
+	.surveyList:before { right: 0; }
+	.surveyList:last-child:before { display: none; }
+	.vsImage { height: 450px; }
+	.etBtn { justify-content: flex-start; margin: 20px 0 0 0; }
+}
+@media (max-width:480px) {
+	:root { --xmFont: 16px; --xxlFont: 34px; --xlFont: 26px; --mFont: 18px; --nFont: 14px }
+	.tAndt:before { display: none; }
+	.banner:before { height: 30%; background: linear-gradient(179.79deg, #121223 3.95%, rgba(18, 18, 35, 0) 79.5%); transform: rotate(180deg); }
+	.bannerImage img { object-position: -290px; }
+	.bannerImage { height: 60%; }
+	footer { margin: 65px 0 30px; }
+	.deliverSlide { height: 400px; }
+	.bannerText { width: 100%; }
+	.solidWorkTop { width: 90%; }
+	.workList { padding: 30px 20px !important; }
+	.workList:first-child { width: 95%; }
+	.workList:nth-child(2) { width: 90%; }
+	.workList:nth-child(3) { width: 85%; }
+	.workList:last-child { width: 80%; }
+	.tAndtContent { width: 90%; }
+	.tAndtSwiperConroller:before { width: 75%; }
+	.tAndtSwiperInner { padding: 50px 0 0 10px; }
+	.tAndtSwiperInner:before { height: 135%; }
+	.deliverTop .xmSubText { margin: 0; }
+	.deliverTop { position: relative; padding: 0 0 100px 0; }
+	.deliverHeading .secondaryBtn { position: absolute; bottom: 0; left: 0; }
+	.logoIcon { width: 38%; }
+	.talkContent .row { padding: 140px 10px 30px 10px; }
+	.logo img { width: 100%; height: 100%; object-fit: contain; }
+	.logo { width: 50%; }
+	.navbar ul { width: 100%; }
+	.newsLater input { padding: 0 200px 0 15px !important; }
+	.about-us .bannerImage { height: 130%; }
+	.about-us .banner { align-items: flex-end; }
+	.about-us .bannerInner { padding: 0 0 50px 0; }
+	.founderImage { width: 100%; }
+	.jdContent h2 { width: 75%; }
+	.jdContent .mSubText { width: 85%; }
+	.founderContent .xmSubText { width: 90%; }
+	.founderContent .xmSubText:before { left: -20px; }
+	.founderContent .xmSubText:after { right: -20px; }
+	.parallaxInner { height: 400px; }
+	.founder:after { bottom: 700px; width: 150px; height: 310px; }
+	.founder { padding: 80px 0 250px 0; }
+	.dronImage { width: 100%; }
+	.services .bannerDesc { width: 100%; }
+	.services .bannerContent { padding: 0 0 110px 0; }
+	.secondaryBtn { padding: 16px 20px; }
+	.secondaryBtn img { margin: 0 0 0 10px; }
+	.services .banner:before { background: linear-gradient(193.16deg, #121223 11.86%, rgba(18, 18, 35, 0) 63.28%); height: 50%; }
+	.tbContent .mSubText { width: 95%; }
+	.tbContent .xlHeading { width: 95%; }
+	.latentInner .xlHeading { width: 100%; }
+	.mobile-tab-title a:after { top: 35px; }
+	.mobile-tab-title a:before { top: 46px; }
+	.mobile-tab-title a { padding: 24px 130px 24px 30px; }
+	.surveyListing { row-gap: 0; }
+	.surveyList { width: 100%; display: flex; align-items: center; text-align: left; margin: 0 0 34px 0; padding: 0 0 34px 0; }
+	.surveyList:before { right: auto; width: 50%; height: 1px; bottom: 0; top: auto; }
+	.slImage { margin: 0 25px 0 0px; }
+	.surveyListing .mSubText { width: 60%; }
+	.surveyList:last-child:before { display: block; }
+	.etSlide { flex-direction: column; }
+	.etSlideImage { width: 100%; }
+	.etSlideContent { width: 100%; padding: 16px; }
+	.etSlideText { margin: 0 0 20px 0; }
+	.CareerForm { padding: 100px 0 0 0; }
+	.shortcodeContent ul#wpforms-269-field_10 li, .shortcodeContent #wpforms-269-field_12 li { margin: 8px 0 !important; }
+	.ipbInner .xlHeading { font-size: 28px; width: 100%; }
+	.wpforms-field-description { top: 100px !important; }
+	div.wpforms-container-full .wpforms-form .wpforms-field:not(.wpforms-field-phone):not(.wpforms-field-select-style-modern) { overflow-x: unset !important; }
+}

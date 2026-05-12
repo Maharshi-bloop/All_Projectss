@@ -1,0 +1,318 @@
+@media (max-width:1366px) {
+	.logo img { width: 140px; }
+	.bannerContent h1 { font-size: 78px; }
+	.bannerContent a { right: 80px; }
+	.projectListContent { width: calc(100% - 335px - 40px); margin-left: auto; }
+	.projectList { align-items: center; }
+	a.projectListText { padding: 35px 0; }
+	.facingDataListContent h3 { font-size: 22px; }
+	.infrastructureContent h3, .facingDataHead .heading, .realTimeInner .heading, .projectTop .heading { font-size: 46px; }
+	.dataDeliverdTop h3 { font-size: 66px; }
+	.buildDataContent h3 { font-size: 40px; }
+	.subBannerContent h3 { font-size: 50px; }
+	.whoWeAreHeading .heading { font-size: 70px; }
+	.joinMissionInner .description { font-size: 22px; }
+	.whoWeAreContent span { font-size: 21px; }
+	.bridgingInner h3 { font-size: 50px; }
+	.imageTextWrapper { padding: 0 0 300px; }
+	.hoverToShowListTitle h3 { font-size: 30px; }
+	.hoverToShowListTitle { padding: 35px 40px; }
+	.hoverToShowListImage { width: 20%; }
+	.hoverToShowListTitle { max-width: 80%; }
+	.imageTextContent span br { display: none; }
+}
+@media (max-width:1280px) {
+	.readyToInner .heading { font-size: 48px; }
+	.wave3 { width: 540px; }
+	.wave4 img { width: 100%; }
+	.wave4 { width: 450px; margin-left: auto; }
+	.pulseSec { padding: 50px 0 100px 0; }
+	.pulseAccordion .accordion-button { font-size: 28px; }
+	.subBanner2Inner h3 { font-size: 54px; }
+	.boxContent span br { display: none; }
+	section.contactForm { padding: 100px 0; }
+}
+@media (max-width:1024px) {
+	.headerOption { position: absolute; top: 0; right: 0; background-color: #000; height: 100vh; width: 85vw; transition: all 0.3s; transform: translateX(100%); }
+	.toggleBtn { display: flex; width: 50px; height: 50px; background-color: rgb(255 255 255 / 15%); border-radius: 50%; align-items: flex-end; justify-content: space-between; flex-direction: column; padding: 16px 15px 16px 0; position: relative; z-index: 10; }
+	.toggleBtn span { width: 20px; height: 2px; background-color: #fff; display: block; border-radius: 70px; }
+	.toggleBtn span:nth-child(2) { width: 13px; }
+	.toggleBtn span:last-child { width: 7px; }
+	.headerOption.openMenu { transform: translateX(0); }
+	.subMenu { display: none; }
+	.headerOption nav { flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; padding: 0 30px; }
+	.headerOption nav > ul { margin: 0; padding: 0; list-style: none; width: 100%; }
+	.headerOption nav > ul li:first-child { border: 0; }
+	.headerOption nav > ul > li { width: 100%; padding: 15px 0; border-top: 1px solid #ffffff26; position: relative; }
+	.hasUl::before { width: 20px; top: 33px; }
+	.headerOption nav > ul a { font-family: var(--DM-MONO); color: var(--whiteColor); font-size: 24px; text-decoration: none; display: inline-block; }
+	.subMenu li a { font-size: 20px !important; color: #989898 !important; padding: 10px; }
+	.subMenu { padding: 10px 0 0 0; list-style: none; }
+	.ctaBtn { margin: 30px 0 0 0; }
+	.bannerContent { width: 80%; }
+	.infrastructure { padding: 260px 0 460px 0; }
+	.facingDataListing { flex-wrap: wrap; }
+	.facingDataList { width: 50%; }
+	.projectListImageListing { height: 250px; }
+	.listImage { width: 250px; height: 250px; }
+	.projectListContent { width: calc(100% - 250px - 40px); }
+	.projectListText br { display: none; }
+	.projectListText strong { width: 30%; }
+	.infrastructureContent h3, .facingDataHead .heading, .realTimeInner .heading, .projectTop .heading { font-size: 46px; }
+	.facingDataContent .description { font-size: 18px; margin-top: 0; }
+	.realTimeInner br { display: none; }
+	section.realTime { padding: 0px 0 150px 0; }
+	.infrastructureContent br { display: none; }
+	.facingData { padding: 100px 0 0 0; }
+	.bridgingInner h3 { font-size: 48px; }
+	.bridgingInner .accordion-button { font-size: 28px; }
+	.bridgingInner .accordion-button p { margin: 0; }
+	.boxListing { width: 100%; }
+	.boxList br { display: none; }
+	.boxAccordionInner .accordion-button { font-size: 34px; }
+	.subBannerContent h3 { font-size: 46px; }
+	.whatPulseImage { width: 19%; }
+	.whatPulseContent span br { display: none; }
+	.buildDataContent { padding: 40px 0 30px 40px; }
+	.contactFormInner .formDesign { padding: 40px; }
+	.contactPageUl ul { justify-content: center; flex-wrap: wrap; }
+	.contactPageUl ul li { width: 50%; }
+	.contactPageUl ul li a span { font-size: 14px; }
+	.aboutBannerInner h3 { font-size: 68px; }
+	.whoWeAreHeading .heading { font-size: 60px; }
+	.whoWeAreContent br { display: none; }
+	.whoWeAreContent { margin-top: 30px; }
+	.adaptable { padding: 100px 0 200px 0; }
+	.adaptableHeading .heading { font-size: 50px; padding: 40px 0 40px 120px; }
+	.leaderShipInnner .heading { font-size: 50px; }
+	.leaderShipInnner .row:last-child .col-lg-5:first-child span { font-size: 22px; }
+	.teamWrapper .row .col-lg-4:first-child::before { width: 90%; right: 60%; }
+	.joinMissionInner .description { font-size: 20px; }
+	.joinMission { padding: 170px 0 50px 0; }
+	.successListBoxContent span:first-child { font-size: 16px; }
+}
+@media (max-width:991px) {
+	.projectList { display: none; }
+	.projectSwiper { display: block; }
+	.infrastructure { padding: 160px 0 260px 0; }
+	.projectSwiper .swiper-slide { height: auto; }
+	.whatPulseImage { width: unset; top: 13%; left: 63%; }
+	.whatPulse { padding: 100px 0 170px 0; }
+	.buildDataInner .row { flex-direction: column-reverse; }
+	.accordionUl ul { flex-wrap: wrap; }
+	.accordionUl ul li { width: 50%; }
+	.subBannerContent h3 { font-size: 44px; }
+	.esgBanner .subBannerContent h3 { letter-spacing: -0.5px; }
+	.subBannerContent h3 br { display: none; }
+	.swiperSlideContent span { line-height: normal; }
+	.contactPageUl ul { flex-wrap: nowrap; }
+	.iframe { height: 400px; margin: 30px 0 0 0; }
+	.joinMissionInner .description br { display: none; }
+	section.aboutBanner { padding: 300px 0 0 0; }
+	.leaderShipTop .description br { display: none; }
+	.boxListing { flex-wrap: wrap; }
+	.boxList { width: calc(100% / 2); }
+	.imageTextContent > span { font-size: 28px; }
+	.buildDataContent > span br { display: none; }
+	.successList .col-md-6 { margin: 0 0 30px 0; }
+}
+@media (max-width:768px) {
+	.bannerContent { width: 90%; }
+	.bannerContent h1 { font-size: 68px; }
+	.bannerContent h1 img { height: 45px; }
+	.bannerContent a { right: 50px; top: 0; }
+	.dataDeliverd { padding: 80px 0 0 0; }
+	.infrastructureContent h3, .facingDataHead .heading, .realTimeInner .heading, .projectTop .heading { font-size: 40px; }
+	.infrastructureContent .description { font-size: 18px; }
+	.adaptableInner > span { font-size: 24px; }
+	.adaptable { padding: 120px 0; }
+	.dataDeliverdTop h3 { font-size: 58px; }
+	.timeLineWrapper ul { max-width: 100%; }
+	.onlyDescSec { padding: 180px 0; }
+	.onlyDescSecInner .heading { font-size: 24px; line-height: 34px; }
+	.onlyDescSecInner .heading br { display: none; }
+	.bridgingInner h3 { font-size: 38px; }
+	.bridgingInner .accordion-button { font-size: 24px; }
+	.subBanner2Inner h3 { font-size: 54px; }
+	.subBanner { height: 75vh; }
+	.esgBanner .subBannerContent h3 { font-size: 33px; }
+	.contactBannerInner h3 { font-size: 50px; }
+	.waveImage { width: 60%; margin: unset; }
+	.whoWeAreHeading .waveImage img { width: 100%; }
+	.hoverToShow .accordion-body { padding: 0; }
+	.hoverToShow .accordion { margin: 0 0 40px 0; display: block; }
+	.successList .col-md-6 { margin: 0 0 30px 0; }
+	.successList .row div:last-child .successListBox .successListBoxImage { height: 300px; }
+	.successList .row div:last-child .successListBox .successListBoxContent span { font-size: 22px; }
+}
+@media (max-width:586px) {
+	.bannerContent h1 { font-size: 50px; }
+	.bannerContent h1 img { height: 35px; }
+	.banner { align-items: flex-end; padding: 0 0 150px 0; }
+	.bannerContent a { position: relative; top: 0; right: 0; margin: 27px 0 0 0; }
+	.dataDeliverd { padding: 50px 0 0 0; }
+	.dataDeliverdTop h3, .whatPulseHeading .heading { font-size: 46px; }
+	.dataDeliverdTop .description { font-size: 21px; }
+	.dataDeliverdTop .description br { display: none; }
+	.parallexImage, .agriParallexImg, .serviceParallexImg { height: 420px }
+	.dataDeliverdTop { padding: 0 0 80px 0; }
+	.infrastructureImage { left: -29%; top: -200px !important; width: 100%; }
+	.infrastructureContent h3, .facingDataHead .heading, .realTimeInner .heading, .readyToInner .heading, .buildDataContent .heading, .subBannerContent .heading, .leaderShipInnner .heading { font-size: 34px; line-height: normal; }
+	.infrastructureContent .description, .realTimeInner .description, .facingDataContent .description { font-size: 16px; }
+	.infrastructureContent .description br, .realTimeInner .description br, .facingDataContent .description br { display: none; }
+	.infrastructure { padding: 630px 0 200px 0; }
+	.infrastructure::before { bottom: -40%; right: -25%; width: 80%; }
+	.realTimeImage { right: 0; }
+	.realTimeImage img { object-fit: cover; }
+	.adaptableInner > span { font-size: 18px; }
+	.adaptableInner > span br { display: none; }
+	.adaptable { padding: 90px 0; }
+	.adaptable::before { opacity: 0.2; }
+	.adaptable { background-size: unset; background-position: left; position: relative; z-index: 2; }
+	.facingData { padding: 90px 0 0 0; }
+	.facingDataList { width: 100%; transition: all 0.3s; padding: 25px 30px; min-height: 300px; }
+	.facingDataListing { flex-wrap: wrap; }
+	.facingDataListContent { padding: 80px 25px 30px; top: 47%; }
+	.facingDataListText { display: flex; align-items: flex-end; justify-content: space-between; }
+	.wave4 { width: 70%; margin-left: auto; padding: 30px 0 0 0; }
+	.wave4 img { width: 100%; object-fit: cover; }
+	.projectTop .heading { font-size: 46px; }
+	.project { padding: 100px 0 0 0; }
+	footer { padding: 250px 0 0; border-top: 0; margin-top: 150px; }
+	.wave3 { width: 80%; }
+	.footerInner { text-align: center; padding: 0; }
+	.footerUl ul { padding: 25px 0 10px 0; flex-direction: column; }
+	.socialUl ul { justify-content: center; }
+	.footerUl ul li { padding: 0 0 10px 0; }
+	.footerContent { padding: 20px 0 0 0; }
+	.newsLatter { padding: 50px 15px; flex-direction: column; width: 100%; border-radius: 0 28px 0 0; height: auto; }
+	.newsLatter .formDesign { width: 80%; margin-left: unset; }
+	.contactBannerInner h3 { font-size: 40px; text-align: center; }
+	.contactBanner { padding-bottom: 100px; }
+	.contactFormInner .formDesign { padding: 30px; }
+	.contactPageUl ul { flex-direction: column; }
+	.contactPageUl ul li a { display: flex; align-items: center; text-align: left; }
+	.contactPageUl ul li { width: 100%; margin: 0 0 35px 0; }
+	.contactPageUl ul li:last-child { margin-bottom: 0; }
+	.ulIcon { margin: 0 20px 0 0; }
+	.iframe { height: 300px; margin: 20px 0 0 0; }
+	section.contactForm { padding: 60px 0 200px 0; }
+	.popUpContent { height: 70vh; max-width: 100vw; width: 100vw; left: 0; right: 0; }
+	.mobileDownArrow { display: inline-block; }
+	.facingDataListCount { display: flex; justify-content: space-between; }
+	span.mobileDownArrow { width: 40px; height: 40px; border: 1px solid var(--whiteColor); display: flex; align-items: center; justify-content: center; font-size: 20px; border-radius: 50%; opacity: 0.4; transition: all 0.3s; }
+	span.mobileDownArrow svg { transition: all 0.3s; }
+	span.mobileDownArrow:hover { opacity: 1; }
+	.facingDataList.active { min-height: 400px; }
+	.facingDataList.active span.mobileDownArrow { opacity: 1; }
+	.facingDataList.active span.mobileDownArrow svg { transform: rotate(180deg); }
+	.subBannerContent h3 { font-size: 40px; text-align: center; }
+	.subBanner { padding: 80px 0 0 0; overflow-x: clip; height: 120vh; }
+	.subBannerContent .primaryBtn { margin: 0 auto; }
+	.boxListing { width: 100%; flex-wrap: wrap; }
+	.boxList { width: 100%; padding: 30px; min-height: 400px; position: relative; }
+	.boxList span { top: 100px; }
+	.accordion-button { font-size: 26px; width: 100%; }
+	.accordion-button br { display: none; }
+	.accordion-body { padding: 70px 0 0 0; }
+	.accordion-header { justify-content: space-between; }
+	.readyTo { padding: 120px 0 0 0; }
+	.subBanner2Inner h3 { font-size: 40px; }
+	section.subBanner2 { height: 70vh; align-items: flex-start; }
+	.subBanner2Inner { padding: 150px 0 0 0; }
+	.bridgingInner h3 br { display: none; }
+	.bridgingInner h3 { font-size: 36px; width: 100%; }
+	.accordion-button, .bridgingInner .accordion-button, .pulseAccordion .accordion-button { font-size: 20px; padding: 0 50px 0 0 !important; }
+	.bridging .accordion-body { padding: 30px 0 0 0; }
+	.bridging .accordion-body .description { font-size: 14px; margin: 0; }
+	.accordion-header > span { width: 30px; height: 30px; font-size: 16px; }
+	.pulse .boxList img { position: absolute; top: 30px; right: 30px; margin: 0; }
+	.pulseInner .heading, .journeyTop .heading { font-size: 44px; text-align: left; }
+	.pulse { padding: 100px 0 0; }
+	.timeLineWrapper ul li { width: 100%; text-align: left !important; padding-left: 45px !important; padding-right: 0 !important; }
+	.timeLineIndex { width: 48px; height: 48px; left: -23px !important; right: auto !important; top: 40px; }
+	.timeLineWrapper ul { max-width: 90% }
+	.default-line, .draw-line { left: 0; }
+	.timeLineWrapper ul li:after { left: -5px; }
+	.onlyDescSecInner .heading { font-size: 20px; text-transform: lowercase; }
+	.pulseListing { margin: 0; }
+	.pulseListingImage img { right: -170px; }
+	.subBannerImage { margin-top: -210px; }
+	.subBanner2Image img { object-position: -580px 70px; }
+	.imageTextWrapper { padding: 100px 0 100px 0; }
+	.imageTextWrapperInner .row { flex-direction: column-reverse; }
+	.imageTextImage { position: unset; transform: scale(1.2); }
+	.pulse .boxList { min-height: 300px !important; }
+	.pulse .boxList span { position: unset; height: unset; padding: unset; bottom: unset !important; top: unset; }
+	.logo img { width: 160px; }
+	header { padding: 30px 0; }
+	.imageTextContent > span { font-size: 30px; }
+	.imageTextContent > span br { display: none; }
+	.hoverToShowInner { display: none; }
+	.hoverToShowListImage { width: 60%; position: unset; top: 50%; transform: unset; opacity: 1; visibility: visible; transition: all 0.3s; margin: 0 auto; }
+	.hoverToShow .description { color: var(--whiteColor); opacity: 0.5; }
+	.accordionUl ul { flex-wrap: wrap; }
+	.accordionUl ul li { width: 100%; }
+	.pulseAccordion .accordion-item { padding: 20px; }
+	.boxContent h3 { font-size: 16px; margin: 0; }
+	.boxContent span { margin: 15px 0 30px 0; }
+	.boxContent span br { display: none; }
+	.subBanner2Inner h3 br { display: none; }
+	.whatPulseContent span { font-size: 21px; line-height: 32px; }
+	.whatPulseContent span br { display: none; }
+	.buildDataContent { padding: 40px 0 0 0; }
+	.buildDataImage { height: 330px; }
+	.whatPulseImage { left: auto; right: 0; top: 0; transform: unset; }
+	.whatPulse { padding: 250px 0 100px 0; }
+	.swiperSlideContent h3 { font-size: 20px; }
+	.swiperSlideContent span { font-size: 12px; line-height: 24px; }
+	.swiperSlideImage { height: 300px; }
+	.scrollToHeading h3 { font-size: 28px; }
+	.esgScrollToUl { position: unset; }
+	.esgScrollToUl ul { border-radius: 60px 0 0 60px; }
+	.aboutBannerInner h3 { font-size: 40px; }
+	.waveImage { position: unset; margin: unset; }
+	.whoWeAreHeading .heading { font-size: 46px; }
+	section.aboutBanner { height: unset; padding: 250px 0 0 0; }
+	.aboutSwiperImage { height: 350px; }
+	.whoWeAre { padding: 150px 0 30px 0; }
+	.adaptableHeading .heading { font-size: 46px; }
+	.adaptableHeading .heading { font-size: 46px; padding: 30px 0 30px 90px; }
+	.mission span { font-size: 22px; }
+	.leaderShipInnner .row:last-child .col-lg-5:first-child span { font-size: 16px; }
+	.leaderShipTop br { display: none; }
+	.leaderShipInnner .row:last-child .col-lg-5:last-child span { font-size: 14px; margin: 0 0 20px 0; }
+	.joinMissionInner h3 { font-size: 34px; width: 60%; margin: 0 auto; }
+	.joinMissionInner .description { font-size: 14px; }
+	.joinMissionInner .description br { display: none; }
+	a.teamCard { margin: 0 0 30px 0; }
+	.teamWrapper .row .col-lg-4:first-child::before { background: url(../images/mobile-about-line.png) center center no-repeat; background-size: contain; left: 27%; width: 50%; height: 150px; top: auto; bottom: 100%; transform: translateX(-50%); }
+	.teamWrapper .row .col-lg-4:last-child::before { display: none; }
+	.teamWrapper { padding: 180px 0 0 0; }
+	.joinMission { padding: 100px 0 50px 0; }
+	.whoWeAreContent { margin-top: 30px; }
+	.pulse .agriParallexImage { margin: -100px 0 0 0; }
+	.boxAccordionInner .accordion-button { font-size: 26px; }
+	.faqBannerImage { width: 90%; }
+	.faqBannerImage img { width: 100%; object-fit: contain; }
+	.faqBannerInner { text-align: center; }
+	.faqBannerInner .heading { font-size: 40px; }
+	.faqBannerInner .description { font-size: 18px; }
+	.faqBannerInner .description br { display: none; }
+	.accordion-item span { font-size: 14px !important; line-height: 26px !important; }
+	.faqAccordion { padding: 80px 0 0 0; }
+	.successListBox { height: auto; }
+	.successList .row div:last-child .successListBox { flex-direction: column; }
+	.successList .row div:last-child .successListBox .successListBoxImage { width: unset; height: 250px; }
+	.successListBoxImage { height: 250px; }
+	.successList .row div:last-child .successListBox .successListBoxContent { width: unset; font-size: unset; }
+	.successListBoxContent { height: calc(100% - 250px); }
+	.successListBox { margin: 0 0 30px 0; }
+	.successList { margin: 0; }
+	.mainPaddingTop.resourcesBanner { padding: 190px 0 120px 0; }
+	.contactBannerInner h3 img { width: 180px; }
+	.successList .row div:last-child .successListBox .successListBoxContent span { font-size: 16px; }
+}
+@media (max-width:480px) {
+	.boxList span { text-overflow: ellipsis; -webkit-line-clamp: 11; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; height: calc(22px * 11); line-height: 22px; }
+}

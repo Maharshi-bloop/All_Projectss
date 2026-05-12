@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .portBanner {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        .portBannerImage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .portBannerImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portBannerContent {
+            color: #fff;
+        }
+
+        .bannerHead {
+            font-size: 66px;
+            font-weight: 600;
+            color: #fff !important;
+        }
+
+        .subHeading {
+            font-size: 30px;
+            color: #000 !important;
+            line-height: 1.4 !important;
+        }
+
+        .sectionHeading {
+            color: #1E2025;
+            font-size: 44px;
+            font-weight: 600;
+        }
+
+        .description {
+            color: #636363;
+            font-size: 18px;
+        }
+
+        .textDes {
+            padding: 120px 0;
+        }
+
+        .portBannerContent ul {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .portBannerContent ul strong {
+            font-weight: 600;
+        }
+
+        .portBannerContent ul li {
+            margin: 0 20px 0 0;
+            padding: 0 20px 0 0;
+            border-right: 3px solid #fff;
+        }
+
+        .portBannerContent ul li:last-child {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .extraData {
+            font-size: 26px;
+            margin: 30px 0 0 0;
+        }
+
+        .extraData strong {
+            padding: 0 0 0 30px;
+            border-left: 3px solid #fff;
+            line-height: 0;
+        }
+
+        .extraData span {
+            display: block;
+            padding: 5px 0 0 30px;
+            font-size: 22px;
+        }
+
+        .videoWrapper video {
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .imageWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .width50 {
+            width: calc(50% - 5px);
+        }
+
+        .width100 {
+            width: 100%;
+        }
+
+        .width33 {
+            width: calc((100% / 3) - 7px);
+        }
+
+        .imageDiv img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .impactWrapper {
+            padding: 120px 0;
+        }
+
+        .impactListing {
+            padding: 70px 0 0 0;
+        }
+
+        .roww {
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+        }
+
+        .coll {
+            background-color: #F5F5F5;
+            padding: 70px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0px 10px 15px #00000029;
+            text-align: center;
+        }
+
+        .impactContent strong {
+            font-size: 25px;
+            color: #000 !important;
+        }
+
+        .impactContent span {
+            display: block;
+            font-size: 40px;
+            margin: 0 0 20px 0;
+        }
+
+        .impactIcon {
+            height: 100px;
+        }
+
+        .impactIcon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .impactList {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .impactContent {
+            margin: 20px 0 0 0;
+        }
+
+        .testiContent {
+            box-shadow: 0px 10px 50px #00000029;
+            padding: 100px 50px 30px 50px;
+            border-radius: 30px;
+        }
+
+        .clientName {
+            padding: 50px 0 0 0;
+        }
+
+        @media (max-width:1024px) {
+            .coll {
+                padding: 40px;
+            }
+
+            .impactIcon {
+                height: 70px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .roww {
+                gap: 25px;
+                flex-wrap: wrap;
+            }
+
+            .portBanner {
+                height: 85vh;
+            }
+
+            .textDes {
+                padding: 80px 0;
+            }
+
+            .coll {
+                padding: 40px 70px;
+            }
+
+            .testiContent .subHeading {
+                font-size: 22px;
+            }
+
+            .subHeading {
+                font-size: 26px;
+            }
+
+            .bannerHead {
+                font-size: 50px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .bannerHead {
+                font-size: 36px;
+            }
+
+            .portBannerContent ul {
+                font-size: 18px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .portBannerContent ul li {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .subHeading {
+                font-size: 22px;
+            }
+
+            .portBanner {
+                height: 70vh;
+            }
+
+            .extraData {
+                font-size: 20px;
+            }
+
+            .extraData span {
+                font-size: 18px;
+            }
+
+            .textDes {
+                padding: 60px 0;
+            }
+
+            .sectionHeading {
+                font-size: 32px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .width33 {
+                width: 100%;
+            }
+
+            .impactWrapper {
+                padding: 60px 0;
+            }
+
+            .coll {
+                padding: 30px 60px;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .roww {
+                flex-direction: column;
+            }
+
+            .impactContent span {
+                font-size: 30px;
+            }
+
+            .impactContent strong {
+                font-size: 18px;
+            }
+
+            .testiContent .subHeading {
+                font-size: 18px;
+            }
+
+            .testiContent {
+                padding: 60px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portBanner">
+        <div class="portBannerImage">
+            <img src="BG.png" alt="">
+        </div>
+        <div class="portBannerContent">
+            <div class="container">
+                <h1 class="bannerHead">Rao Foreign Education Fair 20XX</h1>
+                <ul>
+                    <li><strong>Date:</strong> 20/11/2019</li>
+                    <li><strong>Location:</strong> Ahmedabad</li>
+                </ul>
+                <span class="subHeading">Design | Event Management | Production | Execution</span>
+                <div class="extraData">
+                    <strong>Audience</strong>
+                    <span>500</span>
+                </div>
+                <div class="extraData">
+                    <strong>Location & Year</strong>
+                    <span>Ahmedabad, 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="textDes">
+        <div class="container">
+            <div class="textDesInner text-center">
+                <h2 class="sectionHeading">Project Overview</h2>
+                <span class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="videoWrapper">
+        <video controls playsinline poster="">
+            <source src="rao.mp4" type="video/ogg">
+        </video>
+    </section>
+
+    <section class="textDes">
+        <div class="container">
+            <div class="textDesInner text-center">
+                <h2 class="sectionHeading">Scope & Planning</h2>
+                <span class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="imageWrapper">
+        <div class="imageDiv width50">
+            <img src="banner_1.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_2.png" alt="">
+        </div>
+        <div class="imageDiv width100">
+            <img src="banner_3.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_4.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_5.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_6.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_7.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_8.png" alt="">
+        </div>
+        <div class="imageDiv width100">
+            <img src="banner_9.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_10.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_11.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="textDes">
+        <div class="container">
+            <div class="textDesInner text-center">
+                <h2 class="sectionHeading">The 'D-Day'</h2>
+                <span class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="imageWrapper">
+        <div class="imageDiv width50">
+            <img src="banner_12.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_13.png" alt="">
+        </div>
+        <div class="imageDiv width100">
+            <img src="banner_14.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_15.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_16.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_17.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_18.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_19.png" alt="">
+        </div>
+        <div class="imageDiv width100">
+            <img src="banner_20.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_21.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_22.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_23.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_24.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_25.png" alt="">
+        </div>
+        <div class="imageDiv width100">
+            <img src="banner_26.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_27.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_28.png" alt="">
+        </div>
+        <div class="imageDiv width33">
+            <img src="banner_29.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_30.png" alt="">
+        </div>
+        <div class="imageDiv width50">
+            <img src="banner_31.png" alt="">
+        </div>
+    </section>
+
+    <section class="videoWrapper">
+        <video controls playsinline poster="video_poster.png">
+            <source src="rao.mp4" type="video/ogg">
+        </video>
+    </section>
+
+    <section class="impactWrapper">
+        <h2 class="text-center sectionHeading">The Impact</h2>
+        <div class="container">
+            <div class="impactListing">
+                <div class="roww">
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon-2.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon-1.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testi">
+        <div class="container">
+            <div class="testiInner">
+                <div class="testiContent">
+                    <span class="subHeading text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                        eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum
+                        dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+
+                    <div class="clientName text-center">
+                        <strong>Lorem, ipsum dolor.</strong>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>

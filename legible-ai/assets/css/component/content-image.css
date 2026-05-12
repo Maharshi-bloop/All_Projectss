@@ -1,0 +1,19 @@
+/* content Image css */
+.contentImage { margin: 170px 0; }
+.contentImage .iconUl { margin: 22px 0; }
+.contentImage .iconUl li { margin: 0 0 16px 0; padding: 0  0 16px 0; }
+.contentImage .iconUl li:last-child { margin: 0; padding: 0; border: none; }
+.contentImageImage { padding: 80px; background-color: var(--secondary-color); border-radius: 20px; height: 475px !important; display: flex; align-items: center; justify-content: center; }
+.contentImageList { margin: 170px 0; }
+.contentImageList:first-child { margin-top: 0; }
+.contentImageList:nth-child(even) .row { flex-direction: row-reverse; }
+.contentImageList:nth-child(even) .contentImageImage { background-color: #EDEDFF; }
+.contentImageText { margin-top: 36px; }
+.contentImageText .xlHeading { font-weight: 700; }
+.iconUl { margin: 0; padding: 0; list-style: none; }
+.iconUl li { margin: 0 0 25px 0; padding: 0  0 25px 0; border-bottom: 1px solid #CFCFFF; font-size: var(--m-font); }
+.iconUl li i { color: var(--primary-color); width: 16px; height: 16px; margin: 0 15px 0 0; }
+.iconUl li:last-child { margin: 0; padding: 0; border: none; }
+.contentImageTop { width: 80%; margin: 0 auto; margin-bottom: 80px; }
+.contentImageList .col-lg-6 { padding: 0 25px; }
+.contentImageText .mSubText { margin: 25px 0; display: block; }

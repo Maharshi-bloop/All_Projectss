@@ -1,0 +1,364 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.home {
+    .bannerHeading {
+        margin: 0 0 30px 0;
+    }
+}
+
+section.banner {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 60px 60px;
+    overflow: clip;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:991px) {
+        height: 85vh;
+    }
+
+    @media (max-width:576px) {
+        border-radius: 0 0 40px 40px;
+    }
+
+    @media (max-width:480px) {
+        height: 70vh;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: $blackColor;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    .bannerVideo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bannerInner {
+        position: relative;
+        width: 50%;
+
+        @media (max-width:1366px) {
+            width: 60%;
+        }
+
+        @media (max-width:768px) {
+            width: 70%;
+        }
+
+        @media (max-width:576px) {
+            width: 100%;
+            padding: 190px 0 0 0;
+        }
+
+        .bannerContent {
+            span {
+                font-size: $font20;
+                font-family: $publicSans;
+                display: inline-block;
+                color: $whiteColor;
+                margin: 20px 0 50px 0;
+                font-weight: 200;
+            }
+
+            .sectionHeading {
+                color: $whiteColor;
+            }
+        }
+    }
+}
+
+.starCol {
+    padding: 120px 0;
+
+    @media (max-width:480px) {
+        padding: 80px 0;
+    }
+
+    .row {
+        @media (max-width:768px) {
+            justify-content: center;
+        }
+    }
+
+    .starBox {
+        text-align: center;
+
+        @media (max-width:576px) {
+            margin: 0 0 30px 0;
+        }
+
+        .starIcon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .description {
+            font-size: $font16;
+        }
+    }
+}
+
+.imageExTextWrapperInner {
+
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imageExTextImg {
+        border-radius: 20px;
+        overflow: clip;
+
+        @media (max-width:768px) {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .imageExTextContent {
+        @media (max-width:768px) {
+            padding: 30px 0 0 0;
+        }
+
+        .sectionHeading {
+            width: 80%;
+
+            @media (max-width:991px) {
+                width: 100%;
+            }
+        }
+
+        h2,
+        >span {
+            @media (max-width:768px) {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin: 60px 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0 0 30px 0;
+                padding: 0 0 30px 0;
+                border-bottom: 1px solid $primaryColor;
+
+                .count {
+                    font-size: 60px;
+                    color: $secondaryColor;
+                    position: relative;
+                    display: inline-block;
+
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+
+                    }
+                }
+
+                &:first-child {
+
+                    .count {
+                        &:before {
+                            content: "%";
+                        }
+                    }
+                }
+
+                &:last-child {
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+
+                    .count {
+                        &:before {
+                            content: "+";
+                        }
+                    }
+                }
+
+                .careResult {
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width:480px) {
+                        flex-direction: column;
+
+                    }
+                }
+
+                .careResult .description {
+                    width: 80%;
+                    margin-left: auto;
+
+                    @media (max-width:480px) {
+                        margin: 10px 0 0 0;
+                        text-align: center;
+
+                    }
+                }
+
+
+
+                .description {
+                    font-size: $font16;
+                }
+            }
+        }
+    }
+}
+
+.journeyList {
+    padding: 120px 0;
+
+    .journeyListTop {
+        @media (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    .journeyUl {
+        padding: 80px 0 0 0;
+
+        .journeyli {
+            padding: 40px 50px;
+            transition: all 0.3s;
+            border-radius: 15px;
+            position: relative;
+
+            @media (max-width:1366px) {
+                padding: 40px 20px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: $primaryColor;
+                left: 0;
+                bottom: 0;
+            }
+
+            .row {
+                justify-content: space-between;
+                align-items: center;
+
+                @media (max-width:768px) {
+                    flex-direction: column;
+
+                }
+
+                .journeyliContent {
+                    @media (max-width:768px) {
+                        text-align: center;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #8ae0bc80;
+            }
+
+            .journeyliTitle {
+                display: flex;
+                align-items: center;
+
+                @media (max-width:768px) {
+                    padding-bottom: 20px;
+
+                }
+
+                .journeyliIcon {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 50px 0 0;
+
+                    @media (max-width:1024px) {
+                        margin: 0 30px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.postWrapper {
+    padding: 110px 0;
+    background-color: $whiteColor;
+
+    .postWrapperTop {
+        padding: 0 0 50px 0;
+
+        @media (max-width:768px) {
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    .postListing {
+        .row {
+            .col-4 {
+                @media (max-width:768px) {
+                    padding-bottom: 30px;
+
+                }
+            }
+        }
+    }
+
+    .postTopCta {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width:768px) {
+            justify-content: center;
+            padding: 30px 0;
+        }
+    }
+}

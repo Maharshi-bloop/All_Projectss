@@ -1,0 +1,51 @@
+/* subBanner1 css */
+.subBanner1 { position: relative; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); padding-top: 200px; z-index: 1; overflow: clip; }
+.subBanner1Bg { position: absolute; top: 0; left: 0; mix-blend-mode: overlay; opacity: 0.4; z-index: -1; }
+.specialText { color: var(--colorPrimary); font-size: var(--font3xl); font-weight: 700; }
+.subBanner1 .heading8xl { margin: 10px 0 35px 0; }
+.subBanner1Inner { width: 60%; text-align: center; margin: 0 auto; }
+.subBanner1Inner div { justify-content: center; display: flex; }
+.mixing-plants .textVideo { background: transparent; padding: 0 0 80px 0px; }
+.mixing-plants .textVideo:before { height: 300px; }
+
+/* requirements css */
+.requirements { padding: 120px 0; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); position: relative; z-index: 1; }
+.requirementsBg { position: absolute; width: 100%; height: 500px; top: 0; left: 0; z-index: -1; mix-blend-mode: lighten; opacity: 0.8; }
+.requirementsBg img { width: 100%; height: 100%; }
+.requirementsListing { margin: 70px 0 0 0; display: flex; flex-wrap: nowrap; gap: 16px; width: 100%; padding: 0; list-style: none; }
+.requirementsList { flex: 1 1 200px; transition: all 0.5s; height: 660px; position: relative; padding: 80px 40px; padding-bottom: 70px; display: flex; justify-content: space-between; flex-direction: column; background-color: var(--colorWhite); border-radius: 12px; z-index: 1; overflow: hidden; }
+.requirementsList:before { content: ''; position: absolute; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #011132 100%); width: 100%; height: 100%; top: 0; left: 0; z-index: -1; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.requirementsList:hover:before { opacity: 1; visibility: visible; }
+.requirementsList .titleHeading { transition: all 0.3s; }
+.requirementsList:hover .titleHeading { color: var(--colorWhite); }
+.requirementsList .secondaryArrowBtn { position: absolute; bottom: 80px; left: 40px; transition: all 0.3s; }
+.requirementsList .subTextMd { opacity: 0; visibility: hidden; transition: all 0.3s; transition-delay: 0.3s; transform: translateY(20px); display: inline-block; color: var(--colorWhite); }
+.requirementsList:hover .subTextMd { opacity: 1; visibility: visible; transform: translateY(0); position: relative; width: 100%; }
+.requirementsList:hover { flex-grow: 3; }
+.requirementsList:hover .secondaryArrowBtn { opacity: 0; visibility: hidden; }
+.requirementsList .heading5xl { color: var(--blackColor); margin: 0 0 24px 0; transition: all 0.3s; }
+.requirementsListImage { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.requirementsListImage img { width: 100%; height: 100%; object-fit: cover; }
+.requirementsList:hover .requirementsListImage { opacity: 1; visibility: visible; }
+.indexNumber span { color: var(--colorPrimary); font-size: var(--font5xl); font-weight: 700; }
+.requirementsContent { position: absolute; top: calc(100% - 250px); left: 0; padding: 40px; transition: all 0.3s; }
+.requirementsContent .heading3xl { margin: 0 0 30px 0; color: var(--colorBlack); }
+.requirementsList:hover .requirementsContent .heading3xl { color: var(--colorWhite); }
+.requirementsList:hover .requirementsContent { top: calc(100% - 330px); left: 0; padding: 40px; transition: all 0.3s; }
+.requirementsList.active { flex-grow: 3; }
+.requirementsList.active .subTextMd { opacity: 1; visibility: visible; transform: translateY(0); position: relative; width: 100%; }
+.requirementsList.active:before { opacity: 1; visibility: visible; }
+.requirementsList.active .titleHeading { color: var(--colorWhite); }
+.requirementsList.active .requirementsContent .heading3xl { color: var(--colorWhite); }
+.requirementsList.active .requirementsContent { top: calc(100% - 330px); left: 0; padding: 40px; transition: all 0.3s; }
+
+/*  */
+/* .subBanner1 { position: relative; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 52.29%); padding: 0; z-index: 1; overflow: clip; height: 100vh; }
+.subBanner1InnerImage { position: absolute; top: 0; right: 0; width: 80%; }
+.subBanner1Inner { padding: 200px 0 0 0; width: 60%; text-align: left; margin: 0; }
+.subBanner1 .container-xl { position: relative; }
+.subBanner1Inner div { justify-content: flex-start; }
+@media (max-width:480px) {
+	.subBanner1Inner { padding: 380px 0 0 0; }
+	.subBanner1 { background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 85.29%); }
+} */

@@ -1,0 +1,242 @@
+@import "../global/colors";
+@import "../global/typo";
+
+.home {
+    .bannerHeading {
+        margin: 0 0 30px 0;
+    }
+}
+
+section.banner {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 60px 60px;
+    overflow: clip;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: $blackColor;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    .bannerVideo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bannerInner {
+        position: relative;
+        width: 50%;
+
+        .bannerContent {
+            span {
+                font-size: $font20;
+                font-family: $publicSans;
+                display: inline-block;
+                color: $whiteColor;
+                margin: 20px 0 50px 0;
+                font-weight: 200;
+            }
+
+            .sectionHeading {
+                color: $whiteColor;
+            }
+        }
+    }
+}
+
+.starCol {
+    padding: 120px 0;
+
+    .starBox {
+        text-align: center;
+
+        .starIcon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .description {
+            font-size: $font18;
+        }
+    }
+}
+
+.imageExTextWrapperInner {
+
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imageExTextImg {
+        border-radius: 20px;
+        overflow: clip;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .imageExTextContent {
+        .sectionHeading {
+            width: 80%;
+        }
+
+        ul {
+            margin: 60px 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0 0 30px 0;
+                padding: 0 0 30px 0;
+                border-bottom: 1px solid $primaryColor;
+
+                .count {
+                    font-size: 60px;
+                    color: $secondaryColor;
+                    position: relative;
+                    display: inline-block;
+
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+
+                    }
+                }
+
+                &:first-child {
+
+                    .count {
+                        &:before {
+                            content: "%";
+                        }
+                    }
+                }
+
+                &:last-child {
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+
+                    .count {
+                        &:before {
+                            content: "+";
+                        }
+                    }
+                }
+
+                .careResult {
+                    display: flex;
+                }
+
+                .careResult .description {
+                    width: 80%;
+                    margin-left: auto;
+                }
+
+
+
+                .description {
+                    font-size: $font18;
+                }
+            }
+        }
+    }
+}
+
+.journeyList {
+    padding: 120px 0;
+
+    .journeyUl {
+        padding: 80px 0 0 0;
+
+        .journeyli {
+            padding: 40px 50px;
+            transition: all 0.3s;
+            border-radius: 15px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: $primaryColor;
+                left: 0;
+                bottom: 0;
+            }
+
+            .row {
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &:hover {
+                background-color: #8ae0bc80;
+            }
+
+            .journeyliTitle {
+                display: flex;
+                align-items: center;
+
+                .journeyliIcon {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 50px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.postWrapper {
+    padding: 110px 0;
+    background-color: $whiteColor;
+
+    .postWrapperTop {
+        padding: 0 0 50px 0;
+    }
+
+    .postTopCta {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

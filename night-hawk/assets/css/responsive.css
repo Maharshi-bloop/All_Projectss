@@ -1,0 +1,154 @@
+@media (max-width:1600px) {
+	.scrollImageMain:before { left: 70px; }
+	.scrollImageMain:after { right: 70px; }
+}
+@media (max-width:480px) {
+	:root { --font11xl: 54px; --font10xl: 40px; --font9xl: 44px; --font8xl: 44px; --font7xl: 38px; --font6xl: 40px; --font5xl: 32px; --font4xl: 26px; --font3xl: 26px; --font2xl: 22px; --fontXl: 20px; --fontLg: 18px; }
+	.banner { align-items: flex-end; }
+	.bannerContent { max-width: 100%; text-align: left; margin-bottom: 100px; }
+	.bannerContent div { justify-content: flex-start; }
+	.technologyWorkInner { max-width: 100%; }
+	.technologyWorkContent { flex-direction: column-reverse; margin: 30px 0 0 0; }
+	.technologyWorkText { width: 100%; }
+	.technologyWorkVideo { height: 280px; width: 100%; }
+	.videoWrap { height: 85vh; }
+	.videoWrap .heading9xl { left: 20px; width: 90%; }
+	.needTurkeyListing { flex-direction: column; gap: 10px; }
+	.needTurkeyList { width: 100%; }
+	.needTurkeyContent { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 40px 30px; }
+	.needTurkeyImage { height: 440px; }
+	.needTurkeyContent h3, .needTurkeyContent .arrowLink { margin: 0; }
+	.needTurkeyTop { flex-direction: column; }
+	.needTurkeyTop .heading9xl, .needTurkeyTop .subTextXl { width: 100%; }
+	.needTurkeyTop .subTextXl { margin: 20px 0 0 0; }
+	.advantage { padding: 80px 0 0 0; }
+	.advantageTop .subTextLg { margin-top: 30px; }
+	.iconWrap { right: auto; left: 50px; width: 100px; top: -60px; }
+	.timeLineWrapper ul { width: 85%; }
+	.timeLineWrapper ul li { display: flex; flex-direction: column-reverse; padding: 50px !important; width: 100%; padding-right: 0 !important; }
+	.timeLineWrapper ul li .timeLineBox span { margin: 12px 0 0 0; }
+	.timeLineIndex { top: 60px; }
+	.textOnlyInner { max-width: 100%; }
+	.textOnly { padding: 220px 0; }
+	.mapWrap { padding: 70px 0; overflow-x: clip; }
+	.mapWrapTop span { margin-top: 10px; }
+	.mapSec { width: 140%; position: relative; left: -130px; top: 30px; }
+	.ctaContent { width: 100%; }
+	.cta { padding: 100px 0 250px; }
+	.ctaImage { bottom: -240px; width: 200px; right: 1%; }
+	.footerul { display: none; }
+	.footerContact a { font-size: 12px; }
+	.footerMain { padding: 30px 0 45px; }
+	.partnerLogoList img { width: 50px; }
+	.videoDetailContent .heading3xl { font-size: 22px; }
+	.serveThePeopleContent .row:first-child { max-width: 100%; margin-left: unset; width: 100%; }
+	.serveThePeopleText { padding: 0; }
+	.serveThePeopleContent .row:first-child .col-lg-8 { padding: 0; }
+	.serveThePeopleText:before { display: none; }
+	.headingOnly .heading3xl { max-width: 100%; }
+	.headingOnly { padding: 150px 0; }
+	.ourValueListing { flex-direction: column; }
+	.ourValueList { height: auto; padding-bottom: 40px; border-left: none; border-bottom: 1px solid #FFFFFF6B; }
+	.ourValueList .heading5xl { margin: 20px 0 10px 0; }
+	.ourValueIcon { width: 100px; height: 100px; }
+	.ourValueIcon img { width: 100%; height: 100%; object-fit: contain; }
+	.ourValueList .subTextMd { opacity: 1; visibility: visible; position: relative; width: 100%; }
+	.serveThePeople { padding: 70px 0 100px 0; }
+	.subBanner { align-items: center; padding-bottom: 0 }
+	.bannerBtnWrap { width: 100%; align-items: unset; justify-content: unset; flex-direction: column; }
+	.bannerBtnWrap .primaryBtn { width: 100%; display: flex; align-items: center; justify-content: center; }
+	.subBannerContent { width: 100%; }
+	.subBannerContent .subTextLg { margin: 0 0 15px 0; }
+	.textVideo { padding: 60px 0 0 0; }
+	.textDesc { border-left: 0; padding: 0 0 100px 0; }
+	.textVideoBox { height: 400px; }
+	.headingTextInner .subTextLg { border-left: 0 }
+	.headingTextInner .subTextLg { margin: 40px 0 0 0; padding: 0 0 50px 0; }
+	.headingText { padding: 50px 0 0 0; }
+	.systemComponent { padding: 100px 0 180px 0; overflow-x: clip; }
+	.systemComponentVideo { margin: 140px 0 0 -200px }
+	.videoText { right: 20px; top: -96px; height: 500px; }
+	.deskRow { display: none; }
+	.mobileRowWrap { display: block; }
+	.scrollswiper .swiper { overflow: visible; }
+	.scrollImage .scrollImageCircleImage { visibility: visible; opacity: 1; left: 30px; top: 45%; width: 35%; }
+	.scrollImage { position: relative; }
+	.scrollConatent { padding: 20px 0 50px 0; margin-top: -80px; }
+	.scrollswiper { margin-top: -50px; }
+	.scrollImageMain { width: 75%; margin-left: auto; }
+	.scrollAni { padding: 60px 0; }
+	.applications { padding: 70px 0; }
+	.applicationsTop .heading10xl { width: 100%; }
+	.applicationsTop { text-align: left; }
+	.applicationsListing .col-lg-6 { margin: 0 0 30px 0; }
+	.applicationsCta { margin: 20px 0 0 0; }
+	.whyChoose .default-line, .whyChoose .draw-line { display: none; }
+	.whyChoose .timeLineWrapper ul { width: 100%; }
+	.whyChoose .timeLineWrapper ul li { margin: 0; padding: 30px 0 20px !important; flex-direction: column; gap: 0; }
+	.timeLineIndex { opacity: 1 !important; }
+	.timeLineBox { opacity: 1 !important; }
+	.subBanner1 { background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 81.29%); }
+	.subBanner1Inner { width: 100%; }
+	.textVideo { padding: 50px 0 80px 0px }
+	.requirementsListing { flex-direction: column; }
+	.requirementsList { padding: 40px 20px; }
+	.requirementsContent { top: calc(100% - 110px); padding: 20px; }
+	.requirementsList.active { min-height: 600px; }
+	.requirementsList.active .requirementsContent { padding: 20px; }
+	.requirementsList.active .requirementsContent { top: calc(100% - 290px); }
+	.chemicals .textVideo { padding: 80px 0; }
+	.chemicals .textDesc { margin-top: 30px; padding: 0 0 70px 0; }
+	.deskImage { display: none; }
+	.mobileImage { display: block !important; margin: 0 0 0 20px; }
+	.specialtyCenterImage { position: unset; transform: translate(0, 0); }
+	.specialtyContent { display: flex; align-items: center; flex-direction: column-reverse; gap: 30px; }
+	.specialty { padding: 100px 0 0; }
+	.chemicals .bannerBtnWrap .primaryBtn { width: max-content; margin: 0 auto; }
+	.chemicals .subBannerContent { width: 80%; margin-bottom: 50px; }
+	.scrollImageMain { width: 65%; opacity: 1; visibility: visible; }
+	.scrollImageMain:after, .scrollImageMain:before { width: 140px; }
+	.scrollImageMain:before { left: 110px; }
+	.scrollImageMain:after { right: 0; }
+	.equipmentImageWrap { margin: 40px 0 0 0; }
+	.equipmentImageWrap .col-lg-5 { margin: 0 0 20px 0; }
+	.flowback .bannerBtnWrap .primaryBtn { width: max-content; margin: 0 auto; }
+	.flowback .textVideo { padding: 80px 0; }
+	.flowback .textDesc { margin-top: 20px; padding: 0 0 100px 0; }
+	.equipmentTop div .subTextLg { margin: 20px 0 0 0; }
+	.accordianImage { position: relative; min-height: 100%; opacity: 1; visibility: visible; }
+	.accordion-body { padding: 20px 0 0 0; }
+	.accordion-body span, .accordion-body strong { padding: 0 20px; }
+	.accordion-body span { padding-bottom: 20px; }
+	.accordianImageWrap { display: none; }
+	.accordion-item { margin-bottom: 20px; border-bottom: 0 !important }
+	button.accordion-button { background-color: #ffffff; padding: 30px 20px; border: none; border-radius: 8px; }
+	.accordianWrap { background-color: transparent; }
+	.headTextOnlyInner { width: 100% !important; }
+	.test-torque .accordion-body { padding: 0; }
+	.imageAccordian { padding: 60px 0; }
+	.test-torque .textDesc { margin-top: 20px; padding: 0 0 100px 0; }
+	.test-torque .textVideo { padding: 80px 0; }
+	.test-torque .bannerBtnWrap .primaryBtn { max-width: max-content; margin: 0 auto; }
+	.headerOption { width: 100%; overflow-y: scroll; overflow-x: clip; }
+	.resourcesFilterWrap { flex-direction: column; gap: 18px; }
+	.resourcesFilterUl, .inputSearch { width: 100%; }
+	.resourcesFilterUl ul { justify-content: center; }
+	.inputSearch input { width: 100%; }
+	.getInTouchForm > .row { flex-direction: column-reverse; }
+	.getInTouchTop .heading10xl { color: var(--colorBlack); }
+	.mobileRowWrap .sideLine { right: 0; left: 10px; height: 100%; }
+	.mobileRowWrap .default-line1 { height: 100%; }
+	.mobileRowWrap .sideLine:before { left: -10px; right: auto; }
+	.scrollConatentWrpOuter { position: relative; }
+	.scrollConatentInner { margin: 0 0 0 40px; }
+	.ourValueList .subTextMd { display: block; }
+	.solids-control .scrollConatentWrpOuter { margin: 80px 0 0 0; }
+	.headerCta { display: none; }
+	.headerCtaMobile { display: flex !important; }
+	.subBanner1Bg img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+	.subBanner1Bg { height: 250%; }
+	.ctaContent .heading8xl br { display: none; }
+}
+@media (max-width:400px) {
+	.videoText { right: 10px; top: -72px; height: 450px; }
+}

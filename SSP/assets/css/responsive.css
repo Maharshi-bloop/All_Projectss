@@ -1,0 +1,224 @@
+@media (max-width:1440px) {
+	.textImage:before { bottom: -30%; left: -65%; }
+}
+@media (max-width:1280px) {
+	.aboutUsSecHeading .heading5xl { font-size: 30px; }
+	.commitmentHeading, .commitmentImageWrapper { width: 480px; }
+	.textImage:before { bottom: -40%; left: -73%; }
+}
+@media (max-width:480px) {
+	:root { --font11xl: 48px; --font10xl: 44px; --font9xl: 40px; --font7xl: 36px; --font6xl: 34px; --font5xl: 24px; --font4xl: 22px; --font3xl: 20px; --font2xl: 20px; --fontXl: 18px; --fontLg: 16px; }
+	#countertestimonial { right: 63px; }
+	.font-60-o-r h1 { margin: 0 0 50px 0; }
+	.section-content:before { width: 330px; height: 240px; left: 16%; top: -107px }
+	.doubleBannerVideo video { width: 100%; height: 100%; object-fit: cover; }
+	.aboutUsSec { height: auto; padding-bottom: 400px; }
+	.aboutUsSecText .subTextXl { padding: 24px 0 24px 24px; }
+	.aboutUsSecBgDot { width: 100%; bottom: -200px; }
+	.aboutUsSecImage { height: 370px; width: 100%; }
+	.gridOneHeading { padding: 50px 40px 90px 40px; }
+	.gridOneHeadingImage { bottom: -400px; }
+	.industriesServedListing { flex-direction: column; gap: 10px; }
+	.industriesServedList { gap: 40px; padding: 24px; height: auto; border-radius: 24px; width: 100% !important; }
+	.industriesServedList h3 br { display: none; }
+	.industriesServedList.open h3 { font-size: var(--font2xl); }
+	.testimonial::before, .testimonial::after { display: none; }
+	.testiSwiperSlide { padding: 30px 30px 100px 30px; ; border-radius: 16px; }
+	.testiSwiper .swiperControl { display: none; }
+	.testimonialInner .heading7xl { width: 65%; }
+	.testimonial { padding: 60px 0; }
+	.testiSwiper { margin: 40px 0; }
+	.footerCta { padding: 40px 30px 130px 30px; margin: 70px 0 28px 0; }
+	.footerCta { z-index: 1; }
+	.footerCtaBgShap { width: 300px; z-index: -1; }
+	.footerCta .heading9xl { font-size: var(--font7xl); }
+	.footerMain { flex-direction: column; }
+	footer { position: relative; padding: 40px 0; }
+	.footerLogo { position: absolute; top: 40px; width: 130px; }
+	.footerSocial { position: absolute; top: 40px; right: 20px; }
+	.footerUl ul { text-align: left; }
+	.testimonial .dotBg { top: -98%; right: -218%; }
+	.industriesServed { padding: 60px 0; }
+	.gridOneBoxContent { gap: 16px; transform: translateY(90px); }
+	.gridOneInner .col-lg-6:nth-child(2) .gridOneBoxContent .heading4xl { width: 50% }
+	.industriesServedTop .heading10xl { width: 80%; margin: 0 0 24px 0; }
+	.industriesServedList span { transition: all 0.3s; }
+	.industriesServedList.open span { color: var(--colorWhite); }
+	.swiper-pagination { position: absolute; bottom: -30px !important; left: 0 !important; text-align: left; display: block; }
+	.swiper-pagination-bullet { width: 80px; border-radius: 20px; height: 6px; }
+	.swiper-pagination-bullet-active { background: #FF9E1B; }
+	.gridOne { padding: 24px 0 60px 0; }
+	.logo { width: 130px; }
+	header, .stickyHeader { padding: 16px 0; }
+	.aboutBanner { padding: 0 0 50px 0; }
+	.aboutBannerContent { margin: 40px 0 0 0; padding: 10px 0 10px 24px; }
+	.missionVission { overflow-x: clip; }
+	.missionVission:before { display: none; }
+	.col-lg-6:first-child .mvContent { position: relative; z-index: 1; }
+	.col-lg-6:first-child .mvContent:before { content: ''; position: absolute; width: 130vw; height: 100%; background-color: var(--colorPrimary); left: -20px; top: 0; z-index: -1; }
+	.mvContent, .col-lg-6:last-child .mvContent { padding: 50px 0; }
+	.mvContent .subTextLg { margin: 30px 0 0 0; }
+	.corevalue { padding: 40px 0; }
+	.coreValueIcon { filter: none; opacity: 1; }
+	.coreValueList .heading5xl { color: var(--colorBlack); opacity: 1; transition: all 0.3s; }
+	.timeLineSwiperSlide span.subTextSm { width: 155%; }
+	.swiperControl2 .prevBtn { right: calc(100% - 25px); }
+	.swiperControl2 .nextBtn { left: calc(100% - 25px); }
+	.timeLineSwiper .swiper-wrapper:after { width: 5000%; }
+	.timeLineSwiper .swiper-wrapper:before { width: 5000%; }
+	.timeLineSwiper { margin: 60px 0 0 0; }
+	.industriesServedTop span:not(.subTextLg) { margin: 0 0 12px 0; }
+	.industriesServedBg { display: none; }
+	.expertProfilePopUp:before { width: 260px; height: 260px; }
+	.expertProfilePopUp { width: 95%; height: 80%; padding: 40px 30px; }
+	.experts { padding: 60px 0; }
+	.expertsListing { margin-top: 40px; }
+	.expertsTop { width: 90%; }
+	.imageText { padding: 60px 0; }
+	.imageTextTop { width: 100%; margin: 30px 0; }
+	.imageTextInner { max-width: 100%; }
+	.imageTextBox { margin: 0; }
+	.mobileHeading { display: block; }
+	.desktopHeading { display: none; }
+	.commitmentInner .subText2xl { padding: 14px 0 14px 24px; }
+	.commitmentInner .heading10xl { text-align: center; margin: 0 0 40px 0; }
+	.isoImage2 { width: 85px; }
+	.commitmentInner .row:last-child .col-lg-4, .commitmentInner .row:last-child .col-lg-7 { padding: 0; }
+	.isoContent { width: calc(100% - 100px); }
+	.isoBox { align-items: flex-start; margin: 26px 0 0 0; }
+	.commitment { padding: 0 0 130px 0; }
+	.commitment:before { width: 500px; height: 300px; bottom: -16%; }
+	.mapWrapper { padding: 80px 0; overflow-x: clip; }
+	.mapWrapperTop .subTextLg { padding: 14px 0 14px 24px; margin: 30px 0 0 0; }
+	.bSwiperSlide { border-radius: 12px; }
+	.swiperControl { right: 0; }
+	ul.tab-titles li a { padding: 10px 10px 10px 30px; }
+	ul.tab-titles li a:before { left: 10px; width: 11px; }
+	.profileImage { height: 60px; width: 60px; }
+	.gridTwoHeading { padding: 40px 40px 100px 40px; }
+	.gridTwoHeadingImage { bottom: -350px; }
+	.gridTwoBox { padding: 24px; border-radius: 30px; }
+	.productListingTop { flex-direction: column; align-items: flex-start; gap: 30px; }
+	.productSearchBar, .searchFeild, .searchFeild input { width: 100%; }
+	.productPopUpHead { padding: 30px 16px; gap: 45px; }
+	.popUpCloseBtn { top: 28px; right: 20px; }
+	.productDetailBox { padding: 16px; }
+	.productDetailBox .row { flex-direction: column-reverse; }
+	.productPopUpImage { height: 230px; border-radius: 24px; margin: 0 0 30px; }
+	.btnWrapper { flex-direction: column; align-items: flex-start; }
+	.secondaryBtn { font-size: 14px; padding: 16px 30px; }
+	.productApplication { padding: 60px 16px; }
+	.productApplication .accordion-button { padding: 24px 18px; border-radius: 20px !important; }
+	span.applicationIdex { font-size: var(--font5xl); padding: 00px 10px; border-radius: 17px; position: absolute; height: auto; top: 0; left: 0; width: 45px; height: 100%; display: flex; align-items: center; }
+	.accordionCollapseOuter { position: relative; }
+	.accordion-header { width: calc(100% - 55px); margin-left: auto; }
+	.productApplication .accordion-body { padding: 24px; border-radius: 20px; }
+	.popUpTestimonial { padding: 60px 16px; }
+	.applicationTop { width: 100%; }
+	.popUpTestimonialTop .heading7xl { font-size: 34px; }
+	.home section.gridOne { padding: 130px 0 60px 0; }
+	.drilling-products .subBannerBottomHeading .heading11xl { font-size: 40px; }
+	.drilling-products .subBanner { height: 120vh; }
+	.subBanner { padding-bottom: 60px; }
+	.subBannerTop .subTextLg { padding: 14px 0 14px 24px; margin: 30px 0; }
+	.bannerBtn { justify-content: flex-start; }
+	.subBannerBottomHeading span { font-size: 14px; line-height: 1; }
+	.technology-innovation .subBannerBottomHeading, .coil-tubbing .subBannerBottomHeading { margin: 0 0 30px 0; }
+	.headTextOnly { padding: 60px 0; }
+	.headTextOnlyInner .subTextLg, .headTextGridInner .subTextLg, .textVideoTop .subTextLg, .contactMainTop .subTextXl { padding: 14px 0 14px 24px; margin: 30px 0; }
+	.commitmentTabContent { padding: 30px 24px; }
+	.commitmentImageWrapper .heading7xl { font-size: 32px; }
+	.commitmentTabWrap { min-height: 380px; margin: 60px 0 0 0; }
+	.commitmentWrapper { padding: 60px 0; ; }
+	.commitmentWrapper:after { display: none; }
+	.commitmentWrapper:before { transform: rotate(0deg); }
+	.productList { border-radius: 20px; }
+	.provenInner .heading5xl { max-width: 87%; }
+	.provenInner { padding: 70px 0; }
+	.omniProp { padding: 70px 0 150px 0; }
+	.omniProp:before { bottom: -62%; }
+	.omniPropAccordian .accordion-header { width: 100%; }
+	.omniPropAccordian .accordion-button { padding: 20px 0; padding-right: 60px; }
+	.omniPropAccordian .accordion-button:before { width: 40px; height: 40px; right: 0; }
+	.textImage { padding: 60px 0; }
+	.textImageContent .subTextLg { margin: 30px 0; width: 100%; }
+	.footerCta .heading9xl { font-size: 32px; }
+	.omniPropAccordian .accordion-body { padding: 20px 0; }
+	.aboutUsSecHeading br { display: none }
+	
+										/*.commitmentHeading .headingBox { top: 50px; left: 37%; }
+	.commitmentHeading .headingBox:nth-child(2) { top: auto; bottom: 40px; left: 0px; }
+	.commitmentHeading .headingBox:last-child { bottom: 45px; right: -10px; }
+	.tabBtn { top: -75px; }
+	.commitmentHeading .headingBox:last-child .tabBtn { top: 50px; right: 55px; }
+	.commitmentHeading .headingBox:nth-child(2) .tabBtn { bottom: -60px; left: 40px; }
+	.commitmentHeading .headingBox:before { width: 150px; height: 150px; }*/
+	.commitmentImageWrapper .heading7xl:before { content: ''; position: absolute; width: 200px; height: 200px; background-color: #fff; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: -1; border-radius: 50%; filter: blur(30px); }
+	.headTextGrid { padding: 60px 0; }
+	.gridThree { margin: 40px 0 0 0; }
+	.gridThreeBox { padding: 30px }
+	.headTextGrid:before { left: -130px; bottom: 120px; width: 900px; height: 500px; }
+	.productListing { padding: 60px 0; }
+	.resourcesBannerInner .heading11xl { font-size: 36px; }
+	.resourcesBannerInner .heading11xl br { display: none; }
+	.caseStudyImage { height: 230px; }
+	.caseStudyContent { margin: 20px 0 0 0; }
+	.caseStudyContent .subTextMd { margin: 12px 0 0 0; }
+	.caseStudyCtaWrap a { width: 46px; height: 46px; }
+	.caseStudyWrap { padding: 60px 0 0 0; }
+	.textVideoInner:before { display: none; }
+	.textVideoBox { height: 270px; margin: 20px 0 0 0; }
+	.textVideoInner:after { width: 180vw; bottom: -150px; top: auto; right: -30px; }
+	.textVideo { padding: 60px 0; }
+	table span { font-size: var(--fontLg); }
+	thead tr th p { width: 100%; text-align: center; line-height: 1.2; font-size: 12px; }
+	thead tr th, tbody tr td { padding: 16px 5px; }
+	.resources .footerLogo, .contact-us .footerLogo, .about-us .footerUl, .about-us .footerLogo { position: unset; }
+	.resources .footerUl, .contact-us .footerUl, .about-us .footerUl { margin: 20px 0 0 0; }
+	.middleUl li { margin: 0 0 16px 0; padding: 0 0 16px 0; }
+	.middleUl li a, .middleUl li p { font-size: var(--fontLg); }
+	.formDesign { margin: 40px 0 0 0; }
+	.contactMainMiddle { margin: 60px 0 0 0; }
+	.headerOption { width: 100%; overflow-y: auto; }
+	nav ul li a { display: flex; align-items: center; justify-content: center; }
+	.contactMain { padding: 300px 0 0px 0; }
+	.tabContainer { margin: 40px 0 0 0; width: 100%; }
+	.contact-us .tabContainer { margin: 40px 0 0 0; }
+	.popUpTestimonialListing .swiper { padding: 0 0 40px 0; }
+	.popUpTestimonialListing .swiper-pagination { bottom: 0 !important; }
+	.mapWrapperTab { margin: 40px 0 0 0; }
+	.mm-popup { min-width: 250px; position: absolute; top: -50% !important; width: 90% !important; left: 50% !important; transform: translateX(-50%); }
+	.slideImage { width: 50px; height: 50px; margin: 10px 0; }
+	.timeLineSwiper .swiper-slide:nth-child(odd) .timeLineSwiperSlide:before { top: -30px; }
+	.timeLineSwiperSlide:before { bottom: -31px; }
+	.timeLineSwiperSlide { min-height: 210px; }
+	.productList { padding: 10px; }
+	.productImage { height: 200px; border-radius: 10px; }
+	.popUpOpen { width: 46px; }
+	.productContent { margin-top: 30px; }
+	.production-enhancement .subBannerBottomHeading { margin: 0 0 30px 0; }
+	.footerBottom { flex-direction: column; margin: 20px 0 0 0; align-items: flex-start; }
+	span.copyright-txt { margin: 0 0 0 0; }
+	.isoBox:before { display: none; }
+	.footerBottom div:last-child { text-align: left; align-items: flex-start; flex-direction: row; gap: 30px; margin: 20px 0; }
+	li.hasUl a:before { top: 19px; right: 130px; font-size: 20px; }
+	nav>ul>li ul.sub-menu.subMenu { border-radius: 0; margin: 0; }
+	.headerAdd { padding: 30px 10px 40px 30px; color: var(--colorWhite); border-top: 1px solid #ffffff33; width: 100%; margin-top: 100px; }
+	.headerAdd h5 { text-transform: uppercase; font-size: 18px; margin: 0 0 10px 0; }
+	.headerAdd ul span { color: var(--colorSecondary); }
+	.headerAdd ul li { margin: 10px 0; }
+	.commitmentImageWrapper, .commitmentHeading { width: 100%; }
+	.commitmentImageWrapper .heading7xl { font-size: 20px; }
+	.commitmentHeadWrapper { width: 200px; height: 200px; }
+	.commitmentHeadWrapper:after { width: calc(100% + 50px); height: calc(100% + 50px); }
+	.tabBtn { width: 40px; height: 40px; }
+	.commitmentHeading span { font-size: 14px; }
+	.commitmentHeading .headingBox { gap: 10px; }
+	.commitmentHeading .headingBox:nth-child(2) { left: 0; }
+	.commitmentHeading .headingBox:last-child { right: 0; }
+	.proven br { display: none; }
+}
+@media (max-width:380px) {
+	.timeLineSwiperSlide span.subTextSm { width: 171%; }
+	.swiperBtn { z-index: 2; width: 34px; height: 34px; }
+}

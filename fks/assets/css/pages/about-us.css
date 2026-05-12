@@ -1,0 +1,83 @@
+.about-us { background-color: var(--colorBg); }
+.aboutBanner { position: relative; padding: 200px 0; overflow: clip; }
+.aboutBannerInner .heading11xl { text-align: center; color: var(--colorAccent); }
+
+/* introVideo css */
+.introVideo { padding: 90px 0; background-color: var(--colorPrimary); }
+.introVideoTop .row { display: flex; align-items: center; justify-content: center; }
+.introVideoWrap { position: relative; display: inline-block; border-radius: 40px; overflow: clip; margin: 120px 0 -450px 0; }
+.introVideoWrap:before { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(0 0 0 / 60%); z-index: 1; transition: all 0.3s; }
+.introVideoWrap.is-video-playing:before { opacity: 0; visibility: hidden; }
+.video-play-icon { position: absolute; top: 50%; left: 50%; width: 80px; aspect-ratio: 1; transform: translate(-50%, -50%); z-index: 2; color: var(--colorWhite); font-size: 30px; border: 0px solid rgb(5 5 5 / 60%); display: flex; justify-content: center; align-items: center; border-radius: 50%; cursor: pointer; background-color: var(--colorPrimary); transition: all 0.3s; }
+.is-video-playing .video-play-icon { opacity: 0; visibility: hidden; }
+.introVideoWrap.is-video-playing:hover .video-play-icon { opacity: 1; visibility: visible; }
+
+/* numbers css */
+.numbers { background-color: var(--colorSecondary); height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; position: relative; }
+.numbersInner { text-align: center; position: relative; z-index: 1; }
+.numbersInner .heading12xl { color: var(--colorAccent); width: 50%; margin: 0 auto; line-height: 1; }
+.numbersCardListing { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+.numbersCardList { position: absolute; border-radius: 30px; border: 2px solid var(--colorPrimary); width: 500px; height: 650px; overflow: hidden; background-color: #fff; will-change: transform, opacity; z-index: 2; }
+.numbersCardImage { width: 100%; height: 100%; }
+.numbersCardImage img { width: 100%; height: 100%; object-fit: cover; }
+.numbersCardText { position: absolute; bottom: 20px; left: 50%; width: calc(100% - 40px); padding: 30px; background-color: var(--colorBg); border-radius: 25px; transform: translateX(-50%); }
+.numbersCardText .heading10xl { color: var(--colorPrimary); }
+.numbersCardText .subTextXl { color: var(--colorBlack); }
+
+/* ppTimeLine css */
+.ppTimeLine { padding: 350px 0 0 0; background-color: var(--colorAccent); overflow: clip; }
+.ppTimeLineInner .row { justify-content: space-between; }
+.ppTimeLineContent { padding: 200px 0 50px 0; position: sticky; top: 0; }
+
+/*  */
+.timeLineWrapper ul { margin: 0 auto; padding: 200px 0 50px 0; list-style: none; position: relative; }
+.timeLineWrapper ul li { padding: 50px 0 50px 100px; position: relative; }
+.timeLineWrapper ul li:after { content: ''; position: absolute; width: 18px; height: 18px; background: var(--colorPrimary); border-radius: 50%; top: 58px; left: -8px; transition: all 0.3s; }
+.timeLineBox h4 { color: var(--colorPrimary); opacity: 0.12; transition: all 0.3s; }
+.in-view .timeLineBox h4 { opacity: 1; }
+.timeLineBox { opacity: 0.5; transition: all 0.3s; }
+.in-view .timeLineBox { opacity: 1; }
+.gone-view .timeLineBox { opacity: 1; }
+.timeLineWrapper ul li .timeLineBox span { display: block; }
+
+/*codepen*/
+.default-line { content: ""; position: absolute; left: 0; width: 2px; background: var(--colorPrimary); height: 100%; top: 0; }
+.draw-line { width: 2px; height: 0; position: absolute; left: 0; background: var(--colorPrimary); top: 0; }
+.timeline ul li.in-view::before { content: ""; position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 42px; height: 42px; border-radius: 50%; background-image: url("https://sg0duxoli5-flywheel.netdna-ssl.com/wp-content/themes/inspired_elearning_theme/images/check-dark.svg"); background-color: #2ecc71; background-size: 20px 20px; background-repeat: no-repeat; background-position: center; transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; }
+.timeLineIndex { position: absolute; width: 100px; height: 100px; background: var(--colorBg); border: 2px solid var(--colorPrimary); display: flex; align-items: center; justify-content: center; border-radius: 50%; top: 30px; left: -49px; z-index: 2; overflow: visible; transition: all 0.3s; transform: scale(0); padding: 20px; }
+.timeLineWrapper ul li.in-view .timeLineIndex { transform: scale(1); }
+
+/* badgeWrap css */
+.badgeWrap { padding: 120px 0; }
+.badgeWrap .heading10xl { color: var(--colorAccent); }
+.badgeWrap .subTextXl { color: var(--colorBlack); }
+.badgeInner .row { justify-content: space-between; }
+.badgePhoto { position: relative; }
+.badgePhoto:before { content: ''; position: absolute; width: 50px; height: 50px; background: url(../../images/yellow-star.svg) center center no-repeat; background-size: contain; top: 0; right: 50px; animation: rotateStar 10s linear infinite; z-index: -1; }
+.badgePhoto img { width: 100%; }
+@keyframes rotateStar {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+
+/* facilies css */
+.facilies { padding: 200px 0; }
+.faciliesTop { margin: 0 auto; text-align: center; width: 60%; position: relative; }
+.faciliesTop .heading11xl { color: var(--colorAccent); position: relative; }
+.faciliesTop .heading11xl:before { content: ''; position: absolute; width: 50px; height: 50px; background: url(../../images/yellow-star.svg) center center no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); left: 50px; animation: rotateStar1 10s linear infinite; }
+.faciliesTop .heading11xl:after { content: ''; position: absolute; width: 50px; height: 50px; background: url(../../images/yellow-star.svg) center center no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); right: 50px; animation: rotateStar1 10s linear infinite; }
+.faciliesTop .subTextXl { color: var(--colorBlack); }
+@keyframes rotateStar1 {
+	0% { transform: translateY(-50%) rotate(0); }
+	100% { transform: translateY(-50%) rotate(360deg); }
+}
+.faciliesListing { margin: 90px 0 0 0; }
+.faciliesListing .row { justify-content: center; }
+.faciliesListInner { display: flex; align-items: center; gap: 20px; }
+.faciliesIcon { width: 120px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; border: 1px solid var(--colorAccent); display: flex; align-items: center; justify-content: center; padding: 15px; }
+.faciliesList { border: 1px solid var(--colorAccent); border-radius: 20px; padding: 40px; position: relative; overflow: clip; height: 100%; }
+.faciliesList .heading7xl { color: var(--colorPrimary); }
+.faciliesList .heading7xl { color: var(--colorPrimary); }
+.faciliesHoverText { position: absolute; top: 0; left: 0; background-color: var(--colorSecondary); height: 100%; width: 100%; padding: 0 40px; display: flex; align-items: center; transform: translateY(100%); transition: all 0.3s; border-top: 1px solid var(--colorAccent); border-radius: 20px; }
+.faciliesList:hover .faciliesHoverText { transform: translateY(15px); }
+.faciliesHoverText .heading7xl { line-height: 1; }

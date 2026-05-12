@@ -1,0 +1,8 @@
+.HeadingTextWrapper .subHeading { position: relative; }
+.HeadingTextWrapper .subHeading::before { content: ''; position: absolute; bottom: 15px; background-color: var(--secondaryColor); width: 80px; height: 6px; right: 0; }
+.HeadingTextWrapper { padding: 0 50px 70px 50px; }
+.HeadingTextWrapper .description p { line-height: 40px; }
+.textBlock span { display: block; padding: 15px 0 0 0; }
+@media (max-width:480px) {
+	.HeadingTextWrapper .description p { line-height: 30px; }
+}

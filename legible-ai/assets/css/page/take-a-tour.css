@@ -1,0 +1,13 @@
+/* take a tour css */
+.videoSec { padding: 60px 0 78px 0; position: relative; }
+.videoSecInner .VideoOnly { width: 80%; margin: 0 auto; position: relative; z-index: 1; border-radius: 12px; height: 600px; }
+.videoSecInner video { width: 100%; height: 100%; object-fit: contain; position: relative; border-radius: 10px; box-shadow: 0px 3px 15.9px -3px #B5B5FF; }
+.videoSecInner iframe { width: 100%; height: 100%; object-fit: contain; position: relative; border-radius: 10px; box-shadow: 0px 3px 15.9px -3px #B5B5FF; }
+.VideoOnly:before { content: ''; position: absolute; top: -1px; left: -1px; background: linear-gradient(45deg, #6161FF 0%, #F75D28); width: calc(100% + 2px); height: calc(100% - 5px); z-index: 0; border-radius: 12px; }
+.formPopUp .xxlHeading { letter-spacing: -0.8px; }
+.formPopUp .row { align-items: center; }
+.hs-form-frame { background-color: var(--primary-color); border-radius: 20px; }
+.formPopUp { height: 100%; position: absolute; top: 0; left: 0; width: 100%; background-color: #ffffff80; z-index: 11; backdrop-filter: blur(25px); ; }
+.nextStep { max-width: 80%; margin: 0 auto; padding: 30px; border-radius: 12px; background-color: var(--primary-color); margin-top: 20px; }
+.nextStep .nSubText { color: var(--white-color); line-height: 22px; margin: 20px 0; display: block; }
+.formPopUp .col-lg-6:first-child { min-height: 700px; display: flex; align-items: center; }

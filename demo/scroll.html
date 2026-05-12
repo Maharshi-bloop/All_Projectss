@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero_curve__6kN_N path:last-child {
+            color: var(--theme-accent);
+            /* sets stroke via currentColor */
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero_hero__Sbbfz">
+        <div class="hero_content__jaEvA">
+            <div class="hero_curve__6kN_N">
+                <svg class="desktop-only" width="1440" height="214" viewBox="0 0 1440 214" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0.999023C0 0.999023 506.401 0.999023 551.95 0.999023C597.5 0.999023 630 40.999 630 78.999C630 116.999 630 69.999 630 120.999C630 171.999 675 212.999 724 212.999C773 212.999 1440 212.999 1440 212.999"
+                        stroke="currentColor" stroke-width="2"></path>
+                    <path
+                        d="M0 0.999023C0 0.999023 506.401 0.999023 551.95 0.999023C597.5 0.999023 630 40.999 630 78.999C630 116.999 630 69.999 630 120.999C630 171.999 675 212.999 724 212.999C773 212.999 1440 212.999 1440 212.999"
+                        stroke="currentColor" stroke-width="2"
+                        style="stroke-dashoffset: 0.000507; stroke-dasharray: 778.31px, 800.378px;"></path>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const animatedPath = document.querySelector(".hero-curve svg path:last-child");
+
+    gsap.to(animatedPath, {
+        strokeDashoffset: 0,
+        scrollTrigger: {
+            trigger: ".hero", // or ".hero-curve"
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+        },
+    });
+
+</script>
+
+
+</html>

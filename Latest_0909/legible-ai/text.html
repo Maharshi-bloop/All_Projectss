@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legible-Ai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .videoWrap {
+            /* position: relative; */
+            width: 300px;
+            height: 300px;
+            /* overflow: hidden; */
+        }
+
+        .videoWrap video {
+            /* position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); */
+            width: 100%;
+            min-height: 100%;
+        }
+
+        .ctrlBox {
+            /* position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .ctrlBox .btnWrap {
+            position: relative;
+            margin-right: 25px;
+            width: 25px;
+            height: 25px;
+        }
+
+        /* .ctrlBox .btnWrap a { position: absolute; top: -5px; left: 0; width: 100%; height: 100%; font-size: 24px; color: #fff; display: none; } */
+        .ctrlBox .btnWrap a.pauseBtn {
+            display: block;
+        }
+
+        .ctrlBox .lineWrap {
+            position: relative;
+        }
+
+        .ctrlBox .lineWrap>span {
+            display: block;
+            width: 200px;
+            height: 6px;
+            /* background: blue; */
+            border-radius: 30px;
+        }
+
+        .ctrlBox .lineWrap>span>span {
+            display: block;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(270deg, #6161FF 0%, #8560CC 23.68%, #F75D28 100%);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="videoWrap">
+        <video muted loop>
+            <source
+                src="https://ak.picdn.net/shutterstock/videos/1059077006/preview/stock-footage-abstract-digital-particle-wave-and-light-abstract-background-animation-cyber-or-technology.webm"
+                type="video/mp4">
+        </video>
+    </div>
+    <div class="ctrlBox">
+        <div class="helo">
+            <div class="lineWrap"><span><span></span></span></div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aut praesentium odio dolor, fuga
+                    libero consequatur soluta nostrum sunt dolore.</p>
+            </div>
+        </div>
+        <div class="helo">
+            <div class="lineWrap"><span><span></span></span></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aut praesentium odio dolor, fuga
+                    libero consequatur soluta nostrum sunt dolore.</p>
+            </div>
+        </div>
+        <div class="helo">
+            <div class="lineWrap"><span><span></span></span></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aut praesentium odio dolor, fuga
+                    libero consequatur soluta nostrum sunt dolore.</p>
+            </div>
+        </div>
+        <div class="helo">
+            <div class="lineWrap"><span><span></span></span></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aut praesentium odio dolor, fuga
+                    libero consequatur soluta nostrum sunt dolore.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    /* $(function () {
+    const $videos = $(".videoWrap video");
+    let currentIndex = 0;
+
+    // Disable autoplay for all except first
+    $videos.each(function (i) {
+        this.pause();
+        if (i === 0) this.play();
+    });
+
+    // Progress bar animation loop
+    setInterval(() => {
+        const currentVideo = $videos.get(currentIndex);
+        const duration = currentVideo.duration || 1;
+        const currentTime = currentVideo.currentTime || 0;
+        const percentage = (currentTime / duration) * 100;
+
+        $(".lineWrap > span > span").css("width", "0"); // reset all
+        $(".videoWrap").eq(currentIndex).find(".lineWrap > span > span").css("width", percentage + "%");
+    }, 30);
+
+    // Listen for each video's end and play the next
+    $videos.each(function (i) {
+        this.addEventListener("ended", function () {
+            if (i + 1 < $videos.length) {
+                currentIndex = i + 1;
+                $videos.get(currentIndex).play();
+            }
+        });
+    });
+});
+ */
+
+
+    $(function () {
+        const $video = $(".videoWrap video").get(0);
+        const $lineWraps = $(".lineWrap");
+        const $lines = $(".lineWrap > span > span");
+
+        $video.play();
+
+        $lines.css("width", "0%");
+        $lineWraps.show(); // ensure all are visible on start
+
+        setInterval(() => {
+            const t = $video.currentTime;
+
+            const ranges = [
+                { start: 0, end: 2 },
+                { start: 2, end: 7 },
+                { start: 7, end: 10 },
+                { start: 10, end: $video.duration || 12 }
+            ];
+
+            $lines.css("width", "0%");
+            $lineWraps.show(); // reset show in case of replay
+
+            ranges.forEach((range, index) => {
+                const $wrap = $lineWraps.eq(index);
+                const $line = $lines.eq(index);
+
+                if (t >= range.start && t <= range.end) {
+                    const progress = ((t - range.start) / (range.end - range.start)) * 100;
+                    $line.css("width", progress + "%");
+                } else if (t > range.end) {
+                    $line.css("width", "100%");
+                    $wrap.hide(); // hide completed
+                }
+            });
+
+        }, 30);
+    });
+
+
+</script>
+
+</html>

@@ -1,0 +1,161 @@
+/* Font Declaartion */
+
+/* Maxima Nouva font */
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-Bold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-Italic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva SemBd'; src: url('../webfonts/MaximaNouva/MaximaNouva-SemiBold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva ExtBd'; src: url('../webfonts/MaximaNouva/MaximaNouva-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva ExtBd'; src: url('../webfonts/MaximaNouva/MaximaNouva-ExtraBold.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-BoldItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-Regular.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-ThinItalic.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Maxima Nouva'; src: url('../webfonts/MaximaNouva/MaximaNouva-Thin.woff2') format('woff2'), url('../webfonts/MaximaNouva/MaximaNouva-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+
+/* Noto Serif font */
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Black.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Bold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-BlackItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-ExtraBold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-BoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-ExtraLight.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Italic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-LightItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Light.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Medium.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-SemiBold.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-MediumItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Regular.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-ThinItalic.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../webfonts/NotoSerif/NotoSerif-Thin.woff2') format('woff2'), url('../webfonts/NotoSerif/NotoSerif-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+
+/* RESET CSS */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontPrimary); font-size: var(--fontBase); line-height: 1.6; background-color: var(--colorBg); }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+button { background: none; border: none; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+:root { --fontPrimary: 'Maxima Nouva'; --fontSecondary: 'Noto Serif'; --colorPrimary: #0452CE; --colorPrimaryDark: #021C69; --colorPrimaryLight: #8FBFEF; --colorSecondary: #f15a22; --colorAccent: #00b8ec; --colorBg: #F4F2EF; --colorText: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
+.heading11xl { font-size: var(--font11xl); font-weight: 600; color: var(--colorBlack); display: block; font-family: var(--fontPrimary); }
+.heading10xl { font-size: var(--font10xl); font-weight: 600; color: var(--colorBlack); display: block; font-family: var(--fontPrimary); }
+.heading9xl { font-size: var(--font9xl); font-weight: 600; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.heading8xl { font-size: var(--font8xl); font-weight: 500; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.heading7xl { font-size: var(--font7xl); font-weight: 500; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.heading6xl { font-size: var(--font6xl); font-weight: 500; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.heading5xl { font-size: var(--font5xl); font-weight: 500; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.heading4xl { font-size: var(--font4xl); font-weight: 500; color: var(--colorBlack); display: block; font-family: var(--fontPrimary); }
+.heading3xl { font-size: var(--font3xl); font-weight: 500; color: var(--colorWhite); display: block; font-family: var(--fontPrimary); }
+.subText2xl { font-size: var(--font2xl); font-family: var(--fontSecondary); display: inline-block; }
+.subTextXl { font-size: var(--fontXl); font-family: var(--fontSecondary); display: inline-block; }
+.subTextMd { font-size: var(--fontMd); font-family: var(--fontSecondary); display: inline-block; }
+.subTextLg { font-size: var(--fontLg); font-family: var(--fontSecondary); display: inline-block; }
+.primaryBtn { display: flex; align-items: center; gap: 20px; background: #7474742B; backdrop-filter: blur(26.200000762939453px); width: max-content; padding: 10px; padding-left: 32px; border-radius: 8px; color: var(--colorWhite); transition: all 0.3s; backdrop-filter: blur(8px); }
+.primaryBtn:hover { background-color: var(--colorWhite); color: var(--colorPrimaryDark); }
+.primaryBtn span { width: 32px; height: 32px; background-color: var(--colorPrimary); display: flex; align-items: center; justify-content: center; border-radius: 50%; padding: 0 0 2px 0; }
+.arrowLink { background-color: var(--colorPrimary); width: 40px; height: 40px; border-radius: 50px; display: flex; align-items: center; justify-content: center; margin: 24px 0 0 0; }
+.secondaryBtn { background: #FFFFFF2B; display: flex; padding: 10px; padding-left: 34px; align-items: center; gap: 10px; width: max-content; color: #fff; border-radius: 8px; backdrop-filter: blur(26.200000762939453px); transition: all 0.3s; }
+.secondaryBtn:hover { background-color: var(--colorPrimaryDark); color: var(--colorWhite); }
+.secondaryBtn span { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 50%; }
+.secondaryCta { padding: 8px 15px; border: 1px solid #FFFFFF40; color: var(--colorWhite); border-radius: 6px; transition: all 0.3s; backdrop-filter: blur(8px); }
+.secondaryCta:hover { background-color: var(--colorWhite); color: var(--colorPrimaryDark); }
+main { margin-top: -120px; }
+.downbtn span { transform: rotate(120deg); }
+.mobileImage { display: none !important; }
+.scrollOff { overflow-y: hidden; }
+.headerCtaMobile { display: none !important; }
+
+/* === HEADER CSS START === */
+header { position: relative; width: 100%; top: 0; z-index: 99; padding: 20px 0 0 0; }
+.headerWrap { display: flex; align-items: center; justify-content: space-between; }
+.toggleBtn { display: none; }
+@media (min-width:1025px) {
+	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
+	nav>ul { display: flex; padding: 0 22px; gap: 8px; }
+	nav li { position: relative; }
+	nav > ul > li > a { color: var(--colorWhite); position: relative; display: inline-block; padding: 8px 15px; border: 1px solid #FFFFFF40; text-decoration: none; transition: all 0.3s; position: relative; font-family: var(--fontPrimary); background: #FFFFFF1A; border-radius: 6px; backdrop-filter: blur(8px); }
+	nav > ul > li > a:hover { background-color: var(--colorPrimary); color: var(--colorWhite); }
+	nav ul ul { position: absolute; background: #FFFFFF1A; box-shadow: 0 7px 10px #00000061; border: 1px solid #FFFFFF40; border-radius: 0 0 6px 6px; overflow: hidden; opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; transform-origin: top center; width: 100%; padding-right: 0; backdrop-filter: blur(8px); }
+	nav > ul li:hover ul { opacity: 1; visibility: visible; animation: dropDown 0.5s ease-in-out forwards; }
+	@keyframes dropDown {
+		0% { transform: rotateX(-90deg); }
+		70% { transform: rotateX(20deg); }
+		100% { transform: rotateX(0deg); }
+	}
+	nav ul ul a { font-size: var(--fontSm); color: var(--colorWhite); transition: all 0.3s; padding: 8px; display: block; }
+	nav ul ul a:hover { background-color: transparent; background-color: var(--colorPrimaryLight); color: var(--colorPrimaryDark); }
+	nav>ul>li.hasUl:hover > a { border-radius: 6px 6px 0 0; }
+	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+	
+		/* li.hasUl > a { padding-right: 25px !important; } */
+	li.active > a { background-color: var(--colorPrimary); color: var(--colorWhite); }
+	nav ul ul li.active > a { background-color: transparent; background-color: var(--colorPrimaryLight); color: var(--colorPrimaryDark); }
+	.headerCta { display: flex; align-items: center; gap: 10px; }
+	.primaryCta { border: 1px solid #FFFFFF40; background: #FFFFFF1A; padding: 8px 15px; display: flex; align-items: center; gap: 10px; border-radius: 6px; color: var(--colorWhite); transition: all 0.3s; }
+	.primaryCta span { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: var(--colorPrimary); padding: 5px; padding-bottom: 6px; }
+	.primaryCta:hover { background-color: var(--colorWhite); color: var(--colorPrimary); }
+}
+@media (max-width:1024px) {
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #011132 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption:before { content: ''; position: absolute; width: 100%; height: 100%; background: url(../images/mixing-plants-banner-bg.png) center center no-repeat; mix-blend-mode: hard-light; opacity: 0.1; top: 0; left: 0; background-size: cover; z-index: -1; }
+	.headerOption.openMenu { transform: translateX(0); }
+	.headerUl nav > ul > li { border-top: 1px solid #FFFFFF1A; }
+	.headerUl nav > ul > li:last-child { border-bottom: 1px solid #FFFFFF1A; }
+	nav ul li a { display: inline-block; width: 100%; margin: 16px 35px; font-size: 20px; color: var(--colorWhite); text-decoration: none; }
+	.toggleBtn { display: flex; width: 40px; height: 40px; background: #FFFFFF1A; align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 6px; border: 1px solid #FFFFFF40 }
+	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorWhite); display: block; border-radius: 80px; transition: all 0.3s; }
+	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
+	.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+	.toggleBtn span:nth-child(2) { display: none; }
+	nav ul li ul a { margin: 10px 35px; color: #72899F; }
+	.headerCta { display: flex; flex-direction: column; /* position: absolute; */ width: 100%; /* bottom: 70px; */ margin: 80px 0 0 0; }
+	.headerCta .secondaryCta { padding: 20px 35px; border: none; color: var(--colorWhite); border-radius: 0; transition: all 0.3s; background: #7474742B; border-bottom: 1px solid #ffffff1a; font-size: var(--fontLg); }
+	.headerCta .primaryCta { padding: 20px 35px; border: none; color: var(--colorWhite); border-radius: 0; transition: all 0.3s; background: #7474742B; font-size: var(--fontLg); }
+	.headerCta .primaryCta span { display: none; }
+}
+
+/* === HEADER CSS END === */
+
+/* mapWrap css */
+.mapWrap { padding: 120px 0 70px 0; position: relative; z-index: 1; }
+.mapWrapTop .heading7xl { color: var(--colorBlack); font-weight: 600; }
+.mapWrapTop span { margin-top: 70px; }
+
+/* subBanner CSS  */
+.subBanner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #011132; padding-bottom: 80px; }
+.subBannerBgVideo { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; }
+.subBannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
+.subBannerContent { text-align: center; width: 60%; margin: 0 auto; }
+.subBannerContent .subTextLg { color: var(--colorWhite); margin: 0 0 35px 0; }
+.bannerBtnWrap { display: flex; align-items: center; gap: 20px; justify-content: center; margin-top: 20px; }
+.specialText { color: var(--colorPrimary); font-size: var(--font3xl); font-weight: 700; }
+
+/* textVideo css */
+.textVideo { position: relative; z-index: 1; background: linear-gradient(158.83deg, #0452CE -21.14%, #F4F2EF 61.29%); padding: 150px 0 0 0; }
+.textVideo:before { content: ''; position: absolute; width: 100%; height: 100px; background-color: #011132; bottom: 0; left: 0; z-index: -1; }
+.textDesc { padding: 0 0 250px 60px; border-left: 1px solid #8FBFEF }
+.textDesc .primaryBtn { color: var(--colorBlack); margin: 30px 0 0 0; }
+.textVideoInner .row:last-child { justify-content: flex-end; }
+.textVideoBox { width: 100%; height: 600px; }
+.textVideoBox video { width: 100%; height: 100%; object-fit: cover; }
+
+/* footer css */
+.cta { position: relative; background-color: var(--colorPrimary); z-index: 1; padding: 100px 0; }
+.ctaBg { position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; opacity: 0.5; }
+.ctaBg img { width: 100%; height: 100%; object-fit: cover; }
+.ctaInner { position: relative; }
+.ctaInner .heading8xl { margin-bottom: 30px; }
+.ctaContent { width: 40%; position: relative; }
+.ctaImage { position: absolute; bottom: -90px; right: 15%; opacity: 0.2; }
+.footerMain { background-color: var(--colorPrimaryDark); }
+.footerMainInner { display: flex; align-items: center; justify-content: space-between; }
+.footerMain { padding: 30px 0 65px; }
+.footerul ul { display: flex; align-items: center; gap: 10px; }
+.footerul ul li a { padding: 8px 15px; background: #FFFFFF1A; border: 1px solid #FFFFFF40; border-radius: 6px; color: var(--colorWhite); transition: all 0.3s; }
+.footerul ul li a:hover { color: var(--colorPrimaryDark); background-color: var(--colorWhite); display: inline-block; }
+.footerContact a { color: var(--colorWhite); padding: 5px 0; opacity: 0.7; }

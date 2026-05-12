@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .scroll-icons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .scroll-icons .icon {
+            cursor: pointer;
+        }
+
+        .scroll-icons svg {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section" style="background:#f1f1f1">Section 1</div>
+    <div class="section" style="background:#d4e3fc">Section 2</div>
+    <div class="section" style="background:#fcd4d4">Section 3</div>
+    <div class="section" style="background:#d4fcd7">Section 4</div>
+
+    <!-- Right Side SVG Icons -->
+    <div class="scroll-icons">
+        <div class="icon">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="#ff6600" stroke-width="6" fill="none" />
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <rect x="15" y="15" width="70" height="70" stroke="#ff6600" stroke-width="6" fill="none" />
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <polygon points="50,10 90,90 10,90" stroke="#ff6600" stroke-width="6" fill="none" />
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <path d="M20 80 C 40 10, 65 10, 80 80" stroke="#ff6600" stroke-width="6" fill="none" />
+            </svg>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const icons = document.querySelectorAll(".scroll-icons .icon svg");
+
+        icons.forEach((svg, i) => {
+            const section = document.querySelectorAll(".section")[i];
+
+            gsap.fromTo(svg,
+                { strokeDashoffset: 300 },
+                {
+                    strokeDashoffset: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top center",
+                        end: "bottom center",
+                        scrub: true // makes animation progress with scroll
+                    }
+                }
+            );
+        });
+
+    </script>
+</body>
+
+</html>

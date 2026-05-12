@@ -1,0 +1,241 @@
+@media (max-width:1440px) {
+	.partner-with-us .innerBannerInner .heading7xl { width: 90%; }
+	.patents .innerBannerInner .heading7xl { width: 53%; }
+	.patents .textBtnWrap { width: 59%; }
+	.footerBottom:before { width: 74vw; }
+	.footerBottom:after { width: 73.2vw; }
+	.fbObject1 { top: -57px; left: 70vw; width: 25%; }
+	.services .innerBannerInner .heading7xl { width: 110%; }
+	.projectWrapContent { width: 50%; }
+	.lottieDiv { width: 250px; height: 250px; }
+	.howDoesWorkHeading { width: 22%; }
+	.innerBannerImage { bottom: 80px; max-width: 600px; max-height: 600px; }
+	.accoContent.text-center.open { padding: 0 20px; display: flex; }
+	.oneAccordian { margin: 0 10px 0 0; }
+	.partner-with-us .innerBannerInner .heading7xl { width: 90%; }
+	.technology-offering .innerBannerInner .heading7xl { width: 90%; }
+	.stillQueBg { bottom: -45%; }
+}
+@media (max-width:767px) {
+	.mobileImage { display: block; }
+	.deskImage { display: none; }
+}
+@media (min-width:320px) and (max-width:480px) {
+	:root { --font8xl: 38px; --font7xl: 36px; --font6xl: 32px; --font5xl: 30px; --font4xl: 28px; --font3xl: 24px; --font2xl: 22px; --fontXl: 18px; }
+	.workListing, .howWeWorkInner { flex-direction: column; }
+	.workListing { margin: 100px 0 0 0; }
+	.howWeWorkInner .heading7xl { width: 100%; }
+	.workList { width: 280px; height: 280px; margin: -30px 0 0 0; }
+	.workList:first-child { margin: 0; }
+	.aboutBannerImageInner { height: 480px; }
+	.mvText { padding: 30px; }
+	.aboutCompany { padding-bottom: 0px; display: flex; flex-direction: column-reverse; }
+	.aboutCompayImage { position: unset; width: 100%; }
+	.btnUl, .tandcUl { display: none; }
+	.aboutBanner .textBtnWrap .subTextMd { margin-top: 40px; }
+	.textBtnWrap { margin-left: 60px; margin-top: 400px; }
+	.aboutBannerImage { margin: 200px 0 70px 0; }
+	.aboutBgShap { left: -44%; bottom: 23%; width: 120%; }
+	.mvWrap { margin-bottom: 30px; }
+	footer { padding: 50px 0; }
+	.footerLogoWrap { flex-direction: column; align-items: flex-start; gap: 40px; padding: 0; }
+	.footerHeading .heading7xl { margin-bottom: 20px; }
+	.footerHeading { margin: 0 0 20px 0; }
+	.footerTop .primaryBtn { margin: 20px 0 0 0; }
+	.fbObject1 { top: -29px; left: 58vw; }
+	.footerBottom:after { width: 63.6vw; }
+	.footerBottom:before { width: 63.7vw; top: -1px; }
+	.aboutBanner .textBtnWrap { margin-top: 0; }
+	.howWeWork { padding: 80px 0; }
+	.howWeWorkInner .heading7xl { text-align: center; }
+	.workListInner { padding: 60px 25px; }
+	.howWeWorkInner:before { width: 1px; height: 110px; top: 46px; right: 50%; }
+	.gapTop { padding-top: 160px; }
+	.innerBannerInner .heading7xl { width: 100%; }
+	.horiz-gallery-wrapper { max-width: 100%; padding: 180px 20px; }
+	.howDoesWorkHeading { top: 30px; left: 50%; width: 100%; transform: translateX(-50%); margin: 0; padding-bottom: 40px; padding-top: 20px; padding-left: 20px; border-bottom: 1px solid #ffffff33; }
+	.howDoesWorkHeading h3 { margin: 0; }
+	.horiz-gallery-strip { gap: 50px; padding-left: 0; }
+	.horiz-gallery-strip, .horiz-gallery-wrapper, .projectWrapInner { flex-direction: column; }
+	.lottieDiv { width: 220px; height: 220px; padding: 50px; }
+	.project-wrap { width: 100%; }
+	.projectWrapInner { align-items: flex-start; }
+	.projectWrapContent { width: 90%; margin: 0; }
+	.whatPowerAccordian { flex-direction: column; }
+	.accoheading { writing-mode: unset; transform: rotate(0deg); height: unset; display: block; padding: 20px; width: 100%; padding-right: 50px; }
+	.accoheading .subTextXl { margin: 0; }
+	.accoContent.text-center.open { padding: 30px; }
+	.accoheading:before { top: 50%; left: auto; right: 20px; }
+	.oneAccordian { margin: 0 0 10px 0; }
+	.whatPowerImageInner img { object-position: -410px; }
+	.whatPowerBgShap { width: 300px; left: -140px; }
+	.endToEnd { overflow-x: clip; }
+	.endToEndImage { transform: scale(1.4); margin: 150px 0 0 0; }
+	.projectList, .patents .projectList { flex-direction: column; }
+	.projectListContent { width: 100%; }
+	.projectListImageListing { width: 100%; }
+	.patents .projectListImageListing { height: 200px; }
+	.patents  .projectListContent { margin: 20px 0 0 0; }
+	.whatPowerTop .primaryBtn { margin-top: 20px; }
+	.innerBannerImage { left: 0 !important; bottom: 370px !important; }
+	.innerBannerInner { padding-bottom: 0; }
+	.whatPowerImage { margin: 120px 0 200px; ; }
+	.technology-offering .innerBannerImage { left: 0; bottom: 320px; }
+	.titImage, .titImageInner { width: 100%; }
+	.titContent { padding: 50px 0 0 0; }
+	.keyFeature { margin: 100px 0 0 0; }
+	.keyFeatureListing { display: block; margin: 30px 0 0 0; }
+	.keyFeatureSwiper { display: none; }
+	.keyFeatureSlide { gap: 25px; }
+	.keyFeatureSlide .subTextXl { font-size: var(--font3xl); }
+	.imageTextBgShap { width: 240px; height: 420px; right: -50px; }
+	.imageTextTop { width: 100%; }
+	.benefit .accoContent.text-center.open { flex-direction: column; }
+	.benefit .accoImage, .benefit .accoContent .text-center { width: 100%; }
+	.benefit .accoContent .text-center { padding: 30px; text-align: center !important; }
+	.benefit .accoContent .text-center .primaryBtn { justify-content: center; margin: 0 auto; }
+	.ourQualityTop { width: 100%; }
+	.sImage { max-height: 250px; }
+	.sImageText .row { flex-direction: column-reverse; }
+	.sImageText .sText { margin: 0 0 50px 0; }
+	.qmsImage { margin: 50px 0 0 0; }
+	.qms { margin: 80px 0 0 0; padding: 80px 0; }
+	.pathTimeLineInner { padding: 40px 20px 0; }
+	.pathTimeLineHeading a { display: none; }
+	.default-line { left: 0; }
+	.draw-line { left: -0.9%; }
+	.timeLineBox span { padding: 0; }
+	.timeLineWrapper ul li { width: 100%; padding-block: 50px; padding-left: 40px; }
+	.pathTimeLineWrap:after { width: 20vw; right: 90%; }
+	.absoluteShap, .pathTimeLineWrap:before { left: 0; }
+	.pathTimeLineWrap { padding-left: 30px; margin-top: 50px; }
+	.absoluteShap, .pathTimeLineWrap:before { left: 30px; }
+	.timeLineWrapper:before { left: -12%; }
+	.lottieWrapp { position: unset; width: 120%; transform: translateY(0) translateX(-60px); }
+	.textLottie { padding: 120px 0 0 0; }
+	.details { padding: 50px 0 0 0; }
+	.mobile-tab-title { border: 1px solid var(--colorWhite); padding: 16px 20px; border-radius: 6px; background: radial-gradient(353.6% 1301.61% at -253.6% -40.38%, rgba(255, 255, 255, 0.208) 0%, rgba(255, 255, 255, 0) 100%); position: relative; transition: all 0.3s; color: var(--colorWhite); }
+	.activeTab  .mobile-tab-title { border: 1px solid var(--colorPrimaryLight); color: var(--colorPrimaryLight); }
+	.tab-content-main { margin: 0 0 20px 0; }
+	.activeTab .mobile-tab-title a { color: var(--colorPrimaryLight); }
+	.mobile-tab-title a { font-family: var(--fontPrimary); transition: all 0.3s; color: var(--colorWhite); }
+	.mobile-tab-title:before { content: ''; position: absolute; width: 12px; aspect-ratio: 1; background: url(../images/drop-down-arrow.svg) center center no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); right: 20px; transition: all 0.3s; filter: brightness(10); }
+	.activeTab .mobile-tab-title:before { transform: rotate(180deg) translateY(50%); filter: brightness(1); }
+	.ourQuality { margin: 80px 0 0 0; }
+	.whatPowerAccordian { margin: 70px 0 0 0; }
+	.imageText { margin: 100px 0 70px; }
+	.comparisonBoxUl ul { padding: 24px; }
+	.comparisonWrap .bottomText span { width: 100%; margin: 40px 0; }
+	.tabWrap { margin: 100px 0 0 0; }
+	.questionList .subTextLg { opacity: 0; visibility: hidden; }
+	.questionList .subTextLg { position: absolute; }
+	.listActive .subTextLg { position: relative; }
+	.questionListText { transform: translateY(0); gap: 40px; }
+	.questionList a { display: none; }
+	.questionList { padding: 30px; padding-top: 100px; transition: all 0.3s; }
+	.patents .innerBannerInner .heading7xl { width: 90%; }
+	.patents .textBtnWrap { width: 80%; }
+	.patents .innerBannerImage { left: 5% !important; bottom: 250px !important; }
+	.titImageInner { height: 250px; }
+	.patents .project { margin: 70px 0 0 0; }
+	.faqTop { width: 90%; }
+	.questionListing { margin: 200px 0 0 0; }
+	.faqBg { position: absolute; top: 230px; right: -10px; width: 140%; }
+	.faq  .questionList a { display: block; }
+	.faq .questionList a { display: block; right: 20px; top: 40px; }
+	.faq .questionList:before { top: 30px; width: 10px; height: 25px; }
+	.faq .listActive.questionList:before, .faq .listActive .clickObject { opacity: 1; visibility: visible; }
+	.faq .questionListText { gap: 30px; }
+	.stillQueInner { padding: 30px; padding-bottom: 250px; }
+	.stillQueImage { width: 310px; right: -20px; left: auto; }
+	.stillQueInner:before { left: 0; }
+	.stillQue { margin: 100px 0 50px 0; }
+	.careersBanner .textBtnWrap { margin-top: 150px; }
+	.careersImage { height: 250px; }
+	.careersImage img { width: 100%; height: 100%; object-fit: cover; }
+	.jobOpeningList { align-items: flex-start; }
+	.locEx { margin: 24px 0 0 0; }
+	.jobOpeningListing { margin: 40px 0 0 0; }
+	.ourCommandAcco { display: block; margin: 50px 0 0 0; }
+	.ourCommandListing { display: none; }
+	.accordion-item { background-color: transparent; }
+	.ourCommandTop { text-align: left !important; }
+	.ourCommandAccoIcon { width: 60px; height: 60px; }
+	.ourCommandAccoIcon img { width: 100%; height: 100%; object-fit: contain; }
+	.accordion-item .heading3xl { text-transform: uppercase; margin: 0; font-family: var(--fontPrimary); transition: all 0.3s; }
+	.ourCommandAccoContent .heading3xl { margin: 16px 0; color: var(--colorPrimary); opacity: 0.6; }
+	.accordion-button { background-color: transparent !important; box-shadow: none !important; border-radius: 0; padding: 30px 16px !important; }
+	.accordion-item { border: 0; border-radius: 0 !important; border-top: 1px solid #ffffff33 !important; }
+	.accordion-item:last-child { border-bottom: 1px solid #ffffff33 !important; }
+	.accordion-button:not(.collapsed) .heading3xl { opacity: 0; visibility: hidden; }
+	.accordion-body { transition: all 0.3s; }
+	.show .accordion-body { margin-top: -60px; }
+	.resources .textBtnWrap { margin-top: 70px; }
+	.resources ul.tab-titles { display: flex; padding: 0; background: transparent; border: none; justify-content: flex-start; }
+	.resources ul.tab-titles li { padding: 12px 20px; background: radial-gradient(87.58% 300% at 25.1% -139.42%, rgba(255, 255, 255, 0.208) 0%, rgba(255, 255, 255, 0) 100%); border: 1px solid #FFFFFF38; backdrop-filter: blur(18px); border-radius: 6px; }
+	.resources ul li.active { color: var(--colorPrimaryLight) !important; border-color: var(--colorPrimaryLight) !important; }
+	.resourceCardInner { flex-direction: row; }
+	.resourceCardText { justify-content: unset; }
+	.accordion-header button:after { content: ''; position: absolute; width: 20px; height: 2px; background-color: #EF4E74; top: 50%; right: 20px; transform: rotate(90deg); transition: all 0.3s; }
+	.accordion-header button:before { content: ''; position: absolute; width: 20px; height: 2px; background-color: #EF4E74; top: 50%; right: 20px; }
+	.accordion-header { position: relative; z-index: 1; }
+	.accordion-button:not(.collapsed)::after { transform: rotate(0deg); }
+	#content { padding: 70px 15px; }
+	.entry-content { padding: 0 20px 100px 0; }
+	
+		/* ================================= */
+	
+		/* ================================= */
+	
+		/* ================================= */
+	
+		/* Custom CSS from backend */
+	h1 { font-size: 32px; line-height: 42px; }
+	.home-banner .section-bg.fill { background-image: url(https://draascommand.com/wp-content/uploads/2025/10/Group-481535-3.png); background-size: cover; }
+	.home-banner .section-bg-overlay.absolute.fill { background-color: unset !important; }
+	.highlight-txt { transform: unset; position: unset; }
+	.font-46-r-j p { font-size: 38px; }
+	.highlight-sec .font-28-r-j p { height: auto; }
+	.highlight-sec .row .col video, .highlight-sec .row .col .font-15-r-s, .highlight-sec .row .col .key-highlight-arrow { visibility: visible; }
+	.highlight-sec .row-divided .col { border-top: 1px solid hsl(0deg 0% 93% / 30%) !important; border-left: unset !important; margin: 0px 20px; padding-left: 0px; padding-right: 0px; }
+	.highlight-sec .row .col video { width: 50%; float: left; padding-right: 20px; height: 100%; }
+	.highlight-sec .row .col .text { width: 50%; float: left; }
+	.highlight-sec .gap-element { display: none !important; }
+	.font-28-r-j p { font-size: 18px; line-height: 24px; }
+	.font-15-r-s p { font-size: 12px; }
+	.highlight-sec .row .col .text.font-28-r-j { padding-right: 20px; }
+	.highlight-sec .row .col .key-highlight-arrow { position: absolute; right: 0px; }
+	.mb0 { margin-bottom: 0px; }
+	.highlight-sec .row-divided .col:last-child { border-bottom: 1px solid hsl(0deg 0% 93% / 30%); border-right: unset; }
+	.font-42-r-j p { font-size: 30px; line-height: 42px; }
+	.call-ico p:after { left: 0px; top: 44px; }
+	.marun-sec .col:nth-child(1):before { width: 94px; height: 87px; }
+	.marun-sec { width: 90%; }
+	.font-48-r-j p { font-size: 32px; line-height: 42px; }
+	.marun-sec .col:nth-child(1):after { bottom: -135px; width: 601px; }
+	.social-icons.follow-icons.full-width.text-right { text-align: left; }
+	.footer-sec:before { background-image: url(https://draascommand.com/wp-content/uploads/2025/10/Group-481541.png); height: 411px; width: 700px; position: absolute; background-size: contain; top: 179px; }
+	ul.mobile-nav.nav.nav-right a i:before { content: ''; background-image: url(https://draascommand.com/wp-content/uploads/2025/10/Group-1261152369.png); background-size: contain; width: 44px; height: 44px; display: block; }
+	.header-block-block-1 li.header-block { width: 100%; }
+	.header-block-block-1 span.ux-menu-link__text { font-size: 16px; color: hsl(0deg 0% 100% / 50%); font-weight: 700; font-family: jetbrains-mono; }
+	.header-block-block-1 .ux-menu-link.flex.menu-item { background: radial-gradient(50% 185.22% at 50% 55.46%, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0) 100%); border: 1px solid #FFFFFF38; backdrop-filter: blur(18px); border-radius: 6px; padding: 34px 20px; margin-bottom: 20px !important; }
+	.header-block-block-1 .ux-menu-link.flex.menu-item a.ux-menu-link__link.flex { display: flex; justify-content: center; }
+	.dot-line:after { bottom: -52px; right: -2px; }
+	.form_row { display: block; }
+	.form_row input.wpcf7-form-control { margin-bottom: 0px; }
+	.contact-form-sec:before { content: ''; background-image: url(https://draascommand.com/wp-content/uploads/2025/10/Layer_1-2.png); width: 422px; height: 307px; background-size: contain; background-repeat: no-repeat; position: absolute; left: 0px; }
+	.font-32-r-j p { font-size: 26px; }
+	.font-22-r-j a, .font-22-r-j p { font-size: 18px; }
+	.marun-sec .col:nth-child(2):after { top: -30px !important; right: 0px; }
+	.header-block-block-1 a.button.secondary.is-outline { background: hsl(350deg 72% 40% / 40%); border: 1px solid #ffffff00; backdrop-filter: blur(18px); color: #FFFFFF; font-family: jetbrains-mono; font-size: 16px; font-weight: 500; width: 100%; padding: 18px 0px 18px 0px; border-radius: 6px; margin-bottom: 100px; }
+	.off-canvas .mfp-content { background-color: #321319; }
+	.header-block-block-1 .ux-menu-link.flex.menu-item:hover { border: 1px solid hsl(346deg 82% 62% / 40%); }
+	.header-block-block-1 .ux-menu-link.flex.menu-item:hover span { color: #EF4E74; }
+	button.mfp-close { backdrop-filter: blur(18px); background: hsl(350deg 72% 40% / 40%); border-radius: 6px; top: 18px; right: 15px; }
+	button.mfp-close svg { stroke: #fff; }
+	header#header li.html.header-button-1 a.button.primary { width: 115px; padding: 4px 5px; }
+	header#header li.html.header-button-1 a.button.primary span { font-size: 14px; }
+	.contact-footer-sec:before { top: -88px !important; }
+	.br-hide br { display: none; }
+	.rhbd { width: 100% !important; }
+}

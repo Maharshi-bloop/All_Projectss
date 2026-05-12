@@ -1,0 +1,22 @@
+.subPageBanenr {
+  background-color: #003B4A;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.subPageBanenr .row {
+  justify-content: space-around;
+}
+.subPageBanenr .row .titleText {
+  color: #fff;
+  font-weight: 200;
+  line-height: 36px;
+  padding: 10px 0 0 0;
+}
+
+.postOuterWrapper {
+  margin-top: -100px;
+}
+.postOuterWrapper .postListing .col-xxl-4 {
+  margin: 0 0 50px 0;
+}

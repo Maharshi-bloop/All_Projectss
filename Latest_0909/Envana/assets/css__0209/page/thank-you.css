@@ -1,0 +1,6 @@
+.thank-you header .headerOption, .thank-you header .toggleBtn, .thank-you footer { display: none; }
+.thankyou { height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(208.89deg, #F79021 -14.29%, #DA1A5D 124.59%); z-index: -1; position: relative; z-index: 1; overflow: clip; }
+.thankyou:before { content: ''; position: absolute; background: url(../../images/thank-you-bottom.png) bottom center no-repeat; background-size: contain; width: 100%; height: 250px; bottom: 0; transform: translateY(100%); transition: ease-in-out 0.8s; }
+.thankyou:after { content: ''; position: absolute; background: url(../../images/thank-you-top.png) bottom center no-repeat; background-size: contain; width: 100%; height: 250px; top: 0; transform: translateY(-100%); transition: ease-in-out 0.8s; }
+.in-viewport.thankyou:before, .in-viewport.thankyou:after { transform: translateY(0); }
+.thankYouInner { width: 40%; margin: 0 auto; }

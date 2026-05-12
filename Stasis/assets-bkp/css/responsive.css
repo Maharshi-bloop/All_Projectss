@@ -1,0 +1,45 @@
+@media (max-width:1280px) {
+	:root { --font11xl: 70px; }
+	.bannerHeading span { font-size: 150px; line-height: 0.5; }
+	.bannerSubText { bottom: -70px; }
+}
+@media (max-width:480px) {
+	:root { --font6xl: 36px; }
+	.banner { margin: 170px 0 250px 0; }
+	.heading6xl { font-weight: 700; }
+	.bannerHeading { font-size: 38px; text-align: center; width: 90%; margin: 0 auto; line-height: 0.9; }
+	.bannerHeading span { font-size: 55px; line-height: 0.7; }
+	.bannerSubText span { font-family: 'Calibri'; line-height: 1.3; margin: 30px 0 30px 0; font-size: 16px; }
+	.stage { height: 24vh; }
+	.industriesServedListing { flex-direction: column; }
+	.industriesServedList { height: auto; width: 100%; gap: 80px; padding: 50px 40px; }
+	.industriesServedList .heading3xl br { display: none; }
+	.logoSwiperInner { padding: 30px 10px; }
+	.footerAddress { padding: 0 0 20px 0; gap: 40px; }
+	.addBox span { margin: 0; }
+	.footerLogo:before, .footerUl:after { display: none; }
+	.footerUl ul { padding: 26px 0; }
+	.footerLogoUl ul { flex-wrap: wrap; }
+	.bannerSubText { width: 100%; position: unset; text-align: center; }
+	.logoSwiper { margin: 100px 0 100px 0; }
+	.logo { width: 30%; }
+	.headerCta .primaryBtn { padding: 16px 26px; }
+	.desktopNone { display: block; }
+	.mobileNone { display: none; }
+	.headerInner { padding: 10px 30px; background: linear-gradient(156.7deg, #000000 -53.91%, #353D3E 257.45%); border-radius: 50px; }
+	.locationMap { position: relative; transform: scale(2.4); right: -100px; margin: 180px 0 0 0; }
+	.locationHeading .lineText, .contactBannerHeading .lineText { font-size: 55px; }
+	.contactBannerHeading .lineText br { display: none; }
+	.locationHeading .lineText:after { top: 39%; }
+	.contactBannerHeading span:not(.lineText) { position: relative; width: 100%; bottom: 0; left: 0; display: block; }
+	header.stickyHeader { background-color: transparent; }
+	.contactBannerImage { display: none; }
+	.formDesign { background-color: #151818; padding: 30px; border-radius: 20px; margin: 0; }
+	.formDesign:before, .contactBannerInner:before { display: none; }
+	.inputField input, .inputField textarea { padding: 0 0 10px 0; margin: 0 0 30px 0; font-size: 16px; }
+	.contactBanner { padding: 170px 0 0 0; }
+	.formShap { bottom: auto; left: auto; width: 100px; top: 35px; right: 30px; }
+}
+
+
+

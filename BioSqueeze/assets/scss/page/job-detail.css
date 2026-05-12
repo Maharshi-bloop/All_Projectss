@@ -1,0 +1,23 @@
+.jobDetailWrapper { background: linear-gradient(118.76deg, #273553 22.41%, #0D1C3F 95.16%); padding: 200px 0 50px 0; position: relative; z-index: 1; }
+.jobDescription { background: #0D172F; padding: 100px 40px; margin: 70px 0 0 0; }
+.jobDescription  .subHeading { display: inline-block; }
+.jobDescription .subHeading::before { top: 50%; left: calc(100% + 20px); }
+.jobDescription .HeadingTextWrapper .description p { font-size: 16px; line-height: 32px; }
+.jobDescription .subHeading, .jobDescription  .description { color: #F3F2EF; }
+.jobDescription  .description { opacity: 0.8; }
+.jobDescription .HeadingTextWrapper { padding-left: 0; padding-right: 0; padding-bottom: 40px; }
+.jobDetailWrapperTop { font-family: poppins, sans-serif; }
+.jobDetailWrapperTop .jobPostDate { font-size: 14px; font-weight: 200; color: #fff; }
+.jobDetailWrapperTop .jobHeading { font-size: 34px; font-weight: 400; color: #fff; line-height: 80px; margin: 0; }
+.jobDetailWrapperTop .location { font-size: 28px; font-weight: 400; color: #ffffff80; }
+.locationIcon { margin: 0 10px 0 0; }
+.jobDetailWrapper:before { content: ''; position: absolute; top: 0; right: 0; width: 620px; height: 620px; background: url(../../images/banner-dot.png)center center no-repeat; background-size: contain; z-index: -1; }
+@media (max-width:480px) {
+	.jobDetailWrapperTop .jobHeading { font-size: 26px; line-height: 34px; margin: 10px 0; }
+	.jobDetailWrapperTop .location { font-size: 24px; }
+	.jobDetailWrapper:before { width: 220px; height: 220px; }
+	.jobDescription { margin: 40px 0 0 0; }
+	.jobDescription .subHeading { font-size: 26px; margin: 0 0 15px 0; }
+	.jobDescription { padding: 50px 20px; }
+	.jobDetailWrapper { padding: 150px 0 50px 0; }
+}

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .portBanner {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            display: block;
+        }
+
+
+        section.portBanner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bannerHead {
+            font-size: 66px;
+            font-weight: 600;
+            color: #fff !important;
+        }
+
+        .subHeading {
+            font-size: 30px;
+            color: #000 !important;
+            line-height: 1.4 !important;
+        }
+
+        .sectionHeading {
+            color: #1E2025;
+            font-size: 44px;
+            font-weight: 600;
+        }
+
+        .whiteSectionHeading {
+            color: #fff;
+            font-size: 44px;
+            font-weight: 600;
+            margin: 0 0 30px 0;
+        }
+
+        .description {
+            color: #636363;
+            font-size: 18px;
+        }
+
+        .whiteDescription {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .whiteDescription p {
+            margin: 0 0 30px 0;
+        }
+
+        .textDes {
+            padding: 120px 0;
+        }
+
+        .portBannerContent ul {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .portBannerContent ul strong {
+            font-weight: 600;
+        }
+
+        .portBannerContent ul li {
+            margin: 0 20px 0 0;
+            padding: 0 20px 0 0;
+            border-right: 3px solid #fff;
+        }
+
+        .portBannerContent ul li:last-child {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .extraData {
+            font-size: 26px;
+            margin: 30px 0 0 0;
+        }
+
+        .extraData strong {
+            padding: 0 0 0 30px;
+            border-left: 3px solid #fff;
+            line-height: 0;
+        }
+
+        .extraData span {
+            display: block;
+            padding: 5px 0 0 30px;
+            font-size: 22px;
+        }
+
+        .videoWrapper video {
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .imageWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .width50 {
+            width: calc(50% - 5px);
+        }
+
+        .width100 {
+            width: 100%;
+        }
+
+        .width33 {
+            width: calc((100% / 3) - 7px);
+        }
+
+        .imageDiv img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .impactWrapper {
+            padding: 120px 0;
+        }
+
+        .impactListing {
+            padding: 70px 0 0 0;
+        }
+
+        .roww {
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+        }
+
+        .coll {
+            background-color: #F5F5F5;
+            padding: 70px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0px 10px 15px #00000029;
+            text-align: center;
+        }
+
+        .impactContent strong {
+            font-size: 25px;
+            color: #000 !important;
+        }
+
+        .impactContent span {
+            display: block;
+            font-size: 40px;
+            margin: 0 0 20px 0;
+        }
+
+        .impactIcon {
+            height: 100px;
+        }
+
+        .impactIcon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .impactList {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .impactContent {
+            margin: 20px 0 0 0;
+        }
+
+        .testiContent {
+            box-shadow: 0px 10px 50px #00000029;
+            padding: 100px 50px 30px 50px;
+            border-radius: 30px;
+        }
+
+        .clientName {
+            padding: 50px 0 0 0;
+        }
+
+        .webSection2 {
+            position: relative;
+            overflow-x: clip;
+        }
+
+        .overFlowClip {
+            overflow-x: clip;
+        }
+
+        .webSection2Inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            padding: 100px 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .webSection3 {
+            position: relative;
+        }
+
+        .webSection3Inner {
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            left: 0;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .webSection4Inner {
+            position: absolute;
+            width: 100%;
+            top: 100px;
+            left: 0;
+        }
+
+        .marginBottom {
+            margin-bottom: 30px;
+        }
+
+        .webSection6 {
+            padding: 120px 0;
+        }
+
+        .webSection6Inner video {
+            margin: 30px 0 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .webSection6Inner>video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 80px 0 0 0;
+        }
+
+        .webSection7 {
+            padding: 120px 0;
+        }
+
+        .webSection7Inner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 80px 0 0 0;
+        }
+
+        .webSection8Inner {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            left: 0;
+        }
+
+        .webSection10Inner {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            left: 0;
+        }
+
+        .tabContent {
+            display: none;
+        }
+
+        .active .tabContent {
+            display: block;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .wrapper .laptop {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        .wrapper .laptop .laptop-inner {
+            display: inline-block;
+            height: 69.3%;
+            left: 75.4%;
+            overflow: hidden;
+            position: absolute;
+            top: 39.6%;
+            -web-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 109%;
+        }
+
+        .wrapper .laptop .laptop-inner img {
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -ms-transform: translate3d(0px, 0px, 0px);
+            -o-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transition: 2s ease-in-out;
+            -o-transition: 2s ease-in-out;
+            transition: 2s ease-in-out;
+            width: 100%
+        }
+
+        .webSection9 {
+            background-color: #EFD89A;
+            padding: 120px 0;
+        }
+
+        .tabing-main {
+            padding: 80px 0 0 0;
+        }
+
+        ul.tab-titles {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.tab-titles a {
+            font-size: 22px;
+            color: #fff;
+            padding: 15px 40px;
+            background-color: #d0ad6d;
+            display: inline-block;
+            width: 350px;
+            border-radius: 40px;
+            margin: 0 0 45px 0;
+            border: 2px solid #fff;
+            outline: 7px solid #d0ad6d;
+            text-align: center;
+            transition: all 0.1s;
+            text-decoration: none;
+        }
+
+        ul.tab-titles li {
+            display: inline-block;
+        }
+
+        .mobileImage {
+            display: none;
+        }
+
+        @media (max-width:1024px) {
+            .coll {
+                padding: 40px;
+            }
+
+            .impactIcon {
+                height: 70px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .roww {
+                gap: 25px;
+                flex-wrap: wrap;
+            }
+
+            .portBanner {
+                height: 85vh;
+            }
+
+            .textDes {
+                padding: 80px 0;
+            }
+
+            .coll {
+                padding: 40px 70px;
+            }
+
+            .testiContent .subHeading {
+                font-size: 22px;
+            }
+
+            .subHeading {
+                font-size: 26px;
+            }
+
+            .bannerHead {
+                font-size: 50px;
+            }
+
+            .deskImage {
+                display: none;
+            }
+
+            .mobileImage {
+                display: block;
+            }
+
+            .whiteSectionHeading,
+            .sectionHeading {
+                font-size: 24px;
+            }
+
+            .webSection2Inner {
+                align-items: unset;
+                padding: 70px 0 200px;
+            }
+
+            /* .webSectionImage {
+                height: 800px;
+            } */
+
+            .webSectionImage img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .webSection4Inner {
+                top: 40px;
+            }
+
+            .marginBottom {
+                margin-bottom: 15px;
+            }
+
+            .webSection8Inner {
+                top: 20px;
+            }
+
+            .webSection9 {
+                padding: 70px 0;
+            }
+
+            ul.tab-titles a {
+                font-size: 14px;
+            }
+
+            .webSection10Inner {
+                top: 40px;
+            }
+
+            .webSection7 {
+                padding: 70px 0;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .whiteDescription {
+                font-size: 14px
+            }
+
+            .bannerHead {
+                font-size: 36px;
+            }
+
+            .portBannerContent ul {
+                font-size: 18px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .portBannerContent ul li {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .subHeading {
+                font-size: 22px;
+            }
+
+            .portBanner {
+                height: 70vh;
+            }
+
+            .extraData {
+                font-size: 20px;
+            }
+
+            .extraData span {
+                font-size: 18px;
+            }
+
+            .textDes {
+                padding: 60px 0;
+            }
+
+            /*  .sectionHeading {
+                font-size: 32px;
+            } */
+
+            .description {
+                font-size: 14px;
+            }
+
+            .width33 {
+                width: 100%;
+            }
+
+            .impactWrapper {
+                padding: 60px 0;
+            }
+
+            .coll {
+                padding: 30px 60px;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .roww {
+                flex-direction: column;
+            }
+
+            .impactContent span {
+                font-size: 30px;
+            }
+
+            .impactContent strong {
+                font-size: 18px;
+            }
+
+            .testiContent .subHeading {
+                font-size: 18px;
+            }
+
+            .testiContent {
+                padding: 60px 30px;
+            }
+
+            .wrapper .laptop .laptop-inner {
+                display: inline-block;
+                height: 69.3%;
+                left: 50%;
+                overflow: hidden;
+                position: absolute;
+                top: 39.6%;
+                -web-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 72%;
+            }
+
+            .laptop>img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portfolioBanner">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: transparent;">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+            <h1 class="sectionHeading" style="color: #000; padding-bottom: 50px;">Seamless Ecommerece Web Experience For
+                an
+                OrganicProduct-based FMCG Brand</h1>
+        </div>
+    </section>
+
+    <section class="portBanner">
+        <video autoplay loop muted>
+            <source src="girveda-banner-video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="webSection2 overFlowClip">
+        <div class="webSectionImage">
+            <img src="section-2.png" alt="" class="img-fluid deskImage">
+            <img src="section-2-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+        <div class="webSection2Inner">
+            <div class="container">
+                <div class="webSection2Content">
+                    <h3 class="whiteSectionHeading">The Client Brief</h3>
+                    <div class="whiteDescription">
+                        <p>Girveda aims to deliver 100% Natural Food and Ayurvedic products globally, employing ancient
+                            Cow
+                            Based Natural Farming (CBNF) methods with farmers from the Gir-Somnath region. </p>
+                        <p> Their vision was for a user-friendly, modern Shopify store that blends storytelling with
+                            e-commerce
+                            functionality, enabling nationwide distribution of their unique products. One of the major
+                            challenges was explaining the relatively unknown CBNF concept, our solution effectively
+                            balanced
+                            education and engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="webSection3 overFlowClip">
+        <div class="webSectionImage">
+            <img src="section-3.png" alt="" class="img-fluid deskImage">
+            <img src="section-3-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+        <div class="webSection3Inner">
+            <div class="container">
+                <h3 class="sectionHeading" style="color: #513619;">Here’s How We Cultivated an Amazing Website from the
+                    Seeds of Knowledge</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="webSection4 overFlowClip relative">
+        <div class="webSectionImage">
+            <img src="section-4.png" alt="" class="img-fluid deskImage">
+            <img src="section-4-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+        <div class="webSection4Inner">
+            <div class="container">
+                <h3 class="sectionHeading marginBottom" style="color: #513619;">Roots to Origin: Heritage-Inspired
+                    Design</h3>
+                <span class="description" style="color: #000;">Explore Girveda's roots through Bloop's design choices,
+                    harmonizing earthy color palettes, tribal motifs, and regional influences. Witness how tradition
+                    seamlessly intertwines with modernity, reflecting Girveda's rich heritage and deep connection to the
+                    land.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="webSection5 overFlowClip">
+        <div class="webSectionImage">
+            <img src="section-5.png" alt="" class="img-fluid deskImage">
+            <img src="section-5-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+    </section>
+
+    <section class="webSection6" style="background-color: #513619;">
+        <div class="container">
+            <div class="webSection6Inner">
+                <div class="webSection6Top">
+                    <h3 class="sectionHeading marginBottom" style="color: #fff;">Storytelling: Cultivating Narratives
+                    </h3>
+                    <span class="description" style="color: #fff;">Witness how we infused Girveda's website with
+                        compelling narratives, spotlighting the journey of farmers and the essence of Cow Based Natural
+                        Farming (CBNF) to sow seeds of awareness and appreciation.</span>
+                </div>
+                <video controls>
+                    <source src="story-telling.mp4" type="video/mp4">
+                </video>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <video controls>
+                            <source src="story-telling-video-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <video controls>
+                            <source src="story-telling-video-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="webSection7" style="background-color: #CDA169;">
+        <div class="container">
+            <div class="webSection7Inner">
+                <div class="webSection6Top">
+                    <h3 class="sectionHeading marginBottom" style="color: #fff;">Transparency: Illuminating Every Aspect
+                    </h3>
+                    <span class="description" style="color: #fff;">Experience the innovation behind the 'Know What You
+                        Eat' page, a brainchild of Bloop's ingenuity. With backend integration, this feature allows
+                        consumers to scan products for detailed batch information, fostering trust and transparency with
+                        every interaction.</span>
+                </div>
+                <video controls>
+                    <source src="transparency-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="webSection8 overFlowClip relative">
+        <div class="webSectionImage">
+            <img src="section-8.png" alt="" class="img-fluid deskImage">
+            <img src="section-8-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+        <div class="webSection8Inner">
+            <div class="container">
+                <h3 class="sectionHeading" style="color: #fff;">Website Visual Site Map</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="webSection9">
+        <div class="container">
+            <div class="webSection9Top">
+                <h3 class="sectionHeading" style="color: #513619;">What We Visualized</h3>
+            </div>
+            <div class="tabing-main">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <ul class="tab-titles">
+                            <li><a href="#tab-1">Gir-Somnath Region</a></li>
+                            <li><a href="#tab-2">Our Process</a></li>
+                            <li><a href="#tab-3">Shop - Bestsellers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="tabContainer">
+                            <div class="tab-content-main" id="tab-1">
+                                <!-- <div class="mobile-tab-title"><a href="#tab-1" class="r-tabs-anchor">For FY 22</a></div> -->
+                                <div class="tabContent">
+                                    <div class="details">
+                                        <div class="wrapper">
+                                            <div class="laptop">
+                                                <img src="Laptop.png" alt="laptop">
+                                                <div class="laptop-inner">
+                                                    <img src="Gir-Somnath Region.png" alt="inner-content">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content-main" id="tab-2">
+                                <!-- <div class="mobile-tab-title"><a href="#tab-2" class="r-tabs-anchor">For FY 21</a></div> -->
+                                <div class="tabContent">
+                                    <div class="details">
+                                        <div class="wrapper">
+                                            <div class="laptop">
+                                                <img src="Laptop.png" alt="laptop">
+                                                <div class="laptop-inner">
+                                                    <img src="Our-Process.png" alt="inner-content">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content-main" id="tab-3">
+                                <!-- <div class="mobile-tab-title"><a href="#tab-2" class="r-tabs-anchor">For FY 21</a></div> -->
+                                <div class="tabContent">
+                                    <div class="details">
+                                        <div class="wrapper">
+                                            <div class="laptop">
+                                                <img src="Laptop.png" alt="laptop">
+                                                <div class="laptop-inner">
+                                                    <img src="Shop-Bestsellers.png" alt="inner-content">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="webSection10 overFlowClip relative">
+        <div class="webSectionImage">
+            <img src="section-10.png" alt="" class="img-fluid deskImage">
+            <img src="section-10-mobile.jpg" alt="" class="img-fluid mobileImage">
+        </div>
+        <div class="webSection10Inner">
+            <div class="container">
+                <h3 class="sectionHeading" style="color: #fff;">How It Turned Out</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="impactWrapper">
+        <h2 class="text-center sectionHeading">The Impact</h2>
+        <div class="container">
+            <div class="impactListing">
+                <div class="roww">
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon-2.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon-1.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll">
+                        <div class="impactList">
+                            <div class="impactIcon">
+                                <img src="icon.svg" alt="icon-2">
+                            </div>
+                            <div class="impactContent">
+                                <span>100+</span>
+                                <strong>Lorem, ipsum.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testi">
+        <div class="container">
+            <div class="testiInner">
+                <div class="testiContent">
+                    <span class="subHeading text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                        eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum
+                        dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+
+                    <div class="clientName text-center">
+                        <strong>Lorem, ipsum dolor.</strong>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(".tabing-main .tabContainer .tab-content-main:first").addClass("active");
+    $(".tabing-main .tab-titles li:first").addClass("active-li")
+    $(".tabing-main .tab-titles li a").on("click", function (event) {
+        event.preventDefault()
+        $(".tabing-main .tab-titles li").removeClass("active-li")
+        $(this).parent().addClass("active-li");
+        $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
+        $($(this).attr('href')).addClass("active");
+    })
+
+
+    jQuery(document).ready(function () {
+        jQuery('.laptop-inner').mouseover(function () {
+            var imageHeight = jQuery(this).find('img').height();
+            var laptopHeight = jQuery(this).height();
+            var scrollHeight = imageHeight - laptopHeight;
+            jQuery(this).find('img').css("transform", "translate3d(0, -" + scrollHeight + "px, 0)");
+        });
+
+        jQuery('.laptop-inner').mouseout(function () {
+            jQuery(this).find('img').css("transform", "translate3d(0, 0, 0)");
+        });
+    });
+
+
+
+</script>
+
+</html>

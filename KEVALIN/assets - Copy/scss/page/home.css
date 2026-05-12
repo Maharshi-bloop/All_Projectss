@@ -1,0 +1,192 @@
+.home .bannerHeading {
+  margin: 0 0 30px 0;
+}
+
+section.banner {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0 0 60px 60px;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+}
+section.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 0;
+}
+section.banner .bannerVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.banner .bannerVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.banner .bannerInner {
+  position: relative;
+  width: 50%;
+}
+section.banner .bannerInner .bannerContent span {
+  font-size: 20px;
+  font-family: "Public Sans";
+  display: inline-block;
+  color: #fff;
+  margin: 20px 0 50px 0;
+  font-weight: 200;
+}
+section.banner .bannerInner .bannerContent .sectionHeading {
+  color: #fff;
+}
+
+.starCol {
+  padding: 120px 0;
+}
+.starCol .starBox {
+  text-align: center;
+}
+.starCol .starBox .starIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starCol .starBox .starIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.starCol .starBox .description {
+  font-size: 18px;
+}
+
+.imageExTextWrapperInner .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.imageExTextWrapperInner .imageExTextImg {
+  border-radius: 20px;
+  overflow: clip;
+}
+.imageExTextWrapperInner .imageExTextImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imageExTextWrapperInner .imageExTextContent .sectionHeading {
+  width: 80%;
+}
+.imageExTextWrapperInner .imageExTextContent ul {
+  margin: 60px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.imageExTextWrapperInner .imageExTextContent ul li {
+  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #0EA79B;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .count {
+  font-size: 60px;
+  color: #003B4A;
+  position: relative;
+  display: inline-block;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .count:before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.imageExTextWrapperInner .imageExTextContent ul li:first-child .count:before {
+  content: "%";
+}
+.imageExTextWrapperInner .imageExTextContent ul li:last-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.imageExTextWrapperInner .imageExTextContent ul li:last-child .count:before {
+  content: "+";
+}
+.imageExTextWrapperInner .imageExTextContent ul li .careResult {
+  display: flex;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .careResult .description {
+  width: 80%;
+  margin-left: auto;
+}
+.imageExTextWrapperInner .imageExTextContent ul li .description {
+  font-size: 18px;
+}
+
+.journeyList {
+  padding: 120px 0;
+}
+.journeyList .journeyUl {
+  padding: 80px 0 0 0;
+}
+.journeyList .journeyUl .journeyli {
+  padding: 40px 50px;
+  transition: all 0.3s;
+  border-radius: 15px;
+  position: relative;
+}
+.journeyList .journeyUl .journeyli:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #0EA79B;
+  left: 0;
+  bottom: 0;
+}
+.journeyList .journeyUl .journeyli .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.journeyList .journeyUl .journeyli:hover {
+  background-color: rgba(138, 224, 188, 0.5019607843);
+}
+.journeyList .journeyUl .journeyli .journeyliTitle {
+  display: flex;
+  align-items: center;
+}
+.journeyList .journeyUl .journeyli .journeyliTitle .journeyliIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 50px 0 0;
+}
+
+.postWrapper {
+  padding: 110px 0;
+  background-color: #fff;
+}
+.postWrapper .postWrapperTop {
+  padding: 0 0 50px 0;
+}
+.postWrapper .postTopCta {
+  display: flex;
+  justify-content: flex-end;
+}

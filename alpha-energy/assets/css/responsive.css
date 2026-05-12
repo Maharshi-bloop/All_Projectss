@@ -1,0 +1,200 @@
+@media (max-width:1366px) {
+	.bannerContent { width: 60%; }
+	.photoSwiper:before { width: 300px; top: -30vh; }
+	.labs:before { width: 120px; height: 120px; }
+	.team:before { width: 300px; top: -20%; }
+	.textDesc:before { top: 20%; width: 300px; height: 300px; }
+	.textDesc:after { bottom: -43%; right: -4%; width: 300px; height: 300px; }
+	.randDBannerInner { width: 80%; }
+	.contactFormWrap:after { width: 170px; height: 250px; }
+}
+@media (max-width:1280px) {
+	.footerUl ul + ul { gap: 22px; }
+	.footerUl ul li a, .coypRightUl ul a { font-size: var(--sfont); }
+	.needsInner { padding: 80px 50px; }
+	.csContent { padding: 30px 20px 0 0; }
+}
+@media (max-width:1024px) {
+	:root { --xxlfont: 42px; --xlfont: 34px; --lfont: 28px }
+	.hdHeading .xlHeading { font-size: var(--xlfont); }
+	.hdBoxInner { padding: 100px 50px 80px; }
+	.lottieSec { padding: 250px 0; }
+	.leftObject:before { width: 260px; height: 260px; }
+	.lottieSec::after { bottom: -3%; width: 200px; height: 250px; }
+	.csContent { padding: 30px 0 0 0; }
+	.footerLogo img { width: 90%; }
+	.footerUl ul + ul { gap: 12px; }
+	.footerUlWrap { gap: 0; }
+	.leftObject .hdBoxInner:before { bottom: -53%; left: -9%; }
+	.threeVideo:before { width: 240px; }
+	header { margin: 24px 0 0 0; }
+	.aboutBannerInner .videoOnly { margin: 50px 0 80px 0; }
+	.aboutBannerInner:before { width: 70px; height: 70px; left: 0; }
+	.bubble2 { width: 300px; }
+	.imageOnly:before { left: -105px; bottom: 89%; width: 260px; height: 260px; }
+	.performance:before { top: -100px; }
+	.desc { width: 100%; }
+	.randDBanner::before { width: 300px; top: -12%; right: -10%; }
+	.randDBanner:after { bottom: 38%; left: -11%; width: 250px; height: 250px; }
+	.leader:before { top: -13%; right: -9%; width: 290px; height: 290px; }
+	.hdHeading .xlHeading { width: 90%; }
+	.photoSwiper:before { width: 200px; top: -21vh; }
+	.leftOneObject:before { width: 290px; height: 290px; }
+	.pageTopPadding { padding: 200px 0 0 0; }
+}
+@media (max-width:991px) {
+	.hdHeading .primaryBtn { margin: 16px 0 0 0; position: absolute; bottom: 70px; }
+	.hdBoxInner { padding: 100px 50px 150px; }
+	.lottieFile { position: unset; transform: unset; width: 50%; margin: 0 auto; margin-top: -120px }
+	.lottieSecInner { display: flex; flex-direction: column; }
+	.lottieSec { padding: 150px 0 150px 0; }
+	.videoList { height: 500px; transition: all 0.3s; }
+	.hoverContent { padding: 50px 20px; }
+	.footerUl ul li a, .coypRightUl ul a { font-size: var(--nfont); }
+	.footerUlWrap { gap: 20px; }
+	.bubble2 { width: 330px; height: 220px; }
+	.footerTop { padding-top: 90px; }
+	.threeVideoTop { margin: 0 0 50px 0 }
+	.videoListing:before { display: none; }
+	.swiperBottomBtn { justify-content: center; }
+	.videoOnlyInner { height: 380px; }
+	.videoOnly { margin: 80px 0; }
+	.map:before { top: -40px; }
+	.performanceContent { padding: 50px; }
+	tbody tr td { padding: 12px 22px; }
+	.textDesc:before { display: none; }
+	.tdLottieFile { margin-right: 0; }
+	.textDescInner .row { position: relative; padding-bottom: 90px; }
+	.tdHeading .primaryBtn { position: absolute; bottom: 0; }
+	.techBanner:before { width: 300px; height: 300px; }
+	.techBanner:after { bottom: 40%; width: 300px; height: 300px; }
+	.needTop { text-align: left !important; }
+	.needImage { width: 100%; height: 500px; margin-bottom: 0; margin-top: 50px; }
+	.needImage img { width: 100%; height: 100%; object-fit: cover; }
+}
+@media (max-width:768px) {
+	:root { --xmfont: 18px; --mfont: 16px; }
+	.bannerContent { width: 60%; }
+	.bubble2 { width: 250px; height: 180px; top: -70px; }
+	.bubble2Blur { left: -40px; bottom: 180px; width: 150px; }
+	.logo { max-width: 40%; }
+	.techBanner .videoOnlyInner, .videoOnlyInner { height: 420px; border-radius: 70px; }
+	.techBanner .videoOnlyInner video, .videoOnlyInner video { border-radius: 60px; }
+	.lsContent { max-width: 50%; margin-left: auto; margin-top: 0; }
+	.absoluteBtn { top: 50%; left: 50%; }
+	.lottieSec::after { bottom: -7%; width: 150px; height: 180px; }
+	.mobileImage { display: block; }
+	.deskImage { display: none; }
+	.pageTopPadding { padding: 200px 0 0 0; }
+	.aboutBannerInner .videoOnly { margin: 20px 0 80px 0; }
+	.aboutBanner:before { width: 200px; height: 200px; right: -100px; top: 160px; }
+	.aboutBannerInner:before { width: 70px; height: 70px; left: -30px; bottom: 10%; top: auto; }
+	.photoSwiper:before { width: 240px; top: -20vh; }
+	.hdsHeading .primaryBtn { position: absolute; bottom: 0; }
+	.hdSectionInner { position: relative; padding: 0 0 90px 0; }
+	.capContent { margin: 0 0 0 65px; }
+	table { border: 0; }
+	table thead { border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+	table tr { display: block; margin-bottom: 25px; background-color: transparent !important; }
+	table td { display: block; width: 100%; }
+	table td::before { content: attr(data-label); font-weight: bold; text-transform: uppercase; width: 100%; display: block; height: 100% !important; color: #0562B6; }
+	table td:last-child { border-bottom: 0; }
+	tbody tr td { margin: 0 0 10px 0; }
+	tbody tr td:nth-child(2) { background-color: var(--white); }
+	.needUl ul { padding: 0; }
+	.innerCircle { top: 0; transform: translate(-50%, 0) }
+	.innerDrop { top: 0; transform: translate(-50%, -20px); }
+	.tdLottieFile { margin-right: 0; margin: 80px 0 0 0; padding: 300px 0 0 0; }
+	.textDesc:after { bottom: -26%; right: -17%; }
+	.techBannerTop { width: 80%; }
+	.scrollAni { margin: 120px 0; overflow-x: clip; }
+	.deskRow { display: none; }
+	.mobileRowWrap .row { margin-bottom: 130px; }
+	.mobileRowWrap .row:last-child { margin: 0; }
+	.mobileRowWrap { display: block; }
+	.scrollConatent, .scrollImageWrp { height: unset; }
+	.scrollImage { position: relative; opacity: 1; top: 50px; visibility: visible; transform: scale(1); left: 0; }
+	.randDBannerInner { width: 90%; }
+	.randDBanner:after { bottom: 40%; width: 220px; }
+	.leader:before { top: -8%; }
+	.leader:before { display: none; }
+	.contactFormWrap:after { width: 140px; height: 240px; }
+	.cfwInner:before { top: -8%; width: 290px; height: 290px; }
+}
+@media (max-width:480px) {
+	:root { --xxlfont: 38px; --xlfont: 28px; --lfont: 24px; --xmfont: 18px; --mfont: 16px; }
+	.mSubText { line-height: 22px; }
+	.bannerContent { width: 100%; }
+	.techBanner .videoOnlyInner, .videoOnlyInner { padding: 10px; }
+	.hdHeading .xlHeading { width: 100%; }
+	.videoList { height: 400px; }
+	.leftObject:before { top: -19%; left: -21%; width: 190px; height: 200px; }
+	.hdBoxInner { padding: 140px 25px 170px; }
+	.hdHeading .primaryBtn { bottom: 90px; }
+	.csImage { width: 90px; height: 90px; margin-top: -75px; }
+	.caseStudyList { margin: 80px 0 0 0; }
+	.footerTop { padding: 140px 20px 50px; }
+	.bubble2Blur { bottom: 220px; }
+	.footerUlWrap { flex-direction: column; }
+	.footerUl { width: 100%; }
+	.logo { max-width: 55%; position: relative; z-index: 99; }
+	.footerMain { margin: 30px 0; position: relative; padding-bottom: 70px; }
+	.footerUl:first-child ul:last-child { position: absolute; bottom: 0; }
+	.leftObject .hdBoxInner:before { bottom: -22%; left: -9%; width: 190px; height: 190px; }
+	.lottieSec { padding: 100px 0 150px 0; }
+	.lottieSec::after { bottom: -5%; width: 120px; height: 140px; }
+	.linkedinIcon { margin-top: 15px; }
+	.navbar ul { width: 100%; }
+	.lottieFile { margin-top: -20px; width: 100%; }
+	.lsContent { max-width: 80%; }
+	.absoluteBtn { top: 51%; left: 36%; }
+	.labsTop { width: 100%; }
+	.popUpCloseBtn { display: block; }
+	.popUpCloseBtn { position: absolute; right: 20px; top: 20px; width: 30px; height: 30px; background-size: contain; }
+	.popUpCloseBtn span:first-child { width: 20px; height: 2px; background: #000; transform: rotate(45deg) translate(12px, 6px); display: block; }
+	.popUpCloseBtn span:last-child { width: 20px; height: 2px; display: block; background: #000; transform: rotate(-45deg) translate(-5px, 11px); }
+	.teamPopup { min-height: 100vh; border-radius: 0; }
+	.popupContent { max-height: 75vh; }
+	.profileInfo strong { font-size: 14px; }
+	.profileInfo { padding: 10px 16px; }
+	.profileInfo span { font-size: 12px; }
+	.team:before { width: 170px; top: -15%; z-index: 1; right: -21%; }
+	.techBanner:before { width: 200px; height: 200px; right: -90px; }
+	.techBanner:after { left: -110px; width: 200px; height: 200px; }
+	.imageOnly:before { left: -105px; bottom: 102%; width: 200px; height: 200px; }
+	.imageOnlyInner { border-radius: 20px; overflow: clip; height: 260px; }
+	.hdsHeading .lHeading { width: 70%; }
+	.capBox { padding: 30px 20px; }
+	.profileImage { min-height: 250px; height: 100%; }
+	.profileImage img { width: 100%; height: 100%; object-fit: cover; }
+	.needsInner { padding: 50px 30px; }
+	.innerCircle { width: 80%; }
+	.tdLottieFile { padding: 290px 0 0 0; }
+	.textDesc:after { display: none; }
+	.techBannerTop { width: 100%; }
+	.needUl { margin: 30px 0 0 0; }
+	.needImage { height: auto; }
+	.performanceContent { padding: 50px 20px; }
+	.scrollImage { position: relative; opacity: 1; top: 50px; visibility: visible; transform: scale(1); left: -30vw; left: -40vw; width: 130%; }
+	.desc { font-size: 20px; width: 100%; margin: 12px 0 24px; }
+	.leaderContent h4 { width: 80%; }
+	.leaderContent { padding: 50px 30px; }
+	.hdBoxInner { padding: 50px 30px 170px; }
+	.leftOneObject:before { width: 290px; height: 290px; left: -25%; bottom: -20%; }
+	.photoSwiper { margin-bottom: 50px; }
+	.photoSwiper:before { width: 180px; top: -20vh; left: -20%; }
+	.randDBanner::before { width: 250px; top: -9%; right: -22%; }
+	.randDBanner:after { bottom: 47%; width: 150px; }
+	.primaryBtn { font-size: 14px; }
+	.hdHeading .primaryBtn { margin: 16px 0 0 0; position: absolute; bottom: 70px; left: 20px; }
+	.accordion-button::after { top: 25px; }
+	.formDesign { padding: 40px 30px; }
+	.formDesign input, .formDesign textarea, .formDesign select { padding: 10px 0; }
+	.pageTopPadding { padding: 150px 0 0 0; }
+	.cfwInner:before { left: -29%; }
+	.contactFormWrap:after { width: 100px; height: 190px; bottom: -12%; }
+}
+@media (max-width:380px) {
+	.primaryBtn:before, .primaryBtn span { width: 32px; height: 32px; }
+	.primaryBtn { padding: 6px; padding-left: 17px; ; gap: 15px; }
+}
