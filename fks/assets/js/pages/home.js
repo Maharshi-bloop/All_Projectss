@@ -196,6 +196,58 @@ function placeItems() {
 placeItems();
 
 window.addEventListener("resize", placeItems);
+
+const $nameItems = $(".productCataNameListing");
+const $productItems = $(".productListing");
+const $cataItems = $(".productCataList");
+
+let currentIndex = 0;
+
+// DEFAULT ACTIVE
+setActive(currentIndex);
+
+function setActive(index) {
+
+    $nameItems.removeClass("active");
+    $productItems.removeClass("active");
+    $cataItems.removeClass("active");
+
+    $nameItems.eq(index).addClass("active");
+    $productItems.eq(index).addClass("active");
+    $cataItems.eq(index).addClass("active");
+}
+
+// NEXT BUTTON
+$(".nextBtn").on("click", function () {
+
+    currentIndex++;
+
+    if (currentIndex >= $nameItems.length) {
+        currentIndex = 0;
+    }
+
+    setActive(currentIndex);
+});
+
+// PREV BUTTON
+$(".prevBtn").on("click", function () {
+
+    currentIndex--;
+
+    if (currentIndex < 0) {
+        currentIndex = $nameItems.length - 1;
+    }
+
+    setActive(currentIndex);
+});
+
+// CLICK ON productCataList
+$(".productCataList").on("click", function () {
+
+    const index = $(this).index();
+
+    setActive(index);
+});
 /* productCata js end */
 
 
