@@ -135,5 +135,6 @@ $(document).ready(function () {
         wrapper.appendChild(dot);
     });
     /* map js end */
+    
 
 })

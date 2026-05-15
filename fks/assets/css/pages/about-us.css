@@ -1,6 +1,21 @@
 .about-us { background-color: var(--colorBg); }
-.aboutBanner { position: relative; padding: 200px 0; overflow: clip; }
+.aboutBanner { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; }
+.aboutBanner:before { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; top: -30%; left: -20%; transform: rotate(135deg); }
+.aboutBanner:after { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; bottom: -40%; right: -20%; transform: rotate(-45deg); z-index: -1; }
+.aboutBanner .marqueeWrapper { bottom: -60px; }
+.aboutBannerInner { text-align: center; width: 50%; margin: 0 auto; }
 .aboutBannerInner .heading11xl { text-align: center; color: var(--colorAccent); }
+.aboutBannerInner .subTextXl { color: var(--colorBlack); }
+.box { text-align: center; display: flex; align-items: center; justify-content: center; width: 196px; height: 100px; position: absolute; top: 400px; border-radius: 10px; }
+.productImage.product1 { position: absolute; width: 90px; top: 12%; left: 32%; transform: rotate(-70deg); }
+.productImage.product2 { width: 30px; position: absolute; top: 20%; right: 35%; transform: rotate(65deg); }
+.productImage.product3 { position: absolute; top: 50%; left: 21%; transform: rotate(-45deg); }
+.productImage.product4 { position: absolute; bottom: 30%; right: 40%; transform: rotate(80deg); }
+.productImage.product5 { position: absolute; top: 36%; right: 24%; transform: rotate(125deg); width: 50px; }
+.productImage.product6 { position: absolute; bottom: 10%; right: 31%; transform: rotate(-45deg); }
+.productImage.product7 { position: absolute; top: 20%; right: -2%; transform: rotate(-35deg); }
+.productImage.product8 { position: absolute; top: 40%; left: -4%; transform: rotate(25deg); }
+.productImage.product9 { position: absolute; bottom: 10%; right: 6%; transform: rotate(35deg); }
 
 /* introVideo css */
 .introVideo { padding: 90px 0; background-color: var(--colorPrimary); }
