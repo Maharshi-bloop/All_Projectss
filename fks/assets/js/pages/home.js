@@ -32,27 +32,52 @@ new Swiper('.waveSlider .swiper', {
 // 🔹 Cards animation
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".multiProductList").forEach((item) => {
+const cards = gsap.utils.toArray(".multiProductList");
 
-    gsap.fromTo(item,
+/* INITIAL POSITION */
+gsap.set(cards, {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    xPercent: -50,
+    yPercent: -50
+});
+
+/* TIMELINE */
+const tll = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".multiProduct",
+        start: "top top",
+        end: `+=${cards.length * 600}`,
+        pin: true,
+        scrub: 1.5,
+        anticipatePin: 1
+    }
+});
+
+cards.forEach((card, i) => {
+
+    tll.fromTo(card,
         {
-            opacity: 0,
-            scale: 0.7,
-            ease: "power2.out",
-            y: 150 // small lift only (no layout break)
+            x: i % 2 === 0 ? "-150vw" : "150vw",
+            rotate: i % 2 === 0 ? -12 : 12,
+            scale: 0.92
         },
         {
-            opacity: 1,
+            x: 0,
+
+            // final slight rotation
+            rotate: i % 2 === 0 ? -3 : 3,
+
+            // slight vertical offset so bottom cards peek
+            yPercent: -48,
+
             scale: 1,
-            y: 0,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: item,
-                start: "top 85%",
-                end: "top 60%",
-                scrub: 2, // 🔥 THIS makes it smooth
-            }
-        });
+            ease: "expo.out",
+            duration: 1.2
+        },
+        i
+    );
 
 });
 

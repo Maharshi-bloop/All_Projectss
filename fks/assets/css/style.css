@@ -72,6 +72,7 @@ table { border-collapse: collapse; width: 100%; }
 .heading12xl { font-size: var(--font12xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading11xl { font-size: var(--font11xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading10xl { font-size: var(--font10xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading9xl { font-size: var(--font9xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading7xl { font-size: var(--font7xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading3xl { font-size: var(--font3xl); font-weight: 700; color: var(--colorPrimary); font-family: var(--fontSecondary); }
