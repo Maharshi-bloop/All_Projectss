@@ -77,6 +77,16 @@
 .multiProductListContent .heading9xl { color: var(--colorPrimary); }
 .multiProductListContent .subTextXl { color: var(--colorBlack); }
 .multiProductList img { width: 100%; height: 100%; object-fit: cover; }
+.floatingObjectOne { position: absolute; top: -60px; z-index: -1; left: 0; width: 250px; animation: bouce 5s ease-in-out infinite; }
+.floatingObjectTwo { position: absolute; width: 280px; bottom: -70px; right: 0; animation: bouce2 6s ease-in-out infinite; }
+@keyframes bouce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(20px); }
+}
+@keyframes bouce2 {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(40px); }
+}
 
 /* whyChoose css */
 .whyChoose { padding: 120px 0; background-color: var(--colorBg); overflow-x: clip; position: relative; }
