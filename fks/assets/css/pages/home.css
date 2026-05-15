@@ -9,8 +9,8 @@
 .headingText { padding: 130px 0; background-color: var(--colorPrimary); position: relative; overflow-x: clip; }
 .headingTextInner { text-align: center; }
 .headingTextInner .heading11xl { position: relative; }
-.headingTextInner .heading11xl:before { content: ''; position: absolute; width: 90px; height: 90px; background: url(../images/white-star-icon.svg) center center no-repeat; top: 10px; left: 160px; animation: rotateStar 10s linear infinite; }
-.headingTextInner .heading11xl:after { content: ''; position: absolute; width: 90px; height: 90px; background: url(../images/white-star-icon.svg) center center no-repeat; top: 10px; right: 180px; animation: rotateStar 10s linear infinite; }
+.headingTextInner .heading11xl:before { content: ''; position: absolute; width: 90px; height: 90px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 10px; left: 160px; animation: rotateStar 10s linear infinite; }
+.headingTextInner .heading11xl:after { content: ''; position: absolute; width: 90px; height: 90px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 10px; right: 180px; animation: rotateStar 10s linear infinite; }
 .headingText .marqueeWrapper { bottom: auto; top: 99%; transform: rotate(180deg); }
 
 /* productCata css */
