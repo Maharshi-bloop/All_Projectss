@@ -267,12 +267,12 @@ $(".prevBtn").on("click", function () {
 });
 
 // CLICK ON productCataList
-$(".productCataList").on("click", function () {
+/* $(".productCataList").on("click", function () {
 
     const index = $(this).index();
 
     setActive(index);
-});
+}); */
 /* productCata js end */
 
 
