@@ -279,31 +279,25 @@ $(".productCataList").on("click", function () {
 /* banner scroll animation start */
 gsap.registerPlugin(ScrollTrigger);
 
-const image = document.querySelector(".wire");
-
-gsap.set(".reveal", {
-    clipPath: "inset(100% 0 0 0)"
-});
-
-let pyramidTl = gsap.timeline({
+let tl1 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".pyramid",
-        start: "10% top",
-        end: "+=1500",
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true
+        trigger: ".hero",
+
+        // animation starts a little later
+        start: "top 80%",
+
+        // shorter animation distance
+        end: "bottom 80%",
+
+        scrub: 1.2
     }
 });
 
-pyramidTl.to(".reveal", {
+tl1.to(".reveal", {
     clipPath: "inset(0% 0 0 0)",
     ease: "none"
-}, 0)
-
-    .to(".scan-line", {
-        bottom: image.offsetHeight,
-        ease: "none"
-    }, 0);
+}, 0);
 /* banner scroll animation end */
+
+
+

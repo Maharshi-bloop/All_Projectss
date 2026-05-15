@@ -149,6 +149,25 @@
 .brandListingSwiper .swiper-wrapper, .brandListingSwiper1 .swiper-wrapper { transition-timing-function: linear; }
 
 /* pyramid css */
+
+/* .pyramid { padding: 200px 0; background-color: var(--colorSecondary); overflow-x: clip; }
+.pyramidTop { text-align: center; }
+.pyramidTop .heading11xl { color: var(--colorAccent); }
+#gameCanvas { position: relative; top: 0; left: 0; width: 100vw; height: 100vh; display: block; image-rendering: crisp-edges; }
+.pyramidImage { position: relative; }
+.pyramidImageInner { position: relative; right: 0; padding: 200px 0 0 0; }
+.pyramidPopUpList { display: flex; align-items: center; width: max-content; background-color: var(--colorWhite); padding: 20px; border: 4px solid var(--colorAccent); border-radius: 80px; gap: 10px; }
+.indexNumber { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--colorPrimary); border-radius: 50%; color: var(--colorWhite); font-size: 30px; }
+.popupContent .heading5xl { color: var(--colorAccent); margin: 0; font-size: 26px; }
+.popupContent .subTextXl { color: var(--colorBlack); font-size: 16px; }
+.pyramidPopUpList { position: absolute; opacity: 0; transform: translateY(80px) scale(0.9); transition: none; }
+.pyramidPopUpList:first-child { top: 135px; left: 18%; }
+.pyramidPopUpList:nth-child(2) { top: 98px; left: 43%; }
+.pyramidPopUpList:nth-child(3) { top: 65px; left: 40%; }
+.pyramidPopUpList:last-child { top: 195px; left: 67%; }
+.popupContent { line-height: 1; } */
+
+/* pyramid css */
 .pyramid { padding: 200px 0; background-color: var(--colorSecondary); overflow-x: clip; }
 .pyramidTop { text-align: center; }
 .pyramidTop .heading11xl { color: var(--colorAccent); }
@@ -167,9 +186,17 @@
 .popupContent { line-height: 1; }
 
 /*  */
-.hero { margin: 100px 0 0 0; }
+.hero { height: 150vh; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.wire, .color { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.reveal { position: absolute; inset: 0; clip-path: inset(100% 0 0 0); }
+.scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: #ffcc00; bottom: 0; }
+
+/*  */
+
+/* .hero { margin: 100px 0 0 0; }
 .hero { position: relative; }
 .scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, rgba(117, 114, 102, 0) 0%, #E6C020 18.69%, #E6C020 66.47%, rgba(230, 192, 32, 0) 100%); ; bottom: 0%; pointer-events: none; }
 .wire, .color { position: absolute; width: 100%; left: 0; top: 0; height: auto; }
 .stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
-.reveal { position: absolute; inset: 0; overflow: hidden; height: 0%; }
+.reveal { position: absolute; inset: 0; overflow: hidden; height: 0%; } */
