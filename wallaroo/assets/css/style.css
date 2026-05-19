@@ -172,6 +172,7 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .formField input:focus, .formField select:focus { outline: none; border-color: var(--colorSecondary); }
 .formField select { -webkit-appearance: none; color: #626262; background: url(../images/drop-down-arrow.svg) center center no-repeat; background-size: 16px; background-position: 95% 50%; background-color: var(--colorBg); }
 .formField.checkBoxWrap { margin: 10px 0 50px; text-align: center; }
+input.primaryBtn { border: none; }
 
 /* footer css */
 footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
