@@ -109,34 +109,3 @@ cards.forEach((card, index) => {
     }, index * 0.7);
 
 });
-
-
-/*
-See https://gsap.com/draggable/ for details. 
-This demo uses InertiaPlugin which is a membership benefit of Club GreenSock, https://gsap.com/pricing/
-*/
-/* gsap.registerPlugin(ScrollTrigger, Draggable);
-
-var $container = $("#aboutBanner"),
-    gridWidth = $("body").width() / 5,
-    gridHeight = 100;
-
-gsap.set(".box", {
-    width: gridWidth,
-    height: gridHeight
-});
-
-Draggable.create(".box", {
-    bounds: $container,
-    edgeResistance: 0,
-    type: "x,y",
-    autoScroll: true,
-    liveSnap: {
-        x: function(value) {
-            return Math.round(value / gridWidth) * gridWidth;
-        },
-        y: function(value) {
-            return Math.round(value / gridHeight) * gridHeight;
-        }
-    }
-}); */

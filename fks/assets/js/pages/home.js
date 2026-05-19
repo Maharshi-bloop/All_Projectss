@@ -144,36 +144,6 @@ new Swiper('.brandListingSwiper1 .swiper', {
 /* brandListingSwiper  js end */
 
 
-
-/* pyramidPopUpListing js start */
-gsap.registerPlugin(ScrollTrigger);
-
-const popups = gsap.utils.toArray(".pyramidPopUpList");
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".pyramid",
-        start: "20% top",
-        end: () => `+=${window.innerHeight * popups.length}`, // control scroll length
-        scrub: 1,
-        pin: true,
-    }
-});
-
-// Animate each popup step-by-step
-popups.forEach((popup, index) => {
-    tl.to(popup, {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.5,
-        ease: "power2.out"
-    }, index * 1.5); // spacing between each popup
-});
-/* pyramidPopUpListing js start */
-
-
-
 /* productCata js start */
 const items = document.querySelectorAll(".productCataList");
 const wrapper = document.querySelector(".productCataListingWrapper");
@@ -277,26 +247,54 @@ $(".prevBtn").on("click", function () {
 
 
 /* banner scroll animation start */
+
 gsap.registerPlugin(ScrollTrigger);
 
-let tl1 = gsap.timeline({
+/* =========================
+   PYRAMID PREMIUM SCROLL
+========================= */
+
+gsap.registerPlugin(ScrollTrigger);
+
+const pyramidTl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".hero",
-
-        // animation starts a little later
-        start: "top 80%",
-
-        // shorter animation distance
-        end: "bottom 80%",
-
-        scrub: 1.2
+        trigger: ".pyramid",
+        start: "top top",
+        end: "+=500",
+        pin: true,
+        scrub: 1,
+        anticipatePin: 1
     }
 });
 
-tl1.to(".reveal", {
-    clipPath: "inset(0% 0 0 0)",
-    ease: "none"
-}, 0);
+/* full pyramid visible */
+pyramidTl.fromTo(".reveal",
+    {
+        clipPath: "inset(100% 0 0 0)"
+    },
+    {
+        clipPath: "inset(0% 0 0 0)",
+        ease: "none",
+        duration: 1.4
+    },
+    0
+);
+
+/* subtle premium zoom */
+pyramidTl.fromTo(".stage",
+    {
+        scale: 0.96,
+        y: 20
+    },
+    {
+        scale: 1,
+        y: 0,
+        ease: "power2.out",
+        duration: 1.4
+    },
+    0
+);
+
 /* banner scroll animation end */
 
 

@@ -27,8 +27,8 @@
 		window.addEventListener("resize", resizeCanvas);
 
 		// ─── LAYOUT ───────────────────────────────────────────────────────────────────
-		const HUD_H = 150;
-		const FLOOR_Y = H - 250;
+		const HUD_H = 200;
+		const FLOOR_Y = H - 100;
 		const WALL_TOP = HUD_H + 50;
 		const WALL_BOT = FLOOR_Y;
 		const SHELF_ROWS = 5;
@@ -49,25 +49,54 @@
 		// PRODUCTS (no power-ups, simple grocery items only)
 		// ═══════════════════════════════════════════════════════════════════════════════
 		const PRODUCTS = [
-			{ name: 'Apple', img: 'assets/images/product/apple.png', weight: 0.5, category: 'Fruits' },
-			{ name: 'Banana', img: 'assets/images/product/banana.png', weight: 0.4, category: 'Fruits' },
-			{ name: 'Milk', img: 'assets/images/product/milk.png', weight: 1.0, category: 'Dairy' },
-			{ name: 'Cookie', img: 'assets/images/product/cookie.png', weight: 0.3, category: 'Snacks' },
-			{ name: 'Juice', img: 'assets/images/product/juice.png', weight: 1.2, category: 'Drinks' },
-			{ name: 'Bread', img: 'assets/images/product/bread.png', weight: 0.6, category: 'Bakery' },
-			{ name: 'Broccoli', img: 'assets/images/product/broccoli.png', weight: 0.7, category: 'Vegetables' },
-			{ name: 'Ice Cream', img: 'assets/images/product/icecream.png', weight: 0.4, category: 'Dairy' },
+			{ name: 'Mongoffi', img: 'assets/images/product/Group 188.png', weight: 0.5, category: 'Biscuits' },
+			{ name: 'Manga', img: 'assets/images/product/Manga.png', weight: 0.5, category: 'Biscuits' },
+			{ name: 'Break', img: 'assets/images/product/Break.png', weight: 0.5, category: 'Biscuits' },
+			{ name: 'CookieBoom', img: 'assets/images/product/CookieBoom.png', weight: 0.3, category: 'Biscuits' },
+			{ name: 'Empire', img: 'assets/images/product/Empire.png', weight: 1.2, category: 'Biscuits' },
+			{ name: 'Monsaic', img: 'assets/images/product/Monsaic.png', weight: 0.6, category: 'Biscuits' },
+			{ name: 'Harmony', img: 'assets/images/product/Harmony.png', weight: 0.7, category: 'Biscuits' },
+			{ name: 'Dorello', img: 'assets/images/product/Dorello.png', weight: 0.7, category: 'Biscuits' },
+			{ name: 'Go7', img: 'assets/images/product/Go7.png', weight: 0.7, category: 'Biscuits' },
+			{ name: 'Carnaval', img: 'assets/images/product/Carnaval.png', weight: 0.7, category: 'Biscuits' },
+			{ name: 'Miximax', img: 'assets/images/product/Miximax.png', weight: 0.7, category: 'Chocolate' },
+			{ name: 'MonChoco', img: 'assets/images/product/MonChoco.png', weight: 0.4, category: 'Chocolate' },
+			{ name: 'MonChoco2', img: 'assets/images/product/MonChoco1.png', weight: 0.4, category: 'Chocolate' },
+			{ name: 'ChocoBoss', img: 'assets/images/product/ChocoBoss.png', weight: 0.7, category: 'Chocolate' },
+			{ name: 'Nuttos', img: 'assets/images/product/Nuttos.png', weight: 0.7, category: 'Chocolate' },
+			{ name: 'Classic', img: 'assets/images/product/Classic.png', weight: 0.4, category: 'Coffee' },
+			{ name: 'Carmel Cappuccino', img: 'assets/images/product/Carmel Cappuccino.png', weight: 0.4, category: 'Coffee' },
+			{ name: '3in1', img: 'assets/images/product/3in1.png', weight: 0.4, category: 'Coffee' },
+			{ name: 'White Chocolate', img: 'assets/images/product/White Chocolate.png', weight: 0.4, category: 'Coffee' },
+			{ name: 'Majeste', img: 'assets/images/product/Majeste.png', weight: 0.4, category: 'Coffee' },
+			{ name: 'Panelli', img: 'assets/images/product/Panelli.png', weight: 0.4, category: 'Baking' },
+			{ name: 'Gourmet', img: 'assets/images/product/Gourmet.png', weight: 0.4, category: 'Baking' },
+			{ name: 'Creamaya', img: 'assets/images/product/Creamaya.png', weight: 0.4, category: 'Peanut' },
+			{ name: 'Nutlove', img: 'assets/images/product/Nutlove.png', weight: 0.4, category: 'Peanut' },
+			{ name: 'Super Type55', img: 'assets/images/product/Super Type55.png', weight: 0.4, category: 'Flour' },
+			{ name: 'Export Type45', img: 'assets/images/product/Export Type45.png', weight: 0.4, category: 'Flour' },
+			{ name: 'Export Type55', img: 'assets/images/product/Export Type55.png', weight: 0.4, category: 'Flour' },
+			{ name: 'Type65', img: 'assets/images/product/Type65.png', weight: 0.4, category: 'Flour' },
+			{ name: 'Type150', img: 'assets/images/product/Type150.png', weight: 0.4, category: 'Flour' },
 		];
-		const productImages = {};
 
+		// ── Preload images keyed by img path (avoids duplicate-name collision) ────────
+		const productImages = {};
 		PRODUCTS.forEach(p => {
 			const img = new Image();
-			img.src = p.img;
-			productImages[p.name] = img;
+			img.src = window.themeUrl + '/' + p.img;
+			productImages[p.img] = img;
 		});
 
-		const CATEGORIES = ['Fruits', 'Dairy', 'Snacks', 'Drinks', 'Bakery', 'Vegetables'];
-		const CAT_EMOJIS = { Fruits: '🍎', Dairy: '🥛', Snacks: '🍪', Drinks: '🧃', Bakery: '🍞', Vegetables: '🥦' };
+		// ── Category-to-products lookup built once ────────────────────────────────────
+		const CATEGORIES = ['Biscuits', 'Chocolate', 'Coffee', 'Baking', 'Peanut', 'Flour'];
+		const CAT_PRODUCTS = {};
+		CATEGORIES.forEach(cat => {
+			CAT_PRODUCTS[cat] = PRODUCTS.filter(p => p.category === cat);
+		});
+
+		// const CAT_EMOJIS = { Biscuits: 'assets/images/product/cookie.png', Chocolate: 'assets/images/product/spreads.png', Coffee: 'assets/images/product/coffee.png', Baking: 'assets/images/product/baking.png', Peanut: 'assets/images/product/peanut.png', Flour: 'assets/images/product/flour.png' };
+		const CAT_EMOJIS = { Biscuits: '', Chocolate: '', Coffee: '', Baking: '', Peanut: '', Flour: '' };
 
 		// ═══════════════════════════════════════════════════════════════════════════════
 		// SOUND ENGINE
@@ -135,14 +164,31 @@
 		}
 
 		// ═══════════════════════════════════════════════════════════════════════════════
-		// SPAWN
+		// SPAWN — one shelf per category, products cycle within that category
 		// ═══════════════════════════════════════════════════════════════════════════════
 		function spawnGroup() {
-			const cat = PRODUCTS[G.catIdx % PRODUCTS.length];
+			// Cycle through categories (not individual products)
+			const catName = CATEGORIES[G.catIdx % CATEGORIES.length];
 			G.catIdx++;
+
+			const catProducts = CAT_PRODUCTS[catName]; // array of products for this category
+
 			const collected = Array.from({ length: SHELF_ROWS }, () => new Array(COLS_PER_GROUP).fill(false));
-			G.productGroups.push({ startX: G.nextWorldX, cat, collected, highlight: 0 });
+			G.productGroups.push({
+				startX: G.nextWorldX,
+				catName,       // e.g. 'Biscuits'
+				catProducts,   // e.g. [{ name:'Mongoffi', ... }, { name:'Manga', ... }, ...]
+				collected,
+				highlight: 0,
+			});
 			G.nextWorldX += COLS_PER_GROUP * COL_SPACING + GROUP_GAP;
+		}
+
+		// ── Returns the specific product object for a given shelf slot (row, col) ─────
+		// Products cycle: slot 0→product[0], slot 1→product[1], ... wraps around
+		function getProductAt(g, r, c) {
+			const slotIdx = r * COLS_PER_GROUP + c;
+			return g.catProducts[slotIdx % g.catProducts.length];
 		}
 
 		// ═══════════════════════════════════════════════════════════════════════════════
@@ -286,7 +332,9 @@
 							g.collected[r][c] = true;
 							const sx = g.startX + c * COL_SPACING - G.scrollX;
 							const sy = WALL_TOP + r * SEC_H + SEC_H * 0.5;
-							collectItem(g.cat, sx, sy);
+							// ── CHANGED: look up the specific product at this slot ──
+							const product = getProductAt(g, r, c);
+							collectItem(product, sx, sy);
 						}
 						G.isCollecting = false; G.collectProgress = 0; G.collectingItem = null;
 					}
@@ -309,7 +357,7 @@
 		}
 
 		// ═══════════════════════════════════════════════════════════════════════════════
-		// COLLECT ITEM
+		// COLLECT ITEM — now receives a specific product object
 		// ═══════════════════════════════════════════════════════════════════════════════
 		function collectItem(cat, sx, sy) {
 			const newWeight = G.totalWeight + cat.weight;
@@ -331,7 +379,7 @@
 				SoundEngine.newcat();
 				spawnFloater(`✨ NEW: ${cat.category}!`, sx, sy - 38, '#ffd700', 18, 1600);
 			}
-			spawnFloater(`${cat.emoji}  +${cat.weight}kg`, sx, sy, '#ffffff', 17, 1100);
+			spawnFloater(`+${cat.weight}kg`, sx, sy, '#ffffff', 17, 1100);
 			G.shakeTimer = 80; G.flashTimer = 80; G.flashColor = '#ffffff';
 		}
 
@@ -419,12 +467,12 @@
 		// ─── BACKGROUND ───────────────────────────────────────────────────────────────
 		function drawBackground() {
 			const ceil = ctx.createLinearGradient(0, 0, 0, HUD_H + 20);
-			ceil.addColorStop(0, '#1c2a3a'); ceil.addColorStop(1, '#243447');
+			ceil.addColorStop(0, '#ffffff'); ceil.addColorStop(1, '#ffffff');
 			ctx.fillStyle = ceil;
 			ctx.fillRect(0, 0, W, HUD_H + 20);
 
 			const wallGrad = ctx.createLinearGradient(0, HUD_H, 0, FLOOR_Y);
-			wallGrad.addColorStop(0, '#2c3e50'); wallGrad.addColorStop(0.4, '#34495e'); wallGrad.addColorStop(1, '#2c3e50');
+			wallGrad.addColorStop(0, '#ffffff'); wallGrad.addColorStop(0.4, '#ffffff'); wallGrad.addColorStop(1, '#ffffff');
 			ctx.fillStyle = wallGrad;
 			ctx.fillRect(0, HUD_H, W, FLOOR_Y - HUD_H);
 
@@ -489,7 +537,7 @@
 			const top = WALL_TOP, bot = WALL_BOT;
 
 			ctx.fillStyle = highlight > 0.1
-				? `rgba(52,73,94,${0.9 + highlight * 0.1})` : 'rgba(44,62,80,0.95)';
+				? '#ffffff' : 'rgb(255, 255, 255)';
 			rr(sx, top, sw, bot - top, 4); ctx.fill();
 
 			for (let r = 0; r <= SHELF_ROWS; r++) {
@@ -512,15 +560,6 @@
 			}
 			drawSteelPost(sx - 8, top - 4, 10, bot - top + 8, highlight);
 			drawSteelPost(sx + sw - 2, top - 4, 10, bot - top + 8, highlight);
-
-			/* if (highlight > 0) {
-				ctx.save(); ctx.globalAlpha = highlight * 0.15;
-				const glowG = ctx.createRadialGradient(sx + sw / 2, (top + bot) / 2, 0, sx + sw / 2, (top + bot) / 2, sw);
-				glowG.addColorStop(0, '#ffd700'); glowG.addColorStop(1, 'rgba(0,0,0,0)');
-				ctx.fillStyle = glowG;
-				ctx.fillRect(sx - 10, top, sw + 20, bot - top);
-				ctx.restore();
-			} */
 		}
 
 		function drawSteelPost(x, y, w, h, highlight) {
@@ -539,57 +578,30 @@
 			ctx.fillRect(x + 1, y, 2, h);
 		}
 
+		// ── CHANGED: each slot draws its own product from the category ────────────────
 		function drawProducts(g, sx) {
 			for (let r = 0; r < SHELF_ROWS; r++) {
 				for (let c = 0; c < COLS_PER_GROUP; c++) {
 					if (g.collected[r][c]) continue;
 					const px = sx + c * COL_SPACING + COL_SPACING / 2 - PROD_W / 2;
 					const py = WALL_TOP + r * SEC_H + (SEC_H - PROD_H) - 8;
-					drawProduct(g.cat, px, py, PROD_W, PROD_H, g.highlight);
+					// Get the specific product for this slot (cycles through category's products)
+					const product = getProductAt(g, r, c);
+					drawProduct(product, px, py, PROD_W, PROD_H, g.highlight);
 				}
 			}
 		}
 
+		// ── CHANGED: uses product.img as image key instead of product.name ────────────
 		function drawProduct(cat, x, y, w, h, highlight) {
 			ctx.save();
 
-			// Shadow
-			/* ctx.fillStyle = 'rgba(0,0,0,0.25)';
-			rr(x + 3, y + h - 4, w - 6, 8, 4);
-			ctx.fill(); */
-
-			/* // Card background
-			ctx.fillStyle = '#ffffff';
-			rr(x, y, w, h, 8);
-			ctx.fill(); */
-
-			/* ctx.strokeStyle = 'rgba(0,0,0,0.2)';
-			ctx.lineWidth = 1;
-			rr(x, y, w, h, 8);
-			ctx.stroke(); */
-
-			// Draw image
-			const img = productImages[cat.name];
+			// Draw image — keyed by img path to avoid duplicate-name collision
+			const img = productImages[cat.img];
 
 			if (img && img.complete) {
-				const padding = 0;
-				ctx.drawImage(
-					img,
-					x,
-					y,
-					w,
-					h
-				);
+				ctx.drawImage(img, x, y, w, h);
 			}
-
-			// Highlight effect
-			/* if (highlight > 0.3) {
-				ctx.globalAlpha = highlight * 0.25;
-				ctx.fillStyle = '#ffffff';
-				rr(x + 2, y + 2, w - 4, (h - 4) * 0.45, 6);
-				ctx.fill();
-				ctx.globalAlpha = 1;
-			} */
 
 			ctx.restore();
 		}

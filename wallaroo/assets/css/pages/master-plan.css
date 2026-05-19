@@ -1,0 +1,49 @@
+.masterPlanBanner { height: calc(100vh - 120px); position: relative; z-index: 1; }
+.masterPlanBannerImage { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; }
+.masterPlanBannerImage img { width: 100%; height: 100%; object-fit: cover; }
+.masterPlanBannerInner { text-align: center; width: 40%; margin: 0 auto; padding: 50px 0 0 0; color: var(--colorWhite); }
+.masterPlanBannerInner .heading7xl { color: var(--colorWhite); }
+.master-plan .headingText { margin: 0; border-radius: 0; padding: 250px 0; }
+.master-plan .headingTextInner .subTextMd { margin: 20px 0 60px; }
+.master-plan .headingTextInner { width: 100%; }
+
+/* planWrapper css */
+.planWrapperInner { display: flex; height: 100%; }
+.planShowCaseListing { position: relative; width: 60%; height: 100%; }
+.planShowCaseList { position: absolute; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.planShowCaseList.active { opacity: 1; visibility: visible; }
+section.planWrapper { height: 100vh; }
+.fullPlan { position: absolute; width: 190px; height: 190px; top: 100px; left: 30px; }
+.fullPlan img { width: 100%; height: 100%; object-fit: cover; }
+.stagePlanImage { height: 100%; }
+.stagePlanImage img { width: 100%; height: 100%; object-fit: cover; }
+.zoomIcon { width: 40px; height: 40px; position: absolute; top: 50%; left: 50%; z-index: 0; background-color: #FFFFFFCC; display: flex; align-items: center; justify-content: center; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; cursor: pointer; color: var(--colorPrimary); font-size: 24px; }
+.planDataWrap { width: 40%; background-color: var(--colorSecondary); }
+.planStageWrap { padding: 50px; }
+
+/*  */
+.select-dropdown { position: relative; display: inline-block; width: 100%; }
+.select-dropdown__button { background-color: #FFF9F3; color: #616161; border-radius: 3px; cursor: pointer; width: 100%; text-align: left; border: 1px solid #EC793E; padding: 16px 90px 16px 48px; position: relative; }
+.select-dropdown__button::focus { outline: none; }
+.select-dropdown__button i { position: absolute; right: 10px; top: 12px; }
+.select-dropdown__list { position: absolute; display: block; left: 0; right: 0; max-height: 300px; overflow: auto; margin: 0; padding: 0; list-style-type: none; opacity: 0; pointer-events: none; transform-origin: top left; transform: scale(1, 0); transition: all ease-in-out 0.3s; z-index: 2; background-color: #FFF9F3; }
+.select-dropdown__list.active { opacity: 1; pointer-events: auto; transform: scale(1, 1); }
+.select-dropdown__list-item { display: block; list-style-type: none; padding: 16px 90px 16px 48px; background: #FFF9F3; border-top: 1px solid #e6e6e6; font-size: 14px; line-height: 1.4; cursor: pointer; color: #616161; transition: all ease-in-out 0.3s; }
+.select-dropdownInner { display: flex; align-items: center; justify-content: space-between; }
+.select-dropdownInner h3 { margin: 0; }
+.planStageDetail { height: calc(100% - 175px); position: relative; overflow-y: auto;}
+.planStageDetailList { height: 100%; position: absolute; top: 0; width: 100%; left: 0; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.planStageDetailListing { height: 100%; }
+.planStageDetailList.active { opacity: 1; visibility: visible; }
+.select-dropdownInner span { text-transform: uppercase; background-color: #76B743; padding: 10px 40px; font-size: 32px; line-height: 1; color: #fff; }
+thead th { color: var(--colorPrimary); font-weight: 500; padding: 20px; text-align: center ;border-top: 1px solid var(--colorWhite);}
+/* thead {
+    position: sticky;
+    top: 0;
+    background-color: #0f3f66;
+} */
+table tr { color: var(--colorWhite); }
+
+table tr { border-top: 1px solid var(--colorWhite); border-bottom: 1px solid var(--colorWhite); }
+tbody td { padding: 20px; text-align: center; }
+tbody td:first-child span { width: 15px; height: 15px; border-radius: 50%; background-color: #76B743; display: inline-block; }

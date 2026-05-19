@@ -40,6 +40,7 @@ $(document).ready(function () {
          $(".headerOption").removeClass("openMenu");
          $("body").removeClass("scrollOff");
      }); */
+     
     $("nav > ul > li").on("click", function () {
         $("nav > ul > li").removeClass("active");
         $(this).addClass("active");
@@ -132,9 +133,68 @@ $(document).ready(function () {
             }
         });
 
+        document.querySelectorAll(".map-region").forEach(region => {
+            region.addEventListener("mouseenter", function () {
+                const regionId = this.id;
+
+                // reset all
+                document.querySelectorAll(".map-region").forEach(r => r.classList.remove("active"));
+                document.querySelectorAll(".map-dot").forEach(dot => {
+                    dot.classList.remove("active-dot");
+                    dot.querySelector(".map-label").classList.remove("visible");
+                });
+
+                // activate hovered region
+                this.classList.add("active");
+
+                // find matching dot
+                const matchedDot = dots.find(d => d.target === regionId);
+                if (matchedDot) {
+                    const dotEl = document.getElementById(matchedDot.id);
+                    if (dotEl) {
+                        dotEl.classList.add("active-dot");
+                        dotEl.querySelector(".map-label").classList.add("visible");
+                    }
+                }
+            });
+
+            region.addEventListener("mouseleave", function () {
+                this.classList.remove("active");
+
+                document.querySelectorAll(".map-dot").forEach(dot => {
+                    dot.classList.remove("active-dot");
+                    dot.querySelector(".map-label").classList.remove("visible");
+                });
+
+                // restore default
+                const defaultDot = dots.find(d => d.defaultVisible);
+                if (defaultDot) {
+                    const dotEl = document.getElementById(defaultDot.id);
+                    const defaultRegion = document.getElementById(defaultDot.target);
+
+                    if (dotEl) {
+                        dotEl.classList.add("active-dot");
+                        dotEl.querySelector(".map-label").classList.add("visible");
+                    }
+
+                    if (defaultRegion) {
+                        defaultRegion.classList.add("active");
+                    }
+                }
+            });
+        });
+        /*document.querySelectorAll(".map-region").forEach(region => {
+            region.addEventListener("mouseenter", function () {
+                document.querySelectorAll(".map-region").forEach(r => r.classList.remove("active"));
+                this.classList.add("active");
+            });
+
+            region.addEventListener("mouseleave", function () {
+                this.classList.remove("active");
+            });
+        });*/
         wrapper.appendChild(dot);
     });
     /* map js end */
-    
 
 })

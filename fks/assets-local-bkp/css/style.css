@@ -1,0 +1,148 @@
+/* Font Decelaration */
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Black.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-BlackItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Bold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-SemiBold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-BoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraBold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraLight.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Italic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Light.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-LightItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Medium.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-MediumItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Regular.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-Thin.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Extra Condensed'; src: url('../webfonts/FiraSans/FiraSansExtraCondensed-ThinItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansExtraCondensed-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+
+/*  */
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Black.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-BlackItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Bold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-BoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-ExtraBold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-ExtraLight.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Italic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Light.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-LightItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Medium.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-MediumItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Regular.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-SemiBold.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-Thin.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Fira Sans Condensed'; src: url('../webfonts/FiraSans/FiraSansCondensed-ThinItalic.woff2') format('woff2'), url('../webfonts/FiraSans/FiraSansCondensed-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+
+/*  */
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Black.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-BlackItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Bold.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-BoldItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-ExtraBold.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-ExtraLight.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Italic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Light.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-LightItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Medium.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-MediumItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Regular.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-SemiBold.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-Thin.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../webfonts/DMSans/DMSans-ThinItalic.woff2') format('woff2'), url('../webfonts/DMSans/DMSans-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+
+/* RESET CSS */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontPrimary); font-size: var(--fontBase); line-height: 1.6; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+button { background: none; border: none; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+:root { --fontPrimary: 'Fira Sans Condensed'; --fontSecondary: 'Fira Sans Extra Condensed'; --colorPrimary: #C2202F; --colorSecondary: #FFDE17; --colorAccent: #3B0017; --colorBg: #FCFBE4; --colorText: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 14px; --fontMd: 16px; --fontLg: 18px; --fontXl: 20px; --font2xl: 24px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 34px; --font7xl: 38px; --font8xl: 54px; --font9xl: 60px; --font10xl: 68px; --font11xl: 74px; --font12xl: 90px; }
+.heading12xl { font-size: var(--font12xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading11xl { font-size: var(--font11xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading10xl { font-size: var(--font10xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading9xl { font-size: var(--font9xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading7xl { font-size: var(--font7xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading3xl { font-size: var(--font3xl); font-weight: 700; color: var(--colorPrimary); font-family: var(--fontSecondary); }
+.subTextXl { font-size: var(--fontXl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontPrimary); display: inline-block; }
+.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 30px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; }
+.primaryBtn:hover { background-color: var(--colorSecondary); border-color: var(--colorSecondary); color: var(--colorAccent); }
+
+/* === HEADER CSS START === */
+header { padding: 12px 0; background-color: var(--colorSecondary); border-bottom: 1px solid var(--colorAccent); position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
+.headerWrap { display: flex; align-items: center; justify-content: space-between; }
+.toggleBtn { display: flex; padding: 16px 30px; background-color: var(--colorAccent); align-items: center; justify-content: center; gap: 6px; flex-direction: column; position: relative; z-index: 10; border-radius: 40px; cursor: pointer; }
+.toggleBtn span { width: 25px; height: 2px; background-color: var(--colorWhite); display: block; transition: all 0.3s; }
+.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
+.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+.logo { width: 100px; }
+@media (min-width:1025px) {
+	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
+	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
+	nav li { position: relative; }
+	nav li a { color: var(--colorBlack); position: relative; display: inline-block; padding: 16px 12px; text-decoration: none; transition: all 0.3s; position: relative; }
+	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
+	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+	li.hasUl a { padding-right: 25px !important; }
+	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
+}
+@media (max-width:1024px) {
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important;		/* You can replace with a global var */ transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption.openMenu { transform: translateX(0); }
+	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+}
+
+/* === HEADER CSS END === */
+
+/* marqueeWrapper css */
+.marqueeWrapper { position: absolute; bottom: -2px; overflow: hidden; width: 100vw; }
+.marqueeWrapperInner { display: flex; width: max-content; animation: scrollHori 100s linear infinite;	/* faster + smoother */ }
+.marqueeImage { width: 150vh; flex-shrink: 0; margin-left: -2px; }
+@keyframes scrollHori {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+/* mapWrap css */
+.mapWrap { padding: 210px 0; background-color: var(--colorPrimary); position: relative; overflow: clip; }
+.mapWrapper { position: relative; max-width: 900px; margin: auto; }
+svg { width: 100%; height: auto; }
+.map-region { fill: transparent; stroke: #fff; stroke-width: 0.5; stroke-miterlimit: 10; transition: fill 0.25s, stroke 0.25s; }
+.map-region.active { fill: #FFD400; stroke: #FFD400; }
+.map-dot { position: absolute; width: 11px; height: 11px; background: #fff; border-radius: 50%; cursor: pointer; transform: translate(-50%, -50%); transition: background 0.2s, transform 0.2s; z-index: 10; }
+.map-dot.active-dot { background: #FFD400; transform: translate(-50%, -50%) scale(1.3); }
+.map-label { position: absolute; transform: translate(-50%, -130%); background: #fff; color: #3a1a2e; padding: 5px 13px; font-size: 13px; font-weight: 600; white-space: nowrap; border-radius: 20px; pointer-events: none; opacity: 0; transition: opacity 0.2s; font-family: sans-serif; z-index: 20; letter-spacing: 0.01em; }
+.map-label.visible { opacity: 1; }
+.mapDiv { right: 220px; bottom: -20px; position: absolute; }
+.mapDiv svg { transform: scale(3.4); }
+
+/* footer css */
+footer { background-color: var(--colorPrimary); padding: 120px 0 60px 0; position: relative; overflow-x: clip; }
+footer .marqueeWrapper { transform: rotate(180deg); bottom: auto; top: 99%; }
+.copyRight { padding: 150px 0 20px; background-color: var(--colorBg); }
+.copyRightInner { display: flex; justify-content: space-between; align-items: center; margin: 0 auto; }
+.socialUl ul { display: flex; align-items: center; gap: 40px; }
+.socialUl ul li a { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--colorAccent); border-radius: 50%; font-size: var(--fontXl); color: var(--colorWhite); }
+.footerInner { max-width: 90%; margin: 0 auto; }
+.footerContactUl { display: flex; gap: 100px; }
+.contactWrap { display: flex; align-items: flex-start; gap: 20px; font-size: var(--fontXl); color: var(--colorWhite); }
+.contactIcon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--colorSecondary); border-radius: 50%; }
+.contactWrap a { width: calc(100% - 60px); font-family: 'DM Sans'; }
+.ContactUl ul { gap: 30px; display: flex; flex-direction: column; }
+.footerUl ul { display: flex; align-items: center; gap: 70px; padding: 20px 50px; border: 2px solid var(--colorSecondary); justify-content: center; border-radius: 50px; }
+.footerUl ul li a { font-size: var(--fontXl); color: var(--colorWhite); font-family: 'DM Sans'; }
+.footerContactUl { margin: 40px 0 0 0; }
+
+/*  */

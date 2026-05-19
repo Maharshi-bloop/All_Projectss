@@ -11,7 +11,7 @@
 .headingTextInner { text-align: center; }
 .headingTextInner .heading11xl { position: relative; }
 .headingTextInner .heading11xl:before { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 10px; left: 300px; animation: rotateStar 10s linear infinite; background-size: contain; }
-.headingTextInner .heading11xl:after { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 15px; right: 310px; animation: rotateStar 10s linear infinite; background-size: contain; }
+.headingTextInner .heading11xl:after { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 15px; right: 300px; animation: rotateStar 10s linear infinite; background-size: contain; }
 .headingText .marqueeWrapper { bottom: auto; top: 99%; transform: rotate(180deg); z-index: 2; }
 
 /* productCata css */
@@ -72,7 +72,7 @@
 
 /* multiProduct css */
 .multiProduct { background-color: var(--colorPrimary); height: 100vh; display: flex; align-items: center; overflow: clip; }
-.multiProductTop { width: 90%; text-align: center; position: sticky; top: 50%; transform: translateY(-50%); margin: 240px auto 0; z-index: 0; }
+.multiProductTop { width: 90%; text-align: center; position: sticky; top: 50%; transform: translateY(-50%); margin: 250px auto 0; z-index: 0; }
 .multiProductList { border-radius: 30px; overflow: clip; background-color: var(--colorBg); display: flex; padding: 25px; gap: 60px; align-items: center; box-shadow: 10px 15px 0px 0px #0000003D; width: 65%; }
 .multiProductListImage { height: 400px; width: 50%; border-radius: 30px; overflow: clip; }
 .multiProductListContent { width: 50%; }
@@ -170,13 +170,15 @@
 .popupContent { line-height: 1; } */
 
 /* pyramid css */
-.pyramid { padding: 200px 0; background-color: var(--colorSecondary); overflow-x: clip; }
-.pyramidTop { text-align: center; }
+.pyramid { padding: 100px 0 40px; background-color: var(--colorSecondary); overflow: hidden; }
+.pyramid .container-xl { min-height: auto !important; }
+.pyramidTop { text-align: center; margin-bottom: 20px; }
 .pyramidTop .heading11xl { color: var(--colorAccent); }
 #gameCanvas { position: relative; top: 0; left: 0; width: 100vw; height: 100vh; display: block; image-rendering: crisp-edges; }
 .pyramidImage { position: relative; }
 .pyramidImageInner { position: relative; right: 0; padding: 200px 0 0 0; }
-.pyramidPopUpList { display: flex; align-items: center; width: max-content; background-color: var(--colorWhite); padding: 20px; border: 4px solid var(--colorAccent); border-radius: 80px; gap: 10px; }
+
+/* .pyramidPopUpList { display: flex; align-items: center; width: max-content; background-color: var(--colorWhite); padding: 20px; border: 4px solid var(--colorAccent); border-radius: 80px; gap: 10px; }
 .indexNumber { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--colorPrimary); border-radius: 50%; color: var(--colorWhite); font-size: 30px; }
 .popupContent .heading5xl { color: var(--colorAccent); margin: 0; font-size: 26px; }
 .popupContent .subTextXl { color: var(--colorBlack); font-size: 16px; }
@@ -185,14 +187,16 @@
 .pyramidPopUpList:nth-child(2) { top: 98px; left: 43%; }
 .pyramidPopUpList:nth-child(3) { top: 65px; left: 40%; }
 .pyramidPopUpList:last-child { top: 195px; left: 67%; }
-.popupContent { line-height: 1; }
+.popupContent { line-height: 1; } */
 
 /*  */
-.hero { height: 150vh; }
-.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
-.wire, .color { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
-.reveal { position: absolute; inset: 0; clip-path: inset(100% 0 0 0); }
-.scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: #ffcc00; bottom: 0; }
+.hero { position: relative; height: auto !important; min-height: auto !important; display: flex; justify-content: center; align-items: flex-start; margin: 0; padding: 0; }
+.stage { position: relative; width: min(1100px, 100%); margin: 0 auto; }
+.wire, .color { width: 100%; height: auto; display: block; }
+.reveal { position: absolute; inset: 0; clip-path: inset(100% 0 0 0); overflow: hidden; }
+.pyramidImageInner { padding: 0; }
+
+/* .scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: #ffcc00; bottom: 0; } */
 
 /*  */
 

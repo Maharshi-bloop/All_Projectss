@@ -89,7 +89,7 @@
 .faciliesListing { margin: 90px 0 0 0; }
 .faciliesListing .row { justify-content: center; }
 .faciliesListInner { display: flex; align-items: center; gap: 20px; }
-.faciliesIcon { width: 120px; height: 120px; background-color: var(--colorSecondary); border-radius: 50%; border: 1px solid var(--colorAccent); display: flex; align-items: center; justify-content: center; padding: 15px; }
+.faciliesIcon { width: 120px; aspect-ratio: 1; background-color: var(--colorSecondary); border-radius: 50%; border: 1px solid var(--colorAccent); display: flex; align-items: center; justify-content: center; padding: 15px; }
 .faciliesList { border: 1px solid var(--colorAccent); border-radius: 20px; padding: 40px; position: relative; overflow: clip; height: 100%; }
 .faciliesList .heading7xl { color: var(--colorPrimary); }
 .faciliesList .heading7xl { color: var(--colorPrimary); }
