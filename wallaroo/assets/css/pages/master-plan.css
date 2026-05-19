@@ -1,6 +1,6 @@
-.masterPlanBanner { height: calc(100vh - 120px); position: relative; z-index: 1; }
+.masterPlanBanner { height: 100vh; position: relative; z-index: 1; }
 .masterPlanBannerImage { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; }
-.masterPlanBannerImage img { width: 100%; height: 100%; object-fit: cover; }
+.masterPlanBannerImage img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; }
 .masterPlanBannerInner { text-align: center; width: 40%; margin: 0 auto; padding: 50px 0 0 0; color: var(--colorWhite); }
 .masterPlanBannerInner .heading7xl { color: var(--colorWhite); }
 .master-plan .headingText { margin: 0; border-radius: 0; padding: 250px 0; }
