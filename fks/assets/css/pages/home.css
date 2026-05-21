@@ -1,5 +1,5 @@
 /* === BANNER CSS START === */
-.banner { width: 100%; height: 100vh; position: relative; overflow: clip; }
+.banner { width: 100%; height: 100vh; position: relative; overflow: clip; margin: 90px 0 0 0; }
 .banner .marqueeWrapper { bottom: -60px; }
 .bannerVideo { height: 100%; }
 .bannerVideo video { width: 100%; height: 100%; object-fit: cover; }

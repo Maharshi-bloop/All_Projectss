@@ -1,5 +1,5 @@
 .about-us { background-color: var(--colorBg); }
-.aboutBanner { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; }
+.aboutBanner { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; margin: 90px 0 0 0; }
 .aboutBanner:before { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; top: -30%; left: -20%; transform: rotate(135deg); }
 .aboutBanner:after { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; bottom: -40%; right: -20%; transform: rotate(-45deg); z-index: -1; }
 .aboutBanner .marqueeWrapper { bottom: -60px; }

@@ -51,8 +51,6 @@
 .threeTownsHoriList:before { content: ''; position: absolute; width: 30px; height: 30px; background-color: var(--colorPrimary); transform: scale(0.5) rotate(45deg); top: -72px; transition: all 0.5s ease; }
 .threeTownsHoriListing { --line-width: 0px; }
 .threeTownsHoriList.active { opacity: 1; }
-
-/* optional active animation */
 .threeTownsHoriList.active:before { transform: rotate(45deg) scale(1); opacity: 1; }
 
 /* cardWrapper css */

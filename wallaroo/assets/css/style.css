@@ -37,6 +37,7 @@ table { border-collapse: collapse; width: 100%; }
 :root { --fontPrimary: 'Poppins'; --fontSecondary: 'GRACEFUL'; --fontTersory: 'DM Sans'; --colorPrimary: #EC793E; --colorSecondary: #0F3F66; --colorPrimaryLight: #F3E8DB; --colorBg: #FFF9F3; --colorText: #626262; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 52px; --font8xl: 90px; --cards: 4; --cardHeight: 87vh; --cardTopPadding: 1.5em; --cardMargin: 4vw; }
 .heading8xl { font-size: var(--font8xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); }
 .heading7xl { font-size: var(--font7xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); }
+.heading6xl { font-size: var(--font6xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); }
 .heading5xl { font-size: var(--font5xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); }
 .heading3xl { font-size: var(--font3xl); font-weight: 400; color: var(--colorPrimary); font-family: var(--fontSecondary); }
 .subTextXl { font-size: var(--fontXl); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
