@@ -4,6 +4,24 @@
 .contactBannerInner { display: flex; align-items: center; justify-content: space-between; position: relative; }
 .contactBannerForm { width: 60%; margin: 0 0 0 120px; padding: 60px 0; }
 .contactBannerContent { width: 40%; }
+.contactBannerForm .heading7xl { line-height: 1; margin: 0; }
+.contactBannerForm .subTextMd { margin: 10px 0 30px 0; color: var(--colorBlack); }
+.agreeText { margin: 35px 0 0 0; text-align: center; display: block; font-size: var(--fontSm); font-weight: 300; }
+.contactBannerContent h1.heading8xl { color: var(--colorSecondary); line-height: 1; }
+.contactBannerContent .subTextMd { color: #000; margin: 20px 0 50px 0; }
+.smallObject { height: 150px; width: auto; }
+.smallObject img { width: 100%; height: 100%; object-fit: contain; object-position: left; }
+
+/* visitWrp css */
+.visitWrp { padding: 100px 0; background-color: var(--colorSecondary); }
+.visitWrpInner .row { align-items: center; }
+.visitContentTop .heading7xl { color: var(--colorPrimary); }
+.visitContent ul { margin: 40px 0 0 0; }
+.visitContent ul li { display: flex; align-items: center; gap: 40px; margin: 0 0 25px 0; }
+.visitContent ul li span, .visitContent ul li a { color: var(--colorWhite); font-size: var(--fontXl); }
+.ulIcon { display: flex; align-self: center; justify-content: center; width: 40px; height: 40px; }
+.ulIcon img { width: 100%; height: 100%; object-fit: contain; }
+.visitContent { margin: 0 0 0 50px; }
 
 /* ctaWrapper css */
 .ctaWrapper { background-color: var(--colorPrimary); padding: 270px 0; position: relative; z-index: 1; overflow: clip; }
