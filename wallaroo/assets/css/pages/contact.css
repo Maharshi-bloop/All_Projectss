@@ -18,9 +18,13 @@
 .visitContentTop .heading7xl { color: var(--colorPrimary); }
 .visitContent ul { margin: 40px 0 0 0; }
 .visitContent ul li { display: flex; align-items: center; gap: 40px; margin: 0 0 25px 0; }
-.visitContent ul li span, .visitContent ul li a { color: var(--colorWhite); font-size: var(--fontXl); }
-.ulIcon { display: flex; align-self: center; justify-content: center; width: 40px; height: 40px; }
+.visitContent ul li span, .visitContent ul li a { color: var(--colorWhite); font-size: var(--fontXl); width: calc(100% - 40px); line-height: 1.3; }
+.ulIcon { display: flex; align-self: flex-start; justify-content: center; width: 40px; height: 40px; }
 .ulIcon img { width: 100%; height: 100%; object-fit: contain; }
+.teleWrap { display: flex; gap: 50px; }
+.teleWrap > div { display: flex; align-items: center; gap: 40px; }
+.visitContentTop div { margin: 50px 0 40px 0; }
+.visitContentTop div strong { font-size: 24px; color: var(--colorPrimary); font-weight: 600; }
 .visitContent { margin: 0 0 0 50px; }
 
 /* ctaWrapper css */
