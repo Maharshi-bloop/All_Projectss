@@ -32,7 +32,7 @@
 .threeTowns:after { content: ''; position: absolute; width: 150px; height: 450px; background: url(../../images/mid-patten-1.svg) center center no-repeat; bottom: 0; left: 0; }
 .threeTownsTop .subTextMd { color: var(--colorText); margin: 30px 0 0 0; width: 85%; }
 .threeTownsHoriWrap { margin: 80px 0 0 0; position: relative; }
-.threeTownsHoriListing:before { content: ''; position: absolute; width: 120vw; height: 2px; background-color: var(--colorPrimary); top: 42px; left: 10px; opacity: 0.2; }
+.threeTownsHoriListing:before { content: ''; position: absolute; width: 100vw; height: 2px; background-color: var(--colorPrimary); top: 42px; left: 10px; opacity: 0.2; }
 .threeTownsHoriListing:after { content: ''; position: absolute; width: var(--line-width); ; height: 2px; background-color: var(--colorPrimary); top: 42px; left: 10px; }
 .HoriListImage { width: 100%; height: 200px; border-radius: 13px; overflow: clip; margin: 25px 0 0 0; }
 .HoriListImage img { width: 100%; height: 100%; object-fit: cover; }

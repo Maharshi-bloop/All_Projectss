@@ -35,11 +35,11 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
 :root { --fontPrimary: 'Poppins'; --fontSecondary: 'GRACEFUL'; --fontTersory: 'DM Sans'; --colorPrimary: #EC793E; --colorSecondary: #0F3F66; --colorPrimaryLight: #F3E8DB; --colorBg: #FFF9F3; --colorText: #626262; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 52px; --font8xl: 90px; --cards: 4; --cardHeight: 87vh; --cardTopPadding: 1.5em; --cardMargin: 4vw; }
-.heading8xl { font-size: var(--font8xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); }
-.heading7xl { font-size: var(--font7xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); }
-.heading6xl { font-size: var(--font6xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); }
-.heading5xl { font-size: var(--font5xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); }
-.heading3xl { font-size: var(--font3xl); font-weight: 400; color: var(--colorPrimary); font-family: var(--fontSecondary); }
+.heading8xl { font-size: var(--font8xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
+.heading7xl { font-size: var(--font7xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
+.heading6xl { font-size: var(--font6xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
+.heading5xl { font-size: var(--font5xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
+.heading3xl { font-size: var(--font3xl); font-weight: 400; color: var(--colorPrimary); font-family: var(--fontSecondary); margin: 0; }
 .subTextXl { font-size: var(--fontXl); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
 .subTextLg { font-size: var(--fontLg); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
 .subTextMd { font-size: var(--fontMd); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
@@ -54,6 +54,10 @@ table { border-collapse: collapse; width: 100%; }
 header { padding: 20px 0; background-color: var(--colorSecondary); }
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
+nav li a { transition: all 0.3s; position: relative; }
+nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; background-color: var(--colorPrimary); border-radius: 50%; top: 50%; transform: translateY(-50%); left: -6px; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.current-menu-item a { color: var(--colorPrimary); }
+.current-menu-item a::before { opacity: 1; visibility: visible; }
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
 	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; gap: 24px; }
@@ -81,6 +85,7 @@ header { padding: 20px 0; background-color: var(--colorSecondary); }
 .banner { position: relative; z-index: 1; overflow: clip; height: 100vh; display: flex; align-items: flex-end; }
 .banner:before { content: ''; position: absolute; width: 100%; height: 800px; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11.08%, #000000 100%); z-index: 0; }
 .bannerBg { position: absolute; width: 100%; height: 100%; z-index: -1; }
+.bannerBg video { width: 100%; height: 100%; object-fit: cover; }
 .bannerCtaWrap { display: flex; gap: 50px; justify-content: center; }
 .bannerInner { position: relative; }
 .bannerText { padding: 150px 0 200px 0; width: 80%; text-align: center; margin: 0 auto; }
@@ -146,7 +151,7 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .default-line { content: ""; position: absolute; left: 0; width: 2px; background-color: var(--colorPrimary); opacity: 0.2; height: 100%; top: 0; z-index: -2; }
 .draw-line { width: 2px; height: 0; position: absolute; left: 0; background-color: var(--colorPrimary); top: 0; z-index: -2; }
 .timeline ul li.in-view::before { content: ""; position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 42px; height: 42px; border-radius: 50%; background-image: url("https://sg0duxoli5-flywheel.netdna-ssl.com/wp-content/themes/inspired_elearning_theme/images/check-dark.svg"); background-color: #2ecc71; background-size: 20px 20px; background-repeat: no-repeat; background-position: center; transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; }
-.timeLineIndex { position: absolute; width: 30px; height: 30px; background-color: var(--colorPrimary); display: flex; align-items: center; justify-content: center; top: 50%; left: -25px; z-index: 2; overflow: visible; transition: all 0.3s; transform: rotate(45deg) translateY(-50%) scale(0.5); font-size: 0; opacity: 0.2; }
+.timeLineIndex { position: absolute; width: 30px; height: 30px; background-color: var(--colorPrimary); display: flex; align-items: center; justify-content: center; top: 70px; left: -25px; z-index: 2; overflow: visible; transition: all 0.3s; transform: rotate(45deg) translateY(-50%) scale(0.5); font-size: 0; opacity: 0.2; }
 .timeLineWrapper ul li.in-view .timeLineIndex, .timeLineWrapper ul li.gone-view .timeLineIndex { transform: rotate(45deg) translateY(-50%) scale(1); opacity: 1; }
 
 /* verticalAcco css */
@@ -180,7 +185,7 @@ input.primaryBtn { border: none; }
 footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 .titleUl ul { margin: 10px 0 0 0; }
 .titleUl strong { color: var(--colorPrimary); font-weight: 500; }
-.footerInner .row .row { row-gap: 100px; }
+.footerInner .row .row { row-gap: 60px; }
 .titleUl li, .titleUl li a { color: var(--colorWhite); font-weight: 300; }
 .footerUl ul { column-count: 2; }
 .footerUl ul li a { color: var(--colorWhite); margin: 0 0 24px 0; display: inline-block; font-weight: 300; }

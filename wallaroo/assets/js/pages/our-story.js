@@ -9,7 +9,7 @@ if (section && line && items.length) {
     ScrollTrigger.create({
         trigger: section,
         start: "10% top",
-        end: "+=200%",
+        end: "+=120%",
         scrub: true,
         pin: true,
         anticipatePin: 1,
