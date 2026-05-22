@@ -1,0 +1,14 @@
+.contactBanner { background-color: var(--colorBg); position: relative; z-index: 1; }
+.contactBannerInner::after { content: ''; position: absolute; width: 100vw; background-color: var(--colorPrimaryLight); top: 0; right: 100%; z-index: -1; height: 100%; }
+.contactBannerInner::before { content: ''; position: absolute; width: 40%; background-color: var(--colorPrimaryLight); left: 0; top: 0; z-index: -1; height: 100%; }
+.contactBannerInner { display: flex; align-items: center; justify-content: space-between; position: relative; }
+.contactBannerForm { width: 60%; margin: 0 0 0 120px; padding: 60px 0; }
+.contactBannerContent { width: 40%; }
+
+/* ctaWrapper css */
+.ctaWrapper { background-color: var(--colorPrimary); padding: 270px 0; position: relative; z-index: 1; overflow: clip; }
+.ctaWrapperBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; mix-blend-mode: soft-light; z-index: -1; }
+.ctaWrapperBg img { width: 100%; height: 100%; object-fit: cover; }
+.ctaWrapperInner { text-align: center; }
+.ctaWrapperInner .subTextMd { display: block; width: 40%; margin: 20px auto 40px auto; }
+.BtnWrapper { display: flex; justify-content: center; gap: 40px; margin: 50px 0 0 0; }
