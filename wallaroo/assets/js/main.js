@@ -1,3 +1,7 @@
+if ($(window).width() <= 991) {
+    $(".headerCta").appendTo(".headerOption");
+};
+
 $(document).ready(function () {
 
     AOS.init(); // Ensure initialized
@@ -19,6 +23,9 @@ $(document).ready(function () {
     jQuery(window).on('scroll', function (event) {
         stickyHeader();
     });
+
+
+
 
     $("nav > ul > li").each(function () {
         if ($(this).children("ul").length > 0) {
@@ -110,20 +117,30 @@ $(document).ready(function () {
     // Timeline Scroll Section end
 
 
-    $(".verticalAccoList").first().addClass("active");
+    if ($(window).width() >= 992) {
+        $(".verticalAccoList").first().addClass("active");
 
-    $(".verticalAccoHeading").on("click", function () {
+        $(".verticalAccoHeading").on("click", function () {
 
-        let parent = $(this).closest(".verticalAccoList");
+            let parent = $(this).closest(".verticalAccoList");
 
-        if (!parent.hasClass("active")) {
+            if (!parent.hasClass("active")) {
 
-            $(".verticalAccoList").removeClass("active");
+                $(".verticalAccoList").removeClass("active");
 
-            parent.addClass("active");
-        }
+                parent.addClass("active");
+            }
+        });
+    };
 
-    });
+    if ($(window).width() <= 991) {
+         $(".verticalAccoContent").first().slideDown();
+         $(".verticalAccoContent").not(":first").hide();
+        $(".verticalAccoHeading").on("click", function () {
+            $(".verticalAccoContent").stop().slideUp();
+            $(this).next(".verticalAccoContent").stop().slideToggle();
+        });
+    }
 
 
 })

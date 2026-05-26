@@ -36,7 +36,7 @@
 /* threeTowns css */
 .threeTowns { padding: 200px 0; background-color: var(--colorPrimaryLight); position: relative; z-index: 1; overflow: clip; }
 .threeTowns:before { content: ''; position: absolute; width: 450px; height: 150px; background: url(../../images/mid-patten.svg) center center no-repeat; top: 0; right: 0; }
-.threeTowns:after { content: ''; position: absolute; width: 150px; height: 450px; background: url(../../images/mid-patten-1.svg) center center no-repeat; bottom: 0; left: 0; }
+.threeTowns:after { content: ''; position: absolute; width: 150px; height: 450px; background: url(../../images/mid-patten-1.svg) center center no-repeat; bottom: -150px; left: 150px; transform: rotate(90deg); }
 .threeTownsTop .subTextMd { color: var(--colorText); margin: 30px 0 0 0; width: 85%; }
 .threeTownsHoriWrap { margin: 80px 0 0 0; position: relative; }
 .threeTownsHoriListing:before { content: ''; position: absolute; width: 120vw; height: 2px; background-color: var(--colorPrimary); top: 42px; left: 0; opacity: 0.2; }

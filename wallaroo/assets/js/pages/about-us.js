@@ -1,50 +1,53 @@
-gsap.registerPlugin(ScrollTrigger);
+if ($(window).width() > 480) {
 
-const section = document.querySelector(".threeTowns");
-const line = document.querySelector(".threeTownsHoriListing");
-const items = gsap.utils.toArray(".threeTownsHoriList");
+    gsap.registerPlugin(ScrollTrigger);
 
-if (section && line && items.length) {
+    const section = document.querySelector(".threeTowns");
+    const line = document.querySelector(".threeTownsHoriListing");
+    const items = gsap.utils.toArray(".threeTownsHoriList");
 
-    ScrollTrigger.create({
-        trigger: section,
-        start: "10% top",
-        end: "+=200%",
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
+    if (section && line && items.length) {
 
-        onUpdate: (self) => {
+        ScrollTrigger.create({
+            trigger: section,
+            start: "10% top",
+            end: "+=200%",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
 
-            // line width progress
-            const lineWidth = self.progress * window.innerWidth * 1.2;
+            onUpdate: (self) => {
 
-            // update CSS variable
-            line.style.setProperty("--line-width", `${lineWidth}px`);
+                // line width progress
+                const lineWidth = self.progress * window.innerWidth * 1.2;
 
-            // line start position
-            const lineStart = line.getBoundingClientRect().left - 50;
+                // update CSS variable
+                line.style.setProperty("--line-width", `${lineWidth}px`);
 
-            // current line end position
-            const lineEnd = lineStart + lineWidth;
+                // line start position
+                const lineStart = line.getBoundingClientRect().left - 50;
 
-            items.forEach((item) => {
+                // current line end position
+                const lineEnd = lineStart + lineWidth;
 
-                // diamond position
-                const diamond = item.querySelector(":scope");
+                items.forEach((item) => {
 
-                const itemLeft = item.getBoundingClientRect().left;
+                    // diamond position
+                    const diamond = item.querySelector(":scope");
 
-                // toggle when line touches diamond
-                if (lineEnd >= itemLeft) {
-                    item.classList.add("active");
-                } else {
-                    item.classList.remove("active");
-                }
+                    const itemLeft = item.getBoundingClientRect().left;
 
-            });
+                    // toggle when line touches diamond
+                    if (lineEnd >= itemLeft) {
+                        item.classList.add("active");
+                    } else {
+                        item.classList.remove("active");
+                    }
 
-        }
-    });
+                });
 
+            }
+        });
+
+    }
 }

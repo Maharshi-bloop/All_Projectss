@@ -34,7 +34,7 @@ a { text-decoration: none; color: inherit; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
-:root { --fontPrimary: 'Poppins'; --fontSecondary: 'GRACEFUL'; --fontTersory: 'DM Sans'; --colorPrimary: #EC793E; --colorSecondary: #0F3F66; --colorPrimaryLight: #F3E8DB; --colorBg: #FFF9F3; --colorText: #626262; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 52px; --font8xl: 90px; --cards: 4; --cardHeight: 87vh; --cardTopPadding: 1.5em; --cardMargin: 4vw; }
+:root { --fontPrimary: 'Poppins'; --fontSecondary: 'GRACEFUL'; --fontTersory: 'DM Sans'; --colorPrimary: #EC793E; --colorSecondary: #0F3F66; --colorPrimaryLight: #F3E8DB; --colorBg: #FFF9F3; --colorText: #626262; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 52px; --font8xl: 70px; --cards: 4; --cardHeight: 87vh; --cardTopPadding: 1.5em; --cardMargin: 4vw; }
 .heading8xl { font-size: var(--font8xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
 .heading7xl { font-size: var(--font7xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
 .heading6xl { font-size: var(--font6xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
@@ -49,6 +49,8 @@ table { border-collapse: collapse; width: 100%; }
 .primaryBtn:hover { background-color: var(--colorWhite); color: var(--colorPrimary); }
 .primaryBrdrBtn { background-color: var(--colorPrimaryLight); border: 1px solid var(--colorPrimary); padding: 16px 36px; line-height: 1; display: inline-block; border-radius: 10px; font-size: var(--fontLg); color: var(--colorSecondary); transition: all 0.3s; }
 .primaryBrdrBtn:hover { background-color: var(--colorSecondary); color: var(--colorWhite); border-color: var(--colorSecondary); }
+.desktopNone { display: none; }
+.scrollOff { overflow: hidden; }
 
 /* === HEADER CSS START === */
 header { padding: 20px 0; background-color: var(--colorSecondary); }
@@ -69,10 +71,10 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
 }
 @media (max-width:1024px) {
-	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; z-index: 11; }
 	.headerOption.openMenu { transform: translateX(0); }
-	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
-	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 12px; }
+	nav ul li a { display: inline-block; width: 100%; padding: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 12; border-radius: 12px; }
 	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary); display: block; border-radius: 80px; transition: all 0.3s; }
 	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
 	.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
@@ -85,6 +87,7 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 .banner { position: relative; z-index: 1; overflow: clip; height: 100vh; display: flex; align-items: flex-end; }
 .banner:before { content: ''; position: absolute; width: 100%; height: 800px; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11.08%, #000000 100%); z-index: 0; }
 .bannerBg { position: absolute; width: 100%; height: 100%; z-index: -1; }
+.bannerBg img { width: 100%; height: 100%; object-fit: cover; }
 .bannerBg video { width: 100%; height: 100%; object-fit: cover; }
 .bannerCtaWrap { display: flex; gap: 50px; justify-content: center; }
 .bannerInner { position: relative; }
@@ -158,7 +161,7 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .verticalAcco { padding: 200px 0; background-color: var(--colorBg); overflow: clip; }
 .verticalAccoListing { padding: 100px 0 0 0; display: flex; height: 800px; }
 .verticalAccoHeading { cursor: pointer; transition: all 0.3s; }
-.verticalAccoHeading:hover h4 { background-color: var(--colorSecondary); }
+.verticalAccoHeading:hover h4, .verticalAccoList.active h4.heading5xl { background-color: var(--colorSecondary); }
 .verticalAccoHeading h4 { background-color: var(--colorPrimary); writing-mode: sideways-lr; height: 100%; padding: 35px; text-align: center; margin: 0; transition: all 0.3s; }
 .verticalAccoList { display: flex; }
 .verticalAccoContent { position: relative; max-width: 0; opacity: 0; visibility: hidden; border: 1px solid var(--colorPrimary); }

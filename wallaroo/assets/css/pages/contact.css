@@ -24,7 +24,7 @@
 .teleWrap { display: flex; gap: 50px; }
 .teleWrap > div { display: flex; align-items: center; gap: 40px; }
 .visitContentTop div { margin: 50px 0 40px 0; }
-.visitContentTop div strong { font-size: 24px; color: var(--colorPrimary); font-weight: 600; }
+.visitContentTop div strong { font-size: 24px; color: var(--colorPrimary); font-weight: 600; display: block;}
 .visitContent { margin: 0 0 0 50px; }
 
 /* ctaWrapper css */
