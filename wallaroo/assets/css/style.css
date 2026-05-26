@@ -38,11 +38,11 @@ table { border-collapse: collapse; width: 100%; }
 .heading8xl { font-size: var(--font8xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
 .heading7xl { font-size: var(--font7xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
 .heading6xl { font-size: var(--font6xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontSecondary); margin: 0; }
-.heading5xl { font-size: var(--font5xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
-.heading3xl { font-size: var(--font3xl); font-weight: 400; color: var(--colorPrimary); font-family: var(--fontSecondary); margin: 0; }
+.heading5xl, .pageTopPadding h1 { font-size: var(--font5xl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontSecondary); margin: 0; }
+.heading3xl, .wp-block-heading { font-size: var(--font3xl); font-weight: 400; color: var(--colorPrimary); font-family: var(--fontSecondary); margin: 0; }
 .subTextXl { font-size: var(--fontXl); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
 .subTextLg { font-size: var(--fontLg); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
-.subTextMd { font-size: var(--fontMd); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
+.subTextMd, .wp-block-paragraph { font-size: var(--fontMd); font-weight: 300; color: var(--colorWhite); margin: 0; display: inline-block; }
 .primaryBtn { font-family: var(--fontTersory); background-color: var(--colorPrimary); padding: 16px 36px; line-height: 1; display: inline-block; border-radius: 10px; font-size: var(--fontLg); color: var(--colorWhite); transition: all 0.3s; }
 .secondaryBtn { font-family: var(--fontTersory); background-color: var(--colorSecondary); padding: 16px 36px; line-height: 1; display: inline-block; border-radius: 10px; font-size: var(--fontLg); color: var(--colorWhite); transition: all 0.3s; }
 .secondaryBtn:hover { background-color: var(--colorWhite); color: var(--colorSecondary); }
@@ -206,3 +206,9 @@ footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 /* form css */
 span.wpcf7-not-valid-tip { position: absolute; bottom: 4px; font-size: 13px; left: 10px; }
 span.wpcf7-form-control-wrap { display: block; }
+
+/* detail page css */
+.pageTopPadding { padding: 70px 0; }
+.wp-block-paragraph { color: var(--colorText); margin: 0 0 20px 0; }
+.pageTopPadding h1 { color: var(--colorSecondary); }
+.wp-block-paragraph strong { font-weight: 600; }

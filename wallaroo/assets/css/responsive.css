@@ -229,4 +229,5 @@ nav ul li a { text-align: center; margin: 0; }
 .visitContent ul li { gap: 20px; }
 .ulIcon { width: 30px; height: 30px; }
 .BtnWrapper { gap: 20px; flex-direction: column; }
+.contentBlock { margin-top: 50px; }
 }
