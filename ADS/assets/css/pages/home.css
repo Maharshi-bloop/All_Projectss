@@ -18,7 +18,6 @@
 /* === BANNER CSS END === */
 
 /* gridWrapper css */
-
 .gridListing { display: flex; gap: 12px; }
 .gridList { width: calc(100% / 3); display: flex; flex-direction: column; gap: 12px; }
 .gridListCard { background-color: var(--colorBgLight); padding: 24px; padding-top: 170px; position: relative; overflow: clip; border-radius: 5px; }
@@ -36,7 +35,7 @@
 .gridListImage:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); top: 0; left: 0; }
 
 /* imageTextWrap css */
-.imageTextWrap { margin: 80px 0; background-color: var(--colorSecondary); position: relative; z-index: 1; overflow: clip; }
+.imageTextWrap { margin: 80px 0 0 0; background-color: var(--colorSecondary); position: relative; z-index: 1; overflow: clip; }
 .iwImage { position: absolute; width: 50%; height: 100%; top: 0; left: 0; }
 .iwImage:before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); }
 .iwImage img { width: 100%; height: 100%; object-fit: cover; }
@@ -48,3 +47,10 @@
 .iwTextBoxUl li { position: relative; padding: 0 0 0 34px; margin: 10px 0; }
 .iwTextBoxUl li:before { content: ''; position: absolute; width: 22px; background: url(../../images/tick-icon.svg)center center no-repeat; background-size: 14px; height: 22px; background-color: var(--colorPrimary); border-radius: 5px; display: flex; align-items: center; justify-content: center; top: 0; left: 0; }
 .iwTextBoxUl span { color: #202836; text-transform: uppercase; font-weight: 500; }
+
+/* whyChoose css */
+.whyChoose { position: relative; z-index: 1; overflow: clip; padding: 80px 0; }
+.whyChoose:before { content: ''; position: absolute; width: 100%; height: 100%; background: url(../../images/full-website-bg-image.svg) center center no-repeat; background-size: cover; top: 0; left: 0; z-index: -1; opacity: 0.28; }
+.whyChooseListing { margin: 40px 0 0 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: space-between; }
+.whyChooseList { width: calc((100% /3) - 12px); border: 1px solid #184B72; border-radius: 5px; overflow: clip; }
+.wcListImage img { width: 100%; height: 100%; object-fit: cover; }
