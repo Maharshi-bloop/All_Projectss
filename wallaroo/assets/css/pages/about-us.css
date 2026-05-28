@@ -70,13 +70,10 @@
 .cardss:nth-child(3) .card-body:before { background: url(../../images/small-patten-1.svg)center center no-repeat; }
 .cardss:last-child .card-body:before { background: url(../../images/small-patten-2.svg)center center no-repeat; }
 .cardContent { display: flex; align-items: flex-start; justify-content: space-between; }
-.cardImage { width: 50%; }
-.cardText { width: 45%; }
+.cardImage { width: 60%; height: 100%; }
+.cardText { width: 35%; padding: 50px 0 0 0; }
 .cardContent { display: flex; align-items: flex-start; justify-content: space-between; height: 100%; }
-.cardImage { width: 50%; height: 100%; }
-.cardText { width: 45%; }
 .cardImage img { width: 100%; height: 100%; object-fit: cover; }
-.cardText { padding: 50px 0 0 0; }
 .cardText .subTextMd { color: var(--colorBlack); position: relative; padding: 30px 0 0 0; margin: 30px 0 0 0; }
 .cardText .subTextMd:before { content: ''; position: absolute; width: 90%; height: 1px; background-color: var(--colorPrimary); top: 0; left: 0; }
 

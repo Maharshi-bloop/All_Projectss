@@ -162,7 +162,7 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .verticalAccoListing { padding: 100px 0 0 0; display: flex; height: 800px; }
 .verticalAccoHeading { cursor: pointer; transition: all 0.3s; }
 .verticalAccoHeading:hover h4, .verticalAccoList.active h4.heading5xl { background-color: var(--colorSecondary); }
-.verticalAccoHeading h4 { background-color: var(--colorPrimary); writing-mode: sideways-lr; height: 100%; padding: 35px; text-align: center; margin: 0; transition: all 0.3s; }
+.verticalAccoHeading h4 { background-color: var(--colorPrimary); writing-mode: sideways-lr; height: 100%; padding: 20px; text-align: center; margin: 0; transition: all 0.3s; }
 .verticalAccoList { display: flex; }
 .verticalAccoContent { position: relative; max-width: 0; opacity: 0; visibility: hidden; border: 1px solid var(--colorPrimary); }
 .verticalAccoText { position: absolute; bottom: 0; background-color: var(--colorBg); width: 100%; padding: 45px 20px; display: flex; border-top: 1px solid var(--colorPrimary); }
@@ -191,17 +191,23 @@ footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 .titleUl strong { color: var(--colorPrimary); font-weight: 500; }
 .footerInner .row .row { row-gap: 60px; }
 .titleUl li, .titleUl li a { color: var(--colorWhite); font-weight: 300; }
-.footerUl ul { column-count: 2; }
 .footerUl ul li a { color: var(--colorWhite); margin: 0 0 24px 0; display: inline-block; font-weight: 300; }
 .ddBlop span { line-height: 1.2; }
-.ddBlop { display: flex; justify-content: flex-end; gap: 10px; align-items: center; color: #fff; width: 20%; text-align: right; margin-left: auto; padding: 0 0 30px 0; border-bottom: 1px solid var(--colorWhite); width: 100%; }
-.copyRight { text-align: center; color: var(--colorWhite); font-weight: 300; padding: 25px 0; }
+.ddBlop { display: flex; justify-content: flex-end; gap: 10px; align-items: center; color: #fff; width: 20%; text-align: right; margin-left: auto; padding: 0; }
+.copyRight { text-align: left; color: var(--colorWhite); font-weight: 300; padding: 25px 0; display: flex; justify-content: space-between; margin: 50px 0 0 0; border-top: 1px solid #fff; align-items: center; }
+.copyRight > span { line-height: 1; }
 .footerLogo img { width: 100%; }
-.ddBlop span { width: 12%; }
+.ddBlop span { width: 65%; }
 .footerSocial ul { display: flex; gap: 40px; }
-.titleImageWrap { display: flex; gap: 50px; justify-content: space-between; }
+.titleImageWrap { display: flex; gap: 50px; justify-content: flex-end; }
 .logoWrap { display: flex; align-items: center; height: 100%; }
 .logoWrap a { margin: 20px 0 0 0; }
+.footerText { display: flex; justify-content: space-between; }
+.titleUl { margin: 0 0 50px 0; }
+.footerLogo a { width: 350px; display: inline-block; }
+.footerLogo { display: flex; justify-content: flex-end; }
+.titleImage { display: flex; align-items: center; justify-content: flex-end; gap: 30px; }
+.titleImage span { width: 30%; text-align: right; }
 
 /* form css */
 span.wpcf7-not-valid-tip { position: absolute; bottom: 4px; font-size: 13px; left: 10px; }

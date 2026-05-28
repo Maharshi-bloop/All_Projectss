@@ -1,0 +1,50 @@
+/* === BANNER CSS START === */
+.banner { position: relative; z-index: 2; height: 100vh; display: flex; align-items: flex-end; padding: 0 0 100px 0; }
+.banner:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0, 22, 39, 0.22) 58.93%, #001627 97.48%); top: 0; left: 0; z-index: 1; }
+.banner:after { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, #001627 11.83%, rgba(0, 22, 39, 0.22) 35.71%); top: 0; left: 0; z-index: 1; }
+.bannerBgVideo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.bannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
+.bannerBgVideo:before { content: ''; position: absolute; width: 100%; height: 100%; background: url(../images/full-website-bg-image.svg)center center no-repeat; background-size: cover; }
+.bannerInner { position: relative; z-index: 2; }
+.bannerContent { display: flex; align-items: flex-end; }
+.leftContent, .rightContent { width: 50%; }
+.bannerCta { margin: 34px 0 0 0; }
+.counterListing { display: flex; justify-content: flex-end; }
+.counterList { text-align: center; }
+.counterList { text-align: center; padding: 0 0 0 50px; margin: 0 0 0 50px; position: relative; }
+.counterList:before { content: ''; position: absolute; width: 1px; height: 70%; background-color: #959EA2CC; left: 0; top: 50%; transform: translateY(-50%); }
+.counterList:first-child:before { display: none; }
+
+/* === BANNER CSS END === */
+
+/* gridWrapper css */
+
+.gridListing { display: flex; gap: 12px; }
+.gridList { width: calc(100% / 3); display: flex; flex-direction: column; gap: 12px; }
+.gridListCard { background-color: var(--colorBgLight); padding: 24px; padding-top: 170px; position: relative; overflow: clip; border-radius: 5px; }
+.gridListImage img { width: 100%; height: 100%; }
+.gridList:nth-child(even) { flex-direction: column-reverse; }
+.gridListCard .headingBase { position: relative; transform: translateX(0); transition: all 0.5s; }
+.gridListCard:hover .headingBase { transform: translateX(20px); }
+.gridListCard:hover .headingBase:before { transform: translateX(0); visibility: visible; opacity: 1; }
+.gridListCard .headingBase:before { content: ''; position: absolute; background: url(../../images/right-icon-primary.svg)center center no-repeat; top: 0; width: 14px; height: 22px; background-size: contain; right: calc(100% + 5px); opacity: 0; visibility: hidden; transform: translateX(-10px); transition: all 0.5s; }
+.gridListCard .subTextBase { padding: 14px 0 22px 0; }
+.ListCardIcon { width: 44px; height: 44px; background-color: #D8DBE3; display: flex; align-items: center; justify-content: center; border-radius: 7px; margin: 0 0 22px 0; transition: all 0.5s; }
+.gridListCard:hover .ListCardIcon { background-color: var(--colorPrimary); }
+.ListCardBg { position: absolute; top: 0; right: 0; mix-blend-mode: darken; opacity: 0.6; }
+.gridListImage { position: relative; }
+.gridListImage:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); top: 0; left: 0; }
+
+/* imageTextWrap css */
+.imageTextWrap { margin: 80px 0; background-color: var(--colorSecondary); position: relative; z-index: 1; overflow: clip; }
+.iwImage { position: absolute; width: 50%; height: 100%; top: 0; left: 0; }
+.iwImage:before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); }
+.iwImage img { width: 100%; height: 100%; object-fit: cover; }
+.imageTextWrapInner { width: calc(50% - 44px); margin-left: auto; }
+.iwTextBox { padding: 50px 0; position: relative; }
+.iwTextBox:before { content: ''; position: absolute; width: 30px; height: 180px; background: url(../../images/shap.svg)center center no-repeat; background-size: contain; bottom: 0; right: calc(100% + 35px); }
+.iwTextBox .subTextBase { color: #001627B8; font-weight: 400; margin: 24px 0 46px; }
+.iwTextBoxUl { padding: 0 0 0 25px; border-left: 1px solid var(--colorBgLight); }
+.iwTextBoxUl li { position: relative; padding: 0 0 0 34px; margin: 10px 0; }
+.iwTextBoxUl li:before { content: ''; position: absolute; width: 22px; background: url(../../images/tick-icon.svg)center center no-repeat; background-size: 14px; height: 22px; background-color: var(--colorPrimary); border-radius: 5px; display: flex; align-items: center; justify-content: center; top: 0; left: 0; }
+.iwTextBoxUl span { color: #202836; text-transform: uppercase; font-weight: 500; }
