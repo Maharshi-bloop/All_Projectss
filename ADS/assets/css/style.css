@@ -44,7 +44,7 @@ table { border-collapse: collapse; width: 100%; }
 .headingXl { font-size: var(--fontXl); font-weight: 300; color: var(--colorText2); text-transform: uppercase; margin: 0; }
 .headingLg { font-size: var(--fontLg); color: var(--colorPrimary); font-weight: 500; text-transform: uppercase; }
 .headingBase { font-size: var(--fontBase); font-weight: 400; color: var(--colorPrimary); text-transform: uppercase; font-family: var(--fontPrimary); margin: 0; }
-.subTextMd { font-size: var(--fontMd); color: var(--colorText2); font-weight: 300; }
+.subTextMd { font-size: var(--fontMd); color: var(--colorText2); font-weight: 300;display: block; }
 .subTextSm { font-size: var(--fontSm); color: var(--colorSecondary); font-weight: 300; text-transform: uppercase; }
 .subTextBase { font-size: var(--fontBase); color: var(--colorText); font-weight: 300; display: block; }
 .whiteBtn { display: inline-block; padding: 12px 26px; border: 1px solid #C3C8D5; border-radius: 5px; color: var(--colorPrimary); font-family: var(--fontSecondary); font-weight: 300; transition: all 0.5s; background-color: var(--colorWhite); }
