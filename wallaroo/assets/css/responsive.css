@@ -1,241 +1,241 @@
-/* @media (max-width:1600px) {
-
-} */
+@media (max-width:1536px) {
+	.growTimeLine { padding: 0 0 210px 0; }
+}
 @media (max-width:1440px) {
-:root { --font8xl: 64px; --font7xl: 48px; --font5xl: 34px; --font4xl: 32px; --font3xl: 28px; --font2xl: 24px; --fontXl: 22px; }
-.timeLineWrapper { padding: 0; }
-.growTop { width: 90%; }
-.bannerText { padding: 100px 0 180px 0; }
-.bannerText .subTextXl { margin: 15px 0 30px 0; }
-section.headingText { padding: 120px 0; }
-.headingTextInner .subTextMd { margin: 40px 0 50px; }
-section.headingText { border-radius: 102px 102px 0 0; }
-.growTop { padding: 150px 0 0 0; }
-.timeLineWrapper ul { padding: 120px 0; }
-.growTimeLine { padding: 0 0 220px 0; }
-.growTimeLineInner:before { width: 500px; }
-.growTimeLineInner:after { width: 300px; }
-.verticalAcco { padding: 150px 0; }
-.verticalAccoListing { padding: 70px 0 0 0; }
-.verticalAccoText .heading3xl { width: 90%; }
-.registerCta { padding: 150px 0; }
+	:root { --font8xl: 64px; --font7xl: 48px; --font5xl: 34px; --font4xl: 32px; --font3xl: 28px; --font2xl: 24px; --fontXl: 22px; }
+	.timeLineWrapper { padding: 0; }
+	.growTop { width: 90%; }
+	.bannerText { padding: 100px 0 180px 0; }
+	.bannerText .subTextXl { margin: 15px 0 30px 0; }
+	section.headingText { padding: 120px 0; }
+	.headingTextInner .subTextMd { margin: 40px 0 50px; }
+	section.headingText { border-radius: 102px 102px 0 0; }
+	.growTop { padding: 150px 0 0 0; }
+	.timeLineWrapper ul { padding: 120px 0; }
+	.growTimeLine { padding: 0 0 220px 0; }
+	.growTimeLineInner:before { width: 500px; }
+	.growTimeLineInner:after { width: 300px; }
+	.verticalAcco { padding: 150px 0; }
+	.verticalAccoListing { padding: 70px 0 0 0; }
+	.verticalAccoText .heading3xl { width: 90%; }
+	.registerCta { padding: 150px 0; }
 }
 @media (max-width:1280px) {
-:root { --font8xl: 58px; --font7xl: 44px; --font5xl: 30px; --font4xl: 28px; --font3xl: 24px; --font2xl: 22px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }
-.growTimeLineInner:before { width: 400px; }
-.growTimeLineInner:after { width: 230px; bottom: 0px; left: 190px; }
-.growTimeLine { padding: 0 0 250px 0; }
-.growTimeLineInner:before { bottom: -100px; left: 100px; }
-.verticalAccoHeading h4 { padding: 20px; }
-.verticalAcco { padding: 100px 0; }
-.registerCta { padding: 100px 0; }
+	:root { --font8xl: 58px; --font7xl: 44px; --font5xl: 30px; --font4xl: 28px; --font3xl: 24px; --font2xl: 22px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }
+	.growTimeLineInner:before { width: 400px; }
+	.growTimeLineInner:after { width: 230px; bottom: 0px; left: 190px; }
+	.growTimeLine { padding: 0 0 250px 0; }
+	.growTimeLineInner:before { bottom: -100px; left: 100px; }
+	.verticalAccoHeading h4 { padding: 20px; }
+	.verticalAcco { padding: 100px 0; }
+	.registerCta { padding: 100px 0; }
 }
 @media (max-width:1024px) {
-:root { --font8xl: 50px; --font7xl: 40px; --font5xl: 28px; --font4xl: 26px; --font3xl: 22px; --font2xl: 20px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }
-.verticalAccoList { flex-direction: column; }
-.verticalAccoListing { height: unset; flex-direction: column; }
-.verticalAccoHeading h4 { writing-mode: unset; }
-.labelTwo, .labelFour { padding: 50px 0 40px 40px; }
-.labelThree, .labelOne { padding: 50px 80px 50px 0; }
-.aboutBanner { padding: 100px 0; }
-.aboutBanner:before { width: 300px; border: 70px solid var(--colorPrimary); top: -150px; right: -150px; }
-.aboutBanner:after { width: 300px; border: 70px solid var(--colorPrimary); bottom: -150px; left: -150px; }
-.textBgImage { padding: 150px 0 600px 0; }
-.halfImageText { padding: 100px 0; }
-.halfImageTextInner { margin-top: 30px; }
-.halfContainerImage { height: 500px; }
-.halfImageText:before { width: 100px; height: 100px; background-size: contain; top: 130px; }
-.halfImageTextInner { width: 48%; }
-.titleGrid { padding: 150px 0 100px 0; }
-.titleGridTop { width: 100%; }
-.titleGridList { padding: 40px 30px; }
-.GridListTopIcon { width: 80px; height: 80px; }
-.card-body { padding: 30px; height: 500px; }
-.cardWrapper { padding: 200px 0 0; }
-.ctaWrapperInner .subTextMd { width: 60%; }
-.masterPlanBanner { height: 65vh; }
-.behindWrTopImage { width: 70px; }
-.behindWrTop { gap: 20px; }
-.whyChoose { padding: 100px 0; }
-.whyChooseObject { top: 100px; width: 80px; }
-.whyChooseInner { width: 43%; }
-.behindWr { padding: 100px 0; }
-.experience { padding: 100px 0 !important; }
-.deliveredListImage { height: 100%; }
-.deliveredListImage img { width: 100%; height: 100%; object-fit: cover; }
-.deliveredListContent { gap: 50px; }
-.ctaWrapper { padding: 100px 0; }
+	:root { --font8xl: 50px; --font7xl: 40px; --font5xl: 28px; --font4xl: 26px; --font3xl: 22px; --font2xl: 20px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }
+	.verticalAccoList { flex-direction: column; }
+	.verticalAccoListing { height: unset; flex-direction: column; }
+	.verticalAccoHeading h4 { writing-mode: unset; }
+	.labelTwo, .labelFour { padding: 50px 0 40px 40px; }
+	.labelThree, .labelOne { padding: 50px 80px 50px 0; }
+	.aboutBanner { padding: 100px 0; }
+	.aboutBanner:before { width: 300px; border: 70px solid var(--colorPrimary); top: -150px; right: -150px; }
+	.aboutBanner:after { width: 300px; border: 70px solid var(--colorPrimary); bottom: -150px; left: -150px; }
+	.textBgImage { padding: 150px 0 600px 0; }
+	.halfImageText { padding: 100px 0; }
+	.halfImageTextInner { margin-top: 30px; }
+	.halfContainerImage { height: 500px; }
+	.halfImageText:before { width: 100px; height: 100px; background-size: contain; top: 130px; }
+	.halfImageTextInner { width: 48%; }
+	.titleGrid { padding: 150px 0 100px 0; }
+	.titleGridTop { width: 100%; }
+	.titleGridList { padding: 40px 30px; }
+	.GridListTopIcon { width: 80px; height: 80px; }
+	.card-body { padding: 30px; height: 500px; }
+	.cardWrapper { padding: 200px 0 0; }
+	.ctaWrapperInner .subTextMd { width: 60%; }
+	.masterPlanBanner { height: 65vh; }
+	.behindWrTopImage { width: 70px; }
+	.behindWrTop { gap: 20px; }
+	.whyChoose { padding: 100px 0; }
+	.whyChooseObject { top: 100px; width: 80px; }
+	.whyChooseInner { width: 43%; }
+	.behindWr { padding: 100px 0; }
+	.experience { padding: 100px 0 !important; }
+	.deliveredListImage { height: 100%; }
+	.deliveredListImage img { width: 100%; height: 100%; object-fit: cover; }
+	.deliveredListContent { gap: 50px; }
+	.ctaWrapper { padding: 100px 0; }
 }
 @media (max-width:991px) {
-.timeLineWrapper { padding: 0 0 0 50px; margin: 50px 0 0 0; }
-.timeLineWrapper ul { padding: 50px 0; }
-.growTimeLine { padding: 0 0 350px 0; overflow: clip; }
-.growTimeLineInner:before { bottom: -400px; left: 310px; }
-.growTimeLineInner:after { width: 300px; bottom: -360px; left: 360px; }
-.timeLineWrapper ul > div { padding: 50px 0 50px 80px; }
-.registerCtaText { margin: 0 0 50px 0; }
-.logo { width: 150px; }
-.textBoxHeading div { width: 110px; aspect-ratio: 1; }
-.threeTownsHoriListing { gap: 30px; }
-.HoriListImage { height: 110px; }
-.threeTowns:before, .threeTowns:after { background-size: contain; }
-.threeTowns { padding: 150px 0 !important; }
-.threeTowns:before { width: 250px; top: -33px; }
-.threeTowns:after { width: 250px; height: 250px; bottom: -90px; left: 0; }
-.cardWrapper { padding: 100px 0 0; }
-.cardContent { flex-direction: column; }
-.cardImage { width: 100%; height: 300px; }
-.cardText { width: 100%; padding: 30px 0 0 0; }
-.cardText .heading7xl { font-size: var(--font5xl); }
-.cardText .heading7xl br { display: none; }
-.card-body { padding: 20px; height: 620px; }
-.cardContent { justify-content: unset; }
-.cardText .subTextMd { padding: 15px 0 0 0; margin: 15px 0 0 0; }
-.card-body:before { width: 70px; height: 70px; }
-.ctaWrapper { padding: 100px 0; }
-.aboutBannerInner { width: 90%; margin: 0 auto; }
-.aboutBanner:before, .aboutBanner:after { z-index: -1; }
-.textBox .subTextMd { width: 95%; }
-.masterPlanBannerInner { width: 60%; }
-.delivered { padding: 100px 0; }
-.smallIcon { width: 90px; }
-.deliveredLeft { display: flex; align-items: center; gap: 20px; margin: 0 0 50px 0; }
-.deliveredLeft .heading7xl { margin: 0; }
-.ListContentInfo { margin: 20px 0 0 0; }
-.deliveredListContent { gap: 40px; }
-.deliveredList { padding: 30px; }
-.threeTownsHoriWrap { margin: 30px 0 0 0; }
-.contactBannerForm, .contactBannerContent { width: 100%; }
-.contactBannerInner { flex-direction: column; }
-.contactBanner { overflow: clip; }
-.contactBannerInner::after { height: 29%; }
-.contactBannerInner::before { width: 110%; height: 29%; }
-.contactBannerForm { margin: 0; }
-.formField.checkBoxWrap { margin: 10px 0 20px; }
-.contactBannerContent { margin: 80px 0 0 0; }
-.contactBannerContent .smallObject { height: auto; width: 230px; }
-.contactBannerContent .subTextMd { margin: 10px 0 30px 0; }
-.visitContent { margin: 30px 0 0 0; }
-.visitWrpInner iframe { width: 100%; }
-.cardss { top: 30px; }
+	.timeLineWrapper { padding: 0 0 0 50px; margin: 50px 0 0 0; }
+	.timeLineWrapper ul { padding: 50px 0; }
+	.growTimeLine { padding: 0 0 350px 0; overflow: clip; }
+	.growTimeLineInner:before { bottom: -400px; left: 310px; }
+	.growTimeLineInner:after { width: 300px; bottom: -360px; left: 360px; }
+	.timeLineWrapper ul > div { padding: 50px 0 50px 80px; }
+	.registerCtaText { margin: 0 0 50px 0; }
+	.logo { width: 150px; }
+	.textBoxHeading div { width: 110px; aspect-ratio: 1; }
+	.threeTownsHoriListing { gap: 30px; }
+	.HoriListImage { height: 110px; }
+	.threeTowns:before, .threeTowns:after { background-size: contain; }
+	.threeTowns { padding: 150px 0 !important; }
+	.threeTowns:before { width: 250px; top: -33px; }
+	.threeTowns:after { width: 250px; height: 250px; bottom: -90px; left: 0; }
+	.cardWrapper { padding: 100px 0 0; }
+	.cardContent { flex-direction: column; }
+	.cardImage { width: 100%; height: 300px; }
+	.cardText { width: 100%; padding: 30px 0 0 0; }
+	.cardText .heading7xl { font-size: var(--font5xl); }
+	.cardText .heading7xl br { display: none; }
+	.card-body { padding: 20px; height: 620px; }
+	.cardContent { justify-content: unset; }
+	.cardText .subTextMd { padding: 15px 0 0 0; margin: 15px 0 0 0; }
+	.card-body:before { width: 70px; height: 70px; }
+	.ctaWrapper { padding: 100px 0; }
+	.aboutBannerInner { width: 90%; margin: 0 auto; }
+	.aboutBanner:before, .aboutBanner:after { z-index: -1; }
+	.textBox .subTextMd { width: 95%; }
+	.masterPlanBannerInner { width: 60%; }
+	.delivered { padding: 100px 0; }
+	.smallIcon { width: 90px; }
+	.deliveredLeft { display: flex; align-items: center; gap: 20px; margin: 0 0 50px 0; }
+	.deliveredLeft .heading7xl { margin: 0; }
+	.ListContentInfo { margin: 20px 0 0 0; }
+	.deliveredListContent { gap: 40px; }
+	.deliveredList { padding: 30px; }
+	.threeTownsHoriWrap { margin: 30px 0 0 0; }
+	.contactBannerForm, .contactBannerContent { width: 100%; }
+	.contactBannerInner { flex-direction: column; }
+	.contactBanner { overflow: clip; }
+	.contactBannerInner::after { height: 29%; }
+	.contactBannerInner::before { width: 110%; height: 29%; }
+	.contactBannerForm { margin: 0; }
+	.formField.checkBoxWrap { margin: 10px 0 20px; }
+	.contactBannerContent { margin: 80px 0 0 0; }
+	.contactBannerContent .smallObject { height: auto; width: 230px; }
+	.contactBannerContent .subTextMd { margin: 10px 0 30px 0; }
+	.visitContent { margin: 30px 0 0 0; }
+	.visitWrpInner iframe { width: 100%; }
+	.cardss { top: 30px; }
 }
 @media (max-width:480px) {
-:root { --font8xl: 36px; --font7xl: 30px; --font5xl: 24px; --font4xl: 22px; --font3xl: 20px; --font2xl: 18px; --fontXl: 16px; --fontLg: 16px; --fontMd: 16px; --fontBase: 14px; }
-.headerOption { width: 100%; }
-.verticalAccoContent { opacity: 1; visibility: visible; max-width: 100%; }
-.verticalAccoText { position: relative; padding: 25px 20px; }
-.verticalAccoText .heading3xl { border: 0; }
-.verticalAccoImage { height: 300px; }
-.left, .right { display: none; }
-section.headingText { border-radius: 50px 50px 0 0; }
-.headingTextInner, .headingTextInner .subTextMd { width: 100%; }
-section.headingText { padding: 100px 0; }
-.bannerCtaWrap { flex-direction: column; gap: 20px; align-items: center; }
-.bannerText { width: 100%; }
-.labelOne, .labelTwo, .labelThree, .labelFour { width: 90%; }
-.labelOne h3 br { display: none; }
-.labelTwo, .labelFour { padding: 40px 0 40px 40px; }
-.labelThree, .labelOne { padding: 40px 40px 40px 0; }
-.bannerCtaWrap a { width: max-content; }
-.bannerText { padding: 101px 0 150px 0; }
-.growTop { width: 100%; padding: 80px 0 0 0; }
-.timeLineWrapper { padding: 0 0 0 20px; }
-.timeLineWrapper ul li, .timeLineWrapper ul > div { padding: 50px 0 50px 40px; }
-.timeLineWrapper ul h2 { padding: 0 0 0 40px; }
-.textImage { padding: 100px 0; }
-.textImageInner { gap: 100px; }
-.growTimeLineBg { width: 140%; }
-.growTimeLine { padding: 0 0 200px 0; }
-.growTimeLineInner:before { bottom: -140px; left: 220px; width: 150px; }
-.growTimeLineInner:after { width: 100px; bottom: -120px; left: 243px; }
-.labelTwo:after, .labelThree:after, .labelFour:after { display: none; }
-.halfContainerImage { position: relative; width: 95%; }
-.halfImageTextInner { width: 100%; }
-.halfImageText:before { top: 44%; left: auto; right: 10%; width: 70px; height: 70px; }
-.halfContainerImage { height: 340px; }
-.textBgImage { padding: 80px 0 600px 0; }
-.textBoxHeading div { width: 70px; }
-.textBoxHeading { gap: 20px; }
-.textBoxHeading .heading8xl { width: calc(100% - 70px); }
-.titleGrid { padding: 100px 0; }
-.titleGridListing { margin: 40px 0 0 0; }
-.card-body { height: 630px; }
-.cardss { top: 30px; }
-.cardText .subTextMd { font-size: 14px; }
-.cardText { padding: 20px 0 0 0; }
-.logo { width: 120px; }
-.cardWrapper { padding: 100px 0 60px; }
-.ctaWrapperInner .subTextMd { width: 100%; }
-.threeTownsTop .subTextMd { width: 100%; }
-.mobileNone { display: none; }
-.desktopNone { display: block; }
-.threeTownsHoriList:before { display: none; }
-.threeTownsHoriList { width: 90%; }
-.HoriListImage { height: 200px; }
-.about-us .in-view .threeTownsHoriList { opacity: 1; }
-.about-us .timeLineWrapper ul { padding: 0; }
-.about-us .timeLineWrapper ul li { padding: 30px 0 30px 40px; }
-.planShowCaseListing { width: 100%; }
-.planDataWrap { width: 100%; }
-.master-plan .headingText { padding: 100px 0; }
-.masterPlanBanner { height: 50vh; }
-.masterPlanBannerInner { width: 90%; }
-.behindWr { padding: 70px 0; }
-.behindWrIcon { margin: 50px auto 0; }
-.whyChoose { padding: 0 0 70px 0; }
-.whyChooseHalfBg { width: 100vw; position: relative; }
-.whyChooseInner { width: 100%; margin: 50px 0 0 0; }
-.whyChooseObject { top: 40%; width: 60px; right: 0; left: auto; }
-.threeTownsHoriList { width: 100%; }
-.our-story .in-view .threeTownsHoriList { opacity: 1; }
-.our-story .timeLineWrapper ul { padding: 0; }
-.our-story .timeLineWrapper ul li { padding: 30px 0 30px 40px; }
-.deliveredList { padding: 20px; }
-.deliveredList .row { flex-direction: column-reverse; }
-.deliveredListContent { margin: 20px 0 0 0; }
-.smallIcon { width: 60px; }
-.deliveredLeft h3 { width: calc(100% - 60px); }
-.deliveredLeft h3 br { display: none; }
-.logoWrap a { margin: 0; width: 190px; }
-footer { padding: 50px 0 0 0; }
-.footerInner .row .row { row-gap: 40px; }
-.footerUl ul li a { margin: 0 0 12px 0; }
-.footerLogo a { width: 100%; margin: 50px 0 0 0px; text-align: center; display: flex; align-items: center; justify-content: flex-start; }
-.footerLogo a img { width: 170px; }
-.ddBlop { justify-content: flex-start; width: 100%; text-align: center; padding: 20px 0; }
-.ddBlop span { width: auto; }
-.ddBlop a { width: 60px; }
-.planWrapperInner { flex-direction: column; }
-.planShowCaseListing { width: 100%; height: 50vh; }
-.planDataWrap { width: 100%; height: 50vh; }
-.planStageWrap { padding: 20px; }
-tbody td, thead th { padding: 10px 5px; font-size: 12px; }
-.select-dropdown__button { padding: 12px 35px 12px 16px; }
-.select-dropdownInner span { padding: 6px 20px; font-size: 18px; }
-.select-dropdown__button i { right: 5px; font-size: 26px; }
-tbody td:first-child span { width: 10px; height: 10px; }
-td img { width: 22px; }
-.fullPlan { width: 70px; height: 70px; top: auto; left: auto; bottom: 20px; right: 20px; }
-.planAvailiblity { padding: 10px 10px 10px 40px; top: auto; right: auto; gap: 40px; bottom: 20px; left: 20px; }
-.planStageDetail { height: calc(100% - 104px); }
-.headerCta { margin: 20px 40px; }
-.headerCta a { width: 100%; text-align: center; }
-nav ul li a { text-align: center; margin: 0; }
-.headerUl { width: 100%; }
-.select-dropdown__list-item { padding: 12px 35px 12px 16px; }
-.textImageInner br { display: none; }
-.verticalAcco { padding: 70px 0; }
-.verticalAccoListing { padding: 40px 0 0 0; }
-.contactBannerInner::before, .contactBannerInner::after { height: 24%; }
-.teleWrap { gap: 30px; flex-direction: column; }
-.visitContent ul li { gap: 20px; }
-.ulIcon { width: 30px; height: 30px; }
-.BtnWrapper { gap: 20px; flex-direction: column; }
-.contentBlock { margin-top: 50px; }
-.footerLogo a { justify-content: center; }
-.titleImage { flex-direction: column; width: 100%; gap: 0; margin: 30px 0 0 0; }
-.titleImage span { width: 100%; text-align: center; }
-.copyRight { flex-direction: column; }
-.ddBlop { justify-content: center; }
-.cardImage { height: 280px; }
+	:root { --font8xl: 36px; --font7xl: 30px; --font5xl: 24px; --font4xl: 22px; --font3xl: 20px; --font2xl: 18px; --fontXl: 16px; --fontLg: 16px; --fontMd: 16px; --fontBase: 14px; }
+	.headerOption { width: 100%; }
+	.verticalAccoContent { opacity: 1; visibility: visible; max-width: 100%; }
+	.verticalAccoText { position: relative; padding: 25px 20px; }
+	.verticalAccoText .heading3xl { border: 0; }
+	.verticalAccoImage { height: 300px; }
+	.left, .right { display: none; }
+	section.headingText { border-radius: 50px 50px 0 0; }
+	.headingTextInner, .headingTextInner .subTextMd { width: 100%; }
+	section.headingText { padding: 100px 0; }
+	.bannerCtaWrap { flex-direction: column; gap: 20px; align-items: center; }
+	.bannerText { width: 100%; }
+	.labelOne, .labelTwo, .labelThree, .labelFour { width: 90%; }
+	.labelOne h3 br { display: none; }
+	.labelTwo, .labelFour { padding: 40px 0 40px 40px; }
+	.labelThree, .labelOne { padding: 40px 40px 40px 0; }
+	.bannerCtaWrap a { width: max-content; }
+	.bannerText { padding: 101px 0 150px 0; }
+	.growTop { width: 100%; padding: 80px 0 0 0; }
+	.timeLineWrapper { padding: 0 0 0 20px; }
+	.timeLineWrapper ul li, .timeLineWrapper ul > div { padding: 50px 0 50px 40px; }
+	.timeLineWrapper ul h2 { padding: 0 0 0 40px; }
+	.textImage { padding: 100px 0; }
+	.textImageInner { gap: 100px; }
+	.growTimeLineBg { width: 140%; }
+	.growTimeLine { padding: 0 0 200px 0; }
+	.growTimeLineInner:before { bottom: -140px; left: 220px; width: 150px; }
+	.growTimeLineInner:after { width: 100px; bottom: -120px; left: 243px; }
+	.labelTwo:after, .labelThree:after, .labelFour:after { display: none; }
+	.halfContainerImage { position: relative; width: 95%; }
+	.halfImageTextInner { width: 100%; }
+	.halfImageText:before { top: 44%; left: auto; right: 10%; width: 70px; height: 70px; }
+	.halfContainerImage { height: 340px; }
+	.textBgImage { padding: 80px 0 600px 0; }
+	.textBoxHeading div { width: 70px; }
+	.textBoxHeading { gap: 20px; }
+	.textBoxHeading .heading8xl { width: calc(100% - 70px); }
+	.titleGrid { padding: 100px 0; }
+	.titleGridListing { margin: 40px 0 0 0; }
+	.card-body { height: 630px; }
+	.cardss { top: 30px; }
+	.cardText .subTextMd { font-size: 14px; }
+	.cardText { padding: 20px 0 0 0; }
+	.logo { width: 120px; }
+	.cardWrapper { padding: 100px 0 60px; }
+	.ctaWrapperInner .subTextMd { width: 100%; }
+	.threeTownsTop .subTextMd { width: 100%; }
+	.mobileNone { display: none; }
+	.desktopNone { display: block; }
+	.threeTownsHoriList:before { display: none; }
+	.threeTownsHoriList { width: 90%; }
+	.HoriListImage { height: 200px; }
+	.about-us .in-view .threeTownsHoriList { opacity: 1; }
+	.about-us .timeLineWrapper ul { padding: 0; }
+	.about-us .timeLineWrapper ul li { padding: 30px 0 30px 40px; }
+	.planShowCaseListing { width: 100%; }
+	.planDataWrap { width: 100%; }
+	.master-plan .headingText { padding: 100px 0; }
+	.masterPlanBanner { height: 50vh; }
+	.masterPlanBannerInner { width: 90%; }
+	.behindWr { padding: 70px 0; }
+	.behindWrIcon { margin: 50px auto 0; }
+	.whyChoose { padding: 0 0 70px 0; }
+	.whyChooseHalfBg { width: 100vw; position: relative; }
+	.whyChooseInner { width: 100%; margin: 50px 0 0 0; }
+	.whyChooseObject { top: 40%; width: 60px; right: 0; left: auto; }
+	.threeTownsHoriList { width: 100%; }
+	.our-story .in-view .threeTownsHoriList { opacity: 1; }
+	.our-story .timeLineWrapper ul { padding: 0; }
+	.our-story .timeLineWrapper ul li { padding: 30px 0 30px 40px; }
+	.deliveredList { padding: 20px; }
+	.deliveredList .row { flex-direction: column-reverse; }
+	.deliveredListContent { margin: 20px 0 0 0; }
+	.smallIcon { width: 60px; }
+	.deliveredLeft h3 { width: calc(100% - 60px); }
+	.deliveredLeft h3 br { display: none; }
+	.logoWrap a { margin: 0; width: 190px; }
+	footer { padding: 50px 0 0 0; }
+	.footerInner .row .row { row-gap: 40px; }
+	.footerUl ul li a { margin: 0 0 12px 0; }
+	.footerLogo a { width: 100%; margin: 50px 0 0 0px; text-align: center; display: flex; align-items: center; justify-content: flex-start; }
+	.footerLogo a img { width: 170px; }
+	.ddBlop { justify-content: flex-start; width: 100%; text-align: center; padding: 20px 0; }
+	.ddBlop span { width: auto; }
+	.ddBlop a { width: 60px; }
+	.planWrapperInner { flex-direction: column; }
+	.planShowCaseListing { width: 100%; height: 50vh; }
+	.planDataWrap { width: 100%; height: 50vh; }
+	.planStageWrap { padding: 20px; }
+	tbody td, thead th { padding: 10px 5px; font-size: 12px; }
+	.select-dropdown__button { padding: 12px 35px 12px 16px; }
+	.select-dropdownInner span { padding: 6px 20px; font-size: 18px; }
+	.select-dropdown__button i { right: 5px; font-size: 26px; }
+	tbody td:first-child span { width: 10px; height: 10px; }
+	td img { width: 22px; }
+	.fullPlan { width: 70px; height: 70px; top: auto; left: auto; bottom: 20px; right: 20px; }
+	.planAvailiblity { padding: 10px 10px 10px 40px; top: auto; right: auto; gap: 40px; bottom: 20px; left: 20px; }
+	.planStageDetail { height: calc(100% - 104px); }
+	.headerCta { margin: 20px 40px; }
+	.headerCta a { width: 100%; text-align: center; }
+	nav ul li a { text-align: center; margin: 0; }
+	.headerUl { width: 100%; }
+	.select-dropdown__list-item { padding: 12px 35px 12px 16px; }
+	.textImageInner br { display: none; }
+	.verticalAcco { padding: 70px 0; }
+	.verticalAccoListing { padding: 40px 0 0 0; }
+	.contactBannerInner::before, .contactBannerInner::after { height: 24%; }
+	.teleWrap { gap: 30px; flex-direction: column; }
+	.visitContent ul li { gap: 20px; }
+	.ulIcon { width: 30px; height: 30px; }
+	.BtnWrapper { gap: 20px; flex-direction: column; }
+	.contentBlock { margin-top: 50px; }
+	.footerLogo a { justify-content: center; }
+	.titleImage { flex-direction: column; width: 100%; gap: 0; margin: 30px 0 0 0; }
+	.titleImage span { width: 100%; text-align: center; }
+	.copyRight { flex-direction: column; }
+	.ddBlop { justify-content: center; }
+	.cardImage { height: 280px; }
 }
