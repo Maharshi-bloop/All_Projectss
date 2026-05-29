@@ -1,4 +1,4 @@
-@media (max-width:1536px) {
+@media (max-width:1537px) {
 	.growTimeLine { padding: 0 0 210px 0; }
 }
 @media (max-width:1440px) {
@@ -29,6 +29,10 @@
 	.verticalAccoHeading h4 { padding: 20px; }
 	.verticalAcco { padding: 100px 0; }
 	.registerCta { padding: 100px 0; }
+	.select-dropdownInner span { padding: 10px 20px; font-size: 16px; }
+	.select-dropdown__button, .select-dropdown__list-item { padding: 16px 60px 16px 28px; }
+	.masterPlanBanner { height: 133vh;
+	}
 }
 @media (max-width:1024px) {
 	:root { --font8xl: 50px; --font7xl: 40px; --font5xl: 28px; --font4xl: 26px; --font3xl: 22px; --font2xl: 20px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }

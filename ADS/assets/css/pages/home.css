@@ -34,19 +34,7 @@
 .gridListImage { position: relative; }
 .gridListImage:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); top: 0; left: 0; }
 
-/* imageTextWrap css */
-.imageTextWrap { margin: 80px 0 0 0; background-color: var(--colorSecondary); position: relative; z-index: 1; overflow: clip; }
-.iwImage { position: absolute; width: 50%; height: 100%; top: 0; left: 0; }
-.iwImage:before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); }
-.iwImage img { width: 100%; height: 100%; object-fit: cover; }
-.imageTextWrapInner { width: calc(50% - 44px); margin-left: auto; }
-.iwTextBox { padding: 50px 0; position: relative; }
-.iwTextBox:before { content: ''; position: absolute; width: 30px; height: 180px; background: url(../../images/shap.svg)center center no-repeat; background-size: contain; bottom: 0; right: calc(100% + 35px); }
-.iwTextBox .subTextBase { color: #001627B8; font-weight: 400; margin: 24px 0 46px; }
-.iwTextBoxUl { padding: 0 0 0 25px; border-left: 1px solid var(--colorBgLight); }
-.iwTextBoxUl li { position: relative; padding: 0 0 0 34px; margin: 10px 0; }
-.iwTextBoxUl li:before { content: ''; position: absolute; width: 22px; background: url(../../images/tick-icon.svg)center center no-repeat; background-size: 14px; height: 22px; background-color: var(--colorPrimary); border-radius: 5px; display: flex; align-items: center; justify-content: center; top: 0; left: 0; }
-.iwTextBoxUl span { color: #202836; text-transform: uppercase; font-weight: 500; }
+
 
 /* whyChoose css */
 .whyChoose { position: relative; z-index: 1; overflow: clip; padding: 80px 0; }

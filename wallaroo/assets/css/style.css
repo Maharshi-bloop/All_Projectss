@@ -212,6 +212,7 @@ footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 /* form css */
 span.wpcf7-not-valid-tip { position: absolute; bottom: 4px; font-size: 13px; left: 10px; }
 span.wpcf7-form-control-wrap { display: block; }
+.wpcf7-spinner { position: absolute; }
 
 /* detail page css */
 .pageTopPadding { padding: 70px 0; }
