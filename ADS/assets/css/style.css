@@ -69,7 +69,7 @@ header { padding: 12px 0; border-top: 2px solid var(--colorSecondary); position:
 	nav li a { color: var(--colorText2); position: relative; display: inline-block; padding: 5px 0px; text-decoration: none; transition: all 0.3s; position: relative; }
 	nav li a:before { content: ''; position: absolute; width: 0; height: 1px; background-color: var(--colorSecondary); transition: all 0.3s; left: 0; bottom: 5px; }
 	nav li a:hover { color: var(--colorSecondary); }
-	nav li a:hover:before { width: 100%; }
+	nav li a:hover:before, .current_page_item a:hover:before { width: 100%; }
 	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
 	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
 	li.hasUl a { padding-right: 25px !important; }
