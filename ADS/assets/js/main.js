@@ -86,4 +86,11 @@ $(document).ready(function () {
         stickyHeader();
     });
 
+   /*  document.querySelectorAll('.cmSystemListContent li').forEach((item, index) => {
+       item.classList.add('aos-init', 'aos-animate');
+        item.setAttribute('data-aos', 'fade-up');
+        item.setAttribute('data-aos-duration', '800');
+        item.setAttribute('data-aos-delay', index * 50);
+    }); */
+
 })
