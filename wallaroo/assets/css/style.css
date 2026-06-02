@@ -27,7 +27,7 @@
 /* RESET CSS */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html:focus-within { scroll-behavior: smooth; }
-body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontPrimary); font-size: var(--fontBase); line-height: 1.6; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontPrimary); font-size: var(--fontBase); line-height: 1.6; overflow-x: clip; }
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
 input, button, textarea, select { font: inherit; }
 a { text-decoration: none; color: inherit; }
@@ -51,6 +51,18 @@ table { border-collapse: collapse; width: 100%; }
 .primaryBrdrBtn:hover { background-color: var(--colorSecondary); color: var(--colorWhite); border-color: var(--colorSecondary); }
 .desktopNone { display: none; }
 .scrollOff { overflow: hidden; }
+
+/*  */
+.enquireFormInner { width: 600px; background-color: var(--colorPrimaryLight); position: fixed; top: 50%; right: -100%; z-index: 11; transition: all 0.5s; transform: translateY(-50%); padding: 70px 40px; }
+.enquireFormInner.openForm { right: 0; }
+.enquireFormWrap > a { display: inline-block; position: fixed; top: 50%; transform: translateY(-50%); right: 0; z-index: 10; writing-mode: sideways-lr; padding: 60px 12px; background-color: var(--colorPrimary); border-radius: 10px 0 0 10px; color: var(--colorWhite); }
+.enquireFormInner  .formDesign { margin: 40px 0 0 0; width: 70%; }
+.enquireFormInner .heading3xl { color: var(--colorSecondary); }
+.equireFormTop .subTextMd { color: var(--colorBlack); }
+.enquireFormInner  .formDesign  .formField.checkBoxWrap { text-align: left; }
+.enquireFormInner:before { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: url(../images/l-shap.svg)center center no-repeat; background-size: contain; }
+
+/*  */
 
 /* === HEADER CSS START === */
 header { padding: 20px 0; background-color: var(--colorSecondary); }
@@ -184,6 +196,7 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .formField select { -webkit-appearance: none; color: #626262; background: url(../images/drop-down-arrow.svg) center center no-repeat; background-size: 16px; background-position: 95% 50%; background-color: var(--colorBg); }
 .formField.checkBoxWrap { margin: 10px 0 50px; text-align: center; }
 input.primaryBtn { border: none; }
+a.closeFormBtn { position: absolute; top: 50%; right: 50px; background-color: var(--colorSecondary); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transform: rotate(-90deg); }
 
 /* footer css */
 footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }

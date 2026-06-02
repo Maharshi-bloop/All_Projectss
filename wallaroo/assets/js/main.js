@@ -24,6 +24,18 @@ $(document).ready(function () {
         stickyHeader();
     });
 
+    $(".enquireFormWrap").on("click", function (e) {
+        e.preventDefault();
+        $(".enquireFormInner").addClass("openForm");
+        $("body").addClass("scrollOff");
+    });
+    $(".closeFormBtn").on("click", function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+       $(this).closest(".enquireFormInner").removeClass("openForm");
+        $("body").removeClass("scrollOff");
+    });
+
 
 
 

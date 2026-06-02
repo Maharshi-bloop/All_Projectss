@@ -30,8 +30,12 @@
 .titleGridTop { width: 80%; }
 .titleGridListing { margin: 80px 0 0 0; }
 .titleGridList .subTextMd { color: var(--colorText); line-height: 1.3; }
-.titleGridList { padding: 90px 50px; border: 1px solid var(--colorPrimary); height: 100%; }
-.titleGridList .subTextMd { margin: 30px 0 0 0; }
+.titleGridListInner { padding: 40px; border-top: 1px solid var(--colorPrimary); height: auto; position: absolute; bottom: 0; left: 0; width: 100%; background-color: #FFF9F3; transform: translateY(130px); max-height: 300px; transition: all 0.3s; }
+.titleGridList .subTextMd { margin: 20px 0 0 0; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.titleGridList { position: relative; overflow: clip; border: 1px solid var(--colorPrimary); }
+.titleGridList:hover .titleGridListInner { transform: translateY(0); }
+.titleGridList:hover span.subTextMd { opacity: 1; visibility: visible; }
+.titleGridImage { height: 400px; }
 
 /* threeTowns css */
 .threeTowns { padding: 200px 0; background-color: var(--colorPrimaryLight); position: relative; z-index: 1; overflow: clip; }
