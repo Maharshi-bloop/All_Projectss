@@ -65,7 +65,8 @@ table { border-collapse: collapse; width: 100%; }
 /*  */
 
 /* === HEADER CSS START === */
-header { padding: 20px 0; background-color: var(--colorSecondary); }
+header { padding: 20px 0;/*  background-color: var(--colorSecondary);  */ position: fixed; width: 100%; z-index: 10; transition: all 0.3s; }
+header.stickyHeader { background-color: var(--colorSecondary); padding: 10px 0; }
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 nav li a { transition: all 0.3s; position: relative; }
@@ -74,9 +75,9 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 .current-menu-item a::before { opacity: 1; visibility: visible; }
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
-	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; gap: 24px; }
+	nav>ul { display: flex; padding: 0; border-radius: 12px; gap: 24px; }
 	nav li { position: relative; }
-	nav li a { color: var(--colorWhite); position: relative; display: inline-block; padding: 16px 12px; text-decoration: none; transition: all 0.3s; position: relative; }
+	nav li a { color: var(--colorWhite); position: relative; display: inline-block; padding: 16px 12px; text-decoration: none; transition: all 0.3s; position: relative; text-transform: uppercase; font-family: 'Poppins'; font-weight: 500; font-size: 20px; }
 	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
 	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
 	li.hasUl a { padding-right: 25px !important; }

@@ -1,0 +1,39 @@
+.construction-updates { background-color: var(--colorBg); }
+section.cuBanner { position: relative; height: 70vh; z-index: 1; display: flex; align-items: center; justify-content: center; text-align: center; }
+.cuBannerImage { position: absolute; width: 100%; height: 100%; z-index: -1; }
+.cuBannerImage img { width: 100%; height: 100%; object-fit: cover; }
+section.cuBanner:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: #0000004D; z-index: 0; }
+.cuBannerInner { position: relative; }
+
+/* progressWrap css */
+.progressWrap { padding: 90px 0; }
+.progressListing { margin: 80px 0 0 0; }
+.progressList { background-color: var(--colorSecondary); margin: 0 0 50px 0; }
+.progressListHeading { padding: 60px 100px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--colorWhite); }
+.progressListHeading .heading6xl { color: var(--colorPrimary); }
+.plLeft { display: flex; align-items: center; gap: 100px; position: relative; }
+.plLeft:before { content: ''; position: absolute; width: 1px; height: 100%; background-color: var(--colorWhite); top: 50%; left: 52%; transform: translate(-50%, -50%); }
+.plLeft div { color: var(--colorWhite); font-size: 22px; }
+.plLeft div span { display: block; font-weight: 300; }
+.plLeft div strong { font-weight: 600; }
+.progressListBody { padding: 60px 100px; }
+.progressListBody .row { justify-content: space-between; }
+.plBodySwiper img { width: 100%; height: 100%; object-fit: cover; }
+.swiperController div { width: 20px; position: absolute; top: 50%; left: -40px; transform: translateY(calc(-50% - 40px)) rotate(91deg); }
+.plBodySwiper { position: relative; }
+.plBodySwiper .swiper-wrapper { margin: 0 0 40px 0; }
+.swiperController .nextBtn { left: auto; right: -40px; transform: translateY(calc(-50% - 40px)) rotate(-90deg); }
+.plRight { transition: all 0.3s; width: 30px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.plRight img { width: 100%; height: 100%; object-fit: contain; }
+.active .plRight { transform: rotate(-180deg); }
+
+/* completedWrap css */
+.completedWrap { padding: 150px 0; background-color: var(--colorPrimaryLight); }
+.completedListing { margin: 100px 0 0 0; }
+.completedList { background-color: var(--colorSecondary); padding: 60px 100px; position: relative; }
+.completedList .plLeft:before { display: none; }
+.completedList:before { content: ''; position: absolute; width: 1px; height: 40%; background-color: var(--colorWhite); top: 50%; left: 52%; transform: translate(-50%, -50%); }
+.completedList .heading6xl { color: var(--colorPrimary); }
+.completedList .plLeft { justify-content: center; gap: 84px; }
+.swiper-pagination-bullet { width: 12px; height: 12px; background-color: #fff; opacity: 1; }
+.swiper-pagination-bullet-active { background-color: #EC793E; }
