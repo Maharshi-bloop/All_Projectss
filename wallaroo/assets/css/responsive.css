@@ -1,5 +1,9 @@
 @media (max-width:1537px) {
 	.growTimeLine { padding: 0 0 210px 0; }
+	.progressListHeading { padding: 40px 60px; }
+	.progressListBody { padding: 60px; }
+	.completedList .plLeft { justify-content: space-between; }
+	.completedList { padding: 40px 80px; }
 }
 @media (max-width:1440px) {
 	:root { --font8xl: 64px; --font7xl: 48px; --font5xl: 34px; --font4xl: 32px; --font3xl: 28px; --font2xl: 24px; --fontXl: 22px; }
@@ -31,8 +35,7 @@
 	.registerCta { padding: 100px 0; }
 	.select-dropdownInner span { padding: 10px 20px; font-size: 16px; }
 	.select-dropdown__button, .select-dropdown__list-item { padding: 16px 60px 16px 28px; }
-	.masterPlanBanner { height: 133vh;
-	}
+	.masterPlanBanner { height: 133vh; }
 }
 @media (max-width:1024px) {
 	:root { --font8xl: 50px; --font7xl: 40px; --font5xl: 28px; --font4xl: 26px; --font3xl: 22px; --font2xl: 20px; --fontXl: 20px; --fontLg: 18px; --fontMd: 16px; --fontBase: 14px; }
@@ -69,6 +72,7 @@
 	.deliveredListImage img { width: 100%; height: 100%; object-fit: cover; }
 	.deliveredListContent { gap: 50px; }
 	.ctaWrapper { padding: 100px 0; }
+	.completedList { padding: 40px 50px; }
 }
 @media (max-width:991px) {
 	.timeLineWrapper { padding: 0 0 0 50px; margin: 50px 0 0 0; }
@@ -122,9 +126,12 @@
 	.visitContent { margin: 30px 0 0 0; }
 	.visitWrpInner iframe { width: 100%; }
 	.cardss { top: 30px; }
+	section.cuBanner { height: 50vh; }
+	.plBodyContent { margin: 0 0 40px 0; }
+	.completedList { margin: 0 0 40px 0; }
 }
 @media (max-width:480px) {
-	:root { --font8xl: 36px; --font7xl: 30px; --font5xl: 24px; --font4xl: 22px; --font3xl: 20px; --font2xl: 18px; --fontXl: 16px; --fontLg: 16px; --fontMd: 16px; --fontBase: 14px; }
+	:root { --font8xl: 36px; --font7xl: 30px; --font6xl: 28px; --font5xl: 24px; --font4xl: 22px; --font3xl: 20px; --font2xl: 18px; --fontXl: 16px; --fontLg: 16px; --fontMd: 16px; --fontBase: 14px; }
 	.headerOption { width: 100%; }
 	.verticalAccoContent { opacity: 1; visibility: visible; max-width: 100%; }
 	.verticalAccoText { position: relative; padding: 25px 20px; }
@@ -163,6 +170,9 @@
 	.textBoxHeading .heading8xl { width: calc(100% - 70px); }
 	.titleGrid { padding: 100px 0; }
 	.titleGridListing { margin: 40px 0 0 0; }
+	.titleGridList { padding: 0; }
+	.titleGridImage { height: 300px; }
+	.titleGridListInner { padding: 20px; transform: translateY(150px); }
 	.card-body { height: 630px; }
 	.cardss { top: 30px; }
 	.cardText .subTextMd { font-size: 14px; }
@@ -242,4 +252,20 @@
 	.copyRight { flex-direction: column; }
 	.ddBlop { justify-content: center; }
 	.cardImage { height: 280px; }
+	.enquireFormInner { width: 100%; }
+	.progressListBody { padding: 30px; }
+	.plLeft { flex-direction: column; }
+	.plLeft:before { display: none; }
+	.progressListHeading { padding: 20px; }
+	.plLeft { gap: 20px; align-items: baseline; }
+	.swiperController div { left: -30px; }
+	.swiperController .nextBtn { right: -30px; }
+	.plLeft div span, .plLeft div strong { font-size: 16px; }
+	.completedList:before { display: none; }
+	.completedList .plLeft { gap: 20px; text-align: center; justify-content: center; align-items: center; }
+	.completedWrap { padding: 60px 0; }
+	.completedListing { margin: 50px 0 0 0; }
+	.progressWrap { padding: 70px 0; }
+	.progressListing { margin: 50px 0 0 0; }
+	br { display: none; }
 }

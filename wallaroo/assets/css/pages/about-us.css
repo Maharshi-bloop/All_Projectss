@@ -35,7 +35,7 @@
 .titleGridList { position: relative; overflow: clip; border: 1px solid var(--colorPrimary); }
 .titleGridList:hover .titleGridListInner { transform: translateY(0); }
 .titleGridList:hover span.subTextMd { opacity: 1; visibility: visible; }
-.titleGridImage { height: 400px; }
+.titleGridImage { height: 450px; }
 
 /* threeTowns css */
 .threeTowns { padding: 200px 0; background-color: var(--colorPrimaryLight); position: relative; z-index: 1; overflow: clip; }
