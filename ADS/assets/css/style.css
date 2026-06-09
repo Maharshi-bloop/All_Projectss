@@ -19,14 +19,16 @@
 @font-face { font-family: 'Paralucent Extra'; src: url('../webfonts/Paralucent/Paralucent-ExtraLight.woff2') format('woff2'), url('../webfonts/Paralucent/Paralucent-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
 
 /* Transducer font */
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Bold.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Medium.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Regular.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Black.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-BoldOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-BoldOblique.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-MediumOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-MediumOblique.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Oblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Oblique.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
 @font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-BlackOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-BlackOblique.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Bold.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-BoldOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-BoldOblique.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Hairline.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Hairline.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-HairlineOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-HairlineOblique.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Medium.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-MediumOblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-MediumOblique.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Regular.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Transducer'; src: url('../webfonts/Transducer/Transducer-Oblique.woff2') format('woff2'), url('../webfonts/Transducer/Transducer-Oblique.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
 
 /* RESET CSS */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -40,10 +42,10 @@ button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
 :root { --fontPrimary: 'Transducer'; --fontSecondary: 'Paralucent'; --colorPrimary: #223469; --colorSecondary: #FBA81B; --colorBg: #001627; --colorBgLight: #EAEFF3; --colorText: #78859B; --colorText2:#D6DBDF; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; }
 .heading4xl { font-family: var(--fontPrimary); font-size: var(--font4xl); font-weight: 400; color: var(--colorText2); margin: 0; }
-.heading3xl { font-family: var(--fontPrimary); font-size: var(--font3xl); font-weight: 300; color: var(--colorText2); text-transform: uppercase; margin: 0; }
+.heading3xl { font-family: var(--fontPrimary); font-size: var(--font3xl); font-weight: 400; color: var(--colorText2); text-transform: uppercase; margin: 0; }
 .headingXl { font-family: var(--fontPrimary); font-size: var(--fontXl); font-weight: 300; color: var(--colorText2); text-transform: uppercase; margin: 0; }
-.headingLg { font-family: var(--fontPrimary); font-weight: 600; font-size: var(--fontLg); color: var(--colorPrimary); font-weight: 500; text-transform: uppercase; }
-.headingBase { font-size: var(--fontBase); font-weight: 400; color: var(--colorPrimary); text-transform: uppercase; font-family: var(--fontPrimary); margin: 0; }
+.headingLg { font-family: var(--fontPrimary); font-size: var(--fontLg); color: var(--colorPrimary); font-weight: 500; text-transform: uppercase; }
+.headingBase { font-size: var(--fontBase); font-weight: 500; color: var(--colorPrimary); text-transform: uppercase; font-family: var(--fontPrimary); margin: 0; }
 .subTextMd { font-family: var(--fontPrimary); font-size: var(--fontMd); color: var(--colorText2); font-weight: 300; display: block; margin: 0; }
 .subTextSm { font-size: var(--fontSm); color: var(--colorSecondary); font-weight: 300; text-transform: uppercase; margin: 0; }
 .subTextBase { font-family: var(--fontSecondary); font-size: var(--fontBase); color: var(--colorText); font-weight: 300; display: block; margin: 0; }
@@ -59,18 +61,8 @@ table { border-collapse: collapse; width: 100%; }
 .primaryBtn:hover { background-color: #3B5AB5 }
 .needYellowShad { position: relative; }
 .needYellowShad:before { content: ''; position: absolute; width: 100%; height: 100%; object-fit: cover; background: linear-gradient(180deg, rgba(34, 52, 105, 0.34) 0%, rgba(251, 168, 27, 0.34) 100%); top: 0; left: 0; }
-.dotedBg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.dotedBg {
-    background-image: radial-gradient(#ffffff 1px, transparent 1px);
-    background-size: 10px 10px;
-    opacity: 0.28;
-}
+.dotedBg { position: fixed; width: 100%; height: 100%; z-index: 0; }
+.dotedBg { background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 10px 10px; opacity: 0.28; }
 
 /* === HEADER CSS START === */
 header { padding: 12px 0; border-top: 2px solid var(--colorSecondary); position: fixed; top: 0; width: 100%; z-index: 10; background: #001627D6; border-bottom: 1px solid #EAEFF32E; backdrop-filter: blur(12px) }
@@ -109,6 +101,7 @@ header { padding: 12px 0; border-top: 2px solid var(--colorSecondary); position:
 .ctaWrap .iwImage img { object-position: bottom; }
 .ctaWrap .iwImage:before { display: none; }
 .ctaWrap .iwTextBox .subTextBase { margin: 24px 0; }
+.ctaWrap .iwTextBox .headingLg { font-weight: 700; }
 
 /* imageTextWrap css */
 .imageTextWrap { margin: 80px 0 0 0; background-color: var(--colorSecondary); position: relative; z-index: 1; overflow: clip; }
