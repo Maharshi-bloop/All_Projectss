@@ -1,15 +1,16 @@
-.masterPlanBanner { height: 115vh; position: relative; z-index: 1; }
+.masterPlanBanner { height: 135vh; position: relative; z-index: 1; }
 .masterPlanBannerImage { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; }
-.masterPlanBannerImage img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.masterPlanBannerImage img { width: 100%; height: 100%; object-fit: cover; }
 .masterPlanBannerInner { text-align: center; width: 40%; margin: 0 auto; padding: 50px 0 0 0; color: var(--colorWhite); }
 .masterPlanBannerInner .heading7xl { color: var(--colorWhite); }
 .master-plan .headingText { margin: 0; border-radius: 0; padding: 250px 0; }
 .master-plan .headingTextInner .subTextMd { margin: 20px 0 60px; }
 .master-plan .headingTextInner { width: 100%; }
-.planAvailiblity { position: absolute; display: flex; background-color: var(--colorBg); padding: 20px 20px 20px 40px; top: 50px; right: 50px; border: 2px solid var(--colorPrimary); gap: 50px; }
+.planAvailiblity { position: absolute; display: flex; background-color: var(--colorBg); padding: 20px 20px 20px 40px; top: 20px; right: 20px; border: 2px solid var(--colorPrimary); gap: 50px; }
 .planAvailiblity span { line-height: 1; position: relative; color: var(--colorText); }
 .planAvailiblity span:before { content: ''; position: absolute; width: 12px; height: 12px; background-color: #76B743; border-radius: 50%; right: calc(100% + 10px); top: 50%; transform: translateY(-50%); }
 .planAvailiblity span:last-child:before { background-color: #E14C48; }
+.masterPlanBannerImage.infoText:before { top: auto; bottom: 10px; }
 
 /* planWrapper css */
 .planWrapperInner { display: flex; height: 100%; }
@@ -17,7 +18,7 @@
 .planShowCaseList { position: absolute; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.3s; }
 .planShowCaseList.active { opacity: 1; visibility: visible; }
 section.planWrapper { height: 100vh; overflow: clip; }
-.fullPlan { position: absolute; width: 190px; height: 190px; top: 50px; left: 30px; }
+.fullPlan { position: absolute; width: 190px; height: 190px; top: 20px; left: 20px; }
 .fullPlan img { width: 100%; height: 100%; object-fit: cover; }
 .stagePlanImage { height: 100%; }
 .stagePlanImage img { width: 100%; height: 100%; object-fit: cover; }

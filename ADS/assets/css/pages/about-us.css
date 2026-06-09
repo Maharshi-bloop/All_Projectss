@@ -6,6 +6,7 @@
 .subBannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
 .subBannerInner { position: relative; z-index: 2; }
 .subBannerContent a { margin: 24px 0 0 0; }
+.subBannerContent .subTextMd { font-family: var(--fontSecondary); }
 
 /* missionVision css */
 .missionVision { margin: -200px 0 0 0; position: relative; z-index: 2; }
@@ -68,3 +69,4 @@
 .timeLineBoxInner { display: flex; width: calc(50% - 40px); }
 .timeLineContent .headingBase { margin: 10px 0 0 0; }
 .timeLineContent span { font-weight: 500; color: #78859B; margin: 10px 22px 0 0; }
+.timeLineContent i { margin: 16px 0 0 0; display: block; }

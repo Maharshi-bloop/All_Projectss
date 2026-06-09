@@ -51,6 +51,8 @@ table { border-collapse: collapse; width: 100%; }
 .primaryBrdrBtn:hover { background-color: var(--colorSecondary); color: var(--colorWhite); border-color: var(--colorSecondary); }
 .desktopNone { display: none; }
 .scrollOff { overflow: hidden; }
+.infoText { position: relative; }
+.infoText:before { content: '*Artistic Impression'; position: absolute; font-size: 14px; top: 10px; right: 10px; color: var(--colorBlack); }
 
 /*  */
 .enquireFormInner { width: 600px; background-color: var(--colorPrimaryLight); position: fixed; top: 50%; right: -100%; z-index: 11; transition: all 0.5s; transform: translateY(-50%); padding: 70px 40px; }
@@ -84,9 +86,9 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
 }
 @media (max-width:1024px) {
-	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; z-index: 11; }
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: var(--colorSecondary) !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; z-index: 11; }
 	.headerOption.openMenu { transform: translateX(0); }
-	nav ul li a { display: inline-block; width: 100%; padding: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+	nav ul li a { display: inline-block; width: 100%; padding: 20px 40px; font-size: 22px; color: var(--colorWhite); text-decoration: none; }
 	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 12; border-radius: 12px; }
 	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary); display: block; border-radius: 80px; transition: all 0.3s; }
 	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
@@ -103,6 +105,8 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 .bannerBg img { width: 100%; height: 100%; object-fit: cover; }
 .bannerBg video { width: 100%; height: 100%; object-fit: cover; }
 .bannerCtaWrap { display: flex; gap: 50px; justify-content: center; }
+.bannerCtaWrap .primaryBtn { width: 260px; }
+.bannerCtaWrap .primaryBrdrBtn { width: 260px; }
 .bannerInner { position: relative; }
 .bannerText { padding: 150px 0 200px 0; width: 80%; text-align: center; margin: 0 auto; }
 .bannerText .subTextXl { margin: 15px 0 50px 0; }
@@ -113,7 +117,7 @@ nav li a:before { content: ''; position: absolute; width: 10px; height: 10px; ba
 section.headingText { position: relative; background-color: var(--colorBg); padding: 200px 0; border-radius: 132px 132px 0 0; z-index: 1; margin: -120px 0 0 0; }
 .sidePatten { position: absolute; top: 0; height: 100%; display: flex; justify-content: space-between; width: 100%; z-index: -1; }
 .left, .right { height: 100%; }
-.left img, .right img { height: 100%; object-fit: contain; }
+.left img, .right img, .left video, .right video { height: 100%; object-fit: contain; }
 .left { transform: rotateY(180deg); }
 .headingTextInner .heading8xl { color: var(--colorSecondary); }
 .headingTextInner .subTextMd { color: var(--colorText); margin: 50px 0 80px; width: 80%; }
@@ -134,13 +138,13 @@ section.headingText { position: relative; background-color: var(--colorBg); padd
 .labelThree:after { content: ''; position: absolute; width: 100px; height: 100px; background: url(../images/primary-star-icon.svg)center center no-repeat; bottom: 0; right: 0; background-size: contain; }
 .labelThree h3 { line-height: 1; }
 .labelThree span { color: var(--colorPrimary); }
-.labelTwo { background-color: var(--colorBg); width: max-content; position: relative; margin-left: auto; padding: 90px 0 70px 70px; }
+.labelTwo { background-color: var(--colorBg); width: max-content; position: relative; margin-left: auto; padding: 90px 0 130px 70px; }
 .labelTwo:before { content: ''; position: absolute; width: 100vw; height: 100%; background-color: var(--colorBg); top: 0; left: 100%; }
-.labelTwo:after { content: ''; position: absolute; width: 100px; height: 100px; background: url(../images/small-patten.svg)center center no-repeat; top: 0; left: 100%; }
+.labelTwo:after { content: ''; position: absolute; width: 100px; height: 100px; background: url(../images/small-patten.svg)center center no-repeat; bottom: 0; left: 0; }
 .labelTwo .subTextXl { color: var(--colorPrimary); }
-.labelFour { background-color: var(--colorBg); width: max-content; position: relative; margin-left: auto; padding: 90px 0 70px 70px; }
+.labelFour { background-color: var(--colorBg); width: max-content; position: relative; margin-left: auto; padding: 90px 0 130px 70px; }
 .labelFour:before { content: ''; position: absolute; width: 100vw; height: 100%; background-color: var(--colorBg); top: 0; left: 100%; }
-.labelFour:after { content: ''; position: absolute; width: 100px; height: 100px; background: url(../images/small-patten-1-primary.svg)center center no-repeat; bottom: 0; left: 100%; background-size: contain; }
+.labelFour:after { content: ''; position: absolute; width: 100px; height: 100px; background: url(../images/small-patten-1-primary.svg)center center no-repeat; bottom: 0; left: 0; background-size: contain; }
 .labelFour .subTextXl { color: var(--colorPrimary); }
 
 /* growTimeLine css */
@@ -205,7 +209,7 @@ footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 .titleUl strong { color: var(--colorPrimary); font-weight: 500; }
 .footerInner .row .row { row-gap: 60px; }
 .titleUl li, .titleUl li a { color: var(--colorWhite); font-weight: 300; }
-.footerUl ul li a { color: var(--colorWhite); margin: 0 0 24px 0; display: inline-block; font-weight: 300; }
+.footerUl ul li a { color: var(--colorWhite); margin: 0 0 28px 0; display: inline-block; font-weight: 300; }
 .ddBlop span { line-height: 1.2; }
 .ddBlop { display: flex; justify-content: flex-end; gap: 10px; align-items: center; color: #fff; width: 20%; text-align: right; margin-left: auto; padding: 0; }
 .copyRight { text-align: left; color: var(--colorWhite); font-weight: 300; padding: 25px 0; display: flex; justify-content: space-between; margin: 50px 0 0 0; border-top: 1px solid #fff; align-items: center; }
@@ -215,13 +219,15 @@ footer { padding: 100px 0 0 0; background-color: var(--colorSecondary); }
 .footerSocial ul { display: flex; gap: 40px; }
 .titleImageWrap { display: flex; gap: 50px; justify-content: flex-end; }
 .logoWrap { display: flex; align-items: center; height: 100%; }
-.logoWrap a { margin: 20px 0 0 0; }
+.logoWrap a { margin: 20px 0 0 0; width: 150px; }
 .footerText { display: flex; justify-content: space-between; }
-.titleUl { margin: 0 0 50px 0; }
+.titleUl { margin: 0 0 30px 0; }
 .footerLogo a { width: 350px; display: inline-block; }
 .footerLogo { display: flex; justify-content: flex-end; }
-.titleImage { display: flex; align-items: center; justify-content: flex-end; gap: 30px; }
-.titleImage span { width: 30%; text-align: right; }
+.titleImage { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0; margin: 40px 0 0 0; }
+.titleImage span { width: 100%; text-align: center; font-size: 14px; }
+.titleUl li a { margin: 0 0 20px 0; display: flex; align-items: center; gap: 10px; }
+.titleUl li a img { width: 26px; }
 
 /* form css */
 span.wpcf7-not-valid-tip { position: absolute; bottom: 4px; font-size: 13px; left: 10px; }

@@ -1,9 +1,12 @@
+.contact nav li a { color: var(--colorSecondary); }
+.contact .current-menu-item a { color: var(--colorPrimary); }
+.contact header.stickyHeader { background-color: #f3e8db; }
 .contactBanner { background-color: var(--colorBg); position: relative; z-index: 1; }
 .contactBannerInner::after { content: ''; position: absolute; width: 100vw; background-color: var(--colorPrimaryLight); top: 0; right: 100%; z-index: -1; height: 100%; }
 .contactBannerInner::before { content: ''; position: absolute; width: 40%; background-color: var(--colorPrimaryLight); left: 0; top: 0; z-index: -1; height: 100%; }
 .contactBannerInner { display: flex; align-items: center; justify-content: space-between; position: relative; }
-.contactBannerForm { width: 60%; margin: 0 0 0 120px; padding: 60px 0; }
-.contactBannerContent { width: 40%; }
+.contactBannerForm { width: 60%; margin: 0 0 0 120px; padding: 160px 0; }
+.contactBannerContent { width: 40%; margin: -80px 0 0 0; }
 .contactBannerForm .heading7xl { line-height: 1; margin: 0; }
 .contactBannerForm .subTextMd { margin: 10px 0 30px 0; color: var(--colorBlack); }
 .agreeText { margin: 35px 0 0 0; text-align: center; display: block; font-size: var(--fontSm); font-weight: 300; }
@@ -24,7 +27,7 @@
 .teleWrap { display: flex; gap: 50px; }
 .teleWrap > div { display: flex; align-items: center; gap: 40px; }
 .visitContentTop div { margin: 50px 0 40px 0; }
-.visitContentTop div strong { font-size: 24px; color: var(--colorPrimary); font-weight: 600; display: block;}
+.visitContentTop div strong { font-size: 24px; color: var(--colorPrimary); font-weight: 600; display: block; }
 .visitContent { margin: 0 0 0 50px; }
 
 /* ctaWrapper css */

@@ -4,6 +4,11 @@
 	.progressListBody { padding: 60px; }
 	.completedList .plLeft { justify-content: space-between; }
 	.completedList { padding: 40px 80px; }
+	.masterPlanBanner { height: 135vh; }
+	.masterPlanBannerImage img { object-position: top; }
+	.select-dropdownInner span { padding: 10px 20px; font-size: 16px; }
+	.select-dropdown__button { padding: 16px 50px 16px 28px; }
+	.fullPlan { width: 170px; height: 170px; }
 }
 @media (max-width:1440px) {
 	:root { --font8xl: 64px; --font7xl: 48px; --font5xl: 34px; --font4xl: 32px; --font3xl: 28px; --font2xl: 24px; --fontXl: 22px; }
@@ -47,7 +52,7 @@
 	.aboutBanner { padding: 100px 0; }
 	.aboutBanner:before { width: 300px; border: 70px solid var(--colorPrimary); top: -150px; right: -150px; }
 	.aboutBanner:after { width: 300px; border: 70px solid var(--colorPrimary); bottom: -150px; left: -150px; }
-	.textBgImage { padding: 150px 0 600px 0; }
+	.textBgImage { padding: 150px 0 400px 0; }
 	.halfImageText { padding: 100px 0; }
 	.halfImageTextInner { margin-top: 30px; }
 	.halfContainerImage { height: 500px; }
@@ -162,9 +167,10 @@
 	.labelTwo:after, .labelThree:after, .labelFour:after { display: none; }
 	.halfContainerImage { position: relative; width: 95%; }
 	.halfImageTextInner { width: 100%; }
-	.halfImageText:before { top: 44%; left: auto; right: 10%; width: 70px; height: 70px; }
+	.halfImageText:before { top: 43%; left: auto; right: 10%; width: 70px; height: 70px; }
+	.halfImageTextInner { margin-top: 60px; }
 	.halfContainerImage { height: 340px; }
-	.textBgImage { padding: 80px 0 600px 0; }
+	.textBgImage { padding: 140px 0 600px 0; }
 	.textBoxHeading div { width: 70px; }
 	.textBoxHeading { gap: 20px; }
 	.textBoxHeading .heading8xl { width: calc(100% - 70px); }
@@ -192,8 +198,10 @@
 	.planShowCaseListing { width: 100%; }
 	.planDataWrap { width: 100%; }
 	.master-plan .headingText { padding: 100px 0; }
-	.masterPlanBanner { height: 50vh; }
-	.masterPlanBannerInner { width: 90%; }
+	.masterPlanBanner { height: 70vh; }
+	.master-plan .masterPlanBanner { height: 85vh; }
+	.master-plan .masterPlanBannerImage img { object-position: 0 -90px; }
+	.masterPlanBannerInner { width: 90%; padding: 100px 0 0 0; }
 	.behindWr { padding: 70px 0; }
 	.behindWrIcon { margin: 50px auto 0; }
 	.whyChoose { padding: 0 0 70px 0; }
@@ -210,7 +218,7 @@
 	.smallIcon { width: 60px; }
 	.deliveredLeft h3 { width: calc(100% - 60px); }
 	.deliveredLeft h3 br { display: none; }
-	.logoWrap a { margin: 0; width: 190px; }
+	.logoWrap a { margin: 0; width: 160px; }
 	footer { padding: 50px 0 0 0; }
 	.footerInner .row .row { row-gap: 40px; }
 	.footerUl ul li a { margin: 0 0 12px 0; }
@@ -229,8 +237,8 @@
 	.select-dropdown__button i { right: 5px; font-size: 26px; }
 	tbody td:first-child span { width: 10px; height: 10px; }
 	td img { width: 22px; }
-	.fullPlan { width: 70px; height: 70px; top: auto; left: auto; bottom: 20px; right: 20px; }
-	.planAvailiblity { padding: 10px 10px 10px 40px; top: auto; right: auto; gap: 40px; bottom: 20px; left: 20px; }
+	.fullPlan { width: 70px; height: 70px; top: 10px; left: 10px; }
+	.planAvailiblity { padding: 10px 10px 10px 40px; gap: 40px; top: 10px; right: 10px; }
 	.planStageDetail { height: calc(100% - 104px); }
 	.headerCta { margin: 20px 40px; }
 	.headerCta a { width: 100%; text-align: center; }
@@ -240,7 +248,7 @@
 	.textImageInner br { display: none; }
 	.verticalAcco { padding: 70px 0; }
 	.verticalAccoListing { padding: 40px 0 0 0; }
-	.contactBannerInner::before, .contactBannerInner::after { height: 24%; }
+	.contactBannerInner::before, .contactBannerInner::after { height: 26.5%; }
 	.teleWrap { gap: 30px; flex-direction: column; }
 	.visitContent ul li { gap: 20px; }
 	.ulIcon { width: 30px; height: 30px; }
@@ -251,7 +259,7 @@
 	.titleImage span { width: 100%; text-align: center; }
 	.copyRight { flex-direction: column; }
 	.ddBlop { justify-content: center; }
-	.cardImage { height: 280px; }
+	.cardImage { height: 240px; }
 	.enquireFormInner { width: 100%; }
 	.progressListBody { padding: 30px; }
 	.plLeft { flex-direction: column; }
@@ -268,4 +276,11 @@
 	.progressWrap { padding: 70px 0; }
 	.progressListing { margin: 50px 0 0 0; }
 	br { display: none; }
+	ul#menu-main-menu { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+	nav li a:before { left: 15px; }
+	.enquireFormInner .formDesign { width: 85%; }
+	a.closeFormBtn { right: 20px; width: 40px; height: 40px; }
+	.contactBannerContent { margin: 120px 0 0 0; }
+	.timeLineWrapper ul li.in-view .threeTownsHoriList, .timeLineWrapper ul li.gone-view .threeTownsHoriList { opacity: 1; }
+	.enquireFormWrap > a { padding: 30px 12px; }
 }
