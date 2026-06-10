@@ -1,4 +1,4 @@
-if ($(window).width() > 991) {
+/* if ($(window).width() > 991) {
     $(".tabing-main .tabContainer .tab-content-main:first").addClass("active");
     $(".tabing-main .tab-titles li:first").addClass("active-li")
     $(".tabing-main .tab-titles li a").on("click", function (event) {
@@ -25,4 +25,4 @@ if ($(window).width() < 992) {
         }
     })
 }
-$(".tab-content-main:first-child .mobile-tab-title").trigger("click");
+$(".tab-content-main:first-child .mobile-tab-title").trigger("click"); */
