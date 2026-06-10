@@ -9,3 +9,24 @@
 .subBannerContent a { margin: 24px 0 0 0; }
 .subBannerContent .subTextMd { font-family: var(--fontSecondary); }
 .subBannerContentWrap .row { align-items: center; }
+
+/* contactBoxWrap css */
+.contactBoxWrap { margin: 0 0 84px 0; }
+.contactBoxText .headingXl { font-weight: 500; color: var(--colorPrimary); }
+.contactBoxText .subTextMd { font-weight: 500; color: var(--colorText); margin: 24px 0 0 0; }
+.contactBoxText { background-color: var(--colorBgLight); padding: 34px; border-radius: 5px; height: 100%; position: relative; overflow: clip; z-index: 1; }
+.contactBoxText:before { content: ''; position: absolute; width: 100%; background: url(../../images/high-pressure-package.png)center center no-repeat; height: 53%; background-size: cover; z-index: -1; left: 50%; bottom: -30px; transform: translateX(-50%); mix-blend-mode: darken; }
+.contactUlIcon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: var(--colorPrimary); border-radius: 5px; }
+li > div { display: flex; gap: 16px; margin: 0 0 32px 0; align-items: center; }
+.contactBoxUl { margin: 32px 0 0 0; }
+.contactBoxForm { background-color: #2234693D; padding: 34px; border-radius: 5px; border: 1px solid #959EA2CC }
+.contactBoxWrapInner .row { justify-content: center; }
+.contactUlText h6 { margin: 0 0 4px 0; text-transform: uppercase; color: var(--colorPrimary); font-weight: 500; font-family: var(--fontSecondary); }
+.contactUlText a { color: var(--colorBlack); font-weight: 500; font-family: var(--fontPrimary); }
+.formTop .headingXl { color: var(--colorSecondary); }
+.formTop .subTextMd { font-family: 'Paralucent'; margin: 24px 0 44px 0; letter-spacing: 0.5px; }
+.inputField label { display: block; text-transform: uppercase; color: var(--colorBgLight); }
+.inputField label span { color: var(--colorSecondary); }
+.inputField input, .inputField textarea { width: 100%; background-color: #959EA233; border: none; padding: 10px 14px; border-radius: 5px; margin: 8px 0 0 0; }
+.inputField { margin: 24px 0 0 0; }
+.formWrap .secondaryBtn { margin: 24px 0 0 0; }
