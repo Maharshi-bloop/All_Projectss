@@ -11,6 +11,7 @@
 
 /* tabWrapper css  */
 .tabWrapper { padding: 64px 0; position: relative; z-index: 1; }
+.tabWrapper:before { content: ''; position: absolute; width: 100%; height: 100%; background: url(../../images/full-website-bg-image-long.png)center center no-repeat; background-size: cover; top: 0; left: 0; z-index: -1; }
 .tabContent { display: none; }
 .mobile-tab-title { display: none; }
 .active .tabContent { display: block; }
@@ -30,7 +31,7 @@ ul.tab-titles li a:hover, ul.tab-titles li.active-li a { background-color: var(-
 .imageBlock img { width: 100%; height: 100%; object-fit: cover; }
 .twoGridWrapper, .threeGridWrapper { margin: 44px 0 0 0; }
 .gridBox { border: 1px solid #959EA2CC; background: #2234693D; padding: 24px 34px 34px 34px; height: 100%; border-radius: 6px; }
-.gridBox h5 { margin: 0 0 24px 0; color: var(--colorSecondary); text-transform: uppercase;}
+.gridBox h5 { margin: 0 0 24px 0; color: var(--colorSecondary); text-transform: uppercase; }
 .gridBox ul li { font-size: var(--fontSm); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--colorBgLight); position: relative; padding: 0 0 0 34px; margin: 0 0 14px 0; }
 .gridBox ul li:before { content: ''; position: absolute; width: 22px; height: 22px; background: url(../../images/tick-icon.svg) center center no-repeat; background-color: #EAEFF329; border-radius: 3px; display: flex; align-items: center; justify-content: center; left: 0; top: -1px; }
 .gridBtnWrap { margin: 54px 0 44px 0; display: flex; align-items: center; justify-content: center; gap: 24px; }
@@ -40,7 +41,6 @@ ul.tab-titles li a:hover, ul.tab-titles li.active-li a { background-color: var(-
 .textBlock { width: 95%; }
 .fullWrap:nth-child(even) .textImageWrap .textBlock { margin-left: auto; }
 .fullWrap:nth-child(odd) .textImageWrap .imageBlock { margin-left: auto; }
-
 
 /* li.active-li a{ } */
 @media (max-width:991px) {
