@@ -63,33 +63,56 @@ table { border-collapse: collapse; width: 100%; }
 .dotedBg { background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 10px 10px; opacity: 0.28; }
 
 /* === HEADER CSS START === */
-header { padding: 12px 0; border-top: 2px solid var(--colorSecondary); position: fixed; top: 0; width: 100%; z-index: 10; background: #001627D6; border-bottom: 1px solid #EAEFF32E; backdrop-filter: blur(12px) }
+header { padding: 12px 0; border-top: 2px solid var(--colorSecondary); position: fixed; top: 0; width: 100%; z-index: 10; background: var(--colorBg); border-bottom: 1px solid #EAEFF32E; backdrop-filter: blur(12px) }
+
+/* header:before {
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(0deg, rgb(0 22 39 / 0%) 58.93%, #001627 97.48%);
+top: 100%;
+left: 0;
+z-index: -1;
+} */
+
+/* header:after{
+content: '';
+position: absolute;
+width: 100%;
+height: 1px;
+background-color: #EAEFF32E;
+bottom: 0;
+left: 0;
+z-index: 2;
+
+} */
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 .current_page_item a { color: var(--colorSecondary); }
 @media (min-width:1025px) {
-	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
-	nav>ul { display: flex; gap: 40px; }
-	nav li { position: relative; }
-	nav li a { color: var(--colorText2); position: relative; display: inline-block; padding: 5px 0px; text-decoration: none; transition: all 0.3s; position: relative; }
-	nav li a:before { content: ''; position: absolute; width: 0; height: 1px; background-color: var(--colorSecondary); transition: all 0.3s; left: 0; bottom: 5px; }
-	nav li a:hover { color: var(--colorSecondary); }
-	nav li a:hover:before, .current_page_item a:before { width: 100%; }
-	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
-	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
-	li.hasUl a { padding-right: 25px !important; }
-	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
-	.headerOption { display: flex; align-items: center; gap: 50px; }
+nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
+nav>ul { display: flex; gap: 40px; }
+nav li { position: relative; }
+nav li a { color: var(--colorText2); position: relative; display: inline-block; padding: 5px 0px; text-decoration: none; transition: all 0.3s; position: relative; }
+nav li a:before { content: ''; position: absolute; width: 0; height: 1px; background-color: var(--colorSecondary); transition: all 0.3s; left: 0; bottom: 5px; }
+nav li a:hover { color: var(--colorSecondary); }
+nav li a:hover:before, .current_page_item a:before { width: 100%; }
+nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
+nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+li.hasUl a { padding-right: 25px !important; }
+li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
+.headerOption { display: flex; align-items: center; gap: 50px; }
 }
 @media (max-width:1024px) {
-	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
-	.headerOption.openMenu { transform: translateX(0); }
-	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
-	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 12px; }
-	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary); display: block; border-radius: 80px; transition: all 0.3s; }
-	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
-	.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
-	.toggleBtn span:nth-child(2) { display: none; }
+.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+.headerOption.openMenu { transform: translateX(0); }
+nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 12px; }
+.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary); display: block; border-radius: 80px; transition: all 0.3s; }
+.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
+.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+.toggleBtn span:nth-child(2) { display: none; }
 }
 
 /* === HEADER CSS END === */
@@ -134,20 +157,33 @@ footer { margin: 24px 0 40px 0; }
 .subBannerContent a { display: flex; align-items: center; width: max-content; gap: 10px; }
 .subBannerContent a i { writing-mode: sideways-rl; }
 
+/* form design */
+.formTop .headingXl { color: var(--colorSecondary); }
+.formTop .subTextMd { font-family: 'Paralucent'; margin: 24px 0 44px 0; letter-spacing: 0.5px; }
+.inputField label { display: block; text-transform: uppercase; color: var(--colorBgLight); }
+.inputField label span { color: var(--colorSecondary); }
+.inputField input, .inputField textarea { width: 100%; background-color: #959EA233; border: none; padding: 10px 14px; border-radius: 5px; margin: 8px 0 0 0; outline: none; border: 1px solid #959EA233; color: var(--colorText2); }
+.inputField input:focus, .inputField textarea:focus { border: 1px solid var(--colorSecondary); }
+.inputField textarea { height: 100px; }
+.inputField { margin: 24px 0 0 0; }
+.formWrap .secondaryBtn { margin: 24px 0 0 0; }
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output { border-color: #fba81b; background-color: #fba81b; padding: 8px 12px; line-height: 1; border-radius: 5px; }
+
 /* =============== back to top button css ================== */
 .backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
 .backTop.activeBackToTop { opacity: 1; visibility: visible; }
 .backTop a svg { display: block; }
 .backTop a { text-align: center; border: 2px solid var(--colorSecondary); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; border-radius: 5px; position: relative; animation: topBtnBounce 2s ease-in-out infinite; color: var(--colorText2); background-color: var(--colorPrimary); font-weight: 400; }
 .backTop:before { content: ''; position: absolute; width: 100%; height: 15px; bottom: -20px; border-radius: 50%; background-image: radial-gradient(#ffffff -50%, transparent 100%); filter: blur(3px); animation: boxshadowAnimate 2s linear infinite; }
+.wpcf7-not-valid-tip { position: absolute; font-size: 12px; }
 @keyframes topBtnBounce {
-	0% { transform: translateY(0); }
-	50% { transform: translateY(-15px); }
-	100% { transform: translateY(0) }
+0% { transform: translateY(0); }
+50% { transform: translateY(-15px); }
+100% { transform: translateY(0) }
 }
 @keyframes boxshadowAnimate {
-	0%, 100% { opacity: 1; scale: 1; }
-	25% { opacity: 0.6; transform: scale(0.6); }
-	50% { opacity: 0.2; transform: scale(0.2); }
-	75% { opacity: 0.6; transform: scale(0.6); }
+0%, 100% { opacity: 1; scale: 1; }
+25% { opacity: 0.6; transform: scale(0.6); }
+50% { opacity: 0.2; transform: scale(0.2); }
+75% { opacity: 0.6; transform: scale(0.6); }
 }
