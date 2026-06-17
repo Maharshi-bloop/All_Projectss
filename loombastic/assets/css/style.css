@@ -69,9 +69,18 @@ table { border-collapse: collapse; width: 100%; }
 
 /* topstrip css */
 .topStrip { padding: 8px 0; text-align: center; background-color: var(--colorPrimary); color: var(--colorWhite); font-weight: 600; position: relative; z-index: 5; }
-.turtleImage { height: 200px; width: 100px; position: fixed; left: 10px; z-index: 4; }
-.turtleOne.turtleImage { top: -80px; }
-.turtleTwo.turtleImage { top: 0px; left: 20px; }
+.turtleImage { height: 200px; width: 100px; position: fixed; left: 0; z-index: 4; }
+.turtleOne.turtleImage { top: -60px;animation: hang2 3.5s ease-in-out infinite; transform-origin: top center; }
+.turtleTwo.turtleImage { top: 0px; left: 0; }
+.turtleTwo { animation: hang1 3s ease-in-out infinite; transform-origin: top center; }
+@keyframes hang1 {
+	0%, 100% { transform: rotate(10deg); }
+	50% { transform: rotate(-10deg); }
+}
+@keyframes hang2 {
+	0%, 100% { transform: rotate(8deg); }
+	50% { transform: rotate(-8deg); }
+}
 
 /* === HEADER CSS START === */
 .headerWrap { display: flex; align-items: center; justify-content: space-between; margin: 40px 0; }
