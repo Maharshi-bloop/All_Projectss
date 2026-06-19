@@ -58,6 +58,33 @@ $(document).ready(function () {
     }
 
 
+    // video play Pause function start
+    $('.video-play-icon').on('click', function (e) {
+        e.preventDefault(); // <-- Crucial: Stops the empty href from reloading the page
+
+        var $this = $(this);
+        var video = $this.parents(".testimonialVideo").find("video")[0];
+
+        // Added safety check to ensure video exists
+        if (video) {
+            if (video.paused === false) {
+                video.pause();
+                $this.parents(".testimonialVideo").removeClass("is-video-playing");
+                $this.html('<i class="ri-play-large-fill"></i>');
+            } else {
+                video.play();
+                $this.parents(".testimonialVideo").addClass("is-video-playing");
+                $this.html('<i class="ri-pause-large-line"></i>');
+            }
+        }
+
+        return false;
+    });
+    // video play Pause function end
+
+
+
+
     // Back to Top function
     if ($(".backTop").length) {
         $(window).scroll(function () {

@@ -148,10 +148,14 @@ table { border-collapse: collapse; width: 100%; }
 .testimonialWrap { padding: 150px 0; background-color: #F8EFCF80; }
 .testimonialSwiper { margin: 80px 0 0 0; position: relative; }
 .testimonialSwiper .swiper-slide { background-color: #fff; border-radius: 30px; overflow: clip; }
-.testimonialVideo { height: 400px; }
+.testimonialVideo { height: 400px; position: relative; }
 .testimonialVideo video { height: 100%; width: 100%; object-fit: cover; }
 .testimonialContent { padding: 40px; }
 .testimonialSwiper .swiperBtn { background-color: var(--colorSecondary); }
+.testimonialVideo.is-video-playing:before { opacity: 0; visibility: hidden; }
+.video-play-icon { position: absolute; top: 50%; left: 50%; width: 80px; aspect-ratio: 1; transform: translate(-50%, -50%); z-index: 2; color: var(--colorWhite); font-size: 30px; border: 0px solid rgb(5 5 5 / 60%); display: flex; justify-content: center; align-items: center; border-radius: 50%; cursor: pointer; background-color: var(--colorSecondary); transition: all 0.3s; }
+.is-video-playing .video-play-icon { opacity: 0; visibility: hidden; }
+.testimonialVideo.is-video-playing:hover .video-play-icon { opacity: 1; visibility: visible; }
 
 /* meetTeacher css */
 .meetTeacher { padding: 150px 0; background-color: #D5EDF8; position: relative; overflow-x: clip; }
