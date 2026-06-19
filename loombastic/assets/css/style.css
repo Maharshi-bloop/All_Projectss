@@ -70,7 +70,7 @@ table { border-collapse: collapse; width: 100%; }
 /* topstrip css */
 .topStrip { padding: 8px 0; text-align: center; background-color: var(--colorPrimary); color: var(--colorWhite); font-weight: 600; position: relative; z-index: 5; }
 .turtleImage { height: 200px; width: 100px; position: fixed; left: 0; z-index: 4; }
-.turtleOne.turtleImage { top: -60px;animation: hang2 3.5s ease-in-out infinite; transform-origin: top center; }
+.turtleOne.turtleImage { top: -60px; animation: hang2 3.5s ease-in-out infinite; transform-origin: top center; }
 .turtleTwo.turtleImage { top: 0px; left: 0; }
 .turtleTwo { animation: hang1 3s ease-in-out infinite; transform-origin: top center; }
 @keyframes hang1 {
@@ -146,6 +146,12 @@ table { border-collapse: collapse; width: 100%; }
 
 /* testimonialWrap css */
 .testimonialWrap { padding: 150px 0; background-color: #F8EFCF80; }
+.testimonialSwiper { margin: 80px 0 0 0; position: relative; }
+.testimonialSwiper .swiper-slide { background-color: #fff; border-radius: 30px; overflow: clip; }
+.testimonialVideo { height: 400px; }
+.testimonialVideo video { height: 100%; width: 100%; object-fit: cover; }
+.testimonialContent { padding: 40px; }
+.testimonialSwiper .swiperBtn { background-color: var(--colorSecondary); }
 
 /* meetTeacher css */
 .meetTeacher { padding: 150px 0; background-color: #D5EDF8; position: relative; overflow-x: clip; }

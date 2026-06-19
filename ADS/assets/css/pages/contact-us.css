@@ -22,4 +22,4 @@ li > div { display: flex; gap: 16px; margin: 0 0 32px 0; align-items: center; }
 .contactBoxForm { background-color: #2234693D; padding: 34px; border-radius: 5px; border: 1px solid #959EA2CC }
 .contactBoxWrapInner .row { justify-content: center; }
 .contactUlText h6 { margin: 0 0 4px 0; text-transform: uppercase; color: var(--colorPrimary); font-weight: 500; font-family: var(--fontSecondary); }
-.contactUlText a { color: var(--colorBlack); font-weight: 500; font-family: var(--fontPrimary); }
+.contactUlText a { color: var(--colorBlack); font-weight: 500; }

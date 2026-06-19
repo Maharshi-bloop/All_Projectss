@@ -49,7 +49,7 @@ table { border-collapse: collapse; width: 100%; }
 .subTextBase { font-family: var(--fontSecondary); font-size: var(--fontBase); color: var(--colorText); font-weight: 300; display: block; margin: 0; }
 .whiteBtn { display: inline-block; padding: 12px 26px; border: 1px solid #C3C8D5; border-radius: 5px; color: var(--colorPrimary); font-family: var(--fontSecondary); font-weight: 300; transition: all 0.5s; background-color: var(--colorWhite); }
 .whiteBtn:hover { background-color: var(--colorSecondary); }
-.whiteBorderBtn { display: inline-block; padding: 12px 26px; border: 1px solid #eaeff352; border-radius: 5px; color: var(--colorWhite); font-family: var(--fontSecondary); font-weight: 300; transition: all 0.5s; }
+.whiteBorderBtn { display: inline-block; padding: 12px 26px; border: 1px solid #eaeff352; border-radius: 5px; color: var(--colorWhite); font-family: var(--fontSecondary); font-weight: 300; transition: all 0.5s; background-color: var(--colorBg); }
 .whiteBorderBtn:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); border: 1px solid #eaeff3a3; }
 .secondaryBtn { display: inline-block; padding: 12px 26px; border: 1px solid #eaeff3a3; border-radius: 5px; color: var(--colorPrimary); font-family: var(--fontSecondary); font-weight: 400; transition: all 0.5s; background-color: var(--colorSecondary); }
 .secondaryBtn i, .primaryBtn i { transition: all 0.5s; }

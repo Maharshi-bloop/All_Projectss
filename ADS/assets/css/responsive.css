@@ -1,5 +1,4 @@
 @media (max-width:1281px) {
-	br { display: none; }
 	.counterList .heading4xl { font-size: var(--font2xl); }
 	.timeLineWrapper ul { max-width: 95%; }
 	.timeLineImage { height: 100%; }
@@ -8,5 +7,12 @@
 	.subBannerHead br { display: block; }
 	.mvIconHeading .subTextMd { width: 95%; }
 	.banner { height: 110vh; }
+	.logo { width: 120px; }
+	.container, .container-lg, .container-md, .container-sm, .container-xl { max-width: 1240px; }
+	br { display: none; }
+	.fullWrap { width: 100%; }
+	.contact-us .subBanner { height: 70vh; }
+}
+@media (max-width:480px) {
 	.logo { width: 120px; }
 }

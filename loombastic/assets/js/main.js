@@ -125,6 +125,44 @@ $(document).ready(function () {
     /* whatMakeSwiper Swiper js end */
 
 
+    /* testimonialSwiper Swiper js start */
+    new Swiper('.testimonialSwiper .swiper', {
+        loop: true,
+        slidesPerView: 3,
+        paginationClickable: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.testimonialSwiperControl .nextBtn',
+            prevEl: '.testimonialSwiperControl .prevBtn',
+        },
+       /*  autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        }, */
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1366: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
+            },
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
+            }
+        }
+    });
+    /* testimonialSwiper Swiper js end */
+    
+
+
 
     /* hori scroll js start */
 
