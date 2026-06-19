@@ -98,10 +98,10 @@ $(document).ready(function () {
             nextEl: '.whatMakeSwiperControl .nextBtn',
             prevEl: '.whatMakeSwiperControl .prevBtn',
         },
-       /*  autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        }, */
+        /*  autoplay: {
+             delay: 0,
+             disableOnInteraction: false,
+         }, */
         spaceBetween: 20,
         breakpoints: {
             1920: {
@@ -135,10 +135,10 @@ $(document).ready(function () {
             nextEl: '.testimonialSwiperControl .nextBtn',
             prevEl: '.testimonialSwiperControl .prevBtn',
         },
-       /*  autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        }, */
+        /*  autoplay: {
+             delay: 0,
+             disableOnInteraction: false,
+         }, */
         spaceBetween: 20,
         breakpoints: {
             1920: {
@@ -160,7 +160,7 @@ $(document).ready(function () {
         }
     });
     /* testimonialSwiper Swiper js end */
-    
+
 
 
 
@@ -215,10 +215,11 @@ $(document).ready(function () {
                     }
 
                 });
-
             }
         });
-
+        window.addEventListener("load", () => {
+            ScrollTrigger.refresh();
+        });
     }
 
     /* hori scroll js end */
