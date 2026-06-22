@@ -42,7 +42,7 @@ table { border-collapse: collapse; width: 100%; }
 .heading4xl { font-family: var(--fontPrimary); font-size: var(--font4xl); font-weight: 400; color: var(--colorText2); margin: 0; }
 .heading3xl { font-family: var(--fontPrimary); font-size: var(--font3xl); font-weight: 400; color: var(--colorText2); text-transform: uppercase; margin: 0; }
 .headingXl { font-family: var(--fontPrimary); font-size: var(--fontXl); font-weight: 300; color: var(--colorText2); text-transform: uppercase; margin: 0; }
-.headingLg { font-family: var(--fontPrimary); font-size: var(--fontLg); color: var(--colorPrimary); font-weight: 500; text-transform: uppercase; }
+.headingLg { font-family: var(--fontPrimary); font-size: var(--fontLg); color: var(--colorPrimary); font-weight: 600; text-transform: uppercase; }
 .headingBase { font-size: var(--fontBase); font-weight: 500; color: var(--colorPrimary); text-transform: uppercase; font-family: var(--fontPrimary); margin: 0; }
 .subTextMd { font-family: var(--fontPrimary); font-size: var(--fontMd); color: var(--colorText2); font-weight: 300; display: block; margin: 0; }
 .subTextSm { font-size: var(--fontSm); color: var(--colorSecondary); font-weight: 300; text-transform: uppercase; margin: 0; }
