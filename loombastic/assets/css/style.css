@@ -53,7 +53,7 @@ a { text-decoration: none; color: inherit; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
-:root { --fontPrimary: 'Mondia'; --fontSecondary: 'Montserrat'; --fontTerritory: "Kuta Beach"; --colorPrimary: #A88CC8; --colorSecondary: #E8A8B8; --colorAccent: #00b8ec; --colorBg: #FCFAF6; --colorText: #2C2A2A; --colorWhite: #ffffff; --colorBlack: #000000; --cardTopPadding: 16px; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 32px; --font3xl: 40px; --font4xl: 50px; --font5xl: 66px; --font6xl: 90px; --cardss: 5; --cardMargin: 60px; }
+:root { --fontPrimary: 'Mondia'; --fontSecondary: 'Montserrat'; --fontTerritory: "Kuta Beach"; --colorPrimary: #A88CC8; --colorSecondary: #E8A8B8; --colorAccent: #00b8ec; --colorBg: #FCFAF6; --colorText: #2C2A2A; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 32px; --font3xl: 40px; --font4xl: 50px; --font5xl: 66px; --font6xl: 90px; --cardss: 5; --cardMargin: 60px; --cardTopPadding: 16px; }
 .heading6xl { font-size: var(--font6xl); font-weight: normal; color: var(--colorPrimary); font-family: var(--fontTerritory); line-height: 1; }
 .heading5xl { font-size: var(--font5xl); font-weight: 600; color: var(--colorText); font-family: var(--fontPrimary); line-height: 1; }
 .territoryHeading5xl { font-size: var(--font5xl); font-weight: 400; color: var(--colorSecondary); font-family: var(--fontTerritory); line-height: 1; }
@@ -314,8 +314,11 @@ section.receiveWrap { overflow-x: clip; }
 .faq { padding: 200px 0 150px 0; }
 .faqInner { width: 90%; margin: 0 auto; }
 .faqListing { margin: 100px 0 0 0; }
-.faqList { background-color: #F8EFCF; border-radius: 40px; margin: 0 0 30px 0; }
-.faqList .headingxl { padding: 42px 50px; margin: 0; cursor: pointer; }
+.faqList { background-color: #F8EFCF; border-radius: 20px; margin: 0 0 16px 0; }
+.faqList .headingxl { padding: 22px 30px; margin: 0; cursor: pointer; font-size: var(--fontLg); position: relative; }
+.faqList .subTextMd { padding: 22px 30px; padding-top: 0; font-size: var(--fontBase); }
+.faqList .headingxl:before { content: ''; position: absolute; width: 20px; height: 20px; background: url(../images/down-arrow.svg)center center no-repeat; background-size: contain; top: 26px; right: 30px; transition: all 0.3s;}
+.faqList.active .headingxl:before { transform: rotate(180deg); }
 .faqList .subTextMd { padding: 42px 50px; padding-top: 0; }
 
 /* btmCta css */

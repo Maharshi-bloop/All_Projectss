@@ -252,11 +252,23 @@ $(document).ready(function () {
     /* hori scroll js end */
 
 
-    $(".faqList .subTextMd").first().slideDown();
-    $(".faqList .subTextMd").not(":first").hide();
+    $(".faqList .subTextMd").hide();
+    $(".faqList:first .subTextMd").show();
+    $(".faqList:first").addClass("active");
+
     $(".faqList .headingxl").on("click", function () {
-        $(".faqList .subTextMd").stop().slideUp();
-        $(this).next(".faqList .subTextMd").stop().slideToggle();
+        let $parent = $(this).closest(".faqList");
+
+        if ($parent.hasClass("active")) {
+            $parent.removeClass("active");
+            $parent.find(".subTextMd").stop().slideUp();
+        } else {
+            $(".faqList").removeClass("active");
+            $(".faqList .subTextMd").stop().slideUp();
+
+            $parent.addClass("active");
+            $parent.find(".subTextMd").stop().slideDown();
+        }
     });
 
     /* $(".faqList:first-child").addClass("active");
