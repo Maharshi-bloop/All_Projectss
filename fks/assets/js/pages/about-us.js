@@ -72,40 +72,106 @@ if (lineToDraw.length) {
     });
 }
 
+/*   $('.deskRow .scrollImage').removeClass('active').eq(0).addClass('active');
 
-gsap.registerPlugin(ScrollTrigger);
-
-const cards = gsap.utils.toArray(".numbersCardList");
-
-// create fixed random rotation once
-const rotations = cards.map(() => gsap.utils.random(-10, 10));
-
-gsap.set(cards, {
-    y: 900,
-    opacity: 0,
-    scale: 1
-});
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".numbers",
-        start: "top top",
-        end: "+=300%",
-        scrub: 1.2,
-        pin: true,
-        anticipatePin: 1
+    function setActiveImageOnScroll() {
+        $('.deskRow .scrollConatent').each(function (index) {
+            const rect = this.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top <= window.innerHeight) {
+                $('.deskRow .scrollImage').removeClass('active');
+                $('.deskRow .scrollImage').eq(index).addClass('active');
+                return false; // Stop after first match in viewport
+            }
+        });
     }
+
+    // Trigger on scroll and on load
+    $(window).on('scroll load', setActiveImageOnScroll); */
+
+
+
+let currentIndex = 0;
+let isAnimating = false;
+
+const $images = $('.deskRow .scrollImage');
+const $contents = $('.deskRow .scrollConatent');
+
+// Initial setup
+$images.css({
+    zIndex: 0,
+    clipPath: 'inset(0 0 0 0)'
 });
 
-cards.forEach((card, index) => {
+$images.eq(0).css('z-index', 2);
 
-    tl.to(card, {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        rotate: rotations[index],
-        duration: 1,
-        ease: "power3.out"
-    }, index * 0.7);
+let lastScrollTop = 0;
+let scrollDirection = "down";
 
+$(window).on("scroll", function () {
+    const st = $(this).scrollTop();
+
+    scrollDirection = st > lastScrollTop ? "down" : "up";
+
+    lastScrollTop = st <= 0 ? 0 : st;
 });
+
+function changeImage(nextIndex) {
+
+    if (nextIndex === currentIndex || isAnimating) return;
+
+    isAnimating = true;
+
+    const $current = $images.eq(currentIndex);
+    const $next = $images.eq(nextIndex);
+
+    // Put next image behind current image
+    $next.css({
+        zIndex: 1,
+        clipPath: 'inset(0 0 0 0)'
+    });
+
+    $current.css({
+        zIndex: 2
+    });
+
+    const clipValue =
+        scrollDirection === "down"
+            ? "inset(0 0 100% 0)"   // Clip from bottom
+            : "inset(100% 0 0 0)";  // Clip from top
+
+    gsap.to($current, {
+        clipPath: clipValue,
+        duration: 0.5,
+        ease: "power3.inOut",
+        onComplete: () => {
+            gsap.set($current, {
+                clipPath: "inset(0 0 0 0)",
+                zIndex: 0
+            });
+
+            $next.css("z-index", 2);
+
+            currentIndex = nextIndex;
+            isAnimating = false;
+        }
+    });
+
+}
+
+function setActiveImageOnScroll() {
+
+    $contents.each(function (index) {
+
+        const rect = this.getBoundingClientRect();
+
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 0.5) {
+            changeImage(index);
+            return false;
+        }
+
+    });
+
+}
+
+$(window).on('load scroll', setActiveImageOnScroll);
+

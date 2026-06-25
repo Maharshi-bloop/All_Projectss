@@ -73,11 +73,14 @@ table { border-collapse: collapse; width: 100%; }
 .heading11xl { font-size: var(--font11xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading10xl { font-size: var(--font10xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading9xl { font-size: var(--font9xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
+.heading8xl { font-size: var(--font8xl); font-weight: 700; color: var(--colorAccent); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading7xl { font-size: var(--font7xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading3xl { font-size: var(--font3xl); font-weight: 700; color: var(--colorPrimary); font-family: var(--fontSecondary); }
+.heading2xl { font-size: var(--font2xl); font-weight: 700; color: var(--colorAccent); font-family: var(--fontSecondary); }
 .subTextXl { font-size: var(--fontXl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontPrimary); display: inline-block; }
-.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; font-size: var(--fontXl); }
+.subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
+.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; /* font-size: var(--fontXl); */ }
 .primaryBtn:hover { background-color: var(--colorSecondary); border-color: var(--colorSecondary); color: var(--colorAccent); }
 
 /* === HEADER CSS START === */

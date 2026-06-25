@@ -1,0 +1,34 @@
+.product-catagory { background-color: var(--colorBg); }
+.productsWrap { margin: 90px 0 0 0; }
+.productWrapTop { padding: 50px 0; background-color: var(--colorSecondary); border-bottom: 1px solid var(--colorAccent); }
+.productWrapTopInner { display: flex; align-items: center; justify-content: space-between; }
+.productWrapTopInner { display: flex; align-items: center; justify-content: space-between; }
+.productFilter ul { display: flex; flex-wrap: wrap; row-gap: 20px; column-gap: 10px; text-transform: uppercase; font-weight: 600; color: var(--colorAccent); font-size: var(--fontXl); justify-content: flex-end; }
+.productFilter ul li a { display: inline-block; background-color: var(--colorWhite); padding: 10px 30px; border-radius: 50px; border: 1px solid var(--colorAccent); transition: all 0.3s; line-height: 1.3; }
+.productFilter ul li a.active { background-color: var(--colorAccent); color: var(--colorWhite); }
+.productListingWrapInner { margin: 80px 0; }
+.productList { border-radius: 30px; overflow: clip; border: 1px solid var(--colorAccent); height: 100%; }
+.productImage { height: 430px; }
+.productImage img { width: 100%; height: 100%; object-fit: cover; }
+.productTitle { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; }
+.productTitle a { border: 1px solid var(--colorAccent); padding: 10px 30px; border-radius: 50px; text-transform: uppercase; font-weight: 500; font-size: var(--fontLg); line-height: 1.4; }
+.productHeading .heading3xl { margin: 0; color: var(--colorAccent); }
+.productHeading span { color: var(--colorPrimary); font-size: 18px; font-weight: 500; }
+a.loadMore.primaryBtn { font-size: 18px; text-transform: capitalize; padding: 16px 100px; margin: 80px 0 0 0; }
+
+/* numberData css */
+.numberData { padding: 200px 0; background-color: var(--colorAccent); }
+.numberDataListing { display: flex; align-items: center; justify-content: space-between; margin: 80px 0 0 0; }
+.numberDataListImage { width: 200px; margin: 0 auto; }
+.numberDataListImage img { width: 100%; height: 100%; object-fit: contain; }
+.numberDataContent { margin: 40px 0 0 0; }
+.numberDataContent, .numberDataContent .heading7xl { color: var(--colorWhite); }
+.numberDataContent span { font-size: var(--fontLg); }
+
+/* ctaWrapper css */
+.ctaWrapper { background-color: var(--colorSecondary); padding: 150px 0; }
+.ctaText .heading11xl { color: var(--colorAccent); }
+.ctaText .subTextXl { color: var(--colorBlack); margin: 0 0 20px 0; display: block; }
+.ctaWrapperInner .row { align-items: center; }
+.btmCtaImage { border-radius: 30px; overflow: clip; }
+.btmCtaImage img { width: 100%; height: 100%; object-fit: cover; }

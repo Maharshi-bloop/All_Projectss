@@ -21,6 +21,20 @@
 .productListingLast { height: 100%; display: flex; align-items: center; justify-content: center; }
 .productListingLast .heading7xl { color: var(--colorPrimary); }
 
+/*  */
+.madeListBg { position: absolute; width: 100%; height: 100%; z-index: -1; left: -150px; }
+.madeListBg img { width: 100%; height: 100%; object-fit: contain; }
+.madeImage { width: 250px; height: 250px; border-radius: 50%; overflow: clip; border: 2px solid #C2202F; }
+.madeImage img { width: 100%; height: 100%; object-fit: cover; }
+.madeList { display: flex; align-items: center; gap: 50px; /* margin: 0 0 0 50px; */ }
+.madeList span.heading3xl { text-transform: uppercase; }
+.madeListing { display: flex; flex-direction: column; position: relative; z-index: 1; margin-top: 80px; }
+.madeListing:before { content: ''; position: absolute; width: 100%; height: 100%; background: url(../../images/line.png)center center no-repeat; background-size: contain; top: 0; left: 0; z-index: -1; }
+.madeList:nth-child(even) { justify-content: flex-end; }
+
+/* .madeList:not(:first-of-type) { margin-top: -50px; } */
+.madeList .heading7xl { line-height: 1; color: var(--colorAccent); }
+
 /* explore css */
 .explore { padding: 200px 0; background-color: var(--colorAccent); }
 .exploreTop { text-align: center; }

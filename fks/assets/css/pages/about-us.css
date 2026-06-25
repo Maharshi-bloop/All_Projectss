@@ -1,10 +1,14 @@
 .about-us { background-color: var(--colorBg); }
 .aboutBanner { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; margin: 90px 0 0 0; }
+.aboutBannerBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.aboutBannerImage { position: absolute; top: -50%; right: -20%; }
+.aboutBannerInner { position: relative; z-index: 0; }
 .aboutBanner:before { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; top: -30%; left: -20%; transform: rotate(135deg); }
 .aboutBanner:after { content: ''; position: absolute; width: 1000px; height: 700px; background: url(../../images/chocolate-bg.png)center center no-repeat; background-size: contain; bottom: -40%; right: -20%; transform: rotate(-45deg); z-index: -1; }
 .aboutBanner .marqueeWrapper { bottom: -60px; }
-.aboutBannerInner { text-align: center; width: 50%; margin: 0 auto; }
-.aboutBannerInner .heading11xl { text-align: center; color: var(--colorAccent); }
+.aboutBannerInner .row { justify-content: space-between; align-items: center; }
+.aboutBannerInner .heading11xl { color: var(--colorAccent); }
 .aboutBannerInner .subTextXl { color: var(--colorBlack); }
 .box { text-align: center; display: flex; align-items: center; justify-content: center; width: 196px; height: 100px; position: absolute; top: 400px; border-radius: 10px; }
 .productImage.product1 { position: absolute; width: 90px; top: 12%; left: 32%; transform: rotate(-70deg); }
@@ -28,9 +32,9 @@
 .introVideoWrap.is-video-playing:hover .video-play-icon { opacity: 1; visibility: visible; }
 
 /* numbers css */
-.numbers { background-color: var(--colorSecondary); height: 100vh; display: flex; align-items: center; justify-content: center; overflow: clip; position: relative; }
+.numbers { background-color: var(--colorSecondary); display: flex; align-items: center; justify-content: center; overflow: clip; position: relative; padding: 150px 0; }
 .numbersInner { text-align: center; position: relative; z-index: 1; }
-.numbersInner .heading12xl { color: var(--colorAccent); width: 50%; margin: 0 auto; line-height: 1; }
+.numbersInner .heading12xl { color: var(--colorAccent); margin: 0 auto; line-height: 1; }
 .numbersCardListing { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
 .numbersCardList { position: absolute; border-radius: 30px; border: 2px solid var(--colorPrimary); width: 500px; height: 650px; overflow: hidden; background-color: #fff; will-change: transform, opacity; z-index: 2; }
 .numbersCardImage { width: 100%; height: 100%; }
@@ -38,6 +42,20 @@
 .numbersCardText { position: absolute; bottom: 20px; left: 50%; width: calc(100% - 40px); padding: 30px; background-color: var(--colorBg); border-radius: 25px; transform: translateX(-50%); }
 .numbersCardText .heading10xl { color: var(--colorPrimary); }
 .numbersCardText .subTextXl { color: var(--colorBlack); }
+.numberListing { max-width: 80%; margin: 0 auto; padding: 130px 0 0 0; }
+.numberListContentWrap, .numberListImageWrap { width: 50%; }
+.numberListImageWrap { position: sticky; top: 200px; }
+.numberListImage { position: absolute; top: 0; right: 0; }
+
+/* scroll */
+.scrollConatent, .scrollImageWrp { height: 70vh; }
+.scrollConatent .heading9xl { color: var(--colorPrimary); }
+.scrollConatent .subTextXl { color: var(--colorBlack); }
+.scrollImageWrp { position: sticky; top: 30vh; overflow: clip; }
+.scrollConatentImage { width: 200px; }
+.scrollImage { position: absolute; inset: 0; width: 100%; height: 100%; clip-path: inset(0 0 0 0); z-index: 0; border-radius: 30px; overflow: clip; height: 500px; }
+.scrollImage:first-child { z-index: 2; }
+.scrollConatentWrp { margin-top: 100vh; }
 
 /* ppTimeLine css */
 .ppTimeLine { padding: 350px 0 0 0; background-color: var(--colorAccent); overflow: clip; }
