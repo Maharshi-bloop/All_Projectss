@@ -10,7 +10,7 @@
 .subBannerContent .subTextMd { font-family: var(--fontSecondary); }
 
 /* textImage2Wrap css */
-.textImage2Wrap { margin: 84px 0; }
+.textImage2Wrap { margin: 64px 0; }
 .gridBox { border: 1px solid #959EA2CC; background: #2234693D; padding: 24px 34px 34px 34px; height: 100%; border-radius: 6px; width: 80%; }
 .gridBox h5 { margin: 0 0 24px 0; color: var(--colorSecondary); text-transform: uppercase; }
 .gridBox ul li { font-size: var(--fontSm); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--colorBgLight); position: relative; padding: 0 0 0 34px; margin: 0 0 14px 0; }
