@@ -68,7 +68,7 @@ a { text-decoration: none; color: inherit; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
-:root { --fontPrimary: 'Fira Sans Condensed'; --fontSecondary: 'Fira Sans Extra Condensed'; --fontTertiry:'DM Sans'; --colorPrimary: #C2202F; --colorSecondary: #FFDE17; --colorAccent: #3B0017; --colorBg: #FCFBE4; --colorText: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 14px; --fontMd: 16px; --fontLg: 18px; --fontXl: 20px; --font2xl: 24px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 34px; --font7xl: 38px; --font8xl: 54px; --font9xl: 60px; --font10xl: 68px; --font11xl: 74px; --font12xl: 90px; }
+:root { --fontPrimary: 'Fira Sans Condensed'; --fontSecondary: 'Fira Sans Extra Condensed'; --fontTertiry: 'DM Sans'; --colorPrimary: #C2202F; --colorSecondary: #FFDE17; --colorAccent: #3B0017; --colorBg: #FCFBE4; --colorText: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 14px; --fontMd: 16px; --fontLg: 18px; --fontXl: 20px; --font2xl: 24px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 34px; --font7xl: 38px; --font8xl: 54px; --font9xl: 60px; --font10xl: 68px; --font11xl: 74px; --font12xl: 90px; }
 .heading12xl { font-size: var(--font12xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading11xl { font-size: var(--font11xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
 .heading10xl { font-size: var(--font10xl); font-weight: 700; color: var(--colorSecondary); text-transform: uppercase; font-family: var(--fontSecondary); }
@@ -80,33 +80,37 @@ table { border-collapse: collapse; width: 100%; }
 .heading2xl { font-size: var(--font2xl); font-weight: 700; color: var(--colorAccent); font-family: var(--fontSecondary); }
 .subTextXl { font-size: var(--fontXl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontPrimary); display: inline-block; }
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
-.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; /* font-size: var(--fontXl); */ }
+.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s;    /* font-size: var(--fontXl); */ }
 .primaryBtn:hover { background-color: var(--colorSecondary); border-color: var(--colorSecondary); color: var(--colorAccent); }
 .primaryBrdrBtn { border: 2px solid var(--colorPrimary); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; }
-.primaryBrdrBtn:hover{
-	background-color: var(--colorPrimary);
-}
+.primaryBrdrBtn:hover { background-color: var(--colorPrimary); }
 
 /* === HEADER CSS START === */
 header { padding: 12px 0; background-color: var(--colorSecondary); border-bottom: 1px solid var(--colorAccent); position: fixed; top: 0; left: 0; width: 100%; z-index: 99; }
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
-.toggleBtn { display: flex; padding: 16px 30px; background-color: var(--colorAccent); align-items: center; justify-content: center; gap: 6px; flex-direction: column; position: relative; z-index: 10; border-radius: 40px; cursor: pointer; }
+.toggleBtn { display: flex; padding: 16px 30px; background-color: var(--colorAccent); align-items: center; justify-content: center; gap: 6px; flex-direction: column; position: relative; z-index: 10; border-radius: 40px; cursor: pointer; transition: all 0.3s; }
 .toggleBtn span { width: 25px; height: 2px; background-color: var(--colorWhite); display: block; transition: all 0.3s; }
-.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
-.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(7px, 3px) }
+.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(8px, -4px); }
 .logo { width: 100px; }
+.headerOption { position: fixed; top: 0; height: 100vh; background-color: var(--colorAccent); right: 0; z-index: 3; min-width: 500px; transform: translateX(100%); transition: all 0.3s; }
+.headerOption.openMenu { transform: translateX(0); }
+.toggleBtn.closeBtn span:nth-child(2) { opacity: 0; visibility: hidden; }
+.toggleBtn.closeBtn { transform: translateX(290px); }
+nav li a { color: var(--colorWhite); text-transform: uppercase; font-size: var(--font7xl); font-weight: 700; }
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
-	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
+	nav>ul { display: flex; border-radius: 12px; flex-direction: column; margin: 100px 0 0 0; }
 	nav li { position: relative; }
-	nav li a { color: var(--colorBlack); position: relative; display: inline-block; padding: 16px 12px; text-decoration: none; transition: all 0.3s; position: relative; }
+	nav li a { color: var(--colorWhite); position: relative; display: inline-block; padding: 16px 12px 16px 50px; border-top: 1px solid #FCFBE433; text-decoration: none; transition: all 0.3s; position: relative; width: 100%; }
+	nav li:last-child a { border-bottom: 1px solid #FCFBE433; ; }
 	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
 	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
 	li.hasUl a { padding-right: 25px !important; }
 	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
 }
 @media (max-width:1024px) {
-	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important;		/* You can replace with a global var */ transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important;        /* You can replace with a global var */ transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
 	.headerOption.openMenu { transform: translateX(0); }
 	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
 }
@@ -115,7 +119,7 @@ header { padding: 12px 0; background-color: var(--colorSecondary); border-bottom
 
 /* marqueeWrapper css */
 .marqueeWrapper { position: absolute; bottom: -2px; overflow: hidden; width: 100vw; }
-.marqueeWrapperInner { display: flex; width: max-content; animation: scrollHori 100s linear infinite;	/* faster + smoother */ }
+.marqueeWrapperInner { display: flex; width: max-content; animation: scrollHori 100s linear infinite;    /* faster + smoother */ }
 .marqueeImage { width: 150vh; flex-shrink: 0; margin-left: -2px; }
 @keyframes scrollHori {
 	0% { transform: translateX(0); }

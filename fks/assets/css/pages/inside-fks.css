@@ -66,3 +66,5 @@ div#test { position: absolute; bottom: 50%; left: 50%; }
 .fksDevelopmentList .subTextXl { background-color: #3B0017; display: block; text-align: center; padding: 12px; border-radius: 12px; position: absolute; width: calc(100% - 24px); bottom: 12px; left: 12px; }
 .fksDevelopmentList { position: relative; }
 .bottomCta { margin: 150px 0 0 0; display: flex; justify-content: center; }
+.productListingWrap { position: relative; }
+.squiggle { position: absolute; top: 0; left: 0; width: 100vw; height: 200vw; }

@@ -204,3 +204,21 @@ footer { margin: 24px 0 40px 0; }
 
 /* pageContent css */
 .pageContentInner { background-color: #2234693D; border: 1px solid #959EA2CC; padding: 34px; color: var(--colorBgLight); }
+
+/*  */
+.privacy-policy .pageContentInner p strong { text-transform: uppercase; font-size: 18px; font-weight: 400; font-family: var(--fontPrimary); }
+.privacy-policy .pageContentInner p a { color: var(--colorSecondary); }
+.privacy-policy .pageContentInner p { font-family: var(--fontSecondary); font-size: 18px; font-weight: 300; color: var(--colorBgLight); margin: 0 0 16px 0; }
+.privacy-policy .pageContentInner h2, .privacy-policy h3 { color: var(--colorSecondary); font-family: var(--fontPrimary); font-weight: 400; }
+.privacy-policy .pageContentInner h2 { font-size: 18px; }
+.privacy-policy .pageContentInner h3 { font-size: 22px; }
+.privacy-policy .pageContentInner ul { list-style: disc; margin: 0 0 16px 20px; }
+.privacy-policy .pageContentInner ul li::marker { color: var(--colorBgLight) !important; }
+.terms-conditions .pageContentInner p strong { text-transform: uppercase; font-size: 18px; font-weight: 400; font-family: var(--fontPrimary); }
+.terms-conditions .pageContentInner p a { color: var(--colorSecondary); }
+.terms-conditions .pageContentInner p { font-family: var(--fontSecondary); font-size: 18px; font-weight: 300; color: var(--colorBgLight); margin: 0 0 16px 0; }
+.terms-conditions .pageContentInner h2, .privacy-policy h3 { color: var(--colorSecondary); font-family: var(--fontPrimary); font-weight: 400; }
+.terms-conditions .pageContentInner h2 { font-size: 18px; }
+.terms-conditions .pageContentInner h3 { font-size: 22px; }
+.terms-conditions .pageContentInner ul { list-style: disc; margin: 0 0 16px 20px; }
+.terms-conditions .pageContentInner ul li::marker { color: var(--colorBgLight) !important; }

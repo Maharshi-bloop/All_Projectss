@@ -1,0 +1,31 @@
+.blog { background-color: var(--colorBg); }
+.insideFksBanner { background-color: var(--colorPrimary); margin: 90px 0 0 0; padding: 150px 0; text-align: center; position: relative; overflow-x: clip; }
+.insideFksBanner .marqueeWrapper { top: 99%; bottom: auto; transform: rotate(180deg); }
+
+/* custom checkbox */
+.custom-radio-style-2:first-child { margin-top: 0; }
+.custom-radio-style-2 { display: block; min-height: auto; padding-left: unset; margin: 12px 0; font-size: 18px; }
+.custom-radio-style-2 input { display: none; }
+.custom-radio-style-2 label { position: relative; cursor: pointer; text-align: left; width: 100%; font-weight: 400; height: 100%; display: inline-block; color: #160D0D; }
+.custom-radio-style-2 input:checked + label { opacity: 1; }
+.custom-radio-style-2 label:before { content: ''; -webkit-appearance: none; background-color: transparent; border: 1px solid var(--colorAccent); border-color: var(--whiteColor); width: 25px; height: 25px; display: inline-block; position: relative; vertical-align: middle; cursor: pointer; border-radius: 50%; top: 0; left: 0; margin-right: 20px; }
+.custom-radio-style-2 input:checked + label:before { border-color: var(--whiteColor); }
+.custom-radio-style-2 label:after { content: ''; display: block; position: absolute; top: 50%; width: 15px; height: 15px; background: var(--colorPrimary); border-radius: 50%; left: 5px; transition: all 0.2s; transform: translateY(-50%); opacity: 0; transform-origin: center center; }
+.custom-radio-style-2 input:checked + label:after { transform: scale(1) translateY(-50%); opacity: 1; }
+
+/* listing css */
+.resourceListInner .filters { border-right: 1px solid #3B001780; height: 100%; }
+.resourceListInner .filtersInner { margin: 0; padding: 70px 0 30px 0; position: sticky; top: 70px; }
+.resourceListInner .filtersInner ul { margin: 20px 0 0 0; }
+.resourceCardImage { width: 100%; height: 300px; border-radius: 30px; margin: 0 0 20px 0; overflow: clip; position: relative; z-index: 1; }
+.resourceCardImage::before { content: 'No Image available'; background: url(../../images/only-symbol.svg)center 105px no-repeat; padding: 50px 0 0 0; position: absolute; width: 100%; height: 100%; z-index: -1; display: flex; align-items: center; background-color: var(--bgColor) !important; justify-content: center; font-weight: 900; font-size: var(--normalFont); text-transform: uppercase; color: #aaaaaa; }
+.resourceListing { margin: 70px 0 0 0; }
+.resourceListing .col-6 { margin: 0 0 60px 0; }
+.resourceCardText { padding: 0 0 0 20px; }
+.resourceCardText .titleHeading { text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; }
+.resourceCardImage img { width: 100%; height: 100%; object-fit: cover; transition: all 0.5s; }
+.resourceCard:hover .resourceCardImage img { transform: scale(1.15); }
+.resourceCard { margin: 0 0 60px 0; }
+.resourceCardText a { display: block; color: var(--colorPrimary); font-size: var(--fontLg); font-weight: 500; text-decoration: underline; }
+.resourceCardText .heading5xl { color: #181C1D; font-weight: 500; text-transform: unset; }
+.insideFksBannerInner .subTextXl { width: 50%; margin: 0 auto; }

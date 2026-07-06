@@ -1,5 +1,5 @@
 /* === BANNER CSS START === */
-.banner { width: 100%; height: 100vh; position: relative; overflow: clip; /* margin: 90px 0 0 0;  */}
+.banner { width: 100%; height: 100vh; position: relative; overflow: clip; /* margin: 90px 0 0 0;  */ }
 .banner .marqueeWrapper { bottom: -60px; }
 .bannerVideo { height: 100%; }
 .bannerVideo video { width: 100%; height: 100%; object-fit: cover; }
@@ -51,7 +51,9 @@
 .productCataInner { position: relative; padding: 200px 0; }
 .productCataTop { text-align: center; padding: 0 0 600px 0; }
 .productCataNameListingWrapper { position: absolute; top: 100px; width: 100%; z-index: 1; }
-.productCataTop .heading5xl { margin: 0 auto; padding: 18px 55px; border: 1px solid var(--colorSecondary); width: max-content; border-radius: 50px; }
+.productCataNameListingWrapper .heading5xl { color: var(--colorWhite); }
+
+/* .productCataTop .heading5xl { margin: 0 auto; padding: 18px 55px; border: 1px solid var(--colorSecondary); width: max-content; border-radius: 50px; } */
 .productCataNameListing .heading10xl { color: var(--colorWhite); }
 .productCataListingWrapper { position: absolute; width: 1400px; height: 1400px; margin: 0 auto; border-radius: 50%; top: 350px; left: 50%; transform: translateX(-50%); }
 .productCataListingWrapper:before { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(180deg, rgba(194, 32, 47, 0) 1.41%, #C2202F 15.58%, #C2202F 39.61%, rgba(194, 32, 47, 0) 53.9%); top: 0; left: 0; z-index: -2; }
@@ -149,6 +151,17 @@
 .brandListingWrap:before { content: ''; position: absolute; width: 230px; height: 100%; background: linear-gradient(90deg, #3B0017 8.04%, rgba(59, 0, 23, 0) 105.07%); top: 0; left: 0; z-index: 2; }
 .brandListingWrap:after { content: ''; position: absolute; width: 230px; height: 100%; background: linear-gradient(90deg, #3B0017 8.04%, rgba(59, 0, 23, 0) 105.07%); top: 0; right: 0; z-index: 2; transform: rotate(180deg); }
 .brandListingSwiper .swiper-wrapper, .brandListingSwiper1 .swiper-wrapper { transition-timing-function: linear; }
+.tabing-main { margin: 80px 0 0 0; }
+ul.tab-titles { display: flex; align-items: center; justify-content: center; gap: 20px; }
+ul.tab-titles li { font-size: 20px; color: #3B0017; }
+ul.tab-titles li a { padding: 10px 24px; font-family: 'Fira Sans Extra Condensed'; text-transform: uppercase; font-weight: 600; background-color: #FCFBE4; display: inline-block; border-radius: 50px; line-height: 1; transition: all 0.3s; }
+.tabContent { display: none; }
+ul.tab-titles li.active-li a { background-color: var(--colorSecondary); }
+.tabContent { display: none; }
+.active .tabContent { display: block; }
+.tab-content-main { margin: 100px 0 0 0; }
+.brandLogo { display: flex; flex-wrap: wrap; gap: 30px; }
+.brandLogoImage { width: calc(20% - 24px); border: 2px solid #C2202F26; border-radius: 40px; padding: 10px; }
 
 /* pyramid css */
 

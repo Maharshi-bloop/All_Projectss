@@ -15,7 +15,7 @@
 .contactBoxText .headingXl { font-weight: 500; color: var(--colorPrimary); }
 .contactBoxText .subTextMd { font-weight: 500; color: var(--colorText); margin: 24px 0 0 0; }
 .contactBoxText { background-color: var(--colorBgLight); padding: 34px; border-radius: 5px; height: 100%; position: relative; overflow: clip; z-index: 1; }
-.contactBoxText:before { content: ''; position: absolute; width: 100%; background: url(../../images/high-pressure-package.png)center center no-repeat; height: 53%; background-size: cover; z-index: -1; left: 50%; bottom: -30px; transform: translateX(-50%); mix-blend-mode: darken; }
+.contactBoxText:before { content: ''; position: absolute; width: 100%; background: url(../../images/Connect-With-Us-Render.png)center center no-repeat; height: 100%; background-size: cover; z-index: -1; left: 50%; bottom: -30px; transform: translateX(-50%); mix-blend-mode: darken; }
 .contactUlIcon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: var(--colorPrimary); border-radius: 5px; }
 li > div { display: flex; gap: 16px; margin: 0 0 32px 0; align-items: center; }
 .contactBoxUl { margin: 32px 0 0 0; }
