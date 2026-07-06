@@ -151,6 +151,10 @@ const wrapper = document.querySelector(".productCataListingWrapper");
 const radius = 700;
 const moveBottom = 0;
 
+if ($(window).width() === 1536) {
+    const radius = 400;
+}
+
 const leftItems = [...items].slice(0, 3);
 const rightItems = [...items].slice(3, 6);
 
@@ -237,12 +241,12 @@ $(".prevBtn").on("click", function () {
 });
 
 // CLICK ON productCataList
-/* $(".productCataList").on("click", function () {
+$(".productCataList").on("click", function () {
 
     const index = $(this).index();
 
     setActive(index);
-}); */
+});
 /* productCata js end */
 
 
@@ -299,15 +303,15 @@ pyramidTl.fromTo(".stage",
 
 
 /* tab js start */
- $(".tabing-main .tabContainer .tab-content-main:first").addClass("active");
-    $(".tabing-main .tab-titles li:first").addClass("active-li")
-    $(".tabing-main .tab-titles li a").on("click", function (event) {
-        event.preventDefault()
-        $(".tabing-main .tab-titles li").removeClass("active-li")
-        $(this).parent().addClass("active-li");
-        $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
-        $($(this).attr('href')).addClass("active");
-    })
+$(".tabing-main .tabContainer .tab-content-main:first").addClass("active");
+$(".tabing-main .tab-titles li:first").addClass("active-li")
+$(".tabing-main .tab-titles li a").on("click", function (event) {
+    event.preventDefault()
+    $(".tabing-main .tab-titles li").removeClass("active-li")
+    $(this).parent().addClass("active-li");
+    $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
+    $($(this).attr('href')).addClass("active");
+})
 /* tab js end */
 
 
