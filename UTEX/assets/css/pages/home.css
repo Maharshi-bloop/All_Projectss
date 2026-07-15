@@ -50,7 +50,7 @@
 .logoOnly { display: flex; align-items: center; justify-content: center; }
 .imageWrapper { margin: 40px 0; display: flex; flex-direction: column; align-items: center; transition: all 0.3s; transition-delay: 0.5s; }
 .wellServiceTop .logoOnly { margin: 0 0 18px 0; }
-.wellServiceTop .subTextMd { margin: 18px 0 0 0; color: var(--colorPrimary); width: 75%; }
+.wellServiceTop .subTextMd { margin: 18px 0 0 0; color: var(--colorPrimary); width: 60%; font-family: var(--fontSecondary); }
 .singleImageOuter { position: relative; transition: all 0.5s ease-in-out; transition-delay: 0.3s; }
 .singleImageOuter:first-child { z-index: 6; }
 .singleImageOuter:nth-child(2) { z-index: 5; }
@@ -88,3 +88,4 @@
 .stageList { position: relative; z-index: 1; }
 .stageList:before { content: ''; position: absolute; width: 100%; height: 1px; border-bottom: 1px dashed #1365AD; top: 22px; z-index: -1; }
 .stageList:last-child:before { display: none; }
+.stageTop .subTextMd { font-family: var(--fontSecondary); }

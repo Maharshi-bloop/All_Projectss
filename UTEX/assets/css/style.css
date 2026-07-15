@@ -38,8 +38,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
 :root { --fontPrimary: 'Work Sans'; --fontSecondary: 'Calibri'; --colorPrimary: #002F87; --colorPrimaryBlue: #1365AD; --colorPrimaryLightBlue: #BAE4F7; --colorSecondary: #FAAF40; --colorBg: #F6FBFE; --colorSecondaryOrange: #F8D59F; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 22px; --font2xl: 28px; --font3xl: 34px; --font4xl: 38px; --font5xl: 44px; --font6xl: 54px; }
-.primaryBtn { font-size: var(--fontBase); font-weight: 600; color: var(--colorWhite); padding: 12px 20px; border-radius: 5px; background-color: var(--colorPrimary); display: flex; align-items: center; justify-content: center; width: max-content; gap: 6px; transition: all 0.3s; }
-.primaryBtn:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); }
+.primaryBtn { font-size: var(--fontBase); font-weight: 600; color: var(--colorWhite); padding: 12px 20px; border-radius: 5px; background-color: var(--colorPrimary); display: flex; align-items: center; justify-content: center; width: max-content; gap: 6px; transition: all 0.3s; border: 1px solid transparent; }
+.primaryBtn:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); border: 1px solid var(--colorPrimary); }
 .primaryBtn i { font-size: 20px; font-weight: 500; }
 .secondaryBtn { font-size: var(--fontBase); font-weight: 600; color: var(--colorPrimary); padding: 12px 22px; border-radius: 5px; background-color: var(--colorSecondary); display: flex; align-items: center; justify-content: center; width: max-content; gap: 6px; border: 1px solid transparent; transition: all 0.3s; }
 .secondaryBtn i { font-size: 20px; font-weight: 500; }
@@ -133,10 +133,13 @@ footer .container-xl { max-width: calc(1320px + 158px); }
 .footerInner .row { justify-content: space-between; }
 .footerUlWrapper { display: flex; justify-content: flex-end; gap: 250px; }
 .footerSocialUl ul { display: flex; gap: 18px; }
-.footerSocialUl ul a { display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 50%; color: var(--colorPrimary); width: 44px; height: 44px; font-size: var(--fontLg); }
+.footerSocialUl ul a { display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 50%; color: var(--colorPrimary); width: 44px; height: 44px; font-size: var(--fontLg); transition: all 0.3s;}
 .footerLogoWrapper ul { display: flex; flex-direction: column; gap: 16px; }
 .footerUl ul { display: flex; flex-direction: column; gap: 16px; }
-
+span.copyRight { margin: 14px 0 0 0; display: block; font-size: 12px; }
+footer ul li a { transition: all 0.3s; }
+footer ul li a:hover { color: var(--colorSecondary); }
+.footerSocialUl ul a:hover{ background-color: var(--colorSecondary);color: var(--colorPrimary);}
 /* =============== back to top button css ================== */
 .backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
 .backTop.activeBackToTop { opacity: 1; visibility: visible; }
