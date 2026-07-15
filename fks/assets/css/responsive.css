@@ -1,3 +1,5 @@
 @media (max-width:1536px) {
 	.productListing { width: 750px; }
+	.productCataTop { padding: 0 0 430px 0; }
+	.mapDiv { right: 0; }
 }

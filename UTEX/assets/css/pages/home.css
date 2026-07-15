@@ -1,0 +1,90 @@
+/* === BANNER CSS START === */
+.banner { position: relative; height: calc(100vh - 80px); z-index: 1; margin: 100px 0 0 0; display: flex; align-items: center; overflow: clip; }
+.banner:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: #002F87; mix-blend-mode: color; z-index: 0; }
+.bannerInner { position: relative; }
+.banner:after { content: ''; position: absolute; width: 100%; height: 100%; background-blend-mode: color; background: #002F879E; top: 0; left: 0; z-index: -1; }
+.bannerBgVideo { position: absolute; width: 100%; height: 100%; z-index: -1; }
+.bannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
+.bannerContent .heading5xl { width: 50%; }
+.bannerContent .subTextLg { width: 40%; margin: 24px 0 34px 0; }
+.bannerCounter { position: absolute; width: 100%; left: 0; bottom: 0; }
+.stat-number { font-variant-numeric: tabular-nums; }
+.counterListing { display: flex; align-items: center; justify-content: space-around; margin: 24px 0 0 0; padding: 24px 0; border: 1px solid #54A7CC; border-bottom: 0; background-color: #BAE4F72E; position: relative; }
+.counterListing:before { content: ''; position: absolute; width: 1px; height: 100%; background-color: #54A7CC; left: 33%; top: 0; }
+.counterListing:after { content: ''; position: absolute; width: 1px; height: 100%; background-color: #54A7CC; left: 66%; top: 0; }
+.counterList { display: flex; align-items: center; gap: 24px; }
+.bannerCounterTop .primarySubTextLg { width: 90%; }
+.bannerCounterTop .subTextBase { color: var(--colorWhite); }
+.counterListingOuter { position: relative; }
+.counterListingOuter:before { content: ''; position: absolute; width: 200vw; height: 1px; background-color: #54A7CC; left: -100vw; }
+
+/* === BANNER CSS END === */
+
+/* performance css */
+.performance { overflow-x: clip; position: relative; }
+.performance:before { content: ''; position: absolute; width: 100vw; height: 1px; background-color: var(--colorPrimaryLightBlue); bottom: 0; }
+.performanceInner { padding: 110px 34px 54px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.performanceTop { width: 40%; }
+.performanceListing { margin: 54px 0 0 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 34px; }
+.performanceList .subTextMd { margin: 20px 0 0 0; }
+.performanceList { width: 25%; }
+.performanceListHead { display: flex; align-items: center; gap: 14px; }
+.listHeadIcon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: #BAE4F766; border-radius: 50%; }
+.performanceListHead .subTextMd { width: calc(100% - 60px); }
+
+/* subPageListingWrap css */
+.subPageListingWrap { border-bottom: 1px solid var(--colorPrimaryLightBlue); }
+.subPageListingWrapInner { padding: 84px 34px 84px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.subPageListing { margin: 54px 0 0 0; }
+.subPageListingTop .heading2xl { width: 40%; }
+.subPageListImage { border-radius: 5px; overflow: clip; }
+.subPageListImage img { width: 100%; height: 100%; object-fit: cover; }
+.subPageListContent { margin: 16px 0 0 0; }
+.subPageListContent .subTextMd { margin: 10px 0 24px 0; }
+
+/* wellService css */
+.wellService { padding: 84px 0; background-color: var(--colorSecondary); position: relative; overflow: clip; }
+.wellService:before { content: ''; position: absolute; width: 1000px; height: 365px; background: #FFFFFFB0; border-radius: 50%; filter: blur(158.60000610351562px); mix-blend-mode: overlay; left: 50%; top: -40%; transform: translate(-50%, 50%); }
+.wellService:after { content: ''; position: absolute; width: 100vw; height: 250px; background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.44) 38.46%, rgba(255, 255, 255, 0) 100%); border-radius: 50%; left: 50%; top: 60%; transform: translate(-50%, -50%); }
+.wellService.in-viewport:after { transform: translate(-50%, -50%) scaleY(2.1); }
+.logoOnly { display: flex; align-items: center; justify-content: center; }
+.imageWrapper { margin: 40px 0; display: flex; flex-direction: column; align-items: center; transition: all 0.3s; transition-delay: 0.5s; }
+.wellServiceTop .logoOnly { margin: 0 0 18px 0; }
+.wellServiceTop .subTextMd { margin: 18px 0 0 0; color: var(--colorPrimary); width: 75%; }
+.singleImageOuter { position: relative; transition: all 0.5s ease-in-out; transition-delay: 0.3s; }
+.singleImageOuter:first-child { z-index: 6; }
+.singleImageOuter:nth-child(2) { z-index: 5; }
+.singleImageOuter:nth-child(3) { z-index: 4; }
+.singleImageOuter:nth-child(4) { z-index: 3; }
+.singleImageOuter:nth-child(5) { z-index: 2; }
+.singleImageOuter:last-child { z-index: 1; }
+.singleImageOuter:not(:first-child) { margin: -50px 0 0 0; }
+.singleImageOuter span { position: absolute; padding: 10px 18px; background-color: #FFFFFF99; font-size: var(--fontBase); color: var(--colorPrimary); font-family: var(--fontSecondary); border-radius: 5px; opacity: 0; visibility: hidden; transition: all 0.5s; transition-delay: 0.7s; width: max-content; display: block; }
+.singleImageOuter:first-child span { bottom: calc(100% + 50px); left: 50%; transform: translateX(-50%) translateY(20px); }
+.singleImageOuter:first-child span:before { content: ''; position: absolute; width: 1px; height: 40px; background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40.39%); top: 100%; left: 50%; }
+.singleImageOuter:nth-child(2) span { top: 50%; left: calc(100% + 40px); transform: translateX(40px) translateY(-50%); }
+.singleImageOuter:nth-child(2) span:before { content: ''; position: absolute; width: 40px; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40.39%); top: 50%; right: 100%; }
+.singleImageOuter:nth-child(3) span { top: 50%; right: calc(100% + 40px); transform: translateX(-40px) translateY(-50%); }
+.singleImageOuter:nth-child(3) span:before { content: ''; position: absolute; width: 40px; height: 1px; background: linear-gradient(280deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40.39%); top: 50%; left: 100%; }
+.singleImageOuter:nth-child(5) span { top: 50%; left: calc(100% + 40px); transform: translateX(40px) translateY(-50%); }
+.singleImageOuter:nth-child(5) span:before { content: ''; position: absolute; width: 40px; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40.39%); top: 50%; right: 100%; }
+.singleImageOuter:last-child span { top: 50%; right: calc(100% + 40px); transform: translateX(-40px) translateY(-50%); }
+.singleImageOuter:last-child span:before { content: ''; position: absolute; width: 40px; height: 1px; background: linear-gradient(280deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40.39%); top: 50%; left: 100%; }
+.in-viewport .singleImageOuter span { opacity: 1; visibility: visible; }
+.in-viewport .singleImageOuter:first-child span { transform: translateX(-50%) translateY(0); }
+.in-viewport .singleImageOuter:nth-child(2) span { transform: translateX(0) translateY(-50%); }
+.in-viewport .singleImageOuter:nth-child(3) span { transform: translateX(0) translateY(-50%); }
+.in-viewport .singleImageOuter:nth-child(5) span { transform: translateX(0) translateY(-50%); }
+.in-viewport .singleImageOuter:last-child span { transform: translateX(0) translateY(-50%); }
+.in-viewport .imageWrapper { margin: 120px 0 40px 0; }
+.in-viewport .singleImageOuter:not(:first-child) { margin: 0; }
+
+/* stage css */
+.stageInner { padding: 84px 34px 84px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.stageListing { margin: 54px 0 0 0; display: flex; align-items: flex-start; }
+.stageListIndex { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: var(--colorSecondaryOrange); border-radius: 50%; font-size: 18px; color: #002F87; font-weight: 500; }
+.stageListContent .subTextMd { font-family: var(--fontSecondary); }
+.stageListContent .headingMd { margin: 14px 0 20px 0; }
+.stageList { position: relative; z-index: 1; }
+.stageList:before { content: ''; position: absolute; width: 100%; height: 1px; border-bottom: 1px dashed #1365AD; top: 22px; z-index: -1; }
+.stageList:last-child:before { display: none; }

@@ -116,6 +116,7 @@ nav li a { color: var(--colorWhite); text-transform: uppercase; font-size: var(-
 	.headerOption.openMenu { transform: translateX(0); }
 	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
 }
+.current_page_item a{ color: var(--colorSecondary); }
 
 /* === HEADER CSS END === */
 

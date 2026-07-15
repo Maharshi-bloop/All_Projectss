@@ -1,0 +1,57 @@
+/* tabWrapper css */
+.tabWrapper { border-bottom: 1px solid var(--colorPrimaryLightBlue); }
+.tabWrapperInner { padding: 84px 34px 54px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.tabContent { display: none; }
+.tabing-main { margin: 34px 0 0 0; }
+.mobile-tab-title { display: none; }
+.active .tabContent { display: block; }
+ul.tab-titles { display: flex; align-items: flex-start; justify-content: space-between; list-style-type: none; padding: 0; border-top: 1px solid var(--colorPrimaryLightBlue); margin: 0; }
+ul.tab-titles li { padding: 22px 0 0 0; position: relative; overflow: clip; }
+ul.tab-titles li:before { content: ''; position: absolute; width: 100%; height: 5px; background-color: var(--colorPrimary); top: 0; left: 0; transform: translateY(-5px); transition: all 0.3s; }
+ul.tab-titles li.active-li:before { transform: translateY(0); }
+ul.tab-titles li a { color: #869ECB; transition: all 0.3s; font-weight: 500; }
+ul.tab-titles li.active-li a { color: var(--colorPrimary); }
+.details { margin: 34px 0 0 0; }
+.tabImageWrapper { position: relative; }
+.textBox { position: absolute; left: 12px; top: 12px; border-radius: 5px; background-color: var(--colorWhite); padding: 34px 28px; width: 40%; }
+.innerImage { width: 100%; height: 512px; border-radius: 6px; overflow: clip; }
+.innerImage img { width: 100%; height: 100%; object-fit: cover; }
+.textBox .subTextMd { margin: 24px 0 0 0; }
+.textBox .subTextMd strong { font-weight: 600; }
+@media (max-width:991px) {
+	.mobile-tab-title { display: block; }
+	ul.tab-titles { display: none; }
+}
+
+/* ctaWrapper css */
+.challenges { border-bottom: 1px solid var(--colorPrimaryLightBlue); }
+.challengesInner { padding: 84px 34px; background-color: #FAAF401F; border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.challengesListing { margin: 34px 0 0 0; display: flex; align-items: flex-start; gap: 34px; justify-content: space-between; }
+.challengesList { width: calc(100% / 4); }
+.clContent .primarySubTextLg { color: var(--colorPrimary); font-weight: 600; margin: 0 0 20px 0; }
+.clContent .subTextMd { font-family: var(--fontSecondary); }
+.clIcon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: #F0882147; border-radius: 50%; margin: 0 0 14px 0; }
+
+/* perform css */
+.perform { border-bottom: 1px solid var(--colorPrimaryLightBlue); }
+.performInner { padding: 84px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.performTop { width: 40%; }
+.performListing { margin: 54px 0 0 0; }
+.plImage { width: 100%; height: 200px; border-radius: 5px; overflow: clip; }
+.plImage img { width: 100%; height: 100%; object-fit: cover; }
+.plContent { margin: 24px 0 0 0; }
+.plContent .headingMd { margin: 0 0 16px 0; }
+.plContent .subTextMd { font-family: var(--fontSecondary); }
+
+/* solution css */
+.solution { border-bottom: 1px solid var(--colorPrimaryLightBlue); }
+.solutionInner { padding: 84px 34px; background-color: var(--colorBg); border-left: 1px solid var(--colorPrimaryLightBlue); border-right: 1px solid var(--colorPrimaryLightBlue); }
+.solutionTop { width: 40%; }
+.solutionListing { margin: 54px 0 0 0; }
+.solutionList { padding: 12px; padding-bottom: 28px; border: 1px solid #BAE4F780; background-color: var(--colorWhite); box-shadow: 0px 1px 2px 0px #00000000; border-radius: 5px; height: 100%; }
+.slContent { display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 280px); }
+.slImage { width: 100%; height: 280px; }
+.slImage img { width: 100%; height: 100%; object-fit: cover; }
+.slContent .tag { font-size: var(--fontSm); display: inline-block; padding: 6px 12px; border: 1px solid #1365AD29; background-color: #ADBFC733; font-weight: 600; color: var(--colorPrimaryBlue); border-radius: 3px; }
+.slContent .headingxl { margin: 14px 0; }
+.slContent .subTextMd { font-family: var(--fontSecondary); margin: 0 0 34px 0; }

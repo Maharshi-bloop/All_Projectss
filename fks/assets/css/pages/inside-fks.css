@@ -1,5 +1,17 @@
 .insideFksBanner { background-color: var(--colorPrimary); margin: 90px 0 0 0; padding: 150px 0; text-align: center; position: relative; overflow-x: clip; }
 .insideFksBanner .marqueeWrapper { top: 99%; bottom: auto; transform: rotate(180deg); }
+.insideFksBannerInner .heading12xl { position: relative; display: inline-block; }
+.insideFksBannerInner .heading12xl:before { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 20px; right: calc(100% + 40px); animation: rotateStar 10s linear infinite; background-size: contain; }
+.insideFksBannerInner .heading12xl:after { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/white-star-icon.svg) center center no-repeat; top: 20px; left: calc(100% + 40px); animation: rotateStar 10s linear infinite; background-size: contain; }
+.insideFksBannerInner span { display: block; }
+@keyframes rotateStar {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes rotateStar1 {
+	0% { transform: translateY(-50%) rotate(0); }
+	100% { transform: translateY(-50%) rotate(360deg); }
+}
 
 /* productListing css */
 .productListingWrap { padding: 200px 0 150px 0; background-color: var(--colorBg); }
@@ -56,6 +68,7 @@
 section.glob { margin: -250px 0; }
 div#test { position: absolute; bottom: 50%; left: 50%; }
 .globInner { position: relative; display: flex; justify-content: center; }
+.globInner:before { content: ''; position: absolute; width: 470px; height: 470px; background: url(../../images/circle-text.svg)center center no-repeat; background-size: contain; top: 110px; left: 50%; transform: translateX(-50%); }
 
 /* fksDevelopment css */
 .fksDevelopment { background-color: var(--colorBg); padding: 500px 0 150px 0; }

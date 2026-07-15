@@ -25,8 +25,14 @@
 /* introVideo css */
 .introVideo { padding: 90px 0; background-color: var(--colorPrimary); }
 .introVideoTop .row { display: flex; align-items: center; justify-content: center; }
-.introVideoWrap { position: relative; display: inline-block; border-radius: 40px; overflow: clip; margin: 120px 0 -450px 0; }
-.introVideoWrap:before { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(0 0 0 / 60%); z-index: 1; transition: all 0.3s; }
+.introVideoWrap { position: relative; display: inline-block; border-radius: 40px; margin: 120px 0 -450px 0; z-index: 1; }
+.introVideoWrap:before { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(0 0 0 / 60%); z-index: 1; transition: all 0.3s; border-radius: 40px; }
+.introVideoWrap:after { content: ''; position: absolute; width: 60px; height: 60px; background: url(../../images/yellow-star.svg) center center no-repeat; background-size: contain; bottom: -15px; right: -15px; z-index: -1; animation: rotateStar 10s linear infinite; }
+@keyframes rotateStar {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+.introVideoWrap video { border-radius: 40px; }
 .introVideoWrap.is-video-playing:before { opacity: 0; visibility: hidden; }
 .video-play-icon { position: absolute; top: 50%; left: 50%; width: 80px; aspect-ratio: 1; transform: translate(-50%, -50%); z-index: 2; color: var(--colorWhite); font-size: 30px; border: 0px solid rgb(5 5 5 / 60%); display: flex; justify-content: center; align-items: center; border-radius: 50%; cursor: pointer; background-color: var(--colorPrimary); transition: all 0.3s; }
 .is-video-playing .video-play-icon { opacity: 0; visibility: hidden; }
