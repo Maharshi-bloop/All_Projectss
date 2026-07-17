@@ -80,6 +80,7 @@ table { border-collapse: collapse; width: 100%; }
 .heading2xl { font-size: var(--font2xl); font-weight: 700; color: var(--colorAccent); font-family: var(--fontSecondary); }
 .subTextXl { font-size: var(--fontXl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontPrimary); display: inline-block; }
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
+.subTextMd { font-size: var(--fontMd); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
 .primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s;    /* font-size: var(--fontXl); */ }
 .primaryBtn:hover { background-color: var(--colorSecondary); border-color: var(--colorSecondary); color: var(--colorAccent); }
 .primaryBrdrBtn { border: 2px solid var(--colorPrimary); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; }

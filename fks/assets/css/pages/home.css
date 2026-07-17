@@ -74,44 +74,55 @@
 .brandLogoImage img, .brandLogoImage { transition: all 0.3s; }
 
 /* multiProduct css */
-.multiProduct { background-color: var(--colorPrimary); height: 100vh; display: flex; align-items: center; overflow: clip; }
+.multiProduct { background-color: var(--colorPrimary); overflow: clip; padding: 80px 0; }
 .multiProductTop { width: 90%; text-align: center; position: sticky; top: 50%; transform: translateY(-50%); margin: 250px auto 0; z-index: 0; }
-.multiProductList { border-radius: 30px; overflow: clip; background-color: var(--colorBg); display: flex; padding: 25px; gap: 60px; align-items: center; box-shadow: 10px 15px 0px 0px #0000003D; width: 65%; }
+.multiProductList { border-radius: 30px; overflow: clip; background-color: var(--colorBg); display: flex; padding: 25px; gap: 60px; align-items: center; box-shadow: 10px 15px 0px 0px #0000003D; width: 100%; }
 .multiProductListImage { height: 400px; width: 50%; border-radius: 30px; overflow: clip; }
 .multiProductListContent { width: 50%; }
 .multiProductListContent .heading9xl { color: var(--colorPrimary); }
 .multiProductListContent .subTextXl { color: var(--colorBlack); }
 .multiProductList img { width: 100%; height: 100%; object-fit: cover; }
-.floatingObjectOne { position: absolute; top: -60px; z-index: -1; left: 0; width: 250px; animation: bouce 5s ease-in-out infinite; }
-.floatingObjectTwo { position: absolute; width: 280px; bottom: -70px; right: 0; animation: bouce2 6s ease-in-out infinite; }
-@keyframes bouce {
-	0%, 100% { transform: translateY(0); }
-	50% { transform: translateY(20px); }
+#cardss { display: grid; gap: 50px; }
+.cards { position: sticky; top: 150px; }
+#card1 { --index: 1; }
+#card2 { --index: 2; }
+#card3 { --index: 3; }
+#card4 { --index: 4; }
+
+/* .floatingObjectOne { position: absolute; top: -60px; z-index: -1; left: 0; width: 250px; animation: bouce 5s ease-in-out infinite; }
+.floatingObjectTwo { position: absolute; width: 280px; bottom: -70px; right: 0; animation: bouce2 6s ease-in-out infinite; } */
+
+/* @keyframes bouce {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(20px); }
 }
 @keyframes bouce2 {
-	0%, 100% { transform: translateY(0); }
-	50% { transform: translateY(40px); }
-}
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(40px); }
+} */
 
 /* whyChoose css */
-.whyChoose { padding: 120px 0; background-color: var(--colorBg); overflow-x: clip; position: relative; }
-.whyChooseList { border: 1px solid var(--colorBlack); padding: 70px 60px; border-radius: 40px; height: 100%; position: relative; }
+.whyChoose { padding: 120px 0 200px 0; background-color: var(--colorBg); overflow-x: clip; position: relative; }
+.whyChooseList { height: 100%; position: relative; }
 .whyChooseTop { text-align: center; }
 .whyChooseTop .heading11xl { color: var(--colorAccent); }
-.whyChooseIcon { width: 100px; aspect-ratio: 1; }
+.whyChooseIcon { width: 80px; aspect-ratio: 1; }
 .whyChooseListing { margin: 100px 0 0 0; }
-.whyChooseListTop { display: flex; align-items: center; justify-content: space-between; }
-.whyChooseListTop .heading7xl { width: calc(100% - 120px); line-height: 1; margin: 0; color: var(--colorPrimary); }
-.whyChooseList .subTextXl { color: var(--colorBlack); line-height: 1; margin: 25px 0 0 0; }
-.whyChooseList:before { content: ''; position: absolute; background: url(../../images/yellow-star.svg) center center no-repeat; width: 46px; height: 46px; top: 50%; left: -22px; transform: translateY(-50%); background-size: contain; animation: rotateStar1 10s linear infinite; }
-@keyframes rotateStar {
-	0% { transform: rotate(0); }
-	100% { transform: rotate(360deg); }
+
+/* .whyChooseListTop { display: flex; align-items: center; justify-content: space-between; } */
+.whyChooseListTop .heading3xl { width: 100%; line-height: 1; margin: 32px 0 0 0; color: var(--colorPrimary); text-transform: uppercase; }
+.whyChooseList .subTextMd { color: var(--colorBlack); line-height: 1.3; margin: 25px 0 0 0; }
+
+/* .whyChooseList:before { content: ''; position: absolute; background: url(../../images/yellow-star.svg) center center no-repeat; width: 46px; height: 46px; top: 50%; left: -22px; transform: translateY(-50%); background-size: contain; animation: rotateStar1 10s linear infinite; } */
+
+/* @keyframes rotateStar {
+0% { transform: rotate(0); }
+100% { transform: rotate(360deg); }
 }
 @keyframes rotateStar1 {
-	0% { transform: translateY(-50%) rotate(0); }
-	100% { transform: translateY(-50%) rotate(360deg); }
-}
+0% { transform: translateY(-50%) rotate(0); }
+100% { transform: translateY(-50%) rotate(360deg); }
+} */
 
 /* otherProduct css */
 .otherProduct { padding: 150px 0 200px 0; background-color: var(--colorBg); }

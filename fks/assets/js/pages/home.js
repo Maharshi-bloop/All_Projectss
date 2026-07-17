@@ -30,11 +30,10 @@ new Swiper('.waveSlider .swiper', {
 
 
 // 🔹 Cards animation
-gsap.registerPlugin(ScrollTrigger);
+/* gsap.registerPlugin(ScrollTrigger);
 
 const cards = gsap.utils.toArray(".multiProductList");
 
-/* INITIAL POSITION */
 gsap.set(cards, {
     position: "absolute",
     top: "50%",
@@ -43,7 +42,6 @@ gsap.set(cards, {
     yPercent: -50
 });
 
-/* TIMELINE */
 const tll = gsap.timeline({
     scrollTrigger: {
         trigger: ".multiProduct",
@@ -66,10 +64,9 @@ cards.forEach((card, i) => {
         {
             x: 0,
 
-            // final slight rotation
             rotate: i % 2 === 0 ? -3 : 3,
 
-            // slight vertical offset so bottom cards peek
+           
             yPercent: -48,
 
             scale: 1,
@@ -79,7 +76,7 @@ cards.forEach((card, i) => {
         i
     );
 
-});
+}); */
 
 
 /* brandListingSwiper js start */
@@ -145,25 +142,30 @@ new Swiper('.brandListingSwiper1 .swiper', {
 
 
 /* productCata js start */
+
+// Items
 const items = document.querySelectorAll(".productCataList");
 const wrapper = document.querySelector(".productCataListingWrapper");
 
-const radius = 700;
+// Radius
+let radius = 700;
 const moveBottom = 0;
 
+// Responsive radius
 if ($(window).width() === 1536) {
-    const radius = 400;
+    radius = 400;
 }
 
 const leftItems = [...items].slice(0, 3);
 const rightItems = [...items].slice(3, 6);
 
+// Place items in arc
 function placeItems() {
 
     const centerX = radius;
     const centerY = radius;
 
-    // LEFT SIDE HALF CIRCLE
+    // LEFT SIDE
     const leftAngles = [198, 218, 238];
 
     leftItems.forEach((item, index) => {
@@ -177,7 +179,7 @@ function placeItems() {
         item.style.top = `${y - item.offsetHeight / 2 + moveBottom}px`;
     });
 
-    // RIGHT SIDE HALF CIRCLE
+    // RIGHT SIDE
     const rightAngles = [-58, -38, -18];
 
     rightItems.forEach((item, index) => {
@@ -192,19 +194,30 @@ function placeItems() {
     });
 }
 
+// Initial placement
 placeItems();
 
-window.addEventListener("resize", placeItems);
+// Recalculate on resize
+window.addEventListener("resize", function () {
 
+    if ($(window).width() === 1536) {
+        radius = 400;
+    } else {
+        radius = 700;
+    }
+
+    placeItems();
+});
+
+// Elements
 const $nameItems = $(".productCataNameListing");
 const $productItems = $(".productListing");
 const $cataItems = $(".productCataList");
 
 let currentIndex = 0;
+let autoSlide;
 
-// DEFAULT ACTIVE
-setActive(currentIndex);
-
+// Active function
 function setActive(index) {
 
     $nameItems.removeClass("active");
@@ -214,9 +227,36 @@ function setActive(index) {
     $nameItems.eq(index).addClass("active");
     $productItems.eq(index).addClass("active");
     $cataItems.eq(index).addClass("active");
+
+    currentIndex = index;
 }
 
-// NEXT BUTTON
+// Auto Slide
+function startAutoSlide() {
+
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(function () {
+
+        currentIndex++;
+
+        if (currentIndex >= $nameItems.length) {
+            currentIndex = 0;
+        }
+
+        setActive(currentIndex);
+
+    }, 3000);
+
+}
+
+// Default Active
+setActive(currentIndex);
+
+// Start Auto Slide
+startAutoSlide();
+
+// Next Button
 $(".nextBtn").on("click", function () {
 
     currentIndex++;
@@ -226,9 +266,11 @@ $(".nextBtn").on("click", function () {
     }
 
     setActive(currentIndex);
+    startAutoSlide();
+
 });
 
-// PREV BUTTON
+// Previous Button
 $(".prevBtn").on("click", function () {
 
     currentIndex--;
@@ -238,15 +280,30 @@ $(".prevBtn").on("click", function () {
     }
 
     setActive(currentIndex);
+    startAutoSlide();
+
 });
 
-// CLICK ON productCataList
+// Click Category
 $(".productCataList").on("click", function () {
 
-    const index = $(this).index();
+    currentIndex = $(this).index();
 
-    setActive(index);
+    setActive(currentIndex);
+    startAutoSlide();
+
 });
+
+// Pause on Hover (Optional)
+$(".productCataWrapper").hover(
+    function () {
+        clearInterval(autoSlide);
+    },
+    function () {
+        startAutoSlide();
+    }
+);
+
 /* productCata js end */
 
 
