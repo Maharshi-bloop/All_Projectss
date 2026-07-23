@@ -40,3 +40,27 @@
 .twoColumnGridList:before { content: ""; position: absolute; inset: 0; border-radius: 9px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(198, 231, 206, 0.384) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 
 /* valueWrapper css */
+.valueWrapper { padding: 0 0 64px 0; position: relative; overflow-x: clip; }
+.valueListing { display: flex; margin: 34px 0 0 0; background-color: #005D4D70; position: relative; }
+.valueWrapperTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
+.valueWrapper1 { position: relative; }
+.valueWrapper1:before { content: ''; position: absolute; width: 100vw; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 20%, #3DB659 80%, rgba(223, 240, 227, 0) 100%); top: 0; left: 0; }
+.valueWrapper1:after { content: ''; position: absolute; width: 100vw; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 20%, #3DB659 80%, rgba(223, 240, 227, 0) 100%); bottom: 0; left: 0; }
+.valueList { width: 20%; padding: 44px 24px; text-align: center; border-right: 1px solid #3DB65999; }
+.valueList:first-child { border-left: 1px solid #3DB65999; ; }
+.vlContent { padding: 24px 0 0 0; }
+.vlIcon { margin: 0 auto; width: 52px; height: 52px; }
+.vlIcon img { width: 100%; height: 100%; object-fit: contain; }
+.vlContent h4 { color: #5CD678; text-transform: uppercase; font-size: var(--fontBase); letter-spacing: 0.6px; }
+.vlContent span { color: var(--colorText); font-size: var(--fontBase); letter-spacing: 0.2px; }
+
+/* team css */
+.team { padding: 0 0 140px 0; }
+.teamTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
+.teamList { background-color: var(--colorBg); padding: 20px; border-radius: 8px; text-align: center; position: relative; z-index: 1; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.teamList:before { content: ''; position: absolute; width: 130px; height: 100%; background: url(../../images/team-light-logo.png) center center no-repeat; background-repeat: no-repeat; top: 0; left: 0; z-index: -1; }
+.teamWrapper { width: 80%; margin: 0 auto; margin-top: 44px; }
+.teamListing .row { justify-content: center; }
+.teamList h4 { margin: 0 0 5px 0; text-transform: uppercase; font-size: 16px; font-weight: 700; color: var(--colorAccent); }
+.teamList span { color: var(--colorAccent); font-weight: 600; text-transform: uppercase; font-size: 14px; line-height: 1.3; display: block; }
+.teamList p { margin: 0; font-size: 10px; color: var(--colorAccent); text-transform: uppercase; font-weight: 500; }
