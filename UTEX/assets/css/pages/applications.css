@@ -5,6 +5,7 @@
 .tabing-main { margin: 34px 0 0 0; }
 .mobile-tab-title { display: none; }
 .active .tabContent { display: block; }
+.tabWrapperTop .subTextMd { font-family: var(--fontSecondary); }
 ul.tab-titles { display: flex; align-items: flex-start; justify-content: space-between; list-style-type: none; padding: 0; border-top: 1px solid var(--colorPrimaryLightBlue); margin: 0; }
 ul.tab-titles li { padding: 22px 0 0 0; position: relative; overflow: clip; }
 ul.tab-titles li:before { content: ''; position: absolute; width: 100%; height: 5px; background-color: var(--colorPrimary); top: 0; left: 0; transform: translateY(-5px); transition: all 0.3s; }

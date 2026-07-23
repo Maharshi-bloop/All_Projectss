@@ -109,7 +109,7 @@ nav>ul> li> a { font-weight: 600; color: var(--colorPrimary); }
 .bannerBgVideo { position: absolute; width: 100%; height: 100%; z-index: -1; }
 .bannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
 .subBannerContent .heading5xl { width: 50%; }
-.subBannerContent .subTextLg { padding: 24px 0 34px 0; width: 60%; }
+.subBannerContent .subTextLg { padding: 24px 0 34px 0; width: 80%; }
 
 /* ctaWrapper css */
 .ctaWrapper { padding: 100px 0; position: relative; z-index: 1; }
@@ -133,13 +133,14 @@ footer .container-xl { max-width: calc(1320px + 158px); }
 .footerInner .row { justify-content: space-between; }
 .footerUlWrapper { display: flex; justify-content: flex-end; gap: 250px; }
 .footerSocialUl ul { display: flex; gap: 18px; }
-.footerSocialUl ul a { display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 50%; color: var(--colorPrimary); width: 44px; height: 44px; font-size: var(--fontLg); transition: all 0.3s;}
+.footerSocialUl ul a { display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 50%; color: var(--colorPrimary); width: 44px; height: 44px; font-size: var(--fontLg); transition: all 0.3s; }
 .footerLogoWrapper ul { display: flex; flex-direction: column; gap: 16px; }
 .footerUl ul { display: flex; flex-direction: column; gap: 16px; }
 span.copyRight { margin: 14px 0 0 0; display: block; font-size: 12px; }
 footer ul li a { transition: all 0.3s; }
 footer ul li a:hover { color: var(--colorSecondary); }
-.footerSocialUl ul a:hover{ background-color: var(--colorSecondary);color: var(--colorPrimary);}
+.footerSocialUl ul a:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); }
+
 /* =============== back to top button css ================== */
 .backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
 .backTop.activeBackToTop { opacity: 1; visibility: visible; }

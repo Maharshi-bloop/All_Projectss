@@ -111,7 +111,7 @@
 
 /* .whyChooseListTop { display: flex; align-items: center; justify-content: space-between; } */
 .whyChooseListTop .heading3xl { width: 100%; line-height: 1; margin: 32px 0 0 0; color: var(--colorPrimary); text-transform: uppercase; }
-.whyChooseList .subTextMd { color: var(--colorBlack); line-height: 1.3; margin: 25px 0 0 0; }
+.whyChooseList .subTextMd { color: var(--colorBlack); line-height: 1.5; margin: 15px 0 0 0; display: inline-block; }
 
 /* .whyChooseList:before { content: ''; position: absolute; background: url(../../images/yellow-star.svg) center center no-repeat; width: 46px; height: 46px; top: 50%; left: -22px; transform: translateY(-50%); background-size: contain; animation: rotateStar1 10s linear infinite; } */
 
@@ -154,7 +154,7 @@
 .ctaWrapperInner .row { align-items: center; }
 
 /* brandListing css */
-.brandListing { padding: 140px 0; background-color: var(--colorAccent); }
+.brandListing { padding: 140px 0; background-color: var(--colorAccent); border-bottom: 1px solid #ffffff14; }
 .brandListinTop .subTextXl { width: 90%; margin: 0 auto; line-height: 1.2; }
 .brandListingSwiper { margin: 60px 0 30px 0; padding: 20px 0; border-top: 1px solid #fff6; border-bottom: 1px solid #fff6; pointer-events: none; }
 .brandListingSwiper1 { padding: 20px 0; border-top: 1px solid #fff6; border-bottom: 1px solid #fff6; }

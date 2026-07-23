@@ -1,0 +1,42 @@
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.png) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
+.aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
+.aboutBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0.8; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; }
+.aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
+
+/* whoWeAre css */
+.whoWeAre { margin: -100px 0 0 0; position: relative; z-index: 1; }
+.whoWeAreInner { padding: 44px; border-radius: 18px; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; }
+.whoWeAreInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.whoWeAreInner .row { justify-content: space-between; }
+.wwaImage { width: 100%; height: 2; border-radius: 10px; overflow: clip; border: 1px solid #5E8768; }
+.wwaImage img { width: 100%; height: 100%; object-fit: cover; }
+.whoWeAreInner .row { align-items: center; }
+.wwaContent .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; margin: 0 0 16px 0; }
+
+/* missionVission css */
+.missionVission { position: relative; z-index: 1; }
+.missionVission:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 20%, #3DB659 80%, rgba(223, 240, 227, 0) 100%); top: 0; left: 0; }
+.missionVission:after { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 20%, #3DB659 80%, rgba(223, 240, 227, 0) 100%); bottom: 0; left: 0; }
+.missionVissionInner { background-color: #DFF0E3EB; padding: 42px 0; text-align: center; position: relative; z-index: 1; }
+.missionVissionInner:before { content: ''; position: absolute; width: 1px; height: 100%; top: 0; left: 50%; background-color: #319147; }
+.mvBox { padding: 0 54px; }
+.mvIcon { display: flex; align-items: center; justify-content: center; }
+.mvBox h3 { margin: 14px 0; color: var(--colorAccent); font-weight: 800; font-size: var(--fontMd); }
+.mvBox span { color: var(--colorPrimary); font-weight: 500; font-size: var(--fontSm); text-transform: uppercase; }
+
+/* twoColumnGrid css */
+.twoColumnGrid { padding: 64px 0; }
+.twoColumnGridTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
+.twoColumnGridListing { margin: 34px 0 0 0; }
+.twoColumnGridList { display: flex; background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 34px; border-radius: 8px; position: relative; gap: 24px; backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; }
+.gridContent { width: calc(100% - 82px); }
+.gridIcon { width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; background-color: #DFF0E33D; border-radius: 50%; }
+.gridContent span { display: block; margin: 10px 0 0 0; }
+.gridContent .headingMd { margin: 0; text-transform: uppercase; background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
+.twoColumnGridList:before { content: ""; position: absolute; inset: 0; border-radius: 9px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(198, 231, 206, 0.384) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+
+/* valueWrapper css */
