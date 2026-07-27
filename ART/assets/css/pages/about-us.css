@@ -4,7 +4,7 @@
 .aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
 .aboutBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0.8; }
 .aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
-.aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; }
+.aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
 
 /* whoWeAre css */
@@ -29,7 +29,9 @@
 .mvBox span { color: var(--colorPrimary); font-weight: 500; font-size: var(--fontSm); text-transform: uppercase; }
 
 /* twoColumnGrid css */
-.twoColumnGrid { padding: 64px 0; }
+.twoColumnGrid { padding: 64px 0; position: relative; overflow-x: clip; }
+.twoColumnGrid:before { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); left: -30%; top: 0; z-index: -1; }
+.twoColumnGrid:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); right: -20%; bottom: -190%; transform: rotate(-55deg); z-index: -1; }
 .twoColumnGridTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .twoColumnGridListing { margin: 34px 0 0 0; }
 .twoColumnGridList { display: flex; background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 34px; border-radius: 8px; position: relative; gap: 24px; backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; }
@@ -41,6 +43,8 @@
 
 /* valueWrapper css */
 .valueWrapper { padding: 0 0 64px 0; position: relative; overflow-x: clip; }
+.valueWrapper:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -370px; left: -130px; z-index: -2; opacity: 0.3; }
+.valueWrapper:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; opacity: 0.3; }
 .valueListing { display: flex; margin: 34px 0 0 0; background-color: #005D4D70; position: relative; }
 .valueWrapperTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .valueWrapper1 { position: relative; }
@@ -56,22 +60,10 @@
 
 /* team css */
 .team { padding: 0 0 140px 0; position: relative; z-index: 1; }
-.teamBg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
-}
-.teamBg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+.teamBg { position: absolute; width: 100%; height: 100%; }
+.teamBg img { width: 100%; height: 100%; object-fit: cover; }
 .teamTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
-.teamList { background-color: var(--colorBg); padding: 20px; border-radius: 8px; text-align: center; position: relative; z-index: 1; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;
-
-box-shadow: 0px 4px 34px 0px #00000033;
-}
+.teamList { background-color: var(--colorBg); padding: 20px; border-radius: 8px; text-align: center; position: relative; z-index: 1; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0px 4px 34px 0px #00000033; }
 .teamList:before { content: ''; position: absolute; width: 130px; height: 100%; background: url(../../images/team-light-logo.png) center center no-repeat; background-repeat: no-repeat; top: 0; left: 0; z-index: -1; }
 .teamWrapper { width: 80%; margin: 0 auto; margin-top: 44px; }
 .teamListing .row { justify-content: center; }

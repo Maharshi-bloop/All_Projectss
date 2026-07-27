@@ -32,7 +32,7 @@ table { border-collapse: collapse; width: 100%; }
 .headingMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; display: inline-block; }
 .subTextMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
 .subTextBase { color: var(--colorText); font-size: var(--fontBase); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
-.pageWrap { display: flex; justify-content: space-between; min-height: 100vh; flex-direction: column; }
+.pageWrap { display: flex; justify-content: space-between; min-height: 100vh; flex-direction: column; overflow: clip; }
 
 /* background: linear-gradient(0deg, var(--Light-Grey, #DFF0E3), var(--Light-Grey, #DFF0E3)),
 linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgba(223, 240, 227, 0.35) 100%); */
@@ -94,7 +94,7 @@ footer:after { content: ''; position: absolute; width: 290px; height: 70px; back
 .backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
 .backTop.activeBackToTop { opacity: 1; visibility: visible; }
 .backTop a svg { display: block; }
-.backTop a { text-align: center; border: 2px solid #0c3df4; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; border-radius: 5px; position: relative; animation: topBtnBounce 2s ease-in-out infinite; color: #0c3df4; background-color: #fff; }
+.backTop a { text-align: center; border: 2px solid var(--colorPrimary); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; border-radius: 5px; position: relative; animation: topBtnBounce 2s ease-in-out infinite; color: var(--colorPrimary); background-color: #fff; }
 .backTop:before { content: ''; position: absolute; width: 100%; height: 15px; bottom: -20px; border-radius: 50%; background-image: radial-gradient(#00000060 -50%, transparent 100%); filter: blur(3px); animation: boxshadowAnimate 2s linear infinite; }
 @keyframes topBtnBounce {
 	0% { transform: translateY(0); }

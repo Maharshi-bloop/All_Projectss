@@ -17,24 +17,31 @@
 .whatWeDoInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; transition: all 0.3s; z-index: -1; }
 
 /* ourValueListing css*/
-.ourValueListing { margin: 40px 0 0 0; display: flex; flex-wrap: nowrap; width: 100%; padding: 0; list-style: none; }
-.ourValueList { flex: 1 1 200px; transition: all 0.5s; position: relative; display: flex; justify-content: space-between; height: 360px; }
+.hoverGrid { padding: 0 0 94px 0; }
+.ourValueListing { margin: 40px 0 0 0; display: flex; flex-wrap: nowrap; width: 100%; padding: 0; list-style: none; column-gap: 14px; }
+.ourValueList { flex-grow: 1; flex-basis: 200px; transition: all 0.5s; position: relative; display: flex; justify-content: space-between; height: 360px; border-radius: 8px; overflow: clip; z-index: 1; }
+.ourValueList:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: var(--colorBg); top: 0; left: 0; z-index: -1; }
+.ourValueList:after { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(90deg, #DFF0E3 24.47%, rgba(223, 240, 227, 0) 90.34%); top: 0; left: 0; z-index: -1; opacity: 0; visibility: hidden; transition: all 0.5s; }
+.ourValueList:hover:after { opacity: 1; visibility: visible; }
 .ourValueList .titleHeading { transition: all 0.3s; }
 .ourValueList:hover .titleHeading { color: var(--colorWhite); }
-.ourValueList .subTextMd { opacity: 0; visibility: hidden; transform: translateY(20px); display: inline-block; color: var(--blackColor); width: 50%; white-space: inherit; transform-origin: left top; transition: max-height .6s, transform .6s, opacity .6s; }
-.ourValueList:hover .subTextMd { opacity: 1; visibility: visible; transform: translateY(0); transition-delay: .4s; }
-.ourValueList:hover { flex-grow: 3; }
+.ourValueList .subTextBase { opacity: 0; visibility: hidden; transform: translateY(20px); display: inline-block; color: #002F2BD1; width: 60%; white-space: inherit; transform-origin: left top; transition: all 0.5s; }
+.ourValueList:hover .subTextBase { opacity: 1; visibility: visible; transform: translateY(0); transition-delay: .4s; }
+.ourValueList:hover { flex-grow: 20; }
 .ourValueContent { padding: 34px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
 .ourValueContent .accentBtn { opacity: 0; visibility: hidden; transition: all 0.3s; }
 .ourValueList:hover .ourValueContent .accentBtn { opacity: 1; visibility: visible; }
 .ourValueList .heading5xl { color: var(--blackColor); margin: 0 0 24px 0; }
-.ourValueBg { position: absolute; top: 0; left: 0; z-index: -1; height: 100%; width: 100%; }
+.ourValueBg { position: absolute; top: 0; left: 0; z-index: -1; height: 100%; width: 100%; transition: all 0.5s; }
 .ourValueBg img { width: 100%; height: 100%; object-fit: cover; }
+.ourValueList:hover .ourValueBg { opacity: 0.5; }
 .ourValueIcon { width: 32px; position: relative; height: 32px; margin: 0 0 24px 0; }
 .ourValueIcon img { position: absolute; width: 100%; height: 100%; transition: all 0.3s; }
 .ourValueIcon .color { opacity: 0; visibility: hidden; }
 .ourValueList:hover .ourValueIcon .color { opacity: 1; visibility: visible; }
 .ourValueList:hover .ourValueIcon .withoutColor { opacity: 0; visibility: hidden; }
+.ourValueContent .heading2xl { color: var(--colorWhite); transition: all 0.5s; }
+.ourValueList:hover .ourValueContent .heading2xl { color: var(--colorAccent); }
 
 /* systemsWrapper css */
 .systemsWrapper { padding: 44px 0 74px 0; position: relative; z-index: 1; overflow-x: clip; }
