@@ -6,3 +6,39 @@
 .aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
 .aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
+
+/* scrollTo css */
+section.scrollTo { position: relative; z-index: 1; }
+.scrollTopUl { position: relative; z-index: 1; }
+.scrollTopUl::before { content: ''; position: absolute; width: 100vw; height: 100%; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 10%, rgba(92, 151, 106, 0.48) 40%, rgba(92, 151, 106, 0.48) 60%, rgba(223, 240, 227, 0) 90%); left: 0; top: 0; z-index: -1; }
+.scrollTopUl ul { display: flex; align-items: center; justify-content: center; }
+.scrollTopUl ul li a { color: var(--colorAccent); text-transform: uppercase; font-size: var(--fontSm); font-weight: 700; padding: 16px 63px; background: linear-gradient(180deg, #DFF0E3 0%, rgba(223, 240, 227, 0.44) 100%); display: block; border: 1px solid var(--colorAccent); transition: all 0.3s; text-align: center; line-height: 1.2; }
+.scrollToDivInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
+.scrollToDivInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.scrollToDivInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
+.scrollToDiv { margin: 64px 0 0 0; }
+.scrollToDivInner .row { justify-content: space-between; }
+.stdImage { width: 100%; height: 280px; border-radius: 10px; overflow: clip; border: 1px solid #5E8768; }
+.stdImage img { width: 100%; height: 100%; object-fit: cover; }
+.scrollToDivInner .row { align-items: center; }
+.stdContent .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 14.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 700; margin: 0 0 16px 0; display: block; }
+.capabiliesTop { padding: 14px 0 26px 0; position: relative; z-index: 1; }
+.capabiliesTop:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
+.capabiliesTop h3 { font-weight: 500; letter-spacing: 0.2px; }
+.capabiliesTop { padding: 14px 0 26px 0; position: relative; z-index: 1; }
+.capabiliesTop:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
+.capabiliesTop h3 { font-weight: 500; letter-spacing: 0.2px; }
+.capabiliesListing { display: flex; justify-content: center; gap: 4px; }
+.capabiliesList { width: 25%; background-color: var(--colorBg); padding: 24px; position: relative; z-index: 1; overflow: clip; }
+.capabiliesList:before { content: ''; position: absolute; width: 120px; height: 250px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; top: -120px; right: -10%; transition: all 0.3s; z-index: -1; }
+.capabiliesList:first-child { border-radius: 8px 0 0 8px; }
+.capabiliesList:last-child { border-radius: 0 8px 8px 0; }
+.capaListHeading { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 12px 0; }
+.capaListHeading h4 { width: calc(60% - 36px); font-size: var(--fontBase); text-transform: uppercase; margin: 0; font-weight: 600; color: var(--colorAccent); }
+.capaListHeading span { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #3DB659AD; font-size: var(--fontXs); font-weight: 600; color: var(--colorWhite); transition: all 0.3s; }
+.capabiliesList:hover .capaListHeading span { background-color: var(--colorSecondary); }
+.capabiliesList:hover:before { right: -7%; }
+.scrollToDiv:nth-child(even) .row { flex-direction: row-reverse; }
+
+/* ctaWrapper css */
+.ctaWrapper { padding-top: 230px; }
