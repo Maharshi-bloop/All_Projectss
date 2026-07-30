@@ -81,11 +81,13 @@ table { border-collapse: collapse; width: 100%; }
 .subTextXl { font-size: var(--fontXl); font-weight: 400; color: var(--colorWhite); font-family: var(--fontPrimary); display: inline-block; }
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
 .subTextMd { font-size: var(--fontMd); font-weight: 400; color: var(--colorBlack); font-family: var(--fontPrimary); display: inline-block; }
-.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s;    /* font-size: var(--fontXl); */ }
+.primaryBtn { background-color: var(--colorPrimary); border: 2px solid var(--colorAccent); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; font-size: 18px; }
 .primaryBtn:hover { background-color: var(--colorSecondary); border-color: var(--colorSecondary); color: var(--colorAccent); }
 .primaryBrdrBtn { border: 2px solid var(--colorPrimary); padding: 16px 50px; border-radius: 50px; color: var(--colorWhite); font-weight: 500; display: inline-block; transition: all 0.3s; }
 .primaryBrdrBtn:hover { background-color: var(--colorPrimary); }
-.whiteBrdrBtn { color: var(--colorWhite); border: 1px solid var(--colorWhite); padding: 10px 50px; display: inline-block; font-size: 18px; border-radius: 50px; margin: 30px 0 0 0; transition: all 0.3s; font-weight: 500 }
+.secondaryBtn { background-color: var(--colorSecondary); padding: 16px 50px; border-radius: 50px; color: var(--colorAccent); font-weight: 500; display: inline-block; transition: all 0.3s; font-size: 18px; border: 2px solid var(--colorSecondary); }
+.secondaryBtn:hover { background-color: var(--colorAccent); color: var(--colorSecondary); }
+.whiteBrdrBtn { color: var(--colorWhite); border: 1px solid var(--colorWhite); padding: 16px 50px; display: inline-block; font-size: 18px; border-radius: 50px; margin: 30px 0 0 0; transition: all 0.3s; font-weight: 500; line-height: 1.3; }
 .whiteBrdrBtn:hover { color: var(--colorPrimary); background-color: var(--colorWhite); }
 
 /* === HEADER CSS START === */
@@ -117,7 +119,7 @@ nav li a { color: var(--colorWhite); text-transform: uppercase; font-size: var(-
 	.headerOption.openMenu { transform: translateX(0); }
 	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
 }
-.current_page_item a{ color: var(--colorSecondary); }
+.current_page_item a { color: var(--colorSecondary); }
 
 /* === HEADER CSS END === */
 

@@ -26,50 +26,94 @@ $(document).on('click', '.video-play-icon', function () {
 // Timeline Scroll Section
 // --------------------------------------------------------------
 var items = $(".timeLineWrapper li"),
-    greyLine = $('.default-line'),
-    lineToDraw = $('.draw-line');
+    greyLine = $(".default-line"),
+    lineToDraw = $(".draw-line");
 
-// Run this function only if `.draw-line` exists
+let currentIndex = -1;
+let scrollLocked = false;
+
+// Prevent wheel scroll while locked
+window.addEventListener(
+    "wheel",
+    function (e) {
+        if (scrollLocked) {
+            e.preventDefault();
+        }
+    },
+    { passive: false }
+);
+
+// Prevent touch scroll (mobile)
+window.addEventListener(
+    "touchmove",
+    function (e) {
+        if (scrollLocked) {
+            e.preventDefault();
+        }
+    },
+    { passive: false }
+);
+
+function lockScroll() {
+    scrollLocked = true;
+
+    setTimeout(function () {
+        scrollLocked = false;
+    }, 800); // Change delay here
+}
+
 if (lineToDraw.length) {
-    $(window).on('scroll', function () {
-        // Get key scroll values
-        var redLineHeight = lineToDraw.height(),
-            greyLineHeight = greyLine.height(),
+
+    $(window).on("scroll", function () {
+
+        var greyLineHeight = greyLine.height(),
             windowDistance = $(window).scrollTop(),
             windowHeight = $(window).height() / 2,
             timelineDistance = $(".timeLineWrapper").offset().top;
 
-        // Update the height of `.draw-line`
         if (windowDistance >= timelineDistance - windowHeight) {
+
             var line = windowDistance - timelineDistance + windowHeight;
 
             if (line <= greyLineHeight) {
-                lineToDraw.css({
-                    'height': line + 20 + 'px'
-                });
+                lineToDraw.css("height", (line + 20) + "px");
             }
         }
 
-        // Determine the visibility of each `<li>` element
-        var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true); // Bottom of the `.draw-line`
-        items.each(function () {
+        var bottom = lineToDraw.offset().top + lineToDraw.outerHeight();
+
+        items.each(function (index) {
+
             var circleTop = $(this).offset().top;
             var circleBottom = circleTop + $(this).outerHeight();
 
-            // Add `in-view` to the current element
-            if (bottom > circleTop && bottom <= circleBottom) {
-                $(this).removeClass('gone-view').addClass('in-view');
+            if (bottom >= circleTop && bottom < circleBottom) {
+
+                if (currentIndex !== index) {
+
+                    currentIndex = index;
+
+                    lockScroll();
+
+                    items.removeClass("in-view gone-view");
+
+                    items.each(function (i) {
+                        if (i < index) {
+                            $(this).addClass("gone-view");
+                        }
+                    });
+
+                    $(this).addClass("in-view");
+                }
+
             }
-            // Add `gone-view` to elements that have been passed
-            else if (bottom > circleBottom) {
-                $(this).removeClass('in-view').addClass('gone-view');
-            }
-            // Remove all classes for future elements
-            else {
-                $(this).removeClass('in-view gone-view');
-            }
+
         });
+
     });
+
+    // Trigger once on load
+    $(window).trigger("scroll");
 }
 
 /*   $('.deskRow .scrollImage').removeClass('active').eq(0).addClass('active');

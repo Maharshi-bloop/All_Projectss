@@ -1,6 +1,7 @@
 autoplay loop muted playsinline
 
-data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" data-aos-anchor-placement="top-bottom"
+data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" data-aos-anchor-placement="top-bottom" data-aos-offset="250"
+
 
 <video autoplay muted loop playsinline>
                         <source src="assets/images/banner-bg-video.mp4" type="video/mp4" />

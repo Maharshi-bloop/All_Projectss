@@ -108,7 +108,7 @@ nav>ul> li> a { font-weight: 600; color: var(--colorPrimary); }
 .subBannerInner { position: relative; }
 .bannerBgVideo { position: absolute; width: 100%; height: 100%; z-index: -1; }
 .bannerBgVideo video { width: 100%; height: 100%; object-fit: cover; }
-.subBannerContent .heading5xl { width: 50%; }
+.subBannerContent .heading5xl { width: 65%; }
 .subBannerContent .subTextLg { padding: 24px 0 34px 0; width: 80%; }
 
 /* ctaWrapper css */
