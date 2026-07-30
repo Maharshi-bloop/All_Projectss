@@ -1,0 +1,32 @@
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: flex-end; padding: 0 0 40vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.png) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
+.aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
+.aboutBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0.8; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
+.aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
+
+/* contactForm css */
+section.contactForm { margin: -299px 0 0 0; }
+.contactFormInner { padding: 48px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
+.contactFormInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.contactFormInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
+.contactUl { margin: 26px 0 0 0; }
+.contactLi { display: flex; gap: 16px; }
+.ulIcon { background-color: #DFF0E33D; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+.liContent { margin: 8px 0 0 0; width: calc(100% - 64px); }
+.liContent a { text-transform: uppercase; font-weight: 600; color: #57C771; }
+.contactUl li { margin: 0 0 24px 0; }
+.liOption { display: flex; gap: 24px; }
+.liOption div strong { display: block; text-transform: uppercase; color: #fff; font-weight: 400; margin: 0 0 10px 0; }
+.contactUl li:last-child > a { color: #fff; }
+.contactUl li:last-child .liContent > a { color: #fff; font-weight: 400; margin: 0 0 20px 0; display: block; }
+
+/* mapWrap css */
+.mapWrap { padding: 84px 0 64px 0; position: relative; z-index: 1; overflow-x: clip; }
+.mapTop { margin: 0 0 54px 0; text-align: center; }
+.mapTop .headingLg { color: var(--colorText); font-size: var(--fontLg); font-weight: 700; letter-spacing: 0.2px; display: inline-block; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background: linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgb(223 240 227) 100%); display: block; }
+.mapInnerWrap { display: flex; justify-content: center; }
+.mapWrapBg { position: absolute; z-index: -1; right: 0; width: 100vw; z-index: -1; }
+.mapWrapBg img { width: 100%; height: 100%; object-fit: contain; }
