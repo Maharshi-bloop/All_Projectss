@@ -8,7 +8,9 @@
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
 
 /* scrollTo css */
-section.scrollTo { position: relative; z-index: 1; }
+.scrollTo { position: relative; z-index: 1; margin-top: -100px; }
+.scrollTo::before { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); right: -20%; top: 1300px; transform: rotate(-55deg); z-index: -1; }
+.scrollTo:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; top: 1000px; right: -130px; z-index: -2; opacity: 0.3; }
 .scrollToBg { position: absolute; width: 100%; height: 750px; top: -300px; mix-blend-mode: luminosity; z-index: -1; }
 .scrollToBg img { width: 100%; height: 750px; object-fit: cover; }
 .scrollTopUl { position: relative; z-index: 1; }
@@ -19,7 +21,9 @@ section.scrollTo { position: relative; z-index: 1; }
 .scrollToDivInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
 .scrollToDivInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .scrollToDivInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
-.scrollToDiv { margin: 64px 0 0 0; scroll-margin-top: 150px; }
+.scrollToDiv { margin: 64px 0 0 0; scroll-margin-top: 150px; position: relative; }
+.scrollToInner:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: 550px; left: -130px; z-index: -2; opacity: 0.3; }
+.scrollToInner:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); left: -30%; top: 500px; z-index: -1; }
 .scrollToDivInner .row { justify-content: space-between; }
 .stdImage { width: 100%; height: 280px; border-radius: 10px; overflow: clip; border: 1px solid #5E8768; }
 .stdImage img { width: 100%; height: 100%; object-fit: cover; }
