@@ -17,10 +17,12 @@
 .challenge { margin: 64px 0 0 0; }
 .challengeTop { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
 .challengeTop:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.challengeTop:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
 .challengeTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
 
 /* challenge css */
-.challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 26px 0; }
+.challenge, .howSolve { scroll-margin-top: 150px; }
+.challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 0 0; }
 .challengeListing:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
 .challengeList { background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 24px; border-radius: 8px; width: calc(100% / 4); backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; position: relative; }
 .challengeList:before { content: ''; position: absolute; width: 100%; height: 100%; object-fit: contain; top: 0; left: 0; background: url(../../images/small-dot-bg.png) center center no-repeat; background-size: cover; z-index: -1; }
@@ -29,9 +31,14 @@
 .challengeList span { line-height: 130%; font-weight: 300; }
 
 /* howSolve css */
+.howSolve { margin: 64px 0 0 0; position: relative; z-index: 1; overflow-x: clip; }
+.howSolve:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: 200px; left: -130px; z-index: -2; opacity: 0.3; }
+.howSolve:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); left: -30%; top: 0; z-index: -1; }
 .howSolveInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
 .howSolveInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.howSolveInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
 .howSolveTop { margin: 0 0 24px 0; }
+.howSolveTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
 .solveList { padding: 18px 24px; background-color: #002F2BA3; border: 1px solid #DFF0E352; border-radius: 8px; margin: 0 0 10px 0; }
 .solveListingWrap .headingLg { background: linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgb(223 240 227) 60%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; text-transform: uppercase; margin: 0; }
 .solveListing { background-color: #DFF0E30F; padding: 8px; border-radius: 16px; border: 1px solid #DFF0E338; }
@@ -39,6 +46,48 @@
 .solveList div { display: flex; align-items: center; gap: 10px; }
 .solveList div span { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: var(--colorSecondary); font-weight: 600; }
 .solveList div h4 { font-size: var(--fontSm); font-weight: 600; color: var(--colorText); margin: 0; text-transform: uppercase; letter-spacing: 0.4px; }
-.solveList .subTextBase { font-weight: 300; margin: 10px 0 0 0; letter-spacing: 0.6; }
+.solveList .subTextBase { font-weight: 300; margin: 10px 0 0 0; letter-spacing: 0.6px; }
 .solveImage { width: 100%; height: 300px; border-radius: 8px; border: 1px solid #5E8768; overflow: clip; }
 .solveImage img { width: 100%; height: 100%; object-fit: cover; }
+
+/* accordianWrapper css */
+.accordianWrapper { position: relative; z-index: 1; overflow-x: clip; }
+.accordianWrapper:before { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; top: -290px; right: -130px; z-index: -2; opacity: 0.3; }
+.accordianWrapper:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); right: -20%; top: 50px; transform: rotate(-55deg); z-index: -1; }
+.accordianWrapperInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
+.accordianWrapperInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.ImageHotstop { position: relative; z-index: 1; }
+.ImageHotstop:before { content: ''; position: absolute; width: 100%; height: 80%; top: 50%; transform: translateY(-50%); border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(61, 182, 89, 0.2) 28.37%, rgba(61, 182, 89, 0) 100%); }
+.accordianListing { padding: 8px; border: 1px solid #DFF0E357; border-radius: 16px; background-color: #DFF0E30F; }
+.accordianWrap { margin: 44px 0 0 0; }
+.accoIcon { width: 30px; height: 30px; background-color: #3DB6594D; position: relative; border-radius: 50%; padding: 8px; transition: all 0.3s; }
+.accoIcon img { position: absolute; top: 50%; left: 50%; width: 60%; height: 50%; transform: translate(-50%, -50%); transition: all 0.3s; }
+.accordianHeading { display: flex; align-items: center; gap: 10px; padding: 12px 18px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.95) 0%, rgba(0, 47, 43, 0.95) 100%); position: relative; z-index: 1; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+.accordianList.active .accordianHeading { background: linear-gradient(180deg, rgba(0, 93, 77, 0.48) 0%, rgba(0, 47, 43, 0.48) 100%); background-color: #3DB659; }
+.accordianHeading:before { content: ""; position: absolute; inset: 0; border-radius: 8px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.4) 0%, rgba(61, 182, 89, 0.49) 68.27%, rgba(198, 231, 206, 0.25) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.accordianHeading h4 { margin: 0; color: var(--colorText); transition: all 0.3s; font-weight: 600; font-size: var(--fontBase); text-transform: uppercase; }
+.accordianList { margin: 0 0 8px 0; }
+.accordianList.active .accoIcon { background-color: var(--colorText); }
+.accoIcon .color { opacity: 0; visibility: hidden; }
+.accordianList.active .color { opacity: 1; visibility: visible; }
+.accordianList.active .withoutColor { opacity: 0; visibility: hidden; }
+.accordianListing { padding: 8px; border: 1px solid #DFF0E357; border-radius: 16px; background-color: #DFF0E30F; }
+.accordianList:last-child { margin: 0; }
+.accordianHeading:after { content: "\ea4e"; font-family: 'remixicon'; top: 5px; position: absolute; right: 19px; font-size: 30px; color: #fff; transition: all 0.5s; }
+.accordianList.active .accordianHeading:after { transform: rotate(180deg); }
+.accordianWrapTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
+
+/* productDetail css */
+.productDetail { display: flex; background-color: var(--colorBg); border-radius: 8px; margin: 10px 0 0 0; padding: 44px; justify-content: space-between; }
+.productImage { width: 35%; height: max-content; background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); }
+.productContent { width: 60%; }
+.btnWrapper { margin: 34px 0 0 0; display: flex; gap: 34px; }
+.btnWrapper .lightCtaBtn { border: 1px solid var(--colorAccent); }
+.btnWrapper .lightCtaBtn:hover { border: 1px solid var(--colorSecondary); }
+.subText1 { display: block; text-transform: uppercase; font-size: 14px; font-weight: 600; background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 100%); -webkit-background-clip: text; -webkit-text-fill-color: #005D4D8F !important; }
+.subText2 { margin: 24px 0 0 0; display: inline-block; }
+.productContent ul { margin: 24px 0 0 0; }
+.productContent ul li div { margin: 0 0 16px 0; }
+.productContent ul li div h4, .productContent ul li div span { padding: 0 0 0 20px; display: block; }
+.productContent ul li div h4 { position: relative; color: #002F2B; font-size: var(--fontBase); font-weight: 600; line-height: 130%; margin: 0 0 8px 0; }
+.productContent ul li div h4:before { content: ''; position: absolute; width: 6px; height: 6px; background-color: var(--colorSecondary); top: 7px; left: 0; }

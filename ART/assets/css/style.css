@@ -24,11 +24,14 @@ table { border-collapse: collapse; width: 100%; }
 .lightCtaBtn { background-color: var(--colorBg); padding: 15px 30px; color: var(--colorPrimary); text-transform: uppercase; border-radius: 5px; font-weight: 500; letter-spacing: 6%; box-shadow: 0px 4px 8px 0px #0000001F; position: relative; transition: all 0.3s; display: flex; width: max-content; align-items: center; gap: 5px; }
 .lightCtaBtn i { font-size: 20px; }
 .lightCtaBtn:hover { background-color: var(--colorSecondary); color: var(--colorWhite); }
-.accentBtn { background-color: var(--colorAccent); padding: 15px 30px; color: var(--colorText); text-transform: uppercase; border-radius: 5px; font-weight: 500; transition: all 0.3s; }
+.accentBtn { background-color: var(--colorAccent); padding: 15px 30px; color: var(--colorText); text-transform: uppercase; border-radius: 5px; font-weight: 500; transition: all 0.3s; display: flex; width: max-content; align-items: center; gap: 10px; letter-spacing: 6%; transition: all 0.3s; box-shadow: 0px 4px 8px 0px #0000001F; border: 1px solid var(--colorAccent); }
+a.accentBtn i { font-size: 20px; }
+.accentBtn:hover { background-color: var(--colorText); color: var(--colorAccent); }
 .heading5xl { text-transform: uppercase; font-size: var(--font5xl); background: linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgba(223, 240, 227, 0.35) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .heading4xl { text-transform: uppercase; font-size: var(--font4xl); background: linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgb(223 240 227) 30%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .heading3xl { text-transform: uppercase; font-size: var(--font3xl); background: linear-gradient(0deg, var(--Light-Grey, #DFF0E3), var(--Light-Grey, #DFF0E3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .heading2xl { font-size: var(--font2xl); color: var(--colorAccent); font-weight: 600; }
+.headingXl { font-size: var(--fontXl); color: var(--colorAccent); font-weight: 600; }
 .headingLg { color: var(--colorText); font-size: var(--fontLg); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
 .headingMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; display: inline-block; }
 .subTextMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
@@ -81,7 +84,7 @@ header { position: fixed; top: 34px; width: 100%; z-index: 10; }
 
 /* form design */
 .formTop .headingXl { color: var(--colorSecondary); font-weight: 500 }
-.formDesign .headingLg { color: var(--colorAccent); text-transform: uppercase; color: var(--colorAccent); font-weight: 700; display: block;}
+.formDesign .headingLg { color: var(--colorAccent); text-transform: uppercase; color: var(--colorAccent); font-weight: 700; display: block; }
 .inputField label { display: block; text-transform: uppercase; color: var(--colorAccent); }
 .inputField label span { color: var(--colorSecondary); }
 .inputField input, .inputField textarea { width: 100%; background-color: #002F2B1A; border: none; padding: 10px 14px; border-radius: 5px; margin: 8px 0 0 0; outline: none; border: 1px solid #959EA233; color: var(--colorText2); }
@@ -93,6 +96,7 @@ header { position: fixed; top: 34px; width: 100%; z-index: 10; }
 .cf7sr-g-recaptcha { margin: 20px 0 20px 0; }
 .wpcf7-not-valid-tip { position: absolute; font-size: 12px; width: 100%; white-space: nowrap; }
 .formDesign { background-color: #DFF0E3; padding: 30px; border-radius: 8px; }
+
 /*  */
 
 /* footer css */
