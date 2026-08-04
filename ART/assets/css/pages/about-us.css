@@ -65,7 +65,7 @@
 
 /* team css */
 .team { padding: 0 0 140px 0; position: relative; z-index: 1; }
-.teamBg { position: absolute; width: 100%; height: 100%; }
+.teamBg { position: absolute; width: 100%; height: max-content; }
 .teamBg img { width: 100%; height: 100%; object-fit: cover; }
 .teamTop .headingLg { background: linear-gradient(90deg, #3DB659 -140%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; }
 .teamList { background-color: var(--colorBg); padding: 20px; border-radius: 8px; text-align: center; position: relative; z-index: 1; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0px 4px 34px 0px #00000033; }
