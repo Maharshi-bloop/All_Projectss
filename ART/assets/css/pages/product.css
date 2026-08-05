@@ -6,3 +6,41 @@
 .aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
 .aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
+
+/* systemsWrapper css */
+.systemsWrapper { padding: 44px 0 74px 0; position: relative; z-index: 1; overflow-x: clip; scroll-margin-top: 150px; }
+.systemsWrapper:before { content: ''; position: absolute; width: 100%; height: 100%; background: radial-gradient(104.88% 105.45% at 50% -3%, #D9E9DD 0%, rgba(223, 240, 227, 0.82) 30%, rgba(164, 168, 165, 0.35) 60%); top: 0; left: 0; z-index: -1; }
+.systemsTop { text-align: center; padding: 0 0 34px 0; }
+.systemsTop .headingLg { text-transform: uppercase; color: var(--colorAccent); font-weight: 700; display: block; }
+.systemsTop .subTextBase { color: #002F2BCC; width: 60%; font-weight: 500; }
+.systemsListing { border-top: 1px solid var(--colorBg); border-bottom: 1px solid var(--colorBg); background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3A5F43 20%, #3A5F43 80%, rgba(223, 240, 227, 0) 100%); position: relative; }
+.systemsListing:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -370px; left: -130px; z-index: -2; }
+.systemsListing:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; }
+.systemsListingInner { display: flex; justify-content: flex-start; gap: 14px; background: #FFFFFF66; padding: 14px; border-left: 1px solid var(--colorBg); border-right: 1px solid var(--colorBg); position: relative; width: 90%; margin: 0 auto; flex-wrap: wrap; }
+.gridFour { width: 100%; }
+.gridFour .systemsList { width: calc((100% / 4) - 11px); }
+.systemsList { background-color: #DFF0E3; padding: 8px; border-radius: 8px; position: relative; width: calc((100% / 3) - 10px); transition: all 0.3s; }
+.systemsList:before { content: ''; position: absolute; inset: 0; border-radius: 6px; padding: 1px; background: linear-gradient(180deg, #3DB659 0%, #DFF0E3 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; transition: all 0.3s; z-index: -1; }
+.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; }
+.systemsListImage:before { content: ''; position: absolute; height: 310px; width: 150px; background: url(../../images/right-angle-vector.svg)center center no-repeat; background-size: contain; transform: rotate(90deg); top: -230px; left: 90px; z-index: -1; transition: all 0.3s; }
+.systemsList:hover .systemsListImage { background: linear-gradient(1.95deg, #DFF0E3 1.64%, rgba(61, 182, 89, 0.5) 98.36%); }
+.systemsList:hover .systemsListImage:before { top: -110px; }
+.systemsListImage img { width: 100%; height: 100%; object-fit: cover; }
+.systemsListTitle { display: flex; align-items: center; padding: 12px 16px; justify-content: space-between; }
+.systemsListTitle a { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: var(--colorAccent); border-radius: 5px; font-size: var(--fontLg); color: var(--colorWhite); }
+.systemsListTitle .headingLg { color: var(--colorAccent); font-weight: 700; }
+.systemsListTitle div span { display: block; text-transform: uppercase; color: var(--colorAccent); font-weight: 700; font-size: 14px; }
+.systemsListTitle div h4 { margin: 0; }
+
+/* scrollTo css */
+.scrollTo { position: relative; z-index: 1; margin-top: -100px; }
+.scrollTo::before { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); right: -20%; top: 1300px; transform: rotate(-55deg); z-index: -1; }
+.scrollTo:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; top: 1000px; right: -130px; z-index: -2; opacity: 0.3; }
+.scrollToBg { position: absolute; width: 100%; height: 750px; top: -300px; mix-blend-mode: luminosity; z-index: -1; }
+.scrollToBg img { width: 100%; height: 750px; object-fit: cover; }
+.scrollTopUl { position: relative; z-index: 1; }
+.scrollTopUl::before { content: ''; position: absolute; width: 100vw; height: 100%; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 10%, rgba(92, 151, 106, 0.48) 40%, rgba(92, 151, 106, 0.48) 60%, rgba(223, 240, 227, 0) 90%); left: 0; top: 0; z-index: -1; }
+.scrollTopUl ul { display: flex; align-items: center; justify-content: center; }
+.scrollTopUl ul li a { color: var(--colorAccent); text-transform: uppercase; font-size: var(--fontSm); font-weight: 700; padding: 16px 63px; background: linear-gradient(180deg, #DFF0E3 0%, rgba(223, 240, 227, 0.44) 100%); display: block; border: 1px solid var(--colorAccent); transition: all 0.3s; text-align: center; line-height: 1.2; }
+.scrollTopUl ul li.active a { background: linear-gradient(180deg, #00715E 0%, #157040 68.75%, #549F65 100%); color: var(--colorWhite); }
+.scrollToInner { margin: 64px 0 0 0; }

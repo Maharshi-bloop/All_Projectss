@@ -34,8 +34,8 @@ a.accentBtn i { font-size: 20px; }
 .headingXl { font-size: var(--fontXl); color: var(--colorAccent); font-weight: 600; }
 .headingLg { color: var(--colorText); font-size: var(--fontLg); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
 .headingMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; display: inline-block; }
-.subTextMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
-.subTextBase { color: var(--colorText); font-size: var(--fontBase); font-weight: 400; letter-spacing: 0.2px; display: inline-block; }
+.subTextMd { color: var(--colorText); font-size: var(--fontMd); font-weight: 400; letter-spacing: 0.2px; display: block; }
+.subTextBase { color: var(--colorText); font-size: var(--fontBase); font-weight: 400; letter-spacing: 0.2px; display: block; }
 .pageWrap { display: flex; justify-content: space-between; min-height: 100vh; flex-direction: column; overflow: clip; }
 
 /* background: linear-gradient(0deg, var(--Light-Grey, #DFF0E3), var(--Light-Grey, #DFF0E3)),

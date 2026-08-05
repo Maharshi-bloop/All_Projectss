@@ -22,9 +22,9 @@
 
 /* challenge css */
 .challenge, .howSolve { scroll-margin-top: 150px; position: relative; z-index: 1; }
-.challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 0 0; }
+.challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 0 0; flex-wrap: wrap; }
 .challengeListing:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
-.challengeList { background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 24px; border-radius: 8px; width: calc(100% / 4); backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; position: relative; }
+.challengeList { background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 24px; border-radius: 8px; width: calc((100% / 4) - 11px); backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; position: relative; }
 .challengeList:before { content: ''; position: absolute; width: 100%; height: 100%; object-fit: contain; top: 0; left: 0; background: url(../../images/small-dot-bg.png) center center no-repeat; background-size: cover; z-index: -1; }
 .challengeList:after { content: ""; position: absolute; inset: 0; border-radius: 8px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.4) 0%, rgba(61, 182, 89, 0.49) 68.27%, rgba(198, 231, 206, 0.25) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .clIcon { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background-color: #DFF0E336; border-radius: 50%; margin: 0 0 10px 0; }
@@ -75,7 +75,8 @@
 .accordianList:last-child { margin: 0; }
 .accordianHeading:after { content: "\ea4e"; font-family: 'remixicon'; top: 5px; position: absolute; right: 19px; font-size: 30px; color: #fff; transition: all 0.5s; }
 .accordianList.active .accordianHeading:after { transform: rotate(180deg); }
-.accordianWrapTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
+.accordianWrapTop { margin: 0 0 24px 0; }
+.accordianWrapTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; text-transform: uppercase; }
 
 /* productDetail css */
 .productDetail { display: flex; background-color: var(--colorBg); border-radius: 8px; margin: 10px 0 0 0; padding: 44px; justify-content: space-between; }
@@ -95,3 +96,10 @@
 /* ctaWrapper css */
 .ctaWrapper { z-index: unset !important; }
 .ctaWrapper:after { content: ''; position: absolute; width: 100%; height: 950px; background: url(../../images/about-btm-cta-bg.png) center center no-repeat; background-size: cover; bottom: 0; left: 0; z-index: -1; mix-blend-mode: luminosity; z-index: -1; }
+.drilling #powerTip p strong { color: var(--colorAccent); display: inline-block; margin: 0 0 10px 0; }
+.drilling #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; }
+
+
+background:
+linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgba(223, 240, 227, 0.35) 100%);
+
