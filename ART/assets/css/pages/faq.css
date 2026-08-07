@@ -1,0 +1,33 @@
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: flex-end; padding: 0 0 60vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 100%; background: url(../../images/about-banner-dot-bg.png) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
+.aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
+.aboutBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0.8; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
+.aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
+.aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
+
+/* faqWrapper css */
+.faqWrapper { margin-top: -50vh; position: relative; z-index: 1; }
+.faqWrapperInner { padding: 44px 48px 64px 48px; backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); border-radius: 20px 20px 0 0; }
+.faqWrapperInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.accoIcon { width: 30px; height: 30px; background-color: #3DB6594D; position: relative; border-radius: 50%; padding: 8px; transition: all 0.3s; }
+.accoIcon img { position: absolute; top: 50%; left: 50%; width: 60%; height: 50%; transform: translate(-50%, -50%); transition: all 0.3s; }
+.accordianHeading { display: flex; align-items: center; gap: 10px; padding: 12px 18px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.95) 0%, rgba(0, 47, 43, 0.95) 100%); position: relative; z-index: 1; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+.accordianList.active .accordianHeading { background: linear-gradient(180deg, rgba(0, 93, 77, 0.48) 0%, rgba(0, 47, 43, 0.48) 100%); background-color: #3DB659; }
+.accordianHeading:before { content: ""; position: absolute; inset: 0; border-radius: 8px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.4) 0%, rgba(61, 182, 89, 0.49) 68.27%, rgba(198, 231, 206, 0.25) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
+.accordianHeading h4 { margin: 0; color: var(--colorText); transition: all 0.3s; font-weight: 600; font-size: var(--fontBase); text-transform: uppercase; }
+.accordianList { margin: 0 0 8px 0; }
+.accordianList.active .accoIcon { background-color: var(--colorText); }
+.accoIcon .color { opacity: 0; visibility: hidden; }
+.accordianList.active .color { opacity: 1; visibility: visible; }
+.accordianList.active .withoutColor { opacity: 0; visibility: hidden; }
+.accordianListing { padding: 8px; border: 1px solid #DFF0E357; border-radius: 16px; background-color: #DFF0E30F; }
+.accordianList:last-child { margin: 0; }
+.accordianHeading:after { content: "\ea4e"; font-family: 'remixicon'; top: 5px; position: absolute; right: 19px; font-size: 30px; color: #fff; transition: all 0.5s; }
+.accordianList.active .accordianHeading:after { transform: rotate(180deg); }
+.accordianWrapTop { margin: 0 0 24px 0; }
+.accordianWrapTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; text-transform: uppercase; }
+.productDetail { display: flex; background-color: var(--colorBg); border-radius: 8px; margin: 10px 0 0 0; padding: 44px; justify-content: space-between; }
+.faqWrapperInner .headingXl { text-transform: uppercase; }
+.faqWrapperInner .subText1 { font-size: var(--fontBase); margin: 24px 0; display: block; }

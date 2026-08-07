@@ -16,12 +16,12 @@
 .systemsListing { border-top: 1px solid var(--colorBg); border-bottom: 1px solid var(--colorBg); background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3A5F43 20%, #3A5F43 80%, rgba(223, 240, 227, 0) 100%); position: relative; }
 .systemsListing:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -370px; left: -130px; z-index: -2; }
 .systemsListing:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; }
-.systemsListingInner { display: flex; justify-content: flex-start; gap: 14px; background: #FFFFFF66; padding: 14px; border-left: 1px solid var(--colorBg); border-right: 1px solid var(--colorBg); position: relative; width: 90%; margin: 0 auto; flex-wrap: wrap; }
+.systemsListingInner { display: flex; justify-content: flex-start; gap: 14px; background: #FFFFFF66; padding: 14px; border-left: 1px solid var(--colorBg); border-right: 1px solid var(--colorBg); position: relative; width: 80%; margin: 0 auto; flex-wrap: wrap; }
 .gridFour { width: 100%; }
 .gridFour .systemsList { width: calc((100% / 4) - 11px); }
-.systemsList { background-color: #DFF0E3; padding: 8px; border-radius: 8px; position: relative; width: calc((100% / 3) - 10px); transition: all 0.3s; }
+.systemsList { background-color: #DFF0E3; padding: 8px; border-radius: 8px; position: relative; width: calc((100% / 3) - 10px); transition: all 0.3s; cursor: pointer; }
 .systemsList:before { content: ''; position: absolute; inset: 0; border-radius: 6px; padding: 1px; background: linear-gradient(180deg, #3DB659 0%, #DFF0E3 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; transition: all 0.3s; z-index: -1; }
-.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; }
+.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; height: 300px; }
 .systemsListImage:before { content: ''; position: absolute; height: 310px; width: 150px; background: url(../../images/right-angle-vector.svg)center center no-repeat; background-size: contain; transform: rotate(90deg); top: -230px; left: 90px; z-index: -1; transition: all 0.3s; }
 .systemsList:hover .systemsListImage { background: linear-gradient(1.95deg, #DFF0E3 1.64%, rgba(61, 182, 89, 0.5) 98.36%); }
 .systemsList:hover .systemsListImage:before { top: -110px; }
@@ -44,3 +44,35 @@
 .scrollTopUl ul li a { color: var(--colorAccent); text-transform: uppercase; font-size: var(--fontSm); font-weight: 700; padding: 16px 63px; background: linear-gradient(180deg, #DFF0E3 0%, rgba(223, 240, 227, 0.44) 100%); display: block; border: 1px solid var(--colorAccent); transition: all 0.3s; text-align: center; line-height: 1.2; }
 .scrollTopUl ul li.active a { background: linear-gradient(180deg, #00715E 0%, #157040 68.75%, #549F65 100%); color: var(--colorWhite); }
 .scrollToInner { margin: 64px 0 0 0; }
+
+/* productDetail css */
+.popUpWrapperOuter { position: fixed; top: 0; right: 0; z-index: 11; background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: all 0.3s;}
+.popUpWrapperOuter.activePopup {
+    opacity: 1;
+    visibility: visible;
+}
+.popUpWrapper { max-width: 70%; margin: 20px 20px 20px auto; border-radius: 8px; overflow: clip; transform: scale(0); transition: all 0.3s; transform-origin: center right; }
+.activePopup .popUpWrapper{
+    transform: scale(1);
+}
+.productDetail { display: flex; background-color: var(--colorBg); padding: 44px; justify-content: space-between; }
+.productImage { width: 35%; height: max-content; background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); }
+.productContent { width: 60%; }
+.btnWrapper { margin: 34px 0 0 0; display: flex; gap: 34px; }
+.btnWrapper .lightCtaBtn { border: 1px solid var(--colorAccent); }
+.btnWrapper .lightCtaBtn:hover { border: 1px solid var(--colorSecondary); }
+.subText1 { display: block; text-transform: uppercase; font-size: 14px; font-weight: 600; background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 100%); -webkit-background-clip: text; -webkit-text-fill-color: #005D4D8F !important; }
+.subText2 { margin: 24px 0 0 0; display: inline-block; }
+.productContent ul { margin: 24px 0 0 0; }
+.productContent ul li div { margin: 0 0 16px 0; }
+.productContent ul li div h4, .productContent ul li div span { padding: 0 0 0 20px; display: block; }
+.productContent ul li div h4 { position: relative; color: #002F2B; font-size: var(--fontBase); font-weight: 600; line-height: 130%; margin: 0 0 8px 0; }
+.productContent ul li div h4:before { content: ''; position: absolute; width: 6px; height: 6px; background-color: var(--colorSecondary); top: 7px; left: 0; }
+.accoIcon { width: 30px; height: 30px; background-color: #3DB6594D; position: relative; border-radius: 50%; padding: 8px; transition: all 0.3s; }
+.accoIcon img { position: absolute; top: 50%; left: 50%; width: 60%; height: 50%; transform: translate(-50%, -50%); transition: all 0.3s; }
+.accordianHeading { display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 12px 18px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.48) 0%, rgba(0, 47, 43, 0.48) 100%); background-color: #3DB659; position: relative; z-index: 1; transition: all 0.3s; }
+.accordianHeading div { display: flex; align-items: center; gap: 10px; }
+.accordianList.active .accordianHeading { background: linear-gradient(180deg, rgba(0, 93, 77, 0.48) 0%, rgba(0, 47, 43, 0.48) 100%); background-color: #3DB659; }
+.accordianHeading h4 { margin: 0; color: var(--colorText); transition: all 0.3s; font-weight: 600; font-size: var(--fontBase); text-transform: uppercase; }
+.popUpClose i { cursor: pointer; color: var(--colorWhite); font-size: var(--fontXl); }
+

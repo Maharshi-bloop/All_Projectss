@@ -21,7 +21,7 @@
 .challengeTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
 
 /* challenge css */
-.challenge, .howSolve { scroll-margin-top: 150px; position: relative; z-index: 1; }
+.challenge, .howSolve, .systemTechnology { scroll-margin-top: 150px; position: relative; z-index: 1; }
 .challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 0 0; flex-wrap: wrap; }
 .challengeListing:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
 .challengeList { background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 24px; border-radius: 8px; width: calc((100% / 4) - 11px); backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; position: relative; }
@@ -96,10 +96,10 @@
 /* ctaWrapper css */
 .ctaWrapper { z-index: unset !important; }
 .ctaWrapper:after { content: ''; position: absolute; width: 100%; height: 950px; background: url(../../images/about-btm-cta-bg.png) center center no-repeat; background-size: cover; bottom: 0; left: 0; z-index: -1; mix-blend-mode: luminosity; z-index: -1; }
-.drilling #powerTip p strong { color: var(--colorAccent); display: inline-block; margin: 0 0 10px 0; }
-.drilling #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; }
+/* .drilling #powerTip p strong { color: var(--colorAccent); display: inline-block; margin: 0 0 10px 0; }
+.drilling #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; } */
+.drilling #powerTip p strong, .production #powerTip p strong, .completions #powerTip p strong { color: var(--colorAccent); display: inline-block; /* margin: 0 0 10px 0;  */}
+.drilling #powerTip p, .production #powerTip p, .completions #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; }
 
 
-background:
-linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgba(223, 240, 227, 0.35) 100%);
 
