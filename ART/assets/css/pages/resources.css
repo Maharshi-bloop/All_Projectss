@@ -9,6 +9,8 @@
 
 /* scrollTo css */
 .scrollTo { position: relative; z-index: 1; margin-top: -100px; }
+.scrollTo:before { content: ''; position: absolute; height: 780px; width: 340px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -380px; right: -70px; z-index: -2; opacity: 0.3; }
+.scrollTo:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); right: -30%; bottom: -350px; z-index: -1; }
 .scrollTopUl { position: relative; z-index: 1; }
 .scrollTopUl::before { content: ''; position: absolute; width: 100vw; height: 100%; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 10%, rgba(92, 151, 106, 0.48) 40%, rgba(92, 151, 106, 0.48) 60%, rgba(223, 240, 227, 0) 90%); left: 0; top: 0; z-index: -1; }
 .scrollTopUl ul { display: flex; align-items: center; justify-content: center; }
@@ -21,7 +23,9 @@
 .challengeTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
 
 /* resourceOuter css */
-.resourceOuter { padding: 64px 0 0 0; }
+.resourceOuter { padding: 64px 0 0 0; position: relative; z-index: 1; overflow-x: clip; }
+.resourceOuter:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: 200px; left: -130px; z-index: -2; opacity: 0.3; }
+.resourceOuter:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); left: -30%; top: 0; z-index: -1; }
 .resourceListing { padding: 44px 48px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); position: relative; z-index: 1; border-radius: 18px 18px 0 0; backdrop-filter: blur(8px) }
 .resourceListing:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .resourceList { background: rgba(0, 47, 43, 0.64); border-radius: 8px; padding: 18px; position: relative; border: 1px solid rgba(223, 240, 227, 0.32); overflow: clip; z-index: 1; }
