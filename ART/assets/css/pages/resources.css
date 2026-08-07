@@ -24,7 +24,7 @@
 .resourceOuter { padding: 64px 0 0 0; }
 .resourceListing { padding: 44px 48px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); position: relative; z-index: 1; border-radius: 18px 18px 0 0; backdrop-filter: blur(8px) }
 .resourceListing:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
-.resourceList { background: rgba(0, 47, 43, 0.64); border-radius: 8px; padding: 18px; position: relative; border: 1px solid rgba(223, 240, 227, 0.32); overflow: clip; z-index: 1; width: calc(100% - 16px); height: calc(100% - 16px); }
+.resourceList { background: rgba(0, 47, 43, 0.64); border-radius: 8px; padding: 18px; position: relative; border: 1px solid rgba(223, 240, 227, 0.32); overflow: clip; z-index: 1; }
 .resourceList::before { content: ''; position: absolute; width: 210px; height: 280px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; right: -80px; bottom: -60px; z-index: -1; }
 .resourceListContent { margin: 24px 0 0 0; }
 .resourceListImage img { width: 100%; height: 100%; object-fit: cover; }
