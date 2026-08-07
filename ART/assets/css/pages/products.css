@@ -14,8 +14,9 @@
 .systemsTop .headingLg { text-transform: uppercase; color: var(--colorAccent); font-weight: 700; display: block; }
 .systemsTop .subTextBase { color: #002F2BCC; width: 60%; font-weight: 500; }
 .systemsListing { border-top: 1px solid var(--colorBg); border-bottom: 1px solid var(--colorBg); background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3A5F43 20%, #3A5F43 80%, rgba(223, 240, 227, 0) 100%); position: relative; }
-.systemsListing:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -370px; left: -130px; z-index: -2; }
-.systemsListing:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; }
+
+/* .systemsListing:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -370px; left: -130px; z-index: -2; }
+.systemsListing:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; } */
 .systemsListingInner { display: flex; justify-content: flex-start; gap: 14px; background: #FFFFFF66; padding: 14px; border-left: 1px solid var(--colorBg); border-right: 1px solid var(--colorBg); position: relative; width: 80%; margin: 0 auto; flex-wrap: wrap; }
 .gridFour { width: 100%; }
 .gridFour .systemsList { width: calc((100% / 4) - 11px); }
@@ -43,18 +44,16 @@
 .scrollTopUl ul { display: flex; align-items: center; justify-content: center; }
 .scrollTopUl ul li a { color: var(--colorAccent); text-transform: uppercase; font-size: var(--fontSm); font-weight: 700; padding: 16px 63px; background: linear-gradient(180deg, #DFF0E3 0%, rgba(223, 240, 227, 0.44) 100%); display: block; border: 1px solid var(--colorAccent); transition: all 0.3s; text-align: center; line-height: 1.2; }
 .scrollTopUl ul li.active a { background: linear-gradient(180deg, #00715E 0%, #157040 68.75%, #549F65 100%); color: var(--colorWhite); }
-.scrollToInner { margin: 64px 0 0 0; }
+.scrollToInner { margin: 64px 0 0 0; position: relative; z-index: 1; }
+.scrollToInner:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: 35%; left: -130px; z-index: -2; opacity: 0.3; }
+
+/* .scrollToInner:after { content: ''; position: absolute; height: 860px; width: 400px; background: url(../../images/left-angle-vector.svg) center center no-repeat; background-size: contain; bottom: -330px; right: -130px; z-index: -2; } */
 
 /* productDetail css */
-.popUpWrapperOuter { position: fixed; top: 0; right: 0; z-index: 11; background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: all 0.3s;}
-.popUpWrapperOuter.activePopup {
-    opacity: 1;
-    visibility: visible;
-}
+.popUpWrapperOuter { position: fixed; top: 0; right: 0; z-index: 11; background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.popUpWrapperOuter.activePopup { opacity: 1; visibility: visible; }
 .popUpWrapper { max-width: 70%; margin: 20px 20px 20px auto; border-radius: 8px; overflow: clip; transform: scale(0); transition: all 0.3s; transform-origin: center right; }
-.activePopup .popUpWrapper{
-    transform: scale(1);
-}
+.activePopup .popUpWrapper { transform: scale(1); }
 .productDetail { display: flex; background-color: var(--colorBg); padding: 44px; justify-content: space-between; }
 .productImage { width: 35%; height: max-content; background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); }
 .productContent { width: 60%; }
@@ -76,3 +75,6 @@
 .accordianHeading h4 { margin: 0; color: var(--colorText); transition: all 0.3s; font-weight: 600; font-size: var(--fontBase); text-transform: uppercase; }
 .popUpClose i { cursor: pointer; color: var(--colorWhite); font-size: var(--fontXl); }
 
+/*  */
+.ctaWrapper { padding: 150px 0 84px 0 !important; position: relative; z-index: 1; }
+.ctaWrapper::after { content: ''; position: absolute; width: 100%; height: 1150px; background: url(../../images/about-btm-cta-bg.png) center center no-repeat; background-size: cover; top: -90%; left: 0; }
