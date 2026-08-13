@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Open Popup
-    $(".systemsList").on("click", function (e) {
+    $(".teamList").on("click", function (e) {
 
         e.preventDefault();
 

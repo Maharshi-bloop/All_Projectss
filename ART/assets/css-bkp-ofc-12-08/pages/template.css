@@ -1,8 +1,8 @@
-.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 85vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
-.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 100vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.png) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
 .aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
 .aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
-.aboutBannerBg { position: absolute; width: 100%; height: 100vh; top: 0; left: 0; z-index: -2; opacity: 0.8; }
+.aboutBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -2; opacity: 0.8; }
 .aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
 .aboutBannerHeading .headingLg { background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 124.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
@@ -15,25 +15,23 @@
 .scrollTopUl ul li a { color: var(--colorAccent); text-transform: uppercase; font-size: var(--fontSm); font-weight: 700; padding: 16px 63px; background: linear-gradient(180deg, #DFF0E3 0%, rgba(223, 240, 227, 0.44) 100%); display: block; border: 1px solid var(--colorAccent); transition: all 0.3s; text-align: center; line-height: 1.2; }
 .scrollTopUl ul li.active a { background: linear-gradient(180deg, #00715E 0%, #157040 68.75%, #549F65 100%); color: var(--colorWhite); }
 .challenge { margin: 64px 0 0 0; }
-.scrollTopUl ul li a:hover { background: linear-gradient(180deg, rgba(223, 240, 227, 0.71) 0%, #DFF0E3 37.52%, rgba(223, 240, 227, 0.67) 134%); color: var(--colorAccent); }
-.challenge { margin: 64px 0 0 0; }
 .challengeTop { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
 .challengeTop:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .challengeTop:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
-.challengeTop .headingLg { font-weight: 600; color: #ABDDB7; }
+.challengeTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
 
 /* challenge css */
-.challenge, .howSolve, .systemTechnology { scroll-margin-top: 150px; position: relative; z-index: 22; }
+.challenge, .howSolve, .systemTechnology { scroll-margin-top: 150px; position: relative; z-index: 1; }
 .challengeListing { display: flex; gap: 8px; position: relative; padding: 20px 0 0 0; flex-wrap: wrap; }
 .challengeListing:before { content: ''; position: absolute; width: 100%; height: 1px; background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, #3DB659 50%, rgba(223, 240, 227, 0) 100%); left: 0; top: 0; }
 .challengeList { background: linear-gradient(180deg, rgba(0, 93, 77, 0.67) 0%, rgba(0, 47, 43, 0.67) 100%); padding: 24px; border-radius: 8px; width: calc((100% / 4) - 11px); backdrop-filter: blur(7.599999904632568px); box-shadow: 0px 4px 34px 0px #00000033; position: relative; }
-.challengeList:before { content: ''; position: absolute; width: 100%; height: 100%; object-fit: contain; top: 0; left: 0; background: url(../../images/small-dot-bg.webp) center center no-repeat; background-size: cover; z-index: -1; }
+.challengeList:before { content: ''; position: absolute; width: 100%; height: 100%; object-fit: contain; top: 0; left: 0; background: url(../../images/small-dot-bg.png) center center no-repeat; background-size: cover; z-index: -1; }
 .challengeList:after { content: ""; position: absolute; inset: 0; border-radius: 8px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.4) 0%, rgba(61, 182, 89, 0.49) 68.27%, rgba(198, 231, 206, 0.25) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .clIcon { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background-color: #DFF0E336; border-radius: 50%; margin: 0 0 10px 0; }
 .challengeList span { line-height: 130%; font-weight: 300; }
 
 /* howSolve css */
-.howSolve { margin: 64px 0 0 0; position: relative; z-index: 2; overflow-x: clip; }
+.howSolve { margin: 64px 0 0 0; position: relative; z-index: 1; overflow-x: clip; }
 .howSolve:before { content: ''; position: absolute; height: 680px; width: 300px; background: url(../../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: 200px; left: -130px; z-index: -2; opacity: 0.3; }
 .howSolve:after { content: ''; position: absolute; width: 690px; height: 920px; background-color: #3DB6594D; border-radius: 50%; filter: blur(150px); left: -30%; top: 0; z-index: -1; }
 .howSolveInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
@@ -41,14 +39,12 @@
 .howSolveInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }
 .howSolveTop { margin: 0 0 24px 0; }
 .howSolveTop .headingLg { font-weight: 600; background: linear-gradient(90deg, #3DB659 -90%, #DFF0E3 134.23%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; }
-.solveList { padding: 18px 24px; background-color: #002F2BA3; border: 1px solid #DFF0E352; border-radius: 8px; margin: 0 0 10px 0; transition: all 0.3s; }
-.solveList:hover { background-color: rgba(0, 93, 77, 0.75); }
+.solveList { padding: 18px 24px; background-color: #002F2BA3; border: 1px solid #DFF0E352; border-radius: 8px; margin: 0 0 10px 0; }
 .solveListingWrap .headingLg { background: linear-gradient(90deg, rgba(61, 182, 89, 0.35) 0%, rgb(223 240 227) 60%); -webkit-background-clip: text; -webkit-text-fill-color: transparent !important; font-weight: 600; text-transform: uppercase; margin: 0; }
 .solveListing { background-color: #DFF0E30F; padding: 8px; border-radius: 16px; border: 1px solid #DFF0E338; }
 .solveList:last-child { margin: 0; }
 .solveList div { display: flex; align-items: center; gap: 10px; }
-.solveList div span { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: var(--colorSecondary); font-weight: 600; transition: all 0.3s; }
-.solveList:hover div span { background-color: var(--colorBg); color: var(--colorAccent); }
+.solveList div span { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: var(--colorSecondary); font-weight: 600; }
 .solveList div h4 { font-size: var(--fontSm); font-weight: 600; color: var(--colorText); margin: 0; text-transform: uppercase; letter-spacing: 0.4px; }
 .solveList .subTextBase { font-weight: 300; margin: 10px 0 0 0; letter-spacing: 0.6px; }
 .solveImage { width: 100%; height: 300px; border-radius: 8px; border: 1px solid #5E8768; overflow: clip; }
@@ -67,7 +63,6 @@
 .accoIcon { width: 30px; height: 30px; background-color: #3DB6594D; position: relative; border-radius: 50%; padding: 8px; transition: all 0.3s; }
 .accoIcon img { position: absolute; top: 50%; left: 50%; width: 60%; height: 50%; transform: translate(-50%, -50%); transition: all 0.3s; }
 .accordianHeading { display: flex; align-items: center; gap: 10px; padding: 12px 18px; background: linear-gradient(180deg, rgba(0, 93, 77, 0.95) 0%, rgba(0, 47, 43, 0.95) 100%); position: relative; z-index: 1; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
-.accordianHeading:hover { background: linear-gradient(180deg, rgba(0, 93, 77, 0.74) 0%, rgba(0, 47, 43, 0.74) 100%); background-color: rgba(61, 182, 89, 1); }
 .accordianList.active .accordianHeading { background: linear-gradient(180deg, rgba(0, 93, 77, 0.48) 0%, rgba(0, 47, 43, 0.48) 100%); background-color: #3DB659; }
 .accordianHeading:before { content: ""; position: absolute; inset: 0; border-radius: 8px; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.4) 0%, rgba(61, 182, 89, 0.49) 68.27%, rgba(198, 231, 206, 0.25) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .accordianHeading h4 { margin: 0; color: var(--colorText); transition: all 0.3s; font-weight: 600; font-size: var(--fontBase); text-transform: uppercase; }
@@ -100,9 +95,11 @@
 
 /* ctaWrapper css */
 .ctaWrapper { z-index: unset !important; }
-.ctaWrapper:after { content: ''; position: absolute; width: 100%; height: 950px; background: url(../../images/about-btm-cta-bg.webp) center center no-repeat; background-size: cover; bottom: 0; left: 0; z-index: -1; mix-blend-mode: luminosity; z-index: -1; }
-
+.ctaWrapper:after { content: ''; position: absolute; width: 100%; height: 950px; background: url(../../images/about-btm-cta-bg.png) center center no-repeat; background-size: cover; bottom: 0; left: 0; z-index: -1; mix-blend-mode: luminosity; z-index: -1; }
 /* .drilling #powerTip p strong { color: var(--colorAccent); display: inline-block; margin: 0 0 10px 0; }
 .drilling #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; } */
-.drilling #powerTip p strong, .production #powerTip p strong, .completions #powerTip p strong { color: var(--colorAccent); display: inline-block;    /* margin: 0 0 10px 0;  */ }
+.drilling #powerTip p strong, .production #powerTip p strong, .completions #powerTip p strong { color: var(--colorAccent); display: inline-block; /* margin: 0 0 10px 0;  */}
 .drilling #powerTip p, .production #powerTip p, .completions #powerTip p { font-size: var(--fontBase); text-transform: unset; font-weight: 400; color: #002F2B; }
+
+
+

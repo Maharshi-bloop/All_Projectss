@@ -1,0 +1,159 @@
+@media (max-width:1280px) {
+	.banner { height: auto; padding: 30vh 0 10vh; }
+	.logo { width: 170px; }
+	nav li a { font-size: var(--fontSm); }
+	header { top: 16px; }
+	.headerWrap { padding: 20px 18px; }
+	.headerInner .accentOutlineBtn { padding: 15px 20px; font-size: 14px; }
+	.clientSay:before { height: 800px; top: -210px; left: -200px; }
+	.clientSayBg { top: 400px; }
+	.banner:before { top: -60%; left: -53%; }
+	.standardsTop .headingLg { width: 40%; }
+	.clientSayHead .subTextBase br { display: none; }
+	.systemsTop .subTextBase { width: 70%; }
+	.bannerContent { width: 62%; }
+	
+									/* about us responsive */
+	.teamBg { top: 120px; }
+	.aboutBannerSubText .subTextMd br, .clientSayHead .headingLg br, .challengeList span br { display: none; }
+}
+@media (max-width:1024px) {
+	.bannerContent { width: 70%; }
+}
+@media (max-width:768px) {
+	.ctaWrapperInner { width: 100%; padding: 44px 20px; }
+	
+									/* about us responsive */
+	.missionVissionInner { padding: 0; }
+	.mvBox { padding: 48px 54px; border-bottom: 1px solid var(--colorAccent); }
+	.missionVissionInner .row .col-lg-6:last-child .mvBox { border-bottom: none }
+	.missionVissionInner:before { display: none; }
+	.mvBox span { line-height: 144%; display: block; }
+	.mvBox span br { display: none; }
+	.valueListing { flex-direction: column; }
+	.valueList { width: 100%; border-left: none !important; border-right: none !important; border-bottom: 1px solid #3DB65999; }
+	.systemsList { width: calc((100% / 2) - 7px); }
+	.gridFour .systemsList { width: calc((100% / 3) - 10px); }
+	.headerInner .accentOutlineBtn { display: inline-block; margin: 20px 0 0 0; }
+}
+@media (max-width:480px) {
+	:root { --font5xl: 32px; --font4xl: 28px; --font3xl: 24px; --fontMd: 16px; }
+	.lightCtaBtn { font-size: var(--fontSm); }
+	.accentBtn { padding: 15px 24px; line-height: 1; font-size: var(--fontSm); }
+	.headerWrap { padding: 14px 20px; }
+	.bannerContent { width: 100%; }
+	header { top: 14px; }
+	.banner:after { width: 680px; bottom: -30%; }
+	.banner:before { height: 340px; top: -40%; left: -143%; }
+	.whatWeDoInner { padding: 44px 30px; text-align: center; }
+	.whatWeDoInner:after { width: 100%; }
+	.wwdHeading .headingLg { margin: 0 0 28px 0; }
+	.ourValueListing { flex-direction: column; }
+	.ourValueContent { gap: 50px; }
+	.ourValueList { height: unset; }
+	.systemsTop .subTextBase { width: 100%; line-height: 130%; }
+	.systemsListingInner { flex-direction: column; width: 80%; }
+	.systemsList { width: 100% !important; }
+	.systemsListing:before { top: -460px; }
+	.systemsListing:after { height: 560px; width: 400px; bottom: -140px; right: -180px; }
+	.standardsTop .headingLg { width: 100%; }
+	.standardsList { width: 100%; padding: 20px 12px; border-bottom: 1px solid var(--colorAccent); border-left: none }
+	.standardsList:last-child { border-bottom: none; }
+	.standardsInnerListing { flex-direction: column; width: 60%; margin: 0 auto; }
+	.standardsList span { font-size: var(--fontSm); }
+	.standardsListing { background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, rgba(92, 151, 106, 0.8) 26%, rgba(92, 151, 106, 0.8) 74%, rgba(223, 240, 227, 0) 100%); margin-top: 34px; }
+	.clientSayHead .headingLg { margin: 0 auto; }
+	.clientSayHead { padding: 0 0 40px 0; text-align: center; }
+	.standards:before { content: ''; position: absolute; width: 450px; height: 500px; background: url(../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -150px; left: -200px; z-index: -1; opacity: 0.3; }
+	.clientSay:before { display: none; }
+	.mapWrap { padding: 84px 0 120px 0 }
+	.clientSay { padding: 100px 0 180px 0; }
+	.clientSwiperSlide { gap: 24px; }
+	.clientSwiper .swiper-wrapper { margin: 0 0 70px 0; }
+	.ctaWrapperInner { width: 100%; padding: 44px 20px; }
+	.clientSayBg { width: max-content; height: 500px; bottom: -80px; object-fit: cover; left: -160px; }
+	.clientSayBg img { object-fit: cover; }
+	
+									/* about us responsive */
+	.aboutBanner { height: 90vh; }
+	.aboutBannerInner { text-align: center; }
+	.aboutBannerSubText .lightCtaBtn { margin: 0 auto; }
+	.whoWeAreInner { padding: 20px; padding-bottom: 120px; }
+	.whoWeAreInner .row { flex-direction: column-reverse; }
+	.wwaContent { text-align: center; }
+	.wwaImage { height: 180px; margin: 0 0 40px 0; }
+	.missionVissionInner { padding: 0; }
+	.mvBox { padding: 48px 54px; border-bottom: 1px solid var(--colorAccent); }
+	.missionVissionInner .row .col-lg-6:last-child .mvBox { border-bottom: none }
+	.missionVissionInner:before { display: none; }
+	.mvBox span { line-height: 144%; display: block; }
+	.mvBox span br { display: none; }
+	.twoColumnGridList { padding: 34px 24px; }
+	.gridContent span br { display: none; }
+	.valueListing { flex-direction: column; }
+	.valueList { width: 100%; border-left: none !important; border-right: none !important; border-bottom: 1px solid #3DB65999; }
+	.valueWrapper:before { top: -1410px; }
+	.twoColumnGrid:before { left: -130%; top: 730px; }
+	.valueWrapper:after { bottom: -860px; }
+	.teamBg { width: max-content; height: 500px; bottom: -150px; left: -170px; }
+	.about-us .ctaWrapper::after { display: none; }
+	.scrollTopUl ul { align-items: unset; }
+	.scrollTopUl .container-xl { padding: 0; }
+	.scrollTopUl ul li { width: 33.33%; }
+	.scrollTopUl ul li a { display: flex; align-items: center; justify-content: center; font-size: 11px; padding: 16px 3px; height: 100%; }
+	.scrollToDivInner { padding: 20px; }
+	.scrollToDivInner .row, .scrollToDiv:nth-child(even) .row { flex-direction: column-reverse; }
+	.stdImage { height: 180px; }
+	.stdContent { text-align: center; margin: 40px 0 0 0; }
+	.capabiliesList { width: 90%; }
+	.capabiliesList:first-child { border-radius: 8px 8px 0 0; }
+	.capabiliesList:last-child { border-radius: 0 0 8px 8px; }
+	.capabiliesListing { flex-wrap: wrap; }
+	.scrollToDivInner:after { width: 100%; }
+	.technology .ctaWrapper::after { width: 200%; height: 500px; top: -25%; left: -80px; }
+	.scrollToInner:after { left: -130%; }
+	.teamBg { bottom: -110px; top: auto; }
+	.contactFormInner { padding: 20px; }
+	.contactFormInner .row { flex-direction: column-reverse; }
+	.contactFormContent { margin: 44px 0 0 0; }
+	.contentHeading { text-align: center; }
+	.liOption div { font-size: var(--fontSm); }
+	.contactForm { margin: -150px 0 0 0; }
+	.contact-us     .aboutBanner { height: 80vh; }
+	.aboutBanner:before { top: -40%; left: 13%; }
+	.challengeListing { flex-wrap: wrap; }
+	.challengeList { width: 80%; margin: 0 auto; }
+	.challengeTop { padding: 44px 30px; text-align: center; }
+	.howSolveInner { padding: 20px; }
+	.howSolveInner .row { display: flex; flex-wrap: wrap; }
+	.howSolveInner .col-lg-12 { order: 2; }
+	.howSolveInner .col-lg-6:nth-child(2) { order: 3; }
+	.howSolveInner .col-lg-6:nth-child(3) { order: 1; }
+	.solveImage { height: 190px; }
+	.product .ctaWrapper::after { width: 200%; height: 500px; top: -40%; left: -110px; }
+	.accordianWrapperInner { padding: 20px; }
+	.productDetail { padding: 20px; flex-direction: column; }
+	.productImage, .productContent { width: 100%; }
+	.btnWrapper { gap: 14px; flex-direction: column; }
+	.btnWrapper a { width: 100%; justify-content: center; }
+	.bannerContent .heading5xl span:last-child { margin: -20px 0 0 0; }
+	.ourValueListing { gap: 14px; }
+	.ourValueContent { position: relative; }
+	.ourValueContent .subTextBase { position: absolute; white-space: normal; transition: all 0.3s; }
+	.ourValueContent .accentBtn { position: absolute; bottom: 0; left: 0; transition: all 0.3s; }
+	.ourValueList:hover .ourValueContent .subTextBase, .ourValueList:hover .ourValueContent .accentBtn { position: unset; }
+	.popUpWrapper { max-width: 100%; height: calc(100dvh - 40px); margin: 20px; overflow-y: scroll; }
+	br { display: none; }
+	.howSolve:before { top: -330px; }
+	.accordianWrapper:before { height: 500px; width: 400px; top: 0; }
+	.howSolveTop { margin: 40px 0 14px 0; text-align: center; }
+	.accentOutlineBtn:before { border-radius: 3px; }
+	.footerInner, .footerUl ul { flex-direction: column; }
+	.footerUl ul { margin: 28px 0; gap: 20px; }
+	.copyRight span { font-size: 10px; text-align: center; text-transform: uppercase; }
+	.footerUl ul li a { font-size: 12px; }
+	.accordianWrapTop { text-align: center; }
+	.accordianHeading h4 { font-size: 12px; }
+	.accordianHeading { padding: 12px 48px 12px 18px; }
+	footer:after { display: none; }
+}
