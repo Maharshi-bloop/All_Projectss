@@ -1,10 +1,10 @@
-.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 85vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
-.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 65vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -650px; z-index: -1; }
 .aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
 .aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
 .aboutBannerBg { position: absolute; width: 100%; height: 100vh; top: 0; left: 0; z-index: -2; opacity: 0.8; }
-.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
-.aboutBannerHeading .headingLg { color: #ABDDB7; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; }
+.aboutBannerHeading .headingLg { color: var(--colorSecondary); font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
 
 /* scrollTo css */
@@ -41,11 +41,12 @@
 .capabiliesList:first-child { border-radius: 8px 0 0 8px; }
 .capabiliesList:last-child { border-radius: 0 8px 8px 0; }
 .capaListHeading { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 12px 0; }
-.capaListHeading h4 { width: calc(60% - 36px); font-size: var(--fontBase); text-transform: uppercase; margin: 0; font-weight: 600; color: var(--colorAccent); }
+.capaListHeading h4 { width: calc(70% - 36px); font-size: var(--fontBase); text-transform: uppercase; margin: 0; font-weight: 600; color: var(--colorAccent); }
 .capaListHeading span { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #3DB659AD; font-size: var(--fontXs); font-weight: 600; color: var(--colorWhite); transition: all 0.3s; }
 .capabiliesList:hover .capaListHeading span { background-color: var(--colorSecondary); }
 .capabiliesList:hover:before { right: -7%; }
 .scrollToDiv:nth-child(even) .row { flex-direction: row-reverse; }
+#data-acquisition-intelligence .capaListHeading h4 { text-transform: unset; }
 
 /* ctaWrapper css */
 .ctaWrapper { padding-top: 230px; }

@@ -1,14 +1,14 @@
-.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 85vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
-.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 65vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
+.aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -650px; z-index: -1; }
 .aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
 .aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
-.aboutBannerBg { position: absolute; width: 100%; height: 100vh; top: 0; left: 0; z-index: -2; opacity: 0.8; }
-.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; }
-.aboutBannerHeading .headingLg { color: #ABDDB7; font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
+.aboutBannerBg { position: absolute; width: 100%; height: 90vh; top: 0; left: 0; z-index: -2; opacity: 0.8; }
+.aboutBannerBg img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; }
+.aboutBannerHeading .headingLg { color: var(--colorSecondary); font-weight: 500; margin: 0 0 16px 0; text-transform: uppercase; }
 .aboutBannerSubText .subTextMd { margin: 0 0 20px 0; }
 
 /* whoWeAre css */
-.whoWeAre { margin: -100px 0 0 0; position: relative; z-index: 1; }
+.whoWeAre { margin: -130px 0 0 0; position: relative; z-index: 1; }
 .whoWeAreInner { padding: 44px; border-radius: 18px 18px 0 0; position: relative; background: linear-gradient(180deg, rgba(0, 93, 77, 0.6) 0%, rgba(0, 47, 43, 0) 100%); backdrop-filter: blur(4px); z-index: 1; overflow: clip; }
 .whoWeAreInner:before { content: ""; position: absolute; inset: 0; border-radius: 18px 18px 0 0; padding: 1px; background: linear-gradient(180deg, rgba(223, 240, 227, 0.6) 0%, rgba(61, 182, 89, 0) 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; z-index: -1; }
 .whoWeAreInner:after { content: ''; position: absolute; width: 60%; height: 80px; background-color: #3DB65961; border-radius: 50%; left: 50%; top: -70px; transform: translateX(-50%); filter: blur(10px); }

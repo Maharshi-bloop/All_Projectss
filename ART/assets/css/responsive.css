@@ -1,4 +1,6 @@
-@media (max-width:1280px) {
+/* @media (max-width) { } */
+@media (max-width:1366px) {
+	:root { --font4xl: 32px; }
 	.banner { height: auto; padding: 30vh 0 10vh; }
 	.logo { width: 170px; }
 	nav li a { font-size: var(--fontSm); }
@@ -12,18 +14,59 @@
 	.clientSayHead .subTextBase br { display: none; }
 	.systemsTop .subTextBase { width: 70%; }
 	.bannerContent { width: 62%; }
-	
-									/* about us responsive */
+	.popUpWrapper { max-width: 90%; }
+	.popUpWrapper .productDetail { height: calc(100dvh - 100px); overflow-y: scroll; overflow-x: hidden; }
+	.faqWrapperInner .productDetail { height: auto; }
+	.scrollTo { margin-top: -20px; }
 	.teamBg { top: 120px; }
 	.aboutBannerSubText .subTextMd br, .clientSayHead .headingLg br, .challengeList span br { display: none; }
+	br { display: none; }
+	.about-us .aboutBanner { height: 95vh; padding: 0 0 30vh; }
+	.popUpWrapper { max-width: 60%; }
+	.box_view_html br { display: block; }
+	.contactForm { margin: -180px 0 0; }
+	.technology .aboutBanner { padding: 0 0 10vh; }
+	.ourValueList .subTextBase br { display: block; }
+	.bannerDottedBg { bottom: -600px; }
+	.products  .aboutBannerBgDot { bottom: -800px; }
+}
+@media (max-width:1280px) {
+	:root { --font4xl: 32px; }
+	.banner { height: auto; padding: 30vh 0 10vh; }
+	.logo { width: 170px; }
+	nav li a { font-size: var(--fontSm); }
+	header { top: 16px; }
+	.headerWrap { padding: 20px 18px; }
+	.headerInner .accentOutlineBtn { padding: 15px 20px; font-size: 14px; }
+	.clientSay:before { height: 800px; top: -210px; left: -200px; }
+	.clientSayBg { top: 400px; }
+	.banner:before { top: -60%; left: -53%; }
+	.standardsTop .headingLg { width: 40%; }
+	.clientSayHead .subTextBase br { display: none; }
+	.systemsTop .subTextBase { width: 70%; }
+	.bannerContent { width: 62%; }
+	.popUpWrapper { max-width: 90%; }
+	.popUpWrapper .productDetail { height: calc(100dvh - 100px); overflow-y: scroll; overflow-x: hidden; }
+	.faqWrapperInner .productDetail { height: auto; }
+	.scrollTo { margin-top: -20px; }
+	.teamBg { top: 120px; }
+	.aboutBannerSubText .subTextMd br, .clientSayHead .headingLg br, .challengeList span br { display: none; }
+	br { display: none; }
+	.about-us .aboutBanner { height: 95vh; padding: 0 0 30vh; }
+	.team .popUpWrapper { max-width: 60%; }
+	.box_view_html br { display: block; }
+	.contactForm { margin: -180px 0 0; }
+	.technology .aboutBanner { padding: 0 0 10vh; }
+	.completions .aboutBanner, .production .aboutBanner, .drilling .aboutBanner { height: 75vh; padding: 0 0 10vh; }
+	.drilling .aboutBannerBgDot, .completions .aboutBannerBgDot, .production .aboutBannerBgDot { bottom: -800px; }
+	.products  .aboutBanner { height: 75vh; padding: 0 0 10vh; }
+	.ourValueList .subTextBase br { display: block; }
 }
 @media (max-width:1024px) {
 	.bannerContent { width: 70%; }
 }
 @media (max-width:768px) {
 	.ctaWrapperInner { width: 100%; padding: 44px 20px; }
-	
-									/* about us responsive */
 	.missionVissionInner { padding: 0; }
 	.mvBox { padding: 48px 54px; border-bottom: 1px solid var(--colorAccent); }
 	.missionVissionInner .row .col-lg-6:last-child .mvBox { border-bottom: none }
@@ -35,11 +78,12 @@
 	.systemsList { width: calc((100% / 2) - 7px); }
 	.gridFour .systemsList { width: calc((100% / 3) - 10px); }
 	.headerInner .accentOutlineBtn { display: inline-block; margin: 20px 0 0 0; }
+	.ourValueList .subTextBase br { display: none; }
 }
 @media (max-width:480px) {
 	:root { --font5xl: 32px; --font4xl: 28px; --font3xl: 24px; --fontMd: 16px; }
 	.lightCtaBtn { font-size: var(--fontSm); }
-	.accentBtn { padding: 15px 24px; line-height: 1; font-size: var(--fontSm); }
+	.accentBtn { padding: 15px 20px; line-height: 1; font-size: 12px; }
 	.headerWrap { padding: 14px 20px; }
 	.bannerContent { width: 100%; }
 	header { top: 14px; }
@@ -49,8 +93,8 @@
 	.whatWeDoInner:after { width: 100%; }
 	.wwdHeading .headingLg { margin: 0 0 28px 0; }
 	.ourValueListing { flex-direction: column; }
-	.ourValueContent { gap: 50px; }
-	.ourValueList { height: unset; }
+	.ourValueContent { gap: 50px; padding: 20px; }
+	.ourValueList { height: unset; min-height: 230px; }
 	.systemsTop .subTextBase { width: 100%; line-height: 130%; }
 	.systemsListingInner { flex-direction: column; width: 80%; }
 	.systemsList { width: 100% !important; }
@@ -62,7 +106,7 @@
 	.standardsInnerListing { flex-direction: column; width: 60%; margin: 0 auto; }
 	.standardsList span { font-size: var(--fontSm); }
 	.standardsListing { background: linear-gradient(90deg, rgba(223, 240, 227, 0) 0%, rgba(92, 151, 106, 0.8) 26%, rgba(92, 151, 106, 0.8) 74%, rgba(223, 240, 227, 0) 100%); margin-top: 34px; }
-	.clientSayHead .headingLg { margin: 0 auto; }
+	.clientSayHead .headingLg { margin: 0 auto; margin-bottom: 24px; }
 	.clientSayHead { padding: 0 0 40px 0; text-align: center; }
 	.standards:before { content: ''; position: absolute; width: 450px; height: 500px; background: url(../images/right-angle-vector.svg) center center no-repeat; background-size: contain; top: -150px; left: -200px; z-index: -1; opacity: 0.3; }
 	.clientSay:before { display: none; }
@@ -73,8 +117,6 @@
 	.ctaWrapperInner { width: 100%; padding: 44px 20px; }
 	.clientSayBg { width: max-content; height: 500px; bottom: -80px; object-fit: cover; left: -160px; }
 	.clientSayBg img { object-fit: cover; }
-	
-									/* about us responsive */
 	.aboutBanner { height: 90vh; }
 	.aboutBannerInner { text-align: center; }
 	.aboutBannerSubText .lightCtaBtn { margin: 0 auto; }
@@ -114,7 +156,7 @@
 	.scrollToInner:after { left: -130%; }
 	.teamBg { bottom: -110px; top: auto; }
 	.contactFormInner { padding: 20px; }
-	.contactFormInner .row { flex-direction: column-reverse; }
+	.contactFormInner > .row { flex-direction: column-reverse; }
 	.contactFormContent { margin: 44px 0 0 0; }
 	.contentHeading { text-align: center; }
 	.liOption div { font-size: var(--fontSm); }
@@ -122,7 +164,7 @@
 	.contact-us     .aboutBanner { height: 80vh; }
 	.aboutBanner:before { top: -40%; left: 13%; }
 	.challengeListing { flex-wrap: wrap; }
-	.challengeList { width: 80%; margin: 0 auto; }
+	.challengeList { width: 80%; margin: 0 auto; min-height: 150px; }
 	.challengeTop { padding: 44px 30px; text-align: center; }
 	.howSolveInner { padding: 20px; }
 	.howSolveInner .row { display: flex; flex-wrap: wrap; }
@@ -156,4 +198,45 @@
 	.accordianHeading h4 { font-size: 12px; }
 	.accordianHeading { padding: 12px 48px 12px 18px; }
 	footer:after { display: none; }
+	.resourceWrapper .scrollTopUl ul li a { padding: 16px 23px; white-space: nowrap; }
+	.resourceWrapper .scrollTopUl ul { justify-content: flex-start; overflow-x: scroll; }
+	.resourceListing { padding: 20px; }
+	.hoverGrid { position: relative; z-index: 2; }
+	.faqWrapperInner { padding: 34px 20px 34px 20px; }
+	.pcHeading a { text-align: center; width: 100%; font-size: 14px; margin: 24px 0 0 0; }
+	.faqWrapperInner .headingXl { font-size: 16px; }
+	.faqWrapperInner .subText1 { margin: 0; }
+	.home .clientSayBg { top: auto; }
+	.popUpWrapper .accordianHeading { padding: 12px 18px 12px 18px; }
+	.aboutBanner { height: 80vh !important; }
+	.aboutBanner:after { bottom: -100%; }
+	.contact-us .mapWrap:before { height: 480px; width: 300px; top: -170px; left: -130px; }
+	.contact-us .mapWrap:after { height: 460px; width: 400px; bottom: -250px; right: -160px; }
+	.contact-us .contactForm:before { width: 390px; height: 600px; left: -81%; top: 80%; }
+	.point_style img { width: 12px; }
+	.whoWeAre { margin: -50px 0 0; }
+	.technology .aboutBanner { padding: 0 0 15vh; }
+	.capabiliesList { padding: 24px 60px 24px 24px; }
+	.drilling .aboutBanner, .completions .aboutBanner, .production .aboutBanner { height: 70vh !important; }
+	.drilling .ctaWrapper, .completions .ctaWrapper, .production .ctaWrapper { padding: 100px 0 0 0; }
+	.drilling .ctaWrapper:after, .completions .ctaWrapper:after, .production .ctaWrapper:after { width: 200%; height: 550px; bottom: 280px; left: -60px; z-index: -1; z-index: -1; }
+	.drilling .scrollTopUl ul li a, .completions .scrollTopUl ul li a, .production .scrollTopUl ul li a { padding: 16px 26px; }
+	.drilling .aboutBannerBgDot, .completions .aboutBannerBgDot, .production .aboutBannerBgDot { bottom: -750px; }
+	.drilling .accordianWrapperInner, .completions .accordianWrapperInner, .completions .accordianWrapperInner { padding: 44px 20px; }
+	.drilling .accordianWrap, .completions .accordianWrap, .completions .accordianWrap { margin: 24px 0 0; }
+	.products .aboutBannerBgDot { bottom: -700px; }
+	.solveList div h4 { width: calc(100% - 34px); }
+	.headerOption { width: 100%; }
+	.challengeTop .headingLg { margin: 0 0 24px 0; }
+	.howSolve { margin: 64px 0; }
+	.accordianWrapper { margin: 0 0 64px 0; }
+	.faq .aboutBanner { padding: 0 0 45vh; }
+	.faq .aboutBanner:before { display: none; }
+	.faqWrapper { margin-top: -30vh; }
+	.privacy-policy .aboutBannerHeading .heading4xl, .terms-and-conditions .aboutBannerHeading .heading4xl { margin: 0 0 34px 0; }
+	.privacy-policy .aboutBanner, .terms-and-conditions .aboutBanner { padding: 0 0 45vh; }
+	.pageContent { margin: -30vh 0 0; }
+	.contact-us .aboutBanner { height: 70vh !important; }
+	.products .ctaWrapper::after { content: ''; position: absolute; width: 200%; height: 500px; background: url(../../images/about-btm-cta-bg.webp) 50% no-repeat; background-size: cover; top: -40%; left: -80px; }
+	.ourValueList .subTextBase br { display: none; }
 }

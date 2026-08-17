@@ -1,4 +1,4 @@
-.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 85vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
+.aboutBanner { position: relative; z-index: 1; overflow-x: clip; height: 65vh; display: flex; align-items: flex-end; padding: 0 0 20vh 0; }
 .aboutBannerBgDot { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
 .aboutBanner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
 .aboutBanner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
@@ -22,7 +22,7 @@
 .gridFour .systemsList { width: calc((100% / 4) - 11px); }
 .systemsList { background-color: #DFF0E3; padding: 8px; border-radius: 8px; position: relative; width: calc((100% / 3) - 10px); transition: all 0.3s; cursor: pointer; }
 .systemsList:before { content: ''; position: absolute; inset: 0; border-radius: 6px; padding: 1px; background: linear-gradient(180deg, #3DB659 0%, #DFF0E3 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; transition: all 0.3s; z-index: -1; }
-.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; height: 300px; }
+.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; height: 300px; min-height: 300px; }
 .systemsListImage:before { content: ''; position: absolute; height: 310px; width: 150px; background: url(../../images/right-angle-vector.svg)center center no-repeat; background-size: contain; transform: rotate(90deg); top: -230px; left: 90px; z-index: -1; transition: all 0.3s; }
 .systemsList:hover .systemsListImage { background: linear-gradient(1.95deg, #DFF0E3 1.64%, rgba(61, 182, 89, 0.5) 98.36%); }
 .systemsList:hover .systemsListImage:before { top: -110px; }
@@ -59,15 +59,15 @@
 .popUpWrapperOuter.activePopup { opacity: 1; visibility: visible; }
 .popUpWrapper { max-width: 70%; margin: 20px 20px 20px auto; border-radius: 8px; overflow: clip; transform: scale(0); transition: all 0.3s; transform-origin: center right; }
 .activePopup .popUpWrapper { transform: scale(1); }
-.productDetail { display: flex; background-color: var(--colorBg); padding: 44px; justify-content: space-between; }
+.productDetail { display: flex; background-color: var(--colorBg); padding: 44px; padding-bottom: 0; justify-content: space-between; }
 .productImage { width: 35%; height: max-content; background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); }
 .productContent { width: 60%; }
-.btnWrapper { margin: 34px 0 0 0; display: flex; gap: 34px; }
+.btnWrapper { padding: 0 0 30px; display: flex; gap: 34px; }
 .btnWrapper .lightCtaBtn { border: 1px solid var(--colorAccent); }
 .btnWrapper .lightCtaBtn:hover { border: 1px solid var(--colorSecondary); }
 .subText1 { display: block; text-transform: uppercase; font-size: 14px; font-weight: 600; background: linear-gradient(90deg, #3DB659 0%, #DFF0E3 100%); -webkit-background-clip: text; -webkit-text-fill-color: #005D4D8F !important; }
 .subText2 { margin: 24px 0 0 0; display: inline-block; }
-.productContent ul { margin: 24px 0 0 0; }
+.productContent ul { margin: 24px 0 0 0; padding: 0 0 34px; }
 .productContent ul li div { margin: 0 0 16px 0; }
 .productContent ul li div h4, .productContent ul li div span { padding: 0 0 0 20px; display: block; }
 .productContent ul li div h4 { position: relative; color: #002F2B; font-size: var(--fontBase); font-weight: 600; line-height: 130%; margin: 0 0 8px 0; }
