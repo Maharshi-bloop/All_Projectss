@@ -136,7 +136,11 @@ $(document).ready(function () {
                 spaceBetween: 30
             },
             1366: {
-                slidesPerView: 3,
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+            1280: {
+                slidesPerView: 4,
                 spaceBetween: 30
             },
             480: {
@@ -173,7 +177,11 @@ $(document).ready(function () {
                 spaceBetween: 20
             },
             1366: {
-                slidesPerView: 3,
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            1280: {
+                slidesPerView: 4,
                 spaceBetween: 20
             },
             480: {
@@ -198,61 +206,61 @@ $(document).ready(function () {
     const section = document.querySelector(".receiveWrap");
     const line = document.querySelector(".threeTownsHoriListing");
     const receiveWrapInner = document.querySelector(".receiveWrapInner");
-    const items = gsap.utils.toArray(".threeTownsHoriList");
+    // ems = gsap.utils.toArray(".threeTownsHoriList");
 
-    console.log($(receiveWrapInner).width());
+    // log($(receiveWrapInner).width());
 
-    if (section && line && items.length) {
+    // ion && line && items.length) {
 
-        ScrollTrigger.create({
-            trigger: section,
-            start: "10% 30%",
-            end: "+=200%",
-            scrub: true,
-            pin: true,
-            /* markers: true, */
-            anticipatePin: 1,
+    // llTrigger.create({
+    // trigger: section,
+    // start: "10% 30%",
+    // end: "+=200%",
+    // scrub: true,
+    // pin: true,
+    // /* markers: true, */
+    // anticipatePin: 1,
 
-            onUpdate: (self) => {
+            //onUpdate: (self) => {
 
                 // line width progress
-                const lineWidth = self.progress * $(receiveWrapInner).width();
+                //const lineWidth = self.progress * $(receiveWrapInner).width();
 
                 // update CSS variable
-                line.style.setProperty("--line-width", `${lineWidth}px`);
+               // line.style.setProperty("--line-width", `${lineWidth}px`);
 
                 // line start position
-                const lineStart = line.getBoundingClientRect().left - 50;
+               // const lineStart = line.getBoundingClientRect().left - 50;
 
                 // current line end position
-                const lineEnd = lineStart + lineWidth;
+               // const lineEnd = lineStart + lineWidth;
 
-                items.forEach((item) => {
+              //  items.forEach((item) => {
 
                     // diamond position
-                    const diamond = item.querySelector(":scope");
+                 //   const diamond = item.querySelector(":scope");
 
-                    const itemLeft = item.getBoundingClientRect().left;
+                   // const itemLeft = item.getBoundingClientRect().left;
 
                     // toggle when line touches diamond
-                    if (lineEnd >= itemLeft) {
-                        item.classList.add("active");
-                    } else {
-                        item.classList.remove("active");
-                    }
+                  //  if (lineEnd >= itemLeft) {
+                  //      item.classList.add("active");
+                  //  } else {
+                  //      item.classList.remove("active");
+                  //  }
 
-                });
-            }
-        });
-        window.addEventListener("load", () => {
-            ScrollTrigger.refresh();
-        });
-    }
+       //         });
+       //     }
+       // });
+   //     window.addEventListener("load", () => {
+   //         ScrollTrigger.refresh();
+   //     });
+   // }
 
     /* hori scroll js end */
 
 
-    $(".faqList .subTextMd").hide();
+    /* $(".faqList .subTextMd").hide();
     $(".faqList:first .subTextMd").show();
     $(".faqList:first").addClass("active");
 
@@ -269,7 +277,7 @@ $(document).ready(function () {
             $parent.addClass("active");
             $parent.find(".subTextMd").stop().slideDown();
         }
-    });
+    }); */
 
     /* $(".faqList:first-child").addClass("active");
     $(".subTextMd").slideUp();

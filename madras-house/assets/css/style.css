@@ -1,0 +1,148 @@
+/* Font Declaration */
+
+/* Arima */
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-Bold.woff2') format('woff2'), url('../webfonts/Arima/Arima-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-ExtraLight.woff2') format('woff2'), url('../webfonts/Arima/Arima-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-Light.woff2') format('woff2'), url('../webfonts/Arima/Arima-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-Medium.woff2') format('woff2'), url('../webfonts/Arima/Arima-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-Regular.woff2') format('woff2'), url('../webfonts/Arima/Arima-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-SemiBold.woff2') format('woff2'), url('../webfonts/Arima/Arima-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Arima'; src: url('../webfonts/Arima/Arima-Thin.woff2') format('woff2'), url('../webfonts/Arima/Arima-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+
+/* Noto Sans */
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-ExtraBold.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Italic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Light.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-MediumItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-ThinItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-BoldItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-ExtraLight.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-LightItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Medium.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Regular.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-SemiBold.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Thin.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Black.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-BlackItalic.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Sans'; src: url('../webfonts/NotoSans/NotoSans-Bold.woff2') format('woff2'), url('../webfonts/NotoSans/NotoSans-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+
+/* RESET CSS */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontSecondary); font-size: var(--fontBase); line-height: 1.6; background-color: var(--colorBg); }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+button { background: none; border: none; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+:root { --fontPrimary: 'Arima'; --fontSecondary: 'Noto Sans'; --colorPrimary: #42150C; --colorSecondary: #EAB64A; --colorAccent: #77A455; --colorBg: #FEF1EE; --colorText: #534340; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
+.heading7xl { font-size: var(--font7xl); font-weight: 500; color: var(--colorPrimary); font-family: var(--fontPrimary); margin-bottom: 24px; }
+.heading3xl { font-size: var(--font3xl); font-weight: 500; color: var(--colorPrimary); font-family: var(--fontPrimary); margin: 8px 0; }
+.primaryBtn { color: var(--colorWhite); font-size: var(--fontSm); padding: 12px 24px; background-color: var(--colorPrimary); border-radius: 8px; text-transform: uppercase; display: inline-block; letter-spacing: 1.2px; transition: all 0.3s; }
+.primaryBtn:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); }
+.subTextMd { font-size: var(--fontMd); color: var(--colorText); line-height: 28px; display: inline-block; }
+.subTextBase { font-size: var(--fontBase); color: var(--colorText); line-height: 28px; display: inline-block; }
+.subTextXs { font-size: var(--fontXs); color: var(--colorText); line-height: 28px; display: inline-block; letter-spacing: 1.2px; }
+
+/* === HEADER CSS START === */
+header { padding: 24px 0; position: fixed; width: 100%; top: 0; background-color: var(--colorBg); z-index: 10; }
+.headerWrap { display: flex; align-items: center; justify-content: space-between; }
+.toggleBtn { display: none; }
+.logo { width: 180px; }
+@media (min-width:1025px) {
+	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s; }
+	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
+	nav li { position: relative; }
+	nav li a { color: var(--colorBlack); position: relative; display: inline-block; padding: 16px; text-decoration: none; transition: all 0.3s; position: relative; text-transform: uppercase; font-size: var(--fontSm); letter-spacing: 1.2px; }
+	nav ul ul { position: absolute; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s; pointer-events: none; }
+	nav>ul>li:hover ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+	li.hasUl a { padding-right: 25px !important; }
+	li.hasUl a:before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
+}
+@media (max-width:1024px) {
+	.headerOption { position: fixed; top: 0; right: 0; width: 400px; height: 100vh; background-color: #E9EDF2 !important;        /* You can replace with a global var */ transform: translateX(100%); transition: all 0.3s; list-style: none; padding: 140px 0 0 0; margin: 0; }
+	.headerOption.openMenu { transform: translateX(0); }
+	nav ul li a { display: inline-block; width: 100%; margin: 20px 40px; font-size: 22px; color: var(--colorBlack); text-decoration: none; }
+	.toggleBtn { display: flex; width: 40px; height: 40px; background-color: var(--colorBg); align-items: center; justify-content: center; gap: 7px; flex-direction: column; position: relative; z-index: 10; border-radius: 12px; }
+	.toggleBtn span { width: 20px; height: 2px; background-color: var(--colorPrimary);        /* Replaced --active with --colorPrimary */ display: block; border-radius: 80px; transition: all 0.3s; }
+	.toggleBtn.closeBtn span:first-child { transform: rotate(45deg) translate(2px, 3px); }
+	.toggleBtn.closeBtn span:last-child { transform: rotate(-45deg) translate(3px, -4px); }
+	.toggleBtn span:nth-child(2) { display: none; }
+}
+
+/* === HEADER CSS END === */
+
+/* === BANNER CSS START === */
+.banner { height: 80vh; margin: 102px 0 0 0; }
+.bannerImage { width: 100%; height: 100%; position: relative; }
+.bannerImage img { width: 100%; height: 100%; object-fit: cover; }
+.bannerImage:before { content: ''; position: absolute; width: 100%; height: 100%; background-color: #42150C; opacity: 0.4; mix-blend-mode: multiply; }
+
+/* === BANNER CSS END === */
+
+/* headingText css */
+.headingText { padding: 80px 0; }
+.headingText .subTextMd { width: 80%; margin: 0 auto; }
+.mhIcon { width: 50px; margin: 0 auto; margin-top: 60px; }
+
+/* textImage css */
+.textImage { padding: 150px 0; background-color: #FFF8F6; border-top: 1px solid #d8c2bd4d; border-bottom: 1px solid #d8c2bd4d; }
+.textImagePhotoGrid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 12px; }
+.oneImage { border-radius: 8px; overflow: clip; }
+.oneImage:first-child { grid-area: 1 / 1 / 2 / 2; }
+.oneImage:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+.oneImage:last-child { grid-area: 1 / 2 / 3 / 3; }
+
+/* photoSlider css */
+.photoSlider { padding: 100px 0; background-color: var(--colorBg); border-top: 1px solid #d8c2bd4d; border-bottom: 1px solid #d8c2bd4d; }
+.photoSlider .swiper-wrapper { transition-timing-function: linear; }
+
+/* imageText css */
+.imageText { padding: 80px 0; background-color: #FFF8F6; }
+.chefBox { border-radius: 8px; overflow: clip; }
+.imageTextInner .row { align-items: center; justify-content: space-between; }
+
+/* mainBlogs css */
+.mainBlogs { padding: 100px 0; }
+.mainBlogsTop { display: flex; align-items: center; justify-content: space-between; }
+.mainBlogsTop .heading7xl { margin: 0; }
+.mainBlogListing { margin: 64px 0 0 0; }
+.blogCardShortDesc { margin: 16px 0 0 0; }
+.blogCardImage { height: 300px; border-radius: 8px; overflow: clip; }
+.blogCardImage img { width: 100%; height: 100%; object-fit: cover; }
+.mainBlogListing .col-lg-4:nth-child(2) .blogCard { margin: 30px 0 0 0; }
+.mainBlogListing .col-lg-4:last-child .blogCard { margin: 60px 0 0 0; }
+
+/* footer css */
+footer { padding: 100px 0 46px 0; background-color: var(--colorPrimary); }
+.footerInner .row { justify-content: space-between; }
+.footerLogo { width: 220px; }
+.footerInner .subTextBase { color: #fffc; margin: 40px 0 0 0; }
+.copyRightInner span { opacity: 0.6; font-size: var(--fontSm); text-transform: uppercase; letter-spacing: 1.8px; }
+.copyRightInner { margin: 80px 0 0 0; padding: 34px 0 0 0; color: var(--colorWhite); display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #ffffff33; }
+.newsLetter input { background-color: transparent; color: #ffffff80; border: none; border-bottom: 1px solid #ffffff80; width: 100%; padding: 20px 0; outline: none; }
+.newsLetter h6 { color: #fff; font-size: 16px; letter-spacing: 1.2px; }
+.footerUl ul { margin: 48px 0 0 0; display: flex; align-items: center; gap: 20px; color: var(--colorWhite); }
+.footerUl ul a { opacity: 0.8; font-weight: 300; letter-spacing: 1.1px; }
+
+/* =============== back to top button css ================== */
+.backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
+.backTop.activeBackToTop { opacity: 1; visibility: visible; }
+.backTop a svg { display: block; }
+.backTop a { text-align: center; border: 2px solid var(--colorPrimary); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; border-radius: 5px; position: relative; animation: topBtnBounce 2s ease-in-out infinite; color: var(--colorPrimary); background-color: var(--colorWhite); }
+.backTop:before { content: ''; position: absolute; width: 100%; height: 15px; bottom: -20px; border-radius: 50%; background-image: radial-gradient(#00000060 -50%, transparent 100%); filter: blur(3px); animation: boxshadowAnimate 2s linear infinite; }
+@keyframes topBtnBounce {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-15px); }
+	100% { transform: translateY(0) }
+}
+@keyframes boxshadowAnimate {
+	0%, 100% { opacity: 1; scale: 1; }
+	25% { opacity: 0.6; transform: scale(0.6); }
+	50% { opacity: 0.2; transform: scale(0.2); }
+	75% { opacity: 0.6; transform: scale(0.6); }
+}

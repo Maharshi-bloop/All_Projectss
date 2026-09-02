@@ -1,5 +1,5 @@
 /* === BANNER CSS START === */
-.banner { height: 90vh; position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; background-color: var(--colorPrimary); overflow-x: clip; z-index: 1; padding: 10vh 0 0 0; }
+.banner { height: 90vh; position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; /* background-color: var(--colorPrimary); */ overflow-x: clip; z-index: 1; padding: 10vh 0 0 0; }
 .bannerDottedBg { content: ''; position: absolute; width: 100%; height: 1100px; background: url(../../images/about-banner-dot-bg.webp) center center no-repeat; background-size: cover; left: 0; bottom: -400px; z-index: -1; }
 .banner:before { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB65966; filter: blur(150px); top: -40%; left: -23%; transform: rotate(50.36deg); z-index: -1; }
 .banner:after { content: ''; position: absolute; width: 980px; height: 530px; border-radius: 50%; background: #3DB6594D; filter: blur(150px); bottom: -40%; right: -33%; transform: rotate(30.36deg); z-index: -2; }
@@ -8,7 +8,7 @@
 .bannerBg:after { content: ''; position: absolute; width: 100%; height: 100%; background-color: var(--colorSecondary); top: 0; left: 0; z-index: -1; }
 .bannerBg video { width: 100%; height: 100%; object-fit: cover; }
 .bannerContent { width: 60%; text-align: center; margin: 0 auto; }
-.bannerContent .subTextMd { margin: 24px 0; }
+.bannerContent .subTextMd { margin: 24px 0; font-weight: 300; }
 .bannerContent .lightCtaBtn { display: flex; justify-content: center; margin: 0 auto; }
 .bannerContent .heading5xl { position: relative; }
 .bannerContent .heading5xl span { -webkit-background-clip: text; background-clip: text; background-image: linear-gradient(90deg, #ffffffc7 45%, #ffffff88 46%, #ffffff7c 54%, rgba(255, 255, 255, .3) 55%); background-position: 100% 50%; background-size: 240% 100%; display: block; -webkit-text-fill-color: transparent; color: transparent; transition: background-position 4s cubic-bezier(.215, .61, .355, 1); }
@@ -67,7 +67,7 @@ display: flex; flex-wrap: nowrap; width: 100%; padding: 0; list-style: none; col
 .systemsListingInner { display: flex; justify-content: space-between; gap: 14px; background: #FFFFFF66; padding: 14px; border-left: 1px solid var(--colorBg); border-right: 1px solid var(--colorBg); position: relative; width: 90%; margin: 0 auto; }
 .systemsList { background-color: #DFF0E3; padding: 8px; border-radius: 8px; position: relative; width: calc(100% / 3); transition: all 0.3s; }
 .systemsList:before { content: ''; position: absolute; inset: 0; border-radius: 6px; padding: 1px; background: linear-gradient(180deg, #3DB659 0%, #DFF0E3 100%); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; transition: all 0.3s; z-index: -1; }
-.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; }
+.systemsListImage { background: linear-gradient(1.95deg, rgba(223, 240, 227, 0.22) 1.64%, rgba(61, 182, 89, 0.11) 98.36%); border-radius: 6px; overflow: clip; transition: all 0.3s; z-index: 1; position: relative; height: 400px }
 .systemsListImage:before { content: ''; position: absolute; height: 310px; width: 150px; background: url(../../images/right-angle-vector.svg)center center no-repeat; background-size: contain; transform: rotate(90deg); top: -230px; left: 90px; z-index: -1; transition: all 0.3s; }
 .systemsList:hover .systemsListImage { background: linear-gradient(1.95deg, #DFF0E3 1.64%, rgba(61, 182, 89, 0.5) 98.36%); }
 .systemsList:hover .systemsListImage:before { top: -110px; }

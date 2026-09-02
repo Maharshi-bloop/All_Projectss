@@ -61,6 +61,7 @@
 	.drilling .aboutBannerBgDot, .completions .aboutBannerBgDot, .production .aboutBannerBgDot { bottom: -800px; }
 	.products  .aboutBanner { height: 75vh; padding: 0 0 10vh; }
 	.ourValueList .subTextBase br { display: block; }
+	.aboutBanner:before { top: -123%; left: -48%; }
 }
 @media (max-width:1024px) {
 	.bannerContent { width: 70%; }
