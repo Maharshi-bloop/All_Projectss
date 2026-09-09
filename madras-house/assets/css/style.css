@@ -43,7 +43,8 @@ table { border-collapse: collapse; width: 100%; }
 .heading11xl { font-size: var(--font11xl); font-weight: 500; color: var(--colorWhite); font-family: var(--fontPrimary); }
 .heading7xl { font-size: var(--font7xl); font-weight: 500; color: var(--colorPrimary); font-family: var(--fontPrimary); margin-bottom: 24px; }
 .heading3xl { font-size: var(--font3xl); font-weight: 500; color: var(--colorPrimary); font-family: var(--fontPrimary); margin: 8px 0; }
-.primaryBtn { color: var(--colorWhite); font-size: var(--fontSm); padding: 12px 24px; background-color: var(--colorPrimary); border-radius: 8px; text-transform: uppercase; display: inline-block; letter-spacing: 1.2px; transition: all 0.3s; }
+.headingXl { font-size: var(--fontXl); font-weight: 500; color: var(--colorPrimary); font-family: var(--fontPrimary); margin: 8px 0; }
+.primaryBtn, .single_add_to_cart_button { color: var(--colorWhite); font-size: var(--fontSm); padding: 12px 24px; background-color: var(--colorPrimary); border-radius: 8px; text-transform: uppercase; display: inline-block; letter-spacing: 1.2px; transition: all 0.3s; }
 .primaryBrdrBtn { display: inline-block; letter-spacing: 1.2px; transition: all 0.3s; padding: 12px 24px; background-color: transparent; color: var(--colorPrimary); border: 1px solid var(--colorPrimary); border-radius: 8px; text-transform: uppercase; }
 .primaryBrdrBtn:hover { background-color: var(--colorPrimary); color: var(--colorWhite); }
 .primaryBtn:hover { background-color: var(--colorSecondary); color: var(--colorPrimary); }
@@ -96,6 +97,7 @@ header { padding: 24px 0; position: fixed; width: 100%; top: 0; background-color
 .textImage { padding: 150px 0; background-color: #FFF8F6; border-top: 1px solid #d8c2bd4d; border-bottom: 1px solid #d8c2bd4d; }
 .textImagePhotoGrid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 12px; }
 .oneImage { border-radius: 8px; overflow: clip; }
+.oneImage img { width: 100%; height: 100%; object-fit: cover; }
 .oneImage:first-child { grid-area: 1 / 1 / 2 / 2; }
 .oneImage:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
 .oneImage:last-child { grid-area: 1 / 2 / 3 / 3; }
@@ -129,9 +131,15 @@ header { padding: 24px 0; position: fixed; width: 100%; top: 0; background-color
 .subBannerInner { text-align: center; width: 80%; margin: 0 auto; }
 
 /* cardWrapper css */
-.cardImage { border-radius: 8px; overflow: clip; height: 300px; }
-.cardImage img { width: 100%; height: 100%; object-fit: cover; }
+.cardImage { border-radius: 8px; overflow: clip; height: 300px; transition: all 0.3s; }
+.cardImage img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+.dateWrap { position: absolute; background-color: #fef1ee; padding: 8px 12px; bottom: 12px; left: 12px; border-radius: 8px; font-family: 'Arima'; letter-spacing: 1.2px; font-size: 18px; }
+.dateWrap span { font-weight: 500; }
+.singleCard:hover .cardImage img { transform: scale(1.1); }
+.singleCard { height: 100%; }
+.cardContent { height: calc(100% - 300px); display: flex; flex-direction: column; justify-content: space-between; }
 .cardTop { margin: 16px 0 0 0; }
+.cardTop .subTextBase { text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; }
 .cardBottom { padding: 48px 0 0 0; }
 .date .heading7xl { display: block; margin-top: 8px; padding-top: 8px; border-top: 1px solid #42150c33; }
 .date { display: flex; flex-direction: column; justify-content: center; align-items: center; }
@@ -169,7 +177,7 @@ header { padding: 24px 0; position: fixed; width: 100%; top: 0; background-color
 .formFeild label { width: 100%; display: block; text-transform: uppercase; font-weight: 600; color: var(--colorText); letter-spacing: 1.8px; }
 .formFeild input, .formFeild textarea { width: 100%; background-color: transparent; border: 1px solid #42150c80; padding: 16px; margin: 12px 0 0 0; }
 .formFeild { margin: 0 0 24px 0; }
-button.primaryBtn { margin: 0 auto; display: flex; }
+.formDesign button.primaryBtn { margin: 0 auto; display: flex; }
 
 /* gridLayOut css */
 .gridLayOut { margin: 0 0 100px 0; }
@@ -181,6 +189,9 @@ button.primaryBtn { margin: 0 auto; display: flex; }
 .bottomCta { padding: 100px; border-top: 1px solid #1f1a1933; }
 .bottomCtaInner { text-align: center; width: 80%; margin: 0 auto; }
 .bottomCtaInner .subTextMd { margin: 16px 0 26px 0; }
+
+/* feed back form  css*/
+.feedback-form .contactFormWrap { margin: 112px 0 0 0; }
 
 /* footer css */
 footer { padding: 100px 0 46px 0; background-color: var(--colorPrimary); }
@@ -198,7 +209,48 @@ footer { padding: 100px 0 46px 0; background-color: var(--colorPrimary); }
 .footerSocialUl ul { display: flex; align-items: center; gap: 20px; }
 .footerSocialUl ul a { opacity: 0.6; font-size: var(--fontMd); }
 .inputWrap span { display: block; }
-.inputWrap button[type="submit"] { position: absolute; top: 43%; right: 0; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transform: translateY(-50%); color: #ffffff80; font-size: 20px; }
+.inputWrap button[type="submit"] { position: absolute; top: 43%; right: 0; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transform: translateY(-50%); color: #ffffff80; font-size: var(--fontXl); }
+
+/* shop and product page css */
+.productSingle { margin: 102px 0 0 0; }
+.productsWrapper { border-top: 1px solid rgb(66 21 12 / 30%); margin: 50px 0 0 0; background-color: #fef1ee; padding: 48px; }
+.tb-seats-left-badge { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 14px; font-size: 15px; font-weight: 700; color: #0b8043; }
+.tb-seats-left-badge .tb-badge-check-box { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: #34a853; border-radius: 3px; color: #ffffff; font-size: 11px; font-weight: bold; line-height: 1; }
+.tb-seats-left-badge.is-sold-out { color: #d93025; }
+.tb-seats-left-badge.is-sold-out .tb-badge-check-box { background: #d93025; }
+.tb-booking-fields .form-row { margin-bottom: 12px; }
+.tb-booking-fields label { display: block; font-weight: 600; margin-bottom: 6px; }
+.tb-booking-fields select, .tb-booking-fields input[type="date"] { padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.tb-slots { display: flex; flex-wrap: wrap; gap: 8px; }
+.tb-slots-placeholder { color: #777; font-size: 14px; }
+.tb-slot-btn { padding: 8px 14px; border: 1px solid var(--colorPrimary); border-radius: 4px; background: var(--colorWhite); color: var(--colorPrimary); cursor: pointer; font-size: 13px; transition: all 0.2s ease; }
+.tb-slot-btn.is-selected { background: var(--colorPrimary); color: var(--colorWhite); }
+.tb-slot-btn:disabled, .tb-slot-btn.is-sold-out { opacity: 0.55; cursor: not-allowed; border-color: #dcdcde; color: #8c8f94; background: #f0f0f1; }
+form.cart:has(.tb-booking-fields) { margin-top: 15px; }
+form.cart .tb-booking-fields ~ .quantity, form.cart .quantity { display: inline-block; vertical-align: middle; margin-right: 12px; margin-bottom: 10px; }
+.quantity input, .formFeild textarea, select { width: 100%; background-color: transparent; border: 1px solid #42150c80; padding: 16px; margin: 12px 0 0 0; }
+form.cart button.single_add_to_cart_button { vertical-align: middle; margin-bottom: 10px; }
+p.price { color: var(--colorPrimary) !important; font-size: var(--font2xl) !important; }
+.single_add_to_cart_button { color: var(--colorWhite) !important; font-size: var(--fontSm) !important; padding: 14px 24px !important; background-color: var(--colorPrimary) !important; border-radius: 8px !important; text-transform: uppercase; display: inline-block !important; letter-spacing: 1.2px !important; transition: all 0.3s !important; font-weight: 400 !important; line-height: 1 !important; font-family: 'Noto Sans' !important; }
+p.form-row label { font-family: 'Arima'; font-weight: 600; letter-spacing: 1px; color: #42150c; }
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images { float: unset !important; width: 100%; }
+.woocommerce div.product div.summary { float: unset; width: 100%; }
+.woocommerce div.product form.cart div.quantity { float: unset; width: 100%; display: flex; align-self: stretch; }
+.personCount h6 { font-family: 'Arima'; font-weight: 600; letter-spacing: 1px; color: #42150c; }
+.personCount { margin: 26px 0; padding: 26px 0; border-top: 1px solid #42150c4d; border-bottom: 1px solid #42150c4d; }
+.btnWrapper { display: flex; gap: 20px; }
+.btnWrapper button { margin: 0 !important; width: 50%; }
+button.single_add_to_cart_button.primaryBrdrBtn.button.alt, .woocommerce-notices-wrapper a { display: inline-block !important; letter-spacing: 1.2px !important; transition: all 0.3s !important; padding: 12px 24px !important; background-color: transparent !important; color: var(--colorPrimary) !important; border: 1px solid var(--colorPrimary) !important; border-radius: 8px !important; text-transform: uppercase; font-weight: 400 !important; }
+button.single_add_to_cart_button.primaryBrdrBtn.button.alt:hover, .woocommerce-notices-wrapper a:hover { background-color: var(--colorPrimary) !important; color: var(--colorWhite) !important; }
+.woocommerce-message { position: absolute; z-index: 10; width: 100%; margin: 0; border: 0; outline: none; box-shadow: 0px 4px 9px 1px #00000033; border-radius: 8px; background-color: #fef1ee; }
+.woocommerce-message { position: absolute; z-index: 10; width: 100%; margin: 0; border: 0; outline: none; box-shadow: 0px 4px 9px 1px #00000033; border-radius: 8px; background-color: #fef1ee; font-size: 16px; color: #42150c; display: flex; align-items: center; justify-content: space-between; }
+main#main { position: relative; }
+.woocommerce-message::before { top: 50%; transform: translateY(-50%); }
+.woocommerce-message:after { display: none; }
+button.plus, button.minus { padding: 0; background-color: var(--colorBg); color: var(--colorPrimary); font-size: 24px; width: 61px; display: flex; align-items: center; justify-content: center; border: 1px solid  #42150c80; }
+.quantity input { margin: 0; }
+button.plus { border-left: 0; }
+button.minus { border-right: 0; }
 
 /* =============== back to top button css ================== */
 .backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
