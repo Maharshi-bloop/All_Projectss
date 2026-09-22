@@ -1,0 +1,258 @@
+/* Archivo font decelaration */
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-ExtraLight.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Italic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Light.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-LightItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Medium.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-MediumItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Regular.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-ThinItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-ThinItalic.woff') format('woff'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo SemiCondensed'; src: url('../webfonts/Archivo/ArchivoSemiCondensed-Black.woff2') format('woff2'), url('../webfonts/Archivo/ArchivoSemiCondensed-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Bold.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-SemiBold.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Thin.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-Black.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-BlackItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-BoldItalic.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../webfonts/Archivo/Archivo-ExtraBold.woff2') format('woff2'), url('../webfonts/Archivo/Archivo-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+
+/* Zalando Sans Expanded font decelaration */
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraBold.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraBold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraBoldItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraBoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraLight.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraLight.woff') format('woff'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraLightItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-ExtraLightItalic.woff') format('woff'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Italic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Italic.woff') format('woff'); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Light.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Light.woff') format('woff'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-LightItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Medium.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-MediumItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-MediumItalic.woff') format('woff'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Regular.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Regular.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-SemiBold.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-SemiBold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-SemiBoldItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-SemiBoldItalic.woff') format('woff'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Black.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-BlackItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-BlackItalic.woff') format('woff'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Bold.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-Bold.woff') format('woff'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Zalando Sans Expanded'; src: url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-BoldItalic.woff2') format('woff2'), url('../webfonts/ZalandoSansExpanded/ZalandoSansExpanded-BoldItalic.woff') format('woff'); font-weight: bold; font-style: italic; font-display: swap; }
+
+/* RESET CSS */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontSecondary); font-size: var(--fontBase); line-height: 1.6; background-color: var(--colorBg); }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+button { background: none; border: none; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+:root { --fontPrimary: 'Zalando Sans Expanded'; --fontSecondary: 'Archivo'; --colorPrimary: #2D3A2E; --colorSecondary: #B5683B; --colorAccent: #00b8ec; --colorBg: #F6F0E7; --colorBg2:#ECE7DE; --colorText: #292929; --colorText2:#6F6E68; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
+.heading9xl { font-size: var(--font9xl); font-weight: 600; color: #F4F3ED; font-family: var(--fontPrimary); }
+.heading8xl { font-size: var(--font8xl); font-weight: 600; color: #F4F3ED; font-family: var(--fontPrimary); }
+.heading6xl { font-size: var(--font6xl); font-weight: 600; color: var(--colorText); font-family: var(--fontPrimary); }
+.headingxl { font-size: var(--fontXl); font-weight: 600; color: var(--colorText); font-family: var(--fontPrimary); }
+.headingMd { font-size: var(--fontMd); font-weight: 600; color: var(--colorBg); font-family: var(--fontPrimary); }
+.subTextXl { font-size: var(--fontXl); color: var(--colorSecondary); display: inline-block; }
+.subTextMd { font-size: var(--fontMd); color: var(--colorBg); display: inline-block; }
+.subTextBase { font-size: var(--fontBase); color: var(--colorBg); display: inline-block; }
+.smallText { font-size: var(--fontBase); text-transform: uppercase; color: var(--colorSecondary); letter-spacing: 0.4px; font-weight: 600;display: inline-block; }
+.secondaryBtn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 40px; border-radius: 50px; background: var(--colorSecondary); color: var(--colorWhite); font-weight: 600; line-height: 1; white-space: nowrap; transition: all 0.3s ease; }
+.secondaryBtn:hover, .secondaryBtn:focus-visible { background: var(--colorPrimary); }
+.secondaryBtn:active { transform: scale(0.96); }
+.secondaryBrdrBtn { border: 1px solid var(--colorSecondary); border-radius: 50px; padding: 14px 40px; color: var(--colorWhite); font-weight: 600; display: inline-block; transition: all 0.3s ease; }
+.secondaryBrdrBtn:hover, .secondaryBrdrBtn:focus-visible { background: var(--colorSecondary); }
+.secondaryBrdrBtn:active { transform: scale(0.96); }
+.secondaryLink { color: var(--colorSecondary); padding: 10px; border-bottom: 1px solid var(--colorSecondary); display: inline-block; width: max-content; transition: all 0.3s; }
+.secondaryLink:hover { color: var(--colorWhite); border-color: var(--colorWhite); }
+
+/* === HEADER CSS START === */
+header { position: relative; z-index: 100; padding: 22px 0; }
+header .container-xl { width: min(100% - 48px, 1320px); margin-inline: auto; }
+.headerInner { min-height: 64px; }
+.headerWrap { display: flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 64px; }
+.headerOption { margin-left: auto; }
+.headerUl nav>ul { display: flex; align-items: center; gap: 26px; }
+.headerUl nav a { display: block; color: var(--colorPrimary); font-family: var(--fontSecondary); font-weight: 600; line-height: 1.2; white-space: nowrap; transition: color 0.2s ease; text-transform: uppercase; }
+.headerUl nav a:hover, .headerUl nav a:focus-visible { color: var(--colorSecondary); }
+.headerCtaOuter { display: flex; align-items: center; gap: 16px; margin-left: auto; }
+.toggleBtn { display: none; }
+@media (max-width:1024px) {
+	header .container-xl { width: min(100% - 32px, 1320px); }
+	.headerOption { position: fixed; top: 0; right: 0; z-index: 8; width: min(400px, 100%); height: 100vh; height: 100dvh; margin: 0; padding: 110px 32px 40px; overflow-y: auto; background: var(--colorBg); box-shadow: -12px 0 30px rgb(0 0 0 / 8%); transform: translateX(100%); visibility: hidden; transition: transform 0.3s ease, visibility 0.3s ease; }
+	.headerOption.openMenu { transform: translateX(0); visibility: visible; }
+	.headerUl nav>ul { flex-direction: column; align-items: stretch; gap: 0; }
+	.headerUl nav a { padding: 16px 0; border-bottom: 1px solid rgb(45 58 46 / 15%); font-size: 16px; }
+	.headerCtaOuter { margin-left: auto; }
+	.toggleBtn { position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; width: 40px; height: 40px; border-radius: 8px; background: var(--colorBg2); cursor: pointer; }
+	.toggleBtn span { display: block; width: 20px; height: 2px; border-radius: 2px; background: var(--colorPrimary); transition: transform 0.3s ease, opacity 0.3s ease; }
+	.toggleBtn.closeBtn span:first-child { transform: translateY(7px) rotate(45deg); }
+	.toggleBtn.closeBtn span:nth-child(2) { opacity: 0; }
+	.toggleBtn.closeBtn span:last-child { transform: translateY(-7px) rotate(-45deg); }
+}
+@media (max-width:480px) {
+	.logo img { width: 105px; }
+	.headerCtaOuter { gap: 10px; }
+}
+
+/* === HEADER CSS END === */
+
+/* === BANNER CSS START === */
+.heroBanner { position: relative; z-index: 1; overflow: clip; height: calc(100dvh - 110px); display: flex; align-items: flex-end; padding: 0 0 60px 0; }
+.heroBanner:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(45, 58, 46, 0) 22.43%, #221F1B 100%); top: 0; left: 0; z-index: 2; }
+.heroBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+.heroBannerBg video { width: 100%; height: 100%; object-fit: cover; }
+.heroBannerInner { position: relative; z-index: 3; display: flex; align-items: flex-end; justify-content: space-between; }
+.heroBannerLeft i { font-family: var(--fontPrimary); font-size: var(--font6xl); font-style: italic; font-weight: 300; color: var(--colorSecondary);display: inline-block; }
+.heroBannerLeft p { margin: 0; font-size: var(--fontXl); color: #D3D2CC; }
+.heroBannerRight strong { font-size: var(--fontXl); font-weight: 600; color: #F4F3ED; display: inline-block; }
+.heroBannerRight p { color: var(--colorWhite); margin: 16px 0 20px 0; }
+
+/* === BANNER CSS END === */
+
+/* textOnly css */
+.textOnly { padding: 120px 0; background-color: var(--colorPrimary); }
+.textOnlyInner .subTextMd { margin: 38px 0; }
+.textOnlyInner i { color: var(--colorSecondary); font-size: var(--fontXl); font-family: var(--fontPrimary); display: block; font-weight: 500; }
+.textOnlyInner { width: 60%; margin: 0 auto; }
+
+/* idea css */
+.idea { padding: 120px 0; }
+.textTransform { display: flex; flex-direction: column; height: 53px; margin: 0 0 0 10px; overflow: hidden; }
+.textTransform span { line-height: 52px; animation: textTransform 8s ease-in-out infinite; color: var(--colorSecondary); font-weight: 600; }
+@keyframes textTransform {
+	0% { transform: translateY(0); }
+	12.5% { transform: translateY(0); }
+	25% { transform: translateY(-100%); }
+	37.5% { transform: translateY(-100%); }
+	50% { transform: translateY(-200%); }
+	62.5% { transform: translateY(-200%); }
+	75% { transform: translateY(-300%); }
+	87.5% { transform: translateY(-300%); }
+	100% { transform: translateY(0); }
+}
+.ideaLeft .heading8xl { color: var(--colorText); margin: 20px 0 0 0; }
+.ideaLeft .subTextMd { color: var(--colorText2); width: 80%; }
+.ideaLeft .subTextMd strong { color: var(--colorText); }
+.animtedText { margin: 40px 0 20px 0; font-size: var(--font6xl); font-weight: 300; color: var(--colorText2); display: flex; align-items: center; }
+.ideaRight { height: 600px; width: 100%; position: relative; }
+.centerText { position: absolute; width: 250px; height: 250px; background-color: #221F1B; display: flex; align-items: center; justify-content: center; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: var(--fontLg); text-align: center; color: #949494; flex-direction: column; }
+.centerText strong { display: block; width: 100%; font-weight: 400; color: var(--colorWhite); }
+.floatingText { border: 1px solid #6F6E68; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 50%; background-color: #F2F2EB; transition: all 0.3s; }
+.floatingTextListing { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+.floatingText { --angle: 0deg; position: absolute; width: 120px; height: 120px; top: 50%; left: 50%; margin-left: -60px; margin-top: -60px; border: 1px solid #6F6E68; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 50%; background-color: #F2F2EB; transform: rotate(var(--angle)) translateX(260px) rotate(calc(var(--angle) * -1)); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.3s linear, visibility 0.3s linear; }
+.floatingText.active { opacity: 1; visibility: visible; transition: opacity 0.3s linear, visibility 0.3s linear, transform 0.3s linear; }
+.floatingText:nth-child(1) { --angle: 0deg; }
+.floatingText:nth-child(2) { --angle: 45deg; }
+.floatingText:nth-child(3) { --angle: 90deg; }
+.floatingText:nth-child(4) { --angle: 135deg; }
+.floatingText:nth-child(5) { --angle: 180deg; }
+.floatingText:nth-child(6) { --angle: 225deg; }
+.floatingText:nth-child(7) { --angle: 270deg; }
+.floatingText:nth-child(8) { --angle: 315deg; }
+.floatingConnector { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+.connectorLine { stroke: #6F6E68; stroke-width: 1; fill: none; }
+
+/* fourGrid css */
+.fourGrid { padding: 120px 0; background-color: #ECE7DE; }
+.gridList .subTextMd { color: var(--colorText2); line-height: 1.2; margin: 14px 0 0 0; }
+.GridListing { padding: 80px 0 0 0; display: flex; gap: 24px; }
+.gridList { border: 1px solid #CAC0B4; width: 25%; padding: 50px 24px; border-radius: 12px; display: flex; flex-direction: column; gap: 34px; }
+span.gridIndex { font-size: var(--font3xl); font-weight: 600; color: var(--colorSecondary); }
+
+/* principlesWrap css */
+.principlesWrap { position: relative; z-index: 1; background-color: #2D3A2E; padding: 120px 0; }
+.principlesWrapBg { position: absolute; width: 100%; height: 100%; opacity: 0.05; object-fit: cover; z-index: -1; top: 0; left: 0; }
+.principlesWrapBg img { width: 100%; height: 100%; object-fit: cover; }
+.principlesListing { margin: 80px auto 0 auto; display: flex; flex-wrap: wrap; row-gap: 40px; width: 80%; }
+.plIcon { width: 70px; height: 70px; background-color: var(--colorSecondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.principlesList { width: 50%; display: flex; align-items: center; gap: 24px; }
+.principlesList .headingxl { color: var(--colorBg); font-family: 'Archivo'; font-weight: 400; }
+
+/* textImage css */
+.textImage { padding: 120px 0; }
+.leftText .heading8xl { color: var(--colorText); font-weight: 500; }
+.accoWrap { margin: 60px 0 0 0; width: 90%; }
+.accordianHeading { position: relative; cursor: pointer; padding: 24px 0; }
+.accordianHeading:before { content: "\ea4e"; font-family: 'remixicon' !important; position: absolute; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; top: 50%; right: 0; transform: translateY(-50%); font-size: var(--fontLg); transition: all 0.5s; }
+.active .accordianHeading:before { transform: translateY(-50%) rotate(180deg); }
+.accordianHeading .headingxl { color: var(--colorSecondary); margin: 0; }
+.accordianBody .subTextMd { color: var(--colorText2); }
+.accordianItem { border-bottom: 1px solid #CAC0B4; }
+.accordianBody { padding: 0 0 24px 0; }
+.imageRight { display: flex; gap: 18px; }
+.imageCol { display: flex; flex-direction: column; gap: 18px; }
+.singleImage img { width: 100%; height: 100%; object-fit: cover; }
+.singleImage { width: 100%; height: 100%; border-radius: 10px; overflow: clip; }
+.imageCol:last-child { transform: translateY(30px); }
+
+/* teamWrapper css */
+.teamWrapper { padding: 120px 0; background-color: #ECE7DE; }
+.teamListing { margin: 90px 0 0 0; }
+.teamWrapperTop .smallText { margin: 0 0 20px 0; display: block; }
+.teamWrapperTopLeft .heading8xl { color: var(--colorText); }
+.teamWrapperTopRight .subTextMd { color: var(--colorText2); }
+.teamMemberImage { width: 100%; height: 100%; border-radius: 10px; overflow: clip; }
+.teamMemberImage img { width: 100%; height: 100%; object-fit: cover; }
+.teamMemberInfo { margin: 24px 0 0 0; }
+.teamMemberInfo .headingMd { color: var(--colorSecondary); }
+.teamMemberInfo .subTextBase { color: var(--colorText2); }
+
+/* participate css */
+.participate { padding: 120px 0; background-color: var(--colorPrimary); }
+.participateListing { margin: 100px 0 0 0; display: flex; border: 1px solid #f6f0e763; ; }
+.participateList { width: 20%; padding: 50px 36px; border-left: 1px solid #f6f0e763; display: flex; flex-direction: column; gap: 40px; justify-content: space-between; }
+.participateList:first-child { border-left: 0; }
+.partiListHeading .headingMd { margin: 0 0 20px 0; }
+.partiListHeading .subTextMd { line-height: 1.3; font-weight: 300; }
+.participateTop .heading8xl { margin: 40px 0 20px 0; }
+
+/* programme css */
+.programme { padding: 120px 0; }
+.programmeTop .heading8xl { color: var(--colorText); margin: 20px 0 0 0; }
+.tabContent { display: none; }
+.mobile-tab-title { display: none; }
+.active .tabContent { display: block; }
+.tabController .subTextMd { color: var(--colorText2); }
+ul.tab-titles { display: flex; flex-wrap: wrap; gap: 10px; margin: 70px 0; }
+ul.tab-titles li a { padding: 14px 16px; border: 1px solid #CAC0B4; display: inline-block; border-radius: 50px; min-width: 60px; line-height: 1; text-align: center; font-weight: 600; transition: all 0.3s; }
+ul.tab-titles li.active-li a { color: var(--colorWhite); background-color: var(--colorSecondary); border-color: var(--colorSecondary); }
+.itineraryBox { display: flex; justify-content: space-between; align-items: center; padding: 40px 0; border-bottom: 1px solid rgba(202, 192, 180, 1); gap: 50px; }
+.itineraryBox:first-child { border-top: 1px solid rgba(202, 192, 180, 1); }
+.itineraryInfo { width: 100%; }
+.itineraryInfo strong { display: block; }
+.category span { background-color: rgba(181, 104, 59, 0.1); border: 1px solid rgba(202, 192, 180, 1); padding: 14px 20px; border-radius: 40px; display: inline-block; width: max-content; line-height: 1; font-size: 14px; font-weight: 500; }
+.dayTime span { display: block; width: max-content; text-transform: uppercase; font-weight: 600; color: var(--colorSecondary); }
+
+/* footer css */
+.footerInner { padding: 160px 0; }
+.footerInner .row { justify-content: space-between; }
+.footerUl ul { column-count: 2; }
+.footerUl ul li a { text-transform: uppercase; color: var(--colorText); margin: 12px 0; display: inline-block; transition: all 0.3s; }
+.footerUl ul li a:hover { color: var(--colorSecondary); }
+.footerLogo a { width: 300px; display: block; height: 100px; }
+.footerLogo img { width: 100%; height: 100%; object-fit: contain; }
+.footerLogo span { font-size: var(--fontLg); font-family: var(--fontPrimary); font-weight: 500; margin: 12px 0 0 0; display: inline-block; }
+.footerSocialUl ul { display: flex; margin: 0 0 20px 0; gap: 10px; }
+.footerSocialUl ul li a { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: var(--colorSecondary); border-radius: 50%; color: var(--colorWhite); font-size: 20px; transition: all 0.3s; }
+.footerSocialUl ul li a:hover { background-color: var(--colorPrimary); }
+.footerRight { display: flex; flex-direction: column; align-items: flex-end; }
+.copyRight { padding: 16px; background-color: var(--colorSecondary); text-align: center; color: var(--colorWhite); }
+
+/* =============== back to top button css ================== */
+.backTop { position: fixed; bottom: 30px; right: 30px; opacity: 0; visibility: hidden; transition: all 0.8s; z-index: 10; }
+.backTop.activeBackToTop { opacity: 1; visibility: visible; }
+.backTop a svg { display: block; }
+.backTop a { text-align: center; border: 2px solid var(--colorPrimary); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; border-radius: 5px; position: relative; animation: topBtnBounce 2s ease-in-out infinite; color: var(--colorPrimary); background-color: #fff; }
+.backTop:before { content: ''; position: absolute; width: 100%; height: 15px; bottom: -20px; border-radius: 50%; background-image: radial-gradient(#00000060 -50%, transparent 100%); filter: blur(3px); animation: boxshadowAnimate 2s linear infinite; }
+@keyframes topBtnBounce {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-15px); }
+	100% { transform: translateY(0) }
+}
+@keyframes boxshadowAnimate {
+	0%, 100% { opacity: 1; scale: 1; }
+	25% { opacity: 0.6; transform: scale(0.6); }
+	50% { opacity: 0.2; transform: scale(0.2); }
+	75% { opacity: 0.6; transform: scale(0.6); }
+}
