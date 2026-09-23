@@ -56,7 +56,7 @@ table { border-collapse: collapse; width: 100%; }
 .subTextXl { font-size: var(--fontXl); color: var(--colorSecondary); display: inline-block; }
 .subTextMd { font-size: var(--fontMd); color: var(--colorBg); display: inline-block; }
 .subTextBase { font-size: var(--fontBase); color: var(--colorBg); display: inline-block; }
-.smallText { font-size: var(--fontBase); text-transform: uppercase; color: var(--colorSecondary); letter-spacing: 0.4px; font-weight: 600;display: inline-block; }
+.smallText { font-size: var(--fontBase); text-transform: uppercase; color: var(--colorSecondary); letter-spacing: 0.4px; font-weight: 600; display: inline-block; }
 .secondaryBtn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 40px; border-radius: 50px; background: var(--colorSecondary); color: var(--colorWhite); font-weight: 600; line-height: 1; white-space: nowrap; transition: all 0.3s ease; }
 .secondaryBtn:hover, .secondaryBtn:focus-visible { background: var(--colorPrimary); }
 .secondaryBtn:active { transform: scale(0.96); }
@@ -103,7 +103,7 @@ header .container-xl { width: min(100% - 48px, 1320px); margin-inline: auto; }
 .heroBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 .heroBannerBg video { width: 100%; height: 100%; object-fit: cover; }
 .heroBannerInner { position: relative; z-index: 3; display: flex; align-items: flex-end; justify-content: space-between; }
-.heroBannerLeft i { font-family: var(--fontPrimary); font-size: var(--font6xl); font-style: italic; font-weight: 300; color: var(--colorSecondary);display: inline-block; }
+.heroBannerLeft i { font-family: var(--fontPrimary); font-size: var(--font6xl); font-style: italic; font-weight: 300; color: var(--colorSecondary); display: inline-block; }
 .heroBannerLeft p { margin: 0; font-size: var(--fontXl); color: #D3D2CC; }
 .heroBannerRight strong { font-size: var(--fontXl); font-weight: 600; color: #F4F3ED; display: inline-block; }
 .heroBannerRight p { color: var(--colorWhite); margin: 16px 0 20px 0; }
@@ -180,7 +180,7 @@ span.gridIndex { font-size: var(--font3xl); font-weight: 600; color: var(--color
 .accordianBody .subTextMd { color: var(--colorText2); }
 .accordianItem { border-bottom: 1px solid #CAC0B4; }
 .accordianBody { padding: 0 0 24px 0; }
-.imageRight { display: flex; gap: 18px; }
+.imageRight { display: flex; gap: 18px; position: sticky; top: 60px; }
 .imageCol { display: flex; flex-direction: column; gap: 18px; }
 .singleImage img { width: 100%; height: 100%; object-fit: cover; }
 .singleImage { width: 100%; height: 100%; border-radius: 10px; overflow: clip; }

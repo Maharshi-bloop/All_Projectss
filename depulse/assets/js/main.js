@@ -145,8 +145,17 @@ $(document).ready(function () {
         // Reduce connector length by 60px
         const angle = Math.atan2(y2 - y1, x2 - x1);
 
-        const newX2 = x2 - Math.cos(angle) * 60;
-        const newY2 = y2 - Math.sin(angle) * 60;
+        var newX2 = x2 - Math.cos(angle) * 60;
+        var newY2 = y2 - Math.sin(angle) * 60;
+
+        if ($(window).width() <= 1024) {
+            var newX2 = x2 - Math.cos(angle) * 30;
+            var newY2 = y2 - Math.sin(angle) * 30;
+        }
+        /* else if ($(window).width() <= 480) {
+            var newX2 = x2 - Math.cos(angle) * 1000;
+            var newY2 = y2 - Math.sin(angle) * 1000;
+        } */
 
         // Draw line directly from center to floating text
         $connector.attr({
