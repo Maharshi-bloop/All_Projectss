@@ -16,7 +16,7 @@
 @media (max-width:1280px) {
 	:root { --fontXl: 20px; --font2xl: 28px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 30px; --font7xl: 32px; --font8xl: 36px; --font9xl: 52px; }
 	.gridList { padding: 30px 20px; }
-	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participate { padding: 80px 0; }
+	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participate, .ctaWrapper, .partner, .formWrapper { padding: 80px 0; }
 	.footerInner { padding: 120px 0; }
 	ul.tab-titles { margin: 30px 0 50px; }
 	.centerText { width: 200px; height: 200px; }
@@ -44,6 +44,9 @@
 	.footerUl ul { column-count: 0; display: flex; gap: 20px; justify-content: center; }
 	.footerInner { padding: 80px 0; }
 	.footerMiddle { margin: 0 0 50px 0; }
+	.logoList { height: 150px; padding: 40px; }
+	.ctaWrapperInner .subText2xl { width: 90%; }
+	.formDesign { width: 90%; }
 }
 @media (max-width:480px) {
 	:root { --fontXl: 18px; --font2xl: 20px; --font3xl: 20px; --font4xl: 22px; --font5xl: 22px; --font6xl: 24px; --font7xl: 26px; --font8xl: 28px; --font9xl: 46px; }
@@ -68,7 +71,7 @@
 	.footerRight { align-items: flex-start; }
 	.footerMiddle { margin: 50px 0; }
 	.subTextMd { line-height: 1.3; }
-	.secondaryBtn { padding: 14px 20px; }
+	.secondaryBtn { padding: 12px 20px; }
 	.logo img { width: 135px; }
 	.animtedText { margin: 30px 0 20px 0; }
 	.textTransform span { line-height: 38px; }
@@ -77,4 +80,11 @@
 	.secondaryBrdrBtn { padding: 15px 30px; line-height: 1; }
 	.textOnlyInner  br { display: none; }
 	.ideaLeft .subTextMd { width: 100%; }
+	.ctaWrapperInner .subText2xl { width: 100%; }
+	.formDesign { width: 100%; padding: 50px 20px; }
+	.formWrapperTop { margin: 0 0 50px 0; }
+	.logoList { height: 120px; padding: 30px; }
+	.partnerBanner { padding: 80px 0; }
+	.partnerBanner .subTextMd { color: var(--colorText); margin: 24px 0; width: 100%; }
+	.partnerLogoWrap { margin: 50px 0 0 0; }
 }
