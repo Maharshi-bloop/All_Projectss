@@ -108,6 +108,10 @@ $(document).ready(function () {
                 slidesPerView: 3.5,
                 spaceBetween: 30
             },
+            1280: {
+                slidesPerView: 3.5,
+                spaceBetween: 30
+            },
             480: {
                 slidesPerView: 1.5,
                 spaceBetween: 10

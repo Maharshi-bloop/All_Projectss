@@ -1,0 +1,4 @@
+@media (max-width:1366px) {
+	.logo { width: 150px; }
+	nav li a { padding: 16px 10px; }
+}

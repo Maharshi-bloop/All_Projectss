@@ -58,7 +58,7 @@ table { border-collapse: collapse; width: 100%; }
 .subText2xl { font-size: var(--font2xl); color: var(--colorSecondary); display: inline-block; }
 .subTextXl { font-size: var(--fontXl); color: var(--colorSecondary); display: inline-block; }
 .subTextMd { font-size: var(--fontMd); color: var(--colorBg); display: inline-block; }
-.subTextBase { font-size: var(--fontBase); color: var(--colorBg); display: inline-block; }
+.subTextBase { font-size: var(--fontBase); color: var(--colorBg); display: inline-block; font-weight: 300; }
 .smallText { font-size: var(--fontBase); text-transform: uppercase; color: var(--colorSecondary); letter-spacing: 0.4px; font-weight: 600; display: inline-block; }
 .secondaryBtn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 40px; border-radius: 50px; font-weight: 300; background: var(--colorSecondary); color: var(--colorWhite); white-space: nowrap; transition: all 0.3s ease; font-size: 18px; letter-spacing: 0.6px; }
 .secondaryBtn:hover, .secondaryBtn:focus-visible { background: var(--colorPrimary); }
@@ -210,7 +210,8 @@ span.gridIndex { font-size: var(--font3xl); font-weight: 600; color: var(--color
 
 /* programme css */
 .programme { padding: 120px 0; }
-.programmeTop .heading8xl { color: var(--colorText); margin: 20px 0 0 0; }
+.programmeTop .heading8xl { color: var(--colorText); margin: 20px 0; }
+.programmeTop .subTextMd { color: var(--colorText2); }
 .tabContent { display: none; }
 .mobile-tab-title { display: none; }
 .active .tabContent { display: block; }
@@ -271,10 +272,73 @@ button.secondaryBtn { margin: 0 auto; display: flex; }
 .custom-radio-style-2 { display: block; background-color: #F6F3F2; padding: 12px; border-radius: 8px; margin: 0 0 8px 0; }
 .custom-radio-style-2 input { display: none; }
 .custom-radio-style-2 label { position: relative; cursor: pointer; text-align: left; width: 100%; height: 14px; line-height: 1; }
-.custom-radio-style-2 input:checked + label { border-color: var(--sttl-theme-pink-link); color: var(--sttl-theme-black-link); }
+.custom-radio-style-2 input:checked+label { border-color: var(--sttl-theme-pink-link); color: var(--sttl-theme-black-link); }
 .custom-radio-style-2 label:before { content: ''; -webkit-appearance: none; background-color: transparent; border: 1px solid; border-color: #914C21; width: 18px; height: 18px; display: inline-block; position: relative; vertical-align: middle; cursor: pointer; border-radius: 50%; top: 50%; left: 0; margin-right: 6px; transform: translateY(-50%); }
-.custom-radio-style-2 input:checked + label:before { border-color: #914C21; }
-.custom-radio-style-2 input:checked + label:after { content: ''; display: block; position: absolute; top: 50%; width: 12px; height: 12px; background: #914C21; border-radius: 50%; left: 3px; transform: translateY(-50%); }
+.custom-radio-style-2 input:checked+label:before { border-color: #914C21; }
+.custom-radio-style-2 input:checked+label:after { content: ''; display: block; position: absolute; top: 50%; width: 12px; height: 12px; background: #914C21; border-radius: 50%; left: 3px; transform: translateY(-50%); }
+
+/* planVisitBanner css */
+.planVisitBanner { padding: 120px 0; position: relative; z-index: 1; overflow: clip; }
+.planVisitBanner:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(90deg, #2D3A2E 0%, rgba(45, 58, 46, 0) 50.48%, #2D3A2E 100%); top: 0; left: 0; z-index: 0; }
+.planVisitBanner:after { content: ''; position: absolute; width: 100%; height: 100%; background: #00000080; top: 0; left: 0; z-index: -1; }
+.planVisitBgImage { position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+.planVisitBgImage img { width: 100%; height: 100%; object-fit: cover; }
+.planVisitBannerInner { display: flex; flex-direction: column; gap: 190px; position: relative; z-index: 1; }
+.planVisitBannerTop .heading9xl { text-transform: uppercase; color: var(--colorWhite); }
+.bottomBox { backdrop-filter: blur(12px); background: #00000033; border: 1px solid #8f8f8f33; padding: 28px; border-radius: 8px; height: 100%; }
+.bottomBox .headingxl { color: var(--colorWhite); }
+
+/* planDay css */
+.planDay { padding: 120px 0; }
+.planDayTop .heading8xl { color: var(--colorText); text-transform: uppercase; }
+.planDayTop .heading8xl i { font-weight: 300; color: var(--colorSecondary); text-transform: lowercase; }
+.planDayTop .subTextMd { color: var(--colorText2); margin: 16px 0 0 0; }
+.verticalText { text-transform: uppercase; writing-mode: sideways-lr; position: sticky; top: 20px; }
+.verticalText .heading8xl { color: var(--colorText); }
+.planDayWrap { margin: 100px 0 0 0; }
+.planDayWrap .tab-titles { margin: 0 0 40px 0; }
+.planDayWrap .tab-titles h4 { font-weight: 600; font-family: var(--fontPrimary); margin: 16px 0 0 0; }
+.planDayWrap .tab-titles span { display: inline-block; font-size: 20px; font-weight: 400; }
+.planDayWrap ul.tab-titles li a { border: unset; border-radius: 12px; font-weight: 600; transition: all 0.3s; background-color: var(--colorBg2); padding: 16px 24px; }
+.planDayWrap ul.tab-titles li.active-li a { color: var(--colorWhite); background-color: var(--colorSecondary); border-color: var(--colorSecondary); }
+.tabContainer { padding: 48px; border-radius: 16px; background-color: var(--colorBg2); }
+.eventTags { margin: 0 0 20px 0; }
+.eventTags, .eventTags ul { display: flex; gap: 10px; }
+.eventCategory { background-color: var(--colorPrimary); text-transform: uppercase; font-weight: 500; padding: 6px 12px 6px 28px; display: flex; color: var(--colorWhite); border-radius: 50px; line-height: normal; align-items: center; position: relative; }
+.eventCategory:before { content: ''; position: absolute; width: 9px; height: 9px; background-color: #b5683b; left: 12px; top: 51%; transform: translateY(-50%); border-radius: 50%; }
+.eventTags ul li { border: 1px solid var(--colorPrimary); background: #E4E2E1CC; text-transform: capitalize; font-weight: 500; padding: 6px 12px; display: inline-block; color: var(--colorPrimary); border-radius: 50px; line-height: normal; }
+.oneEvent { padding: 0 0 40px 0; margin: 0 0 40px 0; border-bottom: 1px solid #74787233; }
+.oneEvent:last-child { margin: 0; border: none; padding: 0; }
+.eventHeading .heading2xl { font-weight: 600; }
+.eventHeading .subTextMd { color: var(--colorText2); }
+.faqWrapper { padding: 120px 0; background-color: var(--colorBg2); }
+.eventDateTime { margin: 24px 0; }
+.eventMore { margin: 24px 0; }
+.eventDateTime ul { display: flex; gap: 30px; }
+.eventDateTime ul li i { color: var(--colorSecondary); }
+.eventMore a { padding: 5px 10px; border: 1px solid var(--colorPrimary); border-radius: 20px; transition: all 0.3s; }
+.eventMore a:hover { color: var(--colorBg2); background-color: var(--colorPrimary); }
+
+/* faqWrapper css */
+.faqWrapperTop .heading8xl { color: var(--colorText); }
+.faqListing { width: 80%; margin: 0 auto; }
+.faqListing .accordianHeading .headingxl { font-size: 20px; font-weight: 400; color: var(--colorText); }
+.faqListing .accoWrap { width: 100%; }
+
+/* experienceBanner css */
+.experienceBanner { padding: 80px 0; background-color: var(--colorBg2); }
+.experienceLeft .heading9xl { color: var(--colorSecondary); }
+.experienceImage { height: 400px; border-radius: 10px; overflow: clip; }
+.experienceImage img { width: 100%; height: 100%; object-fit: cover; }
+.experienceBannerInner .row { align-items: center; }
+.experienceWrapperInner { margin: 120px 0; display: flex; flex-direction: column; gap: 70px; }
+.experienceBox { overflow: clip; position: relative; z-index: 1; border-radius: 10px; }
+.experienceBoxImage { width: 100%; height: 750px; border-radius: 10px; overflow: clip; }
+.experienceBoxImage img { width: 100%; height: 100%; object-fit: cover; }
+.experienceBox:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(34, 31, 27, 0) 47.92%, #221F1B 98.95%); }
+.experienceBoxContent { position: absolute; z-index: 1; width: 100%; bottom: 0; padding: 60px; display: flex; align-items: center; justify-content: space-between; }
+.experienceBoxContent .heading6xl { color: var(--colorBg2); }
+.experienceBoxContent .subTextMd { width: 40%; }
 
 /* footer css */
 .footerInner { padding: 160px 0; }

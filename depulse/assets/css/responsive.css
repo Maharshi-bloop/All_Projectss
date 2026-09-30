@@ -12,15 +12,17 @@
 	.ideaRight { height: 450px; }
 	.participateList { padding: 30px 16px; }
 	header { padding: 12px 0; }
+	.planDayWrap .tab-titles h4 { font-size: 18px; }
 }
 @media (max-width:1280px) {
 	:root { --fontXl: 20px; --font2xl: 28px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 30px; --font7xl: 32px; --font8xl: 36px; --font9xl: 52px; }
 	.gridList { padding: 30px 20px; }
-	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participate, .ctaWrapper, .partner, .formWrapper { padding: 80px 0; }
+	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participate, .ctaWrapper, .partner, .formWrapper, .planVisitBanner, .planDay, .faqWrapper { padding: 80px 0; }
 	.footerInner { padding: 120px 0; }
 	ul.tab-titles { margin: 30px 0 50px; }
 	.centerText { width: 200px; height: 200px; }
 	.floatingText { transform: rotate(var(--angle)) translateX(200px) rotate(calc(var(--angle) * -1)); }
+	.planVisitBannerInner { gap: 120px; }
 }
 @media (max-width:1024px) {
 	.floatingText { width: 80px; height: 80px; }
@@ -47,6 +49,12 @@
 	.logoList { height: 150px; padding: 40px; }
 	.ctaWrapperInner .subText2xl { width: 90%; }
 	.formDesign { width: 90%; }
+	.verticalText { display: none; }
+	.planDayWrap .tab-titles h4 { font-size: 16px; }
+	.planDayWrap .tabContainer { margin: 40px 0 0 0; }
+	.eventTags, .eventTags ul { flex-wrap: wrap; }
+	.planDayWrap .tab-titles { margin: 0; }
+	.planDayWrap { margin: 60px 0 0 0; }
 }
 @media (max-width:480px) {
 	:root { --fontXl: 18px; --font2xl: 20px; --font3xl: 20px; --font4xl: 22px; --font5xl: 22px; --font6xl: 24px; --font7xl: 26px; --font8xl: 28px; --font9xl: 46px; }
@@ -87,4 +95,11 @@
 	.partnerBanner { padding: 80px 0; }
 	.partnerBanner .subTextMd { color: var(--colorText); margin: 24px 0; width: 100%; }
 	.partnerLogoWrap { margin: 50px 0 0 0; }
+	.faqListing { width: 100%; }
+	.planDayWrap .tabContainer { padding: 30px 20px; }
+	.planDayWrap .tab-titles { margin: 0; flex-wrap: nowrap; }
+	.planDayWrap ul.tab-titles li a { padding: 6px 14px; }
+	.planDayWrap .tab-titles span { font-size: 14px; }
+	.planDayWrap .tab-titles h4 { font-size: 14px; }
+	.eventDateTime ul { gap: 10px; flex-direction: column; }
 }

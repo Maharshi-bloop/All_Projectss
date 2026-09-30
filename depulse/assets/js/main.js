@@ -120,6 +120,19 @@ $(document).ready(function () {
     /* tabbing js end */
 
 
+    /* planDayWrap tabbing js start */
+    $(".planDayWrap .tabing-main .tabContainer .tab-content-main:first").addClass("active");
+    $(".planDayWrap .tabing-main .tab-titles li:first").addClass("active-li")
+    $(".planDayWrap .tabing-main .tab-titles li a").on("click", function (event) {
+        event.preventDefault()
+        $(".planDayWrap .tabing-main .tab-titles li").removeClass("active-li")
+        $(this).parent().addClass("active-li");
+        $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
+        $($(this).attr('href')).addClass("active");
+    })
+    /* planDayWrap tabbing js end */
+
+
 
     /* floating text animation start*/
     const $floatingTexts = $('.floatingText');
