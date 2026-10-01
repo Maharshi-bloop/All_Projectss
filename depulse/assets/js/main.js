@@ -214,4 +214,65 @@ $(document).ready(function () {
 
     /* floating text animation end*/
 
+
+    /*  */
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".whyDepulse",
+            start: "top top",
+            end: "+=1500",
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true
+        }
+    });
+
+
+    // =====================================
+    // EVERYTHING STARTS AT THE SAME TIME
+    // =====================================
+
+    tl.to(".oldLogoWrap", {
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut"
+    }, 0);
+
+    tl.to(".newLogoWrap", {
+        opacity: 1,
+        duration: 1,
+        ease: "power1.inOut"
+    }, 0);
+
+
+    // 2.0 comes from bottom
+    tl.to(".versionNew", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power1.out"
+    }, 0);
+
+
+    // OLD TEXT GOES DOWN
+    tl.to(".pulseTextOld", {
+        y: "-100%",
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut"
+    }, 0);
+
+
+    // NEW TEXT COMES FROM BOTTOM
+    tl.to(".pulseTextNew", {
+        y: "0%",
+        opacity: 1,
+        duration: 1,
+        ease: "power1.inOut"
+    }, 0);
+    /*  */
+
 })

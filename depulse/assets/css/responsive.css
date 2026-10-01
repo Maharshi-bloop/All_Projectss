@@ -17,7 +17,7 @@
 @media (max-width:1280px) {
 	:root { --fontXl: 20px; --font2xl: 28px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 30px; --font7xl: 32px; --font8xl: 36px; --font9xl: 52px; }
 	.gridList { padding: 30px 20px; }
-	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participate, .ctaWrapper, .partner, .formWrapper, .planVisitBanner, .planDay, .faqWrapper { padding: 80px 0; }
+	.textOnly, .fourGrid, .principlesWrap, .textImage, .teamWrapper, .programme, .participation, .ctaWrapper, .partner, .formWrapper, .planVisitBanner, .planDay, .faqWrapper, .twoGrid { padding: 80px 0; }
 	.footerInner { padding: 120px 0; }
 	ul.tab-titles { margin: 30px 0 50px; }
 	.centerText { width: 200px; height: 200px; }
@@ -55,6 +55,13 @@
 	.eventTags, .eventTags ul { flex-wrap: wrap; }
 	.planDayWrap .tab-titles { margin: 0; }
 	.planDayWrap { margin: 60px 0 0 0; }
+	.experienceLeft { margin: 0 0 40px 0; }
+	.twoGridList { padding: 40px 30px; }
+	.leftText { margin: 70px 0 0 0; text-align: center; }
+	.leftText br { display: none; }
+	.experienceBoxContent { padding: 30px 30px; align-items: flex-start; justify-content: flex-start; flex-direction: column; }
+	.experienceBoxContent .subTextMd { width: 100%; }
+	.experienceBoxImage { height: 500px; }
 }
 @media (max-width:480px) {
 	:root { --fontXl: 18px; --font2xl: 20px; --font3xl: 20px; --font4xl: 22px; --font5xl: 22px; --font6xl: 24px; --font7xl: 26px; --font8xl: 28px; --font9xl: 46px; }
@@ -102,4 +109,7 @@
 	.planDayWrap .tab-titles span { font-size: 14px; }
 	.planDayWrap .tab-titles h4 { font-size: 14px; }
 	.eventDateTime ul { gap: 10px; flex-direction: column; }
+	.twoGridList { padding: 30px 20px; }
+	.contentCta a { font-size: 16px; }
+	.glIcon { width: 80px; height: 80px; padding: 25px; }
 }
