@@ -100,7 +100,7 @@ header { position: relative; z-index: 100; padding: 22px 0; }
 /* === HEADER CSS END === */
 
 /* === BANNER CSS START === */
-.heroBanner { position: relative; z-index: 1; overflow: clip; height: calc(100dvh - 110px); display: flex; padding: 0 0 60px 0; }
+.heroBanner { position: relative; z-index: 1; overflow: clip; height: calc(100dvh - 110px); display: flex; padding: 80px 0 60px 0; }
 
 /* .heroBanner:before { content: ''; position: absolute; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(45, 58, 46, 0) 22.43%, #221F1B 100%); top: 0; left: 0; z-index: 2; } */
 .heroBannerBg { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
@@ -111,6 +111,15 @@ header { position: relative; z-index: 100; padding: 22px 0; }
 .heroBannerRight strong { font-size: var(--fontXl); font-weight: 600; color: #F4F3ED; display: inline-block; }
 .heroBannerRight p { color: var(--colorWhite); margin: 16px 0 20px 0; }
 .heroBannerInner>div { width: 50%; }
+.heroBannerTopLeft .heading9xl { color: var(--colorText); }
+.heroBannerTopLeft p { font-size: var(--font8xl); color: var(--colorSecondary); }
+.heroBannerTopRight { display: flex; flex-direction: column; align-items: flex-end; }
+.heroBannerTopRight strong { font-size: var(--font5xl); color: var(--colorSecondary); }
+.heroBannerTopRight span { font-size: 32px; color: var(--colorText2); }
+.heroBannerBottomLeft { display: flex; align-items: flex-end; }
+.heroBannerBottomRight { display: flex; align-items: flex-end; justify-content: flex-end; flex-direction: column; }
+.heroBannerBottomRight i { color: var(--colorSecondary); font-size: var(--font3xl);}
+.heroBannerBottomRight span { color: var(--colorText); font-size: var(--fontXl); }
 
 /* heroBannerBg1 css */
 .heroBannerBg1 video { width: 100%; height: 100%; object-fit: cover; }

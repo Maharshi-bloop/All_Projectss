@@ -14,6 +14,9 @@
 	header { padding: 12px 0; }
 	.planDayWrap .tab-titles h4 { font-size: 18px; }
 }
+@media (max-width:1024px) {
+	.planDayWrap ul.tab-titles li a { padding: 16px 14px; }
+}
 @media (max-width:1280px) {
 	:root { --fontXl: 20px; --font2xl: 28px; --font3xl: 26px; --font4xl: 28px; --font5xl: 30px; --font6xl: 30px; --font7xl: 32px; --font8xl: 36px; --font9xl: 52px; }
 	.gridList { padding: 30px 20px; }
