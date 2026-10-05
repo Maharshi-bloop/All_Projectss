@@ -87,6 +87,43 @@ $(document).ready(function () {
         stickyHeader();
     });
 
+    /* gallery Swiper js start */
+    new Swiper('.depulseGallerySwiper .swiper', {
+        loop: true,
+        slidesPerView: 2.5,
+        paginationClickable: true,
+        speed: 2000,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            dragSize: 150
+        },
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            1366: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
+            },
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
+            }
+        }
+    });
+    /* gallery Swiper js end */
+
 
     // First accordion body is open by default
     $(".accordianBody").hide();
@@ -273,6 +310,288 @@ $(document).ready(function () {
         duration: 1,
         ease: "power1.inOut"
     }, 0);
+
+    tl.to(".timelineLineProgress", {
+        height: "100%",
+        duration: 1,
+        ease: "none"
+    }, 0);
+
+    tl.to(".timelineCircle", {
+        backgroundColor: "#bd6b39",
+        borderColor: "#bd6b39",
+        duration: 0.2,
+        ease: "none"
+    }, 1);
     /*  */
 
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener("load", function () {
+
+        const section = document.querySelector(".mindfulism");
+        const wrapper = document.querySelector(".mindfulismInner");
+        const images = gsap.utils.toArray(".mindfulismImageList");
+        const content = document.querySelector(".mindfulismContent");
+
+        if (!section || !wrapper || !images.length) return;
+
+
+        // ==========================================
+        // INITIAL POSITION
+        // ==========================================
+
+        gsap.set(images, {
+            left: "50%",
+            top: "50%",
+            xPercent: -50,
+            yPercent: -50,
+            x: 0,
+            y: 0
+        });
+
+        gsap.set(images[0], {
+            rotation: -2
+        });
+
+        gsap.set(images[1], {
+            rotation: 2
+        });
+
+        gsap.set(images[2], {
+            rotation: -1
+        });
+
+        gsap.set(images[3], {
+            rotation: 1
+        });
+
+
+        // Center content
+        gsap.set(content, {
+            autoAlpha: 0,
+            y: 30
+        });
+
+
+        // ==========================================
+        // CALCULATE FINAL POSITIONS
+        // ==========================================
+
+        function getTargetPosition(element, position) {
+
+            const wrapperRect = wrapper.getBoundingClientRect();
+            const imageRect = element.getBoundingClientRect();
+
+            let targetX = 0;
+            let targetY = 0;
+
+            // ------------------------------
+            // TOP LEFT
+            // ------------------------------
+
+            if (position === "top-left") {
+
+                const targetLeft = wrapperRect.width * 0.05;
+                const targetTop = wrapperRect.height * 0.13;
+
+                targetX =
+                    targetLeft -
+                    (wrapperRect.width / 2 - imageRect.width / 2);
+
+                targetY =
+                    targetTop -
+                    (wrapperRect.height / 2 - imageRect.height / 2);
+            }
+
+
+            // ------------------------------
+            // BOTTOM LEFT
+            // ------------------------------
+
+            if (position === "bottom-left") {
+
+                const targetLeft = wrapperRect.width * 0.05;
+                const bottomSpace = wrapperRect.height * 0.08;
+
+                const targetTop =
+                    wrapperRect.height -
+                    bottomSpace -
+                    imageRect.height;
+
+                targetX =
+                    targetLeft -
+                    (wrapperRect.width / 2 - imageRect.width / 2);
+
+                targetY =
+                    targetTop -
+                    (wrapperRect.height / 2 - imageRect.height / 2);
+            }
+
+
+            // ------------------------------
+            // TOP RIGHT
+            // ------------------------------
+
+            if (position === "top-right") {
+
+                const rightSpace = wrapperRect.width * 0.05;
+                const targetLeft =
+                    wrapperRect.width -
+                    rightSpace -
+                    imageRect.width;
+
+                const targetTop = wrapperRect.height * 0.09;
+
+                targetX =
+                    targetLeft -
+                    (wrapperRect.width / 2 - imageRect.width / 2);
+
+                targetY =
+                    targetTop -
+                    (wrapperRect.height / 2 - imageRect.height / 2);
+            }
+
+
+            // ------------------------------
+            // BOTTOM RIGHT
+            // ------------------------------
+
+            if (position === "bottom-right") {
+
+                const rightSpace = wrapperRect.width * 0.05;
+
+                const targetLeft =
+                    wrapperRect.width -
+                    rightSpace -
+                    imageRect.width;
+
+                const bottomSpace = wrapperRect.height * 0.08;
+
+                const targetTop =
+                    wrapperRect.height -
+                    bottomSpace -
+                    imageRect.height;
+
+                targetX =
+                    targetLeft -
+                    (wrapperRect.width / 2 - imageRect.width / 2);
+
+                targetY =
+                    targetTop -
+                    (wrapperRect.height / 2 - imageRect.height / 2);
+            }
+
+
+            return {
+                x: targetX,
+                y: targetY
+            };
+        }
+
+
+        // ==========================================
+        // GET ALL TARGET POSITIONS
+        // ==========================================
+
+        const positions = [
+            getTargetPosition(images[0], "top-left"),
+            getTargetPosition(images[1], "bottom-left"),
+            getTargetPosition(images[2], "top-right"),
+            getTargetPosition(images[3], "bottom-right")
+        ];
+
+
+        // ==========================================
+        // SCROLL TIMELINE
+        // ==========================================
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+
+                start: "top top",
+
+                end: "+=1800",
+
+                scrub: 1.2,
+
+                pin: true,
+
+                anticipatePin: 1,
+
+                invalidateOnRefresh: true
+            }
+        });
+
+
+        // ==========================================
+        // IMAGE 1
+        // ==========================================
+
+        tl.to(images[0], {
+            x: positions[0].x,
+            y: positions[0].y,
+            rotation: 0,
+            ease: "none",
+            duration: 1
+        }, 0);
+
+
+        // ==========================================
+        // IMAGE 2
+        // ==========================================
+
+        tl.to(images[1], {
+            x: positions[1].x,
+            y: positions[1].y,
+            rotation: 0,
+            ease: "none",
+            duration: 1
+        }, 0);
+
+
+        // ==========================================
+        // IMAGE 3
+        // ==========================================
+
+        tl.to(images[2], {
+            x: positions[2].x,
+            y: positions[2].y,
+            rotation: 0,
+            ease: "none",
+            duration: 1
+        }, 0);
+
+
+        // ==========================================
+        // IMAGE 4
+        // ==========================================
+
+        tl.to(images[3], {
+            x: positions[3].x,
+            y: positions[3].y,
+            rotation: 0,
+            ease: "none",
+            duration: 1
+        }, 0);
+
+
+        // ==========================================
+        // CENTER CONTENT
+        // ==========================================
+
+        tl.to(content, {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.35,
+            ease: "none"
+        }, 0.72);
+
+
+        ScrollTrigger.refresh();
+
+    });
 })
