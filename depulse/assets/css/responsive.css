@@ -1,3 +1,11 @@
+@media (max-width:1440px) {
+	:root { --font5xl: 32px; --font6xl: 34px; --font7xl: 40px; --font8xl: 48px; }
+	.animtedText { font-size: var(--font5xl); }
+	.mindfulismImageList { width: 290px; }
+	.depulseGalleryTop .subTextMd br { display: none; }
+	.GridListing { grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+	.gridList .subTextMd br { display: none; }
+}
 @media (min-width:1200px) {
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { max-width: 1180px; }
 }
@@ -13,6 +21,7 @@
 	.participateList { padding: 30px 16px; }
 	header { padding: 12px 0; }
 	.planDayWrap .tab-titles h4 { font-size: 18px; }
+	.GridListing { grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
 }
 @media (max-width:1024px) {
 	.planDayWrap ul.tab-titles li a { padding: 16px 14px; }
@@ -35,7 +44,8 @@
 	.textOnlyInner { width: 90%; }
 	.GridListing { padding: 50px 0 0 0; }
 	.GridListing { flex-wrap: wrap; }
-	.gridList { width: 48%; }
+	
+																	/* .gridList { width: 48%; } */
 	.principlesListing { width: 100%; row-gap: 50px; }
 	.principlesList { width: 50%; gap: 12px; flex-direction: column; }
 	.principlesList .headingxl { width: 50%; text-align: center; }
@@ -65,6 +75,18 @@
 	.experienceBoxContent { padding: 30px 30px; align-items: flex-start; justify-content: flex-start; flex-direction: column; }
 	.experienceBoxContent .subTextMd { width: 100%; }
 	.experienceBoxImage { height: 500px; }
+	.provocation { padding: 80px 0 150px 0; }
+	.gridList { width: 100%; }
+	.accoWrap { width: 100%; }
+	.depulseTimeline { display: none; }
+	.whyDepulseSection { margin-top: 0; }
+	.mindfulismImageList { width: 200px; }
+	.biennaleBanner { padding: 80px 0; }
+	.mindfulismContent { width: 80%; background-color: #f5f0e873; backdrop-filter: blur(20px); padding: 30px 50px; border-radius: 12px; }
+	.mindfulismContent span { width: 100%; }
+	.mindfulismContent span br { display: none; }
+	.mindfulismImg { width: 40%; margin: 0 auto; }
+	.mindfulismContent { width: 100%; padding: 20px 30px; }
 }
 @media (max-width:480px) {
 	:root { --fontXl: 18px; --font2xl: 20px; --font3xl: 20px; --font4xl: 22px; --font5xl: 22px; --font6xl: 24px; --font7xl: 26px; --font8xl: 28px; --font9xl: 46px; }
@@ -96,7 +118,7 @@
 	.textTransform { height: 38px; }
 	.heroBanner:before { background: linear-gradient(180deg, rgba(45, 58, 46, 0) -27.57%, #221F1B 100%); }
 	.secondaryBrdrBtn { padding: 15px 30px; line-height: 1; }
-	.textOnlyInner  br { display: none; }
+	.textOnlyInner br { display: none; }
 	.ideaLeft .subTextMd { width: 100%; }
 	.ctaWrapperInner .subText2xl { width: 100%; }
 	.formDesign { width: 100%; padding: 50px 20px; }
@@ -115,4 +137,8 @@
 	.twoGridList { padding: 30px 20px; }
 	.contentCta a { font-size: 16px; }
 	.glIcon { width: 80px; height: 80px; padding: 25px; }
+	.fourValueListing { flex-direction: column; }
+	.fourValueList div:not(.fvIcon):before { display: none; }
+	.fourValueList div:not(.fvIcon) { padding: 20px 0 60px 0; margin: 0 0 60px 0; }
+	.fourValueList div:not(.fvIcon):after { top: auto; bottom: 0; }
 }
