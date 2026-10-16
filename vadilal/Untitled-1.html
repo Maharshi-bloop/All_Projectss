@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Drone Solutions</title>
+    <style>
+        /* Font declaration - use your project font files here */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/webfonts/WorkSans/WorkSans-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/webfonts/WorkSans/WorkSans-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* RESET CSS */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: var(--fontPrimary);
+            font-size: var(--fontBase);
+            line-height: 1.3;
+            -webkit-font-smoothing: antialiased;
+            background-color: var(--colorWhite);
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        :root {
+            --fontPrimary: 'Work Sans', Arial, sans-serif;
+            --colorPrimary: #0b3010;
+            --colorSecondary: #39c52b;
+            --colorWhite: #ffffff;
+            --colorBlack: #263027;
+            --fontXs: 12px;
+            --fontSm: 14px;
+            --fontBase: 16px;
+            --fontMd: 18px;
+            --font3xl: 34px;
+        }
+
+        .heading3xl {
+            font-size: var(--font3xl);
+            font-weight: 500;
+            line-height: 1;
+            color: var(--colorWhite);
+        }
+
+        .subTextMd {
+            font-size: var(--fontMd);
+            font-weight: 400;
+            line-height: 1.35;
+            display: inline-block;
+        }
+
+        .primaryBtn {
+            font-size: var(--fontXs);
+            font-weight: 500;
+            color: var(--colorWhite);
+            padding: 7px 10px;
+            border-radius: 50px;
+            background-color: var(--colorSecondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            transition: all 0.3s;
+        }
+
+        .primaryBtn:hover {
+            background-color: var(--colorPrimary);
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--colorSecondary);
+            outline-offset: 5px;
+        }
+
+        /* === BANNER CSS START === */
+        .banner {
+            position: relative;
+            margin: 16px 18px 44px 18px;
+        }
+
+        .bannerWrap {
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            border-radius: 34px;
+            background-color: #427c22;
+        }
+
+        .bannerBg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .bannerBg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .bannerWrap:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(12, 43, 5, 0.25), transparent);
+            z-index: -1;
+        }
+
+        .banner .container-xl {
+            width: 100%;
+            max-width: 1480px;
+            padding: 0 28px;
+            margin: 0 auto;
+        }
+
+        .bannerInner {
+            min-height: clamp(510px, 50.6vw, 740px);
+            padding: 50px 0 28px 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 80px;
+        }
+
+        .bannerContent {
+            width: 430px;
+            max-width: 50%;
+        }
+
+        .bannerContent .subTextMd {
+            color: rgba(255, 255, 255, 0.75);
+            margin: 8px 0 0 0;
+        }
+
+        .bannerPagination {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0 0 0;
+        }
+
+        .bannerPagination span {
+            width: 98px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .bannerPagination span.active {
+            background-color: var(--colorWhite);
+        }
+
+        .bannerProduct {
+            position: relative;
+            flex-shrink: 0;
+            width: 322px;
+            height: 146px;
+            padding: 14px;
+            border-radius: 19px;
+            background-color: rgba(241, 246, 231, 0.92);
+            backdrop-filter: blur(12px);
+            color: var(--colorBlack);
+        }
+
+        .bannerProductContent {
+            position: relative;
+            z-index: 1;
+        }
+
+        .bannerProductContent span {
+            display: block;
+            font-size: var(--fontXs);
+            margin: 0 0 3px 0;
+        }
+
+        .bannerProductContent h2 {
+            font-size: var(--fontBase);
+            font-weight: 500;
+        }
+
+        .bannerProductImg {
+            position: absolute;
+            width: 218px;
+            height: 85px;
+            bottom: 20px;
+            right: 12px;
+        }
+
+        .bannerProductImg img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .bannerProduct .primaryBtn {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            z-index: 2;
+        }
+
+        .bannerCurve {
+            position: absolute;
+            width: 150px;
+            height: 42px;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .bannerCurve path {
+            fill: var(--colorWhite);
+        }
+
+        .bannerScroll {
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            bottom: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: var(--colorPrimary);
+            color: var(--colorWhite);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .bannerScroll:hover {
+            background-color: #245428;
+        }
+
+        .bannerScroll svg {
+            width: 20px;
+            height: 32px;
+        }
+
+        /* === BANNER CSS END === */
+
+        /* === RESPONSIVE CSS START === */
+        @media (min-width:1440px) {
+            .banner .container-xl {
+                padding: 0 44px;
+            }
+
+            .bannerContent {
+                width: 560px;
+            }
+
+            .bannerContent .heading3xl {
+                font-size: 48px;
+            }
+
+            .bannerProduct {
+                width: 390px;
+                height: 176px;
+            }
+
+            .bannerProductImg {
+                width: 270px;
+                height: 105px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .banner {
+                margin: 12px 12px 44px 12px;
+            }
+
+            .bannerWrap {
+                border-radius: 24px;
+            }
+
+            .banner .container-xl {
+                padding: 0 22px;
+            }
+
+            .bannerInner {
+                min-height: 650px;
+                padding: 240px 0 64px 0;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                gap: 26px;
+            }
+
+            .bannerContent {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .bannerContent .heading3xl {
+                font-size: 30px;
+            }
+
+            .bannerContent .subTextMd {
+                font-size: var(--fontBase);
+            }
+
+            .bannerProduct {
+                width: 322px;
+                max-width: 100%;
+            }
+
+            .bannerPagination span {
+                width: 74px;
+            }
+
+            .bannerWrap:before {
+                height: 80%;
+                background: linear-gradient(0deg, rgba(12, 43, 5, 0.65), transparent);
+            }
+        }
+
+        @media (max-width:374px) {
+            .banner .container-xl {
+                padding: 0 16px;
+            }
+
+            .bannerContent .heading3xl {
+                font-size: 26px;
+            }
+
+            .bannerProductImg {
+                width: 175px;
+                right: 6px;
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            a {
+                transition: none !important;
+            }
+        }
+
+        /* === RESPONSIVE CSS END === */
+    </style>
+</head>
+
+<body>
+    <div class="pageWrap">
+        <main>
+            <section class="banner" aria-label="Professional drone solutions">
+                <div class="bannerWrap">
+                    <div class="bannerBg">
+                        <!-- Replace with the original field + flying drone image (without text). -->
+                        <img src="assets/images/banner-drone.jpg" alt="Agricultural drone flying above green crop rows"
+                            fetchpriority="high">
+                    </div>
+                    <div class="container-xl">
+                        <div class="bannerInner">
+                            <div class="bannerContent">
+                                <h1 class="heading3xl">Professional Drone<br>Solution Supplier</h1>
+                                <span class="subTextMd">Empowering Intelligent Airspace through<br>Advanced Drone
+                                    Technology.</span>
+                                <!-- Visual indicators only. Add real slide content before enabling a slider. -->
+                                <div class="bannerPagination" aria-hidden="true">
+                                    <span class="active"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bannerProduct">
+                                <div class="bannerProductContent">
+                                    <span>New Upgrade Drone</span>
+                                    <h2>Z30P / Z50P</h2>
+                                </div>
+                                <div class="bannerProductImg">
+                                    <!-- Replace with the original transparent product PNG. -->
+                                    <img src="assets/images/product-drone.png" alt="Z30P / Z50P agricultural drone">
+                                </div>
+                                <!-- Replace this URL with your actual product page. -->
+                                <a href="products/z30p-z50p.html" class="primaryBtn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="bannerCurve" viewBox="0 0 150 42" aria-hidden="true">
+                        <path d="M0 42 C24 42 30 31 43 17 C51 8 61 1 75 1 C89 1 99 8 107 17 C120 31 126 42 150 42 Z">
+                        </path>
+                    </svg>
+                </div>
+                <!-- Set href to the ID of the following section in your project. -->
+                <a href="#nextSection" class="bannerScroll" aria-label="Scroll to the next section">
+                    <svg viewBox="0 0 20 32" fill="none" aria-hidden="true">
+                        <path d="M10 2V27M4 21L10 27L16 21" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+            </section>
+            <!-- Replace this anchor with your next actual section. -->
+            <div id="nextSection"></div>
+        </main>
+    </div>
+    <!-- JS is not required for this single static banner; native anchor scrolling is used. -->
+</body>
+
+</html>

@@ -1,22 +1,19 @@
 $(document).ready(function () {
-
     AOS.init(); // Ensure initialized
     setTimeout(function () {
         AOS.refresh();
     }, 300); // Delay to allow layout stabilization
 
-
     function stickyHeader() {
-        var headerHeight = $('header').innerHeight();
+        var headerHeight = $("header").innerHeight();
         if ($(window).scrollTop() > headerHeight) {
-            $('header').addClass('stickyHeader')
-        }
-        else {
-            $('header').removeClass('stickyHeader')
+            $("header").addClass("stickyHeader");
+        } else {
+            $("header").removeClass("stickyHeader");
         }
     }
     stickyHeader();
-    jQuery(window).on('scroll', function (event) {
+    jQuery(window).on("scroll", function (event) {
         stickyHeader();
     });
 
@@ -28,9 +25,9 @@ $(document).ready(function () {
     });
 
     /*  $(".closeBtn").on("click", function () {
-         $(".headerOption").removeClass("openMenu");
-         $("body").removeClass("scrollOff");
-     }); */
+           $(".headerOption").removeClass("openMenu");
+           $("body").removeClass("scrollOff");
+       }); */
     $("nav > ul > li").on("click", function () {
         $("nav > ul > li").removeClass("active");
         $(this).addClass("active");
@@ -57,38 +54,38 @@ $(document).ready(function () {
             });
     }
 
-
     // Back to Top function
     if ($(".backTop").length) {
         $(window).scroll(function () {
-
             // if ($(window).scrollTop() > 120) {
             //     $('#backtotop').fadeIn('250').css('display', 'flex');
             // } else {
             //     $('#backtotop').fadeOut('250');
             // }
             if ($(window).scrollTop() > 120) {
-                $('.backTop').addClass("activeBackToTop")
+                $(".backTop").addClass("activeBackToTop");
             } else {
-                $('.backTop').removeClass("activeBackToTop")
+                $(".backTop").removeClass("activeBackToTop");
             }
-
         });
-        $('.backTop').click(function () {
+        $(".backTop").click(function () {
             scrlTop = 0;
-            $('html, body').animate({
-                scrollTop: scrlTop
-            }, '500');
+            $("html, body").animate(
+                {
+                    scrollTop: scrlTop,
+                },
+                "500",
+            );
             return false;
         });
-    };
+    }
 
-    $(window).on('scroll', function () {
+    $(window).on("scroll", function () {
         stickyHeader();
     });
 
     /* gallery Swiper js start */
-    new Swiper('.depulseGallerySwiper .swiper', {
+    new Swiper(".depulseGallerySwiper .swiper", {
         loop: true,
         slidesPerView: 2.5,
         paginationClickable: true,
@@ -98,78 +95,117 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
         scrollbar: {
-            el: '.swiper-scrollbar',
+            el: ".swiper-scrollbar",
             draggable: true,
-            dragSize: 150
+            dragSize: 150,
         },
         spaceBetween: 20,
         breakpoints: {
             1920: {
                 slidesPerView: 2.5,
-                spaceBetween: 30
+                spaceBetween: 30,
             },
             1366: {
                 slidesPerView: 2.5,
-                spaceBetween: 30
+                spaceBetween: 30,
             },
             480: {
                 slidesPerView: 1.5,
-                spaceBetween: 10
+                spaceBetween: 10,
             },
             320: {
                 slidesPerView: 1.5,
-                spaceBetween: 10
-            }
-        }
+                spaceBetween: 10,
+            },
+        },
     });
     /* gallery Swiper js end */
 
-
     // First accordion body is open by default
     $(".accordianBody").hide();
-    $('.accordianItem:first-child')
-        .addClass('active')
-        .find('.accordianBody')
+    $(".accordianItem:first-child")
+        .addClass("active")
+        .find(".accordianBody")
         .slideDown(0);
 
-    $('.accordianHeading').on('click', function () {
-        var $item = $(this).parent('.accordianItem');
-        var $body = $item.find('.accordianBody');
+    $(".accordianHeading").on("click", function () {
+        var $item = $(this).parent(".accordianItem");
+        var $body = $item.find(".accordianBody");
         // Toggle current item
         $(".accordianBody").slideUp(400);
-        $(this).parent('.accordianItem').siblings().removeClass('active');
-        $item.toggleClass('active');
+        $(this).parent(".accordianItem").siblings().removeClass("active");
+        $item.toggleClass("active");
         $body.stop().slideToggle(400);
-
     });
 
+    /* =========================================
+     TABING JS START
+  ========================================= */
 
-    /* tabbing js start */
-    $(".tabing-main .tabContainer .tab-content-main:first").addClass("active");
-    $(".tabing-main .tab-titles li:first").addClass("active-li")
-    $(".tabing-main .tab-titles li a").on("click", function (event) {
-        event.preventDefault()
-        $(".tabing-main .tab-titles li").removeClass("active-li")
-        $(this).parent().addClass("active-li");
-        $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
-        $($(this).attr('href')).addClass("active");
-    })
-    /* tabbing js end */
+    $(".tabing-main").each(function () {
+        var $tabMain = $(this);
 
+        // First tab active
+        $tabMain.find(".tab-titles li:first").addClass("active-li");
 
-    /* planDayWrap tabbing js start */
-    $(".planDayWrap .tabing-main .tabContainer .tab-content-main:first").addClass("active");
-    $(".planDayWrap .tabing-main .tab-titles li:first").addClass("active-li")
-    $(".planDayWrap .tabing-main .tab-titles li a").on("click", function (event) {
-        event.preventDefault()
-        $(".planDayWrap .tabing-main .tab-titles li").removeClass("active-li")
-        $(this).parent().addClass("active-li");
-        $(".tabing-main .tabContainer .tab-content-main").removeClass("active");
-        $($(this).attr('href')).addClass("active");
-    })
-    /* planDayWrap tabbing js end */
+        // First content active
+        $tabMain.find(".tabContainer .tab-content-main:first").addClass("active");
 
+        // Tab click
+        $tabMain.find(".tab-titles li a").on("click", function (event) {
+            event.preventDefault();
 
+            var $link = $(this);
+            var $currentLi = $link.closest("li");
+            var target = $link.attr("href");
+
+            // Remove active tab
+            $tabMain.find(".tab-titles li").removeClass("active-li");
+
+            // Add active tab
+            $currentLi.addClass("active-li");
+
+            // Remove active content
+            $tabMain.find(".tabContainer .tab-content-main").removeClass("active");
+
+            // Add active content
+            $tabMain.find(target).addClass("active");
+
+            /* =========================================
+                 PLAN DAY VERTICAL TEXT
+              ========================================= */
+
+            var $planDayWrap = $link.closest(".planDayWrap");
+
+            if ($planDayWrap.length) {
+                var verticalText = $currentLi.attr("data-vertical");
+
+                if (verticalText) {
+                    $planDayWrap.find(".verticalText .heading8xl").text(verticalText);
+                }
+            }
+        });
+    });
+
+    /* =========================================
+     PLAN DAY INITIAL VERTICAL TEXT
+  ========================================= */
+
+    $(".planDayWrap").each(function () {
+        var $planDayWrap = $(this);
+
+        var verticalText = $planDayWrap
+            .find(".tab-titles li.active-li")
+            .attr("data-vertical");
+
+        if (verticalText) {
+            $planDayWrap.find(".verticalText .heading8xl").text(verticalText);
+        }
+    });
+
+    /* =========================================
+     TABING JS END
+  ========================================= */
 
     /*  */
 
@@ -182,81 +218,111 @@ $(document).ready(function () {
             end: "+=1500",
             pin: true,
             scrub: 1,
-            invalidateOnRefresh: true
-        }
+            invalidateOnRefresh: true,
+        },
     });
-
 
     // =====================================
     // EVERYTHING STARTS AT THE SAME TIME
     // =====================================
 
-    tl.to(".oldLogoWrap", {
-        opacity: 0,
-        duration: 1,
-        ease: "power1.inOut"
-    }, 0);
+    tl.to(
+        ".oldLogoWrap",
+        {
+            opacity: 0,
+            duration: 1,
+            ease: "power1.inOut",
+        },
+        0
+    );
 
-    tl.to(".newLogoWrap", {
-        opacity: 1,
-        duration: 1,
-        ease: "power1.inOut"
-    }, 0);
-
+    tl.to(
+        ".newLogoWrap",
+        {
+            opacity: 1,
+            duration: 1,
+            ease: "power1.inOut",
+        },
+        0
+    );
 
     // 2.0 comes from bottom
-    tl.to(".versionNew", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power1.out"
-    }, 0);
-
+    tl.to(
+        ".versionNew",
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power1.out",
+        },
+        0
+    );
 
     // OLD TEXT GOES DOWN
-    tl.to(".pulseTextOld", {
-        y: "-100%",
-        opacity: 0,
-        duration: 1,
-        ease: "power1.inOut"
-    }, 0);
-
+    tl.to(
+        ".pulseTextOld",
+        {
+            y: "-100%",
+            opacity: 0,
+            duration: 1,
+            ease: "power1.inOut",
+        },
+        0
+    );
 
     // NEW TEXT COMES FROM BOTTOM
-    tl.to(".pulseTextNew", {
-        y: "0%",
-        opacity: 1,
-        duration: 1,
-        ease: "power1.inOut"
-    }, 0);
+    tl.to(
+        ".pulseTextNew",
+        {
+            y: "0%",
+            opacity: 1,
+            duration: 1,
+            ease: "power1.inOut",
+        },
+        0
+    );
 
-    tl.to(".timelineLineProgress", {
-        height: "100%",
-        duration: 1,
-        ease: "none"
-    }, 0);
+    // TIMELINE LINE
+    tl.to(
+        ".timelineLineProgress",
+        {
+            height: "100%",
+            duration: 1,
+            ease: "none",
+        },
+        0
+    );
 
-    tl.to(".timelineCircle", {
-        backgroundColor: "#bd6b39",
-        borderColor: "#bd6b39",
-        duration: 0.2,
-        ease: "none"
-    }, 1);
+    // CIRCLE
+    tl.to(
+        ".timelineCircle",
+        {
+            backgroundColor: "#bd6b39",
+            borderColor: "#bd6b39",
+            duration: 0.2,
+            ease: "none",
+        },
+        1
+    );
+
+    // =====================================
+    // EXTRA SCROLL AFTER ANIMATION COMPLETES
+    // =====================================
+
+    tl.to({}, {
+        duration: 0.5
+    });
     /*  */
-
-
 
     gsap.registerPlugin(ScrollTrigger);
 
     window.addEventListener("load", function () {
-
         const section = document.querySelector(".mindfulism");
         const wrapper = document.querySelector(".mindfulismInner");
         const images = gsap.utils.toArray(".mindfulismImageList");
         const content = document.querySelector(".mindfulismContent");
 
-        if (!section || !wrapper || !images.length) return;
-
+        if (!section || !wrapper || !images.length || !content) return;
 
         // ==========================================
         // INITIAL POSITION
@@ -268,51 +334,48 @@ $(document).ready(function () {
             xPercent: -50,
             yPercent: -50,
             x: 0,
-            y: 0
+            y: 0,
         });
 
+        // Initial rotations
         gsap.set(images[0], {
-            rotation: -2
+            rotation: -2,
         });
 
         gsap.set(images[1], {
-            rotation: 2
+            rotation: 2,
         });
 
         gsap.set(images[2], {
-            rotation: -1
+            rotation: -1,
         });
 
         gsap.set(images[3], {
-            rotation: 1
+            rotation: 1,
         });
 
-
-        // Center content
+        // Center content initially hidden
         gsap.set(content, {
             autoAlpha: 0,
-            y: 30
+            y: 30,
         });
-
 
         // ==========================================
         // CALCULATE FINAL POSITIONS
         // ==========================================
 
         function getTargetPosition(element, position) {
-
             const wrapperRect = wrapper.getBoundingClientRect();
             const imageRect = element.getBoundingClientRect();
 
             let targetX = 0;
             let targetY = 0;
 
-            // ------------------------------
+            // ------------------------------------------
             // TOP LEFT
-            // ------------------------------
+            // ------------------------------------------
 
             if (position === "top-left") {
-
                 const targetLeft = wrapperRect.width * 0.05;
                 const targetTop = wrapperRect.height * 0.13;
 
@@ -325,13 +388,11 @@ $(document).ready(function () {
                     (wrapperRect.height / 2 - imageRect.height / 2);
             }
 
-
-            // ------------------------------
+            // ------------------------------------------
             // BOTTOM LEFT
-            // ------------------------------
+            // ------------------------------------------
 
             if (position === "bottom-left") {
-
                 const targetLeft = wrapperRect.width * 0.05;
                 const bottomSpace = wrapperRect.height * 0.08;
 
@@ -349,14 +410,13 @@ $(document).ready(function () {
                     (wrapperRect.height / 2 - imageRect.height / 2);
             }
 
-
-            // ------------------------------
+            // ------------------------------------------
             // TOP RIGHT
-            // ------------------------------
+            // ------------------------------------------
 
             if (position === "top-right") {
-
                 const rightSpace = wrapperRect.width * 0.05;
+
                 const targetLeft =
                     wrapperRect.width -
                     rightSpace -
@@ -373,13 +433,11 @@ $(document).ready(function () {
                     (wrapperRect.height / 2 - imageRect.height / 2);
             }
 
-
-            // ------------------------------
+            // ------------------------------------------
             // BOTTOM RIGHT
-            // ------------------------------
+            // ------------------------------------------
 
             if (position === "bottom-right") {
-
                 const rightSpace = wrapperRect.width * 0.05;
 
                 const targetLeft =
@@ -403,13 +461,11 @@ $(document).ready(function () {
                     (wrapperRect.height / 2 - imageRect.height / 2);
             }
 
-
             return {
                 x: targetX,
-                y: targetY
+                y: targetY,
             };
         }
-
 
         // ==========================================
         // GET ALL TARGET POSITIONS
@@ -419,9 +475,8 @@ $(document).ready(function () {
             getTargetPosition(images[0], "top-left"),
             getTargetPosition(images[1], "bottom-left"),
             getTargetPosition(images[2], "top-right"),
-            getTargetPosition(images[3], "bottom-right")
+            getTargetPosition(images[3], "bottom-right"),
         ];
-
 
         // ==========================================
         // SCROLL TIMELINE
@@ -433,7 +488,9 @@ $(document).ready(function () {
 
                 start: "top top",
 
-                end: "+=1800",
+                // Increased from 1800
+                // Gives more total scroll distance
+                end: "+=2800",
 
                 scrub: 1.2,
 
@@ -441,101 +498,154 @@ $(document).ready(function () {
 
                 anticipatePin: 1,
 
-                invalidateOnRefresh: true
-            }
+                invalidateOnRefresh: true,
+            },
         });
 
-
         // ==========================================
-        // IMAGE 1
-        // ==========================================
-
-        tl.to(images[0], {
-            x: positions[0].x,
-            y: positions[0].y,
-            rotation: 0,
-            ease: "none",
-            duration: 1
-        }, 0);
-
-
-        // ==========================================
-        // IMAGE 2
+        // IMAGE 1 - TOP LEFT
         // ==========================================
 
-        tl.to(images[1], {
-            x: positions[1].x,
-            y: positions[1].y,
-            rotation: 0,
-            ease: "none",
-            duration: 1
-        }, 0);
-
-
-        // ==========================================
-        // IMAGE 3
-        // ==========================================
-
-        tl.to(images[2], {
-            x: positions[2].x,
-            y: positions[2].y,
-            rotation: 0,
-            ease: "none",
-            duration: 1
-        }, 0);
-
+        tl.to(
+            images[0],
+            {
+                x: positions[0].x,
+                y: positions[0].y,
+                rotation: 0,
+                ease: "none",
+                duration: 1,
+            },
+            0
+        );
 
         // ==========================================
-        // IMAGE 4
+        // IMAGE 2 - BOTTOM LEFT
         // ==========================================
 
-        tl.to(images[3], {
-            x: positions[3].x,
-            y: positions[3].y,
-            rotation: 0,
-            ease: "none",
-            duration: 1
-        }, 0);
+        tl.to(
+            images[1],
+            {
+                x: positions[1].x,
+                y: positions[1].y,
+                rotation: 0,
+                ease: "none",
+                duration: 1,
+            },
+            0
+        );
 
+        // ==========================================
+        // IMAGE 3 - TOP RIGHT
+        // ==========================================
+
+        tl.to(
+            images[2],
+            {
+                x: positions[2].x,
+                y: positions[2].y,
+                rotation: 0,
+                ease: "none",
+                duration: 1,
+            },
+            0
+        );
+
+        // ==========================================
+        // IMAGE 4 - BOTTOM RIGHT
+        // ==========================================
+
+        tl.to(
+            images[3],
+            {
+                x: positions[3].x,
+                y: positions[3].y,
+                rotation: 0,
+                ease: "none",
+                duration: 1,
+            },
+            0
+        );
 
         // ==========================================
         // CENTER CONTENT
         // ==========================================
 
-        tl.to(content, {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.35,
-            ease: "none"
-        }, 0.72);
+        tl.to(
+            content,
+            {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.35,
+                ease: "none",
+            },
+            0.72
+        );
 
+        // ==========================================
+        // HOLD AFTER CONTENT APPEARS
+        // ==========================================
+        //
+        // This creates extra scroll distance while
+        // the content remains visible.
+        //
+        // Increase duration if you want more hold.
+        //
+
+        tl.to(
+            {},
+            {
+                duration: 0.5,
+            }
+        );
+
+        // ==========================================
+        // REFRESH
+        // ==========================================
 
         ScrollTrigger.refresh();
-
     });
 
-    $(document).on('click', '.video-play-icon', function () {
+    $(document).on("click", ".video-play-icon", function () {
+        var $this = $(this);
+        var video = $this.parents(".heroBannerBg1").find("video")[0];
 
-    var $this = $(this);
-    var video = $this.parents(".heroBannerBg1").find("video")[0];
+        if (video.paused === false) {
+            video.pause();
 
-    if (video.paused === false) {
+            $this.parents(".heroBannerBg1").removeClass("is-video-playing");
 
-        video.pause();
+            $this.html('<i class="ri-play-large-fill"></i>');
+        } else {
+            video.play();
 
-        $this.parents(".heroBannerBg1").removeClass("is-video-playing");
+            $this.parents(".heroBannerBg1").addClass("is-video-playing");
 
-        $this.html('<i class="ri-play-large-fill"></i>');
+            $this.html('<i class="ri-pause-large-line"></i>');
+        }
 
-    } else {
+        return false;
+    });
 
-        video.play();
+    /* card slack Js start */
+    gsap.registerPlugin(ScrollTrigger);
 
-        $this.parents(".heroBannerBg1").addClass("is-video-playing");
+    const cards = gsap.utils.toArray("#cardss .cards");
 
-        $this.html('<i class="ri-pause-large-line"></i>');
-    }
+    cards.forEach((card, index) => {
 
-    return false;
+        if (index === cards.length - 1) return;
+
+        gsap.to(card, {
+            scale: 0.88,
+
+            scrollTrigger: {
+                trigger: card,
+                start: "top 80px",
+                end: "bottom 80px",
+                scrub: 1
+            }
+        });
+
+    });
+    /* card slack Js end */
 });
-})

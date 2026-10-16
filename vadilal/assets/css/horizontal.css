@@ -1,0 +1,39 @@
+.horizontal-section { position: relative; width: 100%; height: 100vh; height: 100svh; overflow: hidden; isolation: isolate; background: #183c2b; color: var(--colorWhite, #fff); }
+.shared-background { position: absolute; inset: -5%; width: 140%; height: 110%; z-index: 0; pointer-events: none; background-image: linear-gradient(90deg, rgba(9, 28, 19, .70), rgba(9, 28, 19, .70) 55%, rgba(9, 28, 19, .70)), url('../images/vadilal-banner.png'); background-position: center; background-size: cover; background-repeat: no-repeat; transform-origin: center; will-change: transform; }
+.horizontal-track { position: relative; z-index: 1; display: flex; width: max-content; height: 100%; will-change: transform; }
+.horizontal-section .panel { position: relative; display: flex; align-items: center; flex: 0 0 100vw; width: 100vw; height: 100vh; height: 100svh; overflow: hidden; }
+.horizontal-section .hero-bottom { position: absolute; z-index: 2; right: 8vw; bottom: 38px; left: 8vw; display: flex; align-items: center; justify-content: flex-end; gap: 20px; color: rgba(255, 255, 255, .78); font-size: 10px; letter-spacing: .17em; text-transform: uppercase; }
+.horizontal-section .scroll-cue { display: flex; align-items: center; gap: 12px; }
+.horizontal-section .scroll-cue span { display: block; width: 44px; height: 1px; background: var(--colorYellow); }
+.horizontal-section .stats-panel { flex-basis: 135vw; width: 135vw; }
+.horizontal-section .stats-panel>.container-xl { position: relative; width: 100%; max-width: none; height: 100%; padding: 0; margin: 0; }
+.horizontal-section .stats-grid { position: absolute; inset: 0 auto 0 0; display: block; width: 192vw; height: 100%; border: 0; margin: 0; }
+.horizontal-section .stat { position: absolute; left: var(--statLeft); top: var(--statTop); display: flex; flex-direction: column; justify-content: center; padding: 24px 30px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .28); border-radius: 18px; background: linear-gradient(135deg, rgba(255, 255, 255, .19), rgba(255, 255, 255, .055)); box-shadow: 0 12px 35px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(255, 255, 255, .16); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); transition: border-color .35s ease, background .35s ease, box-shadow .35s ease; height: 240px; width: 440px; }
+.stat .subText3xl { line-height: 1.2; text-transform: none; }
+.stat .heading9xl { margin: 0 0 16px 0; color: var(--colorPrimary); }
+.horizontal-section .stat:nth-child(1) { --statLeft: 0vw; --statTop: 18%; }
+.horizontal-section .stat:nth-child(2) { --statLeft: 25vw; --statTop: 50%; }
+.horizontal-section .stat:nth-child(3) { --statLeft: 50vw; --statTop: 18%; }
+.horizontal-section .stat:nth-child(4) { --statLeft: 75vw; --statTop: 50%; }
+.horizontal-section .stat:nth-child(5) { --statLeft: 110vw; --statTop: 24%; }
+.horizontal-section .stat:nth-child(6) { --statLeft: 135vw; --statTop: 58%; }
+.horizontal-section .stat::before { content: ''; position: absolute; top: 0; left: 22px; width: 42px; height: 2px; background: var(--colorPrimary); opacity: .9; }
+/* .horizontal-section .stat:hover { border-color: rgba(255, 255, 255, .5); background: linear-gradient(135deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .09)); box-shadow: 0 18px 40px rgba(0, 0, 0, .18), inset 0 1px 0 rgba(255, 255, 255, .2); } */
+.story-panel .row { justify-content: space-between; }
+.horizontal-section .story-visual { position: relative; overflow: hidden; border: 1px solid rgba(255, 255, 255, .28); border-radius: 18px; box-shadow: 0 22px 55px rgba(0, 0, 0, .22); width: 100%; height: 100%; }
+.horizontal-section .story-visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(8, 28, 19, .32)); pointer-events: none; }
+.horizontal-section .story-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.horizontal-section .progress-wrap { position: absolute; z-index: 8; right: 0; bottom: 0; left: 0; height: 2px; background: rgba(255, 255, 255, .25); }
+.horizontal-section .progress-bar { width: 100%; height: 100%; background: var(--colorAccent, var(--colorYellow, #fcf761)); transform: scaleX(0); transform-origin: left; }
+.horizontal-section, .horizontal-track { transition: none !important; }
+.horizontal-section { min-height: 100vh; min-height: 100svh; }
+.horizontal-track { transform: translate3d(0, 0, 0); backface-visibility: hidden; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+.horizontal-section .stats-top { position: absolute; left: 0; top: 30%; width: 30vw; }
+.horizontal-section .stats-grid { left: 35vw; }
+.heropanelInner { width: 60%; }
+.story-copy .subTextLg { margin-top: 80px; margin-bottom: 40px; position: relative; }
+.story-copy .subTextLg, .story-panel-cta { margin-left: auto; width: 70%; display: block; }
+.story-copy .subTextLg:before { content: ''; position: absolute; width: 60px; height: 5px; background-color: var(--colorPrimary); top: 15px; right: calc(100% + 20px); }
