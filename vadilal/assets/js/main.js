@@ -109,108 +109,131 @@ $(document).ready(function () {
     });
     /* gallery Swiper js end */
 
+    $(".primaryBtn").mouseenter(function (e) {
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).children(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).children(".su_button_circle").removeClass("desplode-circle");
+        $(this).children(".su_button_circle").addClass("explode-circle");
+
+    });
+
+    $(".primaryBtn").mouseleave(function (e) {
+
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).children(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).children(".su_button_circle").removeClass("explode-circle");
+        $(this).children(".su_button_circle").addClass("desplode-circle");
+
+    });
+
     $(document).ready(function () {
-    const $section = $(".businessListWrap");
-    const $businesses = $(".Onebusiness");
-    const $businessNames = $(".businessNameList h4");
-    const $list = $(".businessNameList");
+        const $section = $(".businessListWrap");
+        const $businesses = $(".Onebusiness");
+        const $businessNames = $(".businessNameList h4");
+        const $list = $(".businessNameList");
 
-    if (
-        !$section.length ||
-        !$list.length ||
-        !$businesses.length ||
-        $businesses.length !== $businessNames.length
-    ) {
-        return;
-    }
+        if (
+            !$section.length ||
+            !$list.length ||
+            !$businesses.length ||
+            $businesses.length !== $businessNames.length
+        ) {
+            return;
+        }
 
-    const duration = 8000;
+        const duration = 8000;
 
-    let currentIndex = 0;
-    let timer = null;
-    let startTime = 0;
-    let remainingTime = duration;
-    let isInView = false;
+        let currentIndex = 0;
+        let timer = null;
+        let startTime = 0;
+        let remainingTime = duration;
+        let isInView = false;
 
-    function showBusiness(index) {
-        currentIndex = index;
+        function showBusiness(index) {
+            currentIndex = index;
 
-        $businesses.removeClass("active");
-        $businessNames.removeClass("active");
+            $businesses.removeClass("active");
+            $businessNames.removeClass("active");
 
-        $businesses.eq(index).addClass("active");
-        $businessNames.eq(index).addClass("active");
-    }
+            $businesses.eq(index).addClass("active");
+            $businessNames.eq(index).addClass("active");
+        }
 
-    function startTimeline(time) {
-        if (!isInView) return;
-
-        clearTimeout(timer);
-
-        remainingTime = time;
-        startTime = Date.now();
-
-        const progress = 1 - time / duration;
-
-        $list[0].style.setProperty("--timeline-start", progress);
-        $list[0].style.setProperty("--timeline-duration", time + "ms");
-
-        $list.removeClass("animate-timeline");
-        void $list[0].offsetWidth;
-        $list.addClass("animate-timeline");
-
-        timer = setTimeout(function () {
+        function startTimeline(time) {
             if (!isInView) return;
 
-            currentIndex = (currentIndex + 1) % $businesses.length;
+            clearTimeout(timer);
+
+            remainingTime = time;
+            startTime = Date.now();
+
+            const progress = 1 - time / duration;
+
+            $list[0].style.setProperty("--timeline-start", progress);
+            $list[0].style.setProperty("--timeline-duration", time + "ms");
+
+            $list.removeClass("animate-timeline");
+            void $list[0].offsetWidth;
+            $list.addClass("animate-timeline");
+
+            timer = setTimeout(function () {
+                if (!isInView) return;
+
+                currentIndex = (currentIndex + 1) % $businesses.length;
+                remainingTime = duration;
+
+                showBusiness(currentIndex);
+                startTimeline(duration);
+            }, time);
+        }
+
+        function stopAnimation() {
+            isInView = false;
+
+            clearTimeout(timer);
+            timer = null;
+
+            remainingTime = duration;
+
+            $list.removeClass("animate-timeline");
+            $list[0].style.removeProperty("--timeline-start");
+            $list[0].style.removeProperty("--timeline-duration");
+        }
+
+        // Click a business name to activate it.
+        $businessNames.on("click", function () {
+            currentIndex = $(this).index();
             remainingTime = duration;
 
             showBusiness(currentIndex);
-            startTimeline(duration);
-        }, time);
-    }
 
-    function stopAnimation() {
-        isInView = false;
-
-        clearTimeout(timer);
-        timer = null;
-
-        remainingTime = duration;
-
-        $list.removeClass("animate-timeline");
-        $list[0].style.removeProperty("--timeline-start");
-        $list[0].style.removeProperty("--timeline-duration");
-    }
-
-    // Click a business name to activate it.
-    $businessNames.on("click", function () {
-        currentIndex = $(this).index();
-        remainingTime = duration;
-
-        showBusiness(currentIndex);
-
-        if (isInView) {
-            startTimeline(duration);
-        }
-    });
-
-    // Start and stop animation based on section visibility.
-    const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                isInView = true;
-                startTimeline(remainingTime);
-            } else {
-                stopAnimation();
+            if (isInView) {
+                startTimeline(duration);
             }
         });
-    }, {
-        threshold: 0.2
+
+        // Start and stop animation based on section visibility.
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    isInView = true;
+                    startTimeline(remainingTime);
+                } else {
+                    stopAnimation();
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        observer.observe($section[0]);
+
+        showBusiness(0);
     });
-
-    observer.observe($section[0]);
-
-    showBusiness(0);
-});
 })
