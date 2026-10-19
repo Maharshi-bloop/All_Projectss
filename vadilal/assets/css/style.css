@@ -36,23 +36,10 @@ GLOBAL VARIABLES
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorWhite); display: inline-block; line-height: 1.6; }
 .subTextMd { font-size: var(--fontMd); font-weight: 400; color: var(--colorWhite); display: inline-block; line-height: 1.6; }
 .subTextBase { font-size: var(--fontBase); font-weight: 400; color: var(--colorText); display: inline-block; line-height: 1.6; }
-.primaryBtn { background-color: var(--colorPrimary); color: var(--colorWhite); padding: 16px 30px; border-radius: 16px; display: inline-block; font-size: var(--fontMd); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; position: relative; z-index: 1; }
+.primaryBtn { background-color: var(--colorPrimary); color: var(--colorWhite); padding: 16px 30px; border-radius: 16px; display: inline-block; font-size: var(--fontMd); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
+.primaryBtn:hover { background-color: var(--colorWhite); color: var(--colorPrimary); }
 .secondaryBtn { background-color: var(--colorSecondary); color: var(--colorText); padding: 16px 30px; border-radius: 16px; display: inline-block; font-size: var(--fontMd); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
 .primaryLink { color: var(--colorPrimary); }
-.primaryBtn { overflow: hidden; position: relative; }
-.su_button_circle { background-color: var(--colorSecondary); border-radius: 1000px; position: absolute; left: 0; top: 0; width: 0px; height: 0px; margin-left: 0px; margin-top: 0px; pointer-events: none; }
-.primaryBtn_inner { display: inline-block; transition: 400ms; text-decoration: none; z-index: 100000; }
-.button_text_container { position: relative; z-index: 10000; }
-.explode-circle { animation: explode 0.5s forwards; }
-.desplode-circle { animation: desplode 0.5s forwards; }
-@keyframes explode {
-	0% { width: 0px; height: 0px; margin-left: 0px; margin-top: 0px; background-color: rgba(42, 53, 80, 0.2); }
-	100% { width: 400px; height: 400px; margin-left: -200px; margin-top: -200px; background-color: rgba(20, 180, 87, 0.8); }
-}
-@keyframes desplode {
-	0% { width: 400px; height: 400px; margin-left: -200px; margin-top: -200px; background-color: rgba(20, 180, 87, 0.8); }
-	100% { width: 0px; height: 0px; margin-left: 0px; margin-top: 0px; background-color: rgba(129, 80, 108, 0.6); }
-}
 
 /* ========================================
 HEADER CSS
@@ -65,14 +52,13 @@ HEADER CSS
 	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
 	nav li { position: relative; }
 	nav li a { position: relative; display: inline-block; padding: 16px 12px; color: var(--colorWhite); text-decoration: none; transition: color 0.3s ease; transition: all 0.3s; }
-	
-			    /* nav li a:hover { color: var(--colorPrimary); } */
 	nav ul ul { position: absolute; top: 100%; left: 0; min-width: 200px; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; pointer-events: none; transition: all 0.3s ease; z-index: 20; }
 	nav>ul>li:hover>ul, nav>ul>li:focus-within>ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
 	li.hasUl>a { padding-right: 25px !important; }
 	li.hasUl>a::before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
 	nav li:before { content: ''; position: absolute; width: 100%; height: 100%; min-height: 100px; background-color: var(--colorPrimary); border-radius: 0 0 14px 14px; transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s; z-index: -1; bottom: 0; }
 	nav li:hover:before { transform: translateY(0); opacity: 1; visibility: visible; }
+	.current_page_item:before { transform: translateY(0); opacity: 1; visibility: visible; }
 }
 @media (max-width:1024px) {
 	.headerOption { position: fixed; top: 0; right: 0; width: min(400px, 100%); height: 100vh; height: 100dvh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: transform 0.3s ease; list-style: none; padding: 110px 0 0; margin: 0; overflow-y: auto; z-index: 9; }
@@ -93,6 +79,7 @@ BANNER CSS
 .business { padding: 120px 0; }
 .businessTop .subTextMd { color: var(--colorText); }
 .businessListWrap { margin: 80px 0 0; }
+.businessListWrap .row { align-items: center; }
 
 /* Left content */
 .businessImageWrap { position: relative; min-height: 500px; overflow: hidden; border-radius: 16px; background: #111; }
@@ -101,19 +88,19 @@ BANNER CSS
 .Onebusiness.active { position: absolute; opacity: 1; visibility: visible; pointer-events: auto; }
 .Onebusiness a { display: block; position: relative; height: 100%; min-height: 400px; color: #fff; text-decoration: none; }
 .businessImg { position: absolute; inset: 0; overflow: hidden; }
-.businessImg::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000, transparent); z-index: 1; pointer-events: none; }
+.businessImg::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000000d1, transparent); z-index: 1; pointer-events: none; }
 .businessImg img { display: block; width: 100%; height: 100%; min-height: 400px; object-fit: cover; transform: scale(1.06); transition: transform 4s cubic-bezier(0.2, 0.65, 0.3, 1); }
 .Onebusiness.active .businessImg img { transform: scale(1); }
 .businessListContent { position: absolute; left: 30px; bottom: 30px; z-index: 2; max-width: 60%; }
 .businessListContent h4, .businessListContent span { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
-.businessListContent h4 { margin: 0 0 10px; color: #fff; font-size: 42px; transition-delay: 0.15s; }
+.businessListContent h4 { margin: 0 0 10px; color: #fff; font-size: var(--font6xl); transition-delay: 0.15s; }
 .businessListContent span { display: block; color: #fff; transition-delay: 0.25s; }
 .Onebusiness.active .businessListContent h4, .Onebusiness.active .businessListContent span { opacity: 1; transform: translateY(0); }
 .businessNameList { position: relative; display: flex; flex-direction: column; padding-left: 28px; }
 .businessNameList::before { content: ""; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: #e8e8e8; }
 .businessNameList::after { content: ""; position: absolute; left: 5px; top: 0; width: 2px; height: 100%; background: var(--colorPrimary); transform: scaleY(0); transform-origin: top; pointer-events: none; }
 .businessNameList.animate-timeline::after { transform: scaleY(1); transition: transform 8s linear; }
-.businessNameList h4 { position: relative; margin: 36px 0;    /* padding: 36px 0; */ cursor: pointer; transition: color 0.4s ease; }
+.businessNameList h4 { position: relative; margin: 30px 0; cursor: pointer; transition: color 0.4s ease; }
 .businessNameList h4.active { color: var(--colorPrimary); }
 .businessNameList h4:first-child { margin-top: 0; }
 .businessNameList h4:last-child { margin-bottom: 0; }
@@ -123,7 +110,7 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 /* mapWrap css */
 .mapWrap { padding: 120px 0; background-color: #f9f9f9; overflow: clip; }
 .subTextWrap .subTextMd { color: var(--colorText); }
-.mapWrapTop { width: 55%; margin: -120px 0 0 0; }
+.mapWrapTop { width: 60%; margin: -120px 0 0 0; }
 
 /* textImage css */
 .textImage { padding: 120px 0; }
@@ -138,7 +125,7 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 .newsInner .row { justify-content: space-between; }
 .newList { display: flex; justify-content: space-between; margin: 0 0 30px 0; padding: 0 0 30px 0; border-bottom: 1px solid #00000033; }
 .newList:last-child { margin: 0 }
-.newList>span { width: 50px; height: 50px; background-color: var(--colorWhite); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--colorPrimary); opacity: 0; visibility: hidden; transition: all 0.3s; }
+.newList>span { width: 50px; height: 50px; background-color: var(--colorWhite); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--colorPrimary); opacity: 0; visibility: hidden; transition: all 0.3s; border: 2px solid var(--colorPrimary); border-radius: 8px; }
 .newsHeading { width: calc(100% - 70px); }
 .newList:hover span { opacity: 1; visibility: visible; }
 .newsTop { position: sticky; top: 120px; }
@@ -163,8 +150,8 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 @media (max-width:575px) {
 	.businessImageWrap, .Onebusiness a, .businessImg img { min-height: 300px; }
 	.businessListContent { left: 20px; bottom: 20px; max-width: calc(100% - 40px); }
-	.businessListContent h4 { font-size: 28px; }
-}
+	
+	/* .businessListContent h4 { font-size: 28px; } */ }
 
 /* footer css */
 footer { padding: 120px 0; }
