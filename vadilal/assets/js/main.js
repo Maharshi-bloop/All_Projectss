@@ -109,6 +109,90 @@ $(document).ready(function () {
     });
     /* gallery Swiper js end */
 
+
+    /* thumb Swiper  start*/
+    /* document.addEventListener("DOMContentLoaded", function () { */
+
+    // Timeline navigation
+    const galleryThumbs = new Swiper(".gallery-thumbs", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,
+        loop: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 2
+            },
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 6
+            }
+        }
+    });
+
+    // Main content slider
+    const galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiperController .swiperNext",
+            prevEl: ".swiperController .swiperPrev"
+        },
+        effect: "fade",
+
+        fadeEffect: {
+            crossFade: true
+        },
+
+         watchSlidesProgress: true,
+
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+
+    // Counter update function with padding
+    function updateCounter(swiperInstance) {
+        let current = (swiperInstance.realIndex + 1).toString().padStart(2, '0');
+        let total = swiperInstance.slides.length;
+
+        if (swiperInstance.params.loop) {
+            total = swiperInstance.slides.length - (swiperInstance.loopedSlides * 2);
+        }
+        total = total.toString().padStart(2, '0');
+
+        document.querySelector('.counter').innerHTML = `
+        <span class="counter__current">MILESTONE <span>${current}</span></span> 
+        OF
+        <span class="counter__total">${total}</span>
+    `;
+    }
+
+
+    // On change & init
+    galleryTop.on("slideChange", function () {
+        updateCounter(this);
+    });
+    galleryTop.on("init", function () {
+        updateCounter(this);
+    });
+    // Trigger once manually
+    galleryTop.emit("init");
+
+    /* }); */
+    /* thumb Swiper end */
+
     $(".primaryBtn").mouseenter(function (e) {
         var parentOffset = $(this).offset();
 

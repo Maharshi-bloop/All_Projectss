@@ -6,6 +6,8 @@
 :root { --font11xl: 60px; --font9xl: 50px; --font6xl: 40px; }
 .horizontal-section .stat { height: 190px; width: 300px; }
 .businessListContent { max-width: 70%; }
+.mapImage { height: 500px; }
+.mapImage img { width: 100%; height: 100%; object-fit: contain; }
 }
 @media (max-width:1024px) {
 .horizontal-section { height: auto; overflow: hidden; }

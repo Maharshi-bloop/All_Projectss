@@ -11,7 +11,7 @@ RESET CSS
 ======================================== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: auto; }
-body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontSecondary); font-size: var(--fontBase); color: var(--colorText); overflow-x: clip; }
+body { min-height: 100vh; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: var(--fontSecondary); font-size: var(--fontBase); color: var(--colorText); overflow-x: clip; corner-shape: squircle; }
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
 input, button, textarea, select { font: inherit; }
 a { text-decoration: none; color: inherit; }
@@ -36,14 +36,22 @@ GLOBAL VARIABLES
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorWhite); display: inline-block; line-height: 1.6; }
 .subTextMd { font-size: var(--fontMd); font-weight: 400; color: var(--colorWhite); display: inline-block; line-height: 1.6; }
 .subTextBase { font-size: var(--fontBase); font-weight: 400; color: var(--colorText); display: inline-block; line-height: 1.6; }
-.primaryBtn { background-color: var(--colorPrimary); color: var(--colorWhite); padding: 16px 30px; border-radius: 16px; display: inline-block; font-size: var(--fontMd); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
-.primaryBtn:hover { background-color: var(--colorWhite); color: var(--colorPrimary); }
-.secondaryBtn { background-color: var(--colorSecondary); color: var(--colorText); padding: 16px 30px; border-radius: 16px; display: inline-block; font-size: var(--fontMd); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
+.primaryBtn { background-color: var(--colorPrimary); color: var(--colorWhite); padding: 6px 20px; line-height: 1.3; border-radius: 12px; display: flex; font-size: var(--fontBase); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; border: 2px solid var(--colorPrimary); width: max-content; gap: 10px; align-items: center; }
+.primaryBtn span { width: 30px; display: flex; height: 30px; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 5px; color: var(--colorPrimary); transition: all 0.5s; }
+.primaryBtn:hover span { transform: rotate(45deg); }
+.secondaryBtn { background-color: var(--colorSecondary); color: var(--colorText); padding: 12px 30px; border-radius: 12px; display: inline-block; font-size: var(--fontBase); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
 .primaryLink { color: var(--colorPrimary); }
 
 /* ========================================
 HEADER CSS
 ======================================== */
+.blackHeader header { background-color: #FBF9F9; }
+.blackHeader header a { color: var(--colorBlack); }
+.logoPrimary { display: none; }
+.blackHeader .logoPrimary { display: block; }
+.blackHeader .logoWhite { display: none; }
+.logo { width: 150px; height: auto; }
+.logo img { width: 100%; height: auto; object-fit: contain; }
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 .site-header { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; position: absolute; z-index: 10; top: 0; left: 0; width: 100%; color: #fff }
@@ -88,9 +96,11 @@ BANNER CSS
 .Onebusiness.active { position: absolute; opacity: 1; visibility: visible; pointer-events: auto; }
 .Onebusiness a { display: block; position: relative; height: 100%; min-height: 400px; color: #fff; text-decoration: none; }
 .businessImg { position: absolute; inset: 0; overflow: hidden; }
-.businessImg::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000000d1, transparent); z-index: 1; pointer-events: none; }
-.businessImg img { display: block; width: 100%; height: 100%; min-height: 400px; object-fit: cover; transform: scale(1.06); transition: transform 4s cubic-bezier(0.2, 0.65, 0.3, 1); }
-.Onebusiness.active .businessImg img { transform: scale(1); }
+.businessImg::before { content: ""; position: absolute; background: linear-gradient(0deg, #f00540b8, transparent); z-index: 1; pointer-events: none; height: 100%; bottom: 0; left: 0; width: 100%; }
+.businessImg img { display: block; width: 100%; height: 100%; min-height: 400px; object-fit: cover;    /* transform: scale(1.06); */ transition: all 1s cubic-bezier(0.2, 0.65, 0.3, 1); }
+.businessImg:hover img { transform: scale(1.1); }
+
+/* .Onebusiness.active .businessImg img { transform: scale(1); } */
 .businessListContent { position: absolute; left: 30px; bottom: 30px; z-index: 2; max-width: 60%; }
 .businessListContent h4, .businessListContent span { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
 .businessListContent h4 { margin: 0 0 10px; color: #fff; font-size: var(--font6xl); transition-delay: 0.15s; }
@@ -100,8 +110,8 @@ BANNER CSS
 .businessNameList::before { content: ""; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: #e8e8e8; }
 .businessNameList::after { content: ""; position: absolute; left: 5px; top: 0; width: 2px; height: 100%; background: var(--colorPrimary); transform: scaleY(0); transform-origin: top; pointer-events: none; }
 .businessNameList.animate-timeline::after { transform: scaleY(1); transition: transform 8s linear; }
-.businessNameList h4 { position: relative; margin: 30px 0; cursor: pointer; transition: color 0.4s ease; }
-.businessNameList h4.active { color: var(--colorPrimary); }
+.businessNameList h4 { position: relative; margin: 30px 0; cursor: pointer; transition: all 0.4s ease; font-size: 15px; opacity: 0.5; }
+.businessNameList h4.active { color: var(--colorPrimary); opacity: 1; }
 .businessNameList h4:first-child { margin-top: 0; }
 .businessNameList h4:last-child { margin-bottom: 0; }
 h4.headingLg:before { content: ''; position: absolute; width: 16px; height: 16px; background-color: var(--colorPrimary); top: 50%; transform: translateY(-50%); left: -30px; border-radius: 50%; border: 3px solid var(--colorWhite); z-index: 1; opacity: 0; visibility: hidden; transition: all 0.3s; }
@@ -109,7 +119,7 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 
 /* mapWrap css */
 .mapWrap { padding: 120px 0; background-color: #f9f9f9; overflow: clip; }
-.subTextWrap .subTextMd { color: var(--colorText); }
+.subTextWrap .subTextBase { color: var(--colorText); }
 .mapWrapTop { width: 60%; margin: -120px 0 0 0; }
 
 /* textImage css */
@@ -129,14 +139,6 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 .newsHeading { width: calc(100% - 70px); }
 .newList:hover span { opacity: 1; visibility: visible; }
 .newsTop { position: sticky; top: 120px; }
-.footerUlWrap { display: flex; justify-content: space-around; }
-.footerUlWrap strong { text-transform: uppercase; }
-.footerUlWrap ul li a { margin: 10px 0; display: block; transition: all 0.3s; }
-.footerUlWrap ul li a:hover { color: var(--colorPrimary); }
-.contactUl ul li a { margin: 16px 0; display: flex; align-items: center; gap: 18px; }
-.contactUl ul li a span { color: var(--colorWhite); font-size: 16px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #F00540; border-radius: 8px; }
-.footerLogo .subTextBase { margin: 20px 0 0 0; color: var(--colorText); }
-.copyRightInner { padding: 24px 0; border-top: 1px solid #00000033; }
 
 /* Responsive */
 @media (max-width:991px) {
@@ -150,11 +152,19 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 @media (max-width:575px) {
 	.businessImageWrap, .Onebusiness a, .businessImg img { min-height: 300px; }
 	.businessListContent { left: 20px; bottom: 20px; max-width: calc(100% - 40px); }
-	
-	/* .businessListContent h4 { font-size: 28px; } */ }
+}
 
 /* footer css */
 footer { padding: 120px 0; }
+.footerUlWrap { display: flex; justify-content: space-around; }
+.footerUlWrap strong { text-transform: uppercase; color: var(--colorPrimary) }
+.contactUl strong { color: #f00540; }
+.footerUlWrap ul li a { margin: 10px 0; display: block; transition: all 0.3s; }
+.footerUlWrap ul li a:hover { color: var(--colorPrimary); }
+.contactUl ul li a { margin: 16px 0; display: flex; align-items: center; gap: 18px; }
+.contactUl ul li a span { color: var(--colorWhite); font-size: 16px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #F00540; border-radius: 8px; }
+.footerLogo .subTextBase { margin: 20px 0 0 0; color: var(--colorText); }
+.copyRightInner { padding: 24px 0; border-top: 1px solid #00000033; }
 
 /* ========================================
 BACK TO TOP BUTTON
