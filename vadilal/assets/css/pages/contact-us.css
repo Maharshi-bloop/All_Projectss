@@ -1,0 +1,12 @@
+.contactBanner { margin: 113px 0 0 0; padding: 70px 0; border-bottom: 1px solid #d3d3d3; }
+.formDesign { margin: 40px 0 0 0; }
+.formFeild { margin: 0 0 16px 0; }
+.formFeild label { display: block; font-weight: 600; font-size: 14px; color: var(--colorBlack); }
+.formFeild input, .formFeild select, .formFeild textarea { width: 100%; border: 1px solid #d3d3d3; padding: 8px 16px; box-shadow: none; outline: none; border-radius: 8px; }
+.formFeild input:focus, .formFeild select:focus, .formFeild textarea:focus { border: 1px solid var(--colorBlack); }
+.contactList { background-color: #f9f9f9; padding: 16px 30px; border-radius: 12px; margin: 0 0 24px 0; }
+.contactList .headingXl { text-transform: capitalize; }
+.contactList ul li a { display: flex; font-size: 16px; gap: 8px; }
+.contactList ul { display: flex; flex-direction: column; gap: 24px; margin: 24px 0 0 0; width: 80%; }
+.contactList ul li a .contactIcon { color: var(--colorWhite); font-size: 16px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: var(--colorPrimary); border-radius: 8px; }
+.contactList ul li a span:not(.contactIcon) { width: calc(100% - 60px); margin: 4px 0 0 0; }
