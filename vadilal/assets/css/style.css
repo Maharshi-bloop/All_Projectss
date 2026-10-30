@@ -27,7 +27,7 @@ GLOBAL VARIABLES
 .heading11xl span { color: var(--colorPrimary); line-height: 1; }
 .heading9xl { font-size: var(--font9xl); font-weight: 600; color: var(--colorWhite); display: inline-block; line-height: 1; }
 .heading7xl { font-size: var(--font7xl); font-weight: 600; color: var(--colorPrimary); display: inline-block; line-height: 1; }
-.heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorText); display: inline-block; line-height: 1.3; text-transform: uppercase; }
+.heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorBlack); display: inline-block; line-height: 1.3; text-transform: uppercase; }
 .heading5xl span { color: var(--colorPrimary); }
 .headingXl { font-size: var(--fontXl); font-weight: 700; color: var(--colorText); display: inline-block; line-height: 1.3; text-transform: uppercase; }
 .headingLg { font-size: var(--fontLg); font-weight: 600; color: var(--colorText); display: inline-block; line-height: 1.3; }
@@ -118,7 +118,7 @@ BANNER CSS
 .businessNameList h4.active { color: var(--colorPrimary); opacity: 1; }
 .businessNameList h4:first-child { margin-top: 0; }
 .businessNameList h4:last-child { margin-bottom: 0; }
-h4.headingLg:before { content: ''; position: absolute; width: 16px; height: 16px; background-color: var(--colorPrimary); top: 50%; transform: translateY(-50%); left: -30px; border-radius: 50%; border: 3px solid var(--colorWhite); z-index: 1; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.businessNameList h4.headingLg:before { content: ''; position: absolute; width: 16px; height: 16px; background-color: var(--colorPrimary); top: 50%; transform: translateY(-50%); left: -30px; border-radius: 50%; border: 3px solid var(--colorWhite); z-index: 1; opacity: 0; visibility: hidden; transition: all 0.3s; }
 h4.headingLg.active:before { opacity: 1; visibility: visible; }
 
 /* mapWrap css */

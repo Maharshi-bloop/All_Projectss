@@ -1,0 +1,35 @@
+.careerBanner { margin: 113px 0 0 0; padding: 120px 0; }
+.careerBannerInner { width: 60%; }
+.careerBanner .heading9xl { text-transform: uppercase; color: var(--colorBlack); font-weight: 700; }
+.careerBanner .heading9xl span { color: var(--colorPrimary); }
+.careerBanner .subTextBase { margin: 24px 0; }
+
+/* faqWrapper css */
+.faqWrapper { padding: 120px 0; background-color: #f9f9f9; }
+.accoList { background-color: #fff; margin: 0 0 20px 0; border: 1px solid #cdcdcd; border-radius: 12px; }
+.accoListing { width: 70%; margin: 0 auto; margin-top: 24px; }
+.accoHeading { padding: 12px 24px; position: relative; cursor: pointer; }
+.accoHeading:before { content: ''; position: absolute; width: 12px; height: 2px; background-color: var(--colorBlack); top: 50%; right: 24px; transform: translateY(-50%); }
+.accoHeading:after { content: ''; position: absolute; width: 12px; height: 2px; background-color: var(--colorBlack); top: 50%; right: 24px; transform: translateY(-50%) rotate(90deg); transition: all 0.3s; transform-origin: center; }
+.active .accoHeading:after { transform: translateY(-50%) rotate(0); }
+.accoBody { padding: 0 24px 12px; }
+.accoHeading h4 { margin: 0; color: var(--colorBlack); font-size: var(--fontMd); }
+.accoBody a { color: var(--colorPrimary); }
+
+/* applyVadilal css */
+.applyVadilal { padding: 120px 0; background-color: #f5f3f3; }
+.formFeild { margin: 0 0 16px 0; }
+.formFeild label { display: block; font-weight: 600; font-size: 14px; color: var(--colorBlack); }
+.formFeild input, .formFeild select, .formFeild textarea { width: 100%; border: 1px solid #d3d3d3; padding: 8px 16px; box-shadow: none; outline: none; border-radius: 8px; }
+.formFeild input:focus, .formFeild select:focus, .formFeild textarea:focus { border: 1px solid var(--colorBlack); }
+.formDesignOuter { background-color: var(--colorWhite); padding: 70px 60px; width: 70%; margin: 40px auto 0; border-radius: 16px; }
+.applyVadilalTop h4 { color: #000; font-size: 22px; font-weight: 600; }
+.applyVadilalTop { width: 50%; margin: 0 auto; }
+
+/*  */
+.upload-label > input { position: absolute; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.upload-box { min-height: 168px; padding: 32px; border: 2px dashed #e5e7eb; border-radius: 12px; background: rgba(250, 250, 250, .5); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; }
+.upload-box i { width: 48px; height: 48px; margin-bottom: 8px; border-radius: 50%; background: #fdf2f2; color: var(--colorPrimary); font-size: 20px; display: grid; place-items: center; }
+.upload-box strong { color: var(--colorPrimary); }
+.upload-box em { color: #111; font-style: normal; }
+.upload-box small { margin-top: 4px; color: #71717a; font-size: 13px; }

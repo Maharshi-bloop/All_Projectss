@@ -53,6 +53,21 @@ $(document).ready(function () {
             });
     }
 
+    /* accoList js start */
+
+    $(".accoList:first").addClass("active");
+    $(".accoList .accoBody").hide();
+    $(".accoList:first .accoBody").show();
+    $(".accoHeading").on("click", function () {
+        let parent = $(this).closest(".accoList");
+        $(".accoList").not(parent).removeClass("active").find(".accoBody").slideUp();
+        parent.toggleClass("active");
+        parent.find(".accoBody").slideToggle();
+
+    });
+
+    /* accoList js end */
+
 
     // Back to Top function
     if ($(".backTop").length) {
@@ -155,7 +170,7 @@ $(document).ready(function () {
             crossFade: true
         },
 
-         watchSlidesProgress: true,
+        watchSlidesProgress: true,
 
         thumbs: {
             swiper: galleryThumbs
@@ -164,23 +179,23 @@ $(document).ready(function () {
 
     // Counter update function with padding
     function updateCounter(swiperInstance) {
-    let current = (swiperInstance.realIndex + 1).toString().padStart(2, '0');
-    let total = swiperInstance.slides.length;
+        let current = (swiperInstance.realIndex + 1).toString().padStart(2, '0');
+        let total = swiperInstance.slides.length;
 
-    if (swiperInstance.params.loop) {
-        total = swiperInstance.slides.length - (swiperInstance.loopedSlides * 2);
-    }
+        if (swiperInstance.params.loop) {
+            total = swiperInstance.slides.length - (swiperInstance.loopedSlides * 2);
+        }
 
-    total = total.toString().padStart(2, '0');
+        total = total.toString().padStart(2, '0');
 
-    $('.counter').html(`
+        $('.counter').html(`
         <span class="counter__current">
             MILESTONE <span>${current}</span>
         </span>
         OF
         <span class="counter__total">${total}</span>
     `);
-}
+    }
 
 
     // On change & init
