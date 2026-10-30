@@ -16,8 +16,8 @@
 
 /* formWrapper css */
 .formWrapper { background-color: #f9f9f9; padding: 120px 0; }
-.formDesign { margin: 40px auto; width: 70%; }
 .formFeild { margin: 0 0 16px 0; }
+.formWrapperInner .row { justify-content: space-between; }
 .formFeild label { display: block; font-weight: 600; font-size: 14px; color: var(--colorBlack); }
 .formFeild input, .formFeild select, .formFeild textarea { width: 100%; border: 1px solid #d3d3d3; padding: 8px 16px; box-shadow: none; outline: none; border-radius: 8px; }
 .formFeild input:focus, .formFeild select:focus, .formFeild textarea:focus { border: 1px solid var(--colorBlack); }

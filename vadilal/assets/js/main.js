@@ -164,20 +164,23 @@ $(document).ready(function () {
 
     // Counter update function with padding
     function updateCounter(swiperInstance) {
-        let current = (swiperInstance.realIndex + 1).toString().padStart(2, '0');
-        let total = swiperInstance.slides.length;
+    let current = (swiperInstance.realIndex + 1).toString().padStart(2, '0');
+    let total = swiperInstance.slides.length;
 
-        if (swiperInstance.params.loop) {
-            total = swiperInstance.slides.length - (swiperInstance.loopedSlides * 2);
-        }
-        total = total.toString().padStart(2, '0');
+    if (swiperInstance.params.loop) {
+        total = swiperInstance.slides.length - (swiperInstance.loopedSlides * 2);
+    }
 
-        document.querySelector('.counter').innerHTML = `
-        <span class="counter__current">MILESTONE <span>${current}</span></span> 
+    total = total.toString().padStart(2, '0');
+
+    $('.counter').html(`
+        <span class="counter__current">
+            MILESTONE <span>${current}</span>
+        </span>
         OF
         <span class="counter__total">${total}</span>
-    `;
-    }
+    `);
+}
 
 
     // On change & init

@@ -42,11 +42,13 @@ GLOBAL VARIABLES
 .secondaryBtn { background-color: var(--colorSecondary); color: var(--colorText); padding: 12px 30px; border-radius: 12px; display: inline-block; font-size: var(--fontBase); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
 .primaryLink { color: var(--colorPrimary); }
 
+
 /* ========================================
 HEADER CSS
 ======================================== */
 .blackHeader header { background-color: #f9f9f9; }
 .blackHeader header a { color: var(--colorBlack); }
+.blackHeader header a:hover { color: var(--colorWhite); }
 .logoPrimary { display: none; }
 .blackHeader .logoPrimary { display: block; }
 .blackHeader .logoWhite { display: none; }
@@ -55,6 +57,7 @@ HEADER CSS
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 .site-header { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; position: absolute; z-index: 10; top: 0; left: 0; width: 100%; color: #fff }
+
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s ease; }
 	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
@@ -67,6 +70,7 @@ HEADER CSS
 	nav li:before { content: ''; position: absolute; width: 100%; height: 100%; min-height: 100px; background-color: var(--colorPrimary); border-radius: 0 0 14px 14px; transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s; z-index: -1; bottom: 0; }
 	nav li:hover:before { transform: translateY(0); opacity: 1; visibility: visible; }
 	.current_page_item:before { transform: translateY(0); opacity: 1; visibility: visible; }
+	.current_page_item a { color: var(--colorWhite); }
 }
 @media (max-width:1024px) {
 	.headerOption { position: fixed; top: 0; right: 0; width: min(400px, 100%); height: 100vh; height: 100dvh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: transform 0.3s ease; list-style: none; padding: 110px 0 0; margin: 0; overflow-y: auto; z-index: 9; }
