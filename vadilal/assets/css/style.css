@@ -18,19 +18,20 @@ a { text-decoration: none; color: inherit; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
 button { background: none; border: none; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; }
+textarea { height: 120px; }
 
 /* ========================================
 GLOBAL VARIABLES
 ======================================== */
-:root { --fontPrimary: 'Manrope'; --fontSecondary: 'Manrope'; --colorPrimary: #f00540; --colorSecondary: #fff5b0; --colorBrown: #6b3d2b; --colorYellow: #fcf761; --colorLightYellow: #ffecca; --colorPurple: #bda3ef; --colorBlue: #bcebf8; --colorBlue1:#77d9f4; --colorPink: #fabebb; --colorOrange: #fca081; --colorText: #222222C7; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
+:root { --fontPrimary: 'Manrope'; --fontSecondary: 'Manrope'; --colorPrimary: #f00540; --colorSecondary: #fff5b0; --colorBrown: #6b3d2b; --colorYellow: #fcf761; --colorLightYellow: #ffecca; --colorPurple: #bda3ef; --colorBlue: #bcebf8; --colorBlue1:#77d9f4; --colorPink: #fabebb; --colorOrange: #fca081; --colorText: #222222C7; --colorText1: #222222; --colorWhite: #ffffff; --colorBlack: #000000; --fontXs: 12px; --fontSm: 14px; --fontBase: 16px; --fontMd: 18px; --fontLg: 20px; --fontXl: 24px; --font2xl: 28px; --font3xl: 32px; --font4xl: 36px; --font5xl: 40px; --font6xl: 44px; --font7xl: 48px; --font8xl: 54px; --font9xl: 60px; --font10xl: 66px; --font11xl: 74px; }
 .heading11xl { font-size: var(--font11xl); font-weight: 600; color: var(--colorWhite); }
 .heading11xl span { color: var(--colorPrimary); line-height: 1; }
 .heading9xl { font-size: var(--font9xl); font-weight: 600; color: var(--colorWhite); display: inline-block; line-height: 1; }
 .heading7xl { font-size: var(--font7xl); font-weight: 600; color: var(--colorPrimary); display: inline-block; line-height: 1; }
-.heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorBlack); display: inline-block; line-height: 1.3; text-transform: uppercase; }
+.heading5xl { font-size: var(--font5xl); font-weight: 700; color: var(--colorText1); display: inline-block; line-height: 1.3; text-transform: uppercase; }
 .heading5xl span { color: var(--colorPrimary); }
-.headingXl { font-size: var(--fontXl); font-weight: 700; color: var(--colorText); display: inline-block; line-height: 1.3; text-transform: uppercase; }
-.headingLg { font-size: var(--fontLg); font-weight: 600; color: var(--colorText); display: inline-block; line-height: 1.3; }
+.headingXl { font-size: var(--fontXl); font-weight: 700; color: var(--colorText1); display: inline-block; line-height: 1.3; text-transform: uppercase; }
+.headingLg { font-size: var(--fontLg); font-weight: 600; color: var(--colorText1); display: inline-block; line-height: 1.3; }
 .subText3xl { font-size: var(--font3xl); font-weight: 500; color: var(--colorWhite); display: inline-block; line-height: 1.3; }
 .subText2xl { font-size: var(--font2xl); font-weight: 500; color: var(--colorWhite); display: inline-block; line-height: 1.3; }
 .subTextLg { font-size: var(--fontLg); font-weight: 400; color: var(--colorWhite); display: inline-block; line-height: 1.6; }
@@ -40,8 +41,9 @@ GLOBAL VARIABLES
 .primaryBtn span { width: 30px; display: flex; height: 30px; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 5px; color: var(--colorPrimary); transition: all 0.5s; }
 .primaryBtn:hover span { transform: rotate(45deg); }
 .secondaryBtn { background-color: var(--colorSecondary); color: var(--colorText); padding: 12px 30px; border-radius: 12px; display: inline-block; font-size: var(--fontBase); font-weight: 500; letter-spacing: 0.8px; transition: all 0.3s; }
-.primaryLink { color: var(--colorPrimary); }
-
+.primaryLink { color: var(--colorPrimary); transition: all 0.3s; position: relative; }
+.primaryLink:before { content: ''; position: absolute; width: 0; height: 1px; background-color: var(--colorPrimary); bottom: 0; left: 0; transition: all 0.3s; }
+.primaryLink:hover:before { width: 100%; }
 
 /* ========================================
 HEADER CSS
@@ -57,7 +59,6 @@ HEADER CSS
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 .site-header { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; position: absolute; z-index: 10; top: 0; left: 0; width: 100%; color: #fff }
-
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s ease; }
 	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
@@ -71,6 +72,7 @@ HEADER CSS
 	nav li:hover:before { transform: translateY(0); opacity: 1; visibility: visible; }
 	.current_page_item:before { transform: translateY(0); opacity: 1; visibility: visible; }
 	.current_page_item a { color: var(--colorWhite); }
+	footer .current_page_item a { color: var(--colorPrimary); }
 }
 @media (max-width:1024px) {
 	.headerOption { position: fixed; top: 0; right: 0; width: min(400px, 100%); height: 100vh; height: 100dvh; background-color: #E9EDF2 !important; transform: translateX(100%); transition: transform 0.3s ease; list-style: none; padding: 110px 0 0; margin: 0; overflow-y: auto; z-index: 9; }

@@ -41,8 +41,9 @@ span.swiper-pagination-bullet { transition: all 0.3s; }
 
 /* valueListWrap css */
 .valueListWrap { padding: 120px 0; }
-.valueList { padding: 24px; background-color: #f9f9f9; border-radius: 8px; border-top: 6px solid #f5f3f3; transition: all 0.3s; }
-.valueList:hover { border-top: 6px solid var(--colorPrimary); }
+.valueList { padding: 24px; background-color: #f9f9f9; border-radius: 16px; transition: all 0.3s; position: relative; overflow: clip; }
+.valueList:before { content: ''; position: absolute; width: 100%; height: 5px; background-color: #f5f3f3; top: 0; left: 0; transition: all 0.3s; }
+.valueList:hover:before { background-color: var(--colorPrimary); }
 .valueListing { margin: 40px 0 0 0; }
 .valueListContent .headingXl { text-transform: capitalize; display: block; }
 .valueListIcon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background-color: var(--colorWhite); border-radius: 6px; }
