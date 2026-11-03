@@ -53,6 +53,16 @@ $(document).ready(function () {
             });
     }
 
+    /* businessList js start */
+    $(".businessList:first").addClass("active");
+    $(".businessList").on("mouseenter", function () {
+        let index = $(this).index();
+        $(".businessList").removeClass("active");
+        $(this).addClass("active"); 
+    });
+
+    /* businessList js end */
+
     /* accoList js start */
 
     $(".accoList:first").addClass("active");

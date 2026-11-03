@@ -3,17 +3,37 @@
 .contactBannerInner .subTextBase { color: var(--colorWhite); width: 50%; display: block; }
 
 /* businessListing css */
-.businessListing { padding: 120px 0; }
-.businessListingWrap { margin: 40px 0 0 0; }
-.businessList { padding: 40px; border: 1px solid #d9d9d9; height: 100%; border-radius: 16px; transition: all 0.3s; }
-.businessList:hover { box-shadow: 0px 4px 10px #0000002e; }
-.businessList:hover { border-color: #bebebe; }
-.businessLisTop { display: flex; justify-content: space-between; align-items: center; }
+.businessListing1 { padding: 120px 0; }
+.businessListing1Wrap { margin: 40px 0 0 0; }
+.businessList1 { padding: 40px; border: 1px solid #d9d9d9; height: 100%; border-radius: 16px; transition: all 0.3s; }
+.businessList1:hover { box-shadow: 0px 4px 10px #0000002e; }
+.businessList1:hover { border-color: #bebebe; }
+.businessList1Top { display: flex; justify-content: space-between; align-items: center; }
 .businessLisContent div span { display: block; margin: 12px 0 16px 0; }
 .businessLisContent div strong { color: var(--colorBlack); }
 .businessLisContent { display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 60px); gap: 40px; }
-.businessList .headingXl { color: var(--colorPrimary); margin: 0; }
-.businessLisTop span { font-size: 40px; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--colorPrimary); -moz-text-fill-color: transparent; top: 20px; left: 24px; }
+.businessList1 .headingXl { color: var(--colorPrimary); margin: 0; }
+.businessList1Top span { font-size: 40px; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--colorPrimary); -moz-text-fill-color: transparent; top: 20px; left: 24px; }
+
+/* businessListing css */
+.businessListing { padding: 120px 0 0; }
+.businessListingWrap { display: flex; flex-wrap: wrap; align-items: flex-end; min-height: 450px; }
+.businessListingWrap { margin: 40px 0 0 0; }
+.businessList { width: 25%; border-radius: 16px 16px 0 0; background-color: #f9f9f9; position: relative; overflow: clip; transition: all 0.3s; padding: 30px; }
+.businessList.active { padding-top: 120px; background-color: var(--colorPrimary); }
+.businessListOnHover { display: flex; flex-direction: column; gap: 30px; }
+.businessListOnHover span { text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; display: -webkit-box; font-size: 14px; }
+.businessListImage { width: 220px; height: 220px; border-radius: 50%; overflow: clip; position: absolute; top: -100%; right: -100%; transition: all 0.5s; box-shadow: 0px 0px 10px #00000063; }
+.businessList.active .businessListImage { top: -12%; right: -12%; }
+.businessListImage img { width: 100%; height: 100%; object-fit: cover; }
+.businessListTop span { font-size: 40px; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--colorPrimary); -moz-text-fill-color: transparent; top: 20px; left: 24px; display: block; }
+.businessListOnHover strong { color: var(--colorBlack); }
+.businessListTop .headingXl { color: var(--colorPrimary); margin: 0; }
+.businessListInner { display: flex; flex-direction: column; gap: 40px; transform: translateY(200px); transition: all 0.3s; }
+.businessList.active .businessListInner { transform: translateY(0); }
+.businessList.active * { color: var(--colorWhite) !important; }
+.businessList.active .businessListTop span { -webkit-text-stroke: 1px var(--colorWhite); }
+.businessList.active .primaryLink:before { background-color: var(--colorWhite); }
 
 /* getInTouch css */
 .getInTouch { padding: 120px 0; background-color: #f9f9f9; }
