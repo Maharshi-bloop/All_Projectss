@@ -16,6 +16,14 @@
 /* difference css */
 .difference { padding: 120px 0; background-color: #f9f9f9; }
 .differenceListing { margin: 40px 0 0 0; }
+.differenceListContent h4 { display: block; margin: 0; color: var(--colorBlack); font-weight: 700; }
+.differenceListImage { width: 100%; height: 320px; overflow: clip; }
+.differenceList:hover .differenceListImage img { transform: scale(1.05); }
+.differenceListImage img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+.differenceList { border-radius: 16px; overflow: clip; background-color: var(--colorWhite); border: 1px solid #dddddd; transition: all 0.3s; }
+.differenceList:hover { border: 1px solid #c9c9c9; box-shadow: 0px 3px 10px #e7e7e7; }
+.differenceListContent { padding: 24px 16px; }
+.differenceListContent h4 { text-transform: capitalize; }
 
 /* people css */
 .people { padding: 120px 0; }

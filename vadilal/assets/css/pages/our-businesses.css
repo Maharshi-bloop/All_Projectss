@@ -19,7 +19,7 @@
 .businessListing { padding: 120px 0 0; }
 .businessListingWrap { display: flex; flex-wrap: wrap; align-items: flex-end; min-height: 450px; }
 .businessListingWrap { margin: 40px 0 0 0; }
-.businessList { width: 25%; border-radius: 16px 16px 0 0; background-color: #f9f9f9; position: relative; overflow: clip; transition: all 0.3s; padding: 30px; }
+.businessList { width: calc(100% / 3); border-radius: 16px 16px 0 0; background-color: #f9f9f9; position: relative; overflow: clip; transition: all 0.3s; padding: 30px; }
 .businessList.active { padding-top: 120px; background-color: var(--colorPrimary); }
 .businessListOnHover { display: flex; flex-direction: column; gap: 30px; }
 .businessListOnHover span { text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; display: -webkit-box; font-size: 14px; }
@@ -29,7 +29,7 @@
 .businessListTop span { font-size: 40px; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--colorPrimary); -moz-text-fill-color: transparent; top: 20px; left: 24px; display: block; }
 .businessListOnHover strong { color: var(--colorBlack); }
 .businessListTop .headingXl { color: var(--colorPrimary); margin: 0; }
-.businessListInner { display: flex; flex-direction: column; gap: 40px; transform: translateY(200px); transition: all 0.3s; }
+.businessListInner { display: flex; flex-direction: column; gap: 20px; transform: translateY(170px); transition: all 0.3s; }
 .businessList.active .businessListInner { transform: translateY(0); }
 .businessList.active * { color: var(--colorWhite) !important; }
 .businessList.active .businessListTop span { -webkit-text-stroke: 1px var(--colorWhite); }

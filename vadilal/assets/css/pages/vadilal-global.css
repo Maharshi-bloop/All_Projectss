@@ -1,0 +1,23 @@
+section.vadilalGlobal { margin: 113px 0 0 0; padding: 120px 0; }
+.vadilalGlobalCounter { margin: 30px 0 0 0; display: flex; align-items: center; }
+.vadilalGlobalCounter > div { padding: 0 36px 0 0; margin: 0 36px 0 0; border-right: 1px solid #d7d7d7; }
+.vadilalGlobalInner .subTextBase { margin: 16px 0 0 0; }
+.vadilalGlobalCounter * { color: var(--colorText1); }
+.vadilalGlobal .heading9xl { text-transform: uppercase; color: var(--colorBlack); font-weight: 700; }
+.vadilalGlobal .heading9xl span { color: var(--colorPrimary); }
+.vadilalGlobalCounter > div:last-child { margin: 0; padding: 0; border: none; }
+.vadilalGlobalCounter > div > span { color: #f00540; }
+
+/* portfolio css */
+.portfolio { padding: 120px 0; background-color: #f5f3f3; }
+.portfolioListing { margin: 40px 0 0 0; }
+.portfolioList { background-color: var(--colorWhite); padding: 16px; border-radius: 12px; }
+.portfolioImg { width: 100%; height: 200px; border-radius: 8px; overflow: clip; }
+.portfolioImg img { width: 100%; height: 100%; object-fit: cover; transition: all 0.3s; }
+.portfolioImg:hover img { transform: scale(1.05); }
+.portfolioContent { margin: 8px 0 0 0; color: var(--colorText1); }
+
+/* mapWrap css */
+.mapWrap { padding: 120px 0; background-color: #f9f9f9; overflow: clip; }
+.subTextWrap .subTextBase { color: var(--colorText); }
+.mapWrapTop { width: 60%; margin: -120px 0 0 0; }
