@@ -1,0 +1,14 @@
+.contactBanner { margin: 113px 0 0 0; padding: 120px 0; background: linear-gradient(131.35deg, #FF4D78 0%, #F00540 35.46%, #B3002E 70.92%); }
+.contactBannerInner .heading7xl { color: var(--colorWhite); font-weight: 800; }
+.contactBannerInner .subTextBase { color: var(--colorWhite); width: 50%; display: block; }
+
+/* newsWrapper css */
+.newsWrapper { background-color: #f9f9f9; }
+.newsImage { height: 250px; border-radius: 8px; overflow: clip; }
+.newsImage img { width: 100%; height: 100%; object-fit: cover; }
+section.newsWrapper { padding: 120px 0; }
+.newsContent { position: absolute; bottom: 0; right: 0; margin: 0; padding: 6px; }
+.newsList { background-color: var(--colorWhite); padding: 12px; border-radius: 15px; }
+.newsImageOuter { position: relative; margin: 0 0 12px 0; }
+.newsContent > span { background-color: var(--colorPrimary); padding: 6px 16px; border-radius: 8px; color: var(--colorWhite); display: inline-block; }
+.newsList > span { margin: 0 0 12px 0; display: block; }

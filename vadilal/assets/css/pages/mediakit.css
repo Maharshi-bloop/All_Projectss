@@ -1,0 +1,4 @@
+.contactBanner { margin: 113px 0 0 0; padding: 120px 0; background: linear-gradient(131.35deg, #FF4D78 0%, #F00540 35.46%, #B3002E 70.92%); }
+.contactBannerInner .heading7xl { color: var(--colorWhite); font-weight: 800; }
+.contactBannerInner .subTextBase { color: var(--colorWhite); width: 50%; display: block; }
+.mediaKit { background-color: #f9f9f9; padding: 60px 0; }

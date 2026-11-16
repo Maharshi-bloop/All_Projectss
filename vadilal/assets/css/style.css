@@ -191,3 +191,9 @@ BACK TO TOP BUTTON
 	25%, 75% { opacity: 0.6; transform: scale(0.6); }
 	50% { opacity: 0.2; transform: scale(0.2); }
 }
+
+/* toolTip css */
+.box_view_html p { margin: 0; }
+div#powerTip { background-color: var(--colorPrimary); }
+#powerTip.n:before { border-top: 10px solid var(--colorPrimary); }
+.drag_element { cursor: pointer; }
