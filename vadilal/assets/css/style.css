@@ -61,16 +61,18 @@ HEADER CSS
 .headerWrap { display: flex; align-items: center; justify-content: space-between; }
 .toggleBtn { display: none; }
 .site-header { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; position: absolute; z-index: 10; top: 0; left: 0; width: 100%; color: #fff }
+.subMenu a { color: var(--colorBlack) !important; display: block; }
+.subMenu a:hover { background-color: var(--colorPrimary); color: var(--colorWhite) !important; }
 @media (min-width:1025px) {
 	nav ul { list-style: none; padding: 0; margin: 0; transition: all 0.3s ease; }
 	nav>ul { display: flex; padding: 0 22px; border-radius: 12px; }
 	nav li { position: relative; }
 	nav li a { position: relative; display: inline-block; padding: 16px 12px; color: var(--colorWhite); text-decoration: none; transition: color 0.3s ease; transition: all 0.3s; }
-	nav ul ul { position: absolute; top: 100%; left: 0; min-width: 200px; background-color: var(--colorWhite); box-shadow: 0 7px 10px #00000061; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; pointer-events: none; transition: all 0.3s ease; z-index: 20; }
+	nav ul ul { position: absolute; top: 100%; left: 0; min-width: 200px; background-color: var(--colorWhite); box-shadow: 0 6px 10px #00000036; border-radius: 5px; overflow: hidden; transform: translateY(20px); opacity: 0; visibility: hidden; pointer-events: none; transition: all 0.3s ease; z-index: 20; }
 	nav>ul>li:hover>ul, nav>ul>li:focus-within>ul { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
-	li.hasUl>a { padding-right: 25px !important; }
-	li.hasUl>a::before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 10px; right: 7px; font-size: 14px; }
-	nav li:before { content: ''; position: absolute; width: 100%; height: 100%; min-height: 100px; background-color: var(--colorPrimary); border-radius: 0 0 14px 14px; transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s; z-index: -1; bottom: 0; }
+	li.hasUl>a { padding-right: 30px !important; }
+	li.hasUl>a::before { content: '\ea13'; font-family: "remixicon"; font-style: normal; position: absolute; top: 18px; right: 7px; font-size: 14px; }
+	nav > ul > li:before { content: ''; position: absolute; width: 100%; height: 100%; min-height: 100px; background-color: var(--colorPrimary); border-radius: 0 0 14px 14px; transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s; z-index: -1; bottom: 0; }
 	nav li:hover:before { transform: translateY(0); opacity: 1; visibility: visible; }
 	.current_page_item:before { transform: translateY(0); opacity: 1; visibility: visible; }
 	.current_page_item a { color: var(--colorWhite); }
@@ -102,17 +104,17 @@ BANNER CSS
 .Onebusiness { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.7s; }
 .businessTop { width: 70%; margin: 0 auto; }
 .Onebusiness.active { position: absolute; opacity: 1; visibility: visible; pointer-events: auto; }
-.Onebusiness a { display: block; position: relative; height: 100%; min-height: 400px; color: #fff; text-decoration: none; }
+.Onebusiness a { display: block; position: relative; height: 100%; min-height: 400px; color: var(--colorWhite); text-decoration: none; }
 .businessImg { position: absolute; inset: 0; overflow: hidden; }
-.businessImg::before { content: ""; position: absolute; background: linear-gradient(0deg, #f00540b8, transparent); z-index: 1; pointer-events: none; height: 100%; bottom: 0; left: 0; width: 100%; }
+.businessImg::before { content: ""; position: absolute; background: linear-gradient(0deg, var(--colorPrimary), transparent); z-index: 1; pointer-events: none; height: 100%; bottom: 0; left: 0; width: 100%; }
 .businessImg img { display: block; width: 100%; height: 100%; min-height: 400px; object-fit: cover;    /* transform: scale(1.06); */ transition: all 1s cubic-bezier(0.2, 0.65, 0.3, 1); }
 .businessImg:hover img { transform: scale(1.1); }
 
 /* .Onebusiness.active .businessImg img { transform: scale(1); } */
 .businessListContent { position: absolute; left: 30px; bottom: 30px; z-index: 2; max-width: 60%; }
 .businessListContent h4, .businessListContent span { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
-.businessListContent h4 { margin: 0 0 10px; color: #fff; font-size: var(--font6xl); transition-delay: 0.15s; }
-.businessListContent span { display: block; color: #fff; transition-delay: 0.25s; }
+.businessListContent h4 { margin: 0 0 10px; color: var(--colorWhite); font-size: var(--font6xl); transition-delay: 0.15s; }
+.businessListContent span { display: block; color: var(--colorWhite); transition-delay: 0.25s; }
 .Onebusiness.active .businessListContent h4, .Onebusiness.active .businessListContent span { opacity: 1; transform: translateY(0); }
 .businessNameList { position: relative; display: flex; flex-direction: column; padding-left: 28px; }
 .businessNameList::before { content: ""; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: #e8e8e8; }
@@ -134,11 +136,16 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 .textImage { padding: 120px 0; }
 .textImage .subTextMd { color: var(--colorText); margin: 20px 0 40px 0; }
 .textImageInner .row { justify-content: space-between; }
-.imageDiv { width: 100%; height: 100%; border-radius: 16px; overflow: clip; }
+.imageDiv { width: 100%; height: 100%; border-radius: 16px; overflow: clip; position: relative; }
+.imageDiv:before { content: ''; position: absolute; background: linear-gradient(0deg, #f00540b8, transparent); z-index: 1; pointer-events: none; height: 100%; bottom: 0; left: 0; width: 100%; }
 .imageDiv img { width: 100%; height: 100%; object-fit: cover; }
 
+/* awardsWrapper css */
+.awardsWrapper { padding: 120px 0; background-color: #f9f9f9; }
+.awardsListing { margin: 40px 0 0 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 60px; }
+
 /* news css */
-.news { padding: 120px 0; background-color: #f9f9f9; }
+.news { padding: 120px 0; background-color: #f5f3f3; }
 .newsTop .subTextMd { color: var(--colorText); }
 .newsInner .row { justify-content: space-between; }
 .newList { display: flex; justify-content: space-between; margin: 0 0 30px 0; padding: 0 0 30px 0; border-bottom: 1px solid #00000033; }
@@ -147,6 +154,8 @@ h4.headingLg.active:before { opacity: 1; visibility: visible; }
 .newsHeading { width: calc(100% - 70px); }
 .newList:hover span { opacity: 1; visibility: visible; }
 .newsTop { position: sticky; top: 120px; }
+.awardsList { text-align: center; width: calc(33% - 50px); }
+.awardsImage { width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; }
 
 /* Responsive */
 @media (max-width:991px) {

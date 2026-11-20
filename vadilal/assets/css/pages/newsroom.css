@@ -10,5 +10,5 @@ section.newsWrapper { padding: 120px 0; }
 .newsContent { position: absolute; bottom: 0; right: 0; margin: 0; padding: 6px; }
 .newsList { background-color: var(--colorWhite); padding: 12px; border-radius: 15px; }
 .newsImageOuter { position: relative; margin: 0 0 12px 0; }
-.newsContent > span { background-color: var(--colorPrimary); padding: 6px 16px; border-radius: 8px; color: var(--colorWhite); display: inline-block; }
+.newsContent > span { background-color: var(--colorPrimary); padding: 4px 12px; border-radius: 8px; color: #ffffff; display: inline-block; font-size: 14px; }
 .newsList > span { margin: 0 0 12px 0; display: block; }

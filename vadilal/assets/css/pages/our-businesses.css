@@ -39,3 +39,122 @@
 .getInTouch { padding: 120px 0; background-color: #f9f9f9; }
 .getInTouchInner { display: flex; align-items: center; justify-content: space-between; padding: 100px 60px; border-radius: 16px; background-color: var(--colorWhite); position: relative; overflow: clip; box-shadow: 0px 4px 10px #0000000d; }
 .getInTouchInner:before { content: ''; position: absolute; width: 100%; height: 5px; background-color: var(--colorPrimary); top: 0; left: 0; }
+
+/*  */
+.tabContent { display: none; }
+.mobile-tab-title { display: none; }
+.active .tabContent { display: block; }
+
+/* =====================================================
+Enterprise Across Sectors â€“ tabbed business section
+===================================================== */
+.vbBusinesses { --vbPrimary: var(--colorPrimary, #c8102e); --vbDark: #6b0a1a; --vbText: #2b2b2b; --vbPinkSoft: #fdf0f2; --vbPinkLine: #f3d6db; padding: 70px 0 100px; background: linear-gradient(180deg, #fffafa 0%, #fff 100%); overflow: hidden; }
+
+/* ---------- heading ---------- */
+.vbTop { max-width: 960px; margin: 0 auto 50px; }
+.vbTopEyebrow { display: inline-flex; align-items: center; gap: 16px; font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--vbPrimary); }
+.vbTopEyebrow:before, .vbTopEyebrow:after { content: ''; width: 80px; height: 1px; background: var(--vbPrimary); opacity: .6; }
+.vbTopTitle { margin: 8px 0 12px; font-size: clamp(32px, 4.4vw, 56px); font-weight: 400; line-height: 1.15; color: var(--vbDark); }
+.vbTopTitle strong { font-weight: 800; }
+.vbTopText { margin: 0 auto; max-width: 900px; font-size: 18px; line-height: 1.7; color: var(--vbText); }
+
+/* ---------- layout ---------- */
+.vbBusinesses .tabing-main { display: grid; grid-template-columns: 310px minmax(0, 1fr); gap: 30px; align-items: start; }
+.vbBusinesses .tabContainer { min-width: 0; }
+
+/* ---------- left tabs ---------- */
+.vbBusinesses .tab-titles { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.vbBusinesses .tab-titles li { margin: 0; }
+.vbBusinesses .tab-titles a { position: relative; display: flex; align-items: center; height: 76px; padding: 0 22px; border-radius: 14px; background: var(--vbPinkSoft); border: 1px solid #fbe6ea; color: var(--vbText); text-decoration: none; font-size: 18px; font-weight: 500; box-shadow: 0 2px 10px rgba(200, 16, 46, .04); transition: background .3s, color .3s, box-shadow .3s, transform .3s; }
+.vbBusinesses .tab-titles a:hover { transform: translateX(3px); box-shadow: 0 6px 16px rgba(200, 16, 46, .12); }
+.vbBusinesses .tab-titles a:focus-visible { outline: 2px solid var(--vbPrimary); outline-offset: 3px; }
+.vbTabNum { width: 42px; font-size: 17px; font-weight: 600; flex-shrink: 0; }
+.vbTabName { flex: 1; position: relative; padding-left: 20px; line-height: 1.2; }
+.vbTabName:before { content: ''; position: absolute; left: 0; top: 50%; height: 36px; width: 1px; transform: translateY(-50%); background: currentColor; opacity: .2; }
+.vbBusinesses .tab-titles a > i { font-size: 30px; font-weight: 300; opacity: .8; margin-left: 8px; }
+.vbBusinesses .tab-titles li.active-li a { background: var(--vbPrimary); border-color: var(--vbPrimary); color: #fff; box-shadow: 0 10px 24px rgba(200, 16, 46, .3); transform: none; }
+.vbBusinesses .tab-titles li.active-li a:after { content: ''; position: absolute; right: -9px; top: 50%; width: 18px; height: 18px; background: var(--vbPrimary); transform: translateY(-50%) rotate(45deg); border-radius: 3px; }
+.vbBusinesses .tab-titles li.active-li .vbTabName:before { opacity: .4; }
+
+/* ---------- right panel ---------- */
+.vbBusinesses .tab-content-main { display: none; }
+.vbBusinesses .tab-content-main.active { display: block; animation: vbFade .5s ease; }
+@keyframes vbFade {
+	from { opacity: 0; transform: translateY(14px); }
+	to { opacity: 1; transform: none; }
+}
+.vbPanel { position: relative; padding: 38px 36px 20px; border-radius: 28px; background: #fff; border: 1px solid #f7e9ec; box-shadow: 0 10px 40px rgba(120, 10, 30, .07); overflow: hidden; }
+.vbPanelVisual { position: absolute; top: 0; right: 0; width: 46%; height: 300px; pointer-events: none; z-index: 0; }
+.vbPanelVisual:before { content: ''; position: absolute; top: -10px; right: -40px; width: 110%; height: 100%; border-radius: 60% 40% 0 60% / 55% 50% 50% 45%; background: linear-gradient(135deg, #fde6ea 0%, #fff4f6 70%, rgba(255, 255, 255, 0) 100%); }
+.vbPanelVisual img { position: absolute; top: 10px; right: 10px; width: 100%; height: 100%; object-fit: contain; object-position: center right; filter: drop-shadow(0 18px 24px rgba(0, 0, 0, .12)); }
+.vbPanelHead, .vbPanelBody, .vbStatsBar { position: relative; z-index: 1; }
+.vbPanelHead { max-width: 57%; }
+.vbEyebrow { display: block; font-size: 19px; font-weight: 700; letter-spacing: .5px; color: var(--vbPrimary); }
+.heading5xl { position: relative; margin: 0 0 12px 0; padding-bottom: 12px; text-transform: none; }
+.heading5xl:after { content: ''; position: absolute; left: 0; bottom: 0; width: 72px; height: 6px; border-radius: 6px; background: linear-gradient(90deg, var(--vbPrimary), #f5738a); }
+.vbPanelLead { margin: 8px 0 0; font-size: 18px; line-height: 1.65; color: var(--vbText); }
+.vbPanelBody { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 32px; margin-top: 70px; }
+.vbStory { max-width: 600px; }
+.vbStory h4 { margin: 0 0 14px; font-size: 20px; font-weight: 700; line-height: 1.4; color: var(--vbPrimary); }
+.vbStory p { margin: 0 0 12px; font-size: 15.5px; line-height: 1.6; color: var(--vbText); }
+.vbHighlights { padding-left: 32px; border-left: 1px solid var(--vbPinkLine); }
+.vbHighlights > strong { display: block; margin-bottom: 14px; font-size: 20px; font-weight: 700; color: var(--vbDark); }
+.vbHighlights ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.vbHighlights li { display: flex; align-items: center; gap: 18px; }
+.vbHighlights li p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--vbText); }
+.vbHlIcon { flex: 0 0 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: #fde6ea; color: var(--vbPrimary); font-size: 26px; }
+
+/* ---------- bottom stats bar ---------- */
+.vbStatsBar { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr) auto; align-items: center; gap: 0; margin: 40px -16px 0; padding: 24px 26px; border-radius: 18px; background: linear-gradient(90deg, #fdeaee 0%, #fff6f7 100%); border: 1px solid #fbe3e8; }
+.vbQuote { padding-left: 16px; border-left: 2px solid var(--vbPrimary); padding-right: 24px; }
+.vbQuote p { margin: 0 0 4px; font-size: 14px; font-style: italic; line-height: 1.6; color: var(--vbText); }
+.vbQuote strong { display: block; font-size: 21px; font-style: italic; font-weight: 700; color: var(--vbPrimary); }
+.vbStat { padding: 4px 22px; border-left: 1px solid var(--vbPinkLine); }
+.vbStat:nth-of-type(1) { border-left: 1px solid var(--vbPinkLine); }
+.vbStat strong { display: block; font-size: 36px; font-weight: 800; line-height: 1.1; color: var(--vbPrimary); white-space: nowrap; }
+.vbStat span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.45; color: #555; }
+.vbCta { display: inline-flex; align-items: center; gap: 10px; margin-left: 12px; padding: 16px 26px; border-radius: 40px; background: var(--vbPrimary); color: #fff; font-size: 16px; font-weight: 700; text-decoration: none; white-space: nowrap; box-shadow: 0 10px 22px rgba(200, 16, 46, .3); transition: transform .3s, box-shadow .3s, background .3s; }
+.vbCta i { font-size: 20px; }
+.vbCta:hover { color: #fff; background: #a80d26; transform: translateY(-2px); box-shadow: 0 14px 26px rgba(200, 16, 46, .38); }
+
+/* ---------- responsive ---------- */
+@media (max-width:1399px) {
+	.vbPanelBody { grid-template-columns: minmax(0, 1fr) 300px; }
+	.vbStatsBar { grid-template-columns: 1.4fr repeat(3, auto) auto; margin: 36px 0 0; }
+	.vbStat { padding: 4px 16px; }
+	.vbStat strong { font-size: 30px; }
+}
+@media (max-width:1199px) {
+	.vbBusinesses .tabing-main { grid-template-columns: 250px minmax(0, 1fr); gap: 24px; }
+	.vbBusinesses .tab-titles a { height: 68px; padding: 0 16px; font-size: 16px; }
+	.vbTabName { padding-left: 14px; }
+	.vbPanelHead { max-width: 100%; padding-right: 36%; }
+	.vbPanelBody { grid-template-columns: 1fr; margin-top: 30px; }
+	.vbHighlights { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--vbPinkLine); }
+	.vbHighlights ul { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
+	.vbStatsBar { grid-template-columns: repeat(3, 1fr); gap: 20px 0; }
+	.vbQuote { grid-column: 1 / -1; }
+	.vbCta { grid-column: 1 / -1; justify-self: start; margin-left: 0; }
+}
+@media (max-width:991px) {
+	.vbBusinesses { padding: 50px 0 70px; }
+	.vbBusinesses .tabing-main { grid-template-columns: 1fr; gap: 20px; }
+	.vbBusinesses .tab-titles { flex-direction: row; margin: 0; padding: 6px 4px 14px; overflow-x: auto; scrollbar-width: thin; }
+	.vbBusinesses .tab-titles li { flex: 0 0 auto; }
+	.vbBusinesses .tab-titles a { height: 60px; min-width: 230px; }
+	.vbBusinesses .tab-titles li.active-li a:after { display: none; }
+	.vbTopEyebrow:before, .vbTopEyebrow:after { width: 40px; }
+}
+@media (max-width:767px) {
+	.vbPanel { padding: 26px 20px 16px; }
+	.vbPanelVisual { position: relative; width: 100%; height: 240px; margin: -6px 0 10px; }
+	.vbPanelVisual img { right: 0; object-position: center; }
+	.vbPanelHead { padding-right: 0; }
+	.vbPanelLead { font-size: 16px; }
+	.vbHighlights ul { grid-template-columns: 1fr; }
+	.vbStatsBar { grid-template-columns: 1fr 1fr; padding: 20px 16px; }
+	.vbStat { padding: 4px 12px; }
+	.vbStat strong { font-size: 26px; }
+	.vbCta { justify-self: stretch; justify-content: center; }
+	.vbTopText { font-size: 16px; }
+}
